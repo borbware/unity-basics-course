@@ -25,10 +25,23 @@ Emphasis: Familiriazing with the tools
 - Adding stuff
 - Moving stuff around
   - QWERTY tools
-- Controlling stuff with scripts
-- Making "same thing, but what if many" with prefabs
+- Prefabs
+  - prefabricated object
+  - "same thing, but what if many"
+  - drag a gameobject from Hierarchy to Project view
+    - it turns blue! 
+    - this means it's now an instance of a prefab
+    - overridden values in Inspector are indicated in **bold** 
+  - Open, Select, Overrides
 
 
+- Scripting
+  - adding functionality with c#
+  - there is also Bolt: a visual scripting option
+    - we won't focus on it on this course though
+  - 
+
+- Week project: FPS with premade controller & assets
 
 # Week 2
 
@@ -43,7 +56,9 @@ Week project: Asteroids. 1 screeni, passiiviset vihut.
 
 Emphasis: scene & data management
 
-Week project: top-down arcade, useampi leveli ja game over -screeni. aktiivisia vihuja
+- Event system
+
+Week project: top-down arcade, useampi leveli ja game over -screeni. aktiivisia vihuja, jotka träkkää pelaajaa ja alkaa seurata/ampua kohti kun rangella
 
 # Week 4
 
@@ -51,4 +66,4 @@ Emphasis: level design??????? state machine????
 
 - animation states
 
-Week project: platformer???????????
+Week project: 2d platformer

@@ -2,7 +2,7 @@
 
 - changes made during the playmode do not persist
   - protip: change playmode tint in Edit > Preferences > Colors to red.
-- 3D: In blender3d,
+- 3D: In blender3d, asdf. In Unity, "y" is the "up" axis.
 - "The associated script cannot be loaded"
   - if you rename a script file, rename the class inside as well :>
 
@@ -25,15 +25,16 @@
 - [CTRL+TAB] / [CTRL+SHIFT+TAB] View: Open Next Editor / View: Open Previous Editor
   - You need to change this manually
 - [CTRL+.] for auto-"using" / auto-creating missing functions
+- [CTRL+Ö] for showing/hiding terminal
+  
+# Collaboration in Unity
 
-# Unity and git
+- Twono
 
+- logging into Github
+  - cannot use password anymore, you have to create a token for https. https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/#what-you-need-to-do-today
+  - repo, workflow, gist
 
-# Coroutines
-
-- A function that is executed until the yield statement is reached, and continued on the next frame or after a specified time delay
-- Excellent for time delays, sequenced events (cutscenes!)
-- https://docs.unity3d.com/Manual/Coroutines.html
 
 # Snippets
 - check component type:
