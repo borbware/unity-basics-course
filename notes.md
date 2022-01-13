@@ -29,8 +29,6 @@
   
 # Collaboration in Unity
 
-- Twono
-
 - logging into Github
   - cannot use password anymore, you have to create a token for https. https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/#what-you-need-to-do-today
   - repo, workflow, gist

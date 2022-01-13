@@ -1,8 +1,32 @@
-# Topics
+- [C# basics](#c-basics)
+	- [Variables and conditionals](#variables-and-conditionals)
+	- [Conventions](#conventions)
+	- [Arrays and Loops](#arrays-and-loops)
+	- [Classes](#classes)
+	- [Enums](#enums)
+- [Unity basics](#unity-basics)
+	- [Monobehaviour methods](#monobehaviour-methods)
+	- [Getting Input](#getting-input)
+	- [Important Unity classes](#important-unity-classes)
+		- [GameObject](#gameobject)
+		- [Transform](#transform)
+		- [Vector3 & Vector2](#vector3--vector2)
+		- [Mathf, Random, Debug](#mathf-random-debug)
+		- [Quaternion](#quaternion)
+	- [Data persistence between scenes](#data-persistence-between-scenes)
+- [Unity advanced](#unity-advanced)
+	- [Delayed actions](#delayed-actions)
+	- [Delegates and Events (3b)](#delegates-and-events-3b)
+		- [Delegates](#delegates)
+		- [Events](#events)
+		- [Actions](#actions)
+		- [Unity Events](#unity-events)
+		- [Scriptable object Unity Event](#scriptable-object-unity-event)
+	- [Generics, IEnumerable (4c)](#generics-ienumerable-4c)
+	- [ScriptableObject](#scriptableobject)
+# C# basics
 
-## Basics
-
-### Variables and conditionals
+## Variables and conditionals
 
 - declaration with `=`
 - debugging with `Debug.Log()`
@@ -68,7 +92,7 @@ void Greet()
 ```c#
 message = health > 0 ? "Player is Alive" : "Player is Dead";
 ```
-### Conventions
+## Conventions
 
 - dot `.` operator
 - inheritance with colon `:`
@@ -88,13 +112,16 @@ if (attack != null)
 attack?.Invoke();
 ```
 
-### Arrays and Loops
+## Arrays and Loops
 
 - arrays and lists
   - Arrays
   - Lists
   - Use Lists if you are changing the size of the array
   - If there are a fixed number of elements, use arrays
+  - array methods
+    - Find
+    - Filter
 ```c#
 public GameObject[] players;
 
@@ -119,7 +146,7 @@ void Start ()
 
 
 
-### Classes
+## Classes
 - C# is an object-oriented language (almost everything is a class)
   - all Unity scripts contain a class by default.
 - scope
@@ -195,7 +222,38 @@ public int Level
 //property
 public int Health{ get; set;}
 ```
-### Monobehaviour methods
+
+
+## Enums
+```c#
+public class EnumScript : MonoBehaviour 
+{
+    enum Direction {North, East, South, West};
+
+        void Start () 
+    {
+        Direction myDirection;
+        
+        myDirection = Direction.North;
+    }
+    
+    Direction ReverseDirection (Direction dir)
+    {
+        if(dir == Direction.North)
+            dir = Direction.South;
+        else if(dir == Direction.South)
+            dir = Direction.North;
+        else if(dir == Direction.East)
+            dir = Direction.West;
+        else if(dir == Direction.West)
+            dir = Direction.East;
+        
+        return dir;     
+    }
+}
+```
+# Unity basics
+## Monobehaviour methods
 - Initialization
   - Awake
     - called first
@@ -215,39 +273,7 @@ public int Health{ get; set;}
     - good for physics calculations
     - deterministic
 
-### Vector maths
-- Vector2
-  - https://docs.unity3d.com/ScriptReference/Vector2.html
-- Vector3
-  - https://docs.unity3d.com/ScriptReference/Vector3.html
-  - https://docs.unity3d.com/ScriptReference/Vector3.Dot.html
-  - https://docs.unity3d.com/ScriptReference/Vector3-magnitude.html
-
-
-### Moving stuff around
-- translation & rotation
-```c#
-if(Input.GetKey(KeyCode.UpArrow))
-	transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
-
-if(Input.GetKey(KeyCode.DownArrow))
-	transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);
-
-if(Input.GetKey(KeyCode.LeftArrow))
-	transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
-
-if(Input.GetKey(KeyCode.RightArrow))
-	transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
-```
-- LookAt
-  - `transform.LookAt(target);`
-- AddForce
-
-### Linear interpolation
-- https://learn.unity.com/tutorial/linear-interpolation?uv=2019.3&courseId=5c61706dedbc2a324a9b022d&projectId=5c8920b4edbc2a113b6bc26a#5c8a48bdedbc2a001f47cef6
-
-
-### Getting Input
+## Getting Input
 - `Input.GetKeyDown(KeyCode.Space)`
   - True for one frame when pressed down 
   - Good for jumps, moving in UI, other discrete actions 
@@ -286,9 +312,12 @@ if(Input.GetKey(KeyCode.RightArrow))
         rb.useGravity = true;
     }
 ```
-  - 
 
-### GameObjects
+
+## Important Unity classes
+
+- https://docs.unity3d.com/Manual/ScriptingImportantClasses.html
+### GameObject
 - special unity classes that inherit monobehaviour
 - gameobjects include components
   - refer:
@@ -311,8 +340,82 @@ if(Input.GetKey(KeyCode.RightArrow))
     - false tells if this object is deactivated by itself or by its parents
   - `Destroy()`
   - `Instantiate()`
+### Transform
+- translation & rotation
+```c#
+if(Input.GetKey(KeyCode.UpArrow))
+	transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
 
-# Delayed actions
+if(Input.GetKey(KeyCode.DownArrow))
+	transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);
+
+if(Input.GetKey(KeyCode.LeftArrow))
+	transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
+
+if(Input.GetKey(KeyCode.RightArrow))
+	transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
+```
+- LookAt
+  - `transform.LookAt(target);`
+- AddForce
+### Vector3 & Vector2
+- Vector2
+  - https://docs.unity3d.com/ScriptReference/Vector2.html
+- Vector3
+  - https://docs.unity3d.com/ScriptReference/Vector3.html
+  - https://docs.unity3d.com/ScriptReference/Vector3.Dot.html
+  - https://docs.unity3d.com/ScriptReference/Vector3-magnitude.html
+
+### Mathf, Random, Debug
+- Mathf
+  - https://docs.unity3d.com/Manual/class-Mathf.html
+  - https://docs.unity3d.com/ScriptReference/Mathf.html
+  - Trigonometric functions
+    - radians
+    - Sin, Cos, Tan, Asin, Acos, Atan, Atan2
+    - Rad2Deg, Deg2Rad
+    - PI
+  - Pow, Sqrt, Exp, Log
+  - Interpolation
+    - Lerp, LerpAngle, LerpUnclamped
+    - InverseLerp
+    - Slerp
+    - SmoothDamp(Angle)
+    - SmoothStep
+    - MoveTowards(Angle)
+    - https://learn.unity.com/tutorial/linear-interpolation?uv=2019.3&courseId=5c61706dedbc2a324a9b022d&projectId=5c8920b4edbc2a113b6bc26a#5c8a48bdedbc2a001f47cef6
+  - Limit, repeat
+    - Max, Min
+    - Repeat, PingPong
+    - Clamp, Clamp01
+    - Ceil, Floor
+### Quaternion
+  - A four-dimensional extension of complex numbers with three imaginary axes
+  - WHAT??????
+  - What you really need to know about them:
+    - They're used for representing rotation angles instead of Euler angles that can result in a _gimbal lock_
+    - Most Unity devs don't _really_ need to understand the underlying maths
+  - So, rotation is stored as a quaternion
+    - four components: x, y, z, w
+  - ...but rotation is _shown_ in Inspector with Euler angles
+  - never adjust Quaternion components independently, use ready-made functions from the Quaternion class
+  - `transform.rotation = Quaternion.LookRotation(target.position - transform.position)`
+  - `transform.rotation = Quaternion.LookRotation(target.position - transform.position, new Vector3.Up)`
+ - Slerp
+```c#
+Vector3 relativePos = (target.position + new Vector3(0,.5f,0)) - transform.position;
+
+transform.localRotation = Quaternion.Slerp(transform.localRotation, Quaternion.Lookrotation(relativePos), Time.deltaTime);
+
+transform.Translate(0,0, 3 * Time.deltaTime);
+```
+## Data persistence between scenes
+- https://learn.unity.com/tutorial/implement-data-persistence-between-scenes?pathwayId=5f7e17e1edbc2a5ec21a20af#
+- DontDestroyOnLoad
+- Static classes & class members
+- singleton pattern
+# Unity advanced
+## Delayed actions
 - Invoke
   - if you want to execute something _after_ a given time delay. 
   - Invoke
@@ -352,58 +455,10 @@ if(Input.GetKey(KeyCode.RightArrow))
   - https://learn.unity.com/tutorial/coroutines?uv=2019.3&projectId=5c88f2c1edbc2a001f873ea5#5c894522edbc2a14103553c5
 
 
-# Enums
-```c#
-public class EnumScript : MonoBehaviour 
-{
-    enum Direction {North, East, South, West};
 
-        void Start () 
-    {
-        Direction myDirection;
-        
-        myDirection = Direction.North;
-    }
-    
-    Direction ReverseDirection (Direction dir)
-    {
-        if(dir == Direction.North)
-            dir = Direction.South;
-        else if(dir == Direction.South)
-            dir = Direction.North;
-        else if(dir == Direction.East)
-            dir = Direction.West;
-        else if(dir == Direction.West)
-            dir = Direction.East;
-        
-        return dir;     
-    }
-}
-```
-# 3d transformations
-- Quaternions
-  - A four-dimensional extension of complex numbers with three imaginary axes
-  - WHAT??????
-  - What you really need to know about them:
-    - They're used for representing rotation angles instead of Euler angles that can result in a _gimbal lock_
-    - Most Unity devs don't _really_ need to understand the underlying maths
-  - So, rotation is stored as a quaternion
-    - four components: x, y, z, w
-  - ...but rotation is _shown_ in Inspector with Euler angles
-  - never adjust Quaternion components independently, use ready-made functions from the Quaternion class
-  - `transform.rotation = Quaternion.LookRotation(target.position - transform.position)`
-  - `transform.rotation = Quaternion.LookRotation(target.position - transform.position, new Vector3.Up)`
- - Slerp
-```c#
-Vector3 relativePos = (target.position + new Vector3(0,.5f,0)) - transform.position;
+## Delegates and Events (3b)
 
-transform.localRotation = Quaternion.Slerp(transform.localRotation, Quaternion.Lookrotation(relativePos), Time.deltaTime);
-
-transform.Translate(0,0, 3 * Time.deltaTime);
-```
-# Delegates and Events (3b)
-
-## Delegates
+### Delegates
 - Delegate: a container for a function that can be passed around or used like a variable
 - variables only contain data, but delegates can contain functions
 - let's create a delegate signature - a reference for a type of delegate
@@ -466,7 +521,7 @@ void Start()
 ```
 - now both PrimaryAttack and SecondaryAttack trigger when attack is called.
 
-## Events
+### Events
 - observer pattern
   - http://gameprogrammingpatterns.com/observer.html
 - Events are specialized multicast delegates
@@ -496,7 +551,7 @@ public class PlayerHealth : MonoBehaviour
 
 - https://learn.unity.com/tutorial/events-uh?uv=2019.3&projectId=5c88f2c1edbc2a001f873ea5#5c894782edbc2a1410355442
 
-## Actions 
+### Actions 
 - it can sometimes be inconvenient to declare a new delegate type every time you want to use one
 - especially if all you want to do is create a basic event
 - Actions allow you to use a generic delegate type without needing to define it in your script first
@@ -529,7 +584,7 @@ public void TakeDamage(float damage)
 
 
 
-## Unity Events
+### Unity Events
 - to confuse matters further, Unity has its own Unity Event system as well.
 - good stuff
   - you won't need to nullcheck Unity Events.
@@ -600,7 +655,7 @@ public class HealthBar : MonoBehaviour
   - when connecting events between unrelated objects, you may find it more useful to use event delegates instead.
   - to overcome this, there's the Scriptable Object Unity Event :)))))))
 
-## Scriptable object Unity Event
+### Scriptable object Unity Event
 
 ```c#
 using System.Collections.Generic;
@@ -657,14 +712,11 @@ public class GameEventListener : MonoBehaviour
 }
 ```
 
-# Generics, IEnumerable (4c)
-
-# 
+## Generics, IEnumerable (4c)
 
 
-# Important Unity classes
 
-- https://docs.unity3d.com/Manual/ScriptingImportantClasses.html
+
 
 ## ScriptableObject
 - A class that derives from the base Unity object but cannot be attached to a GameObject
