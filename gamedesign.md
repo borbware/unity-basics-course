@@ -3,8 +3,8 @@
 ## Basic principles
 - Start small. No, smaller than that.
 - small integers
-- more with less
-  - dual purpose design
+- dual purpose design
+  - more with less
 - meaningful choices
 - Follow the fun
 - Kishotenketsu
@@ -18,9 +18,11 @@
   - Obvious solution fails
 - Show the lock before the key
 - Intensity graph
+  - Ebb and flow
 - Game feel in isolation
-- Self-explanatory mechanics
+- Self-explanatory mechanicsa
 - Invisible tutorial
 - Designing for different types of players
 - Does this solve multiple problems at once?
+- Realistic vs gameistic
 ## game design document
