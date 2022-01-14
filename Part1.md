@@ -8,7 +8,7 @@
 - [Week 2: Scripting & Game design](#week-2-scripting--game-design)
   - [Week project: Asteroids](#week-project-asteroids)
 - [Week 3: Building a game](#week-3-building-a-game)
-  - [Week project: top-down arcade](#week-project-top-down-arcade)
+  - [Week project: top-down arcade shooter](#week-project-top-down-arcade-shooter)
 - [Week 4: Advanced techniques](#week-4-advanced-techniques)
   - [Week project](#week-project)
 
@@ -31,8 +31,10 @@
   - Github/lab
   - Itch.io
 - Video Game Industry introduction
+- Erikoistuminen
 - Unity basics (in 3d)
 - VS code basics
+  - hyötyä visual studiosta?
 - C# basics (if there's time.)
 
 ## Unity basics
@@ -94,6 +96,10 @@
 Emphasis: Learning C#
 - Unity basics (in 2d)
 - Rigidbodies
+  - AddTorque
+  - AddForce
+- Collision
+- Movement
 - 2d physics
 - Collision
 - [C# basics 2/2](#c-basics)
@@ -111,9 +117,8 @@ Emphasis: Learning C#
 - 1 screen, passive enemies
 - Playing Audio
 - Singleton
+- Instantiate and Destroy
 - Rigidbody
-  - AddTorque
-  - AddForce
 - screen wrap
 
 # Week 3: Building a game
@@ -122,6 +127,7 @@ Emphasis: Learning C#
   - Graphics, 2d
   - Sound fx
   - Music
+  - Level design
 - Moving between scenes
 - Sprites
 - Sprite Animation
@@ -141,7 +147,7 @@ Emphasis: Learning C#
 
 Emphasis: scene & data management
 
-## Week project: top-down arcade
+## Week project: top-down arcade shooter
 
 - many levels
 - game over screen
@@ -154,6 +160,7 @@ Emphasis: scene & data management
 - Game design
 - Game programming patterns
 - [Unity advanced](#unity-advanced)
+  - entity-component-system (ECS)
 	- [Delayed actions](#delayed-actions)
 	- [Delegates and Events (3b)](#delegates-and-events-3b)
 		- [Delegates](#delegates)
@@ -165,5 +172,6 @@ Emphasis: scene & data management
 	- [ScriptableObject](#scriptableobject)
   
 ## Week project
+- ???
 - RPG-taistelu
 - Vaihtoehto: 2d platformer

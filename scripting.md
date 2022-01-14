@@ -1,29 +1,31 @@
 - [C# basics](#c-basics)
-	- [Variables and conditionals](#variables-and-conditionals)
-	- [Conventions](#conventions)
-	- [Arrays and Loops](#arrays-and-loops)
-	- [Classes](#classes)
-	- [Enums](#enums)
+  - [Variables and conditionals](#variables-and-conditionals)
+  - [Conventions](#conventions)
+  - [Arrays and Loops](#arrays-and-loops)
+  - [Classes](#classes)
+  - [Enums](#enums)
 - [Unity basics](#unity-basics)
-	- [Monobehaviour methods](#monobehaviour-methods)
-	- [Getting Input](#getting-input)
-	- [Important Unity classes](#important-unity-classes)
-		- [GameObject](#gameobject)
-		- [Transform](#transform)
-		- [Vector3 & Vector2](#vector3--vector2)
-		- [Mathf, Random, Debug](#mathf-random-debug)
-		- [Quaternion](#quaternion)
-	- [Data persistence between scenes](#data-persistence-between-scenes)
+  - [Monobehaviour methods](#monobehaviour-methods)
+  - [Getting Input](#getting-input)
+  - [Important Unity classes](#important-unity-classes)
+    - [GameObject](#gameobject)
+    - [Transform](#transform)
+    - [Vector3 & Vector2](#vector3--vector2)
+    - [Mathf, Random, Debug](#mathf-random-debug)
+    - [Quaternion](#quaternion)
+  - [Data persistence between scenes](#data-persistence-between-scenes)
 - [Unity advanced](#unity-advanced)
-	- [Delayed actions](#delayed-actions)
-	- [Delegates and Events (3b)](#delegates-and-events-3b)
-		- [Delegates](#delegates)
-		- [Events](#events)
-		- [Actions](#actions)
-		- [Unity Events](#unity-events)
-		- [Scriptable object Unity Event](#scriptable-object-unity-event)
-	- [Generics, IEnumerable (4c)](#generics-ienumerable-4c)
-	- [ScriptableObject](#scriptableobject)
+  - [Delayed actions](#delayed-actions)
+  - [Delegates and Events (3b)](#delegates-and-events-3b)
+    - [Delegates](#delegates)
+    - [Events](#events)
+    - [Actions](#actions)
+    - [Unity Events](#unity-events)
+    - [Scriptable object Unity Event](#scriptable-object-unity-event)
+  - [Generics, IEnumerable (4c)](#generics-ienumerable-4c)
+  - [ScriptableObject](#scriptableobject)
+  - [unity main loop, execution order](#unity-main-loop-execution-order)
+  - [Entity component system](#entity-component-system)
 # C# basics
 
 ## Variables and conditionals
@@ -776,3 +778,9 @@ public class Spawner : MonoBehaviour
     }
 }
 ```
+
+## unity main loop, execution order
+
+## Entity component system
+
+- salama-tuli-vesi systeemi
