@@ -1,6 +1,25 @@
-# Week 1: The tools of the trade
+# Overview
 
-Emphasis: Familiriazing with the tools, learning Unity interface. Only a bit coding
+- [Overview](#overview)
+- [Week 1: The toolkit](#week-1-the-toolkit)
+  - [Unity basics](#unity-basics)
+  - [Exercises](#exercises)
+  - [Week project: CatlikeCoding clock](#week-project-catlikecoding-clock)
+- [Week 2: Scripting & Game design](#week-2-scripting--game-design)
+  - [Week project: Asteroids](#week-project-asteroids)
+- [Week 3: Building a game](#week-3-building-a-game)
+  - [Week project: top-down arcade](#week-project-top-down-arcade)
+- [Week 4: Advanced techniques](#week-4-advanced-techniques)
+  - [Week project](#week-project)
+
+- Week 1
+  - Familiarizing with the tools, learning the Unity interface. Only a bit coding.
+  - Editor views, GameObjects, Components, Prefabs, basic scripting. 
+- Week 2
+  - More C# concepts. Important Unity classes like GameObject, Transform and Vector2.
+  - Rigidbodies, 2d physics, collision
+
+# Week 1: The toolkit
 
 - Installing tools
   - Unity
@@ -76,6 +95,7 @@ Emphasis: Learning C#
 - Unity basics (in 2d)
 - Rigidbodies
 - 2d physics
+- Collision
 - [C# basics 2/2](#c-basics)
 	- [Classes](#classes)
 	- [Enums](#enums)
