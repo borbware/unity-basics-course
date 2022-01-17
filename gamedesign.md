@@ -3,6 +3,8 @@
 ## Basic principles
 - Start small. No, smaller than that.
 - small integers
+- versatile verbs
+  - Maniac Mansion
 - dual purpose design
   - more with less
 - meaningful choices
@@ -20,9 +22,14 @@
 - Intensity graph
   - Ebb and flow
 - Game feel in isolation
-- Self-explanatory mechanicsa
+- Self-explanatory mechanics
+  - water takes out fire
 - Invisible tutorial
 - Designing for different types of players
 - Does this solve multiple problems at once?
 - Realistic vs gameistic
+
+
 ## game design document
+
+Idea -> ( Prototype -> Playtesting -> ) -> GDD 
