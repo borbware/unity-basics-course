@@ -11,3 +11,14 @@
     - object is controlled directly
     - only queries the physics engine for collisions
 
+Collision
+
+- OnCollisionEnter / OnCollisionEnter2D
+  - when collision with another collider starts
+- OnCollisionExit / OnCollisionExit2D
+  - when collision with another collider starts
+- OnCollisionStay / OnCollisionStay2D
+  - called every frame a collider is in contact
+- if collider IsTrigger, then it does not stop other colliders, but only detects if something collides with it.
+  - Then, collision functions are replaced with OnTriggerEnter, OnTriggerExit, OnTriggerStay
+  - Guess the 2D versions.

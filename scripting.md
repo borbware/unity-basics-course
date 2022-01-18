@@ -145,6 +145,9 @@ void Start ()
 - Unity's own update loops
   - `Update()`
   - `FixedUpdate()`
+  - `LateUpdate()`
+    - called every frame after `Update()`.
+    - good for something that has to happen after Update (own or any other game object's!)
 
 
 
@@ -361,6 +364,8 @@ if(Input.GetKey(KeyCode.RightArrow))
   - `transform.LookAt(target);`
 - AddForce
 ### Vector3 & Vector2
+- Understanding Vector Arithmetic
+  - https://docs.unity3d.com/2019.3/Documentation/Manual/UnderstandingVectorArithmetic.html
 - Vector2
   - https://docs.unity3d.com/ScriptReference/Vector2.html
 - Vector3
