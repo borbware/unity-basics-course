@@ -31,3 +31,9 @@
 - [ALT+U] Insert edge loop
 - Shift+drag: Extrude facere
 - [P] Orientation: local / global / normal
+
+
+# Extra tools
+
+- Drag & drop
+  - https://www.youtube.com/watch?v=0yHBDZHLRbQ

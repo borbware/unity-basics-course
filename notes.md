@@ -27,13 +27,6 @@
 - [CTRL+.] for auto-"using" / auto-creating missing functions
 - [CTRL+Ö] for showing/hiding terminal
   
-# Collaboration in Unity
-
-- logging into Github
-  - cannot use password anymore, you have to create a token for https. https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/#what-you-need-to-do-today
-  - repo, workflow, gist
-
-
 # Snippets
 - check component type:
   - `c.GetType() == typeof(Transform)`

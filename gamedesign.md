@@ -1,6 +1,11 @@
 # Game design
 
+- The job of a game designer is that of a gardener
+  - nourish good ideas
+  - nip unnecessary and harmful weeds in the bud
+  - grow a functional system enclosed in a limited space
 ## Basic principles
+
 - Start small. No, smaller than that.
 - small integers
 - versatile verbs
