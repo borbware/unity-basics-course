@@ -155,15 +155,19 @@ void Start ()
 - C# is an object-oriented language (almost everything is a class)
   - all Unity scripts contain a class by default.
 - scope
-- accessing class members
-  - dot operator
-  - most important access modifiers
-    - `public`
-    - `private`
-    - `[SerializeField]`
-- inheritance with :
-- MonoBehaviour class
+- accessing class members with `.`
+- most important access modifiers
+  - `[SerializeField]`
+  - `public`
+  - `private`
+  - `protected`
+    - like `private`, but inheritors can access the property
+  - `virtual`
+    - can get overridden by inheritors
+- inheritance with `:`
 - constructors
+  - `this`
+- MonoBehaviour class
 - reference vs value
   - value types actually contain the value
   - reference types contain the memory address to where the value is stored
@@ -730,7 +734,7 @@ public class GameEventListener : MonoBehaviour
   - instead, needs to be saved as an asset
 - The main use cases for ScriptableObjects are:
   - Saving and storing data during an Editor session
-  - Saving data as an Asset in your Project to use at run time
+  - Saving data as an Asset in your Project to use at runtime
 - https://docs.unity3d.com/Manual/class-ScriptableObject.html
 ```c#
 using UnityEngine;
