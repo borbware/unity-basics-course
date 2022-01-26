@@ -45,13 +45,23 @@
 ## Editor window
 
 - Hierarchy
+  - list of game objects in scene
+  - double click to show in Scene view
 - Scene & Game
+  - scene: the level editor
+  - game: the running game
 - Inspector
+  - list of components inside a game object
+  - drag variable to change value
 - Project
 - Console
 - Play & pause
 - Adding new stuff
 - Moving around existing stuff with QWERTY tools
+
+- Shortcuts
+  - [CTRL+C] + [CTRL+V] copy & paste
+  - [CTRL+D] duplicate
 
 ## Game Objects
 - 3d objects
@@ -63,6 +73,7 @@
 
 ## Components
 - Transform
+- Collider
 - Mesh
 - Material
 - Script
