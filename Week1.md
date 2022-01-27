@@ -57,7 +57,7 @@
 ## About Unity
 
 - A commericial closed-source game engine
-- Free to use for projects under $100 000 revenue
+- Free to use for projects under $100000 revenue
 - pretty much the industry standard
 	- plenty of resources available online!
 - ubiquitous especially in game jams & mobile
@@ -204,35 +204,15 @@
   - custom C# code
   - the most versatile component
 
-## Project window
-
-- List of Assets & Packages in your projects
-- Assets
-	- Scenes
-	- Prefabricated game objects
-	- Graphics
-	- Sound effects
-	- Music
-
-## Console
-
-- Error messages
-- Debug messages
-
-## Game Window
-
-- Simulates what your final rendered game will look like through your Scene Cameras
-- Play & pause buttons
-- When game is running, you can still
-
 ---
 
 ### Exercise 2.
 
 Create a clock with three hands and 12 indicators.
-Create a duplicate of the clock!
 
 ---
+
+# Day 2
 
 ## Prefabs
 - prefabricated object
@@ -242,6 +222,7 @@ Create a duplicate of the clock!
 - this means it's now an instance of a prefab
 - overridden values in Inspector are indicated in **bold** 
 - Open, Select, Overrides
+
 ## Tags & Layers
 - Edit > Project Settings > Tags and Layers
 - Tags
@@ -256,7 +237,61 @@ Create a duplicate of the clock!
 	- Inspector > Camera > Culling Mask > Layers
 - Ignore some layers in Viewport
 	- Top right: Layers...
-## Scripting
+
+
+## Game Window
+
+- Simulates what your final rendered game will look like through your Scene Cameras
+- Play & pause buttons
+- When game is running, you can still manipulate the values in the Inspector window
+  - a nice way to mess around and find the right values for physics interactions etc.
+  - changes made during the play mode do not persist!!!!
+  - protip: change play mode tint in Edit > Preferences > Colors to red.
+  - 5% less frustration!
+
+## Project window
+
+- List of Assets & Packages in your projects
+- Assets
+	- Scenes
+	- Materials
+	- Prefabricated game objects
+	- Graphics
+	- Sound effects
+	- Music
+
+## Console
+
+- Error messages
+- Debug messages
+
+---
+
+### Exercise 3.
+
+Duplicate your clock.
+
+---
+
+
+# Day 3
+
+Git basics
+
+---
+
+### Exercise x.
+
+Create a Github account.
+Create a new repository with the Unity .gitignore template.
+Initialize Git in your Week project folder, and push the project files to Github.
+
+---
+
+
+# Day 4
+
+## Scripting basics
 
 - adding functionality with C# script components
 - [C# basics 1/2](#c-basics)
@@ -266,12 +301,8 @@ Create a duplicate of the clock!
 
 ---
 
-### Exercise 3.
+### Exercise 4.
 
 Make the clock hands move when time goes on.
 
 ---
-
-### Week project: CatlikeCoding clock
-
-- Vaihtoehto: adding stuff to FPS with premade controller & assets
