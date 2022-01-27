@@ -23,7 +23,8 @@
     - [Unity Events](#unity-events)
     - [Scriptable object Unity Event](#scriptable-object-unity-event)
   - [Generics, IEnumerable (4c)](#generics-ienumerable-4c)
-  - [ScriptableObject](#scriptableobject)
+  - [Scriptable Object](#scriptable-object)
+    - [Simple example](#simple-example)
   - [unity main loop, execution order](#unity-main-loop-execution-order)
   - [Entity component system](#entity-component-system)
 # C# basics
@@ -729,17 +730,43 @@ public class GameEventListener : MonoBehaviour
 
 
 
-## ScriptableObject
-- A class that derives from the base Unity object but cannot be attached to a GameObject
-  - instead, needs to be saved as an asset
-- The main use cases for ScriptableObjects are:
-  - Saving and storing data during an Editor session
-  - Saving data as an Asset in your Project to use at runtime
-- https://docs.unity3d.com/Manual/class-ScriptableObject.html
+## Scriptable Object
+- class for storing data
+- usually used an asset template
+  - can be made accessible from the Create Asset menu!
+- derives from the base Unity object but cannot be attached to a GameObject
+- life-saver if gameobject needs easily-swappable data
+- [Scriptable Object in Unity Docs](https://docs.unity3d.com/Manual/class-ScriptableObject.html)
+- [Brackeys tutorial](https://www.youtube.com/watch?v=aPXvoWVabPY)
+
+### Simple example
+
+- Create new class that inherits from ScriptableObject
+
 ```c#
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/SpawnManagerScriptableObject", order = 1)]
+[CreateAssetMenu(fileName = "New Mana Card", menuName = "Cards/ManaCard")]
+public class Card : ScriptableObject
+{
+    public new string name;
+    public string description;
+    public int amountOfMana;
+    public ManaEnum manaType;
+}
+```
+
+- Create a few new templates based on the Scriptable object from the Asset menu
+- Refer to the Card class as a SerializeField in a GameObject
+- drag the card template of your choice to the field in Inspector
+- ta-da, the data from Card is now available in the gameobject
+
+
+
+```c#
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "Spawn Manager", menuName = "ScriptableObjects/SpawnManagerScriptableObject", order = 1)]
 public class SpawnManagerScriptableObject : ScriptableObject
 {
     public string prefabName;
