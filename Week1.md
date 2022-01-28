@@ -17,7 +17,7 @@
 	- hyötyä visual studiosta?
 - C# basics
 
-# Day 1
+# Day 1: Introduction
 
 ## About me
 
@@ -49,6 +49,8 @@
 - What kind of a video game would you like to work on?
 - What was your first video game experience?
 - What is the last video game you played?
+- Most disappointing game
+- The worst game you've played
 
 ## About game development
 
@@ -78,13 +80,15 @@
 
 ## Installing the tools
 
-- Unity
+- Unity Hub & Unity LTS version XX.XX
 - VS Code
+  - during install: add to context menu
 - Discord
 - Personal accounts
 	- Discord
 	- Unity
-	- later: Github/lab
+	- Google (Google Drive & Docs)
+	- later: Github
 	- even later: Itch.io
 
 ---
@@ -113,7 +117,7 @@
 
 ## Editor views
 
-- [Unity's Interface in the Docs](https://docs.unity3d.com/Manual/UsingTheEditor.html)
+- [Unity's Interface in Docs](https://docs.unity3d.com/Manual/UsingTheEditor.html)
 - Views
   - Hierarchy window
   - Scene view
@@ -127,10 +131,12 @@
 
 ## Hierarchy window
 
+- [Hierarchy in Docs](https://docs.unity3d.com/Manual/Hierarchy.html)
 - shows the list of game objects in a **scene**
 - double click to show object in Scene view
 - game objects can be nested
   - parent vs child
+  - position/rotation/scale is inherited from parent
 - Add new game objects: [RMB] + choose from list
 
 ## Scene view
@@ -156,6 +162,7 @@
 
 ### Toolbar
 
+- [Toolbar in Docs](https://docs.unity3d.com/Manual/Toolbar.html)
 - for manipulating existing stuff
 - activating the tool changes the [LMB] behaviour
 - navigation shortcuts still available in other tools!
@@ -174,6 +181,8 @@
 - Local / Global
 
 ## Inspector window
+
+- [Inspector in Docs](https://docs.unity3d.com/Manual/UsingTheInspector.html)
 - Game object properties
   - Active (the checkbox)
   - Name
@@ -182,8 +191,6 @@
 - list of components inside a game object
 - components can be turned off
 - drag variable to change value
-
-
 
 ## Components
 
@@ -212,7 +219,8 @@ Create a clock with three hands and 12 indicators.
 
 ---
 
-# Day 2
+# Day 2: Assets
+
 
 ## Prefabs
 - prefabricated object
@@ -239,8 +247,9 @@ Create a clock with three hands and 12 indicators.
 	- Top right: Layers...
 
 
-## Game Window
+## Game view
 
+- [Game view in Docs](https://docs.unity3d.com/Manual/GameView.html)
 - Simulates what your final rendered game will look like through your Scene Cameras
 - Play & pause buttons
 - When game is running, you can still manipulate the values in the Inspector window
@@ -251,6 +260,7 @@ Create a clock with three hands and 12 indicators.
 
 ## Project window
 
+- [Project window in Docs](https://docs.unity3d.com/Manual/ProjectView.html)
 - List of Assets & Packages in your projects
 - Assets
 	- Scenes
@@ -274,7 +284,7 @@ Duplicate your clock.
 ---
 
 
-# Day 3
+# Day 3: Git
 
 Git basics
 
@@ -306,3 +316,15 @@ Initialize Git in your Week project folder, and push the project files to Github
 Make the clock hands move when time goes on.
 
 ---
+
+
+# Day 5
+
+## Working on week project
+
+- one-on-one meetings
+
+## Week project presentations????? Seuraavalla viikolla??????
+
+- playtesting
+- iteration based on feedback

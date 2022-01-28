@@ -6,6 +6,7 @@
 		- [Sound fx](#sound-fx)
 		- [Music](#music)
 		- [Levels](#levels)
+	- [Constraints](#constraints)
 	- [Scene management](#scene-management)
 	- [Sprites](#sprites)
 	- [Collaboration in Unity](#collaboration-in-unity)
@@ -90,6 +91,9 @@ Emphasis: scene & data management?
 - ProBuilder
   - a package for Unity for grayboxing 3d levels
   - another option: Blender3d
+
+
+## Constraints
 ## Scene management
 
 - Moving between scenes

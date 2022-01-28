@@ -141,7 +141,7 @@ void Start ()
 
 - For
 - While
-- Do While
+- (Do While)
 - Foreach
 - Unity's own update loops
   - `Update()`
