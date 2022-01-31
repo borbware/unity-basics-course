@@ -7,6 +7,7 @@
 - [Unity basics](#unity-basics)
   - [Monobehaviour methods](#monobehaviour-methods)
   - [Getting Input](#getting-input)
+  - [Adding stuff to inspector with code](#adding-stuff-to-inspector-with-code)
   - [Important Unity classes](#important-unity-classes)
     - [GameObject](#gameobject)
     - [Transform](#transform)
@@ -164,9 +165,6 @@ void Start ()
     - like `private`, but inheritors can access the property
   - `virtual`
     - can get overridden by inheritors
-  - `[SerializeField]`
-  - Extra: `[Header("Explainer for UI")]`
-  - great for team communication
 - inheritance with `:`
 - constructors
   - `this`
@@ -287,6 +285,20 @@ public class EnumScript : MonoBehaviour
     - deterministic
 
 ## Getting Input
+
+- [Docs: Input](https://docs.unity3d.com/Manual/Input.html)
+- There are two ways to get input in Unity
+- The legacy **Input Manager**
+  - uses Directinput
+  - works almost always (TM)
+  - sometimes controller axes are screwed up
+- The new **Input System**
+  - [Docs: Input system](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.3/manual/index.html)
+  - needs to be installed as a package
+  - action-based
+  - supports XInput
+
+
 - `Input.GetKeyDown(KeyCode.Space)`
   - True for one frame when pressed down 
   - Good for jumps, moving in UI, other discrete actions 
@@ -325,6 +337,15 @@ public class EnumScript : MonoBehaviour
         rb.useGravity = true;
     }
 ```
+
+## Adding stuff to inspector with code
+
+- public variables
+- `[SerializeField]`
+- Extra: `[Header("Explainer for UI")]`
+  - great for team communication
+- `[Range(x,x)]`
+  - slider for inspector
 
 
 ## Important Unity classes

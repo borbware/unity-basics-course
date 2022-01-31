@@ -66,11 +66,19 @@
 
 ## The Unity Experience
 
+- Unity has been around for a long time now
+- 3.0 was the first version on Windows
+- 
 - Unity is updated continuously
   - usually people are stuck with the version they started the project with
-  - -> multiple versions on the same machine
-  - about 4 gigs per install
-  - Unity Hub!
+    - -> multiple versions on the same machine
+    - about 4 gigs per install
+    - Unity Hub!
+  - Old features & programming styles are deprecated and new ones are introduced
+    - it helps a ton if you familiarize yourself with Unity history
+    - some people are stuck with the old ways
+    - it's useful to know which ways are old and which are still encouraged today
+    - then again, tomorrow everything might have changed
 - can occasionally crash
   - save your work constantly!
 - Unity does many things for you that you do not need to know about
