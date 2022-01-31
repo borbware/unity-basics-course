@@ -158,13 +158,15 @@ void Start ()
 - scope
 - accessing class members with `.`
 - most important access modifiers
-  - `[SerializeField]`
   - `public`
   - `private`
   - `protected`
     - like `private`, but inheritors can access the property
   - `virtual`
     - can get overridden by inheritors
+  - `[SerializeField]`
+  - Extra: `[Header("Explainer for UI")]`
+  - great for team communication
 - inheritance with `:`
 - constructors
   - `this`
@@ -264,6 +266,7 @@ public class EnumScript : MonoBehaviour
 ```
 # Unity basics
 ## Monobehaviour methods
+- Unity components inherit from Monobehaviour
 - Initialization
   - Awake
     - called first

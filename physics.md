@@ -1,6 +1,7 @@
 # Unity physics
 
-- Unity uses NVIDIA's PhysX for its physics
+- In 3D, Unity uses NVIDIA's PhysX for its physics
+- In 2D, Box2D
 - by default, its gravitational acceleration is 9.81m/s^2
 - There are two ways objects can interact with the physics engine
   - RigidBody

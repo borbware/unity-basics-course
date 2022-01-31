@@ -29,7 +29,7 @@
 
 ## About this course
 
-- We will make video games with Unity
+- We will make multiple video games with Unity
 - Course is separated into three stages
 - Stage 1
     - Learn the basics of Unity & game programming
@@ -52,10 +52,6 @@
 - Most disappointing game
 - The worst game you've played
 
-## About game development
-
-## About game engines
-
 ## About Unity
 
 - A commericial closed-source game engine
@@ -77,6 +73,28 @@
   - Unity Hub!
 - can occasionally crash
   - save your work constantly!
+- Unity does many things for you that you do not need to know about
+  - treat some aspects of Unity as black boxes
+  - you give them input, and they give the desired output
+
+### The Asset Store
+
+- you can download assets to your project from the Asset Store
+- Some assets are free, some paid
+- 3D models, tools, controllers, ...
+- With the Asset store, you don't have to reinvent every single wheel
+  - Get the ball rolling and prototype quickly
+  - But beware - this isn't a free lunch
+  - You become dependent on third-party code
+  - Sometimes it's faster to make your own system than learn another person's way of thinking
+
+### The Unity Way
+
+- There are usually many ways to approach a problem
+- Sometimes, implementing something feels downright impossible!
+- The reason might be that you're swimming against the current
+  - you're not doing it the way Unity wants you to do it!
+  - accustoming yourself to others' Unity projects gives you perspective 
 
 ## Installing the tools
 
@@ -142,7 +160,10 @@
 ## Scene view
 
 ### Navigation
- - [Scene view navigation in Docs](https://docs.unity3d.com/Manual/SceneViewNavigation.html)
+
+![the scene view](imgs/week1-sceneview.png)
+
+- [Scene view navigation in Docs](https://docs.unity3d.com/Manual/SceneViewNavigation.html)
 - navigation shortcuts
   - move: [MMB]
   - orbit: [ALT+LMB]
@@ -158,7 +179,6 @@
 ## Shortcuts for scene & hierarchy
   - [CTRL+C] + [CTRL+V] copy & paste
   - [CTRL+D] duplicate
-
 
 ### Toolbar
 
@@ -215,41 +235,18 @@
 
 ### Exercise 2.
 
-Create a clock with three hands and 12 indicators.
+Create a 3D model of a clock from Unity's primitives with three hands and 12 hour indicators.
+
+![3d clock](imgs/week1-catlikeclock.png)
 
 ---
 
 # Day 2: Assets
 
 
-## Prefabs
-- prefabricated object
-- "same thing, but what if many"
-- drag a gameobject from Hierarchy to Project view
-- it turns blue! 
-- this means it's now an instance of a prefab
-- overridden values in Inspector are indicated in **bold** 
-- Open, Select, Overrides
-
-## Tags & Layers
-- Edit > Project Settings > Tags and Layers
-- Tags
-- GameObject.FindWithtag("tagname");
-- GameObject.FindGameObjectsWithTag("tagname");
-- Layers
-- Some layers...
-	- Default
-	- Ignore Raycast
-	- Custom
-- Ignore some layers in camera
-	- Inspector > Camera > Culling Mask > Layers
-- Ignore some layers in Viewport
-	- Top right: Layers...
-
-
 ## Game view
 
-- [Game view in Docs](https://docs.unity3d.com/Manual/GameView.html)
+- [Docs: Game view](https://docs.unity3d.com/Manual/GameView.html)
 - Simulates what your final rendered game will look like through your Scene Cameras
 - Play & pause buttons
 - When game is running, you can still manipulate the values in the Inspector window
@@ -260,7 +257,7 @@ Create a clock with three hands and 12 indicators.
 
 ## Project window
 
-- [Project window in Docs](https://docs.unity3d.com/Manual/ProjectView.html)
+- [Docs: Project window](https://docs.unity3d.com/Manual/ProjectView.html)
 - List of Assets & Packages in your projects
 - Assets
 	- Scenes
@@ -269,6 +266,50 @@ Create a clock with three hands and 12 indicators.
 	- Graphics
 	- Sound effects
 	- Music
+
+## Prefabs
+- [Docs: Prefabs](https://docs.unity3d.com/Manual/Prefabs.html)
+- short for prefabricated object
+- use cases...
+  - "Same thing, but what if many?"
+    - also, objects that share common traits but have different *overrides*
+  - objects you want to instantiate during runtime
+- How to turn a gameobject into a prefab:
+  - [Docs: Creating Prefabs](https://docs.unity3d.com/Manual/CreatingPrefabs.html)
+  - drag a gameobject from Hierarchy to Project view
+  - it turns blue! 
+  - this means it's now an instance of a prefab
+- overridden values in Inspector are indicated in **bold**
+- special buttons
+  - [Docs: Editing a Prefab via its instances](https://docs.unity3d.com/Manual/EditingPrefabViaInstance.html)
+  - Open
+    - opens the prefab in Prefab mode, a scene where only the prefab exists
+    - [Docs: Editing a Prefab in Prefab mode](https://docs.unity3d.com/Manual/EditingInPrefabMode.html)
+  - Select
+    - selects the Prefab asset in the Project window
+  - Overrides dropdown
+    - variations for the prefab presets
+    - when you make changes into a prefab instance, you can set those changes to be the new default
+    - [Docs: Instance overrides](https://docs.unity3d.com/Manual/PrefabInstanceOverrides.html)
+
+## Tags & Layers
+- Edit > Project Settings > Tags and Layers
+### Tags
+- GameObject.FindWithtag("tagname");
+- GameObject.FindGameObjectsWithTag("tagname");
+### Layers
+- [Docs: Layers](https://docs.unity3d.com/Manual/Layers.html)
+- Some layers...
+	- Default
+	- Ignore Raycast
+	- Custom
+- Ignore some layers in camera
+	- Inspector > Camera > Culling Mask > Layers
+- Ignore some layers in Viewport
+	- Top right: Layers...
+- Layers can be used for selective collision detection
+  - [Docs: Layer-based collision detection](https://docs.unity3d.com/Manual/LayerBasedCollision.html)
+
 
 ## Console
 
