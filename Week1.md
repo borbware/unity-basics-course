@@ -52,6 +52,8 @@
 - Most disappointing game
 - The worst game you've played
 
+## Pienryhmiin jako
+
 ## About Unity
 
 - A commericial closed-source game engine
@@ -372,8 +374,13 @@ Make the clock hands move when time goes on.
 ## Working on week project
 
 - one-on-one meetings
+  - useana päivänä, ei riitä perjantai
+  - ehkä vain eka viikolla kaikille???
 
-## Week project presentations????? Seuraavalla viikolla??????
+## Week project presentations
 
 - playtesting
 - iteration based on feedback
+
+
+- nopat, pelinappulat, kynäpaperit

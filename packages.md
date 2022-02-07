@@ -26,3 +26,6 @@
   - for faster tilemapping
 - TextMeshPro
   - asdf
+- Unity Recorder
+  - for marketing: recording video in the Play mode
+  - https://docs.unity3d.com/Packages/com.unity.recorder@2.0/manual/index.html
