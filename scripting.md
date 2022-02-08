@@ -11,9 +11,8 @@
   - [Important Unity classes](#important-unity-classes)
     - [GameObject](#gameobject)
     - [Transform](#transform)
-    - [Vector3 & Vector2](#vector3--vector2)
     - [Mathf, Random, Debug](#mathf-random-debug)
-    - [Quaternion](#quaternion)
+    - [Vector3 & Vector2](#vector3--vector2)
   - [Data persistence between scenes](#data-persistence-between-scenes)
 - [Unity advanced](#unity-advanced)
   - [Delayed actions](#delayed-actions)
@@ -263,6 +262,9 @@ public class EnumScript : MonoBehaviour
 }
 ```
 # Unity basics
+
+
+- [Stack Overflow: Component vs Behaviour vs Monobehaviour](https://stackoverflow.com/questions/44540747/what-is-the-difference-between-component-behaviour-and-monobehaviour-and-why-t)
 ## Monobehaviour methods
 - Unity components inherit from Monobehaviour
 - Initialization
@@ -351,6 +353,8 @@ public class EnumScript : MonoBehaviour
 ## Important Unity classes
 
 - https://docs.unity3d.com/Manual/ScriptingImportantClasses.html
+
+
 ### GameObject
 - special unity classes that inherit monobehaviour
 - gameobjects include components
@@ -392,59 +396,15 @@ if(Input.GetKey(KeyCode.RightArrow))
 - LookAt
   - `transform.LookAt(target);`
 - AddForce
-### Vector3 & Vector2
-- Understanding Vector Arithmetic
-  - https://docs.unity3d.com/2019.3/Documentation/Manual/UnderstandingVectorArithmetic.html
-- Vector2
-  - https://docs.unity3d.com/ScriptReference/Vector2.html
-- Vector3
-  - https://docs.unity3d.com/ScriptReference/Vector3.html
-  - https://docs.unity3d.com/ScriptReference/Vector3.Dot.html
-  - https://docs.unity3d.com/ScriptReference/Vector3-magnitude.html
 
 ### Mathf, Random, Debug
-- Mathf
-  - https://docs.unity3d.com/Manual/class-Mathf.html
-  - https://docs.unity3d.com/ScriptReference/Mathf.html
-  - Trigonometric functions
-    - radians
-    - Sin, Cos, Tan, Asin, Acos, Atan, Atan2
-    - Rad2Deg, Deg2Rad
-    - PI
-  - Pow, Sqrt, Exp, Log
-  - Interpolation
-    - Lerp, LerpAngle, LerpUnclamped
-    - InverseLerp
-    - Slerp
-    - SmoothDamp(Angle)
-    - SmoothStep
-    - MoveTowards(Angle)
-    - https://learn.unity.com/tutorial/linear-interpolation?uv=2019.3&courseId=5c61706dedbc2a324a9b022d&projectId=5c8920b4edbc2a113b6bc26a#5c8a48bdedbc2a001f47cef6
-  - Limit, repeat
-    - Max, Min
-    - Repeat, PingPong
-    - Clamp, Clamp01
-    - Ceil, Floor
-### Quaternion
-  - A four-dimensional extension of complex numbers with three imaginary axes
-  - WHAT??????
-  - What you really need to know about them:
-    - They're used for representing rotation angles instead of Euler angles that can result in a _gimbal lock_
-    - Most Unity devs don't _really_ need to understand the underlying maths
-  - So, rotation is stored as a quaternion
-    - four components: x, y, z, w
-  - ...but rotation is _shown_ in Inspector with Euler angles
-  - never adjust Quaternion components independently, use ready-made functions from the Quaternion class
-  - `transform.rotation = Quaternion.LookRotation(target.position - transform.position)`
-  - `transform.rotation = Quaternion.LookRotation(target.position - transform.position, new Vector3.Up)`
- - Slerp
-```c#
-Vector3 relativePos = (target.position + new Vector3(0,.5f,0)) - transform.position;
 
-transform.localRotation = Quaternion.Slerp(transform.localRotation, Quaternion.Lookrotation(relativePos), Time.deltaTime);
+See: [Math](math.md#Mathf,-Random,-Debug)
 
-transform.Translate(0,0, 3 * Time.deltaTime);
-```
+### Vector3 & Vector2
+
+See: [Math](math.md#Mathf,-Random,-Debug)
+
 ## Data persistence between scenes
 - https://learn.unity.com/tutorial/implement-data-persistence-between-scenes?pathwayId=5f7e17e1edbc2a5ec21a20af#
 - DontDestroyOnLoad

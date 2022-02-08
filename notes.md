@@ -39,11 +39,3 @@ SceneManager.LoadScene (sceneName:"Put the name of the scene here");
 ``` 
 
 - `[ExecuteInEditMode]`
-
-# Links
-
-- Component vs Behaviour vs Monobehaviour
-  - https://stackoverflow.com/questions/44540747/what-is-the-difference-between-component-behaviour-and-monobehaviour-and-why-t
-
-- Lerping in Unity properly
-  - https://gamedevbeginner.com/the-right-way-to-lerp-in-unity-with-examples/#lerp_vector3

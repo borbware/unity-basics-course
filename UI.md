@@ -1,8 +1,4 @@
-# Editor
-
-- Double click in hierarchy to move camera to game object
-
-# UI elements
+## UI elements
 
 - https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIBasicLayout.html
 - components

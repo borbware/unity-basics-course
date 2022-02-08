@@ -1,4 +1,4 @@
-# Unity physics
+## Unity physics engine
 
 - In 3D, Unity uses NVIDIA's PhysX for its physics
 - In 2D, Box2D
@@ -12,7 +12,7 @@
     - object is controlled directly
     - only queries the physics engine for collisions
 
-Collision
+## Collision
 
 - OnCollisionEnter / OnCollisionEnter2D
   - when collision with another collider starts
