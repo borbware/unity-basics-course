@@ -10,7 +10,7 @@
 
 ## Some important packages
 
-- Cinemachine
+### Cinemachine
   - for sophisticated camera control
   - [Docs: Cinemachine documentation](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/index.html)
   - [Docs: Cinemachine Virtual Camera properties](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/CinemachineVirtualCamera.html)
@@ -20,12 +20,12 @@
     - deadzones
     - Super Mario World example
     - [Brackeys video: 2D camera (Cinemachine)](https://www.youtube.com/watch?v=2jTY11Am0Ig)
-- ProBuilder
+### ProBuilder
   - for greyboxing 3d levels
-- 2D extras
+### 2D extras
   - for faster tilemapping
-- TextMeshPro
+### TextMeshPro
   - asdf
-- Unity Recorder
+### Unity Recorder
   - for marketing: recording video in the Play mode
   - https://docs.unity3d.com/Packages/com.unity.recorder@2.0/manual/index.html

@@ -1,6 +1,9 @@
 # Camera
 
-- https://stackoverflow.com/questions/45493793/unity-keep-the-player-centered-on-the-screen
+- Basic Camera
+  - [Stack Overflow: Keep the player centered on screen](https://stackoverflow.com/questions/45493793/unity-keep-the-player-centered-on-the-screen)
+- Cinemachine camera
+  - See: [Cinemachine](packages.md#Cinemachine)
 
 
 # Probuilder

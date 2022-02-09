@@ -1,6 +1,14 @@
-## Getting Input
+- [Getting Input](#getting-input)
+  - [The two ways](#the-two-ways)
+  - [Keyboard input](#keyboard-input)
+  - [Input table](#input-table)
+  - [Analog input](#analog-input)
+  - [Mouse input](#mouse-input)
+  - [Touch input](#touch-input)
 
-### The two ways
+# Getting Input
+
+## The two ways
 
 - [Docs: Input](https://docs.unity3d.com/Manual/Input.html)
 - There are two ways to get input in Unity
@@ -15,7 +23,7 @@
   - supports XInput
   - won't be covered on this course
 
-### Keyboard input
+## Keyboard input
 
 - `Input.GetKeyDown(KeyCode.Space)`
   - True for one frame when pressed down 
@@ -27,7 +35,7 @@
   - True for one frame when we stop pressing a button
   - Needed less often than the ones above
 
-### Input table
+## Input table
 
 - More versatile usage with Input mappings
   - `Input.GetButtonDown("Jump")`
@@ -37,7 +45,7 @@
   - Edit > Project Settings > Input
   - "positive button"
 
-### Analog input
+## Analog input
 
 - GetAxis()
   - sliding scale between -1 and 1
@@ -46,7 +54,7 @@
   - `float h = Input.GetAxis("Horizontal");`
   - `float h = Input.GetAxisRaw("Horizontal");`
 
-### Mouse input
+## Mouse input
 
 - `Input.GetMouseButton(0)`
   - Down & Up methods work similarly to previous examples as well
@@ -69,7 +77,7 @@
     }
 ```
 
-### Touch input
+## Touch input
 - [Docs: Input.GetTouch](https://docs.unity3d.com/ScriptReference/Input.GetTouch.html)
 - [Docs: Input.touches](https://docs.unity3d.com/ScriptReference/Input-touches.html)
 ```c#

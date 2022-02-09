@@ -32,6 +32,6 @@
 ### Help!! My sprite is moving wildly when I resize the screen
 
 - you have to change the Anchor presets
-- > Inspector > Rect Transform > the square 
+- Inspector > Rect Transform > the square 
   - shift
   - alt

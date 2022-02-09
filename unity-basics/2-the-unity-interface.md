@@ -1,0 +1,132 @@
+- [2. The Unity Interface](#2-the-unity-interface)
+  - [Game Objects](#game-objects)
+  - [Editor views](#editor-views)
+  - [Hierarchy window](#hierarchy-window)
+  - [Scene view](#scene-view)
+    - [Navigation](#navigation)
+  - [Shortcuts for scene & hierarchy](#shortcuts-for-scene--hierarchy)
+    - [Toolbar](#toolbar)
+  - [Inspector window](#inspector-window)
+  - [Components](#components)
+  - [Game view](#game-view)
+
+# 2. The Unity Interface
+
+## Game Objects
+
+- Pretty much everything in Unity is a game object
+- Game objects consist of components
+- Some examples
+  - 3d primitives
+  - Camera
+  - Light
+  - Empty
+
+## Editor views
+
+- [Unity's Interface in Docs](https://docs.unity3d.com/Manual/UsingTheEditor.html)
+- Views
+  - Hierarchy window
+  - Scene view
+  - Game view
+  - Inspector window
+  - Project window
+  - Console
+
+- Views can be rearranged by dragging & dropping
+- Try out different layouts from the top right "Layouts" dropdown menu
+
+## Hierarchy window
+
+- [Hierarchy in Docs](https://docs.unity3d.com/Manual/Hierarchy.html)
+- shows the list of game objects in a **scene**
+- double click to show object in Scene view
+- game objects can be nested
+  - parent vs child
+  - position/rotation/scale is inherited from parent
+- Add new game objects: [RMB] + choose from list
+
+## Scene view
+
+### Navigation
+
+![the scene view](imgs/week1-sceneview.png)
+
+- [Scene view navigation in Docs](https://docs.unity3d.com/Manual/SceneViewNavigation.html)
+- navigation shortcuts
+  - move: [MMB]
+  - orbit: [ALT+LMB]
+  - zoom: roll [MMB] / [ALT+RMB]
+  - rotate camera: [RMB]
+  - flythru: hold [RMB], fly with [WASD] + [Q/E]
+- the scene gizmo
+  - "the axis thingy on the top right"
+  - axis cones: change view to that axis
+  - center cube: perspective / orthographic
+- scene view camera settings
+
+## Shortcuts for scene & hierarchy
+  - [CTRL+C] + [CTRL+V] copy & paste
+  - [CTRL+D] duplicate
+
+### Toolbar
+
+- [Toolbar in Docs](https://docs.unity3d.com/Manual/Toolbar.html)
+- for manipulating existing stuff
+- activating the tool changes the [LMB] behaviour
+- navigation shortcuts still available in other tools!
+- in move/rotate/scale, you can use the red, green and blue shapes to manipulate x,y,z axes, respectively
+- the tools
+  - Q: Hand Tool (navigate)
+  - W: Move Tool
+    - the squares in the center: move along a plane
+  - E: Rotate Tool
+  - R: Scale Tool
+  - those are the most important ones
+  - T: Rect Tool
+    - Alternative Scale Tool
+  - Y: Move+Rotate+Scale
+- Pivot / Center
+- Local / Global
+
+## Inspector window
+
+- [Inspector in Docs](https://docs.unity3d.com/Manual/UsingTheInspector.html)
+- Game object properties
+  - Active (the checkbox)
+  - Name
+  - Tag
+  - Layer
+- list of components inside a game object
+- components can be turned off
+- drag variable to change value
+
+## Components
+
+- Transform
+  - included even in an empty game object by default
+  - position / rotation / scale
+- Collider
+  - enables collision
+  - different shapes and sizes
+  - object can collide into other game objects and vice versa
+  - isTrigger
+- Renderer
+  - the visible part of the game object
+- Material
+- RigidBody
+  - for interacting with the physics engine 
+- Script
+  - custom C# code
+  - the most versatile component
+
+## Game view
+
+- [Docs: Game view](https://docs.unity3d.com/Manual/GameView.html)
+- Simulates what your final rendered game will look like through your Scene Cameras
+- Play & pause buttons
+- When game is running, you can still manipulate the values in the Inspector window
+  - a nice way to mess around and find the right values for physics interactions etc.
+  - changes made during the play mode do not persist!!!!
+  - protip: change play mode tint in Edit > Preferences > Colors to red.
+  - 5% less frustration!

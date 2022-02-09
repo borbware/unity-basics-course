@@ -20,6 +20,9 @@ Emphasis: Learning C#
 		- [Vector3 & Vector2](#vector3--vector2)
 
 
+## Scripting GameObjects
+
+See: [Scripting GameObjects](unity-basics/4-scripting-gameobjects.md)
 
 ## Game math 1. Vectors
 

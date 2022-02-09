@@ -1,5 +1,19 @@
+- [Unity advanced](#unity-advanced)
+  - [Delayed actions](#delayed-actions)
+  - [Scriptable Object](#scriptable-object)
+    - [Simple example](#simple-example)
+  - [Delegates and Events (3b)](#delegates-and-events-3b)
+    - [Delegates](#delegates)
+    - [Events](#events)
+    - [Actions](#actions)
+    - [UnityEvents](#unityevents)
+    - [Scriptable object Unity Event](#scriptable-object-unity-event)
+  - [Generics, IEnumerable (4c)](#generics-ienumerable-4c)
+  - [unity main loop, execution order](#unity-main-loop-execution-order)
+  - [Entity component system](#entity-component-system)
 
 # Unity advanced
+
 ## Delayed actions
 - Invoke
   - if you want to execute something _after_ a given time delay. 
@@ -40,6 +54,90 @@
   - https://learn.unity.com/tutorial/coroutines?uv=2019.3&projectId=5c88f2c1edbc2a001f873ea5#5c894522edbc2a14103553c5
 
 
+## Scriptable Object
+- class for storing data
+- usually used an asset template
+  - can be made accessible from the Create Asset menu!
+- derives from the base Unity object but cannot be attached to a GameObject
+- life-saver if gameobject needs easily-swappable data
+- [Scriptable Object in Unity Docs](https://docs.unity3d.com/Manual/class-ScriptableObject.html)
+- [Brackeys tutorial](https://www.youtube.com/watch?v=aPXvoWVabPY)
+
+### Simple example
+
+- Create new class that inherits from ScriptableObject
+
+```c#
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "New Mana Card", menuName = "Cards/ManaCard")]
+public class Card : ScriptableObject
+{
+    public new string name;
+    public string description;
+    public int amountOfMana;
+    public ManaEnum manaType;
+}
+```
+
+- Create a few new templates based on the Scriptable object from the Asset menu
+- Refer to the Card class as a SerializeField in a GameObject
+- drag the card template of your choice to the field in Inspector
+- ta-da, the data from Card is now available in the gameobject
+
+
+
+```c#
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "Spawn Manager", menuName = "ScriptableObjects/SpawnManagerScriptableObject", order = 1)]
+public class SpawnManagerScriptableObject : ScriptableObject
+{
+    public string prefabName;
+    public int numberOfPrefabsToCreate;
+    public Vector3[] spawnPoints;
+}
+```
+
+```c#
+using UnityEngine;
+
+public class Spawner : MonoBehaviour
+{
+    // The GameObject to instantiate.
+    public GameObject entityToSpawn;
+
+    // An instance of the ScriptableObject defined above.
+    public SpawnManagerScriptableObject spawnManagerValues;
+
+    // This will be appended to the name of the created entities and increment when each is created.
+    int instanceNumber = 1;
+
+    void Start()
+    {
+        SpawnEntities();
+    }
+
+    void SpawnEntities()
+    {
+        int currentSpawnPointIndex = 0;
+
+        for (int i = 0; i < spawnManagerValues.numberOfPrefabsToCreate; i++)
+        {
+            // Creates an instance of the prefab at the current spawn point.
+            GameObject currentEntity = Instantiate(entityToSpawn, spawnManagerValues.spawnPoints[currentSpawnPointIndex], Quaternion.identity);
+
+            // Sets the name of the instantiated entity to be the string defined in the ScriptableObject and then appends it with a unique number. 
+            currentEntity.name = spawnManagerValues.prefabName + instanceNumber;
+
+            // Moves to the next spawn point index. If it goes out of range, it wraps back to the start.
+            currentSpawnPointIndex = (currentSpawnPointIndex + 1) % spawnManagerValues.spawnPoints.Length;
+
+            instanceNumber++;
+        }
+    }
+}
+```
 
 ## Delegates and Events (3b)
 
@@ -108,7 +206,7 @@ void Start()
 
 ### Events
 - observer pattern
-  - http://gameprogrammingpatterns.com/observer.html
+  - [Game programming patterns.com: Observer pattern](http://gameprogrammingpatterns.com/observer.html)
 - Events are specialized multicast delegates
 - can only be triggered from within their own class, not from elsewhere
 ```c#
@@ -134,7 +232,7 @@ public class PlayerHealth : MonoBehaviour
 }
 ```
 
-- https://learn.unity.com/tutorial/events-uh?uv=2019.3&projectId=5c88f2c1edbc2a001f873ea5#5c894782edbc2a1410355442
+- [Learn: Events](https://learn.unity.com/tutorial/events-uh?uv=2019.3&projectId=5c88f2c1edbc2a001f873ea5#5c894782edbc2a1410355442)
 
 ### Actions 
 - it can sometimes be inconvenient to declare a new delegate type every time you want to use one
@@ -167,12 +265,10 @@ public void TakeDamage(float damage)
 }
 ```
 
-
-
-### Unity Events
-- to confuse matters further, Unity has its own Unity Event system as well.
+### UnityEvents
+- to confuse matters further, Unity has its own UnityEvent system as well.
 - good stuff
-  - you won't need to nullcheck Unity Events.
+  - you won't need to nullcheck UnityEvents.
   - Unity Events have special controls in Inspector
     - contains the list of event function calls
     - add function calls by drag-and-dropping
@@ -197,7 +293,7 @@ public class PlayerHealth : MonoBehaviour
     }
 }
 ```
-- Unity events with parameters
+- UnityEvents with parameters
 ```c#
 using UnityEngine.Events;
 using System;
@@ -303,90 +399,6 @@ public class GameEventListener : MonoBehaviour
 
 
 
-## Scriptable Object
-- class for storing data
-- usually used an asset template
-  - can be made accessible from the Create Asset menu!
-- derives from the base Unity object but cannot be attached to a GameObject
-- life-saver if gameobject needs easily-swappable data
-- [Scriptable Object in Unity Docs](https://docs.unity3d.com/Manual/class-ScriptableObject.html)
-- [Brackeys tutorial](https://www.youtube.com/watch?v=aPXvoWVabPY)
-
-### Simple example
-
-- Create new class that inherits from ScriptableObject
-
-```c#
-using UnityEngine;
-
-[CreateAssetMenu(fileName = "New Mana Card", menuName = "Cards/ManaCard")]
-public class Card : ScriptableObject
-{
-    public new string name;
-    public string description;
-    public int amountOfMana;
-    public ManaEnum manaType;
-}
-```
-
-- Create a few new templates based on the Scriptable object from the Asset menu
-- Refer to the Card class as a SerializeField in a GameObject
-- drag the card template of your choice to the field in Inspector
-- ta-da, the data from Card is now available in the gameobject
-
-
-
-```c#
-using UnityEngine;
-
-[CreateAssetMenu(fileName = "Spawn Manager", menuName = "ScriptableObjects/SpawnManagerScriptableObject", order = 1)]
-public class SpawnManagerScriptableObject : ScriptableObject
-{
-    public string prefabName;
-    public int numberOfPrefabsToCreate;
-    public Vector3[] spawnPoints;
-}
-```
-
-```c#
-using UnityEngine;
-
-public class Spawner : MonoBehaviour
-{
-    // The GameObject to instantiate.
-    public GameObject entityToSpawn;
-
-    // An instance of the ScriptableObject defined above.
-    public SpawnManagerScriptableObject spawnManagerValues;
-
-    // This will be appended to the name of the created entities and increment when each is created.
-    int instanceNumber = 1;
-
-    void Start()
-    {
-        SpawnEntities();
-    }
-
-    void SpawnEntities()
-    {
-        int currentSpawnPointIndex = 0;
-
-        for (int i = 0; i < spawnManagerValues.numberOfPrefabsToCreate; i++)
-        {
-            // Creates an instance of the prefab at the current spawn point.
-            GameObject currentEntity = Instantiate(entityToSpawn, spawnManagerValues.spawnPoints[currentSpawnPointIndex], Quaternion.identity);
-
-            // Sets the name of the instantiated entity to be the string defined in the ScriptableObject and then appends it with a unique number. 
-            currentEntity.name = spawnManagerValues.prefabName + instanceNumber;
-
-            // Moves to the next spawn point index. If it goes out of range, it wraps back to the start.
-            currentSpawnPointIndex = (currentSpawnPointIndex + 1) % spawnManagerValues.spawnPoints.Length;
-
-            instanceNumber++;
-        }
-    }
-}
-```
 
 ## unity main loop, execution order
 
