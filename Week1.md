@@ -66,6 +66,14 @@
 - can be used for 2D, 3D, console, PC, mobile, ...
 - uses the C# programming language
 
+## Games made with Unity
+
+- My Summer Car, Johannes Rojolan tekemä suomalaiselle maaseudulle sijoittuva autonrakennussimulaattori 
+- Hollow Knight, kolmen hengen tekemä metroidvania-tasoloikka
+- Cities: Skylines, alle kahdenkymmenen hengen yhtiön kaupunginrakennussimulaattori
+- Fall Guys, kahdensadan hengen yhtiön eliminaatiominipeleistä koostuva online-moninpeli
+- Genshin Impact, neljäntuhannen hengen yhtiön avoimen maailman toimintaroolipeli ja yksi menestyneimmistä peleistä koskaan
+
 ## The Unity Experience
 
 - Unity has been around for a long time now

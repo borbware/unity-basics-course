@@ -84,7 +84,7 @@
   - Supercell (Tencent)
     - easily the biggest one
   - Rovio
-  - Small Giant Games
+  - Small Giant Games (Take Two)
   - Futureplay Games (Plarium)
   - Fingersoft
 - Active indie scene
@@ -124,16 +124,10 @@
   - edugames & gamification
     - LudoCraft
   - VR
+    - VRKiwi
     - Varjo
 
 ## Gamification
 
 See: [Gamification](gamification.md0)
 
-## Esimerkkejä Unityllä tehdyistä peleistä:
-
-- My Summer Car, Johannes Rojolan tekemä suomalaiselle maaseudulle sijoittuva autonrakennussimulaattori 
-- Hollow Knight, kolmen hengen tekemä metroidvania-tasoloikka
-- Cities: Skylines, alle kahdenkymmenen hengen tekemä kaupunginrakennussimulaattori
-- Fall Guys, kahdensadan hengen tekemä eliminaatiominipeleistä koostuva online-moninpeli
-- Genshin Impact, neljäntuhannen hengen tekemä avoimen maailman toimintaroolipeli ja yksi menestyneimmistä peleistä koskaan
