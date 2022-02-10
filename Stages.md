@@ -1,16 +1,16 @@
-# [Stage 1](Stage1.md): Tutorial Island
+# [Stage 1](Stage1.md)
 
 Painopiste: Teoriaopetus, perusteet haltuun.
 
 Unityn perusteet, C#:n perusteet, ohjelmointiharjoitukset, viikottaiset harjoitusprojektit
 
-# Stage 2. Grind Fields
+# Stage 2
 
 Painopiste: Käytäntöön nojaava teoriaopetus ja projektityöskentely.
 
 Vähemmän luentoja, enemmän tekemistä. C# jatko, Unity jatko, pelisuunnittelu ja muut työkalut, pelin saaminen valmiiksi. Ryhmätyöprojektit 3 hengen ryhmissä?
 
-# Stage 3. Mt. Magicircle
+# Stage 3
 
 Painopiste: Tiimityöskentely.
 
