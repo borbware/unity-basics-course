@@ -1,6 +1,8 @@
 ---
 marp: true
 ---
+<!-- class: invert -->
+
 # Git
 ---
 # 1. About git & setup
@@ -108,6 +110,7 @@ break
 - **Note**: The commit action is **local**, so any changes haven't gone to the remote repository yet
   - To actually upload changes to the remote repository, use: 
   - `git push`
+
 ---
 ## git pull
 
@@ -157,6 +160,14 @@ break
 - **Note:** There's also a handy command `git checkout -b branchName`
   - It's a shorthand for `git branch branchName` + `git checkout branchName`
 ---
+## Local vs. remote branches
+
+- git branch branchName only creates a local branch
+- when you try to push changes from a new local branch, git nags you that a matching remote branch doesn't yet exist
+  - git tells you how to create the remote branch:
+    - `git push --set-upstream origin newBranch`
+    - afterwards, `git push` pushes the changes to the matching remote branch
+---
 ## git merge
 
 - when the feature is done and all the broken things fixed, you want to merge your feature branch back to master
@@ -167,7 +178,7 @@ break
   - this is where **conflicts** can happen
 ---
 ## Exercise 1. Creating a repo
-
+<!-- class: default -->
 - Install Git to your machine.
 - Create a new repository in GitHub and clone it with HTTPS to your machine.
 - Then, create a new file `GitTest.md` with some lines of text in it.
@@ -185,6 +196,7 @@ break
 
 ---
 # 3. Conflicts
+<!-- class: invert -->
 ---
 ## GitLens
 
@@ -230,7 +242,7 @@ break
   - on the left side of the commit message you see the *hashcode* of the commit
   - use `git checkout hashcode` to "time travel" into the commit
 ---
-# .gitignore
+## .gitignore
 
 - .gitignore file in your git project folder says what files should **not** be included in the repository
 - You can create it by yourself and define file names or folders which git will then ignore in the commits, e.g.,
@@ -240,7 +252,7 @@ break
   *.html
 ```
 ---
-# Unity gitignore
+## Unity gitignore
 
 - In Unity projects, we have to use a specific .gitignore template to keep the repository nice and clean
   - You WILL notice if you forget to add it
@@ -253,36 +265,48 @@ break
 ## Common workflow
 
 `git status`
+
 `git add filename`	(if new files added)
+
 `git commit filename -m "make change"`
+
 `git pull` (if working in a team, always pull before pushing!)
+
 `git push`
 
 ---
 ## Creating a new branch
 
 `git branch newBranch`
+
 `git checkout newBranch`
+
 `git add newFile.txt`
+
 `git commit -m "add newFile.txt"`
+
 `git push --set-upstream origin newBranch`
+
 - (the line above creates a new remote branch. After doing it once, you can just use regular git push)
 
 ---
 ## Merging a feature branch to master
 
 `git checkout master`
+
 `git merge newBranch`
 
 - this is where the conflicts happen. Fix them in VS code
 
 `git add conflictedFile.txt`
+
 `git commit`
+
 `git push`
 
 ---
 ## Exercise 3. Team effort
-
+<!-- class: default -->
 - Work as a group for this assignment.
 - Use someone's repository from previous assignments and clone local copies of it to other group members.
 - **Note:** The owner of the repo has to authorize others so that others can push into the repo!
