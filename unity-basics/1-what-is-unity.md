@@ -1,15 +1,9 @@
-- [1. What is Unity](#1-what-is-unity)
-  - [About Unity](#about-unity)
-  - [Games made with Unity](#games-made-with-unity)
-  - [The Unity Experience](#the-unity-experience)
-    - [Continuous updates](#continuous-updates)
-    - [Deprecation](#deprecation)
-    - [Unity as an application](#unity-as-an-application)
-  - [The Asset Store](#the-asset-store)
-  - ["The Unity Way"](#the-unity-way)
-
+---
+marp: true
+---
+<!-- class: invert -->
 # 1. What is Unity
-
+---
 ## About Unity
 
 - A commericial closed-source game engine
@@ -21,7 +15,7 @@
 - made originally for 3D games
 - can be used for 2D, 3D, console, PC, mobile, ...
 - uses the C# programming language
-
+---
 ## Games made with Unity
 
 - My Summer Car, Johannes Rojolan tekemä suomalaiselle maaseudulle sijoittuva autonrakennussimulaattori 
@@ -29,10 +23,10 @@
 - Cities: Skylines, alle kahdenkymmenen hengen yhtiön kaupunginrakennussimulaattori
 - Fall Guys, kahdensadan hengen yhtiön eliminaatiominipeleistä koostuva online-moninpeli
 - Genshin Impact, neljäntuhannen hengen yhtiön avoimen maailman toimintaroolipeli ja yksi menestyneimmistä peleistä koskaan
-
+---
 ## The Unity Experience
-
-### Continuous updates
+---
+## Continuous updates
 
 - Unity has been around for a long time now
   - Originally released for Mac in 2005
@@ -41,16 +35,16 @@
   - usually people are stuck with the version they started the project with
     - -> common to have multiple versions on the same machine
     - Unity Hub
-
-### Deprecation
+---
+## Deprecation
 
   - Old features & programming styles are deprecated and new ones are introduced
     - it helps a ton if you familiarize yourself with Unity history
     - some people are stuck with the old ways
     - it's useful to know which ways are old and which are still encouraged today
     - then again, tomorrow everything might have changed
-
-### Unity as an application
+---
+## Unity as an application
 
 - Unity can occasionally crash...
   - save your work constantly!
@@ -58,7 +52,7 @@
   - treat some aspects of Unity as black boxes
   - you give them input, and they give you the (hopefully!) desired output
 - Unity is closed source: you can't learn _everything_ about it
-
+---
 ## The Asset Store
 
 - you can download assets to your project from the Asset Store
@@ -69,7 +63,7 @@
   - But beware - this isn't a free lunch
   - You become dependent on third-party code
   - Sometimes it's faster to make your own system than learn another person's way of thinking
-
+---
 ## "The Unity Way"
 
 - There are usually many ways to approach a problem

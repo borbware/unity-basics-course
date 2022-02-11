@@ -1,7 +1,7 @@
 ---
-marp: tru
+marp: true
 ---
-
+<!-- class: invert -->
 # Week 1
 
 ---
@@ -54,9 +54,10 @@ marp: tru
 ---
 ## Unity
 
-[1. What is Unity](unity-basics/1-what-is-unity.md)
+[Unity basics 1. What is Unity?](unity-basics/1-what-is-unity.md)
+
 ---
-## Installing the tools
+## Applications
 
 - Download [Unity Hub](https://unity3d.com/get-unity/download)
 - Install latest Unity LTS (long term support) version 2020.3.27f1
@@ -64,18 +65,23 @@ marp: tru
   - during install: add to context menu
 - Install [Discord](https://discord.com/)
   - (live streams don't work well with the browser version!)
-- Personal accounts you'll need to create if you don't already have
+---
+## Accounts
+
+- Personal accounts you'll need to create if you don't already have:
 	- Discord (for communication)
 	- Unity
 	- Google (for collaborating with Google Drive & Docs)
-	- later: Github (for version control)
+	- later this week: Github (for version control)
 	- even later: Itch.io (for publishing your games)
 ---
+<!-- class:  default -->
 ## Exercise 1.
 
 - Install and setup all the tools needed and create your first 3D project for the course with the name `Week1Clock`.
 - This project will be worked on step by step in the coming exercises.
 ---
+<!-- class:  invert -->
 ## Unity Documentation
 
 - [Docs: Front page](https://docs.unity.com)
@@ -84,44 +90,43 @@ marp: tru
 ---
 ## The Unity Interface
 
-[2. The Unity Interface](unity-basics/2-the-unity-interface.md)
+[Unity basics 2. The Unity Interface](unity-basics/2-the-unity-interface.md)
 
 ---
+<!-- class:  default -->
 ## Exercise 2.
 
 Create a 3D model of a clock from Unity's primitives with three hands and 12 hour indicators.
 
 Unlike in the picture below, set all the indicators to 12. They will be later rotated to correct positions with C# scripting.
 
-![3d clock](imgs/week1-catlikeclock.png)
 ---
+
+![3d clock](imgs/week1-catlikeclock.png)
+
+---
+<!-- class:  invert -->
 # Day 2: Assets
 
-[3. Assets](unity-basics/3-assets.md)
----
-## Console
+[Unity basics 3: Assets](unity-basics/3-assets.md)
 
-- Error messages
-- Debug messages
+
 ---
+<!-- class:  default -->
 ## Exercise 3.
 
 Duplicate your clock.
 
 ---
+<!-- class:  invert -->
 # Day 3: Git
 
-See: [Git basics](git.md)
+[Project management 1: Git](project-management/1-git.md)
 
 ---
-## Exercise x.
+# Day 4: Scripting 1
+[Scripting 1: Variables and conditionals](scripting/1-variables-and-conditionals.md)
 
-Create a Github account.
-Create a new repository with the Unity .gitignore template.
-Initialize Git in your Week project folder, and push the project files to Github.
-
----
-# Day 4
 ---
 ## Scripting basics
 
@@ -131,38 +136,16 @@ Initialize Git in your Week project folder, and push the project files to Github
 	- [Conventions](#conventions)
 	- [Arrays and Loops](#arrays-and-loops)
 ---
-
-
-## Unity and VS Code
-
-### Basics
-
-- Set VS Code as your default editor
-  - Edit > Preferences > External Tools > External Script Editor
-  - Install the prerequisities for code completion & other niceness
-    - https://code.visualstudio.com/docs/other/unity
-
-### Debugging, Warnings
-
-### Using VS Code effectively
-
-- [CTRL+SHIFT+UP/DOWN] move code line
-- [CTRL+SHIFT+D] duplicate line
-- [F2]: Rename variable and update references
-- [CTRL+TAB] / [CTRL+SHIFT+TAB] View: Open Next Editor / View: Open Previous Editor
-  - You need to change this manually
-- [CTRL+.] for auto-"using" / auto-creating missing functions
-- [CTRL+Ö] for showing/hiding terminal
-
-
+<!-- class: default -->
 ## Exercise 4.
 
 Make the clock hands move when time goes on.
 
 ---
-# Day 5
+<!-- class:  invert -->
+# Day 5: Wrap-up
 ---
-## Working on week project
+## Working on the week project
 
 - one-on-one meetings
   - useana päivänä, ei riitä perjantai

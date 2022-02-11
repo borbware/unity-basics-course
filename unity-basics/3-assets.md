@@ -1,13 +1,9 @@
-
-- [3. Assets](#3-assets)
-  - [Project window](#project-window)
-  - [Prefabs](#prefabs)
-  - [Tags & Layers](#tags--layers)
-    - [Tags](#tags)
-    - [Layers](#layers)
-
+---
+marp: true
+---
+<!-- class: invert -->
 # 3. Assets
-
+---
 ## Project window
 
 - [Docs: Project window](https://docs.unity3d.com/Manual/ProjectView.html)
@@ -19,20 +15,28 @@
 	- Graphics
 	- Sound effects
 	- Music
-
+---
 ## Prefabs
+---
+### Introduction to prefabs
+
 - [Docs: Prefabs](https://docs.unity3d.com/Manual/Prefabs.html)
 - short for prefabricated object
 - use cases...
   - "Same thing, but what if many?"
     - also, objects that share common traits but have different *overrides*
   - objects you want to instantiate during runtime
+---
+### How to prefab
 - How to turn a gameobject into a prefab:
   - [Docs: Creating Prefabs](https://docs.unity3d.com/Manual/CreatingPrefabs.html)
   - drag a gameobject from Hierarchy to Project view
   - it turns blue! 
   - this means it's now an instance of a prefab
-- overridden values in Inspector are indicated in **bold**
+
+---
+### Open, select, overrides
+
 - special buttons
   - [Docs: Editing a Prefab via its instances](https://docs.unity3d.com/Manual/EditingPrefabViaInstance.html)
   - Open
@@ -44,12 +48,16 @@
     - variations for the prefab presets
     - when you make changes into a prefab instance, you can set those changes to be the new default
     - [Docs: Instance overrides](https://docs.unity3d.com/Manual/PrefabInstanceOverrides.html)
-
+- overridden values in Inspector are indicated in **bold**
+---
 ## Tags & Layers
 - Edit > Project Settings > Tags and Layers
+---
 ### Tags
 - GameObject.FindWithtag("tagname");
 - GameObject.FindGameObjectsWithTag("tagname");
+---
+
 ### Layers
 - [Docs: Layers](https://docs.unity3d.com/Manual/Layers.html)
 - Some layers...
@@ -62,3 +70,4 @@
 	- Top right: Layers...
 - Layers can be used for selective collision detection
   - [Docs: Layer-based collision detection](https://docs.unity3d.com/Manual/LayerBasedCollision.html)
+

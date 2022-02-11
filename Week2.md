@@ -22,7 +22,7 @@ Emphasis: Learning C#
 
 ## Scripting GameObjects
 
-See: [Scripting GameObjects](unity-basics/4-scripting-gameobjects.md)
+See: [Unity basics 4: Scripting GameObjects](unity-basics/4-scripting-gameobjects.md)
 
 ## Game math 1. Vectors
 

@@ -1,17 +1,9 @@
-- [2. The Unity Interface](#2-the-unity-interface)
-  - [Game Objects](#game-objects)
-  - [Editor views](#editor-views)
-  - [Hierarchy window](#hierarchy-window)
-  - [Scene view](#scene-view)
-    - [Navigation](#navigation)
-  - [Shortcuts for scene & hierarchy](#shortcuts-for-scene--hierarchy)
-    - [Toolbar](#toolbar)
-  - [Inspector window](#inspector-window)
-  - [Components](#components)
-  - [Game view](#game-view)
-
+---
+marp: true
+---
+<!-- class: invert -->
 # 2. The Unity Interface
-
+ ---
 ## Game Objects
 
 - Pretty much everything in Unity is a game object
@@ -21,7 +13,7 @@
   - Camera
   - Light
   - Empty
-
+ ---
 ## Editor views
 
 - [Unity's Interface in Docs](https://docs.unity3d.com/Manual/UsingTheEditor.html)
@@ -35,7 +27,7 @@
 
 - Views can be rearranged by dragging & dropping
 - Try out different layouts from the top right "Layouts" dropdown menu
-
+ ---
 ## Hierarchy window
 
 - [Hierarchy in Docs](https://docs.unity3d.com/Manual/Hierarchy.html)
@@ -45,13 +37,13 @@
   - parent vs child
   - position/rotation/scale is inherited from parent
 - Add new game objects: [RMB] + choose from list
-
+ ---
 ## Scene view
-
-### Navigation
-
+ ---
 ![the scene view](imgs/week1-sceneview.png)
 
+---
+### Navigation
 - [Scene view navigation in Docs](https://docs.unity3d.com/Manual/SceneViewNavigation.html)
 - navigation shortcuts
   - move: [MMB]
@@ -64,11 +56,11 @@
   - axis cones: change view to that axis
   - center cube: perspective / orthographic
 - scene view camera settings
-
+ ---
 ## Shortcuts for scene & hierarchy
   - [CTRL+C] + [CTRL+V] copy & paste
   - [CTRL+D] duplicate
-
+ ---
 ### Toolbar
 
 - [Toolbar in Docs](https://docs.unity3d.com/Manual/Toolbar.html)
@@ -76,7 +68,9 @@
 - activating the tool changes the [LMB] behaviour
 - navigation shortcuts still available in other tools!
 - in move/rotate/scale, you can use the red, green and blue shapes to manipulate x,y,z axes, respectively
-- the tools
+ ---
+### Toolbar tools
+- The tools
   - Q: Hand Tool (navigate)
   - W: Move Tool
     - the squares in the center: move along a plane
@@ -88,7 +82,7 @@
   - Y: Move+Rotate+Scale
 - Pivot / Center
 - Local / Global
-
+ ---
 ## Inspector window
 
 - [Inspector in Docs](https://docs.unity3d.com/Manual/UsingTheInspector.html)
@@ -100,26 +94,33 @@
 - list of components inside a game object
 - components can be turned off
 - drag variable to change value
-
+ ---
 ## Components
-
-- Transform
-  - included even in an empty game object by default
+ ---
+### Location in scene
+- **Transform**
+  - included even in an empty game object by default!
   - position / rotation / scale
-- Collider
+---
+### Collision
+
+- **Collider**
   - enables collision
   - different shapes and sizes
   - object can collide into other game objects and vice versa
   - isTrigger
-- Renderer
-  - the visible part of the game object
-- Material
-- RigidBody
+- **RigidBody**
   - for interacting with the physics engine 
-- Script
+ ---
+### Others
+- Drawing the component
+  - **Renderer**
+    - the visible part of the game object
+  - **Material**
+- **Script**
   - custom C# code
   - the most versatile component
-
+ ---
 ## Game view
 
 - [Docs: Game view](https://docs.unity3d.com/Manual/GameView.html)

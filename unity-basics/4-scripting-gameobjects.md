@@ -1,16 +1,21 @@
-
+---
+marp: true
+---
+<!-- class: invert -->
 # 4. Scripting GameObjects
-
+---
 ## Important Unity classes
 
 - [Docs: Important Unity Classes](https://docs.unity3d.com/Manual/ScriptingImportantClasses.html)
-
+---
 ## Monobehaviour methods
 
 - Unity components are classes that inherit from Monobehaviour
 - first, the class is initialized
 - then, it's updated and drawn on screen every frame
+- [Stack Overflow: Component vs Behaviour vs Monobehaviour](https://stackoverflow.com/questions/44540747/what-is-the-difference-between-component-behaviour-and-monobehaviour-and-why-t)
 
+---
 ### Initialization
   - Awake
     - called first
@@ -18,12 +23,16 @@
   - Start
     - called second, right before the first Update
     - only called if script component IS enabled
-### Updating
-  - Time.deltaTime
+---
+### Deltatime
+
+  - `Time.deltaTime`
     - deltatime is the time spent between update calls
       - `1 / FPS`
     - using deltatime for framerate-independent movement
       - `transform.position += new Vector3(speed * Time.deltaTime, 0.0f, 0.0f);`
+---
+### Updating
   - Update
     - call frequency varies depending on framerate
     - indeterministic
@@ -33,9 +42,8 @@
     - used mainly for physics calculations
     - can't be used for checking player input
 
-- [Stack Overflow: Component vs Behaviour vs Monobehaviour](https://stackoverflow.com/questions/44540747/what-is-the-difference-between-component-behaviour-and-monobehaviour-and-why-t)
 
-
+---
 ## GameObject
 - special unity classes that inherit monobehaviour
 - gameobjects include components
@@ -47,6 +55,9 @@
       - how to toggle?
 - can have child gameobjects
   - they inherint translation & rotation and activeness
+---
+## Activating GameObjects
+
 - activating/disabling gameobjects
   - Inspector: checkbox left to name
   - `gameObject.SetActive(false);`
@@ -59,8 +70,7 @@
     - false tells if this object is deactivated by itself or by its parents
   - `Destroy()`
   - `Instantiate()`
-
-
+---
 ### Adding stuff to inspector with code
 
 - public variables
@@ -69,8 +79,7 @@
   - great for team communication
 - `[Range(x,x)]`
   - slider for inspector
-
-
+---
 ## Transform
 - translation & rotation
 ```c#
@@ -86,6 +95,7 @@ if(Input.GetKey(KeyCode.LeftArrow))
 if(Input.GetKey(KeyCode.RightArrow))
 	transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
 ```
+---
 - LookAt
   - `transform.LookAt(target);`
 - AddForce

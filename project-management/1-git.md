@@ -177,8 +177,8 @@ break
 - Then, merge the feature branch to master with `git merge featureBranchName`
   - this is where **conflicts** can happen
 ---
-## Exercise 1. Creating a repo
 <!-- class: default -->
+## Exercise 1. Creating a repo
 - Install Git to your machine.
 - Create a new repository in GitHub and clone it with HTTPS to your machine.
 - Then, create a new file `GitTest.md` with some lines of text in it.
@@ -195,8 +195,8 @@ break
 
 
 ---
-# 3. Conflicts
 <!-- class: invert -->
+# 3. Conflicts
 ---
 ## GitLens
 
