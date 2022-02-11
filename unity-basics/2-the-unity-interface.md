@@ -16,7 +16,7 @@ marp: true
  ---
 ## Editor views
 
-- [Unity's Interface in Docs](https://docs.unity3d.com/Manual/UsingTheEditor.html)
+- [Docs: Unity's Interface](https://docs.unity3d.com/Manual/UsingTheEditor.html)
 - Views
   - Hierarchy window
   - Scene view
@@ -30,7 +30,7 @@ marp: true
  ---
 ## Hierarchy window
 
-- [Hierarchy in Docs](https://docs.unity3d.com/Manual/Hierarchy.html)
+- [Docs: Hierarchy](https://docs.unity3d.com/Manual/Hierarchy.html)
 - shows the list of game objects in a **scene**
 - double click to show object in Scene view
 - game objects can be nested
@@ -44,7 +44,7 @@ marp: true
 
 ---
 ### Navigation
-- [Scene view navigation in Docs](https://docs.unity3d.com/Manual/SceneViewNavigation.html)
+- [Docs: Scene view navigation](https://docs.unity3d.com/Manual/SceneViewNavigation.html)
 - navigation shortcuts
   - move: [MMB]
   - orbit: [ALT+LMB]
@@ -63,7 +63,7 @@ marp: true
  ---
 ### Toolbar
 
-- [Toolbar in Docs](https://docs.unity3d.com/Manual/Toolbar.html)
+- [Docs: Toolbar](https://docs.unity3d.com/Manual/Toolbar.html)
 - for manipulating existing stuff
 - activating the tool changes the [LMB] behaviour
 - navigation shortcuts still available in other tools!
@@ -85,7 +85,7 @@ marp: true
  ---
 ## Inspector window
 
-- [Inspector in Docs](https://docs.unity3d.com/Manual/UsingTheInspector.html)
+- [Docs: Inspector](https://docs.unity3d.com/Manual/UsingTheInspector.html)
 - Game object properties
   - Active (the checkbox)
   - Name

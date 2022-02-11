@@ -84,7 +84,7 @@ marp: true
 <!-- class:  invert -->
 ## Unity Documentation
 
-- [Docs: Front page](https://docs.unity.com)
+- [Docs: User Manual](https://docs.unity3d.com/Manual/UnityManual.html)
 - if you don't know how something works, this should be the first place to learn from
 - Docs will be heavily featured during the course!
 ---
