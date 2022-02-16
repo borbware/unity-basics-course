@@ -1,3 +1,7 @@
+---
+marp: true
+---
+<!-- class: invert -->
 # Week 2: Scripting & Game design
 
 Emphasis: Learning C#
@@ -18,25 +22,85 @@ Emphasis: Learning C#
 		- [GameObject](#gameobject)
 		- [Transform](#transform)
 		- [Vector3 & Vector2](#vector3--vector2)
+---
+## Week project: Asteroids
+<!-- class: default -->
+<!-- backgroundColor: pink -->
+-  Recreate the classic arcade game Asteroids in Unity.
+     - [Youtube: Asteroids gameplay](https://www.youtube.com/watch?v=WYSupJ5r2zo)
 
+Goals:
+- ⭐ MVP: Create a playable single-screen game of Asteroids.
+- ⭐⭐ Add one of the following features:
+  - Hi scores & scoreboard
+  - Randomized asteroid spawining
+  - Level progression: new asteroids appear
+  - Twin-stick: Use right stick to control the bullet direction 
+- ⭐⭐⭐ Spice up the game: Add a game mechanic of your own
 
+--- 
+<!-- class: invert -->
+<!-- backgroundColor: default -->
 ## Scripting GameObjects
 
 See: [Unity basics 4: Scripting GameObjects](unity-basics/4-scripting-gameobjects.md)
 
+---
+## Input handling
+See: [Input handling](unity-cookbook/input-handling.md)
+  - GetButtonDown
+  - GetAxis
+---
+- Vectors
+  - vector * scalar
+  - vector.up
+  - vector.magnitude
+- Physics
+  - Rigidbody
+    - .velocity
+    - .angularVelocity
+  - AddForce
+  - AddTorque
+- Math
+  - Mathf.Abs
+  - Mathf.Clamp
+
+---
 ## Game math 1. Vectors
 
-- [Freya Holmér video: Vectors & Dot Product](https://www.youtube.com/watch?v=MOYiVLEnhrw)
-## Week project: Asteroids
-- 1 screen, passive enemies
+---
+---
+<!-- class:  default -->
+## Exercise 0.
+
+Examine the gameplay video, then play the example Unity-built Asteroids.
+
+Write down or think through...
+- What features do you see? 
+- How would you begin implementing them?
+- Which feature would you implement first?
+
+---
+<!-- class: invert -->
+
+
+
+
+
 - Playing Audio
 - Singleton
 - Instantiate and Destroy
-- Rigidbody
 - screen wrap
 
-- käy läpi asteroids et varmasti käydään kaikki läpi
 
+---
+<!-- class:  default -->
+## Exercise 1.
+
+Create the Player controlled ship for the Asteroids game.
+
+---
+<!-- class: invert -->
 ### The ship
 - Components
   - Scripts

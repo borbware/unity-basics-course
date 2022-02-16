@@ -63,6 +63,7 @@ string text = "text is here";
 ---
 ## Conditionals
 - `if`
+- `if` without curly braces
 - `else if`
 - `else`
 ---

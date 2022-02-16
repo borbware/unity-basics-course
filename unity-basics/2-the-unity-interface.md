@@ -94,6 +94,7 @@ marp: true
 - list of components inside a game object
 - components can be turned off
 - drag variable to change value
+- hover over variable name to show info
  ---
 ## Components
  ---

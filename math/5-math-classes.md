@@ -13,8 +13,9 @@
   - [Interpolation](#others)
   - Limit, repeat
     - Max, Min
-    - Repeat, PingPong
     - Clamp, Clamp01
+      - (value, min, max)
+    - Repeat, PingPong
     - Ceil, Floor
 
 ## Quaternion

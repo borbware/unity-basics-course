@@ -34,24 +34,38 @@ void Start ()
 - While
 - (Do While)
 - Foreach
----
-## Unity's own update loops
-  - `Update()`
-  - `FixedUpdate()`
-  - `LateUpdate()`
-    - called every frame after `Update()`.
-    - good for something that has to happen after Update (own or any other game object's!)
+
 ---
 # Classes
+---
+
+## Classes & objects
+
 - C# is an object-oriented language (almost everything is a class)
-  - all Unity scripts contain a class by default.
+  - all Unity scripts contain a class by default!
+- *class* is an instruction to create a data collection of certain kind.
+  - "Idea of a table"
+- *instance* of a class is an implementation of that class.
+  - "This table right here"
+  - usually, the term *object* also refers to an instance of a class
+---
+
 - scope
 - accessing class members with `.`
+
+---
+## Case convention
+
+- `GameObject gameObject`
+- types start with uppercase, instances with lowercase!
+
+
+
 ---
 ## Access modifiers
 - most important access modifiers
   - `public`
-  - `private`
+  - `private` (default!)
   - `protected`
     - like `private`, but inheritors can access the property
   - `virtual`
