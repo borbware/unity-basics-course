@@ -1,20 +1,20 @@
 ---
 marp: true
+paginate: true
 ---
+<!-- headingDivider: 3 -->
 <!-- class: invert -->
 # Variables and conditionals
----
 ## C# Syntax
 
-- C# is a general-purpose object-oriented language
-- created by Microsoft in 2000 as a competitor for Java
-- Syntax
-  - pretty much everything will be inside a class
-  - Curly brackets `{` and `}` mark the **bodies** of statements
-    - namespaces, classes, functions...
-- semicolon at the end of **some** statements
-  - VS code tells if it's missing!
----
+* C# is a general-purpose object-oriented language
+* created by Microsoft in 2000 as a competitor for Java
+* Syntax
+  * pretty much everything will be inside a class
+  * Curly brackets `{` and `}` mark the **bodies** of statements
+    * namespaces, classes, functions...
+* semicolon at the end of **some** statements
+  * VS code tells if it's missing!
 
 ## C# looks like this
 
@@ -32,116 +32,104 @@ namespace MyAwesomeProgram
     }
 }
 ```
----
 
 ## Variable declaration
 
-1. access modifiers (not necessary, explained later) 
-2. type declaration
-3. variable name
-4. initial value (not necessary) after `=`
-5. line ending with `;`
+1) access modifiers (not necessary, explained later) 
+2) type declaration
+3) variable name
+4) initial value (not necessary) after `=`
+5) line ending with `;`
 
 ```c#
 int number = 1;
 ```
 
----
 ## Commenting
-  - one line
+  * one line
 ```c#
 // one line comment
 ```
-  - multiline 
+  * multiline 
 ```c#
 /* this is a
 multi-line
 comment */
 ```
-- comments are not executed
-- use to 
-  1. explain your intent
-  2. comment out actual code for testing and debugging
+* comments are not executed
+* use to 
+  1) explain your intent
+  2) comment out actual code for testing and debugging
 
----
 ## The most important variable types
-  - `bool`: truth value (true / false)
+  * `bool`: truth value (true / false)
 ```c#
 bool booleanValue = true;
 ```
-  - `int`: whole number
+  * `int`: whole number
 ```c#
 int wholeNumberValue = 3;
 ```
-  - `double` & `float`: decimal number (double = double precision)
+  * `double` & `float`: decimal number (double = double precision)
 ```c#
 float numberValue = 3.0f;
 ```
-  - `string`: text field
+  * `string`: text field
 ```c#
 string text = "text is here";
 ```
----
 ## Unity Console
 
-- Console Window
-  - Error messages
-  - Debug messages
-- `Debug.Log(textVariable)`
-  - print stuff into the console 
-  - as the name suggests, it's used for *debugging*
-  - You can print other variable types as well, not only strings!
-- `Debug.LogWarning()`
-- `Debug.LogError()`
----
-<!-- backgroundColor: black -->
+* Console Window
+  * Error messages
+  * Debug messages
+* `Debug.Log(textVariable)`
+  * print stuff into the console 
+  * as the name suggests, it's used for *debugging*
+  * You can print other variable types as well, not only strings!
+* `Debug.LogWarning()`
+* `Debug.LogError()`
 ## Extra: String interpolation
+<!-- _backgroundColor: black -->
 
-  - If you want to include multiple variables per line:
-  - start string with `$`, enclose variables in `{` curly braces `}`
-  - `Debug.Log($"variable 1: {variable1}, variable 2: {variable2}");`
+  * If you want to include multiple variables per line:
+  * start string with `$`, enclose variables in `{` curly braces `}`
+  * `Debug.Log($"variable 1: {variable1}, variable 2: {variable2}");`
 
----
-<!-- backgroundColor: default -->
 ## Basic arithmetic operations
-  - `+` (addition)
-  - `-` (subtraction)
-  - `*` (multiplication)
-  - `/` (division)
----
-<!-- backgroundColor: black -->
+  * `+` (addition)
+  * `-` (subtraction)
+  * `*` (multiplication)
+  * `/` (division)
 ## Extra: Modulo operator
-  - `%`
-    - modulo operator (remainder)
-    - great for looping a range
-    - `3 % 5 = 3`
-    - `4 % 5 = 4`
-    - `5 % 5 = 0`
-    - `6 % 5 = 1`
----
-<!-- backgroundColor: teal -->
+<!-- _backgroundColor: black -->
+  * `%`
+    * modulo operator (remainder)
+    * great for looping a range
+    * `3 % 5 = 3`
+    * `4 % 5 = 4`
+    * `5 % 5 = 0`
+    * `6 % 5 = 1`
 ## Exercise 1: Trying out variables
+<!-- _backgroundColor: teal -->
 
-- create a new C# script component for an empty GameObject.
-- declare two variables `a` and `b` with the type `double`.
-- In the `Start()` function, print to console four operations: the sum, difference, fraction and product.
+* create a new C# script component for an empty GameObject.
+* declare two variables `a` and `b` with the type `double`.
+* In the `Start()` function, print to console four operations: the sum, difference, fraction and product.
 
-- What happens if either of them is equal to zero?
+* What happens if either of them is equal to zero?
 
----
 ## Shorthands
-<!-- backgroundColor: default -->
-  - `++`
-    - `i++;` is shorthand for `i += 1;` which is shorthand for `i = i + 1;` 
-  - `--`
-    - works similarly!
----
+  * `++`
+    * `i++;` is shorthand for `i += 1;` which is shorthand for `i = i + 1;` 
+  * `--`
+    * works similarly!
 ## Conditionals
-- `if`
-- `if` without curly braces
-- `else if`
-- `else`
----
+* `if`
+* `if` without curly braces
+* `else if`
+* `else`
+### Conditionals: example
 ```c#
 float temperatureInOulu = 2.3f;
 float temperatureInIvalo = -10.9f;
@@ -160,22 +148,19 @@ else
 }
 ```
 
----
 ## Comparison operators
-  - less than: `<`
-  - less than or equal: `<=`
-  - greater than: `>`
-  - greater than or equal: `>=`
-  - equal to: `==`
-  - not equal to: `!=`
----
+  * less than: `<`
+  * less than or equal: `<=`
+  * greater than: `>`
+  * greater than or equal: `>=`
+  * equal to: `==`
+  * not equal to: `!=`
 ## Logical operators
-  - not: `!`
-  - and: `&&`
-  - or: `||`
----
-<!-- backgroundColor: black -->
+  * not: `!`
+  * and: `&&`
+  * or: `||`
 ## Extra conditional: Switch-case statement
+<!-- backgroundColor: black -->
 
 ```c#
 public int intelligence = 5;
@@ -206,31 +191,29 @@ void Greet()
 	}
 }
 ```
----
-<!-- backgroundColor: black -->
 ## Extra conditional: Ternary operator
+<!-- _backgroundColor: black -->
 
-- "Inline if" is done with the ternary operator 
-  - `(the if statement) ? (if true) : (if false);`
+* "Inline if" is done with the ternary operator 
+  * `(the if statement) ? (if true) : (if false);`
 ```c#
 message = health > 0 ? "Player is Alive" : "Player is Dead";
 ```
----
-<!-- backgroundColor: teal -->
 ## Exercise 2: Traffic lights
+<!-- _backgroundColor: teal -->
 
 Create a timed console application for displaying the state of a traffic light.
-- ⭐ Print the new color to the console every frame (use `Update()`).
+* ⭐ Print the new color to the console every frame (use `Update()`).
 
-- The first three seconds should be red, the fourth second should be yellow, and from five seconds onwards green.
-- So, after the first frame the console would read `The color is RED!`.
-- Hint: Use `Time.time`!
+* The first three seconds should be red, the fourth second should be yellow, and from five seconds onwards green.
+* So, after the first frame the console would read `The color is RED!`.
+* Hint: Use `Time.time`!
 
----
 ## Exercise 2 Extras
+<!-- _backgroundColor: teal -->
 
-- ⭐⭐ Print the color to console only when the light changes.
-- ⭐⭐⭐ Create a 3d object. Change the color of its material as a function of time.
+* ⭐⭐ Print the color to console only when the light changes.
+* ⭐⭐⭐ Create a 3d object. Change the color of its material as a function of time.
 
-  - **Spoiler:** `gameObject.GetComponent<Renderer>().material.color = Color.green;`
+  * **Spoiler:** `gameObject.GetComponent<Renderer>().material.color = Color.green;`
 
