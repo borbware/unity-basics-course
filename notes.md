@@ -1,14 +1,27 @@
 # Unity gotchas
 
-- changes made during the playmode do not persist
-  - protip: change playmode tint in Edit > Preferences > Colors to red.
 - 3D: In blender3d, asdf. In Unity, "y" is the "up" axis.
 - "The associated script cannot be loaded"
   - if you rename a script file, rename the class inside as well >:)
 
-# Snippets
+## Snippets
 - check component type:
-  - `c.GetType() == typeof(Transform)`
+```c#
+`c.GetType() == typeof(Transform)`
+```
+
+- check if something exists
+```c#
+if (attack != null)
+	attack();
+```
+  - or shorthand: 
+```c#
+attack?.Invoke();
+```
+
+---
+
 
 - move between scenes
 ```c#

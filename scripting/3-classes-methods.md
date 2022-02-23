@@ -78,7 +78,7 @@ Transform tran = transform;
 tran.position = new Vector3(0, 2, 0);
 ```
 ---
-## Properties with getters & setters
+## Extra: Properties with getters & setters
 ```c#
 private int experience;
 
@@ -114,33 +114,4 @@ public int Level
 //This is an example of an auto-implemented
 //property
 public int Health{ get; set;}
-```
----
-## Enums
-```c#
-public class EnumScript : MonoBehaviour 
-{
-    enum Direction {North, East, South, West};
-
-        void Start () 
-    {
-        Direction myDirection;
-        
-        myDirection = Direction.North;
-    }
-    
-    Direction ReverseDirection (Direction dir)
-    {
-        if(dir == Direction.North)
-            dir = Direction.South;
-        else if(dir == Direction.South)
-            dir = Direction.North;
-        else if(dir == Direction.East)
-            dir = Direction.West;
-        else if(dir == Direction.West)
-            dir = Direction.East;
-        
-        return dir;     
-    }
-}
 ```

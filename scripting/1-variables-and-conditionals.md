@@ -4,19 +4,65 @@ marp: true
 <!-- class: invert -->
 # Variables and conditionals
 ---
-## Declaration
+## C# Syntax
 
-- variable declaration with `=`
-- line ending with `;`
-- type declaration
+- C# is a general-purpose object-oriented language
+- created by Microsoft in 2000 as a competitor for Java
+- Syntax
+  - pretty much everything will be inside a class
+  - Curly brackets `{` and `}` mark the **bodies** of statements
+    - namespaces, classes, functions...
+- semicolon at the end of **some** statements
+  - VS code tells if it's missing!
+---
+
+## C# looks like this
+
+```c#
+using System;
+
+namespace MyAwesomeProgram
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+```
+---
+
+## Variable declaration
+
+1. access modifiers (not necessary, explained later) 
+2. type declaration
+3. variable name
+4. initial value (not necessary) after `=`
+5. line ending with `;`
+
 ```c#
 int number = 1;
 ```
 
 ---
 ## Commenting
-  - one line `//`
-  - multiline `/* */`
+  - one line
+```c#
+// one line comment
+```
+  - multiline 
+```c#
+/* this is a
+multi-line
+comment */
+```
+- comments are not executed
+- use to 
+  1. explain your intent
+  2. comment out actual code for testing and debugging
+
 ---
 ## The most important variable types
   - `bool`: truth value (true / false)
@@ -46,12 +92,17 @@ string text = "text is here";
   - as the name suggests, it's used for *debugging*
   - You can print other variable types as well, not only strings!
 - `Debug.LogWarning()`
-- String interpolation
+- `Debug.LogError()`
+---
+<!-- backgroundColor: black -->
+## Extra: String interpolation
+
   - If you want to include multiple variables per line:
   - start string with `$`, enclose variables in `{` curly braces `}`
   - `Debug.Log($"variable 1: {variable1}, variable 2: {variable2}");`
 
 ---
+<!-- backgroundColor: default -->
 ## Basic arithmetic operations
   - `+` (addition)
   - `-` (subtraction)
@@ -91,17 +142,39 @@ string text = "text is here";
 - `else if`
 - `else`
 ---
-## Comparison operators
-  - `<`
-  - `>`
-  - `<=`
-  - `>=`
-  - `==`
-  - `!=`
-  - `not` (also: `!`)
-  - `and`
-  - `or`
+```c#
+float temperatureInOulu = 2.3f;
+float temperatureInIvalo = -10.9f;
+
+if (temperatureInOulu > temperatureInIvalo)
+{
+    Console.WriteLine("Oulu is warmer than Ivalo");
+}
+else if (temperatureInOulu < temperatureInIvalo)
+{
+    Console.WriteLine("Ivalo is warmer than Oulu");
+}
+else 
+{
+    Console.WriteLine("Oulu and Ivalo have the same temperature");
+}
+```
+
 ---
+## Comparison operators
+  - less than: `<`
+  - less than or equal: `<=`
+  - greater than: `>`
+  - greater than or equal: `>=`
+  - equal to: `==`
+  - not equal to: `!=`
+---
+## Logical operators
+  - not: `!`
+  - and: `&&`
+  - or: `||`
+---
+<!-- backgroundColor: black -->
 ## Extra conditional: Switch-case statement
 
 ```c#
@@ -134,6 +207,7 @@ void Greet()
 }
 ```
 ---
+<!-- backgroundColor: black -->
 ## Extra conditional: Ternary operator
 
 - "Inline if" is done with the ternary operator 
@@ -141,7 +215,6 @@ void Greet()
 ```c#
 message = health > 0 ? "Player is Alive" : "Player is Dead";
 ```
-
 ---
 <!-- backgroundColor: teal -->
 ## Exercise 2: Traffic lights
@@ -160,16 +233,4 @@ Create a timed console application for displaying the state of a traffic light.
 - ⭐⭐⭐ Create a 3d object. Change the color of its material as a function of time.
 
   - **Spoiler:** `gameObject.GetComponent<Renderer>().material.color = Color.green;`
-
----
-<!-- backgroundColor: default -->
-## Extra: checking if something exists
-```c#
-if (attack != null)
-	attack();
-```
-  - or shorthand: 
-```c#
-attack?.Invoke();
-```
 
