@@ -3,17 +3,17 @@ marp: true
 ---
 <!-- class: invert -->
 # 2. The Unity Interface
- ---
+---
 ## Game Objects
 
 - Pretty much everything in Unity is a game object
 - Game objects consist of components
-- Some examples
-  - 3d primitives
+- Some examples...
+  - 3d primitives (Cube, Cylinder, Sphere...)
   - Camera
   - Light
   - Empty
- ---
+---
 ## Editor views
 
 - [Docs: Unity's Interface](https://docs.unity3d.com/Manual/UsingTheEditor.html)
@@ -60,6 +60,9 @@ marp: true
 ## Shortcuts for scene & hierarchy
   - [CTRL+C] + [CTRL+V] copy & paste
   - [CTRL+D] duplicate
+  - [F]: center camera on selected object
+    - helps e.g., if camera zooms in too large increments
+    - press twice to follow the object
  ---
 ### Toolbar
 
@@ -96,6 +99,21 @@ marp: true
 - drag variable to change value
 - hover over variable name to show info
  ---
+
+## GameObjects
+---
+
+## Cylinder
+
+## Camera
+
+- Tip: Select camera and press [CTRL+SHIFT+F] to align camera view with the Scene window viewpoint
+
+## Light
+
+## 
+
+---
 ## Components
  ---
 ### Location in scene
@@ -122,6 +140,8 @@ marp: true
   - custom C# code
   - the most versatile component
  ---
+
+  
 ## Game view
 
 - [Docs: Game view](https://docs.unity3d.com/Manual/GameView.html)

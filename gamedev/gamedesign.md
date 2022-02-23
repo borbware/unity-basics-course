@@ -52,3 +52,11 @@ Idea -> ( Prototype -> Playtesting -> ) -> GDD
 - fast prototyping
   - either by coding or, if possible, with pen and paper
   - iterate based on player response
+
+
+## Reading
+
+- Jesse Schell: Art of Game Design
+- Tracy Fullerton: Game Design Workshop
+- Richard Lemarchand: A Playful Production Process
+- Jaakko Kemppainen: Pelisuunnittelijan peruskirja

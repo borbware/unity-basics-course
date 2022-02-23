@@ -29,8 +29,10 @@ Emphasis: Learning C#
 -  Recreate the classic arcade game Asteroids in Unity.
      - [Youtube: Asteroids gameplay](https://www.youtube.com/watch?v=WYSupJ5r2zo)
 
-Goals:
+Goal:
 - ⭐ MVP: Create a playable single-screen game of Asteroids.
+---
+## Extra goals:
 - ⭐⭐ Add one of the following features:
   - Hi scores & scoreboard
   - Randomized asteroid spawining
@@ -75,7 +77,7 @@ See: [Input handling](unity-cookbook/input-handling.md)
 
 Examine the gameplay video, then play the example Unity-built Asteroids.
 
-Write down or think through...
+In you groups, write down:
 - What features do you see? 
 - How would you begin implementing them?
 - Which feature would you implement first?
@@ -83,16 +85,10 @@ Write down or think through...
 ---
 <!-- class: invert -->
 
-
-
-
-
 - Playing Audio
 - Singleton
 - Instantiate and Destroy
 - screen wrap
-
-
 ---
 <!-- class:  default -->
 ## Exercise 1.
@@ -103,22 +99,23 @@ Create the Player controlled ship for the Asteroids game.
 <!-- class: invert -->
 ### The ship
 - Components
+  - Sprite Renderer
+  - Rigidbody2D
+  - PolygonCollider
+  - Audio Source
   - Scripts
     - Movement
     - Ship
     - WrapAround
     - BounceScale
-  - Sprite Renderer
-  - Rigidbody2D
-  - PolygonCollider
-  - Audio Source
+
 - ShotPos
 - ThrustPos
 - ThrustParticles
   - Particle System
 - Laser
   - Line Renderer
-
+---
 ### Bullet
 
 - SpriteRenderer
@@ -127,7 +124,7 @@ Create the Player controlled ship for the Asteroids game.
 - Bullet Script
 - prefab
 - instantiating
-
+---
 ### The UI
 - Main Camera
   - camera
@@ -145,7 +142,7 @@ Create the Player controlled ship for the Asteroids game.
     - Image
   - Score
     - Text
-
+---
 ### Asteroids
 
 - SpriteRenderer
@@ -157,4 +154,3 @@ Create the Player controlled ship for the Asteroids game.
 
 Friday: playtesting!
 -> ideas to improve
-

@@ -12,14 +12,11 @@ marp: true
 ```c#
 int number = 1;
 ```
----
-## Unity Console
 
-- print stuff into the console with `Debug.Log()`
-  - as the name suggests, it's used for *debugging*
-- Console Window
-  - Error messages
-  - Debug messages
+---
+## Commenting
+  - one line `//`
+  - multiline `/* */`
 ---
 ## The most important variable types
   - `bool`: truth value (true / false)
@@ -38,15 +35,31 @@ float numberValue = 3.0f;
 ```c#
 string text = "text is here";
 ```
+---
+## Unity Console
+
+- Console Window
+  - Error messages
+  - Debug messages
+- `Debug.Log(textVariable)`
+  - print stuff into the console 
+  - as the name suggests, it's used for *debugging*
+  - You can print other variable types as well, not only strings!
+- `Debug.LogWarning()`
+- String interpolation
+  - If you want to include multiple variables per line:
+  - start string with `$`, enclose variables in `{` curly braces `}`
+  - `Debug.Log($"variable 1: {variable1}, variable 2: {variable2}");`
 
 ---
 ## Basic arithmetic operations
-  - `+`
-  - `-`
-  - `*`
-  - `/`
+  - `+` (addition)
+  - `-` (subtraction)
+  - `*` (multiplication)
+  - `/` (division)
 ---
-## Modulo
+<!-- backgroundColor: black -->
+## Extra: Modulo operator
   - `%`
     - modulo operator (remainder)
     - great for looping a range
@@ -55,11 +68,22 @@ string text = "text is here";
     - `5 % 5 = 0`
     - `6 % 5 = 1`
 ---
+<!-- backgroundColor: teal -->
+## Exercise 1: Trying out variables
+
+- create a new C# script component for an empty GameObject.
+- declare two variables `a` and `b` with the type `double`.
+- In the `Start()` function, print to console four operations: the sum, difference, fraction and product.
+
+- What happens if either of them is equal to zero?
+
+---
 ## Shorthands
+<!-- backgroundColor: default -->
   - `++`
-    - `i++;` is shorthand for `i += 1;` is shorthand for `i = i + 1;` 
+    - `i++;` is shorthand for `i += 1;` which is shorthand for `i = i + 1;` 
   - `--`
-    - guess what this is!
+    - works similarly!
 ---
 ## Conditionals
 - `if`
@@ -117,20 +141,29 @@ void Greet()
 ```c#
 message = health > 0 ? "Player is Alive" : "Player is Dead";
 ```
+
 ---
-# Conventions
+<!-- backgroundColor: teal -->
+## Exercise 2: Traffic lights
+
+Create a timed console application for displaying the state of a traffic light.
+- ⭐ Print the new color to the console every frame (use `Update()`).
+
+- The first three seconds should be red, the fourth second should be yellow, and from five seconds onwards green.
+- So, after the first frame the console would read `The color is RED!`.
+- Hint: Use `Time.time`!
+
 ---
-## Comments and stuff
-- dot `.` operator
-- inheritance with colon `:`
-- importing classes with `using`
-  - `[CTRL+.]`
-- defining scope with `{}`
-- comments
-  - one line `//`
-  - multiline `/* */`
+## Exercise 2 Extras
+
+- ⭐⭐ Print the color to console only when the light changes.
+- ⭐⭐⭐ Create a 3d object. Change the color of its material as a function of time.
+
+  - **Spoiler:** `gameObject.GetComponent<Renderer>().material.color = Color.green;`
+
 ---
-## checking if something exists
+<!-- backgroundColor: default -->
+## Extra: checking if something exists
 ```c#
 if (attack != null)
 	attack();

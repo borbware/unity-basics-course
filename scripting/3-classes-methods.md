@@ -2,41 +2,7 @@
 marp: true
 ---
 <!-- class: invert -->
-# Arrays, Lists and Loops
----
-## Arrays and lists
-- Arrays
-- Lists
-- Use Lists if you are changing the size of the array
-- If there are a fixed number of elements, use arrays
----
-- Creating and accessing an array
-```c#
-public GameObject[] players;
-
-void Start ()
-{
-	players = GameObject.FindGameObjectsWithTag("Player");
-	
-	for(int i = 0; i < players.Length; i++)
-	{
-		Debug.Log("Player Number "+i+" is named "+players[i].name);
-	}
-}
-```
----
-## Array methods
-  - Find
-  - Filter
----
-## Loops
-- For
-- While
-- (Do While)
-- Foreach
-
----
-# Classes
+# Classes and methods
 ---
 
 ## Classes & objects
@@ -49,9 +15,18 @@ void Start ()
   - "This table right here"
   - usually, the term *object* also refers to an instance of a class
 ---
+## Class members
+- accessing class members with the dot `.` operator
+  - when we're *inside* the class, we can just use the member name
+  - `someGameObject.transform.position` 
+  - `transform.position`
 
-- scope
-- accessing class members with `.`
+---
+- inheritance with colon `:`
+- importing classes with `using`
+  - `[CTRL+.]`
+- defining scope with `{}`
+
 
 ---
 ## Case convention

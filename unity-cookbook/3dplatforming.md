@@ -30,11 +30,19 @@
 
 ## Tools
 
+- hold shift to select multiple faces.
+
 - [H] Change mode between Vertex / Edge / Face
 - [ALT+U] Insert edge loop
-- Shift+drag: Extrude facere
+- Shift+drag / CTRL+E: Extrude faces
 - [P] Orientation: local / global / normal
 
+## Selection
+- left mouse drag to select
+- [Select Hidden: On / Off](https://docs.unity3d.com/Packages/com.unity.probuilder@4.0/manual/Selection_SelectHidden.html)
+- [Rect: Complete / Intersection](https://docs.unity3d.com/Packages/com.unity.probuilder@4.0/manual/Selection_Rect_Intersect.html)
+## Actions
+- Face actions https://unity-technologies.github.io/procore-legacy-docs/probuilder/probuilder2-gh-pages/toolbar/face/
 
 # Extra tools
 

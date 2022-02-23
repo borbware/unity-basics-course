@@ -11,7 +11,6 @@ Game-like elements have silently found their way to many web services.
   - Can be seen as an artificial means to boost engagement, or even as exploitation
   - Is usually created to benefit corporate interests, rather than users
   - Provide simulated satisfaction instead of concrete rewards
-  - [Heather Chaplin column: I Don’t Want To Be a Superhero](https://slate.com/technology/2011/03/gamification-ditching-reality-for-a-game-isn-t-as-fun-as-it-sounds.html)
 
 
 ### Gamification elements
@@ -57,3 +56,7 @@ Game-like elements have silently found their way to many web services.
   - Juiced like button
   - Number of likes & retweets is shown, and you get notified for likes & retweets
   - If you have more followers, you see less ads
+
+## Reading
+
+- [Heather Chaplin column: Ditching Reality For A Game Isn't As Fun As It Sounds](https://slate.com/technology/2011/03/gamification-ditching-reality-for-a-game-isn-t-as-fun-as-it-sounds.html)
