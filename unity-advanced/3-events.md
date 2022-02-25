@@ -1,18 +1,24 @@
-
+---
+marp: true
+paginate: true
+---
+<!-- headingDivider: 3 -->
+<!-- class: invert -->
 ## Delegates and Events (3b)
 
 ### Delegates
-- Delegate: a container for a function that can be passed around or used like a variable
-- variables only contain data, but delegates can contain functions
-- let's create a delegate signature - a reference for a type of delegate
-  - you can declare its return type and parameter types:
+* Delegate: a container for a function that can be passed around or used like a variable
+* variables only contain data, but delegates can contain functions
+* let's create a delegate signature - a reference for a type of delegate
+  * you can declare its return type and parameter types:
+    ```c#
+    public delegate void OnGameOver(int level);
+    public static OnGameOver onGameOver;
+    ```
+
+### Delegate example: change between two active attacks
+<!-- _footer: 'https://gamedevbeginner.com/events-and-delegates-in-unity/>' -->
 ```c#
-public delegate void OnGameOver(int level);
-public static OnGameOver onGameOver;
-```
-- how to change between two active attacks with a delegate:
-```c#
-// https://gamedevbeginner.com/events-and-delegates-in-unity/
 public class DelegateExample : MonoBehaviour
 {
     delegate void MyDelegate();
@@ -21,22 +27,14 @@ public class DelegateExample : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
-        {
             if (attack != null)
-            {
                 attack();
-            }
-        }
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
             attack = PrimaryAttack;
-        }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
             attack = SecondaryAttack;
-        }
     }
 
     void PrimaryAttack()
@@ -50,25 +48,30 @@ public class DelegateExample : MonoBehaviour
     }
 }
 ```
-- multicasting with +=
-  - https://learn.unity.com/tutorial/delegates?uv=2019.3&projectId=5c88f2c1edbc2a001f873ea5#5c894658edbc2a0d28f48aee 
-```c#
-delegate void MyDelegate(); 
-MyDelegate attack;
+## Multicasting
 
-void Start()
-{
-    attack += PrimaryAttack; 
-    attack += SecondaryAttack; 
-}
-```
-- now both PrimaryAttack and SecondaryAttack trigger when attack is called.
+* multicasting with +=
+  * [Learn: Multicasting](https://learn.unity.com/tutorial/delegates?uv=2019.3&projectId=5c88f2c1edbc2a001f873ea5#5c894658edbc2a0d28f48aee) 
+    ```c#
+    delegate void MyDelegate(); 
+    MyDelegate attack;
 
-### Events
-- observer pattern
-  - [Game programming patterns.com: Observer pattern](http://gameprogrammingpatterns.com/observer.html)
-- Events are specialized multicast delegates
-- can only be triggered from within their own class, not from elsewhere
+    void Start()
+    {
+        attack += PrimaryAttack; 
+        attack += SecondaryAttack; 
+    }
+    ```
+* now **both** PrimaryAttack and SecondaryAttack trigger when attack is called.
+
+## Events
+* observer pattern
+  * [Game programming patterns.com: Observer pattern](http://gameprogrammingpatterns.com/observer.html)
+* Events are specialized multicast delegates
+* can only be triggered from within their own class, not from elsewhere
+* [Learn: Events](https://learn.unity.com/tutorial/events-uh?uv=2019.3&projectId=5c88f2c1edbc2a001f873ea5#5c894782edbc2a1410355442)
+
+### Events example
 ```c#
 public class Player : MonoBehaviour
 {
@@ -92,48 +95,48 @@ public class PlayerHealth : MonoBehaviour
 }
 ```
 
-- [Learn: Events](https://learn.unity.com/tutorial/events-uh?uv=2019.3&projectId=5c88f2c1edbc2a001f873ea5#5c894782edbc2a1410355442)
+## Actions 
+* it can sometimes be inconvenient to declare a new delegate type every time you want to use one
+* especially if all you want to do is create a basic event
+* Actions allow you to use a generic delegate type without needing to define it in your script first
+    ```c#
+    // this...
+    public static event Action OnGameOver;
 
-### Actions 
-- it can sometimes be inconvenient to declare a new delegate type every time you want to use one
-- especially if all you want to do is create a basic event
-- Actions allow you to use a generic delegate type without needing to define it in your script first
-```c#
-// this...
-public static event Action OnGameOver;
+    // ...is basically the same as this
+    public delegate void OnGameOver();
+    public static event OnGameOver onGameOver;
+    ```
 
-// ...is basically the same as this
-public delegate void OnGameOver();
-public static event OnGameOver onGameOver;
-```
-- adding parameters
-```c#
-public static event Action<string> OnGameOver;
-public static event Action<float, bool> OnPlayerHurt;
-```
-- calling with parameters
-```c#
-public static event Action<string> OnGameOver;
+---
+* adding parameters
+    ```c#
+    public static event Action<string> OnGameOver;
+    public static event Action<float, bool> OnPlayerHurt;
+    ```
+* calling with parameters
+    ```c#
+    public static event Action<string> OnGameOver;
 
-public void TakeDamage(float damage)
-{
-    health -= damage;
-    if(health < 0)
+    public void TakeDamage(float damage)
     {
-        OnGameOver?.Invoke("The game is over");
+        health -= damage;
+        if(health < 0)
+        {
+            OnGameOver?.Invoke("The game is over");
+        }
     }
-}
-```
+    ```
 
-### UnityEvents
-- to confuse matters further, Unity has its own UnityEvent system as well.
-- good stuff
-  - you won't need to nullcheck UnityEvents.
-  - Unity Events have special controls in Inspector
-    - contains the list of event function calls
-    - add function calls by drag-and-dropping
-  - thus, extremely useful for making logical connections between scripts in the Inspector
-
+## UnityEvents
+* to confuse matters further, Unity has its own UnityEvent system as well.
+* good stuff
+  * you won't need to nullcheck UnityEvents.
+  * Unity Events have special controls in Inspector
+    * contains the list of event function calls
+    * add function calls by drag-and-dropping
+  * thus, extremely useful for making logical connections between scripts in the Inspector
+---
 ```c#
 using UnityEngine;
 using UnityEngine.Events;
@@ -146,14 +149,15 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health -= damage;
-        if(health < 0)
+        if (health < 0)
         {
             onPlayerDeath.Invoke();
         }
     }
 }
 ```
-- UnityEvents with parameters
+
+### UnityEvents with parameters
 ```c#
 using UnityEngine.Events;
 using System;
@@ -161,6 +165,7 @@ using System;
 [Serializable]
 public class FloatEvent : UnityEvent <float> { }
 ```
+### UnityEvents Example
 ```c#
 using UnityEngine;
 using UnityEngine.Events;
@@ -175,13 +180,14 @@ public class PlayerHealth : MonoBehaviour
     {
         health -= damage;
         onPlayerHurt.Invoke(damage);
-        if(health < 0)
+        if (health < 0)
         {
             onPlayerDeath.Invoke();
         }
     }
 }
 ```
+---
 ```c#
 public class HealthBar : MonoBehaviour
 {
@@ -191,10 +197,10 @@ public class HealthBar : MonoBehaviour
     }
 }
 ```
-- bad stuff
-  - Hooking up scripts in the Inspector requires you to make a manual connection which may not work well for different objects in the scene, especially if they’re created as the game runs.
-  - when connecting events between unrelated objects, you may find it more useful to use event delegates instead.
-  - to overcome this, there's the Scriptable Object Unity Event :)))))))
+* bad stuff
+  * Hooking up scripts in the Inspector requires you to make a manual connection which may not work well for different objects in the scene, especially if they’re created as the game runs.
+  * when connecting events between unrelated objects, you may find it more useful to use event delegates instead.
+  * to overcome this, there's the Scriptable Object Unity Event :)))))))
 
 ### Scriptable object Unity Event
 
@@ -209,7 +215,7 @@ public class GameEvent : ScriptableObject
 
     public void TriggerEvent()
     {
-        for (int i = listeners.Count -1; i >= 0; i--)
+        for (int i = listeners.Count - 1; i >= 0; i--)
         {
             listeners[i].OnEventTriggered();
         }
@@ -226,7 +232,7 @@ public class GameEvent : ScriptableObject
     }
 }
 ```
-
+---
 ```c#
 using UnityEngine;
 using UnityEngine.Events;

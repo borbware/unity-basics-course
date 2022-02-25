@@ -4,4 +4,4 @@
 
 ## Entity component system
 
-- salama-tuli-vesi systeemi
+* salama-tuli-vesi systeemi

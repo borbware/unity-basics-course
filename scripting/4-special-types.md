@@ -1,6 +1,8 @@
 ---
 marp: true
+paginate: true
 ---
+<!-- headingDivider: 3 -->
 <!-- class: invert -->
 ## Enums
 ```c#
@@ -30,5 +32,5 @@ public class EnumScript : MonoBehaviour
     }
 }
 ```
----
 ## Create your own type
+## Structs

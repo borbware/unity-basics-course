@@ -5,7 +5,7 @@ paginate: true
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 # Variables and conditionals
-## C# Syntax
+## About C#
 
 * C# is a general-purpose object-oriented language
 * created by Microsoft in 2000 as a competitor for Java
@@ -13,10 +13,10 @@ paginate: true
   * pretty much everything will be inside a class
   * Curly brackets `{` and `}` mark the **bodies** of statements
     * namespaces, classes, functions...
-* semicolon at the end of **some** statements
+* semicolon at the end of most statements
   * VS code tells if it's missing!
 
-## C# looks like this
+### C# syntax example
 
 ```c#
 using System;
@@ -41,21 +41,21 @@ namespace MyAwesomeProgram
 4) initial value (not necessary) after `=`
 5) line ending with `;`
 
-```c#
-int number = 1;
-```
+    ```c#
+    int number = 1;
+    ```
 
 ## Commenting
   * one line
-```c#
-// one line comment
-```
+    ```c#
+    // one line comment
+    ```
   * multiline 
-```c#
-/* this is a
-multi-line
-comment */
-```
+    ```c#
+    /* this is a
+    multi-line
+    comment */
+    ```
 * comments are not executed
 * use to 
   1) explain your intent
@@ -63,21 +63,21 @@ comment */
 
 ## The most important variable types
   * `bool`: truth value (true / false)
-```c#
-bool booleanValue = true;
-```
+    ```c#
+    bool booleanValue = true;
+    ```
   * `int`: whole number
-```c#
-int wholeNumberValue = 3;
-```
+    ```c#
+    int wholeNumberValue = 3;
+    ```
   * `double` & `float`: decimal number (double = double precision)
-```c#
-float numberValue = 3.0f;
-```
+    ```c#
+    float numberValue = 3.0f;
+    ```
   * `string`: text field
-```c#
-string text = "text is here";
-```
+    ```c#
+    string text = "text is here";
+    ```
 ## Unity Console
 
 * Console Window
@@ -89,8 +89,7 @@ string text = "text is here";
   * You can print other variable types as well, not only strings!
 * `Debug.LogWarning()`
 * `Debug.LogError()`
-## Extra: String interpolation
-<!-- _backgroundColor: black -->
+## Note about string interpolation
 
   * If you want to include multiple variables per line:
   * start string with `$`, enclose variables in `{` curly braces `}`
@@ -196,9 +195,9 @@ void Greet()
 
 * "Inline if" is done with the ternary operator 
   * `(the if statement) ? (if true) : (if false);`
-```c#
-message = health > 0 ? "Player is Alive" : "Player is Dead";
-```
+    ```c#
+    message = health > 0 ? "Player is Alive" : "Player is Dead";
+    ```
 ## Exercise 2: Traffic lights
 <!-- _backgroundColor: teal -->
 
