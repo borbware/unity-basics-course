@@ -21,7 +21,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   | Scripting										  				 	|     | 
 |---|-------------------------------------------------------------------|----:|
-| 1 | [Variables and Conditionals](scripting/1-variables-and-conditionals.md)| 🌔 |
+| 1 | [Variables and Conditionals](scripting/1-variables-and-conditionals.md)| 🌕 |
 | 2 | [Lists and Loops](scripting/2-lists-loops.md)						| 🌓 |
 | 3 | [Classes and Methods](scripting/3-classes-methods.md)			 	| 🌒 |
 |   | [Unity and Visual Studio Code](scripting/unity-and-vsc.md)		| 🌒 |
@@ -53,13 +53,13 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   | Unity Cookbook											   	  	|     | 
 |---|-------------------------------------------------------------------|----:|
-|   | [2D](unity-cookbook/2d.md)							| 🌒 |
-|   | [3D](unity-cookbook/3dplatforming.md)							| 🌒 |
-|   | [Data flow](unity-cookbook/data.md)							| 🌒 |
-|   | [Input handling](unity-cookbook/input-handling.md)							| 🌒 |
-|   | [Pathfinding](unity-cookbook/pathfinding.md)							| 🌒 |
-|   | [Physics](unity-cookbook/physics.md)							| 🌒 |
-|   | [UI](unity-cookbook/UI.md)							| 🌒 |
+|   | [2D](unity-cookbook/2d.md)										| 🌒 |
+|   | [3D](unity-cookbook/3dplatforming.md)								| 🌒 |
+|   | [Data flow](unity-cookbook/data.md)								| 🌒 |
+|   | [Input handling](unity-cookbook/input-handling.md)				| 🌒 |
+|   | [Pathfinding](unity-cookbook/pathfinding.md)						| 🌒 |
+|   | [Physics](unity-cookbook/physics.md)								| 🌒 |
+|   | [UI](unity-cookbook/UI.md)										| 🌒 |
 
 
 ### About game development

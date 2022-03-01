@@ -72,7 +72,6 @@ paginate: true
 <!-- _backgroundColor: teal -->
 * Install and setup all the tools needed and create your first 3D project for the course with the name `Week1Clock`.
 * This project will be worked on step by step in the coming exercises.
-<!-* class:  invert -->
 ## Unity Documentation
 
 * [Docs: User Manual](https://docs.unity3d.com/Manual/UnityManual.html)

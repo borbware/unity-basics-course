@@ -5,6 +5,8 @@ paginate: true
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 # Variables and conditionals
+
+# Variables
 ## About C#
 
 * C# is a general-purpose object-oriented language
@@ -89,17 +91,12 @@ namespace MyAwesomeProgram
   * You can print other variable types as well, not only strings!
 * `Debug.LogWarning()`
 * `Debug.LogError()`
-## Note about string interpolation
-
-  * If you want to include multiple variables per line:
-  * start string with `$`, enclose variables in `{` curly braces `}`
-  * `Debug.Log($"variable 1: {variable1}, variable 2: {variable2}");`
-
 ## Basic arithmetic operations
   * `+` (addition)
   * `-` (subtraction)
   * `*` (multiplication)
   * `/` (division)
+
 ## Extra: Modulo operator
 <!-- _backgroundColor: black -->
   * `%`
@@ -118,48 +115,146 @@ namespace MyAwesomeProgram
 
 * What happens if either of them is equal to zero?
 
-## Shorthands
-  * `++`
-    * `i++;` is shorthand for `i += 1;` which is shorthand for `i = i + 1;` 
-  * `--`
-    * works similarly!
-## Conditionals
-* `if`
-* `if` without curly braces
-* `else if`
-* `else`
-### Conditionals: example
+# Conditionals
+## Comparison operators
+* comparison operators are used to compare two variables
+  * return either `true` or `false`
+* two variables of any type can be compared with equality operators
+  * equal to: `a == b`
+  * not equal to: `a != b`
+* two **numbers** can be further compared with less/greater operators: 
+  * less than: `a < b`
+  * less than or equal: `a <= b`
+  * greater than: `a > b`
+  * greater than or equal: `a >= b`
+
+## `if`, `else if`, and `else`
+
+- checks the truthfulness of a given statement
+- the statements are checked in order, and the first `true` condition is executed 
 ```c#
 float temperatureInOulu = 2.3f;
 float temperatureInIvalo = -10.9f;
 
 if (temperatureInOulu > temperatureInIvalo)
 {
-    Console.WriteLine("Oulu is warmer than Ivalo");
+    Debug.Log("Oulu is warmer than Ivalo");
 }
 else if (temperatureInOulu < temperatureInIvalo)
 {
-    Console.WriteLine("Ivalo is warmer than Oulu");
+    Debug.Log("Ivalo is warmer than Oulu");
 }
 else 
 {
-    Console.WriteLine("Oulu and Ivalo have the same temperature");
+    Debug.Log("Oulu and Ivalo have the same temperature");
 }
 ```
 
-## Comparison operators
-  * less than: `<`
-  * less than or equal: `<=`
-  * greater than: `>`
-  * greater than or equal: `>=`
-  * equal to: `==`
-  * not equal to: `!=`
+
+
+### Single statement if
+
+* if you only have one statement inside the `if` statement, curly braces can be left out
+  ```c#
+  if (temperatureInOulu > temperatureInIvalo)
+  {
+      Debug.Log("Oulu is warmer than Ivalo");
+  }
+  ```
+  is the same as
+  ```c#
+  if (temperatureInOulu > temperatureInIvalo)
+      Debug.Log("Oulu is warmer than Ivalo");
+  ```
+* You can even write the statement and the block to the same line!
+  ```c#
+  if (baa > 20) Debug.Log("Baa");
+  else Debug.Log("Not baa!");
+  ```
+
+## Not operator `!`
+
+```c#
+bool itsColdOutside = true;
+```
+
+* `!` in front of a boolean value flips it from `true` to `false`, and vice versa
+  
+  ```c#
+  if (!itsColdOutside)
+      Debug.Log("It's warm outside.");
+  ```
+  is the same as
+  ```c#
+    if (itsColdOutside == false)
+      Debug.Log("It's warm outside.");
+  ```
+
+## Scope
+
+* Variables declared inside of blocks are called **local** variables
+  * they are only accessible inside of that block
+  ```c#
+  int a = 0;
+  if(a < 10)
+  {
+      // Variable 'b' is only accessible inside of this 'if' block
+      int b = 1;
+      b = 2;          // This works
+  }
+  b = 3;              // This throws an error
+  ```
+
+## Assignment operators
+
+* We have used the assignment operator `=` for assigning values for variables
+  ```c#
+  int x;
+  x = 25;
+  ```
+* _Notice the difference between `=` and the conditional `==`!_
+  * `=` is used for **assigning** values for variables, `==` is used for **comparing** values
+
+
+## Assignment Shorthands
+  * these three examples do the same thing:
+    * `i = i + 1;` 
+    * `i += 1;`
+    * `i++;`
+  * works similarly for subtraction, multiplication, division, modulo
+
 ## Logical operators
-  * not: `!`
-  * and: `&&`
-  * or: `||`
+
+* the three important logical operators
+  * not: `!a`
+  * and: `a && b`
+  * or: `a || b`
+* can be used for more complicated logic
+* 
+```c#
+int a = 1;
+int b = 3;
+int c = 5;
+
+Debug.Log(a < b && a < c);  // prints true
+```
+
+### Logical operator example
+
+* So, instead of nesting `if` statements like this:
+  ```c#
+  if (PlayerHealth > 0)
+    if (PressedJumpButton)
+      PlayerJump();
+  ```
+* Use the `and` operator:
+  ```c#
+  if (PlayerHealth > 0 && PressedJumpButton)
+    PlayerJump();
+  ```
+
 ## Extra conditional: Switch-case statement
-<!-- backgroundColor: black -->
+<!-- _backgroundColor: black -->
 
 ```c#
 public int intelligence = 5;
@@ -192,12 +287,69 @@ void Greet()
 ```
 ## Extra conditional: Ternary operator
 <!-- _backgroundColor: black -->
-
 * "Inline if" is done with the ternary operator 
   * `(the if statement) ? (if true) : (if false);`
     ```c#
     message = health > 0 ? "Player is Alive" : "Player is Dead";
     ```
+
+## Strings
+
+* String is a variable containing block of text
+  * Actually, a special type of variable: contains an array of characters
+
+  ```c#
+  string name = "Matti Teppo";
+  ```
+
+* You can *concatenate* (combine) multiple strings with the `+` operator:
+  ```c#
+  string firstName = "Matti";
+  string lastName = "Teppo";
+  string fullName = firstName + " " + lastName;
+
+  Debug.Log(fullName);    // Outputs "Matti Teppo"
+  ```
+
+## Special characters
+
+* Special *character constants* are preceded by a backslash `\`
+  * can be used for formatting strings
+  * the most used one, `\n` represents a **newline**, a.k.a. a line break
+  ```c#
+  string firstName = "Matti";
+  string lastName = "Teppo";
+  string fullName = firstName + "\n" + lastName;
+
+  Debug.Log(fullName);
+  /* This outputs:
+  Matti
+  Teppo
+  */
+  ```
+
+
+## String interpolation
+
+* Concatenating multiple variables into one string with `+` quickly becomes tedious
+* It's much easier to use **string interpolation**
+  * start string with `$`, enclose variables in `{` curly braces `}`
+    ```c#
+    string animal = "Dog";
+    string sound = "Woof";
+    Debug.Log($"{animal} says {sound}!");
+    // Outputs "Dog says Woof!"
+    ```
+
+* Very useful e.g., for printing multiple variables in one log statement:
+
+
+  ```c#
+  Debug.Log($"variable 1: {variable1}, variable 2: {variable2}");
+  ```
+
+
+
 ## Exercise 2: Traffic lights
 <!-- _backgroundColor: teal -->
 
@@ -216,3 +368,9 @@ Create a timed console application for displaying the state of a traffic light.
 
   * **Spoiler:** `gameObject.GetComponent<Renderer>().material.color = Color.green;`
 
+## Reading
+
+All the basics covering the syntax in C# are covered here: 
+
+* https://www.tutorialspoint.com/csharp/index.html
+* https://www.w3schools.com/cs/default.asp
