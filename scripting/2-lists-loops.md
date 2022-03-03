@@ -11,6 +11,7 @@ paginate: true
 * used for:
   * repeating blocks of code 
   * looping through collections of data (more later...)
+  * running a program (more laterer...)
 * types of loops:
   * While
   * Do While
@@ -145,6 +146,8 @@ Current: 1
 
 ## Exercise 1. 
 <!-- _backgroundColor: teal -->
+
+
 
 
 # Arrays
