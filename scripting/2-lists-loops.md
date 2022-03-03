@@ -170,7 +170,12 @@ Current: 1
   ```c#
   userIds[0] = 104;
   ```
-* Indexing starts from `0`, so the above line assigns a value of 104 to the **first element** of the array
+* Indexing starts from `0`: the above line assigns a value of 104 to the **first element** of the array
+  * if a length of array is 3, the array items are accessed with indices 0,1,2
+* Print the length of an array
+    ```c#
+    Debug.Log(userIds.Length);
+    ```
 ## Creating and populating arrays simultaneously
 
 * You can also create an array containing values with one statement:
@@ -211,22 +216,95 @@ void Start ()
 
 # Lists
 
+## Lists
 
+* a similar data structure to arrays
+* unlike arrays, the size of lists can be easily changed
+* more suitable for dynamic data
+* Declaration and initialization:
+  ```c#
+  using System.Collections.Generic;
 
-## Which to use?
+  // ...
+  
+  List<int> userIds = new List<int>();
+  ```
+* Value assignment:
+  ```c#
+  userIds[0] = 22;
+  ```
+## The List class
 
-* Use Lists if you are changing the size of the array
-* If there are a fixed number of elements, use arrays
+* a key benefit of using Lists lie in the built-in functionalities of the List class
+* after declaring a list, type `nameOfYourList.` and VS Code shows what's available:
+  ![Array](imgs/list-methods.png)
+## List properties & methods
 
-## Array methods
-  * Find
-  * Filter
-
+* some examples of list functionalities
+* some are properties, some methods, i.e., functions with brackets `()`
+  * `list.Count` tells the length of the list
+  * `list.Add(newItem)` adds `newItem` to the end of the list
+  * `list.Remove(item)` removes `item` from list
+  * `list.Contains(item)` checks if `item` is in the list & returns boolean
+  * `list.Find(predicate)` finds an item from the list that matches the given predicate. More about it later!
 
 ## Exercise 2. Dimensionality
 <!-- _backgroundColor: teal -->
 
-Create two-dimensional data 
+Create two-dimensional data structure
 
 
-# Iterating through lists and arrays
+## Iterating through an array with `for`
+```c#
+  string[] starters = new string[] 
+  {
+      "Bulbasaur", 
+      "Charmander", 
+      "Squirtle"
+  };
+
+  for (int i = 0; i < starters.Length; i++)
+  {
+      Debug.Log(starters[i]);
+  }
+```
+
+## Iterating through a list with `for`
+
+```c#
+List<string> starters = new List<string>() 
+{
+      "Chikorita", 
+      "Cyndaquil"
+      "Totodile", 
+};
+
+for(int i = 0; i < starters.Count; i++)
+{
+    Debug.Log(starters[i]);
+}
+```
+* note: lists use `.Count` instead of `.Length`!
+
+## Better iteration with `foreach`
+
+```c#
+  string[] starters = new string[] 
+  {
+      "Bulbasaur", 
+      "Charmander", 
+      "Squirtle"
+  };
+
+  foreach (string starter in starters)
+  {
+      Debug.Log(starter);
+  }
+```
+* Use if
+  a) you don't need the index while looping through list/array
+  b) you aren't mutating, i.e, editing, the array/list elements (see example below)
+
+### Foreach mutation blocked
+
+![alt](imgs/foreach-mutation.png)
