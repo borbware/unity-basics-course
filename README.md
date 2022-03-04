@@ -22,8 +22,8 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |   | Scripting										  				 	|     | 
 |---|-------------------------------------------------------------------|----:|
 | 1 | [Variables and Conditionals](scripting/1-variables-and-conditionals.md)| 🌕 |
-| 2 | [Lists and Loops](scripting/2-lists-loops.md)						| 🌓 |
-| 3 | [Classes and Methods](scripting/3-classes-methods.md)			 	| 🌒 |
+| 2 | [Lists and Loops](scripting/2-lists-loops.md)						| 🌔 |
+| 3 | [Classes and Methods](scripting/3-classes-methods.md)			 	| 🌓 |
 |   | [Unity and Visual Studio Code](scripting/unity-and-vsc.md)		| 🌒 |
 
 |   | Math										  				 	  	|     | 

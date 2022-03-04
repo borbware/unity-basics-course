@@ -308,3 +308,6 @@ for(int i = 0; i < starters.Count; i++)
 ### Foreach mutation blocked
 
 ![alt](imgs/foreach-mutation.png)
+
+## Exercise 3. xx
+<!-- _backgroundColor: teal -->
