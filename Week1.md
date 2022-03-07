@@ -9,14 +9,30 @@ paginate: true
 
 ## What to expect
 
-* Familiarizing with the tools
-* Learning the Unity interface
 * C# basics
 * Unity basics (in 3d)
-* VS code basics
-* Only a bit scripting
-* Week project: Catlike Coding's clock exercise
+* Some programming
+* A Week project
+
+## Week 1 Schedule
+
+* Day 1: Unity basics 0 & 1
+* Day 2: Unity basics 2 & 3
+* Day 3: Programming 1: Variables & Conditionals
+* Day 4: Project management 1: Git basics
+* Day 5: Week project & Wrap-up
+
 # Day 1: Introduction
+
+## Day 1 Schedule
+
+* Morning
+  * Introduction
+  * Setup
+  * Unity basics 0 & 1
+* Afternoon
+  * Working on exercises & Week project
+
 ## About me
 * developer & instructor at Buutti
 * indie game developer
@@ -25,8 +41,8 @@ paginate: true
 * releasing first commercial game EMUUROM this year
 ## About this course
 
-* We will make multiple video games with Unity
-* Course is separated into three stages
+* Everyone will create multiple video games with Unity
+* Course is separated into three four-week stages
 * [Stages](Stages.md)
 * [Stage 1](Stage1.md)
     * Learn the basics of Unity & game programming
@@ -36,7 +52,7 @@ paginate: true
 	* Learn about game design & game industry
 	* Create a bit larger (yet still tiny) games in teams
 * Stage 3
-    * Create a single game project in the span of four weeks
+    * Create a single game project
 ## About YOU
 
 * Your name
@@ -47,10 +63,12 @@ paginate: true
 * What is the last video game you played?
 * Most disappointing game
 * The worst game you've played
-## Pienryhmiin jako
-## Unity
 
-[Unity basics 1. What is Unity?](unity-basics/1-what-is-unity.md)
+## Teams
+
+* Team X
+* Team Y
+* Team Z
 
 ## Applications
 
@@ -69,6 +87,22 @@ paginate: true
 	* later this week: Github (for version control)
 	* even later: Itch.io (for publishing your games)
 
+
+## Unity
+
+[Unity basics 0. What is Unity?](unity-basics/0-what-is-unity.md)
+
+
+## Unity Documentation
+
+* [Docs: User Manual](https://docs.unity3d.com/Manual/UnityManual.html)
+* if you don't know how something works, this should be the first place to learn from
+* Docs will be heavily featured during the course!
+## The Unity Interface
+
+[Unity basics 1. The Unity Interface](unity-basics/1-the-unity-interface.md)
+
+
 ## Week projects
 
 * During Stage 1, a new week project is introduced every week
@@ -82,26 +116,18 @@ paginate: true
 
 ## Week project 1: Clock
 
+<!-- _backgroundColor: purple -->
 For the first week project, you will create a 3d model of a clock with ticking hour, minute and second indicators.
 
 The project is separated into individual exercises. For more help, you can follow the [CatlikeCoding clock tutorial](https://catlikecoding.com/unity/tutorials/basics/game-objects-and-scripts/).
 
-<!-- _backgroundColor: purple -->
 
-## Week Exercise 1. Creating a project
+## WP Exercise 1. Creating a project
 <!-- _backgroundColor: purple -->
 * Install and setup all the tools needed and create your first 3D project for the course with the name `Week1Clock`.
 * This project will be worked on step by step in the coming exercises.
-## Unity Documentation
 
-* [Docs: User Manual](https://docs.unity3d.com/Manual/UnityManual.html)
-* if you don't know how something works, this should be the first place to learn from
-* Docs will be heavily featured during the course!
-## The Unity Interface
-
-[Unity basics 2. The Unity Interface](unity-basics/2-the-unity-interface.md)
-
-## Week Exercise 2. Building a simple clock
+## WP Exercise 2. Building a simple clock
 <!-- _backgroundColor: purple -->
 Create a 3D model of a clock from Unity's primitives with three hands and 12 hour indicators.
 
@@ -113,33 +139,48 @@ Unlike in the picture below, set all the indicators to 12. They will be later ro
 
 # Day 2: Assets & scripting
 
-## Assets
+## Day 2 schedule
 
-[Unity basics 3: Assets](unity-basics/3-assets.md)
-
-## Scripting GameObjects
-
-See: [Unity basics 4: Scripting GameObjects](unity-basics/4-scripting-gameobjects.md)
+* Morning
+  * [Unity basics 2: Assets](unity-basics/2-assets.md)
+  * [Unity basics 3: Scripting GameObjects](unity-basics/3-scripting-gameobjects.md)
+* Afternoon
+  * Working on the week project
 
 
 
 # Day 3: Scripting 1
-[Scripting 1: Variables and conditionals](scripting/1-variables-and-conditionals.md)
 
-## Week exercise 3. Animating the clock
+## Day 3 Schedule
+
+* Morning
+  * [Programming 1: Variables and conditionals](programming/1-variables-and-conditionals.md)
+* Afternoon
+  * Working on the week project
+## WP exercise 3. Animating the clock
 <!-- _backgroundColor: purple -->
 Make the clock hands move when time goes on.
 
 ⭐ Make the movement instantaneous: the second indicator moves once per second directly to the next position
 ⭐⭐ Make the movement smooth: the second indicator moves continuously at a rate of one full rotation per minute
 ⭐⭐⭐ Make the movement realistic: study how the hands of a real clock moves! The second indicator moves incrementally between fixed positions, but the movement is not instantaneous. Try to replicate this. 
+
+# Day 4: Git
+
+## Day 4 Schedule
+* Morning
+  * [Project management 1: Git Basics](project-management/1-git-basics.md)
+* Afternoon
+  * Working on the week project
+  * One-on-one meetings
+
 # Day 5: Wrap-up
-## Working on the week project
 
-* one-on-one meetings
-  * useana päivänä, ei riitä perjantai
-  * ehkä vain eka viikolla kaikille???
-## Week project presentations
+## Day 5 Schedule
 
-* playtesting
-* iteration based on feedback
+* Morning
+  * Working on the week project
+  * One-on-one meetings
+* Afternoon
+  * Working on the week project
+  * 14:30 Week project presentations

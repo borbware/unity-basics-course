@@ -4,7 +4,7 @@ paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
-# 4. Scripting GameObjects
+# 3. Scripting GameObjects
 ## Scripting
 ## Creating a new script
 

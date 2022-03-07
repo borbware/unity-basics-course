@@ -4,7 +4,7 @@ paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
-# 1. What is Unity
+# 0. What is Unity
 ## About Unity
 
 * A commericial closed-source game engine

@@ -4,7 +4,7 @@ paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
-# 3. Assets
+# 2. Assets
 ## Project window
 
 * [Docs: Project window](https://docs.unity3d.com/Manual/ProjectView.html)

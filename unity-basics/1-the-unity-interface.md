@@ -4,7 +4,8 @@ paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
-# 2. The Unity Interface
+# 1. The Unity Interface
+
 ## Game Objects
 
 * Pretty much everything in Unity is a game object
@@ -12,6 +13,7 @@ paginate: true
 * Some examples...
   * 3d primitives (Cube, Cylinder, Sphere...)
   * Camera
+    * Tip: Select camera and press [CTRL+SHIFT+F] to align camera view with the Scene window viewpoint
   * Light
   * Empty
 ## Editor views
@@ -61,7 +63,7 @@ paginate: true
 ### Toolbar
 
 * [Docs: Toolbar](https://docs.unity3d.com/Manual/Toolbar.html)
-* for manipulating existing stuff
+* Used for manipulating existing stuff
 * activating the tool changes the [LMB] behaviour
 * navigation shortcuts still available in other tools!
 * in move/rotate/scale, you can use the red, green and blue shapes to manipulate x,y,z axes, respectively
@@ -91,18 +93,10 @@ paginate: true
 * drag variable to change value
 * hover over variable name to show info
 
-## GameObjects
 
-## Cylinder
-
-## Camera
-
-* Tip: Select camera and press [CTRL+SHIFT+F] to align camera view with the Scene window viewpoint
-
-## Light
+## GameObject Components
 
 
-## Components
 ### Location in scene
 * **Transform**
   * included even in an empty game object by default!
@@ -116,7 +110,7 @@ paginate: true
   * isTrigger
 * **RigidBody**
   * for interacting with the physics engine 
-### Others
+### Some others
 * Drawing the component
   * **Renderer**
     * the visible part of the game object

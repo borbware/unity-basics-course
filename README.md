@@ -19,12 +19,12 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 ### About programming
 
-|   | Scripting										  				 	|     | 
-|---|-------------------------------------------------------------------|----:|
-| 1 | [Variables and Conditionals](scripting/1-variables-and-conditionals.md)| 🌕 |
-| 2 | [Lists and Loops](scripting/2-lists-loops.md)						| 🌔 |
-| 3 | [Classes and Methods](scripting/3-classes-methods.md)			 	| 🌓 |
-|   | [Unity and Visual Studio Code](scripting/unity-and-vsc.md)		| 🌒 |
+|   | Programming										  				 	|     | 
+|---|-----------------------------------------------------------------------|----:|
+| 1 | [Variables and Conditionals](programming/1-variables-and-conditionals.md)| 🌕 |
+| 2 | [Lists and Loops](programming/2-lists-loops.md)						| 🌔 |
+| 3 | [Classes and Methods](programming/3-classes-methods.md)			 	| 🌓 |
+|   | [Unity and Visual Studio Code](programming/unity-and-vsc.md)		    | 🌒 |
 
 |   | Math										  				 	  	|     | 
 |---|-------------------------------------------------------------------|----:|
@@ -32,16 +32,16 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 2 | [Forces](math/2-forces.md)										| 🌑 |
 | 3 | [Sinewaves](math/3-sinewaves.md)									| 🌑 |
 | 4 | [Interpolation](math/4-interpolation.md)							| 🌒 |
-| 5 | [Unity Math classes](math/5-math-classes.md)						| 🌒 |
+|   | [Unity Math classes](math/5-math-classes.md)						| 🌒 |
 
 ### About Unity
 
 |   | Unity Basics									  				 	|     | 
 |---|-------------------------------------------------------------------|----:|
-| 1 | [What is Unity?](unity-basics/1-what-is-unity.md)					| 🌔 |
-| 2 | [The Unity Interface](unity-basics/2-the-unity-interface.md) 		| 🌓 |
-| 3 | [Assets](unity-basics/3-assets.md)			 					| 🌒 |
-| 4 | [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)	| 🌒 |
+| 0 | [What is Unity?](unity-basics/0-what-is-unity.md)					| 🌔 |
+| 1 | [The Unity Interface](unity-basics/1-the-unity-interface.md) 		| 🌔 |
+| 2 | [Assets](unity-basics/2-assets.md)			 					| 🌒 |
+| 3 | [Scripting Gameobjects](unity-basics/3-scripting-gameobjects.md)	| 🌒 |
 
 |   | Unity Advanced											   	  	|     | 
 |---|-------------------------------------------------------------------|----:|
@@ -66,9 +66,10 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   | Project management											 	|     | 
 |---|-------------------------------------------------------------------|----:|
-| 1 | [Git](project-management/1-git.md) 								| 🌔 |
-| 2 | [GitHub tools](project-management/2-github-tools.md)				| 🌒 |
-| 3 | [Scrum](project-management/3-scrum.md) 							| 🌑 |
+| 1 | [Git Basics](project-management/1-git-basics.md)					| 🌔 |
+| 2 | [Git Continued](project-management/2-git-continued.md)			| 🌔 |
+| 3 | [GitHub tools](project-management/3-github-tools.md)				| 🌒 |
+| 4 | [Scrum](project-management/4-scrum.md) 							| 🌑 |
 |   | [Unity Collab](project-management/unity-collab.md) 				| 🌑 |
 
 

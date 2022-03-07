@@ -15,33 +15,22 @@ paginate: true
 * Collision
 * Movement
 
-# Day 1: Input & Vectors
+## Week 2 Schedule
 
-## Week project 2: Asteroids
-<!-- _backgroundColor: purple -->
-*  Recreate the classic arcade game Asteroids in Unity.
-     * [Youtube: Asteroids gameplay](https://www.youtube.com/watch?v=WYSupJ5r2zo)
+* Day 1
+  * Input Handling
+  * Game math 1: Vectors
+* Day 2: Programming 2: Lists and loops
+* Day 3: Physics & Collision
+* Day 4: Components
+* Day 5: WP Wrap-up
 
-Goal:
-* ⭐ MVP: Create a playable single-screen game of Asteroids.
-## Extra goals:
-<!-- _backgroundColor: purple -->
-* ⭐⭐ Add one of the following features:
-  * Hi scores & scoreboard
-  * Randomized asteroid spawining
-  * Level progression: new asteroids appear
-  * Twin-stick: Use right stick to control the bullet direction 
-* ⭐⭐⭐ Spice up the game: Add a game mechanic of your own
+# Day 1: 2D Movement
 
+## Day 1 Schedule
 
-## Exercise 0.
-<!-- _backgroundColor: purple -->
-Examine the gameplay video, then play the example Unity-built Asteroids.
-
-In you groups, write down:
-* What features do you see? 
-* How would you begin implementing them?
-* Which feature would you implement first?
+* Morning
+  * 
 
 ## Using Unity for 2D games
 
@@ -63,13 +52,42 @@ See: [Input handling](unity-cookbook/input-handling.md)
 
 See: [Vectors](math/1-vectors.md)
 
-## Exercise 1.
+
+## Week project 2: Asteroids
+<!-- _backgroundColor: purple -->
+*  Recreate the classic arcade game Asteroids in Unity.
+     * [Youtube: Asteroids gameplay](https://www.youtube.com/watch?v=WYSupJ5r2zo)
+
+Goal:
+* ⭐ MVP: Create a playable single-screen game of Asteroids.
+## Extra goals:
+<!-- _backgroundColor: purple -->
+* ⭐⭐ Add one of the following features:
+  * Hi scores & scoreboard
+  * Randomized asteroid spawining
+  * Level progression: new asteroids appear
+  * Twin-stick: Use right stick to control the bullet direction 
+* ⭐⭐⭐ Spice up the game: Add a game mechanic of your own
+
+
+## WP exercise 0.
+<!-- _backgroundColor: purple -->
+Examine the gameplay video, then play the example Unity-built Asteroids.
+
+In you groups, write down:
+* What features do you see? 
+* How would you begin implementing them?
+* Which feature would you implement first?
+
+## WP exercise 1.
 <!-- _backgroundColor: purple -->
 
 Create the Player controlled ship for the Asteroids game.
 
-# Day 2: Scripting 2
-[Scripting 2: Lists and Loops](scripting/2-lists-loops.md)
+
+
+# Day 2: Programming 2
+[Programming 2: Lists and Loops](programming/2-lists-loops.md)
 
 # Day 3: Physics & Collision
 
@@ -141,17 +159,6 @@ See: [Physics](unity-cookbook/physics.md)
 * WrapAround Script
 * extra: generating a level
 
-
-
-# Day 4: Git
-
-TODO: vain absolute basics gitistä
-* initialisointi
-* add
-* commit
-* push
-
-[Project management 1: Git](project-management/1-git.md)
 
 # Day 5: Playtesting
 
