@@ -6,25 +6,18 @@ paginate: true
 <!-- class: invert -->
 # Week 2: Scripting & Game design
 
-Emphasis: Learning C#
+## What to expect
+
 * Unity basics (in 2d)
-* Rigidbodies
-	* AddTorque
-	* AddForce
+* Input
+* Vectors
+* Physics
 * Collision
 * Movement
-* 2d physics
-* [C# basics 2/2](#c-basics)
-	* [Classes](#classes)
-	* [Enums](#enums)
-* [Unity basics 1/2](#unity-basics)
-	* [Monobehaviour methods](#monobehaviour-methods)
-	* [Getting Input](#getting-input)
-	* [Important Unity classes 1/2](#important-unity-classes)
-		* [GameObject](#gameobject)
-		* [Transform](#transform)
-		* [Vector3 & Vector2](#vector3--vector2)
-## Week project: Asteroids
+
+# Day 1: Input & Vectors
+
+## Week project 2: Asteroids
 <!-- _backgroundColor: purple -->
 *  Recreate the classic arcade game Asteroids in Unity.
      * [Youtube: Asteroids gameplay](https://www.youtube.com/watch?v=WYSupJ5r2zo)
@@ -40,20 +33,50 @@ Goal:
   * Twin-stick: Use right stick to control the bullet direction 
 * ⭐⭐⭐ Spice up the game: Add a game mechanic of your own
 
-<!-* class: invert -->
-<!-* backgroundColor: default -->
-## Scripting GameObjects
 
-See: [Unity basics 4: Scripting GameObjects](unity-basics/4-scripting-gameobjects.md)
+## Exercise 0.
+<!-- _backgroundColor: purple -->
+Examine the gameplay video, then play the example Unity-built Asteroids.
+
+In you groups, write down:
+* What features do you see? 
+* How would you begin implementing them?
+* Which feature would you implement first?
+
+## Using Unity for 2D games
+
+* Last week we focused on 3D (x, y, z)
+* Unity does not have a dedicated 2D (x, y) mode
+* You can create a 2D project template, however
+  * This essentially hides some gameobject templates like 3d primitives
+    * Replaces them with 2d primitives
+  * It still uses the 3D engine, the z axis is just disregarded
+* There is a dedicated Vector2 class for 2D vectors
+  * Some vectors used in 2D **are still 3D** due to Unity being a 3D engine!
+
 
 ## Input handling
+
 See: [Input handling](unity-cookbook/input-handling.md)
-  * GetButtonDown
-  * GetAxis
-* Vectors
-  * vector * scalar
-  * vector.up
-  * vector.magnitude
+
+## Game math 1. Vectors
+
+See: [Vectors](math/1-vectors.md)
+
+## Exercise 1.
+<!-- _backgroundColor: purple -->
+
+Create the Player controlled ship for the Asteroids game.
+
+# Day 2: Scripting 2
+[Scripting 2: Lists and Loops](scripting/2-lists-loops.md)
+
+# Day 3: Physics & Collision
+
+## Physics
+
+See: [Physics](unity-cookbook/physics.md)
+
 * Physics
   * Rigidbody
     * .velocity
@@ -64,25 +87,7 @@ See: [Input handling](unity-cookbook/input-handling.md)
   * Mathf.Abs
   * Mathf.Clamp
 
-## Game math 1. Vectors
-
-## Exercise 0.
-<!-- _backgroundColor: teal -->
-Examine the gameplay video, then play the example Unity-built Asteroids.
-
-In you groups, write down:
-* What features do you see? 
-* How would you begin implementing them?
-* Which feature would you implement first?
-
-* Playing Audio
-* Singleton
-* Instantiate and Destroy
-* screen wrap
-## Exercise 1.
-<!-- _backgroundColor: teal -->
-
-Create the Player controlled ship for the Asteroids game.
+## Components
 
 ### The ship
 * Components
@@ -95,7 +100,7 @@ Create the Player controlled ship for the Asteroids game.
     * Ship
     * WrapAround
     * BounceScale
-
+### Child components
 * ShotPos
 * ThrustPos
 * ThrustParticles
@@ -115,7 +120,7 @@ Create the Player controlled ship for the Asteroids game.
   * camera
   * flare layer
   * audio listener
-* Canvas
+### Canvas
   * Components
     * RectTransform
     * Graphic Raycaster
@@ -136,5 +141,11 @@ Create the Player controlled ship for the Asteroids game.
 * WrapAround Script
 * extra: generating a level
 
-Friday: playtesting!
--> ideas to improve
+
+
+# Day 4: Git
+
+[Project management 1: Git](project-management/1-git.md)
+
+# Day 5: Playtesting
+

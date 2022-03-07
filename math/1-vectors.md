@@ -29,6 +29,7 @@ paginate: true
 ## Vector arithmetic
 
 * [Docs: Understanding Vector Arithmetic](https://docs.unity3d.com/2019.3/Documentation/Manual/UnderstandingVectorArithmetic.html)
+  TODO: add pictures
   * addition
   * subtraction
   * scalar multiplication
@@ -49,13 +50,20 @@ paginate: true
   * subtraction
   * vector_B * vector_A
   * length of the vector: pythagoras
+  
+## Special vectors of Unity
+
+* vector.up
+* vector.forward
+
 ## Note about distance
 
 * Note: when performance is important, using magnitude can be a bad idea: it includes the costly square root operation
   * if you need to only compare magnitudes, or you're squaring it right away, use `.sqrMagnitude` instead!
 ## Exercise 1
+<!-- _backgroundColor: teal -->
 
-make enemy shoot player when player is near.
+Make an enemy shoot player when the player is near.
 
 ## Vector3 & Vector2
 

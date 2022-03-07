@@ -11,7 +11,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |   | [Stage 1](Stage1.md)						  				 	  	|     | 
 |---|-------------------------------------------------------------------|----:|
 | 1 | [Week 1](Week1.md)												| 🌔 |
-| 2 | [Week 2](Week2.md)												| 🌓 |
+| 2 | [Week 2](Week2.md)												| 🌔 |
 | 3 | [Week 3](Week3.md)												| 🌒 |
 | 4 | [Week 4](Week4.md)												| 🌑 |
 
