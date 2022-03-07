@@ -63,7 +63,7 @@ b) Project > Right click > Create > C# script > drag and drop to a game object
 * Extra: `[Header("Explainer for UI")]`
   * great for team communication
 * `[Range(x,x)]`
-  * slider for inspector
+  * adds a slider to inspector
 
 
 
@@ -110,7 +110,7 @@ b) Project > Right click > Create > C# script > drag and drop to a game object
     * how to toggle?
       * `component.enabled = !component.enabled`
 
-## Getting GameObjects
+## Referring to GameObjects
 * fast solution
   * create public GameObject property (shows up in Inspector)
   * drag & drop gameObject to Inspector
@@ -131,7 +131,7 @@ b) Project > Right click > Create > C# script > drag and drop to a game object
   * `childGameObject.transform.parent`
 
 
-## Creating and destroying gameobjects
+## Creating and destroying GameObjects
 
   * `Instantiate()`
   * `Destroy()`

@@ -123,7 +123,7 @@ See: [Unity basics 4: Scripting GameObjects](unity-basics/4-scripting-gameobject
 
 
 
-# Day 4: Scripting 1
+# Day 3: Scripting 1
 [Scripting 1: Variables and conditionals](scripting/1-variables-and-conditionals.md)
 
 ## Week exercise 3. Animating the clock

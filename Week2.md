@@ -87,7 +87,7 @@ See: [Physics](unity-cookbook/physics.md)
   * Mathf.Abs
   * Mathf.Clamp
 
-## Components
+## Week Project Components
 
 ### The ship
 * Components
@@ -144,6 +144,12 @@ See: [Physics](unity-cookbook/physics.md)
 
 
 # Day 4: Git
+
+TODO: vain absolute basics gitistä
+* initialisointi
+* add
+* commit
+* push
 
 [Project management 1: Git](project-management/1-git.md)
 

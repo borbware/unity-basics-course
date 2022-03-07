@@ -368,6 +368,13 @@ Create a timed console application for displaying the state of a traffic light.
 
   * **Spoiler:** `gameObject.GetComponent<Renderer>().material.color = Color.green;`
 
+## A brief word about functions
+
+* enclosing functionality
+* reusability
+* TODO
+* example
+
 ## Reading
 
 All the basics covering the syntax in C# are covered here: 
