@@ -1,6 +1,7 @@
 ---
 marp: true
 paginate: true
+math: katex
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
