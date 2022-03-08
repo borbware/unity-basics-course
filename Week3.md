@@ -6,10 +6,18 @@ paginate: true
 <!-- class: invert -->
 # Week 3: Building a game
 
-Emphasis: scene & data management?
-## Math 2: Sine waves
+## What to expect
 
-* [Brackeys video: Sine waves](https://www.youtube.com/watch?v=pEXdTLsEAjk)
+Emphasis: scene & data management?
+## Week schedule
+
+## Week project: Top-down shooter
+
+## Game math 1. Vectors
+
+See: [Vectors](math/1-vectors.md)
+
+
 
 ## Tools for assets
 

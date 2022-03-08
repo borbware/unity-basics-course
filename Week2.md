@@ -19,9 +19,9 @@ paginate: true
 
 * Day 1
   * Input Handling
-  * Game math 1: Vectors
+  * Physics & Collision
 * Day 2: Programming 2: Lists and loops
-* Day 3: Physics & Collision
+* Day 3: 
 * Day 4: Components
 * Day 5: WP Wrap-up
 
@@ -48,9 +48,6 @@ paginate: true
 
 See: [Input handling](unity-cookbook/input-handling.md)
 
-## Game math 1. Vectors
-
-See: [Vectors](math/1-vectors.md)
 
 
 ## Week project 2: Asteroids

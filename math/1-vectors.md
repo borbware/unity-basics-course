@@ -5,56 +5,130 @@ paginate: true
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 # Game math 1: Vectors
-## What are vectors
 
-* vector is a mathematical thingy with length and direction
-* often represented with an arrow
+# Vector theory
+## What is a vector?
+
+* vector is a mathematical thingy with a **length** and a **direction**
+* often represented by an arrow (see next slide)
 * can have multiple dimensions (also called components)
   * in our case usually 2 or 3: 
   * x, y, and possibly z
 * video games are full of vectors!
   * used for depicting position, velocity, acceleration, forces....
-## Vectors in Unity
+
+### 2D vector example
+* This is a 2D vector $\vec{A} = (6, 3)$
+  * x-component $\vec{A}_x = 6$
+  * y-component $\vec{A}_y = 3$
+* Vectors start from the origin, or $(0,0)$
+![](imgs/2d-vector.png)
+
+### 2D vector length
+
+* The length of a 2D vector is given by the Pythagoras theorem
+  * $|\vec{A}| = \sqrt{\vec{A}_x^2 + \vec{A}_y^2}$
+  * $\sqrt{6^2 + 3^2} = \sqrt{36 + 9} = \sqrt{45} \approx 6.7$
+
+* In C#... 
+  * `Mathf.Sqrt(A.x^2 + A.y^2)`
+  * `A.Magnitude`
+
+## Vector arithmetic
+
+* [Docs: Understanding Vector Arithmetic](https://docs.unity3d.com/2019.3/Documentation/Manual/UnderstandingVectorArithmetic.html)
+* Let's introduce the most important vector operations
+  * addition
+  * subtraction
+  * scalar multiplication
+  * Extra: vector multiplication
+    * dot product
+    * cross product
+* C# examples included
+### Vector addition
+* sum of two vectors is calculated by summing up the individual components
+* $\vec{C} = \vec{A} + \vec{B} = (3, 3) + (6, -2) = (3 + 6, 3 - 2) = (9, 1)$
+* can be illustrated by moving $\vec{B}$ to start from the endpoint of $\vec{A}$
+![](imgs/2d-vector-addition.png)
+
+```c#
+Vector2 A = new Vector2(3,3);
+Vector2 B = new Vector2(6,-2);
+Vector2 C = A + B;
+```
+
+### Vector subtraction
+
+* difference of two vectors, $A - B$:
+  * B is "flipped": If $\vec{B} = (6, -2)$, then $-\vec{B} = (-6, 2)$
+  * $$\vec{C} = \vec{A} - \vec{B} = (3, 3) - (6, -2) = (3 - 6, 3 - (-2)) = (3 - 6, 3 + 2) = (-3, 5)$$
+* $\vec{A} - \vec{B}$ starts from the endpoint of $\vec{B}$ and ends in the endpoint of $\vec{A}$
+![](imgs/2d-vector-subtraction.png)
+```c#
+Vector2 A = new Vector2(3,3);
+Vector2 B = new Vector2(6,-2);
+Vector2 C = A - B;
+```
+
+### Scalar multiplication
+
+* When a vector is multiplied by a scalar (a number), the vector is *scaled*
+  * If a vector is multiplied by 2, its length doubles
+  * $2 \cdot \vec{A} = 2 \cdot (3,2) = (2 \cdot 3, 2 \cdot 2) = (6, 4)$
+![](imgs/2d-vector-scalar-multiplication.png)
+```c#
+Vector2 A = new Vector2(3,3);
+Vector2 C = 2 * A;
+```
+
+### Special cases for scalar multiplication
+
+* If the scalar is negative, the vector gets flipped
+  * that's what happened in subtraction
+  * $-\vec{A} = -1\cdot \vec{A} = -1 \cdot (6,4) = (-1 \cdot 6,-1 \cdot 4) = (-6, -4)$
+* What about division?
+  * it's basically multiplication as well
+  * $\vec{A} / 5 = \frac{1}{5} \cdot \vec{A} = \frac{1}{5} \cdot (6,4) = (\frac{1}{5} \cdot 6,\frac{1}{5} \cdot 4 ) = (\frac{6}{5},\frac{4}{5} ) = (1.2, 0.8)$
+  
+  ![](imgs/2d-vector-scalar-multiplication-2.png)
+# Vectors in Unity
+
+## Vector classes
 
 * Unity has two Vector classes, Vector2 and Vector3
   * 2 and 3 are the number of dimensions: (x,y) and (x,y,z)
   * `Vector2 position = new Vector2(1.0f, 2.0f)`
-  * the components are respective to the *origin* (0,0)
-    * can be modified by accessing with the dot notation
+    * can be modified by accessing the vector with the dot notation:
     * `position.x = 3.0f`
 
 * length of vector can be acquired with `vector.Magnitude`
   * it's calculated with the Pythagoras' theorem:
   * `Mathf.Sqrt(position.x^2 + position.y^2 + position.z^2)`
-## Vector arithmetic
 
-* [Docs: Understanding Vector Arithmetic](https://docs.unity3d.com/2019.3/Documentation/Manual/UnderstandingVectorArithmetic.html)
-  TODO: add pictures
-  * addition
-  * subtraction
-  * scalar multiplication
-  * vector multiplication
-    * dot product
-    * cross product
 ## Velocity vectors
   * velocity vector: velocity_x and velocity_y components
     * `new_position = old_position + velocity`
     * vector addition!
     * usually depicted as starting from the moving object
-    * but wait, vector does not say where it starts from!!
 ## Distance vectors
 
 * distance vector between two objects
-  * 
   * Vector2.Distance(vector_A, vector_B)
   * subtraction
-  * vector_B * vector_A
+  * vector_B - vector_A
   * length of the vector: pythagoras
   
 ## Special vectors of Unity
 
-* vector.up
-* vector.forward
+* See Static properties in [Script Reference: Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html)
+  * vector.up
+  * vector.forward
+  * etc...
+### Normalizing a vector
+
+* When we are more interested about the direction of a vector and want its length to be one, we *normalize* the vector
+* $\vec{A}_{normalized} = \vec{A} / $
+vector.normalized
 
 ## Note about distance
 
@@ -63,7 +137,9 @@ paginate: true
 ## Exercise 1
 <!-- _backgroundColor: teal -->
 
-Make an enemy shoot player when the player is near.
+Make two gameObjects, where one is player with top-down movement, and the other is a static enemy.
+When player is closer to the enemy than a given radius (say, 3 meters), make the enemy shoot at player.
+
 
 ## Vector3 & Vector2
 

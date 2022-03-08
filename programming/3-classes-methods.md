@@ -277,7 +277,7 @@ Call their greet methods from the main program
 ## Importing classes
 
 * Classes from other files can be imported with the `using` keyword
-* See example in [slide 3](#unity-class-example)!
+* See example in [Unity class example](#unity-class-example) ([slide 3](#3))!
 
 ## Reference vs value
   * value types actually contain the value
