@@ -190,21 +190,6 @@ bool itsColdOutside = true;
       Debug.Log("It's warm outside.");
   ```
 
-## Scope
-
-* Variables declared inside of blocks are called **local** variables
-  * they are only accessible inside of that block
-  ```c#
-  int a = 0;
-  if(a < 10)
-  {
-      // Variable 'b' is only accessible inside of this 'if' block
-      int b = 1;
-      b = 2;          // This works
-  }
-  b = 3;              // This throws an error
-  ```
-
 ## Assignment operators
 
 * We have used the assignment operator `=` for assigning values for variables
@@ -214,7 +199,6 @@ bool itsColdOutside = true;
   ```
 * _Notice the difference between `=` and the conditional `==`!_
   * `=` is used for **assigning** values for variables, `==` is used for **comparing** values
-
 
 ## Assignment Shorthands
   * these three examples do the same thing:
@@ -296,7 +280,7 @@ void Greet()
 ## Strings
 
 * String is a variable containing block of text
-  * Actually, a special type of variable: contains an array of characters
+  * (Actually, a special type of variable containing an [*array*](2-lists-loops.md) of characters)
 
   ```c#
   string name = "Matti Teppo";
@@ -348,8 +332,65 @@ void Greet()
   Debug.Log($"variable 1: {variable1}, variable 2: {variable2}");
   ```
 
+# Functions
+## Scope
 
+* Variables declared inside of blocks are called **local** variables
+  * they are only accessible inside of that block
+  ```c#
+  int a = 0;
+  if(a < 10)
+  {
+      // Variable 'b' is only accessible inside of this 'if' block
+      int b = 1;
+      b = 2;          // This works
+  }
+  b = 3;              // This throws an error
+  ```
+## Introduction to functions
 
+* to avoid repetition, blocks of code can be enclosed into named *functions*
+* functions can have multiple arguments and a return type
+  ```c#
+  void PrintName(string argument1)
+  {
+      Debug.Log("My name is " + argument1);
+  }
+  ```
+  * takes in one `string` argument
+  * returns nothing (thus, its return type is `void`)
+  * the function can be called like this:
+    ```c#
+    PrintName("Matti");
+    string name2 = "Teppo";
+    PrintName(name2);
+    ```
+
+### Function example
+* here's an example with two arguments and a non-void return value
+* the `return` keyword tells what we return from the function 
+  ```c#
+  float Pythagoras(float a, float b) // a^2 + b^2 = c^2
+  {
+      float c = Mathf.Sqrt(a^2 + b^2);
+      return c;
+  }
+  ```
+* the function is called like this:
+  ```c#
+  float length = Pythagoras(3f, 4f); // now value of length is 5
+  ```
+* the function definition can be further simplified...
+  ```c#
+  float Pythagoras(float a, float b) // a^2 + b^2 = c^2
+  {
+      return Mathf.Sqrt(a^2 + b^2);
+  }
+  ```
+## Note about functions
+
+* because C# is object-oriented, all functions are *methods* inside *classes*
+* We'll dive deeper into these topics in [Chapter 3. Classes and Methods](3-classes-methods.md)
 ## Exercise 2: Traffic lights
 <!-- _backgroundColor: teal -->
 
@@ -360,7 +401,7 @@ Create a timed console application for displaying the state of a traffic light.
 * So, after the first frame the console would read `The color is RED!`.
 * Hint: Use `Time.time`!
 
-## Exercise 2 Extras
+## Exercise 2 extras
 <!-- _backgroundColor: teal -->
 
 * ⭐⭐ Print the color to console only when the light changes.
@@ -368,12 +409,7 @@ Create a timed console application for displaying the state of a traffic light.
 
   * **Spoiler:** `gameObject.GetComponent<Renderer>().material.color = Color.green;`
 
-## A brief word about functions
 
-* enclosing functionality
-* reusability
-* TODO
-* example
 
 ## Reading
 

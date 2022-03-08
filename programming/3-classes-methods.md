@@ -273,6 +273,12 @@ Call their greet methods from the main program
       ...
   }
   ```
+
+## Importing classes
+
+* Classes from other files can be imported with the `using` keyword
+* See example in [slide 3](#unity-class-example)!
+
 ## Reference vs value
   * value types actually contain the value
   * reference types contain the memory address to where the value is stored
@@ -338,7 +344,3 @@ public int Level
 //property
 public int Health{ get; set;}
 ```
-# asd
-* inheritance with colon `:`
-* importing classes with `using`
-  * `[CTRL+.]`
