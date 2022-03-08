@@ -28,7 +28,7 @@ paginate: true
 
 * The length of a 2D vector is given by the Pythagoras theorem
   * $|\vec{A}| = \sqrt{\vec{A}_x^2 + \vec{A}_y^2}$
-  * $\sqrt{6^2 + 3^2} = \sqrt{36 + 9} = \sqrt{45} \approx 6.7$
+  * $|(6,3)| = \sqrt{6^2 + 3^2} = \sqrt{36 + 9} = \sqrt{45} \approx 6.7$
 
 * In C#... 
   * `Mathf.Sqrt(A.x^2 + A.y^2)`
@@ -141,7 +141,7 @@ Make two gameObjects, where one is player with top-down movement, and the other 
 When player is closer to the enemy than a given radius (say, 3 meters), make the enemy shoot at player.
 
 
-## Vector3 & Vector2
+## Script reference
 
 * most of the examples apply to both Vector2 and Vector3 classes.
 * Vector2
