@@ -94,6 +94,14 @@ Vector2 C = 2 * A;
   ![](imgs/2d-vector-scalar-multiplication-2.png)
 # Vectors in Unity
 
+## Vectors in video games
+
+* position
+* velocity
+* acceleration
+* rotation
+* forces
+
 ## Vector classes
 
 * Unity has two Vector classes, Vector2 and Vector3
@@ -118,18 +126,28 @@ Vector2 C = 2 * A;
   * subtraction
   * vector_B - vector_A
   * length of the vector: pythagoras
-  
+
+
 ## Special vectors of Unity
 
 * See Static properties in [Script Reference: Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html)
   * vector.up
   * vector.forward
   * etc...
+
+## Common vector operations
+
 ### Normalizing a vector
 
-* When we are more interested about the direction of a vector and want its length to be one, we *normalize* the vector
-* $\vec{A}_{normalized} = \vec{A} / $
-vector.normalized
+* When we are not interested about the length of a vector, but the **direction** instead, it helps to *normalize* the vector
+  * that is, to set its length to be one
+* this is achieved by dividing the vector by its length
+* $\vec{A}_{normalized} = \vec{A} / |\vec{A}|$
+* in C#, the normalized version of every vector can be easily accessed:
+  `Vector2 UnitVector = A.normalized;`
+
+### Rotating a vector
+
 
 ## Note about distance
 
