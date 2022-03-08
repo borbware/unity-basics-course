@@ -4,12 +4,18 @@ paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
-# Week 3: Building a game
+# Week 3
 
 ## What to expect
 
 Emphasis: scene & data management?
 ## Week schedule
+
+* Day 1
+* Day 2: Programming 3: Classes and methods
+* Day 3: 
+* Day 4: 
+* Day 5: WP Wrap-up
 
 ## Week project: Top-down shooter
 
@@ -19,45 +25,7 @@ See: [Vectors](math/1-vectors.md)
 
 
 
-## Tools for assets
 
-### Graphics
-
-* Clip Studio Paint
-  * ~50€
-  * for hi-res art
-  * free option: Krita
-* Aseprite: for pixel art
-  * ~15€ (or free if you build it from source)
-  * the go-to tool for pixel artists atm
-  * free options: GraphicsGale, Paint
-
-### Sound fx
-
-* bfxr
-
-### Music
-
-* There isn't an easy recommendation in the free space really
-  * LMMS sucks!
-* Bosca Ceoil: the simple free option
-  * very limited
-* Trackers
-	* openMPT
-	* FamiTracker
-	* MilkyTracker
-* Otherwise, it's a DAW of your choice
-  * unfortunately they're all pretty heavy to get into
-  * i've used both FL Studio and Ableton
-  * for tracker people: ReNoise
-### Levels
-
-* Tiled
-  * a free application for creating tile-based 2d levels & worlds
-  * importing to Unity:
-* ProBuilder
-  * a package for Unity for grayboxing 3d levels
-  * another option: Blender3d
 
 
 ## Constraints

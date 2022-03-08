@@ -4,7 +4,7 @@ paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
-# Week 2: Scripting & Game design
+# Week 2
 
 ## What to expect
 
@@ -18,11 +18,11 @@ paginate: true
 ## Week 2 Schedule
 
 * Day 1
-  * Input Handling
   * Physics & Collision
+  * Input Handling
 * Day 2: Programming 2: Lists and loops
-* Day 3: 
-* Day 4: Components
+* Day 3: Components
+* Day 4: 
 * Day 5: WP Wrap-up
 
 # Day 1: 2D Movement
@@ -30,20 +30,24 @@ paginate: true
 ## Day 1 Schedule
 
 * Morning
-  * 
+  * Unity in 2D
+  * Physics
+  * Input system
 
 ## Using Unity for 2D games
 
 * Last week we focused on 3D (x, y, z)
 * Unity does not have a dedicated 2D (x, y) mode
-* You can create a 2D project template, however
+* When creating a new project, you can choose a 2D project template, however
   * This essentially hides some gameobject templates like 3d primitives
     * Replaces them with 2d primitives
   * It still uses the 3D engine, the z axis is just disregarded
 * There is a dedicated Vector2 class for 2D vectors
   * Some vectors used in 2D **are still 3D** due to Unity being a 3D engine!
 
+## Physics
 
+See: [Physics](unity-cookbook/physics.md)
 ## Input handling
 
 See: [Input handling](unity-cookbook/input-handling.md)
@@ -86,7 +90,7 @@ Create the Player controlled ship for the Asteroids game.
 # Day 2: Programming 2
 [Programming 2: Lists and Loops](programming/2-lists-loops.md)
 
-# Day 3: Physics & Collision
+# Day 3: 
 
 ## Physics
 

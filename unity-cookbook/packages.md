@@ -1,7 +1,5 @@
 ## Package manager
 
-* lisää sit ku eka kerran tarvii
-
 * Window > Package Manager
 * Select Packages: Unity Registry on top left
 * Search for [the package you want to install]
