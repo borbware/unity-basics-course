@@ -13,8 +13,9 @@ paginate: true
 * The legacy **Input Manager**
   * uses the Input class
   * uses Directinput
-  * works almost always (TM)
-  * sometimes controller axes are screwed up
+  * works almost always
+  * (but sometimes controller axes are screwed up)
+  * easier to setup -> this is the one we'll be using
 
 ## The two ways: Input system
 * The new **Input System**
@@ -26,33 +27,47 @@ paginate: true
 ## Keyboard input
 
 * `Input.GetKeyDown(KeyCode.Space)`
-  * True for one frame when pressed down 
-  * Good for jumps, moving in UI, other discrete actions 
+  * returns `true` for one frame when pressed down 
+  * Good for jumps, navigating the UI, other ***discrete*** actions 
 * `Input.GetKey(KeyCode.Space)`
-  * True for the duration of pressage
-  * Good for movement or other continuous actions
+  * returns `true` for the duration of pressage
+  * Good for movement or other ***continuous*** actions
 * `Input.GetKeyUp(KeyCode.Space)`
   * True for one frame when we stop pressing a button
-  * Needed less often than the ones above
+  * Needed less often than the previous ones
 ## Input table
 
-* More versatile usage with Input mappings
+* What if you want to be able to change game controls?
+* Or check both keyboard and game controller input?
+* Use the ***Input table*** instead
   * `Input.GetButtonDown("Jump")`
   * `Input.GetButton("Jump")`
   * `Input.GetButtonUp("Jump")`
 * Input table
-  * Edit > Project Settings > Input
+  * *Edit > Project Settings > Input*
   * "positive button"
 ## Analog input
 
-* Input.GetAxis()
+* [Docs: Input.GetAxis](https://docs.unity3d.com/ScriptReference/Input.GetAxis.html)
+* how to account for analog sticks? They aren't buttons you press
+  * rather a two-dimensional field of many possible coordinates
+  * -> separate input to two axes, vertical and horizontal
+* `Input.GetAxis(axisName)`
   * sliding scale between -1 and 1
   * Gravity vs Sensitivity
   * Deadzone
   * `float h = Input.GetAxis("Horizontal");`
   * `float h = Input.GetAxisRaw("Horizontal");`
-## Mouse input
 
+## Exercise 1. Player input
+<!-- _backgroundColor: teal -->
+Create a top-down player character that can
+* move with the analog stick
+* shoot with the Fire button
+
+
+## Extra: Mouse input
+<!-- backgroundColor: black -->
 * `Input.GetMouseButton(0)`
   * Down & Up methods work similarly to previous examples as well
 * get mouse position:
@@ -62,6 +77,7 @@ paginate: true
 
 
 ## Mouse input example
+
 ```c#
     private Rigidbody rb;
 
@@ -76,7 +92,7 @@ paginate: true
         rb.useGravity = true;
     }
 ```
-## Touch input
+## Extra: Touch input
 * [Docs: Input.GetTouch](https://docs.unity3d.com/ScriptReference/Input.GetTouch.html)
 * [Docs: Input.touches](https://docs.unity3d.com/ScriptReference/Input-touches.html)
   ```c#

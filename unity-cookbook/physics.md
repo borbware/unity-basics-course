@@ -17,22 +17,28 @@ math: katex
 
 ## Rigidbody
   * literally: a body (object) that does not deform, i.e., is rigid
-  * There are three ways a rigid body can interact with the physics engine
+  * There are three ways a rigidbody can interact with the physics engine
   * Dynamic
-    * object is part of the physics engine and behaves like a "regular" physics-based object
+    * is part of the physics engine and behaves like a "regular" physics-based object
     * can be controlled indirectly
   * Kinematic
-    * not affected by the physics system
+    * is not affected by the physics system
     * only queries the physics engine for collisions
     * can be controlled directly
   * Static
     * does not move at all
     * can collide with other **non-static** rigidbodies 
+###
+
+  * Rigidbody
+    * .velocity
+    * .angularVelocity
 
 ## Moving dynamic bodies
 
 * AddForce
 * AddTorque
+
 
 ## Gravity
 * Note! by default, gravitational acceleration is $9.81m/s^2$

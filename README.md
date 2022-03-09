@@ -6,7 +6,7 @@ The course is divided into three four-week stages, and the topics are compartmen
 
 The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the corresponding chapter is!
 
-## [Stages](Stages.md)
+# [Stages](Stages.md)
 
 |   | [Stage 1](Stage1.md)						  				 	  	|     | 
 |---|-------------------------------------------------------------------|----:|
@@ -15,9 +15,9 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 3 | [Week 3](Week3.md)												| 🌒 |
 | 4 | [Week 4](Week4.md)												| 🌑 |
 
-## Books
+# Books
 
-### About programming
+## About programming
 
 |   | Programming										  				 	|     | 
 |---|-----------------------------------------------------------------------|----:|
@@ -28,13 +28,14 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   | Math										  				 	  	|     | 
 |---|-------------------------------------------------------------------|----:|
+| 0 | [Useful Math Functions](math/0-mathf.md)							| 🌔 |
 | 1 | [Vectors](math/1-vectors.md)										| 🌔 |
-| 2 | [Forces](math/2-forces.md)										| 🌑 |
+| 2 | [Forces](math/2-forces.md)										| 🌓 |
 | 3 | [Sinewaves](math/3-sinewaves.md)									| 🌑 |
 | 4 | [Interpolation](math/4-interpolation.md)							| 🌒 |
 |   | [Unity Math classes](math/5-math-classes.md)						| 🌒 |
 
-### About Unity
+## About Unity
 
 |   | Unity Basics									  				 	|     | 
 |---|-------------------------------------------------------------------|----:|
@@ -42,6 +43,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 1 | [The Unity Interface](unity-basics/1-the-unity-interface.md) 		| 🌔 |
 | 2 | [Assets](unity-basics/2-assets.md)			 					| 🌒 |
 | 3 | [Scripting Gameobjects](unity-basics/3-scripting-gameobjects.md)	| 🌒 |
+| 4 | [Unity for 2D](unity-basics/4-unity-for-2d.md)					| 🌒 |
 
 |   | Unity Advanced											   	  	|     | 
 |---|-------------------------------------------------------------------|----:|
@@ -53,16 +55,16 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   | Unity Cookbook											   	  	|     | 
 |---|-------------------------------------------------------------------|----:|
+|   | [Input handling](unity-cookbook/input-handling.md)				| 🌔 |
+|   | [Physics](unity-cookbook/physics.md)								| 🌓 |
+|   | [UI](unity-cookbook/UI.md)										| 🌒 |
 |   | [2D](unity-cookbook/2d.md)										| 🌒 |
 |   | [3D](unity-cookbook/3dplatforming.md)								| 🌒 |
 |   | [Data flow](unity-cookbook/data.md)								| 🌒 |
-|   | [Input handling](unity-cookbook/input-handling.md)				| 🌒 |
 |   | [Pathfinding](unity-cookbook/pathfinding.md)						| 🌒 |
-|   | [Physics](unity-cookbook/physics.md)								| 🌒 |
-|   | [UI](unity-cookbook/UI.md)										| 🌒 |
 
 
-### About game development
+## About game development
 
 |   | Project management											 	|     | 
 |---|-------------------------------------------------------------------|----:|

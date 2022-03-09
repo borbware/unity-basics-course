@@ -31,28 +31,25 @@ paginate: true
 
 * Morning
   * Unity in 2D
+  * Input handling
   * Physics
-  * Input system
+  * Useful math functions
 
-## Using Unity for 2D games
+## Unity for 2D
 
-* Last week we focused on 3D (x, y, z)
-* Unity does not have a dedicated 2D (x, y) mode
-* When creating a new project, you can choose a 2D project template, however
-  * This essentially hides some gameobject templates like 3d primitives
-    * Replaces them with 2d primitives
-  * It still uses the 3D engine, the z axis is just disregarded
-* There is a dedicated Vector2 class for 2D vectors
-  * Some vectors used in 2D **are still 3D** due to Unity being a 3D engine!
+See: [Unity for 2D](unity-basics/4-unity-for-2d.md)
 
-## Physics
-
-See: [Physics](unity-cookbook/physics.md)
 ## Input handling
 
 See: [Input handling](unity-cookbook/input-handling.md)
 
+## Physics
 
+See: [Physics](unity-cookbook/physics.md)
+
+## Useful math functions
+
+See: [Useful math functions](math/0-mathf.md)
 
 ## Week project 2: Asteroids
 <!-- _backgroundColor: purple -->
@@ -92,19 +89,7 @@ Create the Player controlled ship for the Asteroids game.
 
 # Day 3: 
 
-## Physics
 
-See: [Physics](unity-cookbook/physics.md)
-
-* Physics
-  * Rigidbody
-    * .velocity
-    * .angularVelocity
-  * AddForce
-  * AddTorque
-* Math
-  * Mathf.Abs
-  * Mathf.Clamp
 
 ## Week Project Components
 

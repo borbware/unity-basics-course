@@ -1,7 +1,6 @@
 # Unity Math classes
 
-## Mathf, Random, Debug
-* Mathf
+## Mathf
   * [Docs: Mathf class](https://docs.unity3d.com/Manual/class-Mathf.html)
   * [Script Reference: Mathf class](https://docs.unity3d.com/ScriptReference/Mathf.html)
   * Trigonometric functions
@@ -10,13 +9,18 @@
     * Rad2Deg, Deg2Rad
     * PI
   * Pow, Sqrt, Exp, Log
-  * [Interpolation](#others)
+  * [Interpolation](4-interpolation.md) (lerp, slerp...)
+  * Abs
   * Limit, repeat
     * Max, Min
     * Clamp, Clamp01
       * (value, min, max)
     * Repeat, PingPong
     * Ceil, Floor
+
+## Random
+
+## Debug
 
 ## Quaternion
   * A four-dimensional extension of complex numbers with three imaginary axes
