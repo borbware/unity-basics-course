@@ -53,11 +53,20 @@ paginate: true
   * rather a two-dimensional field of many possible coordinates
   * -> separate input to two axes, vertical and horizontal
 * `Input.GetAxis(axisName)`
+  * normalized
   * sliding scale between -1 and 1
   * Gravity vs Sensitivity
   * Deadzone
   * `float h = Input.GetAxis("Horizontal");`
   * `float h = Input.GetAxisRaw("Horizontal");`
+
+### GetAxisRaw
+
+* [Docs: Input.GetAxisRaw](https://docs.unity3d.com/ScriptReference/Input.GetAxisRaw.html)
+* `Input.GetAxisRaw(axisName)`
+  * just the raw input data as-is
+  * non-normalized
+  * no deadzone
 
 ## Exercise 1. Player input
 <!-- _backgroundColor: teal -->
@@ -72,11 +81,16 @@ Create a top-down player character that can
   * Down & Up methods work similarly to previous examples as well
 * get mouse position:
   * `Vector2 mousePos = Input.mousePosition;`
-* you can also use a dedicated method for checking if mouse clicked on a gameobject:
-  * `OnMouseDown()`
+* you can also create a dedicated method for checking if mouse clicked on a gameobject:
+  ```c#
+  OnMouseDown()
+  {
+      // do stuff
+  }
+  ```
 
 
-## Mouse input example
+### Mouse input example
 
 ```c#
     private Rigidbody rb;
