@@ -83,7 +83,7 @@ paginate: true
 ## Inspector window
 
 * [Docs: Inspector](https://docs.unity3d.com/Manual/UsingTheInspector.html)
-* Game object properties
+* GameObject properties
   * Active (the checkbox)
   * Name
   * Tag

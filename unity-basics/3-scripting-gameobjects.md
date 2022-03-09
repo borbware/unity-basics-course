@@ -17,7 +17,7 @@ b) Project > Right click > Create > C# script > drag and drop to a game object
 * it includes two **methods** by default: Start and Update
   * in addition to these two, we can implement other methods that Unity already recognizes and has an use for as well
   * we can also add our own methods 
-* we can also add new **properties**: variables inside the class
+* we can also add new **fields**: variables inside the class
 ## Initialization
   * There are two functions for initializing a script class
   * `Awake()`
@@ -53,10 +53,10 @@ b) Project > Right click > Create > C# script > drag and drop to a game object
       * `transform.position += new Vector3(speed * Time.deltaTime, 0.0f, 0.0f);`
       * beware lag spikes, though: what would the velocity be if deltatime was equal to one second? three seconds?
 
-## Properties
+## Variables
 
 
-## Accessing properties from inspector
+## Accessing fields from inspector
 
 * public variables
 * `[SerializeField]`
@@ -112,7 +112,7 @@ b) Project > Right click > Create > C# script > drag and drop to a game object
 
 ## Referring to GameObjects
 * fast solution
-  * create public GameObject property (shows up in Inspector)
+  * create public GameObject field (shows up in Inspector)
   * drag & drop gameObject to Inspector
 * find with code
   * [GameObject.Find](https://docs.unity3d.com/ScriptReference/GameObject.Find.html) (finds one)

@@ -12,7 +12,7 @@ paginate: true
   * E.g., an Enemy class tells what shared properties do all enemies have
 * *instance* of a class is an implementation of that class
   * "this certain enemy right here"
-* as you see from this enemy example, classes can be very useful in game development
+* classes can be very useful in game development
 * C# is an object-oriented language (almost everything is a class)
   * all Unity scripts contain a class by default!
   * usually, the term *object* also refers to an instance of a class
@@ -50,17 +50,53 @@ public class WrapAround : MonoBehaviour
 
     }
     ```
-* create variables inside the class
+* the curly braces `{}` define a new scope
+  * Everything inside them is inside the class
+### Fields
+
+* **Fields** are variables inside the class
+    ```c#
+    class Enemy
+    {
+        int HP; // this is a field
+        string name = "Sanae"; // this is also a field
+    }
+    ```
+* fields can have initial values
+
+### Methods
+
+* **methods** are functions inside the class
     ```c#
     class Enemy
     {
         int HP;
         string name;
+
+        void SetHP() // this is a method
+        {
+            HP = 4;
+        }
     }
     ```
-* you can declare properties and methods, but cannot have any functionality outside class methods
+* this function returns nothing, so its type is `void`
+
+### About functionality
+* you can declare fields and methods, but cannot have any functionality outside class methods
     ```c#
-    HP = 4; // this needs to go inside a method
+    class Enemy
+    {
+        int HP;
+        string name = "Sanae"; // this works (initial value)
+
+        name = "Reimu"; // this doesn't work
+        HP += 4; // and neither does this. It needs to go inside a method
+
+        void AddHP() 
+        {
+            HP += 1; // see, like this
+        }
+    }
     ```
 ## Instantiating a class
 * instances of a class can be created with the `new` keyword
@@ -305,30 +341,47 @@ tran.position = new Vector3(0, 2, 0);
 
 
 ## Extra: Properties with getters & setters
+
 <!-- _backgroundColor: black -->
 ```c#
-private int experience;
-
-public int Experience //Experience is a basic property
+PlayerClass
 {
-    get
+    private int exp; // private field, not accessible from outside
+
+    public int Experience // public property, accessible from outside
     {
-        //do stuff
-        return experience;
-    }
-    set
-    {
-        //do stuff
-        experience = value;
+        get
+        {
+            // do stuff...
+            return exp;
+        }
+        set
+        {
+            // do stuff...
+            exp = value;
+        }
     }
 }
 ```
 
-### Getter setter example
+### Properties vs fields
+<!-- _backgroundColor: black -->
+
+* properties are used to expose fields to the outside world
+* `get` is called when the property is retrieved somewhere
+  * it can execute some code, and then give us some internal data we don't want to directly expose
+    ```c#
+    Debug.Log(PlayerClass.Experience);
+    ```
+* `set` is called when a new value is given
+    ```c#
+    PlayerClass.Experience = 10;
+    ```
+
+### Property example
 <!-- _backgroundColor: black -->
 ```c#
-//Level is a property that converts experience
-//points into the leve of a player automatically
+// Level is a property that converts experience points into the level of a player automatically
 public int Level
 {
     get
@@ -340,7 +393,6 @@ public int Level
         experience = value * 1000;
     }
 }
-//This is an example of an auto-implemented
-//property
-public int Health{ get; set;}
+
+public int Health{ get; set;} // This is an example of an auto-implemented property
 ```

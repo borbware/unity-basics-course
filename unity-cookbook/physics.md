@@ -29,6 +29,11 @@ math: katex
     * does not move at all
     * can collide with other **non-static** rigidbodies 
 
+## Moving dynamic bodies
+
+* AddForce
+* AddTorque
+
 ## Gravity
 * Note! by default, gravitational acceleration is $9.81m/s^2$
 * You can change it from Unity settings

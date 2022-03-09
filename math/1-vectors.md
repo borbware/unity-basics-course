@@ -33,7 +33,7 @@ math: katex
 
 * In C#... 
   * `Mathf.Sqrt(A.x^2 + A.y^2)`
-  * `A.Magnitude`
+  * Vector classes have a shorthand, too: `A.Magnitude`
 
 ## Vector arithmetic
 
@@ -53,8 +53,8 @@ math: katex
 ![](imgs/2d-vector-addition.png)
 
 ```c#
-Vector2 A = new Vector2(3,3);
-Vector2 B = new Vector2(6,-2);
+Vector2 A = new Vector2(3.0f, 3.0f);
+Vector2 B = new Vector2(6.0f,-2.0f);
 Vector2 C = A + B;
 ```
 
@@ -66,8 +66,8 @@ Vector2 C = A + B;
 * $\vec{A} - \vec{B}$ starts from the endpoint of $\vec{B}$ and ends in the endpoint of $\vec{A}$
 ![](imgs/2d-vector-subtraction.png)
 ```c#
-Vector2 A = new Vector2(3,3);
-Vector2 B = new Vector2(6,-2);
+Vector2 A = new Vector2(3.0f, 3.0f);
+Vector2 B = new Vector2(6.0f,-2.0f);
 Vector2 C = A - B;
 ```
 
@@ -78,7 +78,7 @@ Vector2 C = A - B;
   * $2 \cdot \vec{A} = 2 \cdot (3,2) = (2 \cdot 3, 2 \cdot 2) = (6, 4)$
 ![](imgs/2d-vector-scalar-multiplication.png)
 ```c#
-Vector2 A = new Vector2(3,3);
+Vector2 A = new Vector2(3.0f,3.0f);
 Vector2 C = 2 * A;
 ```
 

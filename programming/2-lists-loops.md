@@ -238,10 +238,9 @@ void Start ()
 * a key benefit of using Lists lie in the built-in functionalities of the List class
 * after declaring a list, type `nameOfYourList.` and VS Code shows what's available:
   ![Array](imgs/list-methods.png)
-## List properties & methods
+## List functionalities
 
-* some examples of list functionalities
-* some are properties, some methods, i.e., functions with brackets `()`
+* some are fields (no brackets), some are methods (functions with brackets `()`)
   * `list.Count` tells the length of the list
   * `list.Add(newItem)` adds `newItem` to the end of the list
   * `list.Remove(item)` removes `item` from list
