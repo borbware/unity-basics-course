@@ -26,6 +26,12 @@ paginate: true
   - the force is a *vector*
   - so it not only has a magnitude, but also a *direction*
 
+### Multiple forces
+
+* Force vectors can be summed together to acquire the total force
+* 
+
+![](imgs/forces-2.png)
 
 ## Torque
 
@@ -50,6 +56,10 @@ paginate: true
   * if you want more control, you can also create your own code for e.g., simulating planets in a star system
 
 * See: [Physics](../unity-cookbook/physics.md)
+
+## Exercise 1. Forces
+<!-- _backgroundColor: teal -->
+Create a 3D scene where a player character can push around rigid bodies by applying a force to them. 
 
 
 ## Reading & Watching
