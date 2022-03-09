@@ -10,7 +10,6 @@ paginate: true
 
 * Unity basics (in 2d)
 * Input
-* Vectors
 * Physics
 * Collision
 * Movement
