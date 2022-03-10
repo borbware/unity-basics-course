@@ -16,11 +16,18 @@ paginate: true
 
 ## Week 1 Schedule
 
-* Day 1: Unity basics 0 & 1
-* Day 2: Unity basics 2 & 3
-* Day 3: Programming 1: Variables & Conditionals
-* Day 4: Project management 1: Git basics
-* Day 5: Week project & Wrap-up
+* Day 1:
+  * Unity basics 0: What is Unity
+  * Unity basics 1: The Unity Interface
+* Day 2:
+  * Programming 1: Variables & Conditionals
+* Day 3:
+  * Unity basics 2: Assets
+  * Unity basics 3: Scripting gameobjects
+* Day 4:
+  * Project management 1: Git basics
+* Day 5:
+  * Week project & Wrap-up
 
 # Day 1: Introduction
 
@@ -137,21 +144,11 @@ Unlike in the picture below, set all the indicators to 12. They will be later ro
 <!-- _backgroundColor: purple -->
 ![3d clock](imgs/week1-catlikeclock.png)
 
-# Day 2: Assets & scripting
-
-## Day 2 schedule
-
-* Morning
-  * [Unity basics 2: Assets](unity-basics/2-assets.md)
-  * [Unity basics 3: Scripting GameObjects](unity-basics/3-scripting-gameobjects.md)
-* Afternoon
-  * Working on the week project
 
 
+# Day 2: Scripting 1
 
-# Day 3: Scripting 1
-
-## Day 3 Schedule
+## Day 2 Schedule
 
 * Morning
   * [Programming 1: Variables and conditionals](programming/1-variables-and-conditionals.md)
@@ -164,6 +161,16 @@ Make the clock hands move when time goes on.
 ⭐ Make the movement instantaneous: the second indicator moves once per second directly to the next position
 ⭐⭐ Make the movement smooth: the second indicator moves continuously at a rate of one full rotation per minute
 ⭐⭐⭐ Make the movement realistic: study how the hands of a real clock moves! The second indicator moves incrementally between fixed positions, but the movement is not instantaneous. Try to replicate this. 
+
+# Day 3: Assets & scripting
+
+## Day 3 schedule
+
+* Morning
+  * [Unity basics 2: Assets](unity-basics/2-assets.md)
+  * [Unity basics 3: Scripting GameObjects](unity-basics/3-scripting-gameobjects.md)
+* Afternoon
+  * Working on the week project
 
 # Day 4: Git
 

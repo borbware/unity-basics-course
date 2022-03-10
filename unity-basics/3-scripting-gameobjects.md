@@ -56,14 +56,16 @@ b) Project > Right click > Create > C# script > drag and drop to a game object
 ## Variables
 
 
-## Accessing fields from inspector
+## Accessing fields in Inspector
 
-* public variables
+* `public` variables
 * `[SerializeField]`
 * Extra: `[Header("Explainer for UI")]`
   * great for team communication
 * `[Range(x,x)]`
   * adds a slider to inspector
+
+
 
 
 

@@ -1,35 +1,89 @@
 ---
 marp: true
 paginate: true
+math: katex
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 # 4: Interpolation
 
-## Lerp, Inverse lerp, Remap
+## Lerp
 
-* lerp
-  * linear interpolation from a to b (usually b > a), when t goes from 0 to 1
-  * Mathf.Lerp
-  * [gamedevbeginner.com: Lerping in Unity properly](https://gamedevbeginner.com/the-right-way-to-lerp-in-unity-with-examples/#lerp_vector3)
-* inverse lerp
-  * when given a value between a and b, what is t?  
-  * Mathf.InverseLerp
-* remap
+  ![](imgs/lerp.png)
+  * "Lerp", or  linear interpolation, is a commonly used function in gamedev
+    * returns the value $x$, which goes from $a$ to $b$, when $t$ goes from $0$ to $1$
+    * when $t = 0$, $x = a$
+    * when $t = 0.5$, $x = (b - a) / 2$ ("halfway")
+    * when $t = 1$, $x = b$
+  * `Mathf.Lerp(a, b, t)`
+
+
+### Note about Clamping
+
+![](imgs/lerp-unclamped.png)
+
+* what if t is smaller than 0 or larger than 1?
+* Unity's `Mathf.Lerp` is clamps the returned value automatically
+  * $x$ is $a$ at minimum and $b$ at maximum
+* with `Mathf.LerpUnclamped`, the value is extrapolated when outside the limits!
+## Extra: Inverse lerp, Remap
+<!-- _backgroundColor: black -->
+* [Docs: inverse lerp](https://docs.unity3d.com/ScriptReference/Mathf.InverseLerp.html)
+  * lerp's inverse problem
+    * when given a value $x$ between $a$ and $b$, what is $t$?  
+  * `Mathf.InverseLerp(a,b,x)`
+* Remapping
+  * what if you want to map a range $t_0 \dots t_1$ to range $a \dots b$?
   * [Freya Holmér: Inverse Lerp and Remap](https://www.gamedev.net/articles/programming/general-and-gameplay-programming/inverse-lerp-a-super-useful-yet-often-overlooked-function-r5230/)
 
-## Clamping
 
-* with Mathf.Lerp, interpolated value is a at minimum and b at maximum
-* Mathf.LerpUnclamped lets the value to go beyond
+
 
 ## Others
 
-  * Interpolation
+* all variables aren't as easy to deal with as regular floating point numbers
+  * angles, 3d coordinates...
+* [Learn: Linear interpolation](https://learn.unity.com/tutorial/linear-interpolation?uv=2019.3&courseId=5c61706dedbc2a324a9b022d&projectId=5c8920b4edbc2a113b6bc26a#5c8a48bdedbc2a001f47cef6)
     * Lerp, LerpAngle, LerpUnclamped
     * InverseLerp
     * Slerp
     * SmoothDamp(Angle)
     * SmoothStep
     * MoveTowards(Angle)
-    * [Learn: Linear interpolation](https://learn.unity.com/tutorial/linear-interpolation?uv=2019.3&courseId=5c61706dedbc2a324a9b022d&projectId=5c8920b4edbc2a113b6bc26a#5c8a48bdedbc2a001f47cef6)
+
+
+
+
+## Custom interpolation with an animation curve
+
+* for custom interpolation curves, use the `AnimationCurve` variable
+* `public AnimationCurve curve;`
+  * it can be manipulated in the inspector:
+  ![](imgs/animation-curve.png)
+
+
+### Code
+
+
+```c#
+public AnimationCurve bounce;
+...
+// If timer is on, do animation
+if(Time.time < bounceTimer)
+{
+    // Calculate valid time for curve (in between 0 and 1)
+    float scaleTime = (bounceTimer - Time.time) / bounceLenght;
+
+    // Get the value from curve at the time of the animation
+    // and multiply it with the desired scaled axis
+    // then add it to default scale (1, 1, 1)
+    transform.localScale = Vector2.one + axis * bounce.Evaluate(scaleTime);
+}
+```
+
+* Here, `bounce.Evaluate` acts similarly as `Mathf.Lerp`
+* You just get to decide the shape of the graph!
+
+## Reading
+
+[gamedevbeginner.com: Lerping in Unity properly](https://gamedevbeginner.com/the-right-way-to-lerp-in-unity-with-examples/#lerp_vector3)

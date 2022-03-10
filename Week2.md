@@ -19,9 +19,14 @@ paginate: true
 * Day 1
   * Physics & Collision
   * Input Handling
-* Day 2: Programming 2: Lists and loops
-* Day 3: Components
-* Day 4: 
+  * Components
+* Day 2:
+  * Programming 2: Lists and loops
+* Day 3:
+  * [Math 0: Useful math functions](math/0-mathf.md)
+  * [Math 4: Interpolation](math/4-interpolation.md)
+* Day 4:
+  * 
 * Day 5: WP Wrap-up
 
 # Day 1: 2D Movement
@@ -29,26 +34,9 @@ paginate: true
 ## Day 1 Schedule
 
 * Morning
-  * Unity in 2D
-  * Input handling
-  * Physics
-  * Useful math functions
-
-## Unity for 2D
-
-See: [Unity for 2D](unity-basics/4-unity-for-2d.md)
-
-## Input handling
-
-See: [Input handling](unity-cookbook/input-handling.md)
-
-## Physics
-
-See: [Physics](unity-cookbook/physics.md)
-
-## Useful math functions
-
-See: [Useful math functions](math/0-mathf.md)
+  * [Unity basics 4: Unity for 2D](unity-basics/4-unity-for-2d.md)
+  * [Unity cookbook: Input handling](unity-cookbook/input-handling.md)
+  * [Unity cookbook: Physics](unity-cookbook/physics.md)
 
 ## Week project 2: Asteroids
 <!-- _backgroundColor: purple -->
@@ -86,9 +74,13 @@ Create the Player controlled ship for the Asteroids game.
 # Day 2: Programming 2
 [Programming 2: Lists and Loops](programming/2-lists-loops.md)
 
-# Day 3: 
+# Day 3
 
+## Day 3 Schedule
 
+* Morning
+  * [Math 0: Useful math functions](math/0-mathf.md)
+  * [Math 4: Interpolation](math/4-interpolation.md)
 
 ## Week Project Components
 

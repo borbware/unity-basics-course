@@ -20,4 +20,4 @@ paginate: true
 		  render();
 		}
 		```
-<!-- footer: https://gameprogrammingpatterns.com/game-loop.html-->
+<!-- _footer: https://gameprogrammingpatterns.com/game-loop.html-->
