@@ -43,7 +43,6 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 1 | [The Unity Interface](unity-basics/1-the-unity-interface.md) 		| 🌔 |
 | 2 | [Assets](unity-basics/2-assets.md)			 					| 🌒 |
 | 3 | [Scripting Gameobjects](unity-basics/3-scripting-gameobjects.md)	| 🌒 |
-| 4 | [Unity for 2D](unity-basics/4-unity-for-2d.md)					| 🌒 |
 
 |   | Unity Advanced											   	  	|     | 
 |---|-------------------------------------------------------------------|----:|
@@ -57,9 +56,9 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |---|-------------------------------------------------------------------|----:|
 |   | [Input handling](unity-cookbook/input-handling.md)				| 🌔 |
 |   | [Physics](unity-cookbook/physics.md)								| 🌓 |
+|   | [2D](unity-cookbook/2d.md)										| 🌒 |
 |   | [Particle system](unity-cookbook/particle-system.md)				| 🌑 |
 |   | [UI](unity-cookbook/UI.md)										| 🌒 |
-|   | [2D](unity-cookbook/2d.md)										| 🌒 |
 |   | [3D](unity-cookbook/3dplatforming.md)								| 🌒 |
 |   | [Data flow](unity-cookbook/data.md)								| 🌒 |
 |   | [Pathfinding](unity-cookbook/pathfinding.md)						| 🌒 |

@@ -26,7 +26,7 @@ paginate: true
 	```
 
 ### Particle system component in Inspector
-![](imgs/../img/particle-system-inspector.png)
+![](imgs/particle-system-inspector.png)
 
 
 ## Reading
