@@ -1,7 +1,7 @@
 ---
 marp: true
 ---
-<!-- class: invert -->
+<!-- class: default -->
 # Unity and VS Code
 ---
 ## Basics

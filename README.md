@@ -15,6 +15,13 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 3 | [Week 3](Week3.md)												| 🌒 |
 | 4 | [Week 4](Week4.md)												| 🌑 |
 
+|   | [Stage 2](Stage2.md)						  				 	  	|     | 
+|---|-------------------------------------------------------------------|----:|
+| 1 | [Week 5](Week5.md)												| 🌑 |
+| 2 | [Week 6](Week6.md)												| 🌑 |
+| 3 | [Week 7](Week7.md)												| 🌑 |
+| 4 | [Week 8](Week8.md)												| 🌑 |
+
 # Books
 
 ## About programming
@@ -31,9 +38,10 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 0 | [Useful Math Functions](math/0-mathf.md)							| 🌔 |
 | 1 | [Vectors](math/1-vectors.md)										| 🌔 |
 | 2 | [Forces](math/2-forces.md)										| 🌓 |
-| 3 | [Sinewaves](math/3-sinewaves.md)									| 🌑 |
+| 3 | [Sinewaves](math/3-sinewaves.md)									| 🌒 |
 | 4 | [Interpolation](math/4-interpolation.md)							| 🌒 |
 |   | [Unity Math classes](math/5-math-classes.md)						| 🌒 |
+|   | [Randomness](math/6-math-classes.md)								| 🌑 |
 
 ## About Unity
 
@@ -43,7 +51,6 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 1 | [The Unity Interface](unity-basics/1-the-unity-interface.md) 		| 🌔 |
 | 2 | [Assets](unity-basics/2-assets.md)			 					| 🌒 |
 | 3 | [Scripting Gameobjects](unity-basics/3-scripting-gameobjects.md)	| 🌒 |
-| 4 | [Unity for 2D](unity-basics/4-unity-for-2d.md)					| 🌒 |
 
 |   | Unity Advanced											   	  	|     | 
 |---|-------------------------------------------------------------------|----:|
@@ -55,21 +62,26 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   | Unity Cookbook											   	  	|     | 
 |---|-------------------------------------------------------------------|----:|
-|   | [Input handling](unity-cookbook/input-handling.md)				| 🌔 |
-|   | [Physics](unity-cookbook/physics.md)								| 🌓 |
-|   | [Particle system](unity-cookbook/particle-system.md)				| 🌑 |
-|   | [UI](unity-cookbook/UI.md)										| 🌒 |
 |   | [2D](unity-cookbook/2d.md)										| 🌒 |
-|   | [3D](unity-cookbook/3dplatforming.md)								| 🌒 |
+|   | [3D Platforming](unity-cookbook/3dplatforming.md)					| 🌒 |
+|   | [Animation Curve](unity-cookbook/animation-curve.md)				| 🌒 |
+|   | [Audio](unity-cookbook/audio.md)									| 🌒 |
+|   | [Building](unity-cookbook/building.md)							| 🌑 |
 |   | [Data flow](unity-cookbook/data.md)								| 🌒 |
+|   | [Input handling](unity-cookbook/input-handling.md)				| 🌔 |
+|   | [Packages](unity-cookbook/packages.md)							| 🌑 |
+|   | [Particle system](unity-cookbook/particle-system.md)				| 🌑 |
 |   | [Pathfinding](unity-cookbook/pathfinding.md)						| 🌒 |
+|   | [Physics](unity-cookbook/physics.md)								| 🌓 |
+|   | [Tags and Layers](unity-cookbook/tags-layers.md)					| 🌒 |
+|   | [UI](unity-cookbook/UI.md)										| 🌒 |
 
 
 ## About game development
 
 |   | Project management											 	|     | 
 |---|-------------------------------------------------------------------|----:|
-| 1 | [Git Basics](project-management/1-git-basics.md)					| 🌔 |
+| 1 | [Git Basics](project-management/1-git-basics.md)					| 🌓 |
 | 2 | [Git Continued](project-management/2-git-continued.md)			| 🌔 |
 | 3 | [GitHub tools](project-management/3-github-tools.md)				| 🌒 |
 | 4 | [Scrum](project-management/4-scrum.md) 							| 🌑 |
@@ -80,6 +92,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |---|-------------------------------------------------------------------|----:|
 |   | [Tools for creating assets](gamedev/tools.md)						| 🌓 |
 |   | [Game Design](gamedev/gamedesign.md)								| 🌒 |
+|   | [Accessibility](gamedev/accessibility.md)							| 🌒 |
 |   | [Game Development](gamedev/gamedevelopment.md)					| 🌒 |
 |   | [Game Industry](gamedev/gameindustry.md)							| 🌓 |
 |   | [Gamification](gamedev/gamification.md)							| 🌓 |

@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: invert -->
+<!-- class: default -->
 
 # Project Management 2. Git continued
 
@@ -44,7 +44,7 @@ paginate: true
   * this is where **conflicts** can happen
 
 ## Exercise 1. Pushing onwards
-<!-- _backgroundColor: teal -->
+<!-- _backgroundColor: Khaki -->
 
 Continue the exercise from [Git Basics](1-git-basics.md) or create a new repository for these exercises.
 * Create a new branch (with a name `new-feature`, for instance) in your local repository.
@@ -135,7 +135,7 @@ Continue the exercise from [Git Basics](1-git-basics.md) or create a new reposit
 `git push`
 
 ## Exercise 2. Team effort
-<!-- backgroundColor: teal -->
+<!-- _backgroundColor: Khaki -->
 * Work as a group for this assignment.
 * Use someone's repository from previous assignments and clone local copies of it to other group members.
 * **Note:** The owner of the repo has to authorize others so that others can push into the repo!

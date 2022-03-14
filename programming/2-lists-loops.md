@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: invert -->
+<!-- class: default -->
 # Loops and Lists
 # Loops
 
@@ -143,9 +143,25 @@ Current: 1
   * when going through a list, for example.
 * while loops when we want to do something many times, but don't know when to stop
 
+## The main loop
+
+* How do video games and other computer software *run?*
+* When we execute a simple script, the computer runs it, and then stops execution
+* Thus, to keep the program running, we need an infinite loop
+	* This is known as the **main loop**
+	* A simplified version looks something like this
+		```c#
+		while (true)
+		{
+		  processInput();
+		  update();
+		  render();
+		}
+		```
+<!-- _footer: https://gameprogrammingpatterns.com/game-loop.html-->
 
 ## Exercise 1. 
-<!-- _backgroundColor: teal -->
+<!-- _backgroundColor: Khaki -->
 
 
 
@@ -248,7 +264,7 @@ void Start ()
   * `list.Find(predicate)` finds an item from the list that matches the given predicate. More about it later!
 
 ## Exercise 2. Dimensionality
-<!-- _backgroundColor: teal -->
+<!-- _backgroundColor: Khaki -->
 
 Create two-dimensional data structure
 
@@ -309,4 +325,4 @@ for(int i = 0; i < starters.Count; i++)
 ![alt](imgs/foreach-mutation.png)
 
 ## Exercise 3. xx
-<!-- _backgroundColor: teal -->
+<!-- _backgroundColor: Khaki -->

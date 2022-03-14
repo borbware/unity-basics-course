@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: invert -->
+<!-- class: default -->
 # 3. Scripting GameObjects
 ## Scripting
 ## Creating a new script

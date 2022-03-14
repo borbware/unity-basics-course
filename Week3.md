@@ -3,21 +3,24 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: invert -->
+<!-- class: default -->
 # Week 3
 
 ## Week schedule
 
 * Day 1
-* Day 2: Programming 3: Classes and methods
-* Day 3: 
-* Day 4: 
+  * Cookbook: Data (scene management)
+  * animation state machine
+* Day 2:
+  * Programming 3: Classes and methods
+* Day 3:
+  * [Math 2: Forces](math/2-forces.md)
+  * [Math 4: Interpolation](math/4-interpolation.md)
+* Day 4:
+  * 
 * Day 5: WP Wrap-up
 
 
-## Game math 1. Vectors
-
-See: [Vectors](math/1-vectors.md)
 
 
 
@@ -35,6 +38,7 @@ See: [Vectors](math/1-vectors.md)
 	* Animator
 	* Mecanim State Machine
 
+
 ## Collaboration in Unity
 
 * most important rule: don't work on the same thing simultaneously or it's chaos time
@@ -48,7 +52,7 @@ See: [Vectors](math/1-vectors.md)
 
 
 ## Week project: Top-down arcade game
-<!-- _backgroundColor: purple -->
+<!-- _backgroundColor: LightSkyBlue -->
 * two levels
 * game over screen
 * active enemies

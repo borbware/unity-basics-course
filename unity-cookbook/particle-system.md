@@ -3,11 +3,11 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: invert -->
+<!-- class: default -->
 
 # Particle system
 
-* [Docs: ParticleSystem](https://docs.unity3d.com/ScriptReference/ParticleSystem.html)
+* [Script Reference: ParticleSystem](https://docs.unity3d.com/ScriptReference/ParticleSystem.html)
 
 * how to stop / start particles from emitting:
 	```c#
@@ -16,17 +16,17 @@ paginate: true
 	...
 	if (particles.isStopped)
 	{
-		particles.Play();
+	    particles.Play();
 	}
 	...
 	if (particles.isPlaying)
 	{
-		particles.Stop();
+	    particles.Stop();
 	}
 	```
 
 ### Particle system component in Inspector
-![](imgs/../img/particle-system-inspector.png)
+![](imgs/particle-system-inspector.png)
 
 
 ## Reading

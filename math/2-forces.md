@@ -1,9 +1,10 @@
 ---
 marp: true
 paginate: true
+math: katex
 ---
 <!-- headingDivider: 3 -->
-<!-- class: invert -->
+<!-- class: default -->
 
 # 2. Forces
 
@@ -58,7 +59,7 @@ paginate: true
 * See: [Physics](../unity-cookbook/physics.md)
 
 ## Exercise 1. Forces
-<!-- _backgroundColor: teal -->
+<!-- _backgroundColor: Khaki -->
 Create a 3D scene where a player character can push around rigid bodies by applying a force to them. 
 
 
