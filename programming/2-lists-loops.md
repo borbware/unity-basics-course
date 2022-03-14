@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: invert -->
+<!-- class: default -->
 # Loops and Lists
 # Loops
 
@@ -145,7 +145,7 @@ Current: 1
 
 
 ## Exercise 1. 
-<!-- _backgroundColor: teal -->
+<!-- _backgroundColor: Khaki -->
 
 
 
@@ -248,7 +248,7 @@ void Start ()
   * `list.Find(predicate)` finds an item from the list that matches the given predicate. More about it later!
 
 ## Exercise 2. Dimensionality
-<!-- _backgroundColor: teal -->
+<!-- _backgroundColor: Khaki -->
 
 Create two-dimensional data structure
 
@@ -309,4 +309,4 @@ for(int i = 0; i < starters.Count; i++)
 ![alt](imgs/foreach-mutation.png)
 
 ## Exercise 3. xx
-<!-- _backgroundColor: teal -->
+<!-- _backgroundColor: Khaki -->

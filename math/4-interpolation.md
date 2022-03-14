@@ -4,7 +4,7 @@ paginate: true
 math: katex
 ---
 <!-- headingDivider: 3 -->
-<!-- class: invert -->
+<!-- class: default -->
 # 4: Interpolation
 
 ## Lerp
@@ -26,9 +26,14 @@ math: katex
 * Unity's `Mathf.Lerp` is clamps the returned value automatically
   * $x$ is $a$ at minimum and $b$ at maximum
 * with `Mathf.LerpUnclamped`, the value is extrapolated when outside the limits!
+
+## Exercise 1.
+
+do a lerp
+
 ## Extra: Inverse lerp, Remap
-<!-- _backgroundColor: black -->
-* [Docs: inverse lerp](https://docs.unity3d.com/ScriptReference/Mathf.InverseLerp.html)
+<!-- _backgroundColor: pink -->
+* [Script Reference: inverse lerp](https://docs.unity3d.com/ScriptReference/Mathf.InverseLerp.html)
   * lerp's inverse problem
     * when given a value $x$ between $a$ and $b$, what is $t$?  
   * `Mathf.InverseLerp(a,b,x)`
@@ -53,36 +58,11 @@ math: katex
 
 
 
+## Custom interpolation curves
 
-## Custom interpolation with an animation curve
-
-* for custom interpolation curves, use the `AnimationCurve` variable
-* `public AnimationCurve curve;`
-  * it can be manipulated in the inspector:
-  ![](imgs/animation-curve.png)
+* You can also create custom curves with the [AnimationCurve](../unity-cookbook/animation-curve.md) component
 
 
-### Code
-
-
-```c#
-public AnimationCurve bounce;
-...
-// If timer is on, do animation
-if(Time.time < bounceTimer)
-{
-    // Calculate valid time for curve (in between 0 and 1)
-    float scaleTime = (bounceTimer - Time.time) / bounceLenght;
-
-    // Get the value from curve at the time of the animation
-    // and multiply it with the desired scaled axis
-    // then add it to default scale (1, 1, 1)
-    transform.localScale = Vector2.one + axis * bounce.Evaluate(scaleTime);
-}
-```
-
-* Here, `bounce.Evaluate` acts similarly as `Mathf.Lerp`
-* You just get to decide the shape of the graph!
 
 ## Reading
 

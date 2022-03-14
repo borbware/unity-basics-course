@@ -4,7 +4,7 @@ paginate: true
 math: katex
 ---
 <!-- headingDivider: 3 -->
-<!-- class: invert -->
+<!-- class: default -->
 # Game math 1: Vectors
 
 # Vector theory
@@ -37,7 +37,7 @@ math: katex
 
 ## Vector arithmetic
 
-* [Docs: Understanding Vector Arithmetic](https://docs.unity3d.com/2019.3/Documentation/Manual/UnderstandingVectorArithmetic.html)
+* [Manual: Understanding Vector Arithmetic](https://docs.unity3d.com/2019.3/Documentation/Manual/UnderstandingVectorArithmetic.html)
 * Let's introduce the most important vector operations
   * addition
   * subtraction
@@ -92,6 +92,16 @@ Vector2 C = 2 * A;
   * $\vec{A} / 5 = \frac{1}{5} \cdot \vec{A} = \frac{1}{5} \cdot (6,4) = (\frac{1}{5} \cdot 6,\frac{1}{5} \cdot 4 ) = (\frac{6}{5},\frac{4}{5} ) = (1.2, 0.8)$
   
   ![](imgs/2d-vector-scalar-multiplication-2.png)
+
+
+## Exercise 1.
+
+muokkaa gameobjektin nopeutta lisäämällä siihen vektori x xx
+## Exercise 2.
+
+Lasek kahen gameobjektin välinen välimatka ja tee x sen perusteella xx
+
+
 # Vectors in Unity
 
 ## Vectors in video games
@@ -154,7 +164,7 @@ Vector2 C = 2 * A;
 * Note: when performance is important, using magnitude can be a bad idea: it includes the costly square root operation
   * if you need to only compare magnitudes, or you're squaring it right away, use `.sqrMagnitude` instead!
 ## Exercise 1
-<!-- _backgroundColor: teal -->
+<!-- _backgroundColor: Khaki -->
 
 Make two gameObjects, where one is player with top-down movement, and the other is a static enemy.
 When player is closer to the enemy than a given radius (say, 3 meters), make the enemy shoot at player.
@@ -169,11 +179,11 @@ When player is closer to the enemy than a given radius (say, 3 meters), make the
   * [Script Reference: Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html)
   * [Script Reference: Vector3 Dot product](https://docs.unity3d.com/ScriptReference/Vector3.Dot.html)
   * [Script Reference: Vector3 magnitude](https://docs.unity3d.com/ScriptReference/Vector3-magnitude.html)
-* [Docs: Vector Arithmetic](https://docs.unity3d.com/2019.3/Documentation/Manual/UnderstandingVectorArithmetic.html)
+* [Manual: Vector Arithmetic](https://docs.unity3d.com/2019.3/Documentation/Manual/UnderstandingVectorArithmetic.html)
 
 ## Reading & watching
 
-* [Docs: Vector Cookbook](https://docs.unity3d.com/2019.3/Documentation/Manual/VectorCookbook.html)
+* [Manual: Vector Cookbook](https://docs.unity3d.com/2019.3/Documentation/Manual/VectorCookbook.html)
 
 * [Brackeys video: Vectors](https://www.youtube.com/watch?v=wXI9_olSrqo)
 

@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: invert -->
+<!-- class: default -->
 
 # Packages
 ## Package manager
@@ -18,8 +18,8 @@ paginate: true
 
 ### Cinemachine
   * for sophisticated camera control
-  * [Docs: Cinemachine](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/index.html)
-  * [Docs: Cinemachine Virtual Camera properties](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/CinemachineVirtualCamera.html)
+  * [Packages: Cinemachine](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/index.html)
+  * [Packages: Cinemachine Virtual Camera properties](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/CinemachineVirtualCamera.html)
   * 3D third-person cameras
     * [Unity video: Third Person Camera using Cinemachine](https://www.youtube.com/watch?v=537B1kJp9YQ)
   * 2D cameras
@@ -29,7 +29,7 @@ paginate: true
 
 ### Pixel Perfect Camera
   * for pixel art games
-  * [Docs: Pixel Perfect Camera](https://docs.unity3d.com/Packages/com.unity.2d.pixel-perfect@1.0/manual/index.html)
+  * [Packages: Pixel Perfect Camera](https://docs.unity3d.com/Packages/com.unity.2d.pixel-perfect@1.0/manual/index.html)
 ### ProBuilder
   * for greyboxing 3d levels
 ### 2D extras

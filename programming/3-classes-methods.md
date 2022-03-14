@@ -3,19 +3,19 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: invert -->
+<!-- class: default -->
 # Classes and methods
 
 ## Classes & objects
 
-* **Classes** are blueprints for specific kinds of collections of data & functionality
+* ***Classes*** are blueprints for specific kinds of collections of data & functionality
   * E.g., an Enemy class tells what shared properties do all enemies have
-* *instance* of a class is an implementation of that class
+* ***instance*** of a class is an implementation of that class
   * "this certain enemy right here"
 * classes can be very useful in game development
 * C# is an object-oriented language (almost everything is a class)
   * all Unity scripts contain a class by default!
-  * usually, the term *object* also refers to an instance of a class
+  * usually, the term ***object*** also refers to an instance of a class
 
 ### Unity class example
 
@@ -154,7 +154,7 @@ public class WrapAround : MonoBehaviour
   }
   ```
 ### Object variables: fix the previous example
-* we could not change the Enemy HP from outside the class, because class members are *private* by default
+* we could not change the Enemy HP from outside the class, because class members are `private` by default
 * this can be changed with the `public` access modifier
     ```c#
     class Enemy
@@ -232,8 +232,8 @@ public class WrapAround : MonoBehaviour
 
 
 ## Exercise 1. Class for helper functions
-<!-- _backgroundColor: teal -->
-<!-- _footer: https://www.gamedev.net/articles/programming/general-and-gameplay-programming/inverse-lerp-a-super-useful-yet-often-overlooked-function-r5230/ -->
+<!-- _backgroundColor: Khaki -->
+<!-- _footer: "[About Inverse Lerp](https://www.gamedev.net/articles/programming/general-and-gameplay-programming/inverse-lerp-a-super-useful-yet-often-overlooked-function-r5230/)" -->
 Create a new Script class for math helper functions and properties (do not add it to any gameobject).
 
 Add this `Remap` function there
@@ -286,7 +286,7 @@ Try to call the method from a gameobject!
     ```
 
 ## Exercise 2: xx
-<!-- _backgroundColor: teal -->
+<!-- _backgroundColor: Khaki -->
 
 
 create a console application with a class Animal, that contains 
@@ -299,8 +299,8 @@ Call their greet methods from the main program
 ## Inheritance
 * Classes can be made to inherit functionality of some other class
 * If class B inherits class A, all of the class A public functionality is available in class B
-* A is called the **base** class (or **parent** class)
-* B is called the **derived** class (or **child** class)
+* A is called the ***base*** class (or ***parent*** class)
+* B is called the ***derived*** class (or ***child*** class)
 
 * Use the `:` symbol to make a class inherit from another
   ```c#
@@ -331,8 +331,7 @@ Call their greet methods from the main program
 ```c#
 //Value type variable
 Vector3 pos = transform.position;
-pos = new Vector3(0, 2, 0);
-// TRANSFORM'S POSITION IS UNAFFECTED!!
+pos = new Vector3(0, 2, 0); // TRANSFORM'S POSITION IS UNAFFECTED!!
 
 //Reference type variable
 Transform tran = transform;
@@ -342,7 +341,7 @@ tran.position = new Vector3(0, 2, 0);
 
 ## Extra: Properties with getters & setters
 
-<!-- _backgroundColor: black -->
+<!-- backgroundColor: pink -->
 ```c#
 PlayerClass
 {
@@ -365,7 +364,6 @@ PlayerClass
 ```
 
 ### Properties vs fields
-<!-- _backgroundColor: black -->
 
 * properties are used to expose fields to the outside world
 * `get` is called when the property is retrieved somewhere
@@ -379,7 +377,6 @@ PlayerClass
     ```
 
 ### Property example
-<!-- _backgroundColor: black -->
 ```c#
 // Level is a property that converts experience points into the level of a player automatically
 public int Level

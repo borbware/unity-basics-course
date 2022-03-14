@@ -15,6 +15,13 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 3 | [Week 3](Week3.md)												| 🌒 |
 | 4 | [Week 4](Week4.md)												| 🌑 |
 
+|   | [Stage 2](Stage2.md)						  				 	  	|     | 
+|---|-------------------------------------------------------------------|----:|
+| 1 | [Week 5](Week5.md)												| 🌑 |
+| 2 | [Week 6](Week6.md)												| 🌑 |
+| 3 | [Week 7](Week7.md)												| 🌑 |
+| 4 | [Week 8](Week8.md)												| 🌑 |
+
 # Books
 
 ## About programming
@@ -68,7 +75,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   | Project management											 	|     | 
 |---|-------------------------------------------------------------------|----:|
-| 1 | [Git Basics](project-management/1-git-basics.md)					| 🌔 |
+| 1 | [Git Basics](project-management/1-git-basics.md)					| 🌓 |
 | 2 | [Git Continued](project-management/2-git-continued.md)			| 🌔 |
 | 3 | [GitHub tools](project-management/3-github-tools.md)				| 🌒 |
 | 4 | [Scrum](project-management/4-scrum.md) 							| 🌑 |
@@ -79,6 +86,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |---|-------------------------------------------------------------------|----:|
 |   | [Tools for creating assets](gamedev/tools.md)						| 🌓 |
 |   | [Game Design](gamedev/gamedesign.md)								| 🌒 |
+|   | [Accessibility](gamedev/accessibility.md)							| 🌒 |
 |   | [Game Development](gamedev/gamedevelopment.md)					| 🌒 |
 |   | [Game Industry](gamedev/gameindustry.md)							| 🌓 |
 |   | [Gamification](gamedev/gamification.md)							| 🌓 |

@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: invert -->
+<!-- class: default -->
 # Week 2
 
 ## What to expect
@@ -17,36 +17,38 @@ paginate: true
 ## Week 2 Schedule
 
 * Day 1
-  * Physics & Collision
-  * Input Handling
-  * Components
+  * [Unity cookbook: Unity for 2D](unity-cookbook/2d.md)
+  * [Unity cookbook: Input handling](unity-cookbook/input-handling.md)
+  * [Unity cookbook: Physics](unity-cookbook/physics.md)
 * Day 2:
   * Programming 2: Lists and loops
 * Day 3:
   * [Math 0: Useful math functions](math/0-mathf.md)
-  * [Math 4: Interpolation](math/4-interpolation.md)
+  * [Unity cookbook: Audio](unity-cookbook/audio.md)
+  * [Unity cookbook: Particle system](unity-cookbook/particle-system.md)
+  * [Unity cookbook: Animation curve](unity-cookbook/animation-curve.md)
+  * [Unity cookbook: UI](unity-cookbook/UI.md)
 * Day 4:
-  * 
+  * [Math 1: Vectors](math/1-vectors.md)
 * Day 5: WP Wrap-up
 
 # Day 1: 2D Movement
 
 ## Day 1 Schedule
 
-* Morning
-  * [Unity basics 4: Unity for 2D](unity-basics/4-unity-for-2d.md)
-  * [Unity cookbook: Input handling](unity-cookbook/input-handling.md)
-  * [Unity cookbook: Physics](unity-cookbook/physics.md)
+* [Unity cookbook: Unity for 2D](unity-cookbook/2d.md)
+* [Unity cookbook: Input handling](unity-cookbook/input-handling.md)
+* [Unity cookbook: Physics](unity-cookbook/physics.md)
 
 ## Week project 2: Asteroids
-<!-- _backgroundColor: purple -->
+<!-- _backgroundColor: LightSkyBlue -->
 *  Recreate the classic arcade game Asteroids in Unity.
      * [Youtube: Asteroids gameplay](https://www.youtube.com/watch?v=WYSupJ5r2zo)
 
 Goal:
 * ⭐ MVP: Create a playable single-screen game of Asteroids.
 ## Extra goals:
-<!-- _backgroundColor: purple -->
+<!-- _backgroundColor: LightSkyBlue -->
 * ⭐⭐ Add one of the following features:
   * Hi scores & scoreboard
   * Randomized asteroid spawining
@@ -56,7 +58,7 @@ Goal:
 
 
 ## WP exercise 0.
-<!-- _backgroundColor: purple -->
+<!-- _backgroundColor: LightSkyBlue -->
 Examine the gameplay video, then play the example Unity-built Asteroids.
 
 In you groups, write down:
@@ -65,7 +67,7 @@ In you groups, write down:
 * Which feature would you implement first?
 
 ## WP exercise 1.
-<!-- _backgroundColor: purple -->
+<!-- _backgroundColor: LightSkyBlue -->
 
 Create the Player controlled ship for the Asteroids game.
 
@@ -78,9 +80,8 @@ Create the Player controlled ship for the Asteroids game.
 
 ## Day 3 Schedule
 
-* Morning
-  * [Math 0: Useful math functions](math/0-mathf.md)
-  * [Math 4: Interpolation](math/4-interpolation.md)
+* [Math 0: Useful math functions](math/0-mathf.md)
+* [Math 4: Interpolation](math/4-interpolation.md)
 
 ## Week Project Components
 
@@ -135,6 +136,10 @@ Create the Player controlled ship for the Asteroids game.
 * Asteroid Script
 * WrapAround Script
 * extra: generating a level
+
+## 
+
+AnimationCurve component xx
 
 
 # Day 5: Playtesting

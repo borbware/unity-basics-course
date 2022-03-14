@@ -1,14 +1,16 @@
 ---
 marp: true
 paginate: true
+math: katex
 ---
 <!-- headingDivider: 3 -->
-<!-- class: invert -->
+<!-- class: default -->
 
 # 0. Helpful Math functions
 
 ## The `Mathf` class
-* [Docs: Mathf class](https://docs.unity3d.com/Manual/class-Mathf.html)
+* [Important classes: Mathf class](https://docs.unity3d.com/Manual/class-Mathf.html)
+* [Script reference: Mathf class](https://docs.unity3d.com/ScriptReference/Mathf.html)
 * Unity has a built-in `Mathf` class that includes important methods and constants
 * Before diving deeper, let's introduce just a few of them
 
@@ -57,3 +59,7 @@ paginate: true
     ```c#
 	HP = Mathf.Clamp(HP, 0.0f, maxHP) // HP is never smaller than zero or greater than maxHP
 	```
+
+## Exercise 1: Min Max
+
+try out tms xx

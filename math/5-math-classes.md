@@ -1,7 +1,7 @@
 # Unity Math classes
 
 ## Mathf
-  * [Docs: Mathf class](https://docs.unity3d.com/Manual/class-Mathf.html)
+  * [Manual: Mathf class](https://docs.unity3d.com/Manual/class-Mathf.html)
   * [Script Reference: Mathf class](https://docs.unity3d.com/ScriptReference/Mathf.html)
   * Trigonometric functions
     * radians

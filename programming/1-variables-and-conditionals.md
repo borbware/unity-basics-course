@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: invert -->
+<!-- class: default -->
 # Variables and conditionals
 
 # Variables
@@ -98,7 +98,7 @@ namespace MyAwesomeProgram
   * `/` (division)
 
 ## Extra: Modulo operator
-<!-- _backgroundColor: black -->
+<!-- _backgroundColor: pink -->
   * `%`
     * modulo operator (remainder)
     * great for looping a range
@@ -107,7 +107,7 @@ namespace MyAwesomeProgram
     * `5 % 5 = 0`
     * `6 % 5 = 1`
 ## Exercise 1: Trying out variables
-<!-- _backgroundColor: teal -->
+<!-- _backgroundColor: Khaki -->
 
 * create a new C# script component for an empty GameObject.
 * declare two variables `a` and `b` with the type `double`.
@@ -238,7 +238,7 @@ Debug.Log(a < b && a < c);  // prints true
   ```
 
 ## Extra conditional: Switch-case statement
-<!-- _backgroundColor: black -->
+<!-- _backgroundColor: pink -->
 
 ```c#
 public int intelligence = 5;
@@ -270,7 +270,7 @@ void Greet()
 }
 ```
 ## Extra conditional: Ternary operator
-<!-- _backgroundColor: black -->
+<!-- _backgroundColor: pink -->
 * "Inline if" is done with the ternary operator 
   * `(the if statement) ? (if true) : (if false);`
     ```c#
@@ -392,7 +392,7 @@ void Greet()
 * because C# is object-oriented, all functions are *methods* inside *classes*
 * We'll dive deeper into these topics in [Chapter 3. Classes and Methods](3-classes-methods.md)
 ## Exercise 2: Traffic lights
-<!-- _backgroundColor: teal -->
+<!-- _backgroundColor: Khaki -->
 
 Create a timed console application for displaying the state of a traffic light.
 * ⭐ Print the new color to the console every frame (use `Update()`).
@@ -402,7 +402,7 @@ Create a timed console application for displaying the state of a traffic light.
 * Hint: Use `Time.time`!
 
 ## Exercise 2 extras
-<!-- _backgroundColor: teal -->
+<!-- _backgroundColor: Khaki -->
 
 * ⭐⭐ Print the color to console only when the light changes.
 * ⭐⭐⭐ Create a 3d object. Change the color of its material as a function of time.

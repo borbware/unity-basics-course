@@ -1,5 +1,14 @@
 # Week 4: Advanced techniques
 
+## Week 4 schedule
+
+* Day 4: 
+  * Math 3: Sinewaves
+* Day 2: 
+  * Programming 4: Special types
+##
+
+
 * Game design
 * Game programming patterns
 * [Unity advanced](#unity-advanced)

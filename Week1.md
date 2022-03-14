@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: invert -->
+<!-- class: default -->
 
 # Week 1
 
@@ -102,7 +102,8 @@ paginate: true
 
 ## Unity Documentation
 
-* [Docs: User Manual](https://docs.unity3d.com/Manual/UnityManual.html)
+* [Manual](https://docs.unity3d.com/Manual/UnityManual.html)
+* [Script Reference](https://docs.unity3d.com/ScriptReference)
 * if you don't know how something works, this should be the first place to learn from
 * Docs will be heavily featured during the course!
 ## The Unity Interface
@@ -123,25 +124,25 @@ paginate: true
 
 ## Week project 1: Clock
 
-<!-- _backgroundColor: purple -->
+<!-- _backgroundColor: LightSkyBlue -->
 For the first week project, you will create a 3d model of a clock with ticking hour, minute and second indicators.
 
 The project is separated into individual exercises. For more help, you can follow the [CatlikeCoding clock tutorial](https://catlikecoding.com/unity/tutorials/basics/game-objects-and-scripts/).
 
 
 ## WP Exercise 1. Creating a project
-<!-- _backgroundColor: purple -->
+<!-- _backgroundColor: LightSkyBlue -->
 * Install and setup all the tools needed and create your first 3D project for the course with the name `Week1Clock`.
 * This project will be worked on step by step in the coming exercises.
 
 ## WP Exercise 2. Building a simple clock
-<!-- _backgroundColor: purple -->
+<!-- _backgroundColor: LightSkyBlue -->
 Create a 3D model of a clock from Unity's primitives with three hands and 12 hour indicators.
 
 Unlike in the picture below, set all the indicators to 12. They will be later rotated to correct positions with C# scripting.
 
 ---
-<!-- _backgroundColor: purple -->
+<!-- _backgroundColor: LightSkyBlue -->
 ![3d clock](imgs/week1-catlikeclock.png)
 
 
@@ -155,7 +156,7 @@ Unlike in the picture below, set all the indicators to 12. They will be later ro
 * Afternoon
   * Working on the week project
 ## WP exercise 3. Animating the clock
-<!-- _backgroundColor: purple -->
+<!-- _backgroundColor: LightSkyBlue -->
 Make the clock hands move when time goes on.
 
 ⭐ Make the movement instantaneous: the second indicator moves once per second directly to the next position
@@ -166,11 +167,8 @@ Make the clock hands move when time goes on.
 
 ## Day 3 schedule
 
-* Morning
-  * [Unity basics 2: Assets](unity-basics/2-assets.md)
-  * [Unity basics 3: Scripting GameObjects](unity-basics/3-scripting-gameobjects.md)
-* Afternoon
-  * Working on the week project
+* [Unity basics 2: Assets](unity-basics/2-assets.md)
+* [Unity basics 3: Scripting GameObjects](unity-basics/3-scripting-gameobjects.md)
 
 # Day 4: Git
 

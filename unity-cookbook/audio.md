@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: invert -->
+<!-- class: default -->
 
 # Playing audio
 
@@ -18,8 +18,8 @@ paginate: true
 ## AudioSource
 
 * You can have multiple of these
-* [Docs: AudioSource class](https://docs.unity3d.com/ScriptReference/AudioSource.html)
-* [Docs: AudioSource component](https://docs.unity3d.com/Manual/class-AudioSource.html)
+* [Script Reference: AudioSource class](https://docs.unity3d.com/ScriptReference/AudioSource.html)
+* [Manual: AudioSource component](https://docs.unity3d.com/Manual/class-AudioSource.html)
 * Insert to every GameObject that should be able to make a sound
   * E.g., if a Coin GameObject should have a *\*bling\** sound effect when collected
   * The *bling.wav* sound effect is drag-and-dropped into the component 
@@ -40,12 +40,16 @@ paginate: true
 ## AudioListener
 
 * Receives input from any given Audio Source in the scene and plays sounds through the computer speakers
-* [Docs: AudioListener class](https://docs.unity3d.com/ScriptReference/AudioListener.html)
-* [Docs: AudioListener component](https://docs.unity3d.com/Manual/class-AudioListener.html)
+* [Script Reference: AudioListener class](https://docs.unity3d.com/ScriptReference/AudioListener.html)
+* [Manual: AudioListener component](https://docs.unity3d.com/Manual/class-AudioListener.html)
 * There can only be one per scene
 * Usually, under the *Camera* GameObject
 
 
-## Spatial Audio
+## Exercise
+
+toista ääni xx
+
+## Extra: Spatial Audio
 
 * xx
