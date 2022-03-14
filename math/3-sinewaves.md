@@ -17,6 +17,11 @@ math: katex
 * Their form is the same, but $\cos$ is shifted from $\sin$ by $\pi/2$ rad:
   	$\sin(x + \pi/2) = \cos(x)$
 ![](imgs/sin-cos.png)
+
+## Sin & Cos triangle definition
+
+## Circular motion
+
 ## Extra: Polar coordinates
 
 * [Wikipedia: Polar coordinate system](https://en.wikipedia.org/wiki/Polar_coordinate_system)

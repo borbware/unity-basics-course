@@ -64,3 +64,10 @@ paginate: true
 * The reason might be that you're swimming against the current
   * you're not doing it *the way Unity wants you to do it!*
   * learning from Unity projects by more experienced devs gives you perspective 
+
+## Unity Documentation
+
+* [Manual](https://docs.unity3d.com/Manual/UnityManual.html)
+* [Script Reference](https://docs.unity3d.com/ScriptReference)
+* if you don't know how something works, this should be the first place to learn from
+* Docs will be heavily featured during the course!

@@ -38,9 +38,10 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 0 | [Useful Math Functions](math/0-mathf.md)							| 🌔 |
 | 1 | [Vectors](math/1-vectors.md)										| 🌔 |
 | 2 | [Forces](math/2-forces.md)										| 🌓 |
-| 3 | [Sinewaves](math/3-sinewaves.md)									| 🌑 |
+| 3 | [Sinewaves](math/3-sinewaves.md)									| 🌒 |
 | 4 | [Interpolation](math/4-interpolation.md)							| 🌒 |
 |   | [Unity Math classes](math/5-math-classes.md)						| 🌒 |
+|   | [Randomness](math/6-math-classes.md)								| 🌑 |
 
 ## About Unity
 
@@ -61,14 +62,19 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   | Unity Cookbook											   	  	|     | 
 |---|-------------------------------------------------------------------|----:|
-|   | [Input handling](unity-cookbook/input-handling.md)				| 🌔 |
-|   | [Physics](unity-cookbook/physics.md)								| 🌓 |
 |   | [2D](unity-cookbook/2d.md)										| 🌒 |
-|   | [Particle system](unity-cookbook/particle-system.md)				| 🌑 |
-|   | [UI](unity-cookbook/UI.md)										| 🌒 |
-|   | [3D](unity-cookbook/3dplatforming.md)								| 🌒 |
+|   | [3D Platforming](unity-cookbook/3dplatforming.md)					| 🌒 |
+|   | [Animation Curve](unity-cookbook/animation-curve.md)				| 🌒 |
+|   | [Audio](unity-cookbook/audio.md)									| 🌒 |
+|   | [Building](unity-cookbook/building.md)							| 🌑 |
 |   | [Data flow](unity-cookbook/data.md)								| 🌒 |
+|   | [Input handling](unity-cookbook/input-handling.md)				| 🌔 |
+|   | [Packages](unity-cookbook/packages.md)							| 🌑 |
+|   | [Particle system](unity-cookbook/particle-system.md)				| 🌑 |
 |   | [Pathfinding](unity-cookbook/pathfinding.md)						| 🌒 |
+|   | [Physics](unity-cookbook/physics.md)								| 🌓 |
+|   | [Tags and Layers](unity-cookbook/tags-layers.md)					| 🌒 |
+|   | [UI](unity-cookbook/UI.md)										| 🌒 |
 
 
 ## About game development

@@ -45,7 +45,7 @@ paginate: true
 * indie game developer
 * participated in >20 game jams
 * worked on 36 small games
-* releasing first commercial game EMUUROM this year
+* releasing my first commercial game EMUUROM this year
 ## About this course
 
 * Everyone will create multiple video games with Unity
@@ -80,7 +80,7 @@ paginate: true
 ## Applications
 
 * Download [Unity Hub](https://unity3d.com/get-unity/download)
-* Install latest Unity LTS (long term support) version 2020.3.27f1
+* Install the latest Unity LTS (long term support) version 2020.3.27f1
 * Install [Visual Studio Code](https://code.visualstudio.com/), aka VS code
   * during install: add to context menu
 * Install [Discord](https://discord.com/)
@@ -100,12 +100,7 @@ paginate: true
 [Unity basics 0. What is Unity?](unity-basics/0-what-is-unity.md)
 
 
-## Unity Documentation
 
-* [Manual](https://docs.unity3d.com/Manual/UnityManual.html)
-* [Script Reference](https://docs.unity3d.com/ScriptReference)
-* if you don't know how something works, this should be the first place to learn from
-* Docs will be heavily featured during the course!
 ## The Unity Interface
 
 [Unity basics 1. The Unity Interface](unity-basics/1-the-unity-interface.md)
@@ -117,7 +112,7 @@ paginate: true
 * The deadlines for the projects are on Fridays, and we will continuously work on it during the weekdays
 * On Fridays, the projects are showcased
 * Every project has three separate stages
-  * ⭐ The MVP (minimum viable product)
+  * ⭐ The ***MVP*** (minimum viable product)
   * ⭐⭐ Some extra feature included
   * ⭐⭐⭐ Includes an advanced feature (which isn't necessarily introduced during the classes), or a feature of your own design 
   * you can choose which stage you aim to complete 
@@ -160,7 +155,9 @@ Unlike in the picture below, set all the indicators to 12. They will be later ro
 Make the clock hands move when time goes on.
 
 ⭐ Make the movement instantaneous: the second indicator moves once per second directly to the next position
+
 ⭐⭐ Make the movement smooth: the second indicator moves continuously at a rate of one full rotation per minute
+
 ⭐⭐⭐ Make the movement realistic: study how the hands of a real clock moves! The second indicator moves incrementally between fixed positions, but the movement is not instantaneous. Try to replicate this. 
 
 # Day 3: Assets & scripting

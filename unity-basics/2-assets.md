@@ -16,6 +16,15 @@ paginate: true
 	* Graphics
 	* Sound effects
 	* Music
+
+## Using assets
+
+xx
+## WP Exercise 1: Importing a texture
+
+* Create a picture with an image editor to use as a clock face.
+* Add it to your project's Assets folder and use it as a material for the clock face.
+
 ## Prefabs
 ### Introduction to prefabs
 
@@ -46,22 +55,8 @@ paginate: true
     * when you make changes into a prefab instance, you can set those changes to be the new default
     * [Manual: Instance overrides](https://docs.unity3d.com/Manual/PrefabInstanceOverrides.html)
 * overridden values in Inspector are indicated in **bold**
-## Tags & Layers
-* *Edit > Project Settings > Tags and Layers*
-### Tags
-* `GameObject.FindWithtag("tagname");`
-* `GameObject.FindGameObjectsWithTag("tagname");`
 
-### Layers
-* [Manual: Layers](https://docs.unity3d.com/Manual/Layers.html)
-* Some layers...
-	* Default
-	* Ignore Raycast
-	* Custom
-* Ignore some layers in camera
-	* *Inspector > Camera > Culling Mask > Layers*
-* Ignore some layers in Viewport
-	* Top right: Layers...
-* Layers can be used for selective collision detection
-  * [Manual: Layer-based collision detection](https://docs.unity3d.com/Manual/LayerBasedCollision.html)
 
+## WP Exercise 2: Using prefabs
+
+Create a prefab out of the clock and then create a duplicate of it in the scene.

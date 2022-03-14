@@ -17,17 +17,12 @@ paginate: true
 ## Week 2 Schedule
 
 * Day 1
-  * [Unity cookbook: Unity for 2D](unity-cookbook/2d.md)
-  * [Unity cookbook: Input handling](unity-cookbook/input-handling.md)
-  * [Unity cookbook: Physics](unity-cookbook/physics.md)
+  * Unity cookbook: [Unity for 2D](unity-cookbook/2d.md), [Input handling](unity-cookbook/input-handling.md), [Physics](unity-cookbook/physics.md)
 * Day 2:
-  * Programming 2: Lists and loops
+  * [Programming 2: Lists and Loops](programming/2-lists-loops.md)
 * Day 3:
   * [Math 0: Useful math functions](math/0-mathf.md)
-  * [Unity cookbook: Audio](unity-cookbook/audio.md)
-  * [Unity cookbook: Particle system](unity-cookbook/particle-system.md)
-  * [Unity cookbook: Animation curve](unity-cookbook/animation-curve.md)
-  * [Unity cookbook: UI](unity-cookbook/UI.md)
+  * Unity cookbook: [Audio](unity-cookbook/audio.md), [Particle system](unity-cookbook/particle-system.md), [Animation curve](unity-cookbook/animation-curve.md), [UI](unity-cookbook/UI.md)
 * Day 4:
   * [Math 1: Vectors](math/1-vectors.md)
 * Day 5: WP Wrap-up
@@ -76,12 +71,15 @@ Create the Player controlled ship for the Asteroids game.
 # Day 2: Programming 2
 [Programming 2: Lists and Loops](programming/2-lists-loops.md)
 
-# Day 3
+# Day 3: Unity Components
 
 ## Day 3 Schedule
 
-* [Math 0: Useful math functions](math/0-mathf.md)
-* [Math 4: Interpolation](math/4-interpolation.md)
+  * [Math 0: Useful math functions](math/0-mathf.md)
+  * [Unity cookbook: Audio](unity-cookbook/audio.md)
+  * [Unity cookbook: Particle system](unity-cookbook/particle-system.md)
+  * [Unity cookbook: Animation curve](unity-cookbook/animation-curve.md)
+  * [Unity cookbook: UI](unity-cookbook/UI.md)
 
 ## Week Project Components
 
