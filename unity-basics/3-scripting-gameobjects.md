@@ -38,20 +38,21 @@ b) *Project > Right click > Create > C# script*, then drag and drop to a game ob
     * called second, right before the first Update
     * only called if the script component IS enabled
 
-## Updating 1
+## `Update()`
   * There are three functions for updating a script class
   * `Update()`
     * the frequency of update calls varies depending on framerate
     * most things can be updated here
     * because of framerate-dependence it is *indeterministic*
-## Updating 2
+        * (same input doesn't always produce same output)
+## `FixedUpdate()` and `LateUpdate()`
   * `FixedUpdate()`
     * by default, called every 0.2 seconds (50 FPS)
     * used mainly for physics calculations
       * under load, will slow down!
       * not dependent on framerate: *deterministic*
         * (same input always produces same output)
-    * NOTE: can't be used for checking ButtonDown input
+    * ***Note:*** can't be used for checking ButtonDown input
   * `LateUpdate()`
     * called every frame after `Update()`.
     * good for something that has to happen after all game objects have Updated
