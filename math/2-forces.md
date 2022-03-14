@@ -9,10 +9,10 @@ paginate: true
 
 ## What is a Force
 
-- In physics, a force is an influence ("push or pull") that can change the motion of an object
-- force causes an object to **accelerate**
-  - this in turn changes the object's **velocity**
-  - ...which changes the object's **position**
+* In physics, a force is an influence ("push or pull") that can change the motion of an object
+* force causes an object to ***accelerate***
+  * this in turn changes the object's ***velocity***
+  * ...which changes the object's ***position***
 
 * [Brackeys video: Forces](https://www.youtube.com/watch?v=HEJ_UtSbinY)
 
@@ -20,11 +20,11 @@ paginate: true
 
 ![](imgs/forces-1.png)
 
-- $\vec{F} = m\vec{a}$
-  - the unit of force is *Newton* ($N = kg \cdot m/s^2$)
-  - force equals mass times acceleration
-  - the force is a *vector*
-  - so it not only has a magnitude, but also a *direction*
+* $\vec{F} = m\vec{a}$
+  * the unit of force is *Newton* ($N = kg \cdot m/s^2$)
+  * force equals mass times acceleration
+  * the force is a ***vector***
+  * so it not only has a ***magnitude***, but also a ***direction***
 
 ### Multiple forces
 

@@ -8,16 +8,27 @@ paginate: true
 ## Scripting
 ## Creating a new script
 
-a) Inspector > Add Component > New Script > Create and Add
-b) Project > Right click > Create > C# script > drag and drop to a game object
+a) *Inspector > Add Component > New Script > Create and Add*
+b) *Project > Right click > Create > C# script*, then drag and drop to a game object
 
-## Class
+## The Script Class
 
-* C# is object-oriented: the script is a new **Class** that inherits an Unity class **MonoBehaviour**
-* it includes two **methods** by default: Start and Update
-  * in addition to these two, we can implement other methods that Unity already recognizes and has an use for as well
-  * we can also add our own methods 
-* we can also add new **fields**: variables inside the class
+* C# is object-oriented: the script is a new **Class** that inherits an Unity class `MonoBehaviour`
+* inside the class, we can implement Unity's default methods
+  * e.g., `Awake`
+* we can also add our own methods
+  * e.g., `DoStuffThatWeWant()`
+* we can also add new ***fields***: variables inside the class
+
+<!-- _footer: "[More about classes later in Programming 3: Classes and Methods](../programming/3-classes-methods.md)"-->
+
+## Start and update
+
+* a new script includes two ***methods*** by default: `Start` and `Update`
+* `Start` is called automatically only once
+  * it's used for setting things up when we start using the gameobject
+* `Update` is called 
+
 ## Initialization
   * There are two functions for initializing a script class
   * `Awake()`
