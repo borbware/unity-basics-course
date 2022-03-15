@@ -17,15 +17,16 @@ paginate: true
 ## Week 1 Schedule
 
 * Day 1:
-  * Unity basics 0: What is Unity
-  * Unity basics 1: The Unity Interface
+  * Unity basics 0: [What is Unity?](unity-basics/0-what-is-unity.md)
+  * Unity basics 1: [The Unity Interface](unity-basics/1-the-unity-interface.md)
+  * Unity basics 2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md)
 * Day 2:
-  * Programming 1: Variables & Conditionals
+  * Programming 1: [Variables and Conditionals](programming/1-variables-and-conditionals.md)
 * Day 3:
-  * Unity basics 2: Assets
-  * Unity basics 3: Scripting gameobjects
+  * Unity basics 3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md)	
+  * Unity basics 4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)
 * Day 4:
-  * Project management 1: Git basics
+  * Project management 1: [Git Basics](project-management/1-git-basics.md)
 * Day 5:
   * Week project & Wrap-up
 
@@ -36,7 +37,9 @@ paginate: true
 * Morning
   * Introduction
   * Setup
-  * Unity basics 0 & 1
+  * Unity basics 0: [What is Unity?](unity-basics/0-what-is-unity.md)
+  * Unity basics 1: [The Unity Interface](unity-basics/1-the-unity-interface.md)
+  * Unity basics 2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md)
 * Afternoon
   * Working on exercises & Week project
 
@@ -95,16 +98,11 @@ paginate: true
 	* even later: Itch.io (for publishing your games)
 
 
-## Unity
+## Unity basics
 
-[Unity basics 0. What is Unity?](unity-basics/0-what-is-unity.md)
-
-
-
-## The Unity Interface
-
-[Unity basics 1. The Unity Interface](unity-basics/1-the-unity-interface.md)
-
+  * Unity basics 0: [What is Unity?](unity-basics/0-what-is-unity.md)
+  * Unity basics 1: [The Unity Interface](unity-basics/1-the-unity-interface.md)
+  * Unity basics 2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md)
 
 ## Week projects
 
@@ -119,25 +117,25 @@ paginate: true
 
 ## Week project 1: Clock
 
-<!-- _backgroundColor: LightSkyBlue -->
+<!-- _backgroundColor: lightgreen -->
 For the first week project, you will create a 3d model of a clock with ticking hour, minute and second indicators.
 
 The project is separated into individual exercises. For more help, you can follow the [CatlikeCoding clock tutorial](https://catlikecoding.com/unity/tutorials/basics/game-objects-and-scripts/).
 
 
 ## WP Exercise 1. Creating a project
-<!-- _backgroundColor: LightSkyBlue -->
+<!-- _backgroundColor: lightgreen -->
 * Install and setup all the tools needed and create your first 3D project for the course with the name `Week1Clock`.
 * This project will be worked on step by step in the coming exercises.
 
 ## WP Exercise 2. Building a simple clock
-<!-- _backgroundColor: LightSkyBlue -->
+<!-- _backgroundColor: lightgreen -->
 Create a 3D model of a clock from Unity's primitives with three hands and 12 hour indicators.
 
 Unlike in the picture below, set all the indicators to 12. They will be later rotated to correct positions with C# scripting.
 
 ---
-<!-- _backgroundColor: LightSkyBlue -->
+<!-- _backgroundColor: lightgreen -->
 ![3d clock](imgs/week1-catlikeclock.png)
 
 
@@ -151,7 +149,7 @@ Unlike in the picture below, set all the indicators to 12. They will be later ro
 * Afternoon
   * Working on the week project
 ## WP exercise 3. Animating the clock
-<!-- _backgroundColor: LightSkyBlue -->
+<!-- _backgroundColor: lightgreen -->
 Make the clock hands move when time goes on.
 
 ⭐ Make the movement instantaneous: the second indicator moves once per second directly to the next position
@@ -164,8 +162,8 @@ Make the clock hands move when time goes on.
 
 ## Day 3 schedule
 
-* [Unity basics 2: Assets](unity-basics/2-assets.md)
-* [Unity basics 3: Scripting GameObjects](unity-basics/3-scripting-gameobjects.md)
+* Unity basics 3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md)	
+* Unity basics 4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)
 
 # Day 4: Git
 

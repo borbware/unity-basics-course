@@ -8,7 +8,7 @@ math: katex
 # Physics
 
 ## Unity physics engine
-* [Manual: Physics](https://docs.unity3d.com/2019.3/Documentation/Manual/PhysicsSection.html)
+* [Manual: Physics](https://docs.unity3d.com/Manual/PhysicsSection.html)
 * A physics engine is used to calculate accelerations, collisions, gravity and other forces 
   * In 3D, Unity uses NVIDIA's **PhysX** for its physics
   * In 2D, Unity uses **Box2D**

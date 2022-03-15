@@ -36,14 +36,14 @@ paginate: true
 * [Unity cookbook: Physics](unity-cookbook/physics.md)
 
 ## Week project 2: Asteroids
-<!-- _backgroundColor: LightSkyBlue -->
+<!-- _backgroundColor: lightgreen -->
 *  Recreate the classic arcade game Asteroids in Unity.
      * [Youtube: Asteroids gameplay](https://www.youtube.com/watch?v=WYSupJ5r2zo)
 
 Goal:
 * ⭐ MVP: Create a playable single-screen game of Asteroids.
 ## Extra goals:
-<!-- _backgroundColor: LightSkyBlue -->
+<!-- _backgroundColor: lightgreen -->
 * ⭐⭐ Add one of the following features:
   * Hi scores & scoreboard
   * Randomized asteroid spawining
@@ -53,7 +53,7 @@ Goal:
 
 
 ## WP exercise 0.
-<!-- _backgroundColor: LightSkyBlue -->
+<!-- _backgroundColor: lightgreen -->
 Examine the gameplay video, then play the example Unity-built Asteroids.
 
 In you groups, write down:
@@ -62,7 +62,7 @@ In you groups, write down:
 * Which feature would you implement first?
 
 ## WP exercise 1.
-<!-- _backgroundColor: LightSkyBlue -->
+<!-- _backgroundColor: lightgreen -->
 
 Create the Player controlled ship for the Asteroids game.
 
@@ -107,6 +107,8 @@ Create the Player controlled ship for the Asteroids game.
 * Rigidbody2D
 * Circle Collider 2D
 * Bullet Script
+
+
 * prefab
 * instantiating
 ### The UI
@@ -135,9 +137,6 @@ Create the Player controlled ship for the Asteroids game.
 * WrapAround Script
 * extra: generating a level
 
-## 
-
-AnimationCurve component xx
 
 
 # Day 5: Playtesting

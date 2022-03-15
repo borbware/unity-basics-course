@@ -91,6 +91,11 @@ b) *Project > Right click > Create > C# script*, then drag and drop to a game ob
 
 
 ## Transform
+
+* The GameObject's position, rotation and scale can be manipulated via its ***Transform*** component
+* [ScriptReference: Transform](https://docs.unity3d.com/ScriptReference/Transform.html)
+* [Manual: Transform](https://docs.unity3d.com/Manual/class-Transform.html)
+
 * translation & rotation
   ```c#
   if(Input.GetKey(KeyCode.UpArrow))

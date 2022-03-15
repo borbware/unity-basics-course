@@ -69,5 +69,8 @@ paginate: true
 
 * [Manual](https://docs.unity3d.com/Manual/UnityManual.html)
 * [Script Reference](https://docs.unity3d.com/ScriptReference)
-* if you don't know how something works, this should be the first place to learn from
+* If you don't know how something works, this should be the first place to learn from
 * Docs will be heavily featured during the course!
+* Note: There are different docs for different versions of Unity
+  * See the top left corner and the page URL if it matches
+  * Some pages are missing from newer docs so I'll refer to older ones in those cases 

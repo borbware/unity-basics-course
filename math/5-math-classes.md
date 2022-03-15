@@ -23,18 +23,21 @@
 ## Debug
 
 ## Quaternion
-  * A four-dimensional extension of complex numbers with three imaginary axes
-  * WHAT??????
-  * What you really need to know about them:
-    * They're used for representing rotation angles instead of Euler angles that can result in a _gimbal lock_
-    * Most Unity devs don't _really_ need to understand the underlying maths
-  * So, rotation is stored as a quaternion
-    * four components: x, y, z, w
-  * ...but rotation is _shown_ in Inspector with Euler angles
-  * never adjust Quaternion components independently, use ready-made functions from the Quaternion class
-  * `transform.rotation = Quaternion.LookRotation(target.position - transform.position)`
-  * `transform.rotation = Quaternion.LookRotation(target.position - transform.position, new Vector3.Up)`
- * Slerp
+* [Manual: Rotation and Orientation in Unity](https://docs.unity3d.com/Manual/QuaternionAndEulerRotationsInUnity.html)
+* ***Euler angles*** are a rather simple way of representing rotation with three X,Y,Z values
+* ***Quaternions***: A four-dimensional extension of complex numbers with three imaginary axes
+* What you *really* need to know about them:
+  * They're used for representing rotation angles instead of Euler angles that can result in a _gimbal lock_
+  * Most Unity devs don't _really_ need to understand the underlying maths
+
+* Even though rotation is *stored* as a quaternion...
+  * four components: x, y, z, w
+* ...it is _shown_ in Inspector with Euler angles
+
+* never adjust Quaternion components independently, use ready-made functions from the Quaternion class
+* `transform.rotation = Quaternion.LookRotation(target.position - transform.position)`
+* `transform.rotation = Quaternion.LookRotation(target.position - transform.position, new Vector3.Up)`
+### `Quaternion.Slerp`
     ```c#
     Vector3 relativePos = 
       target.position

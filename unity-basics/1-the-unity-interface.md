@@ -6,16 +6,6 @@ paginate: true
 <!-- class: default -->
 # 1. The Unity Interface
 
-## Game Objects
-
-* Pretty much everything in Unity is a game object
-* Game objects consist of components
-* Some examples...
-  * 3d primitives (Cube, Cylinder, Sphere...)
-  * Camera
-    * Tip: Select camera and press ***CTRL+SHIFT+F*** to align camera view with the Scene window viewpoint
-  * Light
-  * Empty
 ## Editor views
 
 * [Manual: Unity's Interface](https://docs.unity3d.com/Manual/UsingTheEditor.html)
@@ -55,11 +45,12 @@ paginate: true
   * center cube: perspective / orthographic
 * scene view camera settings
 ## Shortcuts for scene & hierarchy
-  * ***CTRL+C*** + ***CTRL+V*** copy & paste
-  * ***CTRL+D*** duplicate
-  * ***F***: center camera on selected object
-    * helps e.g., if camera zooms in too large increments
-    * press twice to follow the object
+* ***CTRL+C*** + ***CTRL+V*** copy & paste
+* ***CTRL+D*** duplicate
+* ***F***: center camera on selected object
+  * helps e.g., if camera zooms in too large increments
+  * press twice to follow the object
+* Tip: Select camera and press ***CTRL+SHIFT+F*** to align camera view with the Scene window viewpoint
 ### Toolbar
 
 * [Manual: Toolbar](https://docs.unity3d.com/Manual/Toolbar.html)
@@ -74,7 +65,7 @@ paginate: true
     * the squares in the center: move along a plane
   * ***E***: Rotate Tool
   * ***R***: Scale Tool
-  * those are the most important ones
+  * those were the most important ones, but there's also:
   * ***T***: Rect Tool
     * Alternative Scale Tool
   * ***Y***: Move+Rotate+Scale
@@ -88,38 +79,12 @@ paginate: true
   * Name
   * Tag
   * Layer
-* list of components inside a game object
+* Inspector shows what components does a game object have
 * components can be turned off
-* drag variable to change value
-* hover over variable name to show info
-
-
-## GameObject Components
-
-
-### Location in scene
-* ***Transform***
-  * included even in an empty game object by default!
-  * position / rotation / scale
-### Collision
-
-* ***Collider***
-  * enables collision
-  * different shapes and sizes
-  * object can collide into other game objects and vice versa
-  * isTrigger
-* ***RigidBody***
-  * for interacting with the physics engine 
-### Some others
-* Drawing the component
-  * ***Renderer***
-    * the visible part of the game object
-  * ***Material***
-* ***Script***
-  * custom C# code
-  * the most versatile component
-
-  
+* UI tips:
+  * drag variable to change value
+  * hover over variable name to show info
+ 
 ## Game view
 
 * [Manual: Game view](https://docs.unity3d.com/Manual/GameView.html)
@@ -129,3 +94,15 @@ paginate: true
   * a nice way to mess around and find the right values for physics interactions etc.
   * changes made during the play mode do not persist!!!!
   * protip: go to *Edit > Preferences > Colors* and change the play mode tint to red.
+
+## Project window
+
+* [Manual: Project window](https://docs.unity3d.com/Manual/ProjectView.html)
+* List of ***Assets*** & ***Packages*** in your projects
+* Assets
+	* Scenes
+	* Prefabricated game objects (prefabs)
+	* Materials
+	* Graphics, Sound effects, Music...
+* Packages
+  * Additional code & assets installed from the Unity Package Registry  
