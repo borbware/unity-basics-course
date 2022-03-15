@@ -26,6 +26,7 @@ paginate: true
 ## Sound effects
 
 * bfxr
+* music tools (see next slide)
 
 ## Music
 
