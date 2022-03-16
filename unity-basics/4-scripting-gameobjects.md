@@ -5,16 +5,18 @@ paginate: true
 <!-- headingDivider: 3 -->
 <!-- class: default -->
 # 3. Scripting GameObjects
-## Scripting
+
 ## Creating a new script
 
-a) *Inspector > Add Component > New Script > Create and Add*
-b) *Project > Right click > Create > C# script*, then drag and drop to a game object
+* There are two ways to do it:
+  a) *Inspector > Add Component > New Script > Create and Add*
+  b) *Project > Right click > Create > C# script*, then drag and drop to a GameObject
 
 ## The Script Class
 
-* C# is object-oriented: the script is a new **Class** that inherits an Unity class `MonoBehaviour`
-* inside the class, we can implement Unity's default methods
+* C# is object-oriented: the script is a new ***Class***
+  * it ***inherits*** an Unity class `MonoBehaviour`
+* inside the class, we can implement Unity's default ***methods***
   * e.g., `Awake`
 * we can also add our own methods
   * e.g., `DoStuffThatWeWant()`
@@ -56,14 +58,19 @@ b) *Project > Right click > Create > C# script*, then drag and drop to a game ob
   * `LateUpdate()`
     * called every frame after `Update()`.
     * good for something that has to happen after all game objects have Updated
-## Deltatime
-
-  * `Time.deltaTime`
-    * deltatime is the time spent between update calls
-      * `deltatime = 1 / FPS`
-    * can be used for framerate-independent movement
-      * `transform.position += new Vector3(speed * Time.deltaTime, 0.0f, 0.0f);`
-      * beware lag spikes, though: what would the velocity be if deltatime was equal to one second? three seconds?
+## Time and Deltatime
+* `Time.time`
+  * the time passed since starting the game, in seconds
+* `Time.deltaTime`
+  * deltatime is the time spent between update calls, in seconds
+    * relates to FPS, or ***frames per second***
+    * `deltatime = 1 / FPS`
+  * can be used for accounting for framerate in movement
+    ```c#
+    Vector3 velocity = new Vector3(speed * Time.deltaTime, 0.0f, 0.0f);
+    transform.position += velocity;
+    ```
+  * beware lag spikes, though: what would `velocity` be if deltatime was equal to one second? Three seconds?
 
 ## Variables
 
@@ -92,26 +99,46 @@ b) *Project > Right click > Create > C# script*, then drag and drop to a game ob
 
 ## Transform
 
-* The GameObject's position, rotation and scale can be manipulated via its ***Transform*** component
 * [ScriptReference: Transform](https://docs.unity3d.com/ScriptReference/Transform.html)
 * [Manual: Transform](https://docs.unity3d.com/Manual/class-Transform.html)
+* The GameObject's position, rotation and scale can be manipulated via its ***Transform*** component
+  * either by using the included methods, or by directly setting fields
+  * fields are either ***global*** or ***local***: e.g., `position` vs `localPosition`
+  * local coordinates are with respect to the GameObject's ***parent***
 
-* translation & rotation
+
+
+### Translation
+  * `transform.Translate(Vector3 displacement)`
+  * `transform.position`
+  * `transform.localPosition`
   ```c#
   if(Input.GetKey(KeyCode.UpArrow))
     transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
 
   if(Input.GetKey(KeyCode.DownArrow))
     transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);
+  ```
+### Rotation
 
+* Rotation methods
+  * `transform.Rotate(Vector3 eulerAngles)`
+  * `transform.RotateAround(Vector3 pivot)`
+  * `transform.LookAt(Transform target)`
+* Rotation fields
+  * `transform.rotation`, global rotation as a Quaternion
+  * `transform.localRotation`, local rotation as a 
+  * `transform.eulerAngles`
+
+* ``
+
+  ```c#
   if(Input.GetKey(KeyCode.LeftArrow))
     transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
 
   if(Input.GetKey(KeyCode.RightArrow))
     transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
   ```
-* LookAt
-  * `transform.LookAt(target);`
 
 
 ## GameObjects

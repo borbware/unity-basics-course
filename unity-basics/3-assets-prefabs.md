@@ -64,6 +64,13 @@ paginate: true
     * [Manual: Instance overrides](https://docs.unity3d.com/Manual/PrefabInstanceOverrides.html)
 * overridden values in Inspector are indicated in **bold**
 
+## Extra: Instantiating prefabs
+<!-- _backgroundColor: pink -->
+
+* You can use code to create instances of prefabs when the game is running
+* [Manual: Instantiating Prefabs at run time
+](https://docs.unity3d.com/Manual/InstantiatingPrefabs.html)
+
 
 ## WP Exercise 2: Using prefabs
 

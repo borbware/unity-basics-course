@@ -24,6 +24,7 @@ paginate: true
   * Programming 1: [Variables and Conditionals](programming/1-variables-and-conditionals.md)
 * Day 3:
   * Unity basics 3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md)	
+  * Programming: [Introduction to Game Programming](programming/game-programming.md)
   * Unity basics 4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)
 * Day 4:
   * Project management 1: [Git Basics](project-management/1-git-basics.md)
@@ -162,7 +163,8 @@ Make the clock hands move when time goes on.
 
 ## Day 3 schedule
 
-* Unity basics 3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md)	
+* Unity basics 3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md)
+* Programming: [Introduction to Game Programming](programming/game-programming.md)
 * Unity basics 4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)
 
 # Day 4: Git

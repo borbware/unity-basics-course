@@ -7,7 +7,7 @@ marp: true
 ## Basics
 
 - Set VS Code as your Unity default editor
-  - Edit > Preferences > External Tools > External Script Editor
+  - *Edit > Preferences > External Tools > External Script Editor*
   - Install the prerequisities for code completion & other niceness
     - https://code.visualstudio.com/docs/other/unity
 ---
