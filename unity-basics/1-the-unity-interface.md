@@ -105,4 +105,15 @@ paginate: true
 	* Materials
 	* Graphics, Sound effects, Music...
 * Packages
-  * Additional code & assets installed from the Unity Package Registry  
+  * Additional code & assets installed from the Unity Package Registry
+
+## Console window
+
+* [Manual: Console window](https://docs.unity3d.com/Manual/Console.html)
+* Error messages
+* Debug messages
+* Other messages
+* Helpful options:
+  * ***Clear*** (remove old messages)
+  * ***Collapse*** (don't repeat duplicate messages)
+  * *$\vdots$ > Log Entry > 1 Line* (show only one line per message)

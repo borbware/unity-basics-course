@@ -1,4 +1,6 @@
-# Unity gotchas
+# Random Unity notes
+
+## Unity gotchas
 
 * 3D: In blender3d, asdf. In Unity, "y" is the "up" axis.
 * "The associated script cannot be loaded"
@@ -20,8 +22,5 @@
     attack?.Invoke();
     ```
 
----
-
-
-
+## asdf
 * `[ExecuteInEditMode]`

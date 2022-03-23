@@ -32,7 +32,6 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 2 | [Lists and Loops](programming/2-lists-loops.md)						| 🌔 |
 | 3 | [Classes and Methods](programming/3-classes-methods.md)			 	| 🌓 |
 |   | [Introduction to Game Programming](programming/game-programming.md)   | 🌓 |
-|   | [Unity and Visual Studio Code](programming/unity-and-vsc.md)		    | 🌒 |
 
 |   | Math										  				 	  	|     | 
 |---|-------------------------------------------------------------------|----:|
@@ -98,3 +97,10 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |   | [Game Development](gamedev/gamedevelopment.md)					| 🌒 |
 |   | [Game Industry](gamedev/gameindustry.md)							| 🌓 |
 |   | [Gamification](gamedev/gamification.md)							| 🌓 |
+
+
+|   | Tooltips													   	  	|     | 
+|---|-------------------------------------------------------------------|----:|
+|   | [Unity and Visual Studio Code](tooltips/unity-and-vsc.md)		    | 🌒 |
+|   | [Using the Windows File Explorer effectively](tooltips/using-file-explorer.md)| 🌒 |
+|   | [Unity notes](tooltips/unity-notes.md)		                    | 🌒 |

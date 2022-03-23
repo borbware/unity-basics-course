@@ -121,6 +121,9 @@ paginate: true
 4) Check ***Add .gitignore*** and select the Unity template
 5) Click ***Create Repository***
 
+###
+
+connecting to the repo xx
 
 ## Exercise 1. Creating a repo
 <!-- _backgroundColor: Khaki -->
