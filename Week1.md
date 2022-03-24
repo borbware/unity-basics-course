@@ -7,6 +7,13 @@ paginate: true
 
 # Week 1
 
+## Personal education gear
+
+* laptop
+* charger
+* mouse
+* eventually, a game controller
+
 ## What to expect
 
 * C# basics
@@ -17,15 +24,12 @@ paginate: true
 ## Week 1 Schedule
 
 * Day 1:
-  * Unity basics 0: [What is Unity?](unity-basics/0-what-is-unity.md)
-  * Unity basics 1: [The Unity Interface](unity-basics/1-the-unity-interface.md)
-  * Unity basics 2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md)
+  * Unity basics 0: [What is Unity?](unity-basics/0-what-is-unity.md), 1: [The Unity Interface](unity-basics/1-the-unity-interface.md), 2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md)
 * Day 2:
   * Programming 1: [Variables and Conditionals](programming/1-variables-and-conditionals.md)
 * Day 3:
-  * Unity basics 3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md)	
-  * Programming: [Introduction to Game Programming](programming/game-programming.md)
-  * Unity basics 4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)
+  * Unity basics 3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md), 4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)
+  * Programming 0: [Introduction to Game Programming](programming/game-programming.md)
 * Day 4:
   * Project management 1: [Git Basics](project-management/1-git-basics.md)
 * Day 5:
@@ -52,58 +56,51 @@ paginate: true
 * releasing my first commercial game EMUUROM this year
 ## About this course
 
-* Everyone will create multiple video games with Unity
-* Course is separated into three four-week stages
-* [Stages](Stages.md)
+* Everyone will get to create multiple video games with Unity
+* Course is separated into three four-week [stages](Stages.md)
 * [Stage 1](Stage1.md)
     * Learn the basics of Unity & game programming
     * With the acquired skills, make tiny games on your own
 * Stage 2
-	* Dive deeper in Unity
+	* Dive deeper into Unity
 	* Learn about game design & game industry
-	* Create a bit larger (yet still tiny) games in teams
+	* Create games
 * Stage 3
-    * Create a single game project
+    * Create a game as a team effort
 ## About YOU
 
 * Your name
-* Your gamedev/programming/art/music background
-* Which video game you like pops to your mind first?
-* What kind of a video game would you like to work on?
-* What was your first video game experience?
-* What is the last video game you played?
-* Most disappointing game
-* The worst game you've played
+* Your gamedev/programming/art/music background, if any
+* Which video games have you played lately?
 
-## Teams
+## Groups
 
-* Team X
-* Team Y
-* Team Z
+* Group X
+* Group Y
+* Group Z
 
-## Applications
-
-* Download [Unity Hub](https://unity3d.com/get-unity/download)
-* Install the latest Unity LTS (long term support) version 2020.3.27f1
-* Install [Visual Studio Code](https://code.visualstudio.com/), aka VS code
-  * during install: add to context menu
-* Install [Discord](https://discord.com/)
-  * (live streams don't work well with the browser version!)
 ## Accounts
 
 * Personal accounts you'll need to create if you don't already have:
-	* Discord (for communication)
 	* Unity
+	* GitHub
 	* Google (for collaborating with Google Drive & Docs)
-	* later this week: Github (for version control)
-	* even later: Itch.io (for publishing your games)
+	* Discord (for communication)
+	* later: Itch.io (for publishing your games)
 
+## Applications
 
-## Unity basics
+* (They're all preinstalled on your laptops already)
+* Download [Unity Hub](https://unity3d.com/get-unity/download)
+  * Install the latest Unity LTS (long term support) version 2020.3.27f1
+* Install [Visual Studio Code](https://code.visualstudio.com/), aka VS code
+  * See Tooltips: [Unity and VS Code](tooltips/unity-and-vsc.md)
+* Install [Discord](https://discord.com/)
+  * If you don't need don't work well with the browser version!)
+
+## Unity basics 0
 
   * Unity basics 0: [What is Unity?](unity-basics/0-what-is-unity.md)
-  * Unity basics 1: [The Unity Interface](unity-basics/1-the-unity-interface.md)
-  * Unity basics 2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md)
 
 ## Week projects
 
@@ -115,6 +112,10 @@ paginate: true
   * ⭐⭐ Some extra feature included
   * ⭐⭐⭐ Includes an advanced feature (which isn't necessarily introduced during the classes), or a feature of your own design 
   * you can choose which stage you aim to complete 
+
+---
+<!-- _backgroundColor: lightgreen -->
+![3d clock](imgs/week1-catlikeclock.png)
 
 ## Week project 1: Clock
 
@@ -129,27 +130,48 @@ The project is separated into individual exercises. For more help, you can follo
 * Install and setup all the tools needed and create your first 3D project for the course with the name `Week1Clock`.
 * This project will be worked on step by step in the coming exercises.
 
+## Unity basics 1
+  * Unity basics 1: [The Unity Interface](unity-basics/1-the-unity-interface.md)
+
 ## WP Exercise 2. Building a simple clock
 <!-- _backgroundColor: lightgreen -->
 Create a 3D model of a clock from Unity's primitives with three hands and 12 hour indicators.
 
 Unlike in the picture below, set all the indicators to 12. They will be later rotated to correct positions with C# scripting.
 
----
-<!-- _backgroundColor: lightgreen -->
-![3d clock](imgs/week1-catlikeclock.png)
 
+# Unity basics 2
 
+  * Unity basics 2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md)
 
 # Day 2: Scripting 1
 
 ## Day 2 Schedule
 
-* Morning
-  * [Programming 1: Variables and conditionals](programming/1-variables-and-conditionals.md)
-* Afternoon
-  * Working on the week project
-## WP exercise 3. Animating the clock
+* [Programming 1: Variables and conditionals](programming/1-variables-and-conditionals.md)
+ 
+# Day 3: Assets & scripting
+
+## Day 3 schedule
+
+* Unity basics 3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md)
+* Programming 0: [Introduction to Game Programming](programming/0-game-programming.md)
+* Unity basics 4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)
+
+## Unity basics 3
+
+* Unity basics 3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md)
+
+## WP Exercise 3: Using prefabs
+<!-- _backgroundColor: lightgreen -->
+Create a prefab out of the clock and then create a duplicate of it into the scene.
+
+## Some programming & Unity basics 4
+
+* Programming 0: [Introduction to Game Programming](programming/0-game-programming.md)
+* Unity basics 4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)
+
+## WP exercise 4. Animating the clock
 <!-- _backgroundColor: lightgreen -->
 Make the clock hands move when time goes on.
 
@@ -158,14 +180,6 @@ Make the clock hands move when time goes on.
 ⭐⭐ Make the movement smooth: the second indicator moves continuously at a rate of one full rotation per minute
 
 ⭐⭐⭐ Make the movement realistic: study how the hands of a real clock moves! The second indicator moves incrementally between fixed positions, but the movement is not instantaneous. Try to replicate this. 
-
-# Day 3: Assets & scripting
-
-## Day 3 schedule
-
-* Unity basics 3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md)
-* Programming: [Introduction to Game Programming](programming/game-programming.md)
-* Unity basics 4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)
 
 # Day 4: Git
 

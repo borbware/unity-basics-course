@@ -5,7 +5,7 @@ paginate: true
 <!-- headingDivider: 3 -->
 <!-- class: default -->
 
-# Introduction to game programming
+# 0. Introduction to game programming
 
 ## The main loop
 

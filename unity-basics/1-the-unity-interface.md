@@ -22,28 +22,28 @@ paginate: true
 ## Hierarchy window
 
 * [Manual: Hierarchy](https://docs.unity3d.com/Manual/Hierarchy.html)
-* shows the list of game objects in a scene
+* shows the list of GameObjects in a scene
 * double click to show object in Scene view
 * game objects can be nested
-  * parent vs child
-  * position/rotation/scale is inherited from parent
-* Add new game objects: ***right mouse button*** + choose from list
-## Scene view
-![the scene view](imgs/week1-sceneview.png)
+  * parent-child hierarchy
+* Add new GameObjects: ***RMB*** + choose from list
 
-### Navigation
+<!-- _footer: "LMB, MMB, RMB: Left/Middle/Right mouse button" -->
+---
+![the scene view](imgs/week1-sceneview.png)
+## Scene view
 * [Manual: Scene view navigation](https://docs.unity3d.com/Manual/SceneViewNavigation.html)
-* navigation shortcuts
+* Navigation shortcuts
   * move: ***MMB***
   * orbit: ***ALT+LMB***
   * zoom: roll ***MMB*** / ***ALT+RMB***
   * rotate camera: ***RMB***
-  * flythru: hold ***RMB***, fly with ***WASD + Q/E***
-* the scene gizmo
+  * flythrough: hold ***RMB***, fly with ***WASD + Q/E***
+* The Scene Gizmo
   * "the axis thingy on the top right"
   * axis cones: change view to that axis
   * center cube: perspective / orthographic
-* scene view camera settings
+* [Manual: Scene view camera](https://docs.unity3d.com/Manual/SceneViewCamera.html)
 ## Shortcuts for scene & hierarchy
 * ***CTRL+C*** + ***CTRL+V*** copy & paste
 * ***CTRL+D*** duplicate
@@ -55,9 +55,9 @@ paginate: true
 
 * [Manual: Toolbar](https://docs.unity3d.com/Manual/Toolbar.html)
 * Used for manipulating existing stuff
-* activating the tool changes the [LMB] behaviour
-* navigation shortcuts still available in other tools!
-* in move/rotate/scale, you can use the red, green and blue shapes to manipulate x,y,z axes, respectively
+* Activating the tool changes the ***LMB*** behaviour
+* Navigation shortcuts still available in other tools!
+* In move/rotate/scale, you can use the red, green and blue shapes to manipulate x,y,z axes, respectively
 ### Toolbar tools
 * The tools
   * ***Q***: Hand Tool (navigate)
@@ -80,7 +80,7 @@ paginate: true
   * Tag
   * Layer
 * Inspector shows what components does a game object have
-* components can be turned off
+* Components can be turned off
 * UI tips:
   * drag variable to change value
   * hover over variable name to show info

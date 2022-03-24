@@ -70,8 +70,3 @@ paginate: true
 * You can use code to create instances of prefabs when the game is running
 * [Manual: Instantiating Prefabs at run time
 ](https://docs.unity3d.com/Manual/InstantiatingPrefabs.html)
-
-
-## WP Exercise 2: Using prefabs
-
-Create a prefab out of the clock and then create a duplicate of it in the scene.

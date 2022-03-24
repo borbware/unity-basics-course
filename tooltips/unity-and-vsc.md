@@ -5,6 +5,12 @@ paginate: true
 <!-- headingDivider: 3 -->
 <!-- class: default -->
 # Unity and VS Code
+
+## Setup
+
+* During installation, check two options:
+  ![](imgs/vscode-installation.png)
+
 ## Basics
 
 * Set VS Code as your Unity default editor
@@ -15,17 +21,6 @@ paginate: true
   * C# extension
 * Open the project folder in VS Code
   * VSC: *File >  Open Folder...*
-
-## Other extensions
-
-* *Marp for VS Code*
-  * if you want to read these slides inside VS code
-  * after installation, open this .md file from the course repository
-  * click on the *Open preview to the side* button
-    * a vertically split square with a magnifying glass on the top right corner
-* *GitLens*
-  * if you're serious about git
-
 
 ## VS code shortcuts
 
@@ -50,3 +45,14 @@ paginate: true
   ![](imgs/hover-over-method.png)
   * argument types, return types, method overloads...
   * this feature only works if dotnet and the C# extension are installed
+
+
+## Extra: Other extensions
+
+* *Marp for VS Code*
+  * if you want to read these slides inside VS code
+  * after installation, open this .md file from the course repository
+  * click on the *Open preview to the side* button
+    * a vertically split square with a magnifying glass on the top right corner
+* *GitLens*
+  * if you're serious about git

@@ -28,10 +28,11 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   | Programming										  				 	|     | 
 |---|-----------------------------------------------------------------------|----:|
+| 0 | [Introduction to Game Programming](programming/0-game-programming.md)   | 🌓 |
 | 1 | [Variables and Conditionals](programming/1-variables-and-conditionals.md)| 🌕 |
 | 2 | [Lists and Loops](programming/2-lists-loops.md)						| 🌔 |
 | 3 | [Classes and Methods](programming/3-classes-methods.md)			 	| 🌓 |
-|   | [Introduction to Game Programming](programming/game-programming.md)   | 🌓 |
+| 4 | [Special Types](programming/4-special-types.md)					 	| 🌓 |
 
 |   | Math										  				 	  	|     | 
 |---|-------------------------------------------------------------------|----:|

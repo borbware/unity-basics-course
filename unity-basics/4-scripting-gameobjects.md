@@ -72,28 +72,31 @@ paginate: true
     ```
   * beware lag spikes, though: what would `velocity` be if deltatime was equal to one second? Three seconds?
 
-## Variables
-
-
 ## Accessing fields in Inspector
 
-* `public` variables
-* `[SerializeField]`
+* `public` variables show up in inspector
+* so do the ones with a `[SerializeField]` attribute
+  * [ScriptReference: SerializeField](https://docs.unity3d.com/ScriptReference/SerializeField.html)
 * Extra: `[Header("Explainer for UI")]`
   * great for team communication
+  * [ScriptReference: Header Attribute](https://docs.unity3d.com/ScriptReference/HeaderAttribute.html)
 * `[Range(x,x)]`
   * adds a slider to inspector
+  * [ScriptReference: Range Attribute](https://docs.unity3d.com/ScriptReference/RangeAttribute.html)
 
+## Accessing components
 
-
-
-
-## Components
-
-* accessing components:
-  * `OurComponentType ourComponent = ourGameObject.GetComponent<OurComponentType>();`
-  * dot notation not needed if getting component of the gameobject the class is part of:
-    * `GetComponent<OurComponentType>();`
+  ```c#
+  OurComponentType ourComponent = ourGameObject.GetComponent<OurComponentType>();
+  ```
+* A real-life example:
+  ```c#
+  Rigidbody rb = playerObject.GetComponent<Rigidbody>();
+  ```
+* dot notation not needed when getting a component of the GameObject the script class is part of:
+  ```
+  Rigidbody rb = GetComponent<Rigidbody>();
+  ```
 
 
 
@@ -101,110 +104,114 @@ paginate: true
 
 * [ScriptReference: Transform](https://docs.unity3d.com/ScriptReference/Transform.html)
 * [Manual: Transform](https://docs.unity3d.com/Manual/class-Transform.html)
-* The GameObject's position, rotation and scale can be manipulated via its ***Transform*** component
-  * either by using the included methods, or by directly setting fields
+* The GameObject's ***position***, ***rotation*** and ***scale*** can be manipulated via its ***Transform*** component
+  * either by using the included methods, or by directly manipulating fields
   * fields are either ***global*** or ***local***: e.g., `position` vs `localPosition`
   * local coordinates are with respect to the GameObject's ***parent***
 
 
 
 ### Translation
+* Translation methods
   * `transform.Translate(Vector3 displacement)`
+    ```c#
+    if(Input.GetKey(KeyCode.UpArrow))
+      transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+
+    if(Input.GetKey(KeyCode.DownArrow))
+      transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);
+    ```
+* Translation fields
   * `transform.position`
   * `transform.localPosition`
-  ```c#
-  if(Input.GetKey(KeyCode.UpArrow))
-    transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
-
-  if(Input.GetKey(KeyCode.DownArrow))
-    transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);
-  ```
 ### Rotation
 
 * Rotation methods
-  * `transform.Rotate(Vector3 eulerAngles)`
   * `transform.RotateAround(Vector3 pivot)`
   * `transform.LookAt(Transform target)`
+  * `transform.Rotate(Vector3 eulerAngles)`
+    ```c#
+    if(Input.GetKey(KeyCode.LeftArrow))
+      transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
+
+    if(Input.GetKey(KeyCode.RightArrow))
+      transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
+    ```
+---
 * Rotation fields
   * `transform.rotation`, global rotation as a Quaternion
-  * `transform.localRotation`, local rotation as a 
-  * `transform.eulerAngles`
+  * `transform.localRotation`, local rotation as a Quaternion
+  * `transform.eulerAngles`, global rotation as Euler angles (Vector3)
+  * `transform.localEulerAngles`, local rotation as Euler angles (Vector3)
+### Scale
 
-* ``
+* `transform.localScale`
+  * [ScriptReference: localScale](https://docs.unity3d.com/ScriptReference/Transform-localScale.html)
+* `transform.lossyScale`
+  * Read-only!
+  * [ScriptReference: lossyScale](https://docs.unity3d.com/ScriptReference/Transform-lossyScale.html)
 
-  ```c#
-  if(Input.GetKey(KeyCode.LeftArrow))
-    transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
-
-  if(Input.GetKey(KeyCode.RightArrow))
-    transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
-  ```
-
-
-## GameObjects
-## GameObjects
-* special unity classes
-* gameobjects include components
-
-* can have child gameobjects
-  * they inherint translation & rotation and activeness
-## Using GameObject's components
-  * refer to a component:
-    * `component = GetComponent<ComponentType>();`
-  * enable/disable components:
-    * `component.enabled = false;` (or true)
-    * how to toggle?
-      * `component.enabled = !component.enabled`
+## Enabling and disabling components
+* enable component:
+  * `component.enabled = true;`
+* disable component:
+  * `component.enabled = false;`
+* toggle:
+  * `component.enabled = !component.enabled`
 
 ## Referring to GameObjects
 * fast solution
   * create public GameObject field (shows up in Inspector)
-  * drag & drop gameObject to Inspector
+  * drag & drop the wanted GameObject to the field in Inspector
 * find with code
-  * [GameObject.Find](https://docs.unity3d.com/ScriptReference/GameObject.Find.html) (finds one)
-  * [GameObject.FindGameObjectsWithTag("TagWeWantToFind")](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html)
-## Children & Parents
+  * [ScriptReference: GameObject.Find](https://docs.unity3d.com/ScriptReference/GameObject.Find.html)
+  * [ScriptReference: GameObject.FindGameObjectsWithTag](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html)
+## Accessing Children & Parents
 
 * child:
-  * for some reason, Unity stores the child-parent hierarchy of gameObjects under the transform component
+  * Unity stores the child-parent hierarchy of gameObjects under the Transform component
   * by index number
-    * https://docs.unity3d.com/ScriptReference/Transform.GetChild.html
+    * [ScriptReference: GetChild](https://docs.unity3d.com/ScriptReference/Transform.GetChild.html)
     * `parentGameObject.transform.GetChild(indexNumber).gameObject`
- *  by name
-    * https://docs.unity3d.com/ScriptReference/Transform.Find.html
-    * `parentGameObject.transform.Find("childName").gameObject`
+   *  by name
+      * [ScriptReference: Find](https://docs.unity3d.com/ScriptReference/Transform.Find.html)
+      * `parentGameObject.transform.Find("childName").gameObject`
 * parent:
+  * GameObject only has one direct parent
   * `childGameObject.transform.parent`
 
 
 ## Creating and destroying GameObjects
 
   * `Instantiate()`
+    * [ScriptReference: Instantiate](https://docs.unity3d.com/ScriptReference/Object.Instantiate.html)
   * `Destroy()`
+    * [ScriptReference: Destroy](https://docs.unity3d.com/ScriptReference/Object.Destroy.html)
 
-## Activating GameObjects
+## Activating and deactivating GameObjects
 
-* activating/disabling gameobjects
-  * Inspector: checkbox left to name
-  * `gameObject.SetActive(false);`
-    * will deactivate the object AND ITS CHILDREN.
-  * `myObject.activeSelf`
-    * false tells if this _particular_ object has been deactivated
-    * if true, can still be deactivated if a parent is deactivated
-  * `myObject.activeInHierarchy`
-    * "is myObject really active right now?"
-    * false tells if this object is deactivated by itself or by its parents
+* Inspector: see the checkbox left to the GameObject's name
+* `gameObject.SetActive(false);`
+  * will deactivate the object ***AND ITS CHILDREN***.
+* `myObject.activeSelf`
+  * `false` tells if this _particular_ object has been deactivated
+  * even if `true`, `myObject` can still be deactivated if a parent is deactivated
+* `myObject.activeInHierarchy`
+  * "is `myObject` *really* active right now?"
+  * `false` means this object has been deactivated by itself ***or*** by its parents
 
 
-## Script reusability
+## About script reusability
 
-* two extreme approaches to scripting gameObjects
-  a) put everything in one class
+* two extreme approaches to scripting GameObjects
+  * a) One script per GameObject
     * can make files bloated
-  b) make one class per functionality
-    * possibly reusable
+  * b) One script per functionality
+    * possibly reusable code!
     * possibly more confusing
-    * can take more time to get zero advantages
+    * can take more time
+* My way: First put everything in one script until some functionality grows enough
+  * Then, separate into its own script
 
 ## Reading
 
