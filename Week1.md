@@ -20,6 +20,7 @@ paginate: true
 * Unity basics (in 3d)
 * Some programming
 * A Week project
+* One-on-one meetings with me
 
 ## Week 1 Schedule
 
@@ -189,6 +190,14 @@ Make the clock hands move when time goes on.
 * Afternoon
   * Working on the week project
   * One-on-one meetings
+
+## WP Exercise 5. Git Repository
+<!-- _backgroundColor: lightgreen -->
+
+* Create a remote repository for your week project with the Unity gitignore file. The repository should be named `WeekProject1Clock`, or something along the lines.
+* Initialize Git in your Week project repository.
+* Add remote (the one you just created), and pull the changes.
+* Commit and Push your code to GitHub.
 
 # Day 5: Wrap-up
 

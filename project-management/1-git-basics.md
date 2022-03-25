@@ -27,7 +27,7 @@ paginate: true
 
 ## GitHub
 
-* Git *could* be used locally, but is usually combined with a remote storage service like *GitHub*, *GitLab* or *BitBucket*
+* Git *could* be used locally, but is usually combined with a remote storage service like [GitHub](https://github.com/), [GitLab](https://gitlab.com/) or [BitBucket](https://bitbucket.com/)
   * These services can also act as a programming portfolio
   * Commonly used in open source projects
 * On this course we'll use GitHub
@@ -63,6 +63,16 @@ paginate: true
     `PS E:\borb\code\unity-basics-course>`
 * ***Note***: `..` refers always to the parent directory, and `.` to the current directory
 
+## Extra: Help, this is horrible!
+<!-- _backgroundColor: pink -->
+* Do you feel more at home in graphical UIs?
+* If the command line is not your thing, you can also use [GitHub Desktop](https://desktop.github.com/)
+* It's a Windows application for working with GitHub repositories
+* It will show the Git history as a visual timeline
+* It still helps if you understand the Git commands that still are executed under the hood, though!
+---
+<!-- _backgroundColor: pink -->
+![](https://desktop.github.com/images/github-desktop-screenshot-windows.png)
 
 ## Extra: Config
 <!-- _backgroundColor: pink -->
@@ -95,24 +105,52 @@ paginate: true
 * If you're starting from scratch:
   * Use `git init` to make your current folder a new git repository
 * If you've continuing an existing project, initialization happens when you ***clone*** the project into your computer
-  * See: [`git clone`](#git-clone--git-remote)
-## `git status` & `git add`
+  * See: [`git clone`](#git-clone)
+## `git status`
 
 * Using the command `git status` shows your current situation.
-* every time you want git to 
-* The command `git add readme.txt` makes git track the file `readme.txt`
-* Using the command `git add .` adds all files from the folder to git
-* Using ***wildcards*** (`*`) can be useful. For example `git add *.txt` adds all .txt files to git
-## `git commit` & `git push`
+  * If you're unsure what to do, it's never a bad idea to run `git status`
 
-* When you have added all the files you want, you then have to explain what changes you've made
+## `git add`
+
+* Pushing a file to GitHub from your local machine is a three-phase process
+* The first phase is ***staging*** with `git* add`:
+  * The command `git add readme.md` stages the file `readme.md`
+  * After doing it, `git status` tells this:
+    ```
+    Changes to be committed:
+      (use "git restore --staged <file>..." to unstage)
+            modified:   readme.md
+    ```
+  * Basically, you tell Git that you want to do something with this file.
+* ***Note:*** If you just want to push all the changes you've made, you can use `git add .` to stage all the files in your current folder and its subfolders
+* ***Extra Note:*** Using ***wildcards*** (`*`) can be useful. For example `git add *.txt` adds all .txt files to git
+
+## `git commit`
+
+* After you have staged all the files you want, the second phase is to ***commit*** your changes
+  * In the commit, you will explain what changes you've made
+  * This message will be visible in GitHub
   * `git commit -m "add new enemy"`
 * every new commit creates a new point in the project timeline.
   * you can always jump back between different points (See `git checkout`)
 * Commit message should clearly, concisely tell what kind of changes you have made
-* ***Note***: The commit action is **local**, so any changes haven't gone to the remote repository yet
-  * To actually upload changes to the remote repository, use: 
-  * `git push`
+
+## `git push`
+
+* The third stage is ***pushing*** the changes to GitHub
+* The previously-made commit action is **local**
+  * no changes have gone to the remote repository yet!
+  * To upload changes to the remote repository, use `git push`
+  * Then you're done!
+* ***Note:*** When pushing the first time, Git might nag you:
+  ```
+  fatal: The current branch master has no upstream branch.
+  To push the current branch and set the remote as upstream, use
+
+      git push --set-upstream origin main
+  ```
+  * You can just follow its orders and you're good to go 
 
 ## Exercise 1. Creating a repo
 <!-- _backgroundColor: Khaki -->
@@ -124,24 +162,29 @@ paginate: true
 
 ## `git pull`
 
-* when you have changes in the remote repository that you want to apply in the local repository, use `git pull`
-* use cases:
-  * if you are working in a team
-  * if you work on multiple computers
-  * that is to say, if you only work alone on a single computer, this isn't really ever needed
-* **Note**: It's always a good idea to ***PULL BEFORE PUSHING***.
-* **Note 2**: `git pull` is actually two commands in one. It's the same thing as doing
-  * `git fetch <branch>` + `git merge <branch>`
-## `git clone` & `git remote`
+* `git pull` applies changes from the remote repository into the local repository 
+* Counterpart to `push`
+* Very common when working in a team
+  * **Note**: In this case it's a good idea to ***always pull before pushing***
+* If you only work alone on a single computer, seldom needed
 
-* If you want to initialize local repository from an already existing remote repository:
+
+<!-- _footer: "`git pull` is actually two commands in one. It's the same thing as doing `git fetch <branch>` + `git merge <branch>`" -->
+## `git clone`
+
+* For initializing a local repository from an already existing remote repository:
   * run `git clone [URL]`
   * example: `git clone https://github.com/borbware/unity-basics-course.git`
-  * `git init` not needed!
-* it can be simpler to initialize the repo in the Github/Gitlab/etc website and then just clone the repo!
-  * if you have inited the git repo already, though, then use:
+  * when cloning, `git init` not needed!
+* Simplest way to start with Git:
+1) Initialize the repo in the Github/Gitlab/etc website
+2) Clone the repo
+
+## `git remote`
+
+* If you have inited the git repo already, though, then use:
   * `git remote add origin [URL]`
-  * now, `origin` refers to the remote repository
+  * here, the name `origin` refers to the remote repository
 * To check which remote repository the current local repository is linked to, use 
   * `git remote -v`
 
@@ -189,24 +232,25 @@ paginate: true
 1) Create a new Unity project, or choose an old one
 2) Open the project in VS code
 3) Create a new repository in GitHub (see prev. slide)
-4) Initialize Git in the project folder
+4) Initialize Git in the project folder, pull the `.gitignore` file, make your first commit and push.
     `git init`
-    `git add .`
-    `git commit -am "first commit"`
     `git remote add origin [remote-url]`
-    `git push -u origin master`
+    `git pull origin main`
+    `git add .`
+    `git commit -m "first commit"`
+    `git push --set-upstream origin main`
+
+---
+
+* Why did we use longer `push` and `pull` commands?
+  * Short answer: because we didn't clone the repo, but rather added the remote into an empty one.
+  * `git pull origin main`: After adding a remote, we don't yet know which ***branch*** to pull from. The `main` (can also be `master`) is the default branch
+  * `git push --set-upstream origin main`: In the first `push`, we decide which branch to link our current branch into.
+  * Afterwards, we can just use `git push` and `git pull`.
 
 ## Unity Version Control settings
 
 [Manual: Version control integrations](https://docs.unity3d.com/Manual/Versioncontrolintegration.html)
-
-## Exercise 2. Git+Unity
-<!-- _backgroundColor: Khaki -->
-
-* create a remote repository for your week project with the Unity gitignore file. The repository should be named `WeekProject1Clock`.
-* Initialize git in your Week project repository.
-* Add the remote repository (the one you just created), and pull the changes.
-* Commit and Push your code to GitHub.
 
 ## Reading
 
