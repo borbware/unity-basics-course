@@ -7,6 +7,12 @@ paginate: true
 
 # 2. Unity's building blocks
 
+## Building Blocks
+
+* Unity games consist of ***Scenes***
+* Scenes consist of ***GameObjects***
+* GameObjects consist of ***Components*** 
+
 ## Scenes
 
 * [Manual: Scenes](https://docs.unity3d.com/Manual/CreatingScenes.html)
@@ -43,9 +49,9 @@ paginate: true
 
 
 ## Components
-* GameObjects act as containers for ***Components*** that implement various functionalities
 * [Manual: Components](https://docs.unity3d.com/Manual/Components.html)
-
+* GameObjects act as containers for ***Components*** that implement various functionalities
+* GameObject's components and their settings are listed in the Inspector window
 ### Spatial information
 
 * ***Transform***
@@ -56,24 +62,34 @@ paginate: true
 
 ### Interacting with other GameObjects
 
-* ***Collider***
-  * enables collision
-  * different shapes and sizes
-  * object can collide into other game objects and vice versa
-  * isTrigger
 * ***RigidBody***
-  * for interacting with the physics engine 
+  * [Manual: RigidBody](https://docs.unity3d.com/Manual/class-Rigidbody.html)
+  * for interacting with the physics engine
+  * can receive forces and torque
+* ***Collider***
+  * [Manual: BoxCollider](https://docs.unity3d.com/Manual/class-BoxCollider.html)
+  * enables collision with other GameObjects
+  * there are different shapes and sizes
+    * CapsuleCollider(2D), BoxCollider(2D), PolygonCollider2D...
+  * `isTrigger`
+    * ✅ -> Collider is ignored by the physics engine, but can trigger events 
+
 
 ### Drawing the GameObject
 
 * ***Renderer***
-  * how is the GameObject drawn on screen?
+  * [Manual: MeshRenderer](https://docs.unity3d.com/Manual/class-MeshRenderer.html)
+  * The component for drawing the GameObject on screen
+  * MeshRenderer, SpriteRenderer, LineRenderer, TrailRenderer...
 * ***Material***
+  * [Manual: Material Inspector Reference](https://docs.unity3d.com/Manual/class-Material.html)
   * What material does the Renderer use?
+  * E.g., MeshRenderer only defines the geometry, but the Material component defines color and other properties
 
 ### Custom Functionality
 
 * ***Script***
-  * custom C# code
-  * the most versatile component
+  * [Manual: Scripting](https://docs.unity3d.com/Manual/ScriptingSection.html)
+  * The most versatile component
+  * For inserting custom C# code into the GameObject
   * We'll dive deeper into this in [4. Scripting GameObjects](4-scripting-gameobjects.md)

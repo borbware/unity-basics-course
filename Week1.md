@@ -163,7 +163,14 @@ Unlike in the picture below, set all the indicators to 12. They will be later ro
 
 * Unity basics 3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md)
 
-## WP Exercise 3: Using prefabs
+## WP Exercise 3: Materials
+<!-- _backgroundColor: lightgreen -->
+* Create three materials for the clock: ***White***, ***Red*** and ***Black***.
+* Create a picture in your project's Assets folder and use it as a texture for ***White***.
+
+![](imgs/clock-face-materials.png)
+
+## WP Exercise 4: Using prefabs
 <!-- _backgroundColor: lightgreen -->
 Create a prefab out of the clock and then create a duplicate of it into the scene.
 
@@ -172,7 +179,7 @@ Create a prefab out of the clock and then create a duplicate of it into the scen
 * Programming 0: [Introduction to Game Programming](programming/0-game-programming.md)
 * Unity basics 4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)
 
-## WP exercise 4. Animating the clock
+## WP exercise 5. Animating the clock
 <!-- _backgroundColor: lightgreen -->
 Make the clock hands move when time goes on.
 
@@ -191,7 +198,7 @@ Make the clock hands move when time goes on.
   * Working on the week project
   * One-on-one meetings
 
-## WP Exercise 5. Git Repository
+## WP Exercise 6. Git Repository
 <!-- _backgroundColor: lightgreen -->
 
 * Create a remote repository for your week project with the Unity gitignore file. The repository should be named `WeekProject1Clock`, or something along the lines.

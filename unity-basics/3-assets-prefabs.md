@@ -26,45 +26,50 @@ paginate: true
 * There are two ways to apply a Texture to a property.
   * Drag it from the Project View on top of the Texture square
   * Click the Select button, and choose the texture from the drop-down list that appears
-## WP Exercise X: Materials
-<!-- _backgroundColor: lightgreen -->
-* Create three materials for the clock: ***White***, ***Red*** and ***Black***.
-* Create a picture in your project's Assets folder and use it as a texture for ***White***.
-
-![](imgs/clock-face-materials.png)
 
 ## Prefabs
 
 * [Manual: Prefabs](https://docs.unity3d.com/Manual/Prefabs.html)
-* ***Prefab*** is short for *prefabricated object*
+* ***Prefab*** is short for ***prefabricated object***
 * use cases...
-  * objects you want to instantiate, i.e., create, during runtime
+  * GameObjects you want to instantiate, i.e., create, during runtime
   * "Same thing, but what if many?"
-    * also, objects that share common traits but have different *overrides*
+    * not necessary completely identical, however!
+    * share common traits but have different details
 ### Creating prefabs
 * [Manual: Creating Prefabs](https://docs.unity3d.com/Manual/CreatingPrefabs.html)
 * How to turn a GameObject into a Prefab:
 
 1) Drag a GameObject from Hierarchy to Project view
-2) It turns blue - It's now an ***instance*** of a prefab
+2) It turns blue - It's now an ***instance*** of a Prefab
 3) You can now create multiple other instances of it
 
-### Open, select, overrides
+### Open & select
 
-* special buttons
+![](https://docs.unity3d.com/uploads/Main/PrefabsInspectorControls1.png)
   * [Manual: Editing a Prefab via its instances](https://docs.unity3d.com/Manual/EditingPrefabViaInstance.html)
-  * Open
-    * opens the prefab in Prefab mode, a scene where only the prefab exists
+  * ***Open***
+    * opens the Prefab in ***Prefab mode***, a scene where only the Prefab exists
     * [Manual: Editing a Prefab in Prefab mode](https://docs.unity3d.com/Manual/EditingInPrefabMode.html)
-  * Select
+  * ***Select***
     * selects the Prefab asset in the Project window
-  * Overrides dropdown
-    * variations for the prefab presets
-    * when you make changes into a prefab instance, you can set those changes to be the new default
-    * [Manual: Instance overrides](https://docs.unity3d.com/Manual/PrefabInstanceOverrides.html)
+
+### Overrides
+![](https://docs.unity3d.com/uploads/Main/PrefabsOverridesDropdown1.png)
+  * [Manual: Instance overrides](https://docs.unity3d.com/Manual/PrefabInstanceOverrides.html)
+  * ***Overrides*** dropdown menu
+    * lists all the overridden values ("overrides") on this Prefab instance
+    * overrides can be ***applied*** to set them to be the new default in the Prefab asset
+    * ...or ***reverted*** to discard your changes and go back to asset defaults
 * overridden values in Inspector are indicated in **bold**
 
-## Extra: Instantiating prefabs
+## Extra: Nested prefabs
+<!-- _backgroundColor: pink -->
+
+* Prefab inside Prefab
+* [Manual: Nested Prefabs](https://docs.unity3d.com/Manual/NestedPrefabs.html)
+
+## Extra: Instantiating Prefabs
 <!-- _backgroundColor: pink -->
 
 * You can use code to create instances of prefabs when the game is running
