@@ -143,12 +143,21 @@ Current: 1
   * when going through a list, for example.
 * while loops when we want to do something many times, but don't know when to stop
 
-## Exercise 1. 
+## Exercise 1. Loops 1
 <!-- _backgroundColor: Khaki -->
 
+Create a loop whose number of iterations is set in an integer variable `numberOfEnemies`.
 
+Run a loop that many times and write to console a message `Creating enemy 1`, `Creating enemy 2`, etc.
 
+## Exercise 2. Loops 2
+<!-- _backgroundColor: Khaki -->
 
+Suppose you have a given number of collectibles in a level.
+
+You want a given percentage of them, say, 10%, to be shiny collectibles.
+
+Create a loop that runs until this condition is met, and prints into console `Converted collectible 1 to shiny`.
 # Arrays
 
 ## Arrays
@@ -246,10 +255,25 @@ void Start ()
   * `list.Contains(item)` checks if `item` is in the list & returns boolean
   * `list.Find(predicate)` finds an item from the list that matches the given predicate. More about it later!
 
-## Exercise 2. Dimensionality
+
+
+## Exercise 3. Enemy names
 <!-- _backgroundColor: Khaki -->
 
-Create two-dimensional data structure
+Create a list of names for enemy characters.
+
+Print to console `There are [X] enemy names.`
+
+1. Create a function `addName(enemyName)` that
+   * adds a new enemy name to the list
+   * prints out `Added [enemyName]. Now there are [X] enemy names.`
+
+2. Create a function `removeLastName()` that
+   * removes the last enemy name from the list
+   * prints out `Removed [enemyName].`
+
+3. Print out all the names from the list that start with the letter "S".
+
 
 
 ## Iterating through an array with `for`
@@ -307,5 +331,11 @@ for(int i = 0; i < starters.Count; i++)
 
 ![alt](imgs/foreach-mutation.png)
 
-## Exercise 3. xx
+## Exercise 3. Creative data
 <!-- _backgroundColor: Khaki -->
+
+Create two-dimensional data structure with x,y coordinates.
+
+Create a function that creates new enemy gameobjects in the scene in these coordinates.
+
+Also, create a function `newCoordinate(x, y)` that can be used to add new coordinates into the data structure.

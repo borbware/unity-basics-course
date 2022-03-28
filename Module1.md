@@ -24,28 +24,29 @@ paginate: true
 
 ## Module 1 Schedule
 
-* Day 1:
-  * Unity basics 0: [What is Unity?](unity-basics/0-what-is-unity.md), 1: [The Unity Interface](unity-basics/1-the-unity-interface.md), 2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md)
-* Day 2:
+* **4.4. MA** Day 1:
+  * Unity basics 0: [What is Unity?](unity-basics/0-what-is-unity.md), 1: [The Unity Interface](unity-basics/1-the-unity-interface.md)
+* **5.4. TI** Day 2:
+  * Unity basics 2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md), 3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md)
+* **6.4. KE** Day 3: 
   * Programming 1: [Variables and Conditionals](programming/1-variables-and-conditionals.md)
-* Day 3:
-  * Unity basics 3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md), 4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)
-  * Programming 0: [Introduction to Game Programming](programming/game-programming.md)
-* Day 4:
+* **7.4. TO** Day 4:
+  * Unity basics 4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)
+  * Programming 0: [Introduction to Game Programming](programming/0-game-programming.md)
+* **7.4. PE** Day 5:
   * Project management 1: [Git Basics](project-management/1-git-basics.md)
-* Day 5:
+* **11.4. MA** Day 6:
   * Module project & Wrap-up
 
 # Day 1: Introduction
 
-## Day 1 Schedule
+## Schedule
 
 * Morning
   * Introduction
   * Setup
   * Unity basics 0: [What is Unity?](unity-basics/0-what-is-unity.md)
   * Unity basics 1: [The Unity Interface](unity-basics/1-the-unity-interface.md)
-  * Unity basics 2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md)
 * Afternoon
   * Working on exercises & Module project
 
@@ -74,7 +75,7 @@ paginate: true
 * Your gamedev/programming/art/music background, if any
 * Which video games have you played lately?
 
-## Groups
+## Study Groups
 
 * Group X
 * Group Y
@@ -138,26 +139,17 @@ The project is separated into individual exercises. For more help, you can follo
 <!-- _backgroundColor: lightgreen -->
 Create a 3D model of a clock from Unity's primitives with three hands and 12 hour indicators.
 
-Unlike in the picture below, set all the indicators to 12. They will be later rotated to correct positions with C# scripting.
+Unlike in the picture in a past slide, set all the indicators to 12. They will be later rotated to correct positions with C# scripting.
 
+# Day 2
 
+# Schedule
+
+* Unity basics 2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md)
+* Unity basics 3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md)
 # Unity basics 2
 
   * Unity basics 2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md)
-
-# Day 2: Scripting 1
-
-## Day 2 Schedule
-
-* [Programming 1: Variables and conditionals](programming/1-variables-and-conditionals.md)
- 
-# Day 3: Assets & scripting
-
-## Day 3 schedule
-
-* Unity basics 3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md)
-* Programming 0: [Introduction to Game Programming](programming/0-game-programming.md)
-* Unity basics 4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)
 
 ## Unity basics 3
 
@@ -169,6 +161,18 @@ Unlike in the picture below, set all the indicators to 12. They will be later ro
 * Create a picture in your project's Assets folder and use it as a texture for ***White***.
 
 ![](imgs/clock-face-materials.png)
+# Day 3: Scripting 1
+
+## Schedule
+
+* [Programming 1: Variables and conditionals](programming/1-variables-and-conditionals.md)
+ 
+# Day 4: Assets & scripting
+
+## Schedule
+
+* Programming 0: [Introduction to Game Programming](programming/0-game-programming.md)
+* Unity basics 4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)
 
 ## WP Exercise 4: Using prefabs
 <!-- _backgroundColor: lightgreen -->

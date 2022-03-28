@@ -109,6 +109,7 @@ namespace MyAwesomeProgram
 ## Exercise 1: Trying out variables
 <!-- _backgroundColor: Khaki -->
 
+* create a new Unity project for simple programming exercises.
 * create a new C# script component for an empty GameObject.
 * declare two variables `a` and `b` with the type `double`.
 * In the `Start()` function, print to console four operations: the sum, difference, fraction and product.
@@ -312,7 +313,6 @@ void Greet()
   */
   ```
 
-
 ## String interpolation
 
 * Concatenating multiple variables into one string with `+` quickly becomes tedious
@@ -331,6 +331,24 @@ void Greet()
   ```c#
   Debug.Log($"variable 1: {variable1}, variable 2: {variable2}");
   ```
+
+## Exercise 2: GameObject check
+<!-- _backgroundColor: Khaki -->
+
+Create a C# script that checks if the GameObject is 
+* a player or
+* an enemy.
+
+Give the GameObject a string variable `EntityType` that tells which of the two it is. 
+
+Depending on its value, 
+a) Set the HP value of the gameObject to 50 or 10.
+b) print to console either `"I am Player! My HP is 50!"` or `"I am Enemy! My HP is 10!"`
+
+What happens if
+
+a) EntityType is something else
+b) EntityType is not declared at all?
 
 # Functions
 ## Scope
@@ -391,7 +409,7 @@ void Greet()
 
 * because C# is object-oriented, all functions are *methods* inside *classes*
 * We'll dive deeper into these topics in [Chapter 3. Classes and Methods](3-classes-methods.md)
-## Exercise 2: Traffic lights
+## Exercise 3: Traffic lights
 <!-- _backgroundColor: Khaki -->
 
 Create a timed console application for displaying the state of a traffic light.
