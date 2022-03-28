@@ -1,6 +1,6 @@
-# Week 4: Advanced techniques
+# Module 4: Advanced techniques
 
-## Week 4 schedule
+## Module 4 schedule
 
 * Day 4: 
   * Math 3: Sinewaves
@@ -23,7 +23,7 @@
 	* [Generics, IEnumerable (4c)](#generics-ienumerable-4c)
 	* [ScriptableObject](#scriptableobject)
 	
-## Week project
+## Module project
 * ???
 * RPG-taistelu
 * Vaihtoehto: 2d platformer

@@ -30,7 +30,7 @@ paginate: true
 
 <!-- _footer: "LMB, MMB, RMB: Left/Middle/Right mouse button" -->
 ---
-![the scene view](imgs/week1-sceneview.png)
+![the scene view](imgs/sceneview.png)
 ## Scene view
 * [Manual: Scene view navigation](https://docs.unity3d.com/Manual/SceneViewNavigation.html)
 * Navigation shortcuts

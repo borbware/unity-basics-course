@@ -4,7 +4,7 @@ paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: default -->
-# Week 2
+# Module 2
 
 ## What to expect
 
@@ -14,7 +14,7 @@ paginate: true
 * Collision
 * Movement
 
-## Week 2 Schedule
+## Module 2 Schedule
 
 * Day 1
   * Unity cookbook: [Unity for 2D](unity-cookbook/2d.md), [Input handling](unity-cookbook/input-handling.md), [Physics](unity-cookbook/physics.md)
@@ -35,7 +35,7 @@ paginate: true
 * [Unity cookbook: Input handling](unity-cookbook/input-handling.md)
 * [Unity cookbook: Physics](unity-cookbook/physics.md)
 
-## Week project 2: Asteroids
+## Module project 2: Asteroids
 <!-- _backgroundColor: lightgreen -->
 *  Recreate the classic arcade game Asteroids in Unity.
      * [Youtube: Asteroids gameplay](https://www.youtube.com/watch?v=WYSupJ5r2zo)
@@ -81,7 +81,7 @@ Create the Player controlled ship for the Asteroids game.
   * [Unity cookbook: Animation curve](unity-cookbook/animation-curve.md)
   * [Unity cookbook: UI](unity-cookbook/UI.md)
 
-## Week Project Components
+## Module Project Components
 
 ### The ship
 * Components

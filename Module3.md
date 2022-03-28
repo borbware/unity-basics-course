@@ -4,9 +4,9 @@ paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: default -->
-# Week 3
+# Module 3
 
-## Week schedule
+## Module schedule
 
 * Day 1
   * Cookbook: Data (scene management)
@@ -51,7 +51,7 @@ paginate: true
 * Building an executable
 
 
-## Week project: Top-down arcade game
+## Module project: Top-down arcade game
 <!-- _backgroundColor: LightSkyBlue -->
 * two levels
 * game over screen

@@ -1,18 +1,18 @@
-## Week 5
+## Module 5
 
 * [GameDev: Game Design](gamedev/gamedesign.md)
 * [GameDev: Accessibility](gamedev/accessibility.md)
 
-## Week 6
+## Module 6
 
 * [GameDev: Game Industry](gamedev/gameindustry.md)
 
-## Week 7
+## Module 7
 
 * [GameDev: Game Development](gamedev/gamedevelopment.md)
 * [GameDev: Tools](gamedev/tools.md)
 
-## Week 8
+## Module 8
 
 * [GameDev: Gamification](gamedev/gamification.md)
 * [Project Management 2: Git Continued](project-management/2-git-continued.md)

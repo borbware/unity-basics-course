@@ -5,7 +5,7 @@ paginate: true
 <!-- headingDivider: 3 -->
 <!-- class: default -->
 
-# Week 1
+# Module 1
 
 ## Personal education gear
 
@@ -19,10 +19,10 @@ paginate: true
 * C# basics
 * Unity basics (in 3d)
 * Some programming
-* A Week project
+* A Module project
 * One-on-one meetings with me
 
-## Week 1 Schedule
+## Module 1 Schedule
 
 * Day 1:
   * Unity basics 0: [What is Unity?](unity-basics/0-what-is-unity.md), 1: [The Unity Interface](unity-basics/1-the-unity-interface.md), 2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md)
@@ -34,7 +34,7 @@ paginate: true
 * Day 4:
   * Project management 1: [Git Basics](project-management/1-git-basics.md)
 * Day 5:
-  * Week project & Wrap-up
+  * Module project & Wrap-up
 
 # Day 1: Introduction
 
@@ -47,7 +47,7 @@ paginate: true
   * Unity basics 1: [The Unity Interface](unity-basics/1-the-unity-interface.md)
   * Unity basics 2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md)
 * Afternoon
-  * Working on exercises & Week project
+  * Working on exercises & Module project
 
 ## About me
 * developer & instructor at Buutti
@@ -58,7 +58,7 @@ paginate: true
 ## About this course
 
 * Everyone will get to create multiple video games with Unity
-* Course is separated into three four-week [stages](Stages.md)
+* Course is separated into three four-Module [stages](Stages.md)
 * [Stage 1](Stage1.md)
     * Learn the basics of Unity & game programming
     * With the acquired skills, make tiny games on your own
@@ -103,10 +103,10 @@ paginate: true
 
   * Unity basics 0: [What is Unity?](unity-basics/0-what-is-unity.md)
 
-## Week projects
+## Module projects
 
-* During Stage 1, a new week project is introduced every week
-* The deadlines for the projects are on Fridays, and we will continuously work on it during the weekdays
+* During Stage 1, a new Module project is introduced every Module
+* The deadlines for the projects are on Fridays, and we will continuously work on it during the Moduledays
 * On Fridays, the projects are showcased
 * Every project has three separate stages
   * ⭐ The ***MVP*** (minimum viable product)
@@ -116,19 +116,19 @@ paginate: true
 
 ---
 <!-- _backgroundColor: lightgreen -->
-![3d clock](imgs/week1-catlikeclock.png)
+![3d clock](imgs/catlikeclock.png)
 
-## Week project 1: Clock
+## Module project 1: Clock
 
 <!-- _backgroundColor: lightgreen -->
-For the first week project, you will create a 3d model of a clock with ticking hour, minute and second indicators.
+For the first Module project, you will create a 3d model of a clock with ticking hour, minute and second indicators.
 
 The project is separated into individual exercises. For more help, you can follow the [CatlikeCoding clock tutorial](https://catlikecoding.com/unity/tutorials/basics/game-objects-and-scripts/).
 
 
 ## WP Exercise 1. Creating a project
 <!-- _backgroundColor: lightgreen -->
-* Install and setup all the tools needed and create your first 3D project for the course with the name `Week1Clock`.
+* Install and setup all the tools needed and create your first 3D project for the course with the name `Module1Clock`.
 * This project will be worked on step by step in the coming exercises.
 
 ## Unity basics 1
@@ -195,14 +195,14 @@ Make the clock hands move when time goes on.
 * Morning
   * [Project management 1: Git Basics](project-management/1-git-basics.md)
 * Afternoon
-  * Working on the week project
+  * Working on the Module project
   * One-on-one meetings
 
 ## WP Exercise 6. Git Repository
 <!-- _backgroundColor: lightgreen -->
 
-* Create a remote repository for your week project with the Unity gitignore file. The repository should be named `WeekProject1Clock`, or something along the lines.
-* Initialize Git in your Week project repository.
+* Create a remote repository for your Module project with the Unity gitignore file. The repository should be named `ModuleProject1Clock`, or something along the lines.
+* Initialize Git in your Module project repository.
 * Add remote (the one you just created), and pull the changes.
 * Commit and Push your code to GitHub.
 
@@ -211,8 +211,8 @@ Make the clock hands move when time goes on.
 ## Day 5 Schedule
 
 * Morning
-  * Working on the week project
+  * Working on the Module project
   * One-on-one meetings
 * Afternoon
-  * Working on the week project
-  * 14:30 Week project presentations
+  * Working on the Module project
+  * 14:30 Module project presentations
