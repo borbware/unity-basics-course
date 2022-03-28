@@ -331,7 +331,16 @@ for(int i = 0; i < starters.Count; i++)
 
 ![alt](imgs/foreach-mutation.png)
 
-## Exercise 3. Creative data
+
+## Exercise 4. Looping through
+<!-- _backgroundColor: Khaki -->
+Loop through the starters array, and print the starter and its number like this:
+`#001 Bulbasaur`
+
+Now, edit the strings with a loop to include this number as well. 
+
+
+## Exercise 5. Creative data
 <!-- _backgroundColor: Khaki -->
 
 Create two-dimensional data structure with x,y coordinates.

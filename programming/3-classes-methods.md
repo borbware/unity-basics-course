@@ -285,15 +285,15 @@ Try to call the method from a gameobject!
     Enemy boss = new Enemy(16, "Big boss");
     ```
 
-## Exercise 2: xx
+## Exercise 2: Hello class
 <!-- _backgroundColor: Khaki -->
 
 
-create a console application with a class Animal, that contains 
-two strings: name and sound, and
-a method Greet() that prints “*name* says *sound*!”
-Create a few animals with different names and sounds 
-Call their greet methods from the main program
+1. Create a console application with a class Animal, that contains 
+   * two strings: name and sound, and
+   * a method `Greet()` that prints `[name] says [sound]!`
+2. Create a few animals with different names and sounds 
+3. Call their greet methods from the main program
 
 
 ## Inheritance
