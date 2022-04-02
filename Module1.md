@@ -17,31 +17,23 @@ paginate: true
 
 ## Module 1 Schedule
 
-* **4.4. MA** Day 1:
-  * Unity basics 0: [What is Unity?](unity-basics/0-what-is-unity.md), 1: [The Unity Interface](unity-basics/1-the-unity-interface.md)
-* **5.4. TI** Day 2:
-  * Unity basics 2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md), 3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md)
-* **6.4. KE** Day 3: 
-  * Programming 1: [Variables and Conditionals](programming/1-variables-and-conditionals.md)
-* **7.4. TO** Day 4:
-  * Unity basics 4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)
-  * Programming 0: [Introduction to Game Programming](programming/0-game-programming.md)
-* **7.4. PE** Day 5:
-  * Project management 1: [Git Basics](project-management/1-git-basics.md)
-* **11.4. MA** Day 6:
-  * Module project & Wrap-up
+
+| Day 1 | Day 2 | Day 3 | Day 4 | Day 5 | Day 6 | 
+|-------|-------|-------|-------|-------|-------|
+| 4.4. MA	| 5.4. TI	| 6.4. KE	| 7.4. TO	| 8.4. PE	| 11.4. MA	| 
+| UB0: [What is Unity?](unity-basics/0-what-is-unity.md) | UB2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md) | P1: [Variables and Conditionals](programming/1-variables-and-conditionals.md) | UB4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md) | PM1: [Git Basics](project-management/1-git-basics.md) | Module project & Wrap-up
+| UB1: [The Unity Interface](unity-basics/1-the-unity-interface.md) | UB3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md) | [The tools for success](https://www.businessoulu.com/en/events/game-team.html) (remote lecture) | P0: [Introduction to Game Programming](programming/0-game-programming.md)
+
 
 # Day 1: Introduction
 
 ## Schedule
 
-* Morning
-  * Introduction
-  * Setup
-  * Unity basics 0: [What is Unity?](unity-basics/0-what-is-unity.md)
-  * Unity basics 1: [The Unity Interface](unity-basics/1-the-unity-interface.md)
-* Afternoon
-  * Working on exercises & Module project
+* Introduction
+* Setup
+* Unity basics 0: [What is Unity?](unity-basics/0-what-is-unity.md)
+* Unity basics 1: [The Unity Interface](unity-basics/1-the-unity-interface.md)
+* Working on exercises & Module project
 
 ## Applications
 
@@ -96,11 +88,11 @@ Unlike in the picture in a past slide, set all the indicators to 12. They will b
 
 # Day 2
 
-# Schedule
+## Schedule
 
 * Unity basics 2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md)
 * Unity basics 3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md)
-# Unity basics 2
+## Unity basics 2
 
   * Unity basics 2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md)
 
@@ -120,7 +112,7 @@ Unlike in the picture in a past slide, set all the indicators to 12. They will b
 
 * [Programming 1: Variables and conditionals](programming/1-variables-and-conditionals.md)
  
-# Day 4: Assets & scripting
+# Day 4: Scripting in practice
 
 ## Schedule
 
@@ -146,9 +138,9 @@ Make the clock hands move when time goes on.
 
 ⭐⭐⭐ Make the movement realistic: study how the hands of a real clock moves! The second indicator moves incrementally between fixed positions, but the movement is not instantaneous. Try to replicate this. 
 
-# Day 4: Git
+# Day 5: Git
 
-## Day 4 Schedule
+## Day 5 Schedule
 * Morning
   * [Project management 1: Git Basics](project-management/1-git-basics.md)
 * Afternoon
@@ -163,9 +155,9 @@ Make the clock hands move when time goes on.
 * Add remote (the one you just created), and pull the changes.
 * Commit and Push your code to GitHub.
 
-# Day 5: Wrap-up
+# Day 6: Wrap-up
 
-## Day 5 Schedule
+## Day 6 Schedule
 
 * Morning
   * Working on the Module project
