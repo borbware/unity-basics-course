@@ -76,15 +76,15 @@ paginate: true
 
 
 ### Drawing the GameObject
-
+* ***MeshFilter***
+  * The ***mesh***, or the 3d geometry of a GameObject
 * ***Renderer***
   * [Manual: MeshRenderer](https://docs.unity3d.com/Manual/class-MeshRenderer.html)
   * The component for drawing the GameObject on screen
   * MeshRenderer, SpriteRenderer, LineRenderer, TrailRenderer...
 * ***Material***
   * [Manual: Material Inspector Reference](https://docs.unity3d.com/Manual/class-Material.html)
-  * What material does the Renderer use?
-  * E.g., MeshRenderer only defines the geometry, but the Material component defines color and other properties
+  * MeshFilter only defines the geometry, but the Material component defines color and other properties
 
 ### Custom Functionality
 
