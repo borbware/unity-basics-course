@@ -9,9 +9,9 @@ paginate: true
 
 ## Unity UI
 
-* A package for creating User Interface components
+* A package for creating User Interface (UI) components
   * contained in new Unity projects by default
-* for elements that stay in constantly on screen
+* For elements that stay in constantly on screen
   * HP bars, menu buttons...
 * [Packages: Unity UI](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html)
 * [Packages: Unity UI: Basic layout](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIBasicLayout.html)
@@ -22,40 +22,44 @@ paginate: true
 * UI elements are drawn on a separate canvas and on a separate layer
 * Create a new ***Canvas*** GameObject with *GameObject > UI > Canvas*
 * [Packages: Unity UI: Canvas](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UICanvas.html)
-  * world space vs screen space
+* Screen space vs World space 
+  * Screen space
+    * UI elements are rendered to fixed place on the screen, on top of the scene
+  * World space
+    * UI elements are hanging out with the GameObjects
+    * "Diegetic interface"
 
 
-## Canvas components
+## Canvas GameObject
 
 * The Canvas GameObject has these components by default
-  * Rect Transform
-  * Canvas
-  * CanvasScaler
+  * ***Rect Transform***
+  * ***Canvas***
+  * ***CanvasScaler***
     * [Packages: Unity UI: CanvasScaler](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-CanvasScaler.html)
-  * Graphic Raycaster
+  * ***Graphic Raycaster***
 
-### Rect Transform
+### Rect Transform Component
 
 * [Packages: Unity UI: Rect Transform](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/class-RectTransform.html)
 * UI counterpart for Transform
   * RectTransform inherits from Transform
-  * [Unity forums: anchoredPosition vs localPosition vs pivotPosition](https://forum.unity.com/threads/difference-between-all-anchoredposition-localposition-and-pivotposition.903722/)
-* `RectTransform.position` is the worldspace position.
-* `RectTransform.localPosition` is the position based on its parent's coordinate system.
-* `RectTransform.anchoredPosition` is the object's self-coordinate.(screenspace).It will be influenced by anchors and pivot.
-* do not use spriteRenderer in UI
-  * instead, draw images on screen with Image component
- 
-### Canvas
+* `RectTransform.position` is the world space position
+* `RectTransform.localPosition` is the position relative to its parent
+* [`RectTransform.anchoredPosition`](https://docs.unity3d.com/ScriptReference/RectTransform-anchoredPosition.html) is the screen space position of the pivot of relative to the anchor reference point
+* ***Do not use SpriteRenderer component in UI***
+  * instead, draw images on screen with the ***Image*** component
 
-### CanvasScaler
+<!-- _footer: "[Unity forums: anchoredPosition vs localPosition vs pivotPosition](https://forum.unity.com/threads/difference-between-all-anchoredposition-localposition-and-pivotposition.903722/)" -->
+
+### Canvas Component
+
+### CanvasScaler Component
 
 ### Graphic Raycaster
 
 
-## WP Exercise 1. Add a basic UI
 
-Show Player's lives and Score.
 
 ## Adding 2d graphics to a 3d scene
 

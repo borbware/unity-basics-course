@@ -7,7 +7,18 @@ paginate: true
 
 # Particle system
 
+## Two ways to create a particle system
+
+* [Manual: Choosing your particle system solution](https://docs.unity3d.com/Manual/ChoosingYourParticleSystem.html)
+  * [Built-in Particle system](https://docs.unity3d.com/Manual/Built-inParticleSystem.html)
+  * [Visual Effect Graph](https://docs.unity3d.com/Manual/VFXGraph.html)
+
+## Built-in particle system
+
+* [Manual: Particle System component](https://docs.unity3d.com/Manual/class-ParticleSystem.html)
 * [Script Reference: ParticleSystem](https://docs.unity3d.com/ScriptReference/ParticleSystem.html)
+
+### Particle system code example
 
 * how to stop / start particles from emitting:
 	```c#

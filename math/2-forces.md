@@ -29,8 +29,7 @@ math: katex
 
 ### Multiple forces
 
-* Force vectors can be summed together to acquire the total force
-* 
+Force vectors can be added together to acquire the total force:
 
 ![](imgs/forces-2.png)
 

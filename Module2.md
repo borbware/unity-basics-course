@@ -22,6 +22,7 @@ paginate: true
 | 12.4. TI	| 13.4. KE	| 14.4. TO	| 19.4. TI	| 20.4. KE	| 21.4. TO | 22.4. PE | 
 | UC: [Unity for 2D](unity-cookbook/2d.md), [Input handling](unity-cookbook/input-handling.md), [Physics](unity-cookbook/physics.md) | Module project, [The materials for success](https://www.businessoulu.com/en/events/game-team.html) (remote lecture) | P2: [Lists and Loops](programming/2-lists-loops.md) | M0: [Useful math functions](math/0-mathf.md), UC: [Audio](unity-cookbook/audio.md), [Particle system](unity-cookbook/particle-system.md) | UC:  [UI](unity-cookbook/UI.md) | M1: [Vectors](math/1-vectors.md) | Playtesting, Wrap-up |
 
+
 # Day 1: 2D Movement
 
 ## Day 1 Schedule
@@ -90,9 +91,13 @@ Now back on your own, make a new project for the module project and create the p
 
   * [Unity cookbook: UI](unity-cookbook/UI.md)
 
-# Day 6: 
+## WP Exercise 1. Add a basic UI
+
+Show Player's lives and Score.
+
+# Day 6: Vectors
 
 
 
-# Day 6: Playtesting
+# Day 7: Playtesting
 
