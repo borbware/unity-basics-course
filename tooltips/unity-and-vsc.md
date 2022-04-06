@@ -21,12 +21,14 @@ paginate: true
 
 ## VS Code side setup
 * Install the prerequisities for code completion & other niceness
-  * You need two things:
+  * You need to install these applications:
     * [.NET Core SDK](https://code.visualstudio.com/docs/other/unity#_prerequisites)
       * Remember to reboot your computer after installing
     * [.NET Framework 4.7.1 Developer Pack](https://code.visualstudio.com/docs/other/unity#_enabling-code-completion-for-recent-versions-of-unity)
       * ***Be sure to download the Developer pack, not Runtime!!***
-  * VS Code C# extension
+  * And these VS Code extensions:
+    * C#
+    * Unity code snippets
 * Open the project folder in VS Code
   * Either by opening the folder from File Explorer context menu (*Open with Code*)
   * Or in VS Code *File >  Open Folder...*
