@@ -8,6 +8,7 @@ paginate: true
 
 ### Delegates
 * Delegate: a container for a function that can be passed around or used like a variable
+  * [C# Docs: Introduction to delegates and events in C#](https://docs.microsoft.com/en-us/dotnet/csharp/delegates-overview)
 * variables only contain data, but delegates can contain functions
 * let's create a delegate signature - a reference for a type of delegate
   * you can declare its return type and parameter types:
