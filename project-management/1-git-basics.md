@@ -154,10 +154,10 @@ paginate: true
 
 ## Exercise 1. Creating a repo
 <!-- _backgroundColor: Khaki -->
-* If not already, install Git to your machine.
+
 * Create a new repository on GitHub and clone it with HTTPS to your machine.
 * Then, create a new file `GitTest.md` with some lines of text in it.
-* Add it, commit it, and push it to GitHub.
+* Commit and push changes to GitHub.
 * Go to GitHub and see that the file is there!
 
 ## `git pull`
@@ -208,6 +208,16 @@ paginate: true
     /folder
     *.html
   ```
+
+## Exercise 2. Git collaboration
+<!-- _backgroundColor: Khaki -->
+
+* Work on this exercise with your group.
+* Choose someone's test repository from exercise 1 to use in this exercise.
+* While others clone the repo to their machine, the owner should add other group members as collaborators of the repo in the repository's settings on GitHub.
+* Then, everyone should make changes to the markdown file in the repository!
+
+What happens if you make changes to the same line simultaneously?
 
 # Unity-specific stuff
 
