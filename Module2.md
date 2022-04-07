@@ -9,10 +9,9 @@ paginate: true
 ## What to expect
 
 * Unity basics (in 2d)
-* Input
-* Physics
-* Collision
-* Movement
+* Input & movement
+* Collision & physics
+* UI stuff
 * More programming
 
 ## Module 2 Schedule
@@ -42,10 +41,10 @@ Goal:
 <!-- _backgroundColor: lightgreen -->
 * ⭐⭐ Add one of the following features:
   * Hi scores & scoreboard
-  * Randomized asteroid spawining
-  * Level progression: new asteroids appear
-  * Twin-stick: Use right stick to control the bullet direction 
-* ⭐⭐⭐ Spice up the game: Add a game mechanic of your own
+  * Level progression: new asteroids appear and make the game progressively more difficult
+  * Twin-stick shooter: Use right stick to control the bullet direction
+  * Co-op: Add second player
+* ⭐⭐⭐ Spice up the game: Add a game mechanic of your own design
 
 
 ## MP exercise 0.
@@ -91,7 +90,7 @@ Now back on your own, make a new project for the module project and create the p
 
   * [Unity cookbook: UI](unity-cookbook/UI.md)
 
-## WP Exercise 1. Add a basic UI
+## MP Exercise 2. Add a basic UI
 
 Show Player's lives and Score.
 

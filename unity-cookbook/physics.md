@@ -5,35 +5,89 @@ math: katex
 ---
 <!-- headingDivider: 3 -->
 <!-- class: default -->
+# Collision & Physics
+
+# Collision
+
+## Colliders
+
+* [Manual: Colliders overview](https://docs.unity3d.com/Manual/CollidersOverview.html)
+* ***Colliders*** allow for interacting with other GameObjects
+  * The "hitbox" of the GameObject
+  * Usually simpler in geometry than the GameObject itself
+* CapsuleCollider(2D), BoxCollider(2D), PolygonCollider2D...
+* Extra: To show colliders in play mode:
+  * *Settings > Physics(2D) > Always Show Colliders*
+
+## Collision events
+
+* [`OnCollisionEnter`](https://docs.unity3d.com/ScriptReference/Collider.OnCollisionEnter.html) / [`OnCollisionEnter2D`](https://docs.unity3d.com/ScriptReference/Collider2D.OnCollisionEnter2D.html)
+  * when collision with another collider starts
+  
+
+* [`OnCollisionExit`](https://docs.unity3d.com/ScriptReference/Collider.OnCollisionExit.html) / [`OnCollisionExit2D`](https://docs.unity3d.com/ScriptReference/Collider2D.OnCollisionExit2D.html)
+  * when collision with another collider starts
+* [`OnCollisionStay`](https://docs.unity3d.com/ScriptReference/Collider.OnCollisionStay.html) / [`OnCollisionStay2D`](https://docs.unity3d.com/ScriptReference/Collider2D.OnCollisionStay2D.html)
+  * called every frame a collider is in contact
+* See the links for code examples!
+
+<!-- _footer: "For more event methods, see [Script Reference: Monobehaviour Messages](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html#Messages)" -->
+
+## Triggers
+* Normally, Unity initiates actions using the `OnCollisionEnter` function
+* If collider `IsTrigger`, then it does not stop other colliders, but only detects if something collides with it - no `OnCollisionEnter`!
+  * Collision functions are replaced with [`OnTriggerEnter`](https://docs.unity3d.com/ScriptReference/Collider.OnTriggerEnter.html), [`OnTriggerExit`](https://docs.unity3d.com/ScriptReference/Collider.OnTriggerExit.html), `OnTriggerStay`
+  * Guess the 2D versions...
+
 # Physics
 
-## Unity physics engine
+## Unity physics engines
 * [Manual: Physics](https://docs.unity3d.com/Manual/PhysicsSection.html)
 * A physics engine is used to calculate accelerations, collisions, gravity and other forces 
   * In 3D, Unity uses NVIDIA's **PhysX** for its physics
   * In 2D, Unity uses **Box2D**
-* When you add a physics component to a gameobject, it is then part of the physics system
+* When you add a physics component to a GameObject, it is then part of the physics system
+  * Rigidbody, Rigidbody2D
+
+## Built-in physics engines
+
+* [Manual: 3D Physics for object-oriented projects](https://docs.unity3d.com/Manual/PhysicsOverview.html)
+* [Manual: Physics reference 2D](https://docs.unity3d.com/Manual/Physics2DReference.html)
 
 
 ## Rigidbody
-  * literally: a body (object) that does not deform, i.e., is rigid
-  * There are three ways a rigidbody can interact with the physics engine
-  * Dynamic
-    * is part of the physics engine and behaves like a "regular" physics-based object
-    * can be controlled indirectly
-  * Kinematic
-    * is not affected by the physics system
-    * only queries the physics engine for collisions
-    * can be controlled directly
-  * Static
-    * does not move at all
-    * can collide with other **non-static** rigidbodies 
-### Rigidbody Component
+
+* 3D
+  * [Manual: Rigidbody overview](https://docs.unity3d.com/Manual/RigidbodiesOverview.html)
+  * [Manual: Rigidbody class](https://docs.unity3d.com/Manual/class-Rigidbody.html)
+  * [Script Reference: Rigidbody](https://docs.unity3d.com/ScriptReference/Rigidbody.html)
+* 2D
+  * [Manual: Rigidbody 2D class](https://docs.unity3d.com/Manual/class-Rigidbody2D.html)
+  * [Script Reference: Rigidbody 2D](https://docs.unity3d.com/ScriptReference/Rigidbody2D.html)
+* literally: a body (object) that does not deform, i.e., is rigid
+* takes over the movement of the GameObject it is attached to
+* do not move it from a script by changing the Transform properties such as position and rotation
+  * Instead, you should apply ***forces***
+
+### Rigidbody Components
 
 ![](https://docs.unity3d.com/uploads/Main/Inspector-Rigidbody.png)
+![](https://docs.unity3d.com/uploads/Main/Rigidbody2D.png)
 
-* .velocity
-* .angularVelocity
+
+## Types of rigidbodies
+* ***Dynamic***
+  * is part of the physics engine and behaves like a "regular" physics-based object
+  * can be controlled indirectly (with forces)
+* ***Kinematic***
+  * is not affected by the physics system
+  * only queries the physics engine for collisions
+  * can be controlled directly:
+    * in 2D, use `Rigidbody2D.MovePosition`, `Rigidbody2D.MoveRotation`
+    * in 3D, manipulate `transform.position`
+* ***Static*** (only 2D)
+  * an immovable object, can only collide with non-static rigidbodies
+
 
 ### Interpolation
 
@@ -48,39 +102,23 @@ math: katex
 
 ## Moving dynamic Rigidbodies
 
+* You should interact with the physics system in `FixedUpdate`, not `Update`
+
 * AddForce
 * AddTorque
 
+xx ADD CODE EXAMPLE HERE
+
+* .velocity
+* .angularVelocity
 
 ## Gravity
-* Note! by default, gravitational acceleration is $9.81m/s^2$
+* ***Note:*** by default, gravitational acceleration is $9.81m/s^2$
 * You can change it from Unity settings
   * Edit > Project Settings > Physics (2D) > Gravity
   * for top-down 2d games, you want gravity to be zero
-
-## Colliders
-
-* [Manual: Colliders overview](https://docs.unity3d.com/Manual/CollidersOverview.html)
-
-* Showing colliders in play mode
-
-## Collision methods
-
-* `OnCollisionEnter` / `OnCollisionEnter2D`
-  * when collision with another collider starts
-* `OnCollisionExit` / `OnCollisionExit2D`
-  * when collision with another collider starts
-* `OnCollisionStay` / `OnCollisionStay2D`
-  * called every frame a collider is in contact
-### Triggers
-* if collider `IsTrigger`, then it does not stop other colliders, but only detects if something collides with it.
-  * Then, collision functions are replaced with `OnTriggerEnter`, `OnTriggerExit`, `OnTriggerStay`
-  * Guess the 2D versions.
 
 
 ## Links
 
 * [Manual: Physics HOWTOs](https://docs.unity3d.com/Manual/PhysicsHowTos.html)
-  * Ragdoll physics
-  * Joints
-  * Wheel collider tutorial

@@ -6,6 +6,10 @@ paginate: true
 <!-- class: default -->
 # 3. Scripting GameObjects
 
+## The GameObject class
+
+[Manual: Important classes - GameObject](https://docs.unity3d.com/Manual/class-GameObject.html)
+
 ## Creating a new script
 
 * There are two ways to do it:
@@ -151,6 +155,26 @@ paginate: true
   * Read-only!
   * [ScriptReference: lossyScale](https://docs.unity3d.com/ScriptReference/Transform-lossyScale.html)
 
+## Tags & Layers
+* *Edit > Project Settings > Tags and Layers*
+### Tags
+* `GameObject.FindWithtag("tagname");`
+* `GameObject.FindGameObjectsWithTag("tagname");`
+
+### Layers
+* [Manual: Layers](https://docs.unity3d.com/Manual/Layers.html)
+* Some layers...
+	* Default
+	* Ignore Raycast
+	* Custom
+* Ignore some layers in camera
+	* *Inspector > Camera > Culling Mask > Layers*
+* Ignore some layers in Viewport
+	* Top right: Layers...
+* Layers can be used for selective collision detection
+  * [Manual: Layer-based collision detection](https://docs.unity3d.com/Manual/LayerBasedCollision.html)
+
+
 ## Enabling and disabling components
 * enable component:
   * `component.enabled = true;`
@@ -199,6 +223,18 @@ paginate: true
 * `myObject.activeInHierarchy`
   * "is `myObject` *really* active right now?"
   * `false` means this object has been deactivated by itself ***or*** by its parents
+
+
+## Sending messages
+
+* [Script Reference: SendMessage](https://docs.unity3d.com/ScriptReference/GameObject.SendMessage.html)
+* For invoking a method in a gameobject
+  ```c#
+  // Calls the function ApplyDamage with a value of 5
+  // Every script attached to the game object
+  // that has an ApplyDamage function will be called.
+  gameObject.SendMessage("ApplyDamage", 5.0);
+  ```
 
 
 ## About script reusability

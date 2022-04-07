@@ -52,6 +52,9 @@ paginate: true
 * [Manual: Components](https://docs.unity3d.com/Manual/Components.html)
 * GameObjects act as containers for ***Components*** that implement various functionalities
 * GameObject's components and their settings are listed in the Inspector window
+
+## Some important components 
+
 ### Spatial information
 
 * ***Transform***

@@ -25,7 +25,9 @@ paginate: true
 
 [C# Fundamentals: Generic classes and methods](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics)
 
-<>
+```c#
+GetComponent<Rigidbody>();
+```
 
 ## Special types
 
