@@ -74,11 +74,11 @@ paginate: true
 <!-- _backgroundColor: pink -->
 ![](https://desktop.github.com/images/github-desktop-screenshot-windows.png)
 
-## Extra: Config
-<!-- _backgroundColor: pink -->
+## Btw: Config
 * To configure your git username for every project:
   * Use `git config --global user.name "myUserName"`
   * and `git config --global user.email "my.email.address@domain.com"`
+* If you do not do this, Git will ask to do it anyway at some point
 
 # 2. Workflow
 
@@ -244,7 +244,7 @@ paginate: true
 
 * Why did we use longer `push` and `pull` commands?
   * Short answer: because we didn't clone the repo, but rather added the remote into an empty one.
-  * `git pull origin main`: After adding a remote, we don't yet know which ***branch*** to pull from. The `main` (can also be `master`) is the default branch
+  * `git pull origin main`: After adding a remote, we don't yet know which ***branch*** to pull from. The `main` (can also be `master`!) is the default branch
   * `git push --set-upstream origin main`: In the first `push`, we decide which branch to link our current branch into.
   * Afterwards, we can just use `git push` and `git pull`.
 

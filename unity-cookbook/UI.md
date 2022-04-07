@@ -5,7 +5,7 @@ paginate: true
 <!-- headingDivider: 3 -->
 <!-- class: default -->
 
-# Crating User Interface
+# User interface
 
 ## Unity UI
 
@@ -69,9 +69,14 @@ paginate: true
 * make sure the Texture type is Sprite (2D and UI)
 * Drag the texture from Project to Hierarchy
 
-### Help!! My sprite is moving wildly when I resize the screen
+## UI Gotchas
+
+### There's a weird white box surrounding my UI elements
+
+* Turn off the Canvas Gizmo in Play mode, under the Gizmos dropdown menu.
+
+### My sprite is moving wildly when I resize the screen
 
 * you have to change the Anchor presets
-* Inspector > Rect Transform > the square 
-  * shift
-  * alt
+* *Inspector > Rect Transform > the square* 
+  * Pressing down ***Shift+Alt*** exposes additional options

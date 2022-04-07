@@ -332,6 +332,24 @@ for(int i = 0; i < starters.Count; i++)
 ![alt](imgs/foreach-mutation.png)
 
 
+### Copying a list
+
+* Copying a list of value types
+    ```c#
+    List<YourType> newList = new List<YourType>(oldList);
+    ```
+* Copying a list of reference types
+    ```c#
+    List<YourType> oldList = new List<YourType>();
+    List<YourType> newList = new List<YourType>(oldList.Count);
+
+    oldList.ForEach((item)=>
+        {
+            newList.Add(new YourType(item));
+        });
+    ```
+
+<!-- _footer: "[See more about value vs reference types in Chapter 3](3-classes-methods.md#reference-type-vs-value-type)" -->
 ## Exercise 4. Looping through
 <!-- _backgroundColor: Khaki -->
 Loop through the starters array, and print the starter and its number like this:

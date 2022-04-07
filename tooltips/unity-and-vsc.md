@@ -35,6 +35,8 @@ paginate: true
 
 ## VS code shortcuts
 
+* ***CTRL+SHIFT+F*** find from all files
+* ***CTRL+SHIFT+H*** find and replace from all files
 * ***CTRL+SHIFT+UP/DOWN*** move code line
 * ***CTRL+SHIFT+D*** duplicate line
 * ***CTRL+Ö*** for showing/hiding terminal

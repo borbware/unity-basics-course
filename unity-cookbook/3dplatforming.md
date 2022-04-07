@@ -38,7 +38,7 @@
 * ***P*** Orientation: local / global / normal
 
 ## Selection
-* ***left mouse drag*** to select
+* ***LMB drag*** to select
 * [Select Hidden: On / Off](https://docs.unity3d.com/Packages/com.unity.probuilder@4.0/manual/Selection_SelectHidden.html)
 * [Rect: Complete / Intersection](https://docs.unity3d.com/Packages/com.unity.probuilder@4.0/manual/Selection_Rect_Intersect.html)
 ## Actions

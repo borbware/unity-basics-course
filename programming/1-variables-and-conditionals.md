@@ -431,7 +431,9 @@ Create a timed console application for displaying the state of a traffic light.
 
 ## Reading
 
-All the basics covering the syntax in C# are covered here: 
+Microsoft's own [C# Reference](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/) is a great way to dive deeper into the language. 
+
+Some basics covering the syntax in C# are covered here: 
 
 * https://www.tutorialspoint.com/csharp/index.html
 * https://www.w3schools.com/cs/default.asp

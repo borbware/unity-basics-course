@@ -4,6 +4,22 @@ paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: default -->
+
+# Types
+
+
+## Typeof
+
+## Type casting
+
+() 
+
+## Referring to types
+
+<>
+
+## Special types
+
 ## Enums
 ```c#
 public class EnumScript : MonoBehaviour 

@@ -315,7 +315,7 @@ Try to call the method from a gameobject!
 * Classes from other files can be imported with the `using` keyword
 * See example in [Unity class example](#unity-class-example) ([slide 3](#3))!
 
-## Reference vs value
+## Reference type vs value type
   * value types actually contain the value
   * reference types contain the memory address to where the value is stored
   * Value types

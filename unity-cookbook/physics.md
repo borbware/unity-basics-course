@@ -28,13 +28,25 @@ math: katex
   * Static
     * does not move at all
     * can collide with other **non-static** rigidbodies 
-###
+### Rigidbody Component
 
-  * Rigidbody
-    * .velocity
-    * .angularVelocity
+![](https://docs.unity3d.com/uploads/Main/Inspector-Rigidbody.png)
 
-## Moving dynamic bodies
+* .velocity
+* .angularVelocity
+
+### Interpolation
+
+* [Script Reference: Rigidbody Interpolation](https://docs.unity3d.com/ScriptReference/Rigidbody-interpolation.html)
+* Interpolation allows you to smooth out the effect of running physics at a fixed frame rate.
+
+### Constraints
+
+* [Script Reference: Rigidbody Constraints](https://docs.unity3d.com/ScriptReference/Rigidbody-constraints.html)
+* "which degrees of freedom are allowed for the simulation of this Rigidbody"
+* You can freeze position or rotation of a given axis
+
+## Moving dynamic Rigidbodies
 
 * AddForce
 * AddTorque
@@ -48,6 +60,10 @@ math: katex
 
 ## Colliders
 
+* [Manual: Colliders overview](https://docs.unity3d.com/Manual/CollidersOverview.html)
+
+* Showing colliders in play mode
+
 ## Collision methods
 
 * `OnCollisionEnter` / `OnCollisionEnter2D`
@@ -60,3 +76,11 @@ math: katex
 * if collider `IsTrigger`, then it does not stop other colliders, but only detects if something collides with it.
   * Then, collision functions are replaced with `OnTriggerEnter`, `OnTriggerExit`, `OnTriggerStay`
   * Guess the 2D versions.
+
+
+## Links
+
+* [Manual: Physics HOWTOs](https://docs.unity3d.com/Manual/PhysicsHowTos.html)
+  * Ragdoll physics
+  * Joints
+  * Wheel collider tutorial
