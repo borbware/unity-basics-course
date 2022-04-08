@@ -114,7 +114,7 @@ paginate: true
 ## `git add`
 
 * Pushing a file to GitHub from your local machine is a three-phase process
-* The first phase is ***staging*** with `git* add`:
+* The first phase is ***staging*** with `git add`:
   * The command `git add readme.md` stages the file `readme.md`
   * After doing it, `git status` tells this:
     ```
@@ -250,7 +250,16 @@ What happens if you make changes to the same line simultaneously?
     `git commit -m "first commit"`
     `git push --set-upstream origin main`
 
----
+## Troubleshooting: if pushing doesn't work...
+
+```
+error: failed to push some refs to [your-url]
+```
+
+* Possible reason: GitHub has a `main` branch, while your local repository has `master`
+  * run `git branch -m main` to rename your local `master` to `main`
+
+## Longer `push` and `pull` commands
 
 * Why did we use longer `push` and `pull` commands?
   * Short answer: because we didn't clone the repo, but rather added the remote into an empty one.
@@ -263,7 +272,7 @@ What happens if you make changes to the same line simultaneously?
 * With Unity, it might be a good idea to use [Git Large File Storage](https://git-lfs.github.com/) (LFS)
 * [Tutorial: Using Git Large File Storage (LFS) with Unity](https://riptutorial.com/unity3d/example/7178/using-git-large-file-storage--lfs--with-unity)
   * Install Git LFS
-  * Add the stuff from the link to `.gitignore`
+  * Add the stuff from the link to `.gitattributes`
     * Close your Unity project before applying the changes!! 
 
 ## Unity Version Control settings
