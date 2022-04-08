@@ -104,13 +104,31 @@ math: katex
 
 * You should interact with the physics system in `FixedUpdate`, not `Update`
 
-* AddForce
-* AddTorque
+* [Script Reference: Rigidbody.AddForce](https://docs.unity3d.com/ScriptReference/Rigidbody.AddForce.html)
+  ```c#
+  if (Input.GetButton("Jump"))
+  {
+      //Apply a force to this Rigidbody in direction of this GameObjects up axis
+      m_Rigidbody.AddForce(transform.up * m_Thrust);
+  }
+  ```
+* [Script Reference: Rigidbody.AddTorque](https://docs.unity3d.com/ScriptReference/Rigidbody.AddTorque.html)
+  ```c#
+  float turn = Input.GetAxis("Horizontal");
+  rb.AddTorque(transform.up * torque * turn);
+  ```
+## Changing the velocity directly
 
-xx ADD CODE EXAMPLE HERE
+* You can also manipulate rigidbody velocity directly
+  * Do this only if you don't get desired effects with AddForce or AddTorque
+* Velocity
+  * [Script reference: Rigidbody.velocity](https://docs.unity3d.com/ScriptReference/Rigidbody-velocity.html) (Vector3)
+  * [Script reference: Rigidbody2D.velocity](https://docs.unity3d.com/ScriptReference/Rigidbody2D-velocity.html) (Vector2)
+* Angular velocity
+  * [Script reference: Rigidbody.angularVelocity](https://docs.unity3d.com/ScriptReference/Rigidbody-angularVelocity.html) (Vector3)
+  * [Script reference: Rigidbody2D.angularVelocity](https://docs.unity3d.com/ScriptReference/Rigidbody2D-angularVelocity.html) (float)
 
-* .velocity
-* .angularVelocity
+<!-- _footer: "See [Hyperphysics](http://hyperphysics.phy-astr.gsu.edu/hbase/rotq.html) for more info about angular quantities" -->
 
 ## Gravity
 * ***Note:*** by default, gravitational acceleration is $9.81m/s^2$

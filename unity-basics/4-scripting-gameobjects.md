@@ -19,7 +19,7 @@ paginate: true
 ## The Script Class
 
 * C# is object-oriented: the script is a new ***Class***
-  * it ***inherits*** an Unity class `MonoBehaviour`
+  * it ***inherits*** an Unity class [`MonoBehaviour`](https://docs.unity3d.com/Manual/class-MonoBehaviour.html)
 * inside the class, we can implement Unity's default ***methods***
   * e.g., `Awake`
 * we can also add our own methods
@@ -30,14 +30,15 @@ paginate: true
 
 ## Start and update
 
-* a new script includes two ***methods*** by default: `Start` and `Update`
-* `Start` is called automatically only once
-  * it's used for setting things up when we start using the gameobject
-* `Update` is called 
+* the new script includes two ***methods*** by default: `Start` and `Update`
+* [`Start()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html) is called automatically only once
+  * it's used for setting things up when we start using the GameObject
+* [`Update()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html) is called every frame
+  * See FPS in *Play mode > Stats* to check how often it's called!
 
-## Initialization
+## Two ways to initialize
   * There are two functions for initializing a script class
-  * `Awake()`
+  * [`Awake()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.Awake.html)
     * called first
     * called even if the script component is not enabled!
   * `Start()`
@@ -63,6 +64,7 @@ paginate: true
     * called every frame after `Update()`.
     * good for something that has to happen after all game objects have Updated
 ## Time and Deltatime
+* [Important classes: Time](https://docs.unity3d.com/Manual/TimeFrameManagement.html)
 * `Time.time`
   * the time passed since starting the game, in seconds
 * `Time.deltaTime`
@@ -78,7 +80,7 @@ paginate: true
 
 ## Accessing fields in Inspector
 
-* `public` variables show up in inspector
+* `public` variables show up in Inspector
 * so do the ones with a `[SerializeField]` attribute
   * [ScriptReference: SerializeField](https://docs.unity3d.com/ScriptReference/SerializeField.html)
 * Extra: `[Header("Explainer for UI")]`
@@ -88,26 +90,14 @@ paginate: true
   * adds a slider to inspector
   * [ScriptReference: Range Attribute](https://docs.unity3d.com/ScriptReference/RangeAttribute.html)
 
-## Accessing components
 
-  ```c#
-  OurComponentType ourComponent = ourGameObject.GetComponent<OurComponentType>();
-  ```
-* A real-life example:
-  ```c#
-  Rigidbody rb = playerObject.GetComponent<Rigidbody>();
-  ```
-* dot notation not needed when getting a component of the GameObject the script class is part of:
-  ```
-  Rigidbody rb = GetComponent<Rigidbody>();
-  ```
-
-
+# Transform class
 
 ## Transform
 
 * [ScriptReference: Transform](https://docs.unity3d.com/ScriptReference/Transform.html)
 * [Manual: Transform](https://docs.unity3d.com/Manual/class-Transform.html)
+* [Important classes: Transform](https://docs.unity3d.com/Manual/ScriptingTransform.html)
 * The GameObject's ***position***, ***rotation*** and ***scale*** can be manipulated via its ***Transform*** component
   * either by using the included methods, or by directly manipulating fields
   * fields are either ***global*** or ***local***: e.g., `position` vs `localPosition`
@@ -119,13 +109,14 @@ paginate: true
 * Translation methods
   * `transform.Translate(Vector3 displacement)`
     ```c#
+    float moveSpeed = 3.0f;
     if(Input.GetKey(KeyCode.UpArrow))
       transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
 
     if(Input.GetKey(KeyCode.DownArrow))
       transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);
     ```
-* Translation fields
+* Translation fields (Vector3)
   * `transform.position`
   * `transform.localPosition`
 ### Rotation
@@ -155,24 +146,21 @@ paginate: true
   * Read-only!
   * [ScriptReference: lossyScale](https://docs.unity3d.com/ScriptReference/Transform-lossyScale.html)
 
-## Tags & Layers
-* *Edit > Project Settings > Tags and Layers*
-### Tags
-* `GameObject.FindWithtag("tagname");`
-* `GameObject.FindGameObjectsWithTag("tagname");`
+# Components
 
-### Layers
-* [Manual: Layers](https://docs.unity3d.com/Manual/Layers.html)
-* Some layers...
-	* Default
-	* Ignore Raycast
-	* Custom
-* Ignore some layers in camera
-	* *Inspector > Camera > Culling Mask > Layers*
-* Ignore some layers in Viewport
-	* Top right: Layers...
-* Layers can be used for selective collision detection
-  * [Manual: Layer-based collision detection](https://docs.unity3d.com/Manual/LayerBasedCollision.html)
+## Accessing components
+
+  ```c#
+  OurComponentType ourComponent = ourGameObject.GetComponent<OurComponentType>();
+  ```
+* For example, to get the Rigidbody component:
+  ```c#
+  Rigidbody rb = playerObject.GetComponent<Rigidbody>();
+  ```
+* dot notation not needed when getting a component of the GameObject the script class is part of:
+  ```
+  Rigidbody rb = GetComponent<Rigidbody>();
+  ```
 
 
 ## Enabling and disabling components
@@ -183,13 +171,16 @@ paginate: true
 * toggle:
   * `component.enabled = !component.enabled`
 
+# GameObjects
+
 ## Referring to GameObjects
-* fast solution
+* a) fast solution
   * create public GameObject field (shows up in Inspector)
   * drag & drop the wanted GameObject to the field in Inspector
-* find with code
+* b) find with code
   * [ScriptReference: GameObject.Find](https://docs.unity3d.com/ScriptReference/GameObject.Find.html)
   * [ScriptReference: GameObject.FindGameObjectsWithTag](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html)
+
 ## Accessing Children & Parents
 
 * child:
@@ -224,6 +215,35 @@ paginate: true
   * "is `myObject` *really* active right now?"
   * `false` means this object has been deactivated by itself ***or*** by its parents
 
+
+## Tags & Layers
+* [Manual: Tags and layers](https://docs.unity3d.com/Manual/class-TagManager.html)
+* *Edit > Project Settings > Tags and Layers*
+  * Here, you can set up Tags, Sorting layers and Layers
+### Tags
+
+* [Manual: Tags](https://docs.unity3d.com/Manual/Tags.html)
+* Marker values that that you can use to identify objects in your Project
+* Example tags: EditorOnly, MainCamera, Player
+* `GameObject.FindWithtag("tagname");`
+* `GameObject.FindGameObjectsWithTag("tagname");`
+
+### Layers
+* [Manual: Layers](https://docs.unity3d.com/Manual/Layers.html)
+* Layers allow you to separate GameObjects in you scene through UI or scripting
+* Some layers: Default, Ignore Raycast, Custom...
+* To make Camera ignore some layers:
+	* *Inspector > Camera > Culling Mask > Layers*
+* To make Viewport ignore some layers:
+	* Top right: *Layers* dropdown
+* Layers can be used for selective collision detection
+  * [Manual: Layer-based collision detection](https://docs.unity3d.com/Manual/LayerBasedCollision.html)
+
+### Sorting layers
+
+* For sorting 2D sprites
+  * "which goes on top of which"
+  * act kind of like Photoshop layers
 
 ## Sending messages
 

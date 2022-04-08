@@ -114,14 +114,14 @@ Lasek kahen gameobjektin välinen välimatka ja tee x sen perusteella xx
 
 ## Vector classes
 
-* Unity has two Vector classes, Vector2 and Vector3
+* Unity has two Vector classes, ***Vector2*** and ***Vector3***
   * 2 and 3 are the number of dimensions: (x,y) and (x,y,z)
   * `Vector2 position = new Vector2(1.0f, 2.0f)`
     * can be modified by accessing the vector with the dot notation:
     * `position.x = 3.0f`
 
 * length of vector can be acquired with `vector.Magnitude`
-  * it's calculated with the Pythagoras' theorem:
+  * it's calculated internally with the Pythagoras' theorem:
   * `Mathf.Sqrt(position.x^2 + position.y^2 + position.z^2)`
 
 ## Velocity vectors
@@ -132,9 +132,9 @@ Lasek kahen gameobjektin välinen välimatka ja tee x sen perusteella xx
 ## Distance vectors
 
 * distance vector between two objects
-  * Vector2.Distance(vector_A, vector_B)
+  * `Vector2.Distance(vector_A, vector_B)`
   * subtraction
-  * vector_B - vector_A
+  * `vector_B - vector_A`
   * length of the vector: pythagoras
 
 
@@ -172,7 +172,7 @@ When player is closer to the enemy than a given radius (say, 3 meters), make the
 
 ## Script reference
 
-* most of the examples apply to both Vector2 and Vector3 classes.
+* Most of the examples apply to both Vector2 and Vector3 classes.
 * Vector2
   * [Script Reference: Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html)
 * Vector3

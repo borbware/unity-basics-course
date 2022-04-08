@@ -21,7 +21,6 @@ paginate: true
 | 12.4. TI	| 13.4. KE	| 14.4. TO	| 19.4. TI	| 20.4. KE	| 21.4. TO | 22.4. PE | 
 | UC: [Unity for 2D](unity-cookbook/2d.md), [Input handling](unity-cookbook/input-handling.md), [Physics](unity-cookbook/physics.md) | Module project, [The materials for success](https://www.businessoulu.com/en/events/game-team.html) (remote lecture) | P2: [Lists and Loops](programming/2-lists-loops.md) | M0: [Useful math functions](math/0-mathf.md), UC: [Audio](unity-cookbook/audio.md), [Particle system](unity-cookbook/particle-system.md) | UC:  [UI](unity-cookbook/UI.md) | M1: [Vectors](math/1-vectors.md) | Playtesting, Wrap-up |
 
-
 # Day 1: 2D Movement
 
 ## Day 1 Schedule
@@ -61,7 +60,15 @@ In your groups, write down:
 
 Now back on your own, make a new project for the module project and create the player controlled ship.
 
+## MP exercise 2.
+<!-- _backgroundColor: lightgreen -->
 
+Add asteroids to the scene.
+
+## MP exercise 3.
+<!-- _backgroundColor: lightgreen -->
+
+Destroy player if it hits an asteroid.
 
 # Day 2: Working on the project
 
