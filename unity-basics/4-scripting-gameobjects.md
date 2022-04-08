@@ -81,7 +81,7 @@ paginate: true
 ## Accessing fields in Inspector
 
 * `public` variables show up in Inspector
-* so do the ones with a `[SerializeField]` attribute
+* as do the ones with a `[SerializeField]` attribute
   * [ScriptReference: SerializeField](https://docs.unity3d.com/ScriptReference/SerializeField.html)
 * Extra: `[Header("Explainer for UI")]`
   * great for team communication
@@ -89,89 +89,6 @@ paginate: true
 * `[Range(x,x)]`
   * adds a slider to inspector
   * [ScriptReference: Range Attribute](https://docs.unity3d.com/ScriptReference/RangeAttribute.html)
-
-
-# Transform class
-
-## Transform
-
-* [ScriptReference: Transform](https://docs.unity3d.com/ScriptReference/Transform.html)
-* [Manual: Transform](https://docs.unity3d.com/Manual/class-Transform.html)
-* [Important classes: Transform](https://docs.unity3d.com/Manual/ScriptingTransform.html)
-* The GameObject's ***position***, ***rotation*** and ***scale*** can be manipulated via its ***Transform*** component
-  * either by using the included methods, or by directly manipulating fields
-  * fields are either ***global*** or ***local***: e.g., `position` vs `localPosition`
-  * local coordinates are with respect to the GameObject's ***parent***
-
-
-
-### Translation
-* Translation methods
-  * `transform.Translate(Vector3 displacement)`
-    ```c#
-    float moveSpeed = 3.0f;
-    if(Input.GetKey(KeyCode.UpArrow))
-      transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
-
-    if(Input.GetKey(KeyCode.DownArrow))
-      transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);
-    ```
-* Translation fields (Vector3)
-  * `transform.position`
-  * `transform.localPosition`
-### Rotation
-
-* Rotation methods
-  * `transform.RotateAround(Vector3 pivot)`
-  * `transform.LookAt(Transform target)`
-  * `transform.Rotate(Vector3 eulerAngles)`
-    ```c#
-    if(Input.GetKey(KeyCode.LeftArrow))
-      transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
-
-    if(Input.GetKey(KeyCode.RightArrow))
-      transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
-    ```
----
-* Rotation fields
-  * `transform.rotation`, global rotation as a Quaternion
-  * `transform.localRotation`, local rotation as a Quaternion
-  * `transform.eulerAngles`, global rotation as Euler angles (Vector3)
-  * `transform.localEulerAngles`, local rotation as Euler angles (Vector3)
-### Scale
-
-* `transform.localScale`
-  * [ScriptReference: localScale](https://docs.unity3d.com/ScriptReference/Transform-localScale.html)
-* `transform.lossyScale`
-  * Read-only!
-  * [ScriptReference: lossyScale](https://docs.unity3d.com/ScriptReference/Transform-lossyScale.html)
-
-# Components
-
-## Accessing components
-
-  ```c#
-  OurComponentType ourComponent = ourGameObject.GetComponent<OurComponentType>();
-  ```
-* For example, to get the Rigidbody component:
-  ```c#
-  Rigidbody rb = playerObject.GetComponent<Rigidbody>();
-  ```
-* dot notation not needed when getting a component of the GameObject the script class is part of:
-  ```
-  Rigidbody rb = GetComponent<Rigidbody>();
-  ```
-
-
-## Enabling and disabling components
-* enable component:
-  * `component.enabled = true;`
-* disable component:
-  * `component.enabled = false;`
-* toggle:
-  * `component.enabled = !component.enabled`
-
-# GameObjects
 
 ## Referring to GameObjects
 * a) fast solution
@@ -215,6 +132,29 @@ paginate: true
   * "is `myObject` *really* active right now?"
   * `false` means this object has been deactivated by itself ***or*** by its parents
 
+
+## Accessing components
+
+  ```c#
+  OurComponentType ourComponent = ourGameObject.GetComponent<OurComponentType>();
+  ```
+* For example, to get the Rigidbody component:
+  ```c#
+  Rigidbody rb = playerObject.GetComponent<Rigidbody>();
+  ```
+* dot notation not needed when getting a component of the GameObject the script class is part of:
+  ```
+  Rigidbody rb = GetComponent<Rigidbody>();
+  ```
+
+
+## Enabling and disabling components
+* enable component:
+  * `component.enabled = true;`
+* disable component:
+  * `component.enabled = false;`
+* toggle:
+  * `component.enabled = !component.enabled`
 
 ## Tags & Layers
 * [Manual: Tags and layers](https://docs.unity3d.com/Manual/class-TagManager.html)
@@ -272,3 +212,12 @@ paginate: true
 ## Reading
 
 * [Stack Overflow: Component vs Behaviour vs Monobehaviour](https://stackoverflow.com/questions/44540747/what-is-the-difference-between-component-behaviour-and-monobehaviour-and-why-t)
+
+
+## Exercise 1. 
+
+<!-- _backgroundColor: Khaki -->
+Create a scene with multiple GameObjects with a Renderer attached to them.
+xx
+
+

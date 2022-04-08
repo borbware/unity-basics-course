@@ -71,8 +71,8 @@ paginate: true
 ## Exercise 1. Player input
 <!-- _backgroundColor: Khaki -->
 Create a top-down player character that can
+* change color with the Fire button
 * move with the analog stick
-* shoot with the Fire button
 
 
 ## Extra: Mouse input
