@@ -134,12 +134,18 @@ Continue the exercise from [Git Basics](1-git-basics.md) or create a new reposit
 
 `git push`
 
-## Exercise 2. Team effort
+## Exercise 2. Branching team effort
 <!-- _backgroundColor: Khaki -->
 * Work as a group for this assignment.
-* Use someone's repository from previous assignments and clone local copies of it to other group members.
-* **Note:** The owner of the repo has to authorize others so that others can push into the repo!
+* Continue Exercise 2 from [Git basics](1-git-basics.md).
 * Every group member creates an individual branch from the master, and makes some changes to the `GitTest.md` file.
-* New files can be added as well.
+* Add new files as well.
 * Do not tell other group members what you're going to change! :D
 * Then, Merge the changes back to the master branch. Fix ensuing conflicts, if any appear.
+
+
+## Reading 
+
+* [Pro Git book](https://git-scm.com/book/en/v2)
+* [Oh shit Git]([ohshitgit.com](https://ohshitgit.com/))
+* [Undo possibilities](https://docs.gitlab.com/ee/topics/git/numerous_undo_possibilities_in_git/) 

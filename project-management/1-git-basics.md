@@ -258,6 +258,14 @@ What happens if you make changes to the same line simultaneously?
   * `git push --set-upstream origin main`: In the first `push`, we decide which branch to link our current branch into.
   * Afterwards, we can just use `git push` and `git pull`.
 
+## Unity and LFS
+
+* With Unity, it might be a good idea to use [Git Large File Storage](https://git-lfs.github.com/) (LFS)
+* [Tutorial: Using Git Large File Storage (LFS) with Unity](https://riptutorial.com/unity3d/example/7178/using-git-large-file-storage--lfs--with-unity)
+  * Install Git LFS
+  * Add the stuff from the link to `.gitignore`
+    * Close your Unity project before applying the changes!! 
+
 ## Unity Version Control settings
 
 [Manual: Version control integrations](https://docs.unity3d.com/Manual/Versioncontrolintegration.html)
