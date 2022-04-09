@@ -16,11 +16,10 @@ paginate: true
 * Day 3:
   * [Math 2: Forces](math/2-forces.md)
   * [Math 4: Interpolation](math/4-interpolation.md)
+  * [Building](unity-cookbook/building.md)
 * Day 4:
   * 
 * Day 5: WP Wrap-up
-
-
 
 
 
@@ -39,6 +38,9 @@ paginate: true
 	* Mecanim State Machine
 
 
+
+## Concept of state in game programming
+
 ## Collaboration in Unity
 
 * most important rule: don't work on the same thing simultaneously or it's chaos time
@@ -53,7 +55,7 @@ paginate: true
 
 ## Module project: Top-down arcade game
 <!-- _backgroundColor: LightSkyBlue -->
-* two levels
+* multiple levels!?!
 * game over screen
 * active enemies
 	* träkkää pelaajaa ja alkaa seurata/ampua kohti kun rangella

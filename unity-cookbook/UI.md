@@ -80,3 +80,10 @@ paginate: true
 * you have to change the Anchor presets
 * *Inspector > Rect Transform > the square* 
   * Pressing down ***Shift+Alt*** exposes additional options
+
+# UI exercise 1
+
+Continue the Exercise 3 from Collision. Create a counter for the collected items that sits on the top left corner of the screen.
+
+
+

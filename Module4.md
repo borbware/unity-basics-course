@@ -2,17 +2,12 @@
 
 ## Module 4 schedule
 
-* Day 4: 
-  * Math 3: Sinewaves
-* Day 2: 
-  * Programming 4: Special types
-##
-
-
+* Math 3: Sinewaves
+* Programming 4: Special types
 * Game design
-* Game programming patterns
+* [Game programming patterns](programming/5-game-programming-patterns.md)
 * [Unity advanced](#unity-advanced)
-	* Entity-component-system (ECS)
+
 	* [Delayed actions](#delayed-actions)
 	* [Delegates and Events (3b)](#delegates-and-events-3b)
 		* [Delegates](#delegates)
@@ -22,7 +17,8 @@
 		* [Scriptable object Unity Event](#scriptable-object-unity-event)
 	* [Generics, IEnumerable (4c)](#generics-ienumerable-4c)
 	* [ScriptableObject](#scriptableobject)
-	
+	* Entity-component-system (ECS)...?
+
 ## Module project
 * ???
 * RPG-taistelu
