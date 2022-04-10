@@ -39,13 +39,13 @@ math: katex
 
 * `Mathf.Min(value1, value2)`
   * returns the ***smaller*** of the two given values
-  * if you want that some value shouldn't be ***greater than an upper limit***, use this!
+  * use if you want that some value ***shouldn't be greater than an upper limit***
   	```c#
 	HP = Mathf.Min(HP, maxHP) // makes sure HP is never greater than maxHP
 	```
 * `Mathf.Max(value1, value2)` 
   * returns the ***greater*** of the two given values
-  * if you want that some value shouldn't be ***smaller than a lower limit***, use this!
+  * use if you want that some value ***shouldn't be smaller than a lower limit***
     ```c#
 	HP = Mathf.Max(HP, 0.0f) // makes sure HP is never smaller than zero
 	```
@@ -60,6 +60,6 @@ math: katex
 	HP = Mathf.Clamp(HP, 0.0f, maxHP) // HP is never smaller than zero or greater than maxHP
 	```
 
-## Exercise 1: Min Max
-
+## Exercise 1: Minmaxing
+<!-- _backgroundColor: Khaki -->
 try out tms xx

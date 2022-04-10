@@ -94,7 +94,8 @@ math: katex
 * When game is running, you can still manipulate the values in the Inspector window
   * a nice way to mess around and find the right values for physics interactions etc.
   * changes made during the play mode do not persist!!!!
-  * protip: go to *Edit > Preferences > Colors* and change the play mode tint to red.
+  * ***Protip:*** go to *Edit > Preferences > Colors* and change the play mode tint to red.
+* To make play mode fullscreen, click *Maximize On Play* button
 
 ## Project window
 
