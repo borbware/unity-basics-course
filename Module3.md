@@ -21,12 +21,8 @@ paginate: true
   * 
 * Day 5: WP Wrap-up
 
-
-
-
-
-
 ## Constraints
+
 ## Scene management
 
 * Moving between scenes
@@ -37,9 +33,6 @@ paginate: true
 	* Animator
 	* Mecanim State Machine
 
-
-
-## Concept of state in game programming
 
 ## Collaboration in Unity
 

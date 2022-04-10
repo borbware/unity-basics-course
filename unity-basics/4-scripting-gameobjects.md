@@ -80,6 +80,7 @@ paginate: true
 
 ## Accessing fields in Inspector
 
+* [Manual: Variables and the Inspector](https://docs.unity3d.com/Manual/VariablesAndTheInspector.html)
 * `public` variables show up in Inspector
 * as do the ones with a `[SerializeField]` attribute
   * [ScriptReference: SerializeField](https://docs.unity3d.com/ScriptReference/SerializeField.html)
@@ -156,10 +157,14 @@ paginate: true
 * toggle:
   * `component.enabled = !component.enabled`
 
+
 ## Tags & Layers
 * [Manual: Tags and layers](https://docs.unity3d.com/Manual/class-TagManager.html)
 * *Edit > Project Settings > Tags and Layers*
-  * Here, you can set up Tags, Sorting layers and Layers
+* Here, you can set up
+  * ***Tags***
+  * ***Layers***
+  * ***Sorting layers*** 
 ### Tags
 
 * [Manual: Tags](https://docs.unity3d.com/Manual/Tags.html)
@@ -209,15 +214,28 @@ paginate: true
 * My way: First put everything in one script until some functionality grows enough
   * Then, separate into its own script
 
+
+## Exercise 1. Available on switch 
+<!-- _backgroundColor: Khaki -->
+
+Create a Scene with following GameObjects:
+
+- Three ***light source*** GameObjects
+  - render the light bulb as well (it can be a sphere for instance) 
+- ⭐ A cube that acts as a ***light switch*** (turns on/off the lights, but bulbs are seen)
+- ⭐⭐ A cube that acts as a ***kill switch*** that destroys the lights
+- ⭐⭐⭐ A cube that acts as a ***create switch*** that creates new lights if they were destroyed
+
+***Spoiler:*** For a click response, you can use this method:
+
+```c#
+function OnMouseOver() {
+  if(Input.GetMouseDown(0) {
+      // Do stuff
+  }
+}
+```
+
 ## Reading
 
 * [Stack Overflow: Component vs Behaviour vs Monobehaviour](https://stackoverflow.com/questions/44540747/what-is-the-difference-between-component-behaviour-and-monobehaviour-and-why-t)
-
-
-## Exercise 1. 
-
-<!-- _backgroundColor: Khaki -->
-Create a scene with multiple GameObjects with a Renderer attached to them.
-xx
-
-
