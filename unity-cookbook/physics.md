@@ -103,6 +103,9 @@ math: katex
   * Edit > Project Settings > Physics (2D) > Gravity
   * for top-down 2d games, you want gravity to be zero
 
+## Raycasting
+
+* See [2D basics](2d-basics.md#extra-2d-shooting)
 
 ## Links
 

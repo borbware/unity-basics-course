@@ -21,7 +21,7 @@ paginate: true
 * C# is object-oriented: the script is a new ***Class***
   * it ***inherits*** an Unity class [`MonoBehaviour`](https://docs.unity3d.com/Manual/class-MonoBehaviour.html)
 * inside the class, we can implement Unity's default ***methods***
-  * e.g., `Awake`
+  * e.g., `Awake()`
 * we can also add our own methods
   * e.g., `DoStuffThatWeWant()`
 * we can also add new ***fields***: variables inside the class
@@ -41,26 +41,26 @@ paginate: true
   * [`Awake()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.Awake.html)
     * called first
     * called even if the script component is not enabled!
-  * `Start()`
+  * [`Start()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html)
     * called second, right before the first Update
     * only called if the script component IS enabled
 
 ## `Update()`
   * There are three functions for updating a script class
-  * `Update()`
+  * [`Update()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html)
     * the frequency of update calls varies depending on framerate
     * most things can be updated here
     * because of framerate-dependence it is *indeterministic*
         * (same input doesn't always produce same output)
 ## `FixedUpdate()` and `LateUpdate()`
-  * `FixedUpdate()`
+  * [`FixedUpdate()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.FixedUpdate.html)
     * by default, called every 0.2 seconds (50 FPS)
     * used mainly for physics calculations
       * under load, will slow down!
       * not dependent on framerate: *deterministic*
         * (same input always produces same output)
     * ***Note:*** can't be used for checking ButtonDown input
-  * `LateUpdate()`
+  * [`LateUpdate()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.LateUpdate.html)
     * called every frame after `Update()`.
     * good for something that has to happen after all game objects have Updated
 ## Time and Deltatime
@@ -147,7 +147,6 @@ paginate: true
   ```
   Rigidbody rb = GetComponent<Rigidbody>();
   ```
-
 
 ## Enabling and disabling components
 * enable component:

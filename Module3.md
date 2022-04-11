@@ -8,9 +8,11 @@ paginate: true
 
 ## Module schedule
 
+
 * Day 1
-  * Cookbook: Data (scene management)
-  * animation state machine
+  * UC: [2D art](unity-cookbook/2d-art.md)
+  * UC: Data (scene management)
+  * UC: Animation state machine
 * Day 2:
   * Programming 3: Classes and methods
 * Day 3:
@@ -18,7 +20,6 @@ paginate: true
   * [Math 4: Interpolation](math/4-interpolation.md)
   * [Building](unity-cookbook/building.md)
 * Day 4:
-  * 
 * Day 5: WP Wrap-up
 
 ## Constraints
@@ -47,8 +48,9 @@ paginate: true
 
 
 ## Module project: Top-down arcade game
-<!-- _backgroundColor: LightSkyBlue -->
+<!-- _backgroundColor: lightgreen -->
 * multiple levels!?!
+  * level design
 * game over screen
 * active enemies
 	* träkkää pelaajaa ja alkaa seurata/ampua kohti kun rangella

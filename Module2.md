@@ -8,10 +8,10 @@ paginate: true
 
 ## What to expect
 
-* Unity basics (in 2d)
+* Actual gamedev!!
+* Unity basics in 2d
 * Input & movement
 * Collision & physics
-* UI stuff
 * More programming
 
 ## Module 2 Schedule
@@ -19,15 +19,9 @@ paginate: true
 | Day 1 | Day 2 | Day 3 | Day 4 | Day 5 | Day 6 | Day 7 | 
 |-------|-------|-------|-------|-------|-------|-------|
 | 12.4. TI	| 13.4. KE	| 14.4. TO	| 19.4. TI	| 20.4. KE	| 21.4. TO | 22.4. PE | 
-| UC: [Unity for 2D](unity-cookbook/2d.md), [Input handling](unity-cookbook/input-handling.md), [Physics](unity-cookbook/physics.md) | Module project, [The materials for success](https://www.businessoulu.com/en/events/game-team.html) (remote lecture) | P2: [Lists and Loops](programming/2-lists-loops.md) | M0: [Useful math functions](math/0-mathf.md), UC: [Audio](unity-cookbook/audio.md), [Particle system](unity-cookbook/particle-system.md) | UC:  [UI](unity-cookbook/UI.md) | M1: [Vectors](math/1-vectors.md) | Playtesting, Wrap-up |
+| UB4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md), UC: [2D basics](unity-cookbook/2d-basics.md) | UC: [Input handling](unity-cookbook/input-handling.md), [Collision](unity-cookbook/collision.md), [Materials for success](https://www.businessoulu.com/en/events/game-team.html) (remote) | P2: [Lists and Loops](programming/2-lists-loops.md) | P0: [Introduction to Game Programming](programming/0-game-programming.md), M1: [Vectors](math/1-vectors.md), M2: [Forces](math/2-forces.md) | M0: [Useful math functions](math/0-mathf.md), UC: [Audio](unity-cookbook/audio.md), [Particle system](unity-cookbook/particle-system.md) | , [UI](unity-cookbook/UI.md) | Playtesting, Wrap-up |
 
 # Day 1: 2D Movement
-
-## Day 1 Schedule
-
-* [Unity cookbook: Unity for 2D](unity-cookbook/2d.md)
-* [Unity cookbook: Input handling](unity-cookbook/input-handling.md)
-* [Unity cookbook: Physics](unity-cookbook/physics.md)
 
 ## Module project 2: Asteroids
 <!-- _backgroundColor: lightgreen -->

@@ -20,7 +20,7 @@ paginate: true
 
 ### Translation
 * Translation (movement) methods
-  * `transform.Translate(Vector3 displacement)`
+  * [`transform.Translate(Vector3 displacement)`](https://docs.unity3d.com/ScriptReference/Transform.Translate.html)
     ```c#
     float moveSpeed = 3.0f;
     if(Input.GetKey(KeyCode.UpArrow))
@@ -35,9 +35,10 @@ paginate: true
 ### Rotation
 
 * Rotation methods
-  * `transform.RotateAround(Vector3 pivot)`
-  * `transform.LookAt(Transform target)`
-  * `transform.Rotate(Vector3 eulerAngles)`
+  * [`transform.RotateAround(Vector3 pivot)`](https://docs.unity3d.com/ScriptReference/Transform.RotateAround.html)
+  * [`transform.LookAt(Transform target)`](https://docs.unity3d.com/ScriptReference/Transform.LookAt.html)
+  * [`transform.Rotate`](https://docs.unity3d.com/ScriptReference/Transform.Rotate.html)
+    * multiple variants available
     ```c#
     if(Input.GetKey(KeyCode.LeftArrow))
       transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);

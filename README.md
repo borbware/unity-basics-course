@@ -64,20 +64,23 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   | Unity Cookbook											   	  	|     | 
 |---|-------------------------------------------------------------------|----:|
-|   | [2D](unity-cookbook/2d.md)										| 🌒 |
+| 1 |																	|     |
+|   | [2D basics](unity-cookbook/2d-basics.md)							| 🌓 |
+|   | [Input handling](unity-cookbook/input-handling.md)				| 🌔 |
+|   | [Transform](unity-cookbook/transform.md)							| 🌓 |
+|   | [Collision](unity-cookbook/collision.md)							| 🌓 |
+|   | [Physics](unity-cookbook/physics.md)								| 🌓 |
+|   | [UI](unity-cookbook/UI.md)										| 🌓 |
+| 2 |																	|     |
+|   | [2D art](unity-cookbook/2d-art.md)								| 🌒 |
 |   | [3D Platforming](unity-cookbook/3dplatforming.md)					| 🌒 |
 |   | [Animation Curve](unity-cookbook/animation-curve.md)				| 🌒 |
 |   | [Audio](unity-cookbook/audio.md)									| 🌔 |
 |   | [Building](unity-cookbook/building.md)							| 🌑 |
-|   | [Collision](unity-cookbook/collision.md)							| 🌓 |
 |   | [Data flow](unity-cookbook/data.md)								| 🌒 |
-|   | [Input handling](unity-cookbook/input-handling.md)				| 🌔 |
 |   | [Packages](unity-cookbook/packages.md)							| 🌑 |
 |   | [Particle system](unity-cookbook/particle-system.md)				| 🌑 |
 |   | [Pathfinding](unity-cookbook/pathfinding.md)						| 🌒 |
-|   | [Physics](unity-cookbook/physics.md)								| 🌓 |
-|   | [Transform](unity-cookbook/transform.md)							| 🌓 |
-|   | [UI](unity-cookbook/UI.md)										| 🌓 |
 
 
 ## About game development
