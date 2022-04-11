@@ -17,6 +17,13 @@ math: katex
     * when $t = 1$, $x = b$
   * `Mathf.Lerp(a, b, t)`
 
+### Lerp example
+
+```c#
+Mathf.Lerp(5.0f, 15.0f, 0f);   // returns 5.0f
+Mathf.Lerp(5.0f, 15.0f, 0.5f); // returns 10.0f
+Mathf.Lerp(5.0f, 15.0f, 1.0f); // returns 15.0f
+```
 
 ### Note about Clamping
 
@@ -66,4 +73,5 @@ do a lerp
 
 ## Reading
 
-[gamedevbeginner.com: Lerping in Unity properly](https://gamedevbeginner.com/the-right-way-to-lerp-in-unity-with-examples/#lerp_vector3)
+* [gamedevbeginner.com: Lerping in Unity properly](https://gamedevbeginner.com/the-right-way-to-lerp-in-unity-with-examples/#lerp_vector3)
+* [easings.net](https://easings.net/) - a source for different easing functions beyond linear interpolation

@@ -36,10 +36,11 @@ paginate: true
   ```
    * `CancelInvoke("SpawnObject");`
 
-## Coroutine
+## Coroutines
+
+* [Manual: Coroutines](https://docs.unity3d.com/Manual/Coroutines.html)
 * if you want to execute something _during_ a given time
 * Basically it's a function that is executed until the yield statement is reached, and continued on the next frame OR after a specified time delay
   -> We can have multiple delays!
   * Excellent for sequenced events (cutscenes!)
-* https://docs.unity3d.com/Manual/Coroutines.html
 * https://learn.unity.com/tutorial/coroutines?uv=2019.3&projectId=5c88f2c1edbc2a001f873ea5#5c894522edbc2a14103553c5
