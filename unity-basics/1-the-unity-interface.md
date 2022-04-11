@@ -91,11 +91,12 @@ math: katex
 * [Manual: Game view](https://docs.unity3d.com/Manual/GameView.html)
 * Simulates what your final rendered game will look like through your Scene Cameras
 * Play & pause buttons
-* When game is running, you can still manipulate the values in the Inspector window
-  * a nice way to mess around and find the right values for physics interactions etc.
-  * changes made during the play mode do not persist!!!!
+* When game is running, you can still manipulate the values in the Inspector
+  * a nice way to mess around and find the right values for variables
+  * but... changes made during the play mode do not persist!
   * ***Protip:*** go to *Edit > Preferences > Colors* and change the play mode tint to red.
-* To make play mode fullscreen, click *Maximize On Play* button
+* To make play mode bigger,  click *Maximize On Play* button
+* To make play mode fullscreen... do tell if you find a way :D
 
 ## Project window
 
