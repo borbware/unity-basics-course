@@ -192,7 +192,7 @@ paginate: true
 ## Sending messages
 
 * [Script Reference: SendMessage](https://docs.unity3d.com/ScriptReference/GameObject.SendMessage.html)
-* For invoking a method in a gameobject
+* For invoking a method in a GameObject
   ```c#
   // Calls the function ApplyDamage with a value of 5
   // Every script attached to the game object
@@ -228,8 +228,8 @@ Create a Scene with following GameObjects:
 ***Spoiler:*** For a click response, you can use this method:
 
 ```c#
-function OnMouseOver() {
-  if(Input.GetMouseDown(0) {
+void OnMouseOver() {
+  if (Input.GetMouseButtonDown(0) {
       // Do stuff
   }
 }
