@@ -27,41 +27,33 @@ paginate: true
 * You can change between 3D and 2D view modes by pressing the *2D* button in the Scene view
 
 
-## 2D Primitive GameObjects
+## Useful 2D GameObjects
 
-* For drawing basic shapes in 2D
-* [Manual: 2D Primitives](https://docs.unity3d.com/Manual/2DPrimitiveObjects.html)
-
+* Sprites
+  * [Manual: Sprites](https://docs.unity3d.com/Manual/Sprites.html)
+  * See [Sprite Renderer component](#sprite-renderer-component)
+* 2D Primitives
+  * For drawing basic shapes in 2D
+  * [Manual: 2D Primitives](https://docs.unity3d.com/Manual/2DPrimitiveObjects.html)
+* Sprite Shape Asset
+  * Curve-based graphics & collision
+  * [Manual: Sprite Shape](https://docs.unity3d.com/Packages/com.unity.2d.spriteshape@3.0/manual/index.html)
 
 ## Camera component
 
 * 2D camera needs to be orthographic
   ![](imgs/camera.png)
 
-# Collision & Physics
+## Collision & Physics components
 
-## Collider components
-
-* See: [Collision](collision.md)
-* Remember to use the 2D versions
-  * Polygon Collider ***2D***
-  * Circle Collider ***2D***
-  * ...
-
-## RigidBody2D component
-
-* See: [Physics](physics.md)
-
-## Effectors
-
-* [Manual: Effectors 2D](https://docs.unity3d.com/Manual/Effectors2D.html)
-
-# Rendering
-
-## Line Renderer component
-
-* [Manual: Line Renderer](https://docs.unity3d.com/Manual/class-LineRenderer.html)
-* Use for drawing a line on screen
+* Colliders
+  * See: [Collision](collision.md)
+  * Remember to use the 2D versions of colliders:
+    * PolygonCollider **2D**, * CircleCollider **2D**, ...
+* RigidBody 2D
+  * See: [Physics](physics.md)
+* Effectors
+  * [Manual: Effectors 2D](https://docs.unity3d.com/Manual/Effectors2D.html)
 
 ## Sprite Renderer component
 
@@ -80,13 +72,19 @@ paginate: true
      * See: [Pixelart in Unity](../unity-cookbook/2d-art.md#pixelart-in-unity)
 4) Drag it from the Project window into the Sprite field in the Sprite Renderer component
 
+## Other renderer components
 
-## Extra: 2D shooting
+* Line Renderer: Use for drawing a line on screen
+  * [Manual: Line Renderer](https://docs.unity3d.com/Manual/class-LineRenderer.html)
+* Trail Renderer: For, well, trails
+* [Sprite Shape Renderer](https://docs.unity3d.com/Manual/class-SpriteShapeRenderer.html)
+
+## Extra: Two ways for 2D shooting
 <!-- _backgroundColor: pink -->
 
 * [Brackeys video: 2D shooting](https://www.youtube.com/watch?v=wkKsl1Mfp5M)
-* Slow bullets: Instantiate a bullet prefab
-* Instant hit: Raycasting
+* For slow bullets: Instantiate a bullet prefab
+* For instant hit: Raycasting (see example below)
   ```c#
   RaycastHit2D hit = Physics2D.Raycast(line.transform.position,
     line.transform.up,

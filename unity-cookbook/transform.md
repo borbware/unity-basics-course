@@ -34,6 +34,7 @@ paginate: true
   * `transform.localPosition`
 ### Rotation
 
+* [Manual: Rotation and orientation in Unity](https://docs.unity3d.com/Manual/QuaternionAndEulerRotationsInUnity.html)
 * Rotation methods
   * [`transform.RotateAround(Vector3 pivot)`](https://docs.unity3d.com/ScriptReference/Transform.RotateAround.html)
   * [`transform.LookAt(Transform target)`](https://docs.unity3d.com/ScriptReference/Transform.LookAt.html)
@@ -52,6 +53,9 @@ paginate: true
   * `transform.localRotation`, local rotation as a Quaternion
   * `transform.eulerAngles`, global rotation as Euler angles (Vector3)
   * `transform.localEulerAngles`, local rotation as Euler angles (Vector3)
+
+
+
 ### Scale
 
 * `transform.localScale`
@@ -59,3 +63,8 @@ paginate: true
 * `transform.lossyScale`
   * Read-only!
   * [ScriptReference: lossyScale](https://docs.unity3d.com/ScriptReference/Transform-lossyScale.html)
+
+## Exercise 1.
+<!-- _backgroundColor: Khaki -->
+
+Make a child GameObject rotate around its parent.

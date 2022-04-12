@@ -41,19 +41,16 @@ math: katex
 
 <!-- _backgroundColor: Khaki -->
 
-Continue with the Player character from Input exercise.
+Continue with the Player character from the [Input exercise](input-handling.md#exercise-1-player-input).
 
-Create a scene with multiple collectible GameObjects.
+Add multiple collectible GameObjects to the scene.
 
-When the player character collides with the objects, destroy them and add one to Player's internal counter of collected items. 
+When the player character collides with a collectible, destroy it and add one to Player's internal counter of collected items.
 
-## Exercise 3. Colliding with moving objects
+## Exercise 2. Colliding with moving obstacles
 
 <!-- _backgroundColor: Khaki -->
 
-Continue with the Player character from Input exercise.
+Continue previous exercise. Add moving objects to the scene that block the player's way. 
 
-Create a scene with multiple collectible GameObjects.
-
-When the player character collides with the objects, destroy them and add one to Player's internal counter of collected items. 
-
+If the player collides with them, make the player ***bounce*** off of them!

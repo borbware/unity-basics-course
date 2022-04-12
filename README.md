@@ -65,10 +65,10 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |   | Unity Cookbook											   	  	|     | 
 |---|-------------------------------------------------------------------|----:|
 | 1 |																	|     |
-|   | [2D basics](unity-cookbook/2d-basics.md)							| 🌓 |
+|   | [2D basics](unity-cookbook/2d-basics.md)							| 🌔 |
 |   | [Input handling](unity-cookbook/input-handling.md)				| 🌔 |
-|   | [Transform](unity-cookbook/transform.md)							| 🌓 |
-|   | [Collision](unity-cookbook/collision.md)							| 🌓 |
+|   | [Transform](unity-cookbook/transform.md)							| 🌔 |
+|   | [Collision](unity-cookbook/collision.md)							| 🌔 |
 |   | [Physics](unity-cookbook/physics.md)								| 🌓 |
 |   | [UI](unity-cookbook/UI.md)										| 🌓 |
 | 2 |																	|     |
