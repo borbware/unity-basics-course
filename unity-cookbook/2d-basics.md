@@ -11,6 +11,8 @@ paginate: true
 
 * [Manual: 2D or 3D](https://docs.unity3d.com/Manual/2Dor3D.html)
 * [Manual: 2D and 3D Mode settings](https://docs.unity3d.com/Manual/2DAnd3DModeSettings.html)
+* [Manual: 2D Game Development Quickstart Guide](https://docs.unity3d.com/Manual/Quickstart2D.html)
+  * [Manual: Initial Setup for 2D Games](https://docs.unity3d.com/Manual/Quickstart2DSetup.html)
 * Unity is first and foremost a 3D engine (x, y, z)
   * there is no dedicated 2D (x, y) mode
 * There is a dedicated `Vector2` class for 2D vectors
@@ -36,6 +38,31 @@ paginate: true
 * 2D camera needs to be orthographic
   ![](imgs/camera.png)
 
+# Collision & Physics
+
+## Collider components
+
+* See: [Collision](collision.md)
+* Remember to use the 2D versions
+  * Polygon Collider ***2D***
+  * Circle Collider ***2D***
+  * ...
+
+## RigidBody2D component
+
+* See: [Physics](physics.md)
+
+## Effectors
+
+* [Manual: Effectors 2D](https://docs.unity3d.com/Manual/Effectors2D.html)
+
+# Rendering
+
+## Line Renderer component
+
+* [Manual: Line Renderer](https://docs.unity3d.com/Manual/class-LineRenderer.html)
+* Use for drawing a line on screen
+
 ## Sprite Renderer component
 
 * 2d images in games are called ***sprites***
@@ -53,21 +80,6 @@ paginate: true
      * See: [Pixelart in Unity](../unity-cookbook/2d-art.md#pixelart-in-unity)
 4) Drag it from the Project window into the Sprite field in the Sprite Renderer component
 
-## Line Renderer component
-
-* [Manual: Line Renderer](https://docs.unity3d.com/Manual/class-LineRenderer.html)
-* Use for drawing a line on screen
-
-## Collider components
-
-* See: [Collision](collision.md)
-* Polygon Collider 2D
-* Circle Collider 2D
-* ...
-
-## RigidBody2D component
-
-* See: [Physics](physics.md)
 
 ## Extra: 2D shooting
 <!-- _backgroundColor: pink -->

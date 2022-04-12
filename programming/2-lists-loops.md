@@ -332,6 +332,15 @@ for(int i = 0; i < starters.Count; i++)
 ![alt](imgs/foreach-mutation.png)
 
 
+### Foreach Unity example
+
+```c#
+  foreach (GameObject enemy in GameObject.FindGameObjectsWithTag("Enemy"))
+  {
+      Debug.Log(enemy.name);
+  }
+```
+
 ### Copying a list
 
 * Copying a list of value types
@@ -366,3 +375,12 @@ Create two-dimensional data structure with x,y coordinates.
 Create a function that creates new enemy gameobjects in the scene in these coordinates.
 
 Also, create a function `newCoordinate(x, y)` that can be used to add new coordinates into the data structure.
+
+## Exercise 6. List of lights
+<!-- _backgroundColor: Khaki -->
+
+Continue exercise 1 from [Scripting gameobjects](../unity-basics/4-scripting-gameobjects.md).
+
+Instead of three lights, have nine lights, each with a tag "Light" (preferably as a prefab).
+
+Control the lights from the light switch with a program that runs through a list of all the lights instead of switching them on and off individually.

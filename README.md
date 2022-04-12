@@ -81,6 +81,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |   | [Packages](unity-cookbook/packages.md)							| 🌑 |
 |   | [Particle system](unity-cookbook/particle-system.md)				| 🌑 |
 |   | [Pathfinding](unity-cookbook/pathfinding.md)						| 🌒 |
+|   | [Searching](unity-cookbook/searching.md)							| 🌓 |
 
 
 ## About game development
