@@ -84,6 +84,17 @@ math: katex
   float turn = Input.GetAxis("Horizontal");
   rb.AddTorque(transform.up * torque * turn);
   ```
+
+## Extra: More functions
+<!-- _backgroundColor: pink -->
+
+* [Rigidbody.AddRelativeForce](https://docs.unity3d.com/ScriptReference/Rigidbody.AddRelativeForce.html)
+  * Adds a force to the rigidbody relative to its coordinate system.
+* [Rigidbody.AddRelativeTorque](https://docs.unity3d.com/ScriptReference/Rigidbody.AddRelativeTorque.html)
+  * Adds a torque to the rigidbody relative to its coordinate system.
+* [Rigidbody.AddForceAtPosition](https://docs.unity3d.com/ScriptReference/Rigidbody.AddForceAtPosition.html)
+  * Applies force at position. As a result this will apply ***a torque and a force*** on the object.
+
 ## Changing the velocity directly
 
 * You can also manipulate rigidbody velocity directly
@@ -97,10 +108,12 @@ math: katex
 
 <!-- _footer: "See [Hyperphysics](http://hyperphysics.phy-astr.gsu.edu/hbase/rotq.html) for more info about angular quantities" -->
 
+
+
 ## Gravity
 * ***Note:*** by default, gravitational acceleration is $9.81m/s^2$
 * You can change it from Unity settings
-  * Edit > Project Settings > Physics (2D) > Gravity
+  * *Edit > Project Settings > Physics (2D) > Gravity*
   * for top-down 2d games, you want gravity to be zero
 
 ## Raycasting
