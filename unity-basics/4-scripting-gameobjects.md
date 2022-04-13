@@ -83,31 +83,31 @@ paginate: true
 * [Manual: Variables and the Inspector](https://docs.unity3d.com/Manual/VariablesAndTheInspector.html)
 * `public` variables show up in Inspector
 * as do the ones with a `[SerializeField]` attribute
-  * [ScriptReference: SerializeField](https://docs.unity3d.com/ScriptReference/SerializeField.html)
+  * [Script Reference: SerializeField](https://docs.unity3d.com/ScriptReference/SerializeField.html)
 * Extra: `[Header("Explainer for UI")]`
   * great for team communication
-  * [ScriptReference: Header Attribute](https://docs.unity3d.com/ScriptReference/HeaderAttribute.html)
+  * [Script Reference: Header Attribute](https://docs.unity3d.com/ScriptReference/HeaderAttribute.html)
 * `[Range(x,x)]`
   * adds a slider to inspector
-  * [ScriptReference: Range Attribute](https://docs.unity3d.com/ScriptReference/RangeAttribute.html)
+  * [Script Reference: Range Attribute](https://docs.unity3d.com/ScriptReference/RangeAttribute.html)
 
 ## Referring to GameObjects
 * a) fast solution
   * create public GameObject field (shows up in Inspector)
   * drag & drop the wanted GameObject to the field in Inspector
 * b) find with code
-  * [ScriptReference: GameObject.Find](https://docs.unity3d.com/ScriptReference/GameObject.Find.html)
-  * [ScriptReference: GameObject.FindGameObjectsWithTag](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html)
+  * [Script Reference: GameObject.Find](https://docs.unity3d.com/ScriptReference/GameObject.Find.html)
+  * [Script Reference: GameObject.FindGameObjectsWithTag](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html)
 
 ## Accessing Children & Parents
 
 * child:
   * Unity stores the child-parent hierarchy of gameObjects under the Transform component
   * by index number
-    * [ScriptReference: GetChild](https://docs.unity3d.com/ScriptReference/Transform.GetChild.html)
+    * [Script Reference: GetChild](https://docs.unity3d.com/ScriptReference/Transform.GetChild.html)
     * `parentGameObject.transform.GetChild(indexNumber).gameObject`
    *  by name
-      * [ScriptReference: Find](https://docs.unity3d.com/ScriptReference/Transform.Find.html)
+      * [Script Reference: Find](https://docs.unity3d.com/ScriptReference/Transform.Find.html)
       * `parentGameObject.transform.Find("childName").gameObject`
 * parent:
   * GameObject only has one direct parent
@@ -116,10 +116,17 @@ paginate: true
 
 ## Creating and destroying GameObjects
 
-  * `Instantiate()`
-    * [ScriptReference: Instantiate](https://docs.unity3d.com/ScriptReference/Object.Instantiate.html)
-  * `Destroy()`
-    * [ScriptReference: Destroy](https://docs.unity3d.com/ScriptReference/Object.Destroy.html)
+  * `Instantiate()`: Create copies of GameObjects or Prefabs into the scene with 
+    * [Script Reference: Instantiate](https://docs.unity3d.com/ScriptReference/Object.Instantiate.html)
+      ```c#
+      GameObject newObject = Instantiate(bullet, transform.position, transform.rotation);
+      ```
+  * `Destroy()`: destroy GameObjects from the scene
+    * [Script Reference: Destroy](https://docs.unity3d.com/ScriptReference/Object.Destroy.html)
+    * you can give an additional delay in seconds before destroying as a second argument
+      ```c#
+      Destroy(bullet, 2.0f);
+      ```
 
 ## Activating and deactivating GameObjects
 
