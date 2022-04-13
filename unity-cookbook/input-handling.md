@@ -70,7 +70,7 @@ paginate: true
 
 ## Exercise 1. Player input
 <!-- _backgroundColor: Khaki -->
-Create a top-down player character that can
+Create a top-down player character with a sprite renderer that can
 * change color with the ***Fire1*** button
 * move with the analog stick
 
