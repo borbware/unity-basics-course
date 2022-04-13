@@ -74,10 +74,15 @@ paginate: true
 
 ## Other renderer components
 
-* Line Renderer: Use for drawing a line on screen
+* Line Renderer
+  * Use for drawing a line on screen
   * [Manual: Line Renderer](https://docs.unity3d.com/Manual/class-LineRenderer.html)
-* Trail Renderer: For, well, trails
-* [Sprite Shape Renderer](https://docs.unity3d.com/Manual/class-SpriteShapeRenderer.html)
+* Trail Renderer
+  * For drawing trails
+  * [Manual: Trail Renderer](https://docs.unity3d.com/Manual/class-TrailRenderer.html)
+* Sprite Shape Renderer
+  * Draw images along a path, or just paths
+  * [Sprite Shape Renderer](https://docs.unity3d.com/Manual/class-SpriteShapeRenderer.html)
 
 ## Extra: Two ways for 2D shooting
 <!-- _backgroundColor: pink -->

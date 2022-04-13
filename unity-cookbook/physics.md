@@ -108,8 +108,6 @@ math: katex
 
 <!-- _footer: "See [Hyperphysics](http://hyperphysics.phy-astr.gsu.edu/hbase/rotq.html) for more info about angular quantities" -->
 
-
-
 ## Gravity
 * ***Note:*** by default, gravitational acceleration is $9.81m/s^2$
 * You can change it from Unity settings
