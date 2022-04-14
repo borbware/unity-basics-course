@@ -43,6 +43,14 @@ paginate: true
 ### Particle system component in Inspector
 ![](imgs/particle-system-inspector.png)
 
+## Particle system modules
+
+* [Manual: Particle System Modules](https://docs.unity3d.com/Manual/ParticleSystemModules.html)
+
+
+### Example: Sprite animation
+
+* [Manual: Texture Sheet Animation Module](https://docs.unity3d.com/Manual/PartSysTexSheetAnimModule.html)
 
 ## Destroy particles on collision
 
