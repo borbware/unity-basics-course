@@ -8,7 +8,7 @@ paginate: true
 
 ## Transform
 
-* [ScriptReference: Transform](https://docs.unity3d.com/ScriptReference/Transform.html)
+* [Script Reference: Transform](https://docs.unity3d.com/ScriptReference/Transform.html)
 * [Manual: Transform](https://docs.unity3d.com/Manual/class-Transform.html)
 * [Important classes: Transform](https://docs.unity3d.com/Manual/ScriptingTransform.html)
 * The GameObject's ***position***, ***rotation*** and ***scale*** can be manipulated via its ***Transform*** component
@@ -59,10 +59,10 @@ paginate: true
 ### Scale
 
 * `transform.localScale`
-  * [ScriptReference: localScale](https://docs.unity3d.com/ScriptReference/Transform-localScale.html)
+  * [Script Reference: localScale](https://docs.unity3d.com/ScriptReference/Transform-localScale.html)
 * `transform.lossyScale`
   * Read-only!
-  * [ScriptReference: lossyScale](https://docs.unity3d.com/ScriptReference/Transform-lossyScale.html)
+  * [Script Reference: lossyScale](https://docs.unity3d.com/ScriptReference/Transform-lossyScale.html)
 
 ## Exercise 1.
 <!-- _backgroundColor: Khaki -->
