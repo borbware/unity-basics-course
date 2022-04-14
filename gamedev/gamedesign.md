@@ -7,6 +7,35 @@ paginate: true
 
 # Game design
 
+## Games
+
+* "Voluntary engagement with unnecessary obstacles"
+  * Jane McGonigal, *Reality is Broken*
+
+* Sports
+* Yard Games
+* Card games
+* Board Games
+* Pinball tables
+* Video Games
+
+## Verbs
+
+* Primary player actions
+  * "Jump"
+  * "Attack"
+  * "Build"
+* What verbs do these games have?
+  * Laivan upotus
+  * Kirkonrotta
+  * Super Mario Bros.
+
+## Game mechanics
+
+* What is a game mechanic?
+* Example of a game mechanic?
+  * [List of Board game mechanics](https://boardgamegeek.com/browse/boardgamemechanic)
+
 ## Game designer
 
 * The job of a game designer is that of a gardener
@@ -14,22 +43,23 @@ paginate: true
   * nip unnecessary and harmful weeds in the bud
   * grow a functional system enclosed in a limited space
 
-## Good design
 
-* usually subjective
-* some subjective rules of thumb...
-  * good design solves many problems at once
-    * ...and doesn't introduce new ones
-  * good design explains itself
-    * use real-world analogues: "water puts out fire"
-  * good design fuels creativity
-    * complex outcomes out of simple rules 
-  * good design begets more good design
+## Game design through iteration
 
+## Reasons to engage with media
+
+* Mastery: grown skills in doing/accomplishing a task
+* Autonomy: Ability and freedom to make meaningful choices
+* Sensation: Physical sensations or the new
+* Connection: Feeling connected to others/community
+
+## Types of players 
+
+xx 
 
 ## Playcentric Design Process
 
-* set player experience goals
+* Set player experience goals
   * "how should the player feel?"
   * example: freedom to pursue goals of the game in any order
   * does NOT specify how features are implemented
@@ -102,6 +132,18 @@ paginate: true
 * Game feel in isolation
 * Invisible tutorial
 * Realistic vs gameistic
+
+## Good design??
+
+* usually subjective
+* some subjective rules of thumb...
+  * good design solves many problems at once
+    * ...and doesn't introduce new ones
+  * good design explains itself
+    * use real-world analogues: "water puts out fire"
+  * good design fuels creativity
+    * complex outcomes out of simple rules 
+  * good design begets more good design
 
 ## Game Design Document (GDD)
 

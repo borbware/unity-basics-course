@@ -90,7 +90,7 @@ Create a top-down player character with a sprite renderer that can
   * Down & Up methods work similarly to previous examples as well
 * get mouse position:
   * [`Vector2 mousePos = Input.mousePosition;`](https://docs.unity3d.com/ScriptReference/Input-mousePosition.html)
-* you can also create a dedicated method for checking if mouse clicked on a GameObject:
+* you can also create a dedicated method for checking if the mouse cursor is on a GameObject:
   ```c#
   OnMouseDown()
   {
@@ -104,15 +104,17 @@ Create a top-down player character with a sprite renderer that can
 ```c#
     private Rigidbody rb;
 
-    private void Awake()
+    void Awake()
     {
         rb = GetComponent<Rigidbody>();
     }
-
     void OnMouseDown()
     {
-        rb.AddForce(- transform.forward * 500f);
-        rb.useGravity = true;
+        if (Input.GetMouseButton(0))
+        {
+            rb.AddForce(- transform.forward * 500f);
+            rb.useGravity = true;
+        }
     }
 ```
 ## Extra: Touch input
