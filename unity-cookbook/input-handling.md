@@ -26,13 +26,13 @@ paginate: true
   * won't be covered on this course
 ## Keyboard input
 
-* `Input.GetKeyDown(KeyCode.Space)`
+* [`Input.GetKeyDown(KeyCode.Space)`](https://docs.unity3d.com/ScriptReference/Input.GetKeyDown.html)
   * returns `true` for one frame when pressed down 
   * Good for jumps, navigating the UI, other ***discrete*** actions 
-* `Input.GetKey(KeyCode.Space)`
+* [`Input.GetKey(KeyCode.Space)`](https://docs.unity3d.com/ScriptReference/Input.GetKey.html)
   * returns `true` for the duration of pressage
   * Good for movement or other ***continuous*** actions
-* `Input.GetKeyUp(KeyCode.Space)`
+* [`Input.GetKeyUp(KeyCode.Space)`](https://docs.unity3d.com/ScriptReference/Input.GetKeyUp.html)
   * return `true` for one frame when we stop pressing a button
   * Good for a charge weapon: hold down for charge, release button to shoot
   * Needed less often than the previous ones
@@ -42,9 +42,9 @@ paginate: true
 * What if you want to be able to change game controls?
 * Or check both keyboard and game controller input?
 * Use the ***GetButton*** functions instead
-  * `Input.GetButtonDown("Jump")`
-  * `Input.GetButton("Jump")`
-  * `Input.GetButtonUp("Jump")`
+  * [`Input.GetButtonDown("Jump")`](https://docs.unity3d.com/ScriptReference/Input.GetButtonDown.html)
+  * [`Input.GetButton("Jump")`](https://docs.unity3d.com/ScriptReference/Input.GetButton.html)
+  * [`Input.GetButtonUp("Jump")`](https://docs.unity3d.com/ScriptReference/Input.GetButtonUp.html)
 
 ### Input table
 * Input table
@@ -65,16 +65,15 @@ paginate: true
   * rather a two-dimensional field of many possible coordinates
   * -> separate input to two axes, vertical and horizontal
   * Sliding scale between -1 and 1
-* `Input.GetAxis(axisName)`
+* [`Input.GetAxis(axisName)`](https://docs.unity3d.com/ScriptReference/Input.GetAxis.html)
   * Smoothing with *Gravity* and *Sensitivity*
   * *Deadzone* applied (no input registered if only move the analog stick a bit)
   * `float h = Input.GetAxis("Horizontal");`
-  * `float h = Input.GetAxisRaw("Horizontal");`
 
 ### GetAxisRaw
 
-* [Script Reference: Input.GetAxisRaw](https://docs.unity3d.com/ScriptReference/Input.GetAxisRaw.html)
-* `Input.GetAxisRaw(axisName)`
+* [`Input.GetAxisRaw(axisName)`](https://docs.unity3d.com/ScriptReference/Input.GetAxisRaw.html)
+  * `float h = Input.GetAxisRaw("Horizontal");`
   * just the raw input data as-is
   * no deadzone, no smoothing
 
@@ -87,10 +86,10 @@ Create a top-down player character with a sprite renderer that can
 
 ## Extra: Mouse input
 <!-- backgroundColor: pink -->
-* `Input.GetMouseButton(0)`
+* [`Input.GetMouseButton(0)`](https://docs.unity3d.com/ScriptReference/Input.GetMouseButton.html)
   * Down & Up methods work similarly to previous examples as well
 * get mouse position:
-  * `Vector2 mousePos = Input.mousePosition;`
+  * [`Vector2 mousePos = Input.mousePosition;`](https://docs.unity3d.com/ScriptReference/Input-mousePosition.html)
 * you can also create a dedicated method for checking if mouse clicked on a GameObject:
   ```c#
   OnMouseDown()
@@ -112,7 +111,7 @@ Create a top-down player character with a sprite renderer that can
 
     void OnMouseDown()
     {
-        rb.AddForce(-transform.forward * 500f);
+        rb.AddForce(- transform.forward * 500f);
         rb.useGravity = true;
     }
 ```
