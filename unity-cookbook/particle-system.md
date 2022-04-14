@@ -18,6 +18,10 @@ paginate: true
 * [Manual: Particle System component](https://docs.unity3d.com/Manual/class-ParticleSystem.html)
 * [Script Reference: ParticleSystem](https://docs.unity3d.com/ScriptReference/ParticleSystem.html)
 
+### Basic parameters
+
+* Particle lifetime
+
 ### Particle system code example
 
 * how to stop / start particles from emitting:
@@ -39,6 +43,12 @@ paginate: true
 ### Particle system component in Inspector
 ![](imgs/particle-system-inspector.png)
 
+
+## Destroy particles on collision
+
+* In particle system component: Enable ***Collision*** module
+  * Set Type to ***World*** and then ***Lifetime loss*** to 1
+  * Also, you can change the collision layers in ***collide with*** so the particle only collides with a collider of a specific layer.
 
 ## Reading
 

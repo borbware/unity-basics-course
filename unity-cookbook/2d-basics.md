@@ -34,7 +34,7 @@ paginate: true
   * See [Sprite Renderer component](#sprite-renderer-component)
 * 2D Primitives
   * For drawing basic shapes in 2D
-  * [Manual: 2D Primitives](https://docs.unity3d.com/Manual/2DPrimitiveObjects.html)
+  * [Manual: 2D Primitives](https://docs.unity3d.com/2020.3/Documentation/Manual/2DPrimitiveObjects.html)
 * Sprite Shape Asset
   * Curve-based graphics & collision
   * [Manual: Sprite Shape](https://docs.unity3d.com/Packages/com.unity.2d.spriteshape@3.0/manual/index.html)
@@ -49,7 +49,7 @@ paginate: true
 * Colliders
   * See: [Collision](collision.md)
   * Remember to use the 2D versions of colliders:
-    * PolygonCollider **2D**, * CircleCollider **2D**, ...
+    * PolygonCollider **2D**, CircleCollider **2D**, ...
 * RigidBody 2D
   * See: [Physics](physics.md)
 * Effectors

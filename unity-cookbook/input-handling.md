@@ -33,30 +33,41 @@ paginate: true
   * returns `true` for the duration of pressage
   * Good for movement or other ***continuous*** actions
 * `Input.GetKeyUp(KeyCode.Space)`
-  * True for one frame when we stop pressing a button
+  * return `true` for one frame when we stop pressing a button
+  * Good for a charge weapon: hold down for charge, release button to shoot
   * Needed less often than the previous ones
-## Input table
+
+## More general input
 
 * What if you want to be able to change game controls?
 * Or check both keyboard and game controller input?
-* Use the ***Input table*** instead
+* Use the ***GetButton*** functions instead
   * `Input.GetButtonDown("Jump")`
   * `Input.GetButton("Jump")`
   * `Input.GetButtonUp("Jump")`
+
+### Input table
 * Input table
   * *Edit > Project Settings > Input*
-  * "positive button"
+* *Positive button* refers to a button being pressed
+* *Negative button* is only needed for directional input
+* You can assign an Alt Button for an alternate input method
+* ***Note***: Keyboard and controller bindings are in their separate entries!
+* Add new entries by increasing the *Size* property
+  * It will duplicate the last entry in the list. Oh wow
+* Use [this link](https://ritchielozada.com/2016/01/16/part-11-using-an-xbox-one-controller-with-unity-on-windows-10/) to see which button numbers correspond to which controller buttons
+  * For example, `joystick button 0` is the Xbox button A
+ 
 ## Analog input
 
 * [Script Reference: Input.GetAxis](https://docs.unity3d.com/ScriptReference/Input.GetAxis.html)
 * how to account for analog sticks? They aren't buttons you press
   * rather a two-dimensional field of many possible coordinates
   * -> separate input to two axes, vertical and horizontal
+  * Sliding scale between -1 and 1
 * `Input.GetAxis(axisName)`
-  * normalized
-  * sliding scale between -1 and 1
-  * Gravity vs Sensitivity
-  * Deadzone
+  * Smoothing with *Gravity* and *Sensitivity*
+  * *Deadzone* applied (no input registered if only move the analog stick a bit)
   * `float h = Input.GetAxis("Horizontal");`
   * `float h = Input.GetAxisRaw("Horizontal");`
 
@@ -65,8 +76,7 @@ paginate: true
 * [Script Reference: Input.GetAxisRaw](https://docs.unity3d.com/ScriptReference/Input.GetAxisRaw.html)
 * `Input.GetAxisRaw(axisName)`
   * just the raw input data as-is
-  * non-normalized
-  * no deadzone
+  * no deadzone, no smoothing
 
 ## Exercise 1. Player input
 <!-- _backgroundColor: Khaki -->

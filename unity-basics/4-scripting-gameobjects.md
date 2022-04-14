@@ -169,6 +169,8 @@ paginate: true
 * [Manual: Tags](https://docs.unity3d.com/Manual/Tags.html)
 * Marker values that that you can use to identify objects in your Project
 * Example tags: EditorOnly, MainCamera, Player
+* GameObject can only have ONE tag!
+  * Access it with `myGameObject.tag`
 * `GameObject.FindWithtag("tagname");`
 * `GameObject.FindGameObjectsWithTag("tagname");`
 
