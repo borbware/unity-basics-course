@@ -93,15 +93,6 @@ Vector2 C = 2 * A;
   
   ![](imgs/2d-vector-scalar-multiplication-2.png)
 
-
-## Exercise 1.
-
-muokkaa gameobjektin nopeutta lisäämällä siihen vektori x xx
-## Exercise 2.
-
-Lasek kahen gameobjektin välinen välimatka ja tee x sen perusteella xx
-
-
 # Vectors in Unity
 
 ## Vectors in video games
@@ -141,8 +132,9 @@ Lasek kahen gameobjektin välinen välimatka ja tee x sen perusteella xx
 ## Special vectors of Unity
 
 * See Static properties in [Script Reference: Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html)
-  * vector.up
-  * vector.forward
+  * Vector3.up
+  * Vector3.right
+  * Vector3.forward
   * etc...
 
 ## Common vector operations
@@ -158,16 +150,23 @@ Lasek kahen gameobjektin välinen välimatka ja tee x sen perusteella xx
 
 ### Rotating a vector
 
+* See: [Transform Class: Rotation](../unity-cookbook/transform.md#rotation)
 
 ## Note about distance
 
 * Note: when performance is important, using magnitude can be a bad idea: it includes the costly square root operation
   * if you need to only compare magnitudes, or you're squaring it right away, use `.sqrMagnitude` instead!
-## Exercise 1
+
+
+## Exercise 1. I'm being avoided
 <!-- _backgroundColor: Khaki -->
 
-Make two gameObjects, where one is player with top-down movement, and the other is a static enemy.
-When player is closer to the enemy than a given radius (say, 3 meters), make the enemy shoot at player.
+Calculate distance between two GameObjects (player and enemy).
+
+If the distance is smaller than a threshold value, 
+a) change the color of the static GameObject (and set the color back to default when you're no more on the range)
+b) make the enemy shoot at player
+c) move the static GameObject farther away from the GameObject along the straightest possible path
 
 
 ## Script reference

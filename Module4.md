@@ -17,9 +17,12 @@
 		* [Scriptable object Unity Event](#scriptable-object-unity-event)
 	* [Generics, IEnumerable (4c)](#generics-ienumerable-4c)
 	* [ScriptableObject](#scriptableobject)
-	* Entity-component-system (ECS)...?
 
 ## Module project
-* ???
-* RPG-taistelu
-* Vaihtoehto: 2d platformer
+
+* Tower defense
+* Plants vs Zombies -like
+* xx kato youtubesta mitä teoriaa vielä tarvii
+* hiiren käyttö
+* syvemmin UI:hin
+* sisäkkäiset valikot

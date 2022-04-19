@@ -98,7 +98,7 @@ math: katex
 ## Changing the velocity directly
 
 * You can also manipulate rigidbody velocity directly
-  * Do this only if you don't get desired effects with AddForce or AddTorque
+  * ***Do this only if you don't get desired effects with AddForce or AddTorque***
 * Velocity
   * [Script reference: Rigidbody.velocity](https://docs.unity3d.com/ScriptReference/Rigidbody-velocity.html) (Vector3)
   * [Script reference: Rigidbody2D.velocity](https://docs.unity3d.com/ScriptReference/Rigidbody2D-velocity.html) (Vector2)
@@ -114,9 +114,9 @@ math: katex
   * *Edit > Project Settings > Physics (2D) > Gravity*
   * for top-down 2d games, you want gravity to be zero
 
-## Raycasting
-
-* See [2D basics](2d-basics.md#extra-2d-shooting)
+## Extra: Raycasting
+<!-- _backgroundColor: pink -->
+* See [2D basics](2d-basics.md#extra-two-ways-for-2d-shooting)
 
 ## Links
 

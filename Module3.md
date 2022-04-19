@@ -49,6 +49,8 @@ paginate: true
 
 ## Module project: Top-down arcade game
 <!-- _backgroundColor: lightgreen -->
+* Bomberman
+  * Co-op
 * multiple levels!?!
   * level design
 * game over screen

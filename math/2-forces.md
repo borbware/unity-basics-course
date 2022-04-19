@@ -59,7 +59,11 @@ Force vectors can be added together to acquire the total force:
 
 ## Exercise 1. Forces
 <!-- _backgroundColor: Khaki -->
-Create a 3D scene where a player character can push around rigid bodies by applying a force to them. 
+Create a 3D scene where a player character can push around rigid bodies by applying a force to them.
+
+How would you calculate the direction of the force?
+
+***Hint:*** you need to use the concepts of ***distance*** and ***normalization***.
 
 
 ## Reading & Watching

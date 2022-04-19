@@ -23,10 +23,10 @@ math: katex
 * [`OnCollisionEnter`](https://docs.unity3d.com/ScriptReference/Collider.OnCollisionEnter.html) / [`OnCollisionEnter2D`](https://docs.unity3d.com/ScriptReference/Collider2D.OnCollisionEnter2D.html)
   * when collision with another collider starts
 
-* [`OnCollisionExit`](https://docs.unity3d.com/ScriptReference/Collider.OnCollisionExit.html) / [`OnCollisionExit2D`](https://docs.unity3d.com/ScriptReference/Collider2D.OnCollisionExit2D.html)
-  * when collision with another collider starts
 * [`OnCollisionStay`](https://docs.unity3d.com/ScriptReference/Collider.OnCollisionStay.html) / [`OnCollisionStay2D`](https://docs.unity3d.com/ScriptReference/Collider2D.OnCollisionStay2D.html)
   * called every frame a collider is in contact
+* [`OnCollisionExit`](https://docs.unity3d.com/ScriptReference/Collider.OnCollisionExit.html) / [`OnCollisionExit2D`](https://docs.unity3d.com/ScriptReference/Collider2D.OnCollisionExit2D.html)
+  * when collision with another collider ends
 * See the links for code examples!
 
 <!-- _footer: "For more event methods, see [Script Reference: Monobehaviour Messages](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html#Messages)" -->
@@ -34,8 +34,10 @@ math: katex
 ## Triggers
 * Normally, Unity initiates actions using the `OnCollisionEnter` function
 * If collider `IsTrigger`, then it does not stop other colliders, but only detects if something collides with it - no `OnCollisionEnter`!
-  * Collision functions are replaced with [`OnTriggerEnter`](https://docs.unity3d.com/ScriptReference/Collider.OnTriggerEnter.html), [`OnTriggerExit`](https://docs.unity3d.com/ScriptReference/Collider.OnTriggerExit.html), `OnTriggerStay`
+  * Collision functions are replaced with [`OnTriggerEnter`](https://docs.unity3d.com/ScriptReference/Collider.OnTriggerEnter.html), [`OnTriggerExit`](https://docs.unity3d.com/ScriptReference/Collider.OnTriggerExit.html), [`OnTriggerStay`]((https://docs.unity3d.com/ScriptReference/Collider.OnTriggerExit.html))
   * Guess the 2D versions...
+
+## Collider vs Collision
 
 ## Exercise 1. Collectibles
 
