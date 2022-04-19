@@ -64,6 +64,20 @@ paginate: true
   * Read-only!
   * [Script Reference: lossyScale](https://docs.unity3d.com/ScriptReference/Transform-lossyScale.html)
 
+## Local axes
+
+* `transform.up`, `transform.right` and `transform.forward` refer to the ***local axes*** of the GameObject: green, red and blue, respectively
+  * Global versions are `Vector3.up`, `Vector3.right` and `Vector3.forward` 
+* you can use them to e.g., rotate the GameObject around these axes:
+    ```c#
+    if (Input.GetKey(KeyCode.LeftAlt))
+        transform.RotateAround(
+            transform.position,  // rotates along the GameObject's origin point...
+            transform.right,     // around the GameObject's red axis... 
+            180 * Time.deltaTime // with a rate of 180 degrees per second.
+        );  
+  ```
+
 ## Exercise 1.
 <!-- _backgroundColor: Khaki -->
 

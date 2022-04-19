@@ -26,6 +26,7 @@ paginate: true
   * won't be covered on this course
 ## Keyboard input
 
+* uses [Keycodes](https://docs.unity3d.com/ScriptReference/KeyCode.html)
 * [`Input.GetKeyDown(KeyCode.Space)`](https://docs.unity3d.com/ScriptReference/Input.GetKeyDown.html)
   * returns `true` for one frame when pressed down 
   * Good for jumps, navigating the UI, other ***discrete*** actions 
