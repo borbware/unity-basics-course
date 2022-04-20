@@ -134,6 +134,12 @@ Continue the exercise from [Git Basics](1-git-basics.md) or create a new reposit
 
 `git push`
 
+## Collaboration in Unity
+
+* The most important rule: ***don't work on the same thing simultaneously or it's chaos***
+* Be sure to communicate about ***scene ownership***:
+* Most Unity work is sent to Scene Owners as prefabs
+
 ## Exercise 2. Branching team effort
 <!-- _backgroundColor: Khaki -->
 * Work as a group for this assignment.

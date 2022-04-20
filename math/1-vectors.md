@@ -166,12 +166,12 @@ Calculate distance between two GameObjects (player and enemy).
 If the distance is smaller than a threshold value, 
 a) change the color of the static GameObject (and set the color back to default when you're no more on the range)
 b) make the enemy shoot at player
-c) move the static GameObject farther away from the GameObject along the straightest possible path
+c) move the static GameObject farther away from the GameObject along the shortest possible path
 
 
 ## Script reference
 
-* Most of the examples apply to both Vector2 and Vector3 classes.
+* Most of the previous examples apply to both Vector2 and Vector3 classes.
 * Vector2
   * [Script Reference: Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html)
 * Vector3

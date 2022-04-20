@@ -54,8 +54,6 @@ paginate: true
   * `transform.eulerAngles`, global rotation as Euler angles (Vector3)
   * `transform.localEulerAngles`, local rotation as Euler angles (Vector3)
 
-
-
 ### Scale
 
 * `transform.localScale`

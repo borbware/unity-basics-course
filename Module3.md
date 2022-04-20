@@ -8,51 +8,40 @@ paginate: true
 
 ## Module schedule
 
+## Module 3 Schedule
+
+
+
+
+| Day 1 | Day 2 | Day 3 | Day 4 | Day 5 |
+|-------|-------|-------|-------|-------|
+| 25.4. MA | 26.4. TI | 27.4. KE | 28.4. TO | 29.4. PE |
+| UC: [2D animation](unity-cookbook/2d-animation.md) | P0: [Game Programming](programming/0-game-programming.md) | AI & Pathfinding | [Particle system](unity-cookbook/particle-system.md) |  Playtesting |
+| UC: [Tilemapping](unity-cookbook/tilemap.md) | P2: [Lists and Loops](programming/2-lists-loops.md) | M0: [Useful math](math/0-mathf.md) | | Wrap-up |
+| Moving on a grid
+
+[Unity answers: Moving on a grid](https://answers.unity.com/questions/1760651/how-to-make-a-grid-movement-tile-per-tile-1.html)
+
+---
 
 * Day 1
-  * UC: [2D art](unity-cookbook/2d-art.md)
-  * UC: Data (scene management)
   * UC: Animation state machine
 * Day 2:
-  * Programming 3: Classes and methods
+
 * Day 3:
-  * [Math 2: Forces](math/2-forces.md)
-  * [Math 4: Interpolation](math/4-interpolation.md)
-  * [Building](unity-cookbook/building.md)
+
 * Day 4:
 * Day 5: WP Wrap-up
 
-## Constraints
-
-## Scene management
-
-* Moving between scenes
-## Sprites
-* Sprite Animation
-	* Window > Animation > Animation
-	* Animation Controller
-	* Animator
-	* Mecanim State Machine
-
-
-## Collaboration in Unity
-
-* most important rule: don't work on the same thing simultaneously or it's chaos time
-  * Be sure to communicate about scene ownership
-  * Most Unity work is sent to Scene Owners as prefabs
 
 
 
-## Exporting
-* Building an executable
-
-
-## Module project: Top-down arcade game
+## Module project: Bomberman
 <!-- _backgroundColor: lightgreen -->
-* Bomberman
-  * Co-op
-* multiple levels!?!
-  * level design
+* Enemies with AI
+* Power-ups
+* Co-op
+* Tile-based level design
 * game over screen
 * active enemies
 	* träkkää pelaajaa ja alkaa seurata/ampua kohti kun rangella

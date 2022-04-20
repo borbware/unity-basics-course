@@ -5,7 +5,7 @@ paginate: true
 <!-- headingDivider: 3 -->
 <!-- class: default -->
 
-# 2D assets
+# 2D animation
 
 ## Sprite-based art
 
@@ -19,6 +19,13 @@ paginate: true
 * Components needed
   * Sprite Renderer
   * Animator
+
+## Sprites
+* Sprite Animation
+	* Window > Animation > Animation
+	* Animation Controller
+	* Animator
+	* Mecanim State Machine
 
 ### Animator screen
 * State Machine
@@ -41,12 +48,3 @@ paginate: true
   * https://hackernoon.com/making-your-pixel-art-game-look-pixel-perfect-in-unity3d-3534963cad1d
 * pixel perfect camera
   * https://docs.unity3d.com/Packages/com.unity.2d.pixel-perfect@1.0/manual/index.html
-## Tilemaps
-
-* [Brackeys video: Tilemaps](https://www.youtube.com/watch?v=ryISV_nH8qw)
-  * Autotiling
-    * 2d extras
-    * Rule tile
-    * https://www.youtube.com/watch?v=nfjAznD_MaU
-* Tilemap collider 2d
-
