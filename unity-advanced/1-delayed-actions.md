@@ -6,6 +6,10 @@ paginate: true
 <!-- class: default -->
 # 1. Delayed actions
 
+## Doing something every x seconds
+
+xx add timer example
+
 ## Invoke
 * if you want to execute something _after_ a given time delay. 
   ```c#
