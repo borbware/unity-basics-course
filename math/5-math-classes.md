@@ -37,19 +37,4 @@
 * never adjust Quaternion components independently, use ready-made functions from the Quaternion class
 * `transform.rotation = Quaternion.LookRotation(target.position - transform.position)`
 * `transform.rotation = Quaternion.LookRotation(target.position - transform.position, new Vector3.Up)`
-### `Quaternion.Slerp`
-    ```c#
-    Vector3 relativePos = 
-      target.position
-      + new Vector3(0,.5f,0)
-      - transform.position;
 
-    transform.localRotation = 
-      Quaternion.Slerp(
-        transform.localRotation,
-        Quaternion.Lookrotation(relativePos),
-        Time.deltaTime
-      );
-
-    transform.Translate(0,0, 3 * Time.deltaTime);
-    ```

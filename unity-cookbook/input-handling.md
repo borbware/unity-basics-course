@@ -10,7 +10,7 @@ paginate: true
 ## The two ways: Input Manager
 * [Manual: Input](https://docs.unity3d.com/Manual/Input.html)
 * There are two ways to get input in Unity
-* The legacy **Input Manager**
+* The legacy [Input Manager](https://docs.unity3d.com/Manual/class-InputManager.html)
   * uses the Input class
   * uses Directinput
   * works almost always
@@ -18,9 +18,8 @@ paginate: true
   * easier to setup -> this is the one we'll be using
 
 ## The two ways: Input system
-* The new **Input System**
-  * [Packages: Input system](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.3/manual/index.html)
-  * needs to be installed as a separate package
+* The new [Input System]((https://docs.unity3d.com/Packages/com.unity.inputsystem@1.3/manual/index.html))
+  * This needs to be installed as a separate package
   * action-based
   * uses XInput
   * won't be covered on this course
@@ -58,7 +57,7 @@ paginate: true
   * It will duplicate the last entry in the list. Oh wow
 * Use [this link](https://ritchielozada.com/2016/01/16/part-11-using-an-xbox-one-controller-with-unity-on-windows-10/) to see which button numbers correspond to which controller buttons
   * For example, `joystick button 0` is the Xbox button A
- 
+
 ## Analog input
 
 * [Script Reference: Input.GetAxis](https://docs.unity3d.com/ScriptReference/Input.GetAxis.html)
@@ -134,3 +133,11 @@ Create a top-down player character with a sprite renderer that can
     }
   }
   ```
+
+## Extra: Multiplayer input
+
+* With the input table, you can assign the joystick index for every input with *Joy Num*
+  * -> For multiplayer games, you need to create new entries for other players
+  * ***ALSO:*** you need to set the positive button to "joystick **2** button 0" etc
+* The new Input System handles this a bit more elegantly, see this tutorial:
+  * [Madwomb: Unity Local Multi-player](http://madwomb.com/tutorials/GameDesign_UnityLocalMultiplayer.html)

@@ -37,7 +37,9 @@ paginate: true
 	* Mecanim State Machine
 
 ### Animator screen
-* State Machine
+
+* [Madwomb: Mecanic - Animation Controllers and State Machines](http://madwomb.com/tutorials/GameDesign_UnityMecanim.html)
+* Mecanim State Machine
 * Transitions
   * Exit time
   * Can Transition To Self

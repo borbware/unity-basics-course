@@ -48,6 +48,21 @@ After pressing a button once, lerp GameObject's color from red to blue.
   * Vector3.Lerp
   * Quaternion.Slerp
 
+### `Quaternion.Slerp`
+
+```c#
+Vector3 relativePos = target.position + new Vector3(0,.5f,0) - transform.position;
+
+transform.localRotation = 
+  Quaternion.Slerp(
+    transform.localRotation,
+    Quaternion.Lookrotation(relativePos),
+    Time.deltaTime
+  );
+
+transform.Translate(0,0, 3 * Time.deltaTime);
+```
+
 ## Other interpolation stuff...?
 
 * Mathf:
