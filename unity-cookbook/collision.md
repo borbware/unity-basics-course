@@ -37,7 +37,13 @@ math: katex
   * Collision functions are replaced with [`OnTriggerEnter`](https://docs.unity3d.com/ScriptReference/Collider.OnTriggerEnter.html), [`OnTriggerExit`](https://docs.unity3d.com/ScriptReference/Collider.OnTriggerExit.html), [`OnTriggerStay`]((https://docs.unity3d.com/ScriptReference/Collider.OnTriggerExit.html))
   * Guess the 2D versions...
 
-## Collider vs Collision
+## Collider2D vs Collision2D
+
+* Trigger callback functions use [`Collider2D` class](https://docs.unity3d.com/ScriptReference/Collider2D.html) as their argument
+* Collision callback functions use [`Collision2D` class](https://docs.unity3d.com/ScriptReference/Collision2D.html)
+  * Collider can actually be found inside the Collision2D class: access it with `.collider`
+* Most importantly: for both classes, you can access the corresponding gameObject with `.gameObject`
+
 
 ## Exercise 1. Collectibles
 
