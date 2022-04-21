@@ -23,6 +23,8 @@ paginate: true
 * free option: GraphicsGale
 * Hi-res options can also be used
 
+<!-- _footer: "[Building Aseprite from source](https://www.reddit.com/r/PixelArt/comments/i387m1/guide_how_to_build_aseprite_from_source_aseprite/)"-->
+
 ## Sound effects
 
 * bfxr

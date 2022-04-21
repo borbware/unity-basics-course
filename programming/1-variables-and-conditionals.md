@@ -435,5 +435,6 @@ Microsoft's own [C# Reference](https://docs.microsoft.com/en-us/dotnet/csharp/la
 
 Some basics covering the syntax in C# are covered here: 
 
+* [Sepeli ry: C# (In Finnish)](https://sepeliry.github.io/c.html)
 * https://www.tutorialspoint.com/csharp/index.html
 * https://www.w3schools.com/cs/default.asp

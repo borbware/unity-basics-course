@@ -9,8 +9,8 @@ paginate: true
 
 ## Sprite-based art
 
-* http://madwomb.com/tutorials/GameDesign_Unity2Dintro.html
-* https://pavcreations.com/top-down-movement-and-attack-game-mechanics-in-unity/
+* [Madwomb: Basics of Unity 2D](http://madwomb.com/tutorials/GameDesign_Unity2Dintro.html)
+* [Top-down movement in Unity](https://pavcreations.com/top-down-movement-and-attack-game-mechanics-in-unity/)
 
 
 ## 2d animation
@@ -21,7 +21,16 @@ paginate: true
   * Animator
 
 ## Sprites
-* Sprite Animation
+
+* See: Sprite renderer
+
+## Spritesheets
+
+* Importing
+* Slicing
+
+
+## Sprite Animation
 	* Window > Animation > Animation
 	* Animation Controller
 	* Animator
@@ -38,6 +47,22 @@ paginate: true
   * anim.SetFloat("Last_X",PlayerInput.x);
   * anim.SetTrigger("StartWalking"); 
 * Blend trees
+
+## 9-slicing sprites
+
+* [Manual: 9-Slicing your Sprite](https://docs.unity3d.com/Manual/9SliceSprites.html)
+
+## Sprite masks
+
+* [Manual: Sprite masks](https://docs.unity3d.com/Manual/class-SpriteMask.html)
+
+## Sprite Creator
+
+* For creating (placeholder) sprite graphics
+* *Assets > Create > Sprites*
+* [Manual: Sprite Creator](https://docs.unity3d.com/Manual/SpriteCreator.html)
+
+
 ## Pixel art in Unity
 
 

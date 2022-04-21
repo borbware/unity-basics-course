@@ -120,3 +120,7 @@ math: katex
   * ***Clear*** (remove old messages)
   * ***Collapse*** (don't repeat duplicate messages)
   * *$\vdots$ > Log Entry > 1 Line* (show only one line per message)
+
+## Reading
+
+* [Sepeli ry: Unity basics (In Finnish)](https://sepeliry.github.io/unity1.html)

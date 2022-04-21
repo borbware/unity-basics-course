@@ -17,7 +17,7 @@
       * (value, min, max)
     * Repeat, PingPong
     * Ceil, Floor
-
+  * [Mathf.DeltaAngle(a,b)](https://docs.unity3d.com/ScriptReference/Mathf.DeltaAngle.html): Shortest difference between two given angles
 ## Random
 
 ## Debug
