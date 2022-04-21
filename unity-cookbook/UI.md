@@ -97,6 +97,28 @@ paginate: true
   1) Drag your GameObject to *None*
   1) Choose function from list to call when button is clicked
 
+### Updating UI
+
+* You can update the Text fields of a Text component with code:
+```c#
+[SerializeField] Text textComponent;
+...
+  public void setScore(int newScore)
+  {
+      textComponent.text = $"Score: {newScore}";
+  }
+```
+
+### Invoking button press by pressing a controller button
+
+* Use this script to invoke UI button press with a controller even though the UI button wasn't really pressed: 
+```c#
+[SerializeField] Button _button;
+...
+if (Input.ButtonDown("Fire1"))
+  _button.onClick.Invoke();
+```
+
 ## More RectTransform stuff
 
 ### Rect Transform position

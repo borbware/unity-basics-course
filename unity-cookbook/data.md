@@ -35,6 +35,9 @@
 
 ### Saving & Loading
 
+* [Script Reference: PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html)
+* This stores Ints, Floats or Strings... in the Registry :D
+* `PlayerPrefs.SetInt(intValue)`
 
 ## Extra: Resources
 
