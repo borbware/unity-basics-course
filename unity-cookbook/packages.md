@@ -34,12 +34,22 @@ paginate: true
   * for greyboxing 3d levels
 ### 2D extras
   * for faster tilemapping
+
 ### TextMeshPro
   * The better way to make text in Unity
   * [TextMeshPro documentation](http://digitalnativestudios.com/textmeshpro/docs/)
+  * In code:
+    ```c#
+    using TMPro;
+    ...
+    TextMeshProUGUI textComponent;
+    textComponent.text = "asdf";
+    ```
   * Gotchas:
     * To remove the **T** icon from play mode, go to *Gizmos > TextMeshProUGUI* and click on the icon, ***NOT*** the gizmo checkbox
       * [Unity Answers: How to get rid of TextMeshPro's Icon when I'm not selecting it](https://answers.unity.com/questions/1582647/how-to-get-rid-of-textmeshpros-icon-when-im-not-se.html)
+
+
 ### Unity Recorder
   * for marketing: recording video in the Play mode
   * https://docs.unity3d.com/Packages/com.unity.recorder@2.0/manual/index.html

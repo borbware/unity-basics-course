@@ -78,6 +78,25 @@ paginate: true
   * [Mask](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-Mask.html) (& [RectMask2D](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-RectMask2D.html))
 * ***NOTE:*** For drawing images on UI, you need to use the Image component, ***NOT the Sprite Renderer!***
 
+## Functional UI GameObjects
+
+* Button
+* Toggle
+* Slider
+* Scrollbar
+* Dropdown
+* Input Field
+* ...
+
+### Creating functionality with the UI
+
+* Functional UI GameObjects can be connected to your other GameObjects
+* For example, for the ***Button*** GameObject:
+  1) *Inspector > Button Component > On Click()*
+  1) Press "+"
+  1) Drag your GameObject to *None*
+  1) Choose function from list to call when button is clicked
+
 ## More RectTransform stuff
 
 ### Rect Transform position
@@ -118,6 +137,6 @@ See how UI scaling changes when you change the CanvasScaler component settings!
 
 Create a UI with three buttons.
 
-Change the color of the button when it has been pressed!
+Change the color of a GameObject in your scene when the button has been pressed!
 
 Try out setting RectTransform anchor points and see how the UI changes when you change the game resolution in the Game view.
