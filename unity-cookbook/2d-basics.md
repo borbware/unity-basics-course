@@ -67,9 +67,10 @@ paginate: true
 1) Create a .png image file
 2) Add it to your Assets folder
 3) Click it once to see its properties in the Inspector. Set the values:
+   * Set ***Texture type*** to *Sprite (2D and UI)*
    * ***Pixels per unit*** value tells how big the sprite should be on screen
    * If you're using pixelart, you need to take some more things into consideration
-     * See: [Pixelart in Unity](../unity-cookbook/2d-art.md#pixelart-in-unity)
+     * See: [Pixelart in Unity](2d-animation.md#pixelart-in-unity)
 4) Drag it from the Project window into the Sprite field in the Sprite Renderer component
 
 ## Other renderer components
@@ -85,7 +86,7 @@ paginate: true
   * [Sprite Shape Renderer](https://docs.unity3d.com/Manual/class-SpriteShapeRenderer.html)
 
 ## Extra: Two ways for 2D shooting
-<!-- _backgroundColor: pink -->
+<!-- backgroundColor: pink -->
 
 * [Brackeys video: 2D shooting](https://www.youtube.com/watch?v=wkKsl1Mfp5M)
 * For slow bullets: Instantiate a bullet prefab
@@ -95,3 +96,7 @@ paginate: true
     line.transform.up,
     lineDistance);
   ```
+
+## Extra: Moving on a grid
+
+For grid-based movement, see this thread: [Unity answers: Moving on a grid](https://answers.unity.com/questions/1760651/how-to-make-a-grid-movement-tile-per-tile-1.html)
