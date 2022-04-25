@@ -44,6 +44,11 @@ paginate: true
 ## A*
 
 
+## Exercise 0.
+
+Make a point and click character controller:
+* When you click on a walkable spot, make the character walk to it. 
+
 ## Exercise 1.
 
 Create a non-player character that patrols between three points on a 2d top-down area.
