@@ -7,75 +7,128 @@ paginate: true
 
 # 2D animation
 
-## Sprite-based art
 
-* [Madwomb: Basics of Unity 2D](http://madwomb.com/tutorials/GameDesign_Unity2Dintro.html)
-* [Top-down movement in Unity](https://pavcreations.com/top-down-movement-and-attack-game-mechanics-in-unity/)
+## Two ways to 2D character animation
+
+* Sprite sheet animation
+  * Characters are drawn fully, and animated by hand, frame by frame
+  * At best, results in lifelike and beautiful motion
+  * At worst, the animator has to draw everything multiple times
+  * [Learn: Sprite Animation](https://learn.unity.com/tutorial/introduction-to-sprite-animations)
+* Skeletal animation
+  * Characters consists of multiple images connected by bones
+  * At best, varied procedural movement out of a few assets
+  * At worst, stiff and unlifelike motion
+  * [Learn: Skeletal Animation](https://unity.com/features/2danimation)
 
 
-## 2d animation
+## Sprite-based animation
 
+* For sprite basics, see: [2d Basics: Sprite renderer component](2d-basics.md#sprite-renderer-component)
+* Sprite animation can be created with multiple individual png files, or one sprite sheet with multiple animation ***cels***
 * [Brackeys video: 2D animation](https://www.youtube.com/watch?v=hkaysu1Z-N8)
-* Components needed
-  * Sprite Renderer
-  * Animator
+### Creating a new animation
+* Select the GameObject you want to animate
+* Open ***Animation Window***: *Window > Animation > Animation*
+* Click *Create* to create a new animation (.anim) file, or a ***clip***
+  * Good ideas to have separate animation files for *Idle*, *Jumping*, *Running*, etc...
+  * Name the first clip ***Player_Idle***
+* Drag sprites to your Animation timeline
+* Set *Samples* to a lower value to make your new animation less frantic
 
-## Sprites
+---
 
-* See: Sprite renderer
+![](imgs/animation-window.png)
+* Create new clips in the Player_Idle dropdown
 
-## Spritesheets
+## Animator controller
 
-* Importing
-* Slicing
+* When you created new clips, an ***Animator Controller Asset*** was created
+  * [Manual: The Animator Controller Asset](https://docs.unity3d.com/Manual/Animator.html)
+* This can be modified in the ***Animator Controller Window***
+  * [Manual: Animator Controller](https://docs.unity3d.com/Manual/class-AnimatorController.html)
+  * ***Note:*** This was previously known as Mecanim State Machine
+* To actually use the transition rules, your player GameObject needs the Animator component (it's added automatically)
+  * [Manual: Animator Component](https://docs.unity3d.com/Manual/class-Animator.html)
 
+## Animator controller: Usage
 
-## Sprite Animation
-	* Window > Animation > Animation
-	* Animation Controller
-	* Animator
-	* Mecanim State Machine
+![](imgs/animator-states.png
+)
+* In Animator, we can create ***transition rules*** between animation clips
+* *Right click a state > Make Transition*
+* ***Entry*** is the default state: Create an arrow from it to the idle animation!
+* Click on the arrow to edit the transition
 
-### Animator screen
+### Transitions
 
-* [Madwomb: Mecanic - Animation Controllers and State Machines](http://madwomb.com/tutorials/GameDesign_UnityMecanim.html)
-* Mecanim State Machine
-* Transitions
-  * Exit time
+![](imgs/animator-transition-inspector.png)
+
+* Exit time:
+  * Disable to make transition instant
+* Mikä tää oli
   * Can Transition To Self
-  * Transition hell
-* Animation parameters
-  * Controlling with code
-  * anim.SetFloat("Last_X",PlayerInput.x);
-  * anim.SetTrigger("StartWalking"); 
-* Blend trees
 
-## 9-slicing sprites
+### Layers & parameters
+* ***Layers*** and ***parameters*** can be used to control our animation with code
+* Create a new float parameter named *Speed*
+* Go to a transition, and create a new ***condition*** for the parameter 
+  ```c#
+  [SerializeField] Animator anim;
 
-* [Manual: 9-Slicing your Sprite](https://docs.unity3d.com/Manual/9SliceSprites.html)
+  anim.SetFloat("Speed",_rigidbody.velocity.Magnitude);
+  ```
+* `anim.SetTrigger("StartWalking");`
 
-## Sprite masks
+### Extras: Advanced animation states
+<!-- _backgroundColor: pink -->
 
-* [Manual: Sprite masks](https://docs.unity3d.com/Manual/class-SpriteMask.html)
+* In real-world, usage, animator states can be way more comples
+  * This can lead to so-called transition hell
+* [Manual: Animation State Machines](https://docs.unity3d.com/Manual/AnimationStateMachines.html)
+* [Manual: Blend trees](https://docs.unity3d.com/Manual/class-BlendTree.html)
 
 ## Extra: UI animations
+<!-- _backgroundColor: pink -->
 
 * [Packages: Unity UI: Animation integration](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIAnimationIntegration.html)
 
-## Extra: Sprite Creator
+## Extras
+<!-- _backgroundColor: pink -->
 
-* For creating (placeholder) sprite graphics
-* *Assets > Create > Sprites*
-* [Manual: Sprite Creator](https://docs.unity3d.com/Manual/SpriteCreator.html)
+* 9-Slicing
+  * [Manual: 9-Slicing your Sprite](https://docs.unity3d.com/Manual/9SliceSprites.html)
+* Sprite Masks
+  * [Manual: Sprite masks](https://docs.unity3d.com/Manual/class-SpriteMask.html)
+* Sprite Creator
+  * For creating (placeholder) sprite graphics
+  * *Assets > Create > Sprites*
+  * [Manual: Sprite Creator](https://docs.unity3d.com/Manual/SpriteCreator.html)
 
+## Extras: Pixel art in Unity
+<!-- _backgroundColor: pink -->
 
-## Extra: Pixel art in Unity
+* Sprite import:
+  * Texture type: Sprite (2D and UI)
+  * Pixels Per Unit: Tile size (e.g., 32)
+  * Filter Mode: Point (No filter)
+  * Compression: None
+* *Edit > Project Settings > Quality > Anti-aliasing: Disabled*
 
+---
+<!-- _backgroundColor: pink -->
 
-
-
-* preparing for pixelart
+* Preparing for pixelart
   * https://twitter.com/Davitsu/status/956499799133573120
   * https://hackernoon.com/making-your-pixel-art-game-look-pixel-perfect-in-unity3d-3534963cad1d
-* pixel perfect camera
+* Pixel perfect camera
   * https://docs.unity3d.com/Packages/com.unity.2d.pixel-perfect@1.0/manual/index.html
+
+## Learning 
+
+* Top-down movement with animation
+  * [Top-down movement in Unity](https://pavcreations.com/top-down-movement-and-attack-game-mechanics-in-unity/)
+  * [Brackeys video: Top down movement](https://www.youtube.com/watch?v=whzomFgjT50)
+
+* [Madwomb: Basics of Unity 2D](http://madwomb.com/tutorials/GameDesign_Unity2Dintro.html)
+* [Madwomb: Mecanim - Animation Controllers and State Machines](http://madwomb.com/tutorials/GameDesign_UnityMecanim.html)

@@ -12,7 +12,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |---|-------------------------------------------------------------------|----:|
 | 1 | [Module 1](Module1.md)												| 🌔 |
 | 2 | [Module 2](Module2.md)												| 🌔 |
-| 3 | [Module 3](Module3.md)												| 🌒 |
+| 3 | [Module 3](Module3.md)												| 🌓 |
 | 4 | [Module 4](Module4.md)												| 🌑 |
 
 |   | [Stage 2](Stage2.md)						  				 	  	|     | 
@@ -28,7 +28,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   | Programming										  				 	|     | 
 |---|-----------------------------------------------------------------------|----:|
-| 0 | [Introduction to Game Programming](programming/0-game-programming.md)   | 🌓 |
+| 0 | [Introduction to Game Programming](programming/0-game-programming.md)   | 🌕 |
 | 1 | [Variables and Conditionals](programming/1-variables-and-conditionals.md)| 🌕 |
 | 2 | [Lists and Loops](programming/2-lists-loops.md)						| 🌕 |
 | 3 | [Classes and Methods](programming/3-classes-methods.md)			 	| 🌓 |
@@ -40,7 +40,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 1 | [Vectors](math/1-vectors.md)										| 🌔 |
 | 2 | [Forces](math/2-forces.md)										| 🌔 |
 | 3 | [Sinewaves](math/3-sinewaves.md)									| 🌒 |
-| 4 | [Interpolation](math/4-interpolation.md)							| 🌒 |
+| 4 | [Interpolation](math/4-interpolation.md)							| 🌓 |
 |   | [Unity Math classes](math/5-math-classes.md)						| 🌒 |
 |   | [Randomness](math/6-math-classes.md)								| 🌑 |
 
@@ -70,17 +70,18 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |   | [Transform](unity-cookbook/transform.md)							| 🌔 |
 |   | [Collision](unity-cookbook/collision.md)							| 🌔 |
 |   | [Physics](unity-cookbook/physics.md)								| 🌔 |
-|   | [UI](unity-cookbook/UI.md)										| 🌓 |
-| 2 |																	|     |
-|   | [2D art](unity-cookbook/2d-art.md)								| 🌒 |
-|   | [3D Platforming](unity-cookbook/3dplatforming.md)					| 🌒 |
-|   | [Animation Curve](unity-cookbook/animation-curve.md)				| 🌒 |
+|   | [UI](unity-cookbook/UI.md)										| 🌔 |
 |   | [Audio](unity-cookbook/audio.md)									| 🌔 |
+| 2 |																	|     |
+|   | [Tilemaps](unity-cookbook/tilemaps.md)							| 🌔 |
+|   | [2D animation](unity-cookbook/2d-animation.md)					| 🌒 |
+|   | [Pathfinding](unity-cookbook/pathfinding.md)						| 🌒 |
+|   | [3D Platforming](unity-cookbook/3dplatforming.md)					| 🌒 |
+|   | [Animation Curve](unity-cookbook/animation-curve.md)				| 🌓 |
 |   | [Building](unity-cookbook/building.md)							| 🌑 |
 |   | [Data flow](unity-cookbook/data.md)								| 🌒 |
 |   | [Packages](unity-cookbook/packages.md)							| 🌑 |
 |   | [Particle system](unity-cookbook/particle-system.md)				| 🌑 |
-|   | [Pathfinding](unity-cookbook/pathfinding.md)						| 🌒 |
 |   | [Searching](unity-cookbook/searching.md)							| 🌓 |
 
 
