@@ -78,7 +78,21 @@ paginate: true
   * [Mask](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-Mask.html) (& [RectMask2D](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-RectMask2D.html))
 * ***NOTE:*** For drawing images on UI, you need to use the Image component, ***NOT the Sprite Renderer!***
 
-## Functional UI GameObjects
+### Updating UI
+
+* You can update the text fields of a Text component with code:
+```c#
+[SerializeField] Text textComponent;
+...
+  public void setScore(int newScore)
+  {
+      textComponent.text = $"Score: {newScore}";
+  }
+```
+
+## Interaction components
+
+* [Packages: Unity UI: Interaction components](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIInteractionComponents.html)
 
 * Button
 * Toggle
@@ -97,18 +111,6 @@ paginate: true
   1) Drag your GameObject to *None*
   1) Choose function from list to call when button is clicked
 
-### Updating UI
-
-* You can update the Text fields of a Text component with code:
-```c#
-[SerializeField] Text textComponent;
-...
-  public void setScore(int newScore)
-  {
-      textComponent.text = $"Score: {newScore}";
-  }
-```
-
 ### Invoking button press by pressing a controller button
 
 * Use this script to invoke UI button press with a controller even though the UI button wasn't really pressed: 
@@ -118,6 +120,16 @@ paginate: true
 if (Input.ButtonDown("Fire1"))
   _button.onClick.Invoke();
 ```
+
+### Arrow keys menu
+* Event System GameObject > Event System Component > First Selected
+* [Video: Menu Navigation with Arrow Keys in Unity | Easy Unity Tutorial](https://www.youtube.com/watch?v=8mFWJwxV3ps)
+```c#
+using EventSystem
+...
+EventSystem.current.SetSelectedGameObject(myButton);
+```
+
 
 ## More RectTransform stuff
 

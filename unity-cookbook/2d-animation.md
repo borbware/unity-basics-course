@@ -58,14 +58,18 @@ paginate: true
 
 * [Manual: Sprite masks](https://docs.unity3d.com/Manual/class-SpriteMask.html)
 
-## Sprite Creator
+## Extra: UI animations
+
+* [Packages: Unity UI: Animation integration](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIAnimationIntegration.html)
+
+## Extra: Sprite Creator
 
 * For creating (placeholder) sprite graphics
 * *Assets > Create > Sprites*
 * [Manual: Sprite Creator](https://docs.unity3d.com/Manual/SpriteCreator.html)
 
 
-## Pixel art in Unity
+## Extra: Pixel art in Unity
 
 
 
