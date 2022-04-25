@@ -148,7 +148,7 @@ Current: 1
 
 Create a loop whose number of iterations is set in an integer variable `numberOfEnemies`.
 
-Run a loop that many times and write to console a message `Creating enemy 1`, `Creating enemy 2`, etc.
+Run a loop that many times and write the message `Creating enemy 1`, `Creating enemy 2`, etc. to console.
 
 ## Exercise 2. Loops 2
 <!-- _backgroundColor: Khaki -->
