@@ -19,7 +19,6 @@ paginate: true
 
 
 [C# Docs: Casting and type conversions](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
-() 
 
 ## Generics
 
@@ -37,10 +36,9 @@ public class EnumScript : MonoBehaviour
 {
     enum Direction {North, East, South, West};
 
-        void Start () 
+    void Start () 
     {
         Direction myDirection;
-        
         myDirection = Direction.North;
     }
     
@@ -54,7 +52,6 @@ public class EnumScript : MonoBehaviour
             dir = Direction.West;
         else if(dir == Direction.West)
             dir = Direction.East;
-        
         return dir;     
     }
 }

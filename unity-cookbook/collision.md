@@ -44,6 +44,11 @@ math: katex
   * Collider can actually be found inside the Collision2D class: access it with `.collider`
 * Most importantly: for both classes, you can access the corresponding gameObject with `.gameObject`
 
+## Checking collision in Update
+
+* The callback functions are handy, but sometimes you want to check collision inside an update function
+* For that, you need the overlap collider
+  * [Script Reference: Overlap Collider](https://docs.unity3d.com/ScriptReference/Collider2D.OverlapCollider.html)
 
 ## Exercise 1. Collectibles
 

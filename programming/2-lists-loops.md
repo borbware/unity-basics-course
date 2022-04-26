@@ -18,7 +18,6 @@ paginate: true
   * For
   * Foreach
 
-
 ## `while` loop
 * while loop keeps executing its code block as long as the condition in its statement is true:
 ```c#
@@ -123,12 +122,12 @@ Current: 1
 
 * Loop inside a loop is often used for generating or going through two-dimensional data
   ```c#
-  int columns = 3;
-  int rows = 4;
+  int rows = 3;
+  int columns = 4;
 
-  for (int i = 0; i < columns; i++)
+  for (int i = 0; i < rows; i++)
   {
-      for (int j = 0; j < rows; j++)
+      for (int j = 0; j < columns; j++)
       {
           Debug.Log("(" + j.ToString() + "," + i.ToString() + ")");
       }
@@ -158,6 +157,14 @@ Suppose you have a given number of collectibles in a level.
 You want a given percentage of them, say, 10%, to be shiny collectibles.
 
 Create a loop that runs until this condition is met, and prints into console `Converted collectible 1 to shiny`.
+
+## Exercise 3. Field of Cubes
+<!-- _backgroundColor: Khaki -->
+
+Create a loop that instantiates a 8 * 8 field of cubes on a plane.
+
+***Extra:*** If there's a cube already in the location, add an exception to NOT add a cube there!
+
 # Arrays
 
 ## Arrays
@@ -193,6 +200,10 @@ Create a loop that runs until this condition is met, and prints into console `Co
 * The same works without specifying the length in the brackets:
   ```c#
   double[] balances = new double[] { 1.3, 200.3, 9332.14 };
+  ```
+* ...and without the `new double[]` part, as well:
+  ```c#
+  double[] balances = { 1.3, 200.3, 9332.14 };
   ```
 ### Arrays: Unity example
 
@@ -255,9 +266,7 @@ void Start ()
   * `list.Contains(item)` checks if `item` is in the list & returns boolean
   * `list.Find(predicate)` finds an item from the list that matches the given predicate. More about it later!
 
-
-
-## Exercise 3. Enemy names
+## Exercise 4. Enemy names
 <!-- _backgroundColor: Khaki -->
 
 Create a list of names for enemy characters.
@@ -273,8 +282,6 @@ Print to console `There are [X] enemy names.`
    * prints out `Removed [enemyName].`
 
 3. Print out all the names from the list that start with the letter "S".
-
-
 
 ## Iterating through an array with `for`
 ```c#
@@ -359,7 +366,7 @@ for(int i = 0; i < starters.Count; i++)
     ```
 
 <!-- _footer: "[See more about value vs reference types in Chapter 3](3-classes-methods.md#reference-type-vs-value-type)" -->
-## Exercise 4. Looping through
+## Exercise 5. Looping through
 <!-- _backgroundColor: Khaki -->
 Loop through the starters array, and print the starter and its number like this:
 `#001 Bulbasaur`
@@ -367,7 +374,7 @@ Loop through the starters array, and print the starter and its number like this:
 Now, edit the strings with a loop to include this number as well. 
 
 
-## Exercise 5. Creative data
+## Exercise 6. Creative data
 <!-- _backgroundColor: Khaki -->
 
 Create two-dimensional data structure with x,y coordinates.
@@ -376,7 +383,7 @@ Create a function that creates new enemy gameobjects in the scene in these coord
 
 Also, create a function `newCoordinate(x, y)` that can be used to add new coordinates into the data structure.
 
-## Exercise 6. List of lights
+## Exercise 7. List of lights
 <!-- _backgroundColor: Khaki -->
 
 Continue exercise 1 from [Scripting gameobjects](../unity-basics/4-scripting-gameobjects.md).
