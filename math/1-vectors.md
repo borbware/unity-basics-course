@@ -161,7 +161,7 @@ Vector2 C = 2 * A;
   myQuaternion *= Quaternion.Euler(0, 0, 90);
   ```
 
-* ***Note:*** the Transform class has many rotation methods available, see [Transform Class: Rotation](../unity-cookbook/transform.md#rotation)
+* ***Note:*** the Transform and Quaternion classes have many rotation methods available, see [Transform Class: Rotation](../unity-cookbook/transform.md#rotation)
 
 ## Note about distance
 

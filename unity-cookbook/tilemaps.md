@@ -46,8 +46,13 @@ paginate: true
 
 ## Collision
 
-* To add collision to your tilemap layer, just add the ***Tilemap Collider 2D*** component to it
-* [Manual: Tilemap collider 2d](https://docs.unity3d.com/Manual/class-TilemapCollider2D.html)
+* To add collision to your tilemap layer, just add the [Tilemap Collider 2D component]((https://docs.unity3d.com/Manual/class-TilemapCollider2D.html))
+* Collision is decided automatically by Unity from the tile sprite
+  * You can change tile collision tile by tile basis:
+  * (*Open the Sprite from Project window > Sprite editor > Custom Physics Shape* )
+  ![](imgs/sprite-editor-dropdown.png)
+* If you want to only have square grid collisions, you can just use a separate layer for collisions with square tiles on it
+  * Then, disable the Tilemap Renderer component
 
 ## 2D Extras
 
@@ -58,7 +63,7 @@ paginate: true
   * Packages dropdown: Unity Registry
 ## 2D extras: Autotiling
 
-* ***Autotiling*** is a technique for creating 2d levels faster with ***rule tiles***
+* ***Autotiling*** is a technique for creating 2d levels faster with ***Rule tiles***
 * After installing 2D extras you can follow this:
   * [How To Use Auto Tiling in Unity 2020](https://www.youtube.com/watch?v=nfjAznD_MaU)
 * Open Project Window and right click, then choose *Create > 2D > Tiles > Rule Tile*
@@ -71,21 +76,29 @@ paginate: true
 
 ![](imgs/autotiling.png)
 
-## 2d extras: Animated tile
-<!-- backgroundColor: pink -->
+## 2D extras: Animated tile
 
 * Use the Animated Tile to create tiles with animations in them.
+  * Great for waterfalls, animated torches etc. in the background
   * *Create > 2D > Tiles > Animated Tile* 
+  * Drag sprites to the tile in the Inspector
+  * Set animation speed (if you want the speed to always be the same, set the minimum and maximum speed to a same value)
+  * Drag the newly created animated tile from Project window to Tile Palette
+    * Now you can draw with the animated tile!
 
+## 2D extras: GameObject tile
+
+* Todo later
 
 ## Exercise 1. A tiled level
 <!-- _backgroundColor: Khaki -->
 
 Import a tilemap from an existing sprite sheet. Create a tiny level out of your tile assets!
 
-
 ## GameObject on a grid
 
+* ***Note:*** If snapping to the grid is your concern, you're better off using the GameObject tile
+* If you don't want to do that, here's the guide:
 * To snap a player character to a grid, you have two options:
   a) Move the grid to position (0.5, 0.5)
   b) Make the player's sprite renderer a child GameObject, and move it to coordinates (0.5,-0.5,0)

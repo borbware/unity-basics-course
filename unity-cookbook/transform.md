@@ -47,6 +47,14 @@ paginate: true
     if(Input.GetKey(KeyCode.RightArrow))
       transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
     ```
+### 2D rotation...?
+
+* 
+* Instead, use this:
+  ```c#
+  transform.right = target.transform.position - transform.position;
+  ```
+
 ---
 * Rotation fields
   * `transform.rotation`, global rotation as a Quaternion
@@ -80,3 +88,25 @@ paginate: true
 <!-- _backgroundColor: Khaki -->
 
 Make a child GameObject rotate around its parent.
+
+### Extra: Look towards a point, 3D
+<!-- backgroundColor: pink -->
+
+* To ***instantly*** rotate a vector (not necessarily a transform!) so that it points to a given direction, you can use [Quaternion.LookRotation](https://docs.unity3d.com/ScriptReference/Quaternion.LookRotation.html) 
+* To ***slowly*** rotate towards a target, there are two methods available:
+  * If you need to manipulate position vectors: [Vector3.RotateTowards](https://docs.unity3d.com/ScriptReference/Vector3.RotateTowards.html)
+  * If you need to manipulate rotation quaternions: [Quaternion.RotateTowards](https://docs.unity3d.com/ScriptReference/Quaternion.RotateTowards.html)
+<!-- _footer: "https://forum.unity.com/threads/look-rotation-2d-equivalent.611044/" -->
+### Extra: Look towards a point, 2D
+
+* The methods described in the previous slide do not (directly) work in 2D
+* Even `transform.LookAt(Transform target)` does not work, because it aligns the `transform.forward` axis towards the target, which is the local `z` axis - the one that points UP in 2D games!
+* Instead, we want to align the `transform.right` axis towards the target:
+  ```c#
+  transform.right = target.transform.position - transform.position;
+  ```
+  (or if you want to use angles:)
+  ```c#
+  float angle = Mathf.Atan2(target.transform.position.y, target.transform.position.x) * Mathf.Rad2Deg;
+  transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+  ```

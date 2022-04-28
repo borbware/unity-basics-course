@@ -4,7 +4,19 @@ paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: default -->
-# 1. Delayed actions
+
+# 1. Actions and delays
+
+## Sending messages
+
+* [Script Reference: SendMessage](https://docs.unity3d.com/ScriptReference/GameObject.SendMessage.html)
+* For invoking a method in a GameObject
+  ```c#
+  // Calls the function ApplyDamage with a value of 5
+  // Every script attached to the game object
+  // that has an ApplyDamage function will be called.
+  gameObject.SendMessage("ApplyDamage", 5.0);
+  ```
 
 ## Doing something every x seconds
 

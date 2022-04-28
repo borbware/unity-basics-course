@@ -4,6 +4,7 @@ paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: default -->
+
 # 3. Scripting GameObjects
 
 ## The GameObject class
@@ -197,18 +198,6 @@ paginate: true
 * For sorting 2D sprites
   * "which goes on top of which"
   * act kind of like Photoshop layers
-
-## Sending messages
-
-* [Script Reference: SendMessage](https://docs.unity3d.com/ScriptReference/GameObject.SendMessage.html)
-* For invoking a method in a GameObject
-  ```c#
-  // Calls the function ApplyDamage with a value of 5
-  // Every script attached to the game object
-  // that has an ApplyDamage function will be called.
-  gameObject.SendMessage("ApplyDamage", 5.0);
-  ```
-
 
 ## About script reusability
 
