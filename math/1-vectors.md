@@ -150,7 +150,18 @@ Vector2 C = 2 * A;
 
 ### Rotating a vector
 
-* See: [Transform Class: Rotation](../unity-cookbook/transform.md#rotation)
+* In Unity, rotation is represented by [Quaternions](5-math-classes.md#quaternion)
+* To rotate a vector by a given angle, you can do a ***Quaternion rotation operation***:
+  ```c#
+  Vector3 rotatedVector = Quaternion.Euler(0, 0, 90) * originalVector;
+  ```
+  * This isn't a regular multiplication, so do note that Quaternion.Euler has to be on the ***left side*** of the vector.
+* To rotate a Quaternion:
+  ```c#
+  myQuaternion *= Quaternion.Euler(0, 0, 90);
+  ```
+
+* ***Note:*** the Transform class has many rotation methods available, see [Transform Class: Rotation](../unity-cookbook/transform.md#rotation)
 
 ## Note about distance
 

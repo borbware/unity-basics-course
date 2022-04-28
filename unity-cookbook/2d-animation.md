@@ -66,8 +66,6 @@ paginate: true
 
 * Exit time:
   * Disable to make transition instant
-* Mikä tää oli
-  * Can Transition To Self
 
 ### Layers & parameters
 * ***Layers*** and ***parameters*** can be used to control our animation with code

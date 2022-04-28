@@ -37,16 +37,19 @@ paginate: true
 
 * ***CTRL+SHIFT+F*** find from all files
 * ***CTRL+SHIFT+H*** find and replace from all files
-* ***CTRL+SHIFT+UP/DOWN*** move code line
-* ***CTRL+SHIFT+D*** duplicate line
+* ***ALT+UP/DOWN*** move code line
 * ***CTRL+Ö*** for showing/hiding terminal
 * ***CTRL+.*** for auto-"using" / auto-creating missing functions
+* ***CTRL+K***, then ***CTRL+C*** comment selection
+* ***CTRL+K***, then ***CTRL+U*** uncomment selection
+### More shortcuts (not default)
 * ***CTRL+TAB*** / ***CTRL+SHIFT+TAB*** 
   * *View: Open Next/Previous Recently Used Editor*
   * By default, these shortcuts open the recently used tab, and it can be confusing
   * You can change the behaviour in *Preferences > Keyboard Shortcuts*
   * Set behaviour to *View: Open Next Editor* / *View: Open Previous Editor*
-  
+
+* ***CTRL+SHIFT+D*** copy line down (not by default, change to this if you like)
 ## C# tips
 
 * ***F2***: Rename variable and automatically update references

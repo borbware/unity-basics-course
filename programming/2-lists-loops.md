@@ -232,7 +232,7 @@ void Start ()
   };
   Debug.Log(letters[1, 3]);       // Outputs "h"
   ```
-
+* ***Note:*** These do not show up in Unity's inspector
 # Lists
 
 ## Lists
@@ -248,6 +248,8 @@ void Start ()
   
   List<int> userIds = new List<int>();
   ```
+* ***Note:*** you can't call new List<int>() outside a method!
+
 * Value assignment:
   ```c#
   userIds[0] = 22;
@@ -314,6 +316,11 @@ for(int i = 0; i < starters.Count; i++)
 }
 ```
 * note: lists use `.Count` instead of `.Length`!
+
+## Reverse for loop
+
+* forr
+* for deleting stuff from a list
 
 ## Better iteration with `foreach`
 
