@@ -28,6 +28,8 @@ paginate: true
 * Sprite animation can be created with multiple individual png files, or one sprite sheet with multiple animation ***cels***
 * [Brackeys video: 2D animation](https://www.youtube.com/watch?v=hkaysu1Z-N8)
 ### Creating a new animation
+
+* [Manual: Creating a new Animation Clip](https://docs.unity3d.com/Manual/animeditor-CreatingANewAnimationClip.html)
 * Select the GameObject you want to animate
 * Open ***Animation Window***: *Window > Animation > Animation*
 * Click *Create* to create a new animation (.anim) file, or a ***clip***
@@ -56,6 +58,8 @@ paginate: true
 * Unity Animation State Machine can seem daunting if you're not familiar with the concept of a State Machine
 * Luckily, the Manual has good resources about the animation state machine 
 * [Manual: State Machine Basics](https://docs.unity3d.com/Manual/StateMachineBasics.html)
+* Also, note that at its current state, the animator window can be very janky. If you e.g. cannot move the states around, set the inspector into Debug mode
+  * *Inspector window > Three dots in the top right corner > Debug*
 
 ## Animator controller: Usage
 
@@ -105,11 +109,14 @@ paginate: true
 
 ### Animation Events
 
-[Manual: Using Animation Events](https://docs.unity3d.com/Manual/script-AnimationWindowEvent.html)
+* [Manual: Using Animation Events](https://docs.unity3d.com/Manual/script-AnimationWindowEvent.html)
+* You can add animation events to call a function in a specific point of an animation
 
 ### State machine behaviour scripts
 
-[Manual: State Machine Behaviours](https://docs.unity3d.com/Manual/StateMachineBehaviours.html)
+* [Manual: State Machine Behaviours](https://docs.unity3d.com/Manual/StateMachineBehaviours.html)
+* To add functionality to animation states, you can add state machine behaviours
+* Or ***COULD***, if Unity animator inspector wouldn't be an awful buggy mess
 
 
 ### Extras: Advanced animation states
