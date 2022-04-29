@@ -229,7 +229,12 @@ public class WrapAround : MonoBehaviour
     ```
 * see how we're calling the method by referencing the class itself, never having to use the `new` keyword
 
+### Warning about static variables in Unity
 
+* ***Note:*** Static variables do not reset on `SceneManager.LoadScene("sceneWeAreAlreadyIn");`
+    ![](imgs/no-statics.png)
+
+<!-- _footer: "https://forum.unity.com/threads/c-scenemanager-loadscene-does-not-reset-all-variables.405823/" -->
 
 ## Exercise 1. Class for helper functions
 <!-- _backgroundColor: Khaki -->
