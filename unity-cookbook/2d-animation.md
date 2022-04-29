@@ -62,10 +62,12 @@ paginate: true
 
 ### Transitions
 
+* [Manual: Animation Transitions](https://docs.unity3d.com/530/Documentation/Manual/class-Transition.html)
+
 ![](imgs/animator-transition-inspector.png)
 
-* Exit time:
-  * Disable to make transition instant
+* *Has Exit time*:
+  * Disable to transition automatically after the animation has played once.
 
 ### Layers & parameters
 * ***Layers*** and ***parameters*** can be used to control our animation with code
