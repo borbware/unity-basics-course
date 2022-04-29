@@ -47,13 +47,6 @@ paginate: true
     if(Input.GetKey(KeyCode.RightArrow))
       transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
     ```
-### 2D rotation...?
-
-* 
-* Instead, use this:
-  ```c#
-  transform.right = target.transform.position - transform.position;
-  ```
 
 ---
 * Rotation fields
@@ -92,7 +85,9 @@ Make a child GameObject rotate around its parent.
 ### Extra: Look towards a point, 3D
 <!-- backgroundColor: pink -->
 
-* To ***instantly*** rotate a vector (not necessarily a transform!) so that it points to a given direction, you can use [Quaternion.LookRotation](https://docs.unity3d.com/ScriptReference/Quaternion.LookRotation.html) 
+* To ***instantly*** rotate a Transform so that it points to a given direction, you can use the previously mentioned Transform.LookAt
+  * If you want to rotate a vector (not necessarily a transform!), use [Quaternion.LookRotation](https://docs.unity3d.com/ScriptReference/Quaternion.LookRotation.html) 
+  * There's also [Quaternion.FromToRotation](https://docs.unity3d.com/ScriptReference/Quaternion.FromToRotation.html) for rotating from a vector to another
 * To ***slowly*** rotate towards a target, there are two methods available:
   * If you need to manipulate position vectors: [Vector3.RotateTowards](https://docs.unity3d.com/ScriptReference/Vector3.RotateTowards.html)
   * If you need to manipulate rotation quaternions: [Quaternion.RotateTowards](https://docs.unity3d.com/ScriptReference/Quaternion.RotateTowards.html)
@@ -110,3 +105,8 @@ Make a child GameObject rotate around its parent.
   float angle = Mathf.Atan2(target.transform.position.y, target.transform.position.x) * Mathf.Rad2Deg;
   transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
   ```
+
+
+---
+
+* To slowly rotate towards a target in 2D, uhhhh xx todo

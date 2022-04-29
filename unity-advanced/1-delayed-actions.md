@@ -157,7 +157,7 @@ IEnumerator ExecuteAfterTime(float time)
 
 void Update()
 {
-    if (Input.GetKeyDown("f"))
+    if (Input.GetKeyDown(KeyCode.Space))
     {
         StartCoroutine(ExecuteAfterTime(10));
     }
