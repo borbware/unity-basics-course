@@ -36,6 +36,7 @@ math: katex
 * If collider `IsTrigger`, then it does not stop other colliders, but only detects if something collides with it - no `OnCollisionEnter`!
   * Collision functions are replaced with [`OnTriggerEnter`](https://docs.unity3d.com/ScriptReference/Collider.OnTriggerEnter.html), [`OnTriggerExit`](https://docs.unity3d.com/ScriptReference/Collider.OnTriggerExit.html), [`OnTriggerStay`]((https://docs.unity3d.com/ScriptReference/Collider.OnTriggerExit.html))
   * Guess the 2D versions...
+* ***Note:*** If a trigger is colliding with another trigger, `OnTriggerEnter` gets called twice per collision!
 
 ## Collider2D vs Collision2D
 

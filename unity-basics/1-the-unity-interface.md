@@ -121,6 +121,13 @@ math: katex
   * ***Collapse*** (don't repeat duplicate messages)
   * *$\vdots$ > Log Entry > 1 Line* (show only one line per message)
 
+## Searching
+
+* [Manual: Searching in the Editor](https://docs.unity3d.com/Manual/Searching.html)
+* You can search for a component by its name in the Scene or Hierarchy view search bar.
+* To find references to a given component, right click the component top bar in Inspector and select ***Find References In Scene***.
+* To find references to a given asset, right click the asset in Project view and select ***Find References In Scene***.
+
 ## Reading
 
 * [Sepeli ry: Unity basics (In Finnish)](https://sepeliry.github.io/unity1.html)

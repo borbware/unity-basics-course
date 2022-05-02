@@ -16,7 +16,7 @@ paginate: true
   	* make enemies patrol around
   	* make enemies follow the player
   	* make enemies attack other enemies?!?
-
+* One of the earliest games to utilize pathfinding was [Tanktics (1976)](https://en.wikipedia.org/wiki/Tanktics:_Computer_Game_of_Armored_Combat_on_the_Eastern_Front) 
 ### Note
 
 * Pathfinding is not necessary to create interesting enemy behaviour, though
@@ -58,6 +58,7 @@ paginate: true
 3) Create a new Empty GameObject and name it *Pathfinder*.
 1) Add a new component, also named *Pathfinder* to it.
 
+* [A* Docs: Getting started](https://arongranberg.com/astar/docs/getstarted.html)
 * [A* Docs: Pathfinding in 2D](https://arongranberg.com/astar/docs/pathfinding2d.html)
 
 ### Setting up the Pathfinder component
@@ -97,10 +98,8 @@ paginate: true
 
 * To show the path in real time, enable *Gizmos > Seeker* in Game Mode.
   ![](imgs/pathfinding-path.png)
-* Add a Collider component so your Enemy can't walk through obstacles.
-* Add a Rigidbody so you can control your Enemy with forces and collisions.
 
-### Scripting 1. Flip the sprite based on velocity
+## Scripting 1. Flip the sprite based on velocity
 
 ```c#
 using Pathfinding;
@@ -116,9 +115,15 @@ void Update()
 
 ```
 
-### Scripting 2. Controlling a RigidBody
+## Scripting 2. Controlling a RigidBody
 
-Initializations
+* The following Enemy behaviour script is an alternative to the *AI Path* and *AI Destination Setter* scripts, so remove them if you follow these.
+  * You do need the *Seeker* script, however!
+* Add a Collider component so your Enemy can't walk through obstacles.
+* Add a Rigidbody so you can control your Enemy with forces and collisions.
+
+
+### Initializations
 
 ![](imgs/pathfinding-code1.png)
 
@@ -127,6 +132,17 @@ Initializations
 
 ### FixedUpdate
 ![](imgs/pathfinding-code3.png)
+
+## More scripting
+
+* In AI destination Setter component, the *Target* is a public variable, so you can change it from any script with
+  ```c#
+  _aiDestinationSetter.target = newTarget;
+  ```
+* Sometimes you need to scan the path again to update it dynamically:
+  ```c#
+  path.active.Scan ();
+  ```
 
 ## Exercise 0. Point and click
 <!-- _backgroundColor: Khaki -->
