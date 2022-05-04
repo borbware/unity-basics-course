@@ -41,6 +41,7 @@ math: katex
 ![](https://docs.unity3d.com/uploads/Main/Inspector-Rigidbody.png)
 ![](https://docs.unity3d.com/uploads/Main/Rigidbody2D.png)
 
+* ***Note:*** If you have problems having two non-moving Rigidbody2Ds collide, set *Sleeping Mode* to *Never Sleep*
 
 ## Types of rigidbodies
 * ***Dynamic***
