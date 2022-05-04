@@ -340,13 +340,30 @@ Try to call the method from a gameobject!
   * Reference types store *the memory address* to where the value is actually stored
   * Value types
     * [C# Docs: Built-in value types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types) 
-    * `code`, `float`, `double`, `bool`, ...
+    * `int`, `float`, `double`, `bool`, ...
     * Structs: `Vector3`, `Quaternion`, ...
   * Reference types
     * [C# Docs: Built-in reference types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types)
     * Classes: `Transform`, `GameObject`, ...
     * Objects
-### Reference vs value example
+### Reference vs value example 1
+
+```c#
+int firstValueType = 15;
+int secondValueType = firstValueType;
+secondValueType++;
+Debug.Log($"firstValueType: {firstValueType}, secondValueType: {secondValueType}");
+
+var firstRefType = new Enemy(15, "FirstEnemy");
+var secondRefType = firstRefType;
+secondRefType.SetHP(16);
+Debug.Log($"firstRefType.HP: {firstRefType.GetHP()}, secondRefType.HP: {secondRefType.GetHP()}");
+```
+
+* When modifying `secondValueType`, `firstValueType` stays intact
+* When modifying `secondRefType`, `firstRefType` gets modified as well!
+
+### Reference vs value example 2
 ```c#
 //Value type variable
 Vector3 pos = transform.position;
@@ -362,7 +379,7 @@ tran.position = new Vector3(0, 2, 0);
 
 <!-- backgroundColor: pink -->
 ```c#
-PlayerClass
+public class PlayerClass
 {
     private int exp; // private field, not accessible from outside
 
