@@ -10,12 +10,12 @@ paginate: true
 
 * ***Classes*** are blueprints for specific kinds of collections of data & functionality
   * E.g., an Enemy class tells what shared properties do all enemies have
-* ***instance*** of a class is an implementation of that class
-  * "this certain enemy right here"
-* classes can be very useful in game development
+* ***Instance*** of a class is an implementation of that class
+  * "This certain enemy right here"
+* Classes can be very useful in game development
 * C# is an object-oriented language (almost everything is a class)
-  * all Unity scripts contain a class by default!
-  * usually, the term ***object*** also refers to an instance of a class
+  * All Unity scripts contain a class by default!
+  * Usually, the term ***object*** also refers to an instance of a class
 
 ### Unity class example
 
@@ -43,14 +43,14 @@ public class WrapAround : MonoBehaviour
 
 ## Creating a class from scratch
 
-* this is all you need for creating a class:
+* This is all you need for creating a class:
     ```c#
     class Enemy
     {
 
     }
     ```
-* the curly braces `{}` define a new scope
+* The curly braces `{}` define a new scope
   * Everything inside them is inside the class
 ### Fields
 
@@ -62,11 +62,11 @@ public class WrapAround : MonoBehaviour
         string name = "Sanae"; // this is also a field
     }
     ```
-* fields can have initial values
+* Fields can have initial values
 
 ### Methods
 
-* **methods** are functions inside the class
+* **Methods** are functions inside the class
     ```c#
     class Enemy
     {
@@ -79,10 +79,10 @@ public class WrapAround : MonoBehaviour
         }
     }
     ```
-* this function returns nothing, so its type is `void`
+* This function returns nothing, so its type is `void`
 
 ### About functionality
-* you can declare fields and methods, but cannot have any functionality outside class methods
+* You can declare fields and methods, but cannot have any functionality outside class methods
     ```c#
     class Enemy
     {
@@ -99,8 +99,8 @@ public class WrapAround : MonoBehaviour
     }
     ```
 ## Instantiating a class
-* instances of a class can be created with the `new` keyword
-* instances have the same fields and methods, but their *values* can be different
+* Instances of a class can be created with the `new` keyword
+* Instances have the same fields and methods, but their *values* can be different
     ```c#
     class Enemy
     {
@@ -117,7 +117,7 @@ public class WrapAround : MonoBehaviour
         }
     }
     ```
-* NOTE: when creating new GameObjects, use `Instantiate()`
+* ***NOTE:*** When creating new GameObjects, use `Instantiate()`
 ## Object variables
 * The variables inside of an object can be accessed with the dot `.` operator
     ```c#
@@ -130,8 +130,8 @@ public class WrapAround : MonoBehaviour
         enemy2.HP = 4; // wait, this does not work!?
     }
     ```
-### Own variables
-* note: "dot scoping" is not needed when we're *inside* the class
+### Own variables of the class
+* "dot scoping" is not needed when we're *inside* the class
     ```c#
     class Enemy
     {
@@ -142,7 +142,7 @@ public class WrapAround : MonoBehaviour
         }
     }
     ```
-* we can also use the keyword `this` to refer to the class we're in
+* We can also use the keyword `this` to refer to the class we're in
   ```c#
   class Enemy
   {
@@ -154,8 +154,8 @@ public class WrapAround : MonoBehaviour
   }
   ```
 ### Object variables: fix the previous example
-* we could not change the Enemy HP from outside the class, because class members are `private` by default
-* this can be changed with the `public` access modifier
+* We could not change the Enemy HP from outside the class, because class members are `private` by default
+* This can be changed with the `public` access modifier
     ```c#
     class Enemy
     {
@@ -168,31 +168,38 @@ public class WrapAround : MonoBehaviour
     enemy2.HP = 4;
     ```
 ## Access modifiers
+
+* [C# Docs: Access modifiers](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)
 * Access modifiers can be used to give additional level of protection inside classes
   * `public`
-    * accessible and editable from anywhere
-    * in Unity, public properties are also editable in the Inspector
+    * Accessible and editable from anywhere
+    * In Unity, public properties are also editable in the Inspector
   * `private`
-    * accessible only from within the class. it's the default, but we can make it more explicit by writing it out
+    * Accessible only from within the class. it's the default, but we can make it more explicit by writing it out
   * `protected`
-    * like `private`, but accessible also by the *inheritors* of the class
+    * Like `private`, but accessible also by the *inheritors* of the class
   * `virtual`
-    * accessible and *overridable* by inheritors
+    * Accessible and *overridable* by inheritors
 
 
 ## Casing conventions
 
-  * not mandatory, but following these makes for more readable code
+* [C# Docs: Capitalization conventions](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/capitalization-conventions)
+* [C# Docs: Coding conventions](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
+* Conventions are not mandatory, but following these makes for more readable code
+  * You can also have your own conventions: it's more important to write consistently than to write in a way Microsoft wants you to
+  * Also, in a project of many people, it's better if everyone writes with the same conventions
+* My convention:
   * `GameObject gameObject`
-  * types start with uppercase, instances with lowercase!
-  * method names start with uppercase
+  * Types start with uppercase, instances with lowercase!
+  * Method names start with uppercase
 
 
 ## Class methods
 
-* as seen in the Unity class example, classes can contain methods
-* if the method is public, it can be called from outside of the class
-* here, a public method makes changes to a private property
+* As seen in the Unity class example, classes can contain methods
+* If the method is public, it can be called from outside of the class
+* Here, a public method makes changes to a private property
     ```c#
     class Enemy
     {
@@ -212,8 +219,8 @@ public class WrapAround : MonoBehaviour
 ### Static methods
 
 * `static` methods can be called without instantiating the class
-  * these methods can't change properties of a specific instance
-  * they're especially useful for implementing helper functions 
+  * These methods can't change properties of a specific instance
+  * They're especially useful for implementing helper functions 
 
     ```c#
     class MathFunctions
@@ -227,7 +234,7 @@ public class WrapAround : MonoBehaviour
     ```c#
     Debug.Log(MathFunctions.VectorLength(transform.position));
     ```
-* see how we're calling the method by referencing the class itself, never having to use the `new` keyword
+* See how we're calling the method by referencing the class itself, never having to use the `new` keyword
 
 ### Warning about static variables in Unity
 
@@ -236,10 +243,17 @@ public class WrapAround : MonoBehaviour
 
 <!-- _footer: "https://forum.unity.com/threads/c-scenemanager-loadscene-does-not-reset-all-variables.405823/" -->
 
+## Static classes
+
+* [C# Docs: Static classes and structs](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members)
+* Even whole classes can be static, too
+* Then you can call all methods and properties from the class without instantiating it
+* Actually, you CAN'T instantiate a static class!
+
 ## Exercise 1. Class for helper functions
 <!-- _backgroundColor: Khaki -->
 <!-- _footer: "[About Inverse Lerp](https://www.gamedev.net/articles/programming/general-and-gameplay-programming/inverse-lerp-a-super-useful-yet-often-overlooked-function-r5230/)" -->
-Create a new Script class for math helper functions and properties (do not add it to any gameobject).
+Create a new Script class for math helper functions and properties (do not add it to any GameObject).
 
 Add this `Remap` function there
 ```c#
@@ -252,8 +266,8 @@ Remap(float iMin, float iMax, float oMin, float oMax, float v)
 Try to call the method from a gameobject!
 
 ## Constructors
-* constructor is an optional function that is called when a class is instantiated
-* in C#, constructor has the same name as the class itself
+* Constructor is an optional function that is called when a class is instantiated
+* In C#, constructor has the same name as the class itself
     ```c#
     class Enemy
     {
@@ -268,7 +282,7 @@ Try to call the method from a gameobject!
     ```
 ### Constructors with parameters
 
-* you can pass in parameters to the constructor at initialization
+* You can pass in parameters to the constructor at initialization
 
     ```c#
     class Enemy
@@ -317,21 +331,20 @@ Try to call the method from a gameobject!
 
 ## Importing classes
 
-* Classes from other files can be imported with the `using` keyword
+* Classes (or namespaces) from other files can be imported with the `using` keyword
 * See example in [Unity class example](#unity-class-example) ([slide 3](#3))!
 
 ## Reference type vs value type
-  * value types actually store the value
-  * reference types store *the memory address* to where the value is actually stored
+
+  * Value types actually store the value
+  * Reference types store *the memory address* to where the value is actually stored
   * Value types
-      * int, float, double, bool...
-      * Structs
-          * Vector3
-          * Quaternion
+    * [C# Docs: Built-in value types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types) 
+    * `code`, `float`, `double`, `bool`, ...
+    * Structs: `Vector3`, `Quaternion`, ...
   * Reference types
-    * Classes
-      * Transform
-      * GameObject
+    * [C# Docs: Built-in reference types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types)
+    * Classes: `Transform`, `GameObject`, ...
     * Objects
 ### Reference vs value example
 ```c#
@@ -371,9 +384,10 @@ PlayerClass
 
 ### Properties vs fields
 
-* properties are used to expose fields to the outside world
+* [C# Docs: Using Properties](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-properties)
+* Properties are used to expose fields to the outside world
 * `get` is called when the property is retrieved somewhere
-  * it can execute some code, and then give us some internal data we don't want to directly expose
+  * It can execute some code, and then give us some internal data we don't want to directly expose
     ```c#
     Debug.Log(PlayerClass.Experience);
     ```
