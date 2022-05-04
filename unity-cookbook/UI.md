@@ -147,6 +147,11 @@ EventSystem.current.SetSelectedGameObject(myButton);
   * Anchors can be set from the *Scene view*, with the *Anchor presets*, or from the *Inspector*
   * See the link above and mess around with anchors while doing so!
 
+### UI Example: HP bar
+
+* RectTransform: Set pivot to left
+* 9-Slicing for art
+
 ## UI Gotchas!
 
 ### There's a weird white box surrounding my UI elements

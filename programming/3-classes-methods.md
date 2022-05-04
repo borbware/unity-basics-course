@@ -182,18 +182,18 @@ public class WrapAround : MonoBehaviour
     * Accessible and *overridable* by inheritors
 
 
-## Casing conventions
+## Conventions
 
 * [C# Docs: Capitalization conventions](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/capitalization-conventions)
 * [C# Docs: Coding conventions](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
-* Conventions are not mandatory, but following these makes for more readable code
+* Conventions are not mandatory, but following them makes for more readable code
   * You can also have your own conventions: it's more important to write consistently than to write in a way Microsoft wants you to
-  * Also, in a project of many people, it's better if everyone writes with the same conventions
-* My convention:
-  * `GameObject gameObject`
-  * Types start with uppercase, instances with lowercase!
-  * Method names start with uppercase
-
+  * In a team project, it's better if everyone writes with the same conventions
+* My convention: Type and method names with PascalCase and variable names with camelCase
+  * type naming: `MyType`
+  * public variable naming: `myVariable`
+  * private variable naming: `_myPrivateVariable`
+  * function naming: `MyFunction()`
 
 ## Class methods
 
@@ -273,7 +273,7 @@ Try to call the method from a gameobject!
     {
         private int HP;
         public int maxHP;
-        public void Enemy()
+        public Enemy()
         {
             maxHP = 4;
             HP = maxHP;
@@ -290,7 +290,7 @@ Try to call the method from a gameobject!
         private int HP;
         public int maxHP;
         public string name;
-        public void Enemy(int enemyMaxHP, string enemyName)
+        public Enemy(int enemyMaxHP, string enemyName)
         {
             name = enemyName;
             maxHP = enemyMaxHP;

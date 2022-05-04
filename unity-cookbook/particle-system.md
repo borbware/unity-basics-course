@@ -61,3 +61,4 @@ paginate: true
 ## Reading
 
 * [Learn: Introduction to particle systems](https://learn.unity.com/tutorial/introduction-to-particle-systems#)
+* [Brackeys video: Everything to know about the Particle system](https://www.youtube.com/watch?v=FEA1wTMJAR0)

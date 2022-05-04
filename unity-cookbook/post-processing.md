@@ -8,6 +8,7 @@ paginate: true
 # Post processing
 
 * [Manual: Post processing overview](https://docs.unity3d.com/Manual/PostProcessingOverview.html)
+* [Brackeys video: Every Post processing effect in Unity](https://www.youtube.com/watch?v=9tjYz6Ab0oc)
 
 
 ## Visual effects
@@ -22,3 +23,4 @@ paginate: true
 
 [Xibanya: Shaders For People Who Don't Know How To Shader](https://github.com/Xibanya/ShaderTutorials)
 [Manual: Shader core concepts](https://docs.unity3d.com/Manual/ShadersOverview.html)
+
