@@ -55,7 +55,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   | Unity Advanced											   	  	|     | 
 |---|-------------------------------------------------------------------|----:|
-| 1 | [Delayed actions](unity-advanced/1-delayed-actions.md)			| 🌒 |
+| 1 | [Delayed actions](unity-advanced/1-delayed-actions.md)			| 🌔 |
 | 2 | [Scriptable objects](unity-advanced/2-scriptable-objects.md) 		| 🌒 |
 | 3 | [Events](unity-advanced/3-events.md)			 					| 🌒 |
 | 4 | [Miscellaneous](unity-advanced/4-misc.md)							| 🌒 |
@@ -73,15 +73,21 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |   | [Audio](unity-cookbook/audio.md)									| 🌔 |
 | 2 |																	|     |
 |   | [Tilemaps](unity-cookbook/tilemaps.md)							| 🌔 |
-|   | [2D animation](unity-cookbook/2d-animation.md)					| 🌒 |
-|   | [Pathfinding](unity-cookbook/pathfinding.md)						| 🌒 |
+|   | [2D animation](unity-cookbook/2d-animation.md)					| 🌔 |
+|   | [Pathfinding](unity-cookbook/pathfinding.md)						| 🌔 |
 |   | [3D Platforming](unity-cookbook/3dplatforming.md)					| 🌒 |
 |   | [Animation Curve](unity-cookbook/animation-curve.md)				| 🌓 |
-|   | [Building](unity-cookbook/building.md)							| 🌑 |
-|   | [Data flow](unity-cookbook/data.md)								| 🌒 |
-|   | [Packages](unity-cookbook/packages.md)							| 🌑 |
 |   | [Particle system](unity-cookbook/particle-system.md)				| 🌑 |
+|   | [Data flow](unity-cookbook/data.md)								| 🌒 |
+|   | [Building](unity-cookbook/building.md)							| 🌑 |
+|   | [Packages](unity-cookbook/packages.md)							| 🌑 |
 |   | [Searching](unity-cookbook/searching.md)							| 🌓 |
+
+|   | Tooltips													   	  	|     | 
+|---|-------------------------------------------------------------------|----:|
+|   | [Unity and Visual Studio Code](tooltips/unity-and-vsc.md)		    | 🌔 |
+|   | [Using the Windows File Explorer effectively](tooltips/using-file-explorer.md)| 🌔 |
+|   | [Unity notes](tooltips/unity-notes.md)		                    | 🌒 |
 
 
 ## About game development
@@ -99,14 +105,48 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |---|-------------------------------------------------------------------|----:|
 |   | [Tools for creating assets](gamedev/tools.md)						| 🌓 |
 |   | [Game Design](gamedev/gamedesign.md)								| 🌓 |
-|   | [Accessibility](gamedev/accessibility.md)							| 🌒 |
-|   | [Game Development](gamedev/gamedevelopment.md)					| 🌒 |
+|   | [Accessibility](gamedev/accessibility.md)							| 🌓 |
+|   | [Game Development](gamedev/gamedevelopment.md)					| 🌒 | 
 |   | [Game Industry](gamedev/gameindustry.md)							| 🌓 |
 |   | [Gamification](gamedev/gamification.md)							| 🌓 |
 
 
-|   | Tooltips													   	  	|     | 
-|---|-------------------------------------------------------------------|----:|
-|   | [Unity and Visual Studio Code](tooltips/unity-and-vsc.md)		    | 🌔 |
-|   | [Using the Windows File Explorer effectively](tooltips/using-file-explorer.md)| 🌔 |
-|   | [Unity notes](tooltips/unity-notes.md)		                    | 🌒 |
+
+# Code example repositories
+
+Code examples are in different repositories. Links to repositories below, including the lists of lectures that the repositories contain the examples about.
+
+### [ProgrammingExercises](https://github.com/borbware/ProgrammingExercises)
+
+![](imgs/programming-exercises-repo.png)
+
+* [Variables and Conditionals](programming/1-variables-and-conditionals.md) 
+* [Lists and Loops](programming/2-lists-loops.md)
+* [Classes and Methods](programming/3-classes-methods.md)
+
+### [ProgrammingExercises2D](https://github.com/borbware/ProgrammingExercises2D)
+
+![](imgs/programming-exercises-2d-repo.png)
+
+* [Input handling](unity-cookbook/input-handling.md)
+* [Collision](unity-cookbook/collision.md)
+* [Transform](unity-cookbook/transform.md)
+* [Vectors](math/1-vectors.md)
+* [Forces](math/2-forces.md)
+
+### [DungeonCrawler](https://github.com/borbware/DungeonCrawler)
+
+![](imgs/dungeoncrawler-repo.png)
+
+* [2D basics](unity-cookbook/2d-basics.md)
+* [Tilemaps](unity-cookbook/tilemaps.md)
+* [2D animation](unity-cookbook/2d-animation.md)
+
+### [2DTopDownShooter](https://github.com/borbware/2DTopDownShooter)
+
+![](imgs/2dtopdownshooter-repo.png)
+
+* [2D basics](unity-cookbook/2d-basics.md)
+* [Tilemaps](unity-cookbook/tilemaps.md)
+* [2D animation](unity-cookbook/2d-animation.md)
+* [Pathfinding](unity-cookbook/pathfinding.md)
