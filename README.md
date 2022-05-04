@@ -20,7 +20,6 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 1 | [Module 5](Module5.md)												| 🌑 |
 | 2 | [Module 6](Module6.md)												| 🌑 |
 | 3 | [Module 7](Module7.md)												| 🌑 |
-| 4 | [Module 8](Module8.md)												| 🌑 |
 
 # Books
 

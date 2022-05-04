@@ -143,6 +143,12 @@ void Update()
   ```c#
   path.active.Scan ();
   ```
+* To add custom functionality to when AI Path has reached its target, you can add code to AIPath.cs in method `onTargetReached`:
+  ```c#
+  public virtual void OnTargetReached () {
+    SendMessage("TargetIsReached");
+  }
+  ```
 
 ## Exercise 0. Point and click
 <!-- _backgroundColor: Khaki -->

@@ -321,8 +321,8 @@ Try to call the method from a gameobject!
 * See example in [Unity class example](#unity-class-example) ([slide 3](#3))!
 
 ## Reference type vs value type
-  * value types actually contain the value
-  * reference types contain the memory address to where the value is stored
+  * value types actually store the value
+  * reference types store *the memory address* to where the value is actually stored
   * Value types
       * int, float, double, bool...
       * Structs
@@ -332,6 +332,7 @@ Try to call the method from a gameobject!
     * Classes
       * Transform
       * GameObject
+    * Objects
 ### Reference vs value example
 ```c#
 //Value type variable

@@ -172,7 +172,7 @@ paginate: true
   * ***Tags***
   * ***Layers***
   * ***Sorting layers*** 
-### Tags
+## Tags
 
 * [Manual: Tags](https://docs.unity3d.com/Manual/Tags.html)
 * Marker values that that you can use to identify objects in your Project
@@ -182,7 +182,18 @@ paginate: true
 * `GameObject.FindWithtag("tagname");`
 * `GameObject.FindGameObjectsWithTag("tagname");`
 
-### Layers
+### Tag-based collision
+
+```c#
+private void OnTriggerEnter2D(Collider2D other)
+{
+    if(other.gameObject.tag == "Collectible")
+    {
+        Destroy(other.gameObject);
+    }
+```
+
+## Layers
 * [Manual: Layers](https://docs.unity3d.com/Manual/Layers.html)
 * Layers allow you to separate GameObjects in you scene through UI or scripting
 * Some layers: Default, Ignore Raycast, Custom...
@@ -193,6 +204,15 @@ paginate: true
 * Layers can be used for selective collision detection
   * [Manual: Layer-based collision detection](https://docs.unity3d.com/Manual/LayerBasedCollision.html)
 
+### Layer-based collision detection
+
+* To make Player and Enemies collide with walls, but not with each other:
+  * Set Player layer to *Player*
+  * Set Enemy layer to *Enemies*
+  * Set Walls layer to *Walls*
+  * Open *Edit > Project preferences > Physics(2D) > Layer Collision Matrix*
+  * Disable collision between *Enemies* and *Player*:
+  ![](imgs/layer-collision.png)
 ### Sorting layers
 
 * For sorting 2D sprites
