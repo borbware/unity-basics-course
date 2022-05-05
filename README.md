@@ -123,6 +123,7 @@ Code examples are in different repositories. Links to repositories below, includ
 * [Variables and Conditionals](programming/1-variables-and-conditionals.md) 
 * [Lists and Loops](programming/2-lists-loops.md)
 * [Classes and Methods](programming/3-classes-methods.md)
+* [Interpolation](math/4-interpolation.md)
 
 ### [ProgrammingExercises2D](https://github.com/borbware/ProgrammingExercises2D)
 
@@ -150,3 +151,4 @@ Code examples are in different repositories. Links to repositories below, includ
 * [Tilemaps](unity-cookbook/tilemaps.md)
 * [2D animation](unity-cookbook/2d-animation.md)
 * [Pathfinding](unity-cookbook/pathfinding.md)
+* [Interpolation](math/4-interpolation.md) (smooth camera move with lerp)

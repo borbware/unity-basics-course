@@ -91,6 +91,7 @@ paginate: true
 * `[Range(x,x)]`
   * adds a slider to inspector
   * [Script Reference: Range Attribute](https://docs.unity3d.com/ScriptReference/RangeAttribute.html)
+* [More about attributes in C# Docs]((https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/attributes/))
 
 ## Referring to GameObjects
 * a) fast solution

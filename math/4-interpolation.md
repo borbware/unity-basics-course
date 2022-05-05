@@ -15,7 +15,7 @@ math: katex
     * when $t = 0$, $x = a$
     * when $t = 0.5$, $x = (b - a) / 2$ ("halfway")
     * when $t = 1$, $x = b$
-  * `Mathf.Lerp(a, b, t)`
+  * [`Mathf.Lerp(a, b, t)`](https://docs.unity3d.com/ScriptReference/Mathf.Lerp.html)
 
 ### Lerp example
 
@@ -32,7 +32,7 @@ Mathf.Lerp(5.0f, 15.0f, 1.0f); // returns 15.0f
 * what if t is smaller than 0 or larger than 1?
 * Unity's `Mathf.Lerp` is clamps the returned value automatically
   * $x$ is $a$ at minimum and $b$ at maximum
-* with `Mathf.LerpUnclamped`, the value is extrapolated when outside the limits!
+* with [`Mathf.LerpUnclamped`](https://docs.unity3d.com/ScriptReference/Mathf.LerpUnclamped.html), the value is extrapolated when outside the limits!
 
 ## Exercise 1. Do a lerp!
 <!-- _backgroundColor: Khaki -->
@@ -44,9 +44,20 @@ After pressing a button once, lerp GameObject's color from red to blue.
 ## Lerping different data types
 
 * Some data types are more complicated than just one float value
-* Luckily, they often have their own built-in lerps
-  * Vector3.Lerp
-  * Quaternion.Slerp
+* You can of course lerp every number value individually
+* Other way around: some types have their own built-in lerps
+  * [Vector2.Lerp](https://docs.unity3d.com/ScriptReference/Vector2.Lerp.html)
+  * [Vector3.Lerp](https://docs.unity3d.com/ScriptReference/Vector3.Lerp.html)
+  * [Quaternion.Slerp](https://docs.unity3d.com/ScriptReference/Quaternion.Slerp.html)
+
+
+## Other interpolation functions
+
+* Mathf:
+  * [SmoothStep](https://docs.unity3d.com/ScriptReference/Mathf.SmoothStep.html)
+  * [LerpAngle](https://docs.unity3d.com/ScriptReference/Mathf.LerpAngle.html)
+  * [SmoothDamp(Angle)](https://docs.unity3d.com/ScriptReference/Mathf.SmoothDamp.html)
+  * [MoveTowards(Angle)](https://docs.unity3d.com/ScriptReference/Mathf.MoveTowards.html)
 
 ### `Quaternion.Slerp`
 
@@ -63,14 +74,6 @@ transform.localRotation =
 transform.Translate(0,0, 3 * Time.deltaTime);
 ```
 
-## Other interpolation stuff...?
-
-* Mathf:
-  * LerpAngle
-  * SmoothDamp(Angle)
-  * MoveTowards(Angle)
-  * Slerp
-  * SmoothStep
 
 ## Custom interpolation curves
 
@@ -80,7 +83,7 @@ transform.Translate(0,0, 3 * Time.deltaTime);
 
 ## Extra: Inverse lerp, Remap
 <!-- _backgroundColor: pink -->
-* [Script Reference: inverse lerp](https://docs.unity3d.com/ScriptReference/Mathf.InverseLerp.html)
+* [Script Reference: Inverse lerp](https://docs.unity3d.com/ScriptReference/Mathf.InverseLerp.html)
   * lerp's inverse problem
     * when given a value $x$ between $a$ and $b$, what is $t$?  
   * `Mathf.InverseLerp(a,b,x)`
