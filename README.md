@@ -2,7 +2,7 @@
 
 Welcome to the repository for the Buutti Game Dev academy course. The aim of the course is to teach basics of Unity, C# and game development.
 
-The course is divided into three four-module stages (module being approximately a week long), and the topics are compartmentalized into "books" whose chapters are introduced below.
+The course is divided into three four-module stages (module being approximately a week long), and the topics are arranged into "books" whose chapters are introduced below.
 
 The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the corresponding chapter is!
 
@@ -30,7 +30,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 0 | [Introduction to Game Programming](programming/0-game-programming.md)   | 🌕 |
 | 1 | [Variables and Conditionals](programming/1-variables-and-conditionals.md)| 🌕 |
 | 2 | [Lists and Loops](programming/2-lists-loops.md)						| 🌕 |
-| 3 | [Classes and Methods](programming/3-classes-methods.md)			 	| 🌓 |
+| 3 | [Classes and Methods](programming/3-classes-methods.md)			 	| 🌔 |
 | 4 | [Special Types](programming/4-special-types.md)					 	| 🌓 |
 
 |   | Math										  				 	  	|     | 
@@ -76,7 +76,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |   | [2D animation](unity-cookbook/2d-animation.md)					| 🌔 |
 |   | [Pathfinding](unity-cookbook/pathfinding.md)						| 🌔 |
 |   | [Scenes](unity-cookbook/scenes.md)								| 🌔 |
-| 2 |	
+| 3 |	
 |   | [Particle system](unity-cookbook/particle-system.md)				| 🌑 |
 |   | [Saving and Loading](unity-cookbook/saving-loading.md)			| 🌑 |
 |   | [3D Platforming](unity-cookbook/3dplatforming.md)					| 🌒 |
@@ -86,8 +86,8 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |   | Tooltips													   	  	|     | 
 |---|-------------------------------------------------------------------|----:|
 |   | [Unity and Visual Studio Code](tooltips/unity-and-vsc.md)		    | 🌔 |
-|   | [Using the Windows File Explorer effectively](tooltips/using-file-explorer.md)| 🌔 |
-|   | [Unity Packages](tooltips/unity-packages.md)							| 🌑 |
+|   | [Windows File Explorer tips](tooltips/using-file-explorer.md)		| 🌔 |
+|   | [Unity Packages](tooltips/unity-packages.md)						| 🌒 |
 |   | [Unity notes](tooltips/unity-notes.md)		                    | 🌒 |
 
 ## About game development
@@ -103,11 +103,13 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   | Game Dev													   	  	|     | 
 |---|-------------------------------------------------------------------|----:|
-|   | [Tools for creating assets](gamedev/tools.md)						| 🌓 |
 |   | [Game Design](gamedev/gamedesign.md)								| 🌓 |
-|   | [Accessibility](gamedev/accessibility.md)							| 🌓 |
+|   | [Playtesting](gamedev/playtesting.md)								| 🌓 |
 |   | [Game Development](gamedev/gamedevelopment.md)					| 🌒 | 
+|   | [Tools](gamedev/tools.md)											| 🌓 |
 |   | [Game Industry](gamedev/gameindustry.md)							| 🌓 |
+|   | [Accessibility](gamedev/accessibility.md)							| 🌓 |
+|   | [Business](gamedev/business.md)									| 🌒 |
 |   | [Gamification](gamedev/gamification.md)							| 🌓 |
 
 
