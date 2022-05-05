@@ -5,7 +5,7 @@ paginate: true
 <!-- headingDivider: 3 -->
 <!-- class: default -->
 
-# Packages
+# Unity Packages
 ## Package manager
 
 * Window > Package Manager

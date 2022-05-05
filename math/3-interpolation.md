@@ -86,10 +86,23 @@ transform.Translate(0,0, 3 * Time.deltaTime);
 ### Custom interpolation with an animation curve
 
 * for custom interpolation curves, use the `AnimationCurve` variable
-* `public AnimationCurve curve;`
-  * it can be manipulated in the inspector:
+* `[SerializeField] AnimationCurve curve;`
+* The curve can be manipulated in the inspector:
   ![](imgs/animation-curve.png)
+  * Click on the default curve images on the bottom to create a curve 
 
+### Controlling values with the curve
+
+* If the curve starts from 0 and ends in 1, you can use it as a replacement for `Mathf.Lerp`
+* If the curve starts from and ends in 0, you can create an animation that loops back to the initial value!
+* `curve.Evaluate(t)` returns a value from the graph (by default, between 0 and 1)
+  ```c#
+  float InterpolateCurve(float a, float b, float t)
+  {
+      return a + (b - a) * curve.Evaluate(t);       
+  }
+  ``` 
+* Now, `Mathf.Lerp(a, b, t)` can be replaced with `InterpolateCurve(a, b, t)`
 
 ### Animation curve example
 
@@ -108,10 +121,6 @@ if(Time.time < bounceTimer)
     transform.localScale = Vector2.one + axis * bounce.Evaluate(scaleTime);
 }
 ```
-
-* Here, `bounce.Evaluate` acts similarly as `Mathf.Lerp`
-* You just get to decide the shape of the graph!
-
 
 
 ## Extra: Note about lerping on the fly
