@@ -5,7 +5,7 @@ math: katex
 ---
 <!-- headingDivider: 3 -->
 <!-- class: default -->
-# 3: Sinewaves
+# 4: Sinewaves
 [Brackeys video: Sinewaves](https://www.youtube.com/watch?v=pEXdTLsEAjk)
 
 

@@ -5,7 +5,7 @@ math: katex
 ---
 <!-- headingDivider: 3 -->
 <!-- class: default -->
-# 4: Interpolation
+# 3: Interpolation
 
 ## Lerp
 
@@ -50,16 +50,7 @@ After pressing a button once, lerp GameObject's color from red to blue.
   * [Vector3.Lerp](https://docs.unity3d.com/ScriptReference/Vector3.Lerp.html)
   * [Quaternion.Slerp](https://docs.unity3d.com/ScriptReference/Quaternion.Slerp.html)
 
-
-## Other interpolation functions
-
-* Mathf:
-  * [SmoothStep](https://docs.unity3d.com/ScriptReference/Mathf.SmoothStep.html)
-  * [LerpAngle](https://docs.unity3d.com/ScriptReference/Mathf.LerpAngle.html)
-  * [SmoothDamp(Angle)](https://docs.unity3d.com/ScriptReference/Mathf.SmoothDamp.html)
-  * [MoveTowards(Angle)](https://docs.unity3d.com/ScriptReference/Mathf.MoveTowards.html)
-
-### `Quaternion.Slerp`
+### Slerp example
 
 ```c#
 Vector3 relativePos = target.position + new Vector3(0,.5f,0) - transform.position;
@@ -75,11 +66,68 @@ transform.Translate(0,0, 3 * Time.deltaTime);
 ```
 
 
-## Custom interpolation curves
+## Other interpolation functions
+
+* Smooth interpolation
+  * [Mathf.SmoothStep](https://docs.unity3d.com/ScriptReference/Mathf.SmoothStep.html): Like Lerp but with ***smoothing*** in start and finish 
+  * [Mathf.SmoothDamp](https://docs.unity3d.com/ScriptReference/Mathf.SmoothDamp.html): Spring-like motion towards destination
+  * [Mathf.MoveTowards](https://docs.unity3d.com/ScriptReference/Mathf.MoveTowards.html): Move linearly towards destination with a ***max speed limit***
+* Angle versions (These take into account that the angle loops from 360 back to 0)
+  * [Mathf.LerpAngle](https://docs.unity3d.com/ScriptReference/Mathf.LerpAngle.html)
+  * [Mathf.SmoothDampAngle](https://docs.unity3d.com/ScriptReference/Mathf.SmoothDampAngle.html)
+  * [Mathf.MoveTowardsAngle](https://docs.unity3d.com/ScriptReference/Mathf.MoveTowardsAngle.html)
+
+## Custom interpolation
 
 * Lerping is a *linear* operation: the rate of change is constant during the process
-* Sometimes that's not at all what we want to do, however
-* You can also create custom curves with the [AnimationCurve component](../unity-cookbook/animation-curve.md)
+* Sometimes we want smoothing that is controlled more precisely than with SmoothStep and the like
+* Luckily, we can also create custom curves
+
+### Custom interpolation with an animation curve
+
+* for custom interpolation curves, use the `AnimationCurve` variable
+* `public AnimationCurve curve;`
+  * it can be manipulated in the inspector:
+  ![](imgs/animation-curve.png)
+
+
+### Animation curve example
+
+```c#
+public AnimationCurve bounce;
+...
+// If timer is on, do animation
+if(Time.time < bounceTimer)
+{
+    // Calculate valid time for curve (in between 0 and 1)
+    float scaleTime = (bounceTimer - Time.time) / bounceLenght;
+
+    // Get the value from curve at the time of the animation
+    // and multiply it with the desired scaled axis
+    // then add it to default scale (1, 1, 1)
+    transform.localScale = Vector2.one + axis * bounce.Evaluate(scaleTime);
+}
+```
+
+* Here, `bounce.Evaluate` acts similarly as `Mathf.Lerp`
+* You just get to decide the shape of the graph!
+
+
+
+## Extra: Note about lerping on the fly
+<!-- _backgroundColor: pink -->
+
+* You may have seen lerp performed "on the fly" like this:
+  ```c#
+  transform.position = Vector3.Lerp(transform.position, target.position, Time.deltaTime);
+  ```
+* That is, the start point changes every frame!
+  * This creates a deceleration ("braking") in the end which results in a smoother finish
+  * This means the interpolation isn't linear anymore
+  * Also, now the lerp process does not take the time it's supposed to: it finishes much faster!
+* That being said, this is a very fast way to create a camera that follows the player a bit behind. If that's what you're after, you can use it
+  * But remember: This isn't the way Lerp was meant to be used, so your mileage may wary. You're on your own now.
+
 
 ## Extra: Inverse lerp, Remap
 <!-- _backgroundColor: pink -->

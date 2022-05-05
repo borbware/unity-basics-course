@@ -9,7 +9,7 @@
     * Rad2Deg, Deg2Rad
     * PI
   * Pow, Sqrt, Exp, Log
-  * [Interpolation](4-interpolation.md) (lerp, slerp...)
+  * [Interpolation](3-interpolation.md) (lerp, slerp...)
   * Abs
   * Limit, repeat
     * Max, Min

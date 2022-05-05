@@ -11,10 +11,9 @@ paginate: true
 
 * **UC: Data (scene management)**
 * Constraints
-* Math 3: Sinewaves
 * **Programming 3: Classes and methods**
 * Programming 4: Special types
-* **[Math 4: Interpolation](math/4-interpolation.md)**
+* **[Math 3: Interpolation](math/3-interpolation.md)**
 * [Building](unity-cookbook/building.md)
 * Game design
 * [Game programming patterns](programming/5-game-programming-patterns.md)
