@@ -149,6 +149,17 @@ Continue the exercise from [Git Basics](1-git-basics.md) or create a new reposit
 * Do not tell other group members what you're going to change! :D
 * Then, Merge the changes back to the master branch. Fix ensuing conflicts, if any appear.
 
+## Exercise 3. Unity collaboration
+<!-- _backgroundColor: Khaki -->
+
+Create a new Unity project for your group.
+
+Every group member creates their own scene and works on that.
+
+The scene can contain anything you like, the only mandatory feature is that pressing the A button (Fire1) should make the game continue on to the next scene.
+
+From Scene 4, the game should loop back to Scene 1.
+
 
 ## Reading 
 
