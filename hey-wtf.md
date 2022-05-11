@@ -5,4 +5,7 @@ Why are PlayerPrefs are stored IN THE REGISTRY???
 OnTriggerStay2D collisions are only triggered when either of the colliders are moving
 
 i can only move things in the animator window in debug mode???
+- or make second transitions
+- or add state methods
+
 
