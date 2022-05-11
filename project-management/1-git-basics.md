@@ -208,6 +208,8 @@ paginate: true
     /folder
     *.html
   ```
+* ***Note:*** If you add a file to .gitignore that was committed earlier, you can remove it from git with `git rm --cached filename`
+
 
 ## Exercise 2. Git collaboration
 <!-- _backgroundColor: Khaki -->

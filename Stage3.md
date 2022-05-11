@@ -8,6 +8,16 @@
   * Anonymous vote: Which OTHER pair's idea would you like to work with?
     * The most, the second most
   * Groups are assigned
+
+* Pitch evaluation
+  * see evaluation below
+  * scope: miten toteutettavissa se on?
+    * tarvittavien assettien määrä
+    * levelien määrä
+    * tekstin määrä
+    * teknisen toteutuksen hankaluusaste
+    * miten helppo se on toteuttaa unityllä
+
 * Week 1: Pre-production
   * design doc and a prototype
 * Week 2: Concept iteration
