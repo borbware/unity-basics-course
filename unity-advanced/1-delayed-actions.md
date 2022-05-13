@@ -187,3 +187,25 @@ void Update()
         StopCoroutine(fade); // pauses coroutine if already started
 }
 ```
+
+### Example: Coroutine of coroutines
+
+* You can call other coroutines inside coroutines like this:
+```c#
+    IEnumerator SetColor(float time)
+    {
+        lähetti.SendMessage("SetColorToRandom");
+        yield return new WaitForSeconds(time);
+    }
+
+    IEnumerator ChangeColorToRandom()
+    {
+        yield return SetColor(2f);
+        yield return SetColor(15f);
+        yield return SetColor(3f);
+    }
+
+    ...
+
+    StartCoroutine(ChangeColorToRandom());
+```
