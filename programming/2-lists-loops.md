@@ -345,6 +345,8 @@ Now, edit the strings with a loop to include this number as well.
 
 Create two-dimensional data structure with x,y coordinates.
 
-Create a function that creates new enemy gameobjects in the scene in these coordinates.
+Create a function `populateLevel()` that creates new enemy GameObjects in the scene based on these coordinates.
 
 Also, create a function `newCoordinate(x, y)` that can be used to add new coordinates into the data structure.
+
+**Extra:** What if you want to populate the level with enemies and collectibles, both of which saved in the same data structure?

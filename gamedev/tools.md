@@ -14,7 +14,7 @@ paginate: true
   * paid monthly
 * Clip Studio Paint
   * ~50€
-* free options: Krita, Gimp
+* free options: ***Krita***, Gimp
 
 ## 2D graphics: Pixel art
 * Aseprite
@@ -23,16 +23,15 @@ paginate: true
 * free option: GraphicsGale
 * Hi-res options can also be used
 
-## Sound effects
+## Sound effects & audio editing
 
-* bfxr
-* music tools (see next slide)
-
+* ***bfxr***
+* ***Audacity***
+  * a versatile tool for audio editing
 ## Music
 
-* There isn't an easy recommendation in the free space really
-  * LMMS sucks!
-* Bosca Ceoil: the simple free option
+* There isn't an easy recommendation in the free space really (LMMS sucks)
+* ***Bosca Ceoil***: the simple free option
   * very limited
 * Trackers
 	* openMPT
@@ -53,4 +52,20 @@ paginate: true
 ## Levels, 3D
 * ProBuilder
   * a package for Unity for grayboxing 3d levels
-* Blender3d
+* ***Blender 3D***
+
+
+## Screen recording
+
+* you need to showcase your game to people!
+* for recording gifs
+  * ***ScreenToGif***
+* for recording video with sound:
+  * Unity Recorder
+  * OBS Studio
+
+
+## Video editing
+
+* for trailers, etc you need a video editor
+* Best free option: DaVinci Resolve

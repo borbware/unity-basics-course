@@ -234,7 +234,7 @@ public class WrapAround : MonoBehaviour
 ## Exercise 1. Class for helper functions
 <!-- _backgroundColor: Khaki -->
 <!-- _footer: "[About Inverse Lerp](https://www.gamedev.net/articles/programming/general-and-gameplay-programming/inverse-lerp-a-super-useful-yet-often-overlooked-function-r5230/)" -->
-Create a new Script class for math helper functions and properties (do not add it to any gameobject).
+Create a new Script class for math helper functions and properties (do not add it to any GameObject).
 
 Add this `Remap` function there
 ```c#
@@ -244,7 +244,7 @@ Remap(float iMin, float iMax, float oMin, float oMax, float v)
     return Mathf.Lerp(oMin, oMax, t);
 }
 ```
-Try to call the method from a gameobject!
+Try to call the method from a GameObject!
 
 ## Constructors
 * constructor is an optional function that is called when a class is instantiated
