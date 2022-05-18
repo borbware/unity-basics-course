@@ -164,7 +164,7 @@ paginate: true
   * `component.enabled = false;`
 * toggle:
   * `component.enabled = !component.enabled`
-
+* ***Note:*** Disabling a script component only disables calls to Awake, Start, Update, LateUpdate, FixedUpdate... Most event based callbacks still work!
 
 ## Tags & Layers
 * [Manual: Tags and layers](https://docs.unity3d.com/Manual/class-TagManager.html)
