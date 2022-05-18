@@ -8,32 +8,20 @@ paginate: true
 
 ## What to expect
 
-* Unity basics (in 2d)
-* Input
-* Physics
-* Collision
-* Movement
+* Actual gamedev!!
+* Unity basics in 2d
+* Input & movement
+* Collision & physics
+* More programming
 
 ## Module 2 Schedule
 
-* Day 1
-  * Unity cookbook: [Unity for 2D](unity-cookbook/2d.md), [Input handling](unity-cookbook/input-handling.md), [Physics](unity-cookbook/physics.md)
-* Day 2:
-  * [Programming 2: Lists and Loops](programming/2-lists-loops.md)
-* Day 3:
-  * [Math 0: Useful math functions](math/0-mathf.md)
-  * Unity cookbook: [Audio](unity-cookbook/audio.md), [Particle system](unity-cookbook/particle-system.md), [Animation curve](unity-cookbook/animation-curve.md), [UI](unity-cookbook/UI.md)
-* Day 4:
-  * [Math 1: Vectors](math/1-vectors.md)
-* Day 5: WP Wrap-up
+| Day 1 | Day 2 | Day 3 | Day 4 | Day 5 | Day 6 | Day 7 | 
+|-------|-------|-------|-------|-------|-------|-------|
+| 12.4. TI	| 13.4. KE	| 14.4. TO	| 19.4. TI	| 20.4. KE	| 21.4. TO | 22.4. PE | 
+| UB4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md) | UC: [2D](unity-cookbook/2d-basics.md), [Input](unity-cookbook/input-handling.md), [Transform](unity-cookbook/transform.md),  [Collision](unity-cookbook/collision.md), [Materials for success](https://www.businessoulu.com/en/events/game-team.html) (remote) | P2: [Lists and Loops](programming/2-lists-loops.md) | P0: [Introduction to Game Programming](programming/0-game-programming.md), M1: [Vectors](math/1-vectors.md), M2: [Forces](math/2-forces.md) | M0: [Useful math](math/0-mathf.md), UC: [Audio](unity-cookbook/audio.md) | [UI](unity-cookbook/UI.md) | Playtesting, Wrap-up |
 
 # Day 1: 2D Movement
-
-## Day 1 Schedule
-
-* [Unity cookbook: Unity for 2D](unity-cookbook/2d.md)
-* [Unity cookbook: Input handling](unity-cookbook/input-handling.md)
-* [Unity cookbook: Physics](unity-cookbook/physics.md)
 
 ## Module project 2: Asteroids
 <!-- _backgroundColor: lightgreen -->
@@ -46,98 +34,70 @@ Goal:
 <!-- _backgroundColor: lightgreen -->
 * ⭐⭐ Add one of the following features:
   * Hi scores & scoreboard
-  * Randomized asteroid spawining
-  * Level progression: new asteroids appear
-  * Twin-stick: Use right stick to control the bullet direction 
-* ⭐⭐⭐ Spice up the game: Add a game mechanic of your own
+  * Level progression: new asteroids appear and make the game progressively more difficult
+  * Twin-stick shooter: Use right stick to control the bullet direction
+  * Co-op: Add second player
+* ⭐⭐⭐ Spice up the game: Add a game mechanic of your own design
 
 
-## WP exercise 0.
+## MP exercise 0.
 <!-- _backgroundColor: lightgreen -->
 Examine the gameplay video, then play the example Unity-built Asteroids.
 
-In you groups, write down:
+In your groups, write down:
 * What features do you see? 
 * How would you begin implementing them?
 * Which feature would you implement first?
 
-## WP exercise 1.
+## MP exercise 1.
 <!-- _backgroundColor: lightgreen -->
 
-Create the Player controlled ship for the Asteroids game.
+Now back on your own, make a new project for the module project and create the player controlled ship.
 
+## MP exercise 2.
+<!-- _backgroundColor: lightgreen -->
 
+Add asteroids to the scene.
 
-# Day 2: Programming 2
+## MP exercise 3.
+<!-- _backgroundColor: lightgreen -->
+
+Destroy player if it hits an asteroid.
+
+# Day 2: Working on the project
+
+# Day 2 schedule
+
+* [Asteroids component listing](asteroids-components.md)
+
+# Day 3: Programming 2
+
+# Day 3 schedule
+
 [Programming 2: Lists and Loops](programming/2-lists-loops.md)
 
-# Day 3: Unity Components
+# Day 4: Unity Components
 
-## Day 3 Schedule
+## Day 4 Schedule
 
   * [Math 0: Useful math functions](math/0-mathf.md)
   * [Unity cookbook: Audio](unity-cookbook/audio.md)
   * [Unity cookbook: Particle system](unity-cookbook/particle-system.md)
   * [Unity cookbook: Animation curve](unity-cookbook/animation-curve.md)
+
+# Day 5: UI
+
+## Day 5 schedule
+
   * [Unity cookbook: UI](unity-cookbook/UI.md)
 
-## Module Project Components
+## MP Exercise 2. Add a basic UI
 
-### The ship
-* Components
-  * Sprite Renderer
-  * Rigidbody2D
-  * PolygonCollider
-  * Audio Source
-  * Scripts
-    * Movement
-    * Ship
-    * WrapAround
-    * BounceScale
-### Child components
-* ShotPos
-* ThrustPos
-* ThrustParticles
-  * Particle System
-* Laser
-  * Line Renderer
-### Bullet
+Show Player's lives and Score.
 
-* SpriteRenderer
-* Rigidbody2D
-* Circle Collider 2D
-* Bullet Script
-
-
-* prefab
-* instantiating
-### The UI
-* Main Camera
-  * camera
-  * flare layer
-  * audio listener
-### Canvas
-  * Components
-    * RectTransform
-    * Graphic Raycaster
-    * ScoreManager script
-    * UI script
-    * Life Gameobject
-  * Life1..3
-    * Canvas Renderer
-    * Image
-  * Score
-    * Text
-### Asteroids
-
-* SpriteRenderer
-* Circle Collider 2D
-* Rigidbody 2D
-* Asteroid Script
-* WrapAround Script
-* extra: generating a level
+# Day 6: Vectors
 
 
 
-# Day 5: Playtesting
+# Day 7: Playtesting
 

@@ -1,29 +1,43 @@
+---
+marp: true
+paginate: true
+---
+<!-- headingDivider: 3 -->
+<!-- class: default -->
+
 # Module 4: Advanced techniques
 
 ## Module 4 schedule
 
-* Day 4: 
-  * Math 3: Sinewaves
-* Day 2: 
-  * Programming 4: Special types
-##
-
-
+* **UC: Data (scene management)**
+* Constraints
+* **Programming 3: Classes and methods**
+* Programming 4: Special types
+* **[Math 3: Interpolation](math/3-interpolation.md)**
+* [Building](unity-cookbook/building.md)
 * Game design
-* Game programming patterns
+* [Game programming patterns](programming/5-game-programming-patterns.md)
+
+---
+
 * [Unity advanced](#unity-advanced)
-	* Entity-component-system (ECS)
-	* [Delayed actions](#delayed-actions)
+
+	* **[Delayed actions](#delayed-actions)**
 	* [Delegates and Events (3b)](#delegates-and-events-3b)
-		* [Delegates](#delegates)
-		* [Events](#events)
-		* [Actions](#actions)
+		* **[Delegates](#delegates)**
+		* **[Events](#events)**
+		* **[Actions](#actions)**
 		* [Unity Events](#unity-events)
 		* [Scriptable object Unity Event](#scriptable-object-unity-event)
 	* [Generics, IEnumerable (4c)](#generics-ienumerable-4c)
 	* [ScriptableObject](#scriptableobject)
-	
+
 ## Module project
-* ???
-* RPG-taistelu
-* Vaihtoehto: 2d platformer
+<!-- _backgroundColor: lightgreen -->
+
+* Tower defense
+* Plants vs Zombies -like
+* xx kato youtubesta mitä teoriaa vielä tarvii
+* hiiren käyttö
+* syvemmin UI:hin
+* sisäkkäiset valikot

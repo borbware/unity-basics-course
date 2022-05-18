@@ -1,4 +1,4 @@
-# Using the Windows File Explorer effectively
+# Windows File Explorer tips
 
 * *View* tab:
   * ✅ File name extensions

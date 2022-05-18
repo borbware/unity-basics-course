@@ -2,7 +2,7 @@
 
 Welcome to the repository for the Buutti Game Dev academy course. The aim of the course is to teach basics of Unity, C# and game development.
 
-The course is divided into three four-module stages (module being approximately a week long), and the topics are compartmentalized into "books" whose chapters are introduced below.
+The course is divided into three four-module stages (module being approximately a week long), and the topics are arranged into "books" whose chapters are introduced below.
 
 The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the corresponding chapter is!
 
@@ -12,7 +12,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |---|-------------------------------------------------------------------|----:|
 | 1 | [Module 1](Module1.md)												| 🌔 |
 | 2 | [Module 2](Module2.md)												| 🌔 |
-| 3 | [Module 3](Module3.md)												| 🌒 |
+| 3 | [Module 3](Module3.md)												| 🌓 |
 | 4 | [Module 4](Module4.md)												| 🌑 |
 
 |   | [Stage 2](Stage2.md)						  				 	  	|     | 
@@ -20,7 +20,6 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 1 | [Module 5](Module5.md)												| 🌑 |
 | 2 | [Module 6](Module6.md)												| 🌑 |
 | 3 | [Module 7](Module7.md)												| 🌑 |
-| 4 | [Module 8](Module8.md)												| 🌑 |
 
 # Books
 
@@ -28,19 +27,19 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   | Programming										  				 	|     | 
 |---|-----------------------------------------------------------------------|----:|
-| 0 | [Introduction to Game Programming](programming/0-game-programming.md)   | 🌓 |
+| 0 | [Introduction to Game Programming](programming/0-game-programming.md)   | 🌕 |
 | 1 | [Variables and Conditionals](programming/1-variables-and-conditionals.md)| 🌕 |
 | 2 | [Lists and Loops](programming/2-lists-loops.md)						| 🌕 |
-| 3 | [Classes and Methods](programming/3-classes-methods.md)			 	| 🌓 |
+| 3 | [Classes and Methods](programming/3-classes-methods.md)			 	| 🌔 |
 | 4 | [Special Types](programming/4-special-types.md)					 	| 🌓 |
 
 |   | Math										  				 	  	|     | 
 |---|-------------------------------------------------------------------|----:|
 | 0 | [Useful Math Functions](math/0-mathf.md)							| 🌔 |
 | 1 | [Vectors](math/1-vectors.md)										| 🌔 |
-| 2 | [Forces](math/2-forces.md)										| 🌓 |
-| 3 | [Sinewaves](math/3-sinewaves.md)									| 🌒 |
-| 4 | [Interpolation](math/4-interpolation.md)							| 🌒 |
+| 2 | [Forces](math/2-forces.md)										| 🌔 |
+| 3 | [Interpolation](math/3-interpolation.md)							| 🌔 |
+| 4 | [Sinewaves](math/4-sinewaves.md)									| 🌒 |
 |   | [Unity Math classes](math/5-math-classes.md)						| 🌒 |
 |   | [Randomness](math/6-math-classes.md)								| 🌑 |
 
@@ -52,11 +51,11 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 1 | [The Unity Interface](unity-basics/1-the-unity-interface.md) 		| 🌔 |
 | 2 | [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md)| 🌔 |
 | 3 | [Assets & Prefabs](unity-basics/3-assets-prefabs.md)	 			| 🌔 |
-| 4 | [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)	| 🌒 |
+| 4 | [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)	| 🌔 |
 
 |   | Unity Advanced											   	  	|     | 
 |---|-------------------------------------------------------------------|----:|
-| 1 | [Delayed actions](unity-advanced/1-delayed-actions.md)			| 🌒 |
+| 1 | [Delayed actions](unity-advanced/1-delayed-actions.md)			| 🌔 |
 | 2 | [Scriptable objects](unity-advanced/2-scriptable-objects.md) 		| 🌒 |
 | 3 | [Events](unity-advanced/3-events.md)			 					| 🌒 |
 | 4 | [Miscellaneous](unity-advanced/4-misc.md)							| 🌒 |
@@ -64,20 +63,32 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   | Unity Cookbook											   	  	|     | 
 |---|-------------------------------------------------------------------|----:|
-|   | [2D](unity-cookbook/2d.md)										| 🌒 |
-|   | [3D Platforming](unity-cookbook/3dplatforming.md)					| 🌒 |
-|   | [Animation Curve](unity-cookbook/animation-curve.md)				| 🌒 |
-|   | [Audio](unity-cookbook/audio.md)									| 🌒 |
-|   | [Building](unity-cookbook/building.md)							| 🌑 |
-|   | [Data flow](unity-cookbook/data.md)								| 🌒 |
+| 1 |																	|     |
+|   | [2D basics](unity-cookbook/2d-basics.md)							| 🌔 |
 |   | [Input handling](unity-cookbook/input-handling.md)				| 🌔 |
-|   | [Packages](unity-cookbook/packages.md)							| 🌑 |
+|   | [Transform](unity-cookbook/transform.md)							| 🌔 |
+|   | [Collision](unity-cookbook/collision.md)							| 🌔 |
+|   | [Physics](unity-cookbook/physics.md)								| 🌔 |
+|   | [UI](unity-cookbook/UI.md)										| 🌔 |
+|   | [Audio](unity-cookbook/audio.md)									| 🌔 |
+| 2 |																	|     |
+|   | [Tilemaps](unity-cookbook/tilemaps.md)							| 🌔 |
+|   | [2D animation](unity-cookbook/2d-animation.md)					| 🌔 |
+|   | [Pathfinding](unity-cookbook/pathfinding.md)						| 🌔 |
+|   | [Scenes](unity-cookbook/scenes.md)								| 🌔 |
+| 3 |	
 |   | [Particle system](unity-cookbook/particle-system.md)				| 🌑 |
-|   | [Pathfinding](unity-cookbook/pathfinding.md)						| 🌒 |
-|   | [Physics](unity-cookbook/physics.md)								| 🌓 |
-|   | [Tags and Layers](unity-cookbook/tags-layers.md)					| 🌒 |
-|   | [UI](unity-cookbook/UI.md)										| 🌒 |
+|   | [Saving and Loading](unity-cookbook/saving-loading.md)			| 🌑 |
+|   | [3D Platforming](unity-cookbook/3dplatforming.md)					| 🌒 |
+|   | [Building](unity-cookbook/building.md)							| 🌑 |
 
+
+|   | Tooltips													   	  	|     | 
+|---|-------------------------------------------------------------------|----:|
+|   | [Unity and Visual Studio Code](tooltips/unity-and-vsc.md)		    | 🌔 |
+|   | [Windows File Explorer tips](tooltips/using-file-explorer.md)		| 🌔 |
+|   | [Unity Packages](tooltips/unity-packages.md)						| 🌒 |
+|   | [Unity notes](tooltips/unity-notes.md)		                    | 🌒 |
 
 ## About game development
 
@@ -92,16 +103,54 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   | Game Dev													   	  	|     | 
 |---|-------------------------------------------------------------------|----:|
-|   | [Tools for creating assets](gamedev/tools.md)						| 🌓 |
 |   | [Game Design](gamedev/gamedesign.md)								| 🌓 |
-|   | [Accessibility](gamedev/accessibility.md)							| 🌒 |
-|   | [Game Development](gamedev/gamedevelopment.md)					| 🌒 |
+|   | [Playtesting](gamedev/playtesting.md)								| 🌓 |
+|   | [Game Development](gamedev/gamedevelopment.md)					| 🌒 | 
+|   | [Tools](gamedev/tools.md)											| 🌓 |
 |   | [Game Industry](gamedev/gameindustry.md)							| 🌓 |
+|   | [Accessibility](gamedev/accessibility.md)							| 🌓 |
+|   | [Business](gamedev/business.md)									| 🌒 |
 |   | [Gamification](gamedev/gamification.md)							| 🌓 |
 
 
-|   | Tooltips													   	  	|     | 
-|---|-------------------------------------------------------------------|----:|
-|   | [Unity and Visual Studio Code](tooltips/unity-and-vsc.md)		    | 🌒 |
-|   | [Using the Windows File Explorer effectively](tooltips/using-file-explorer.md)| 🌒 |
-|   | [Unity notes](tooltips/unity-notes.md)		                    | 🌒 |
+
+# Code example repositories
+
+Code examples are in different repositories. Links to repositories below, including the lists of lectures that the repositories contain the examples about.
+
+### [ProgrammingExercises](https://github.com/borbware/ProgrammingExercises)
+
+![](imgs/programming-exercises-repo.png)
+
+* [Variables and Conditionals](programming/1-variables-and-conditionals.md) 
+* [Lists and Loops](programming/2-lists-loops.md)
+* [Classes and Methods](programming/3-classes-methods.md)
+* [Interpolation](math/3-interpolation.md)
+
+### [ProgrammingExercises2D](https://github.com/borbware/ProgrammingExercises2D)
+
+![](imgs/programming-exercises-2d-repo.png)
+
+* [Input handling](unity-cookbook/input-handling.md)
+* [Collision](unity-cookbook/collision.md)
+* [Transform](unity-cookbook/transform.md)
+* [Vectors](math/1-vectors.md)
+* [Forces](math/2-forces.md)
+
+### [DungeonCrawler](https://github.com/borbware/DungeonCrawler)
+
+![](imgs/dungeoncrawler-repo.png)
+
+* [2D basics](unity-cookbook/2d-basics.md)
+* [Tilemaps](unity-cookbook/tilemaps.md)
+* [2D animation](unity-cookbook/2d-animation.md)
+
+### [2DTopDownShooter](https://github.com/borbware/2DTopDownShooter)
+
+![](imgs/2dtopdownshooter-repo.png)
+
+* [2D basics](unity-cookbook/2d-basics.md)
+* [Tilemaps](unity-cookbook/tilemaps.md)
+* [2D animation](unity-cookbook/2d-animation.md)
+* [Pathfinding](unity-cookbook/pathfinding.md)
+* [Interpolation](math/3-interpolation.md) (smooth camera move with lerp)

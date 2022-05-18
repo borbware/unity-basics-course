@@ -18,7 +18,6 @@ paginate: true
   * For
   * Foreach
 
-
 ## `while` loop
 * while loop keeps executing its code block as long as the condition in its statement is true:
 ```c#
@@ -123,12 +122,12 @@ Current: 1
 
 * Loop inside a loop is often used for generating or going through two-dimensional data
   ```c#
-  int columns = 3;
-  int rows = 4;
+  int rows = 3;
+  int columns = 4;
 
-  for (int i = 0; i < columns; i++)
+  for (int i = 0; i < rows; i++)
   {
-      for (int j = 0; j < rows; j++)
+      for (int j = 0; j < columns; j++)
       {
           Debug.Log("(" + j.ToString() + "," + i.ToString() + ")");
       }
@@ -148,7 +147,7 @@ Current: 1
 
 Create a loop whose number of iterations is set in an integer variable `numberOfEnemies`.
 
-Run a loop that many times and write to console a message `Creating enemy 1`, `Creating enemy 2`, etc.
+Run a loop that many times and write the message `Creating enemy 1`, `Creating enemy 2`, etc. to console.
 
 ## Exercise 2. Loops 2
 <!-- _backgroundColor: Khaki -->
@@ -158,6 +157,14 @@ Suppose you have a given number of collectibles in a level.
 You want a given percentage of them, say, 10%, to be shiny collectibles.
 
 Create a loop that runs until this condition is met, and prints into console `Converted collectible 1 to shiny`.
+
+## Exercise 3. Field of Cubes
+<!-- _backgroundColor: Khaki -->
+
+Create a loop that instantiates a 8 * 8 field of cubes on a plane.
+
+***Extra:*** If there's a cube already in the location, add an exception to NOT add a cube there!
+
 # Arrays
 
 ## Arrays
@@ -194,6 +201,10 @@ Create a loop that runs until this condition is met, and prints into console `Co
   ```c#
   double[] balances = new double[] { 1.3, 200.3, 9332.14 };
   ```
+* ...and without the `new double[]` part, as well:
+  ```c#
+  double[] balances = { 1.3, 200.3, 9332.14 };
+  ```
 ### Arrays: Unity example
 
 * Creating and accessing an array of gameobjects
@@ -221,7 +232,7 @@ void Start ()
   };
   Debug.Log(letters[1, 3]);       // Outputs "h"
   ```
-
+* ***Note:*** These do not show up in Unity's inspector
 # Lists
 
 ## Lists
@@ -237,6 +248,8 @@ void Start ()
   
   List<int> userIds = new List<int>();
   ```
+* ***Note:*** you can't call new List<int>() outside a method!
+
 * Value assignment:
   ```c#
   userIds[0] = 22;
@@ -255,9 +268,7 @@ void Start ()
   * `list.Contains(item)` checks if `item` is in the list & returns boolean
   * `list.Find(predicate)` finds an item from the list that matches the given predicate. More about it later!
 
-
-
-## Exercise 3. Enemy names
+## Exercise 4. Enemy names
 <!-- _backgroundColor: Khaki -->
 
 Create a list of names for enemy characters.
@@ -273,8 +284,6 @@ Print to console `There are [X] enemy names.`
    * prints out `Removed [enemyName].`
 
 3. Print out all the names from the list that start with the letter "S".
-
-
 
 ## Iterating through an array with `for`
 ```c#
@@ -308,6 +317,11 @@ for(int i = 0; i < starters.Count; i++)
 ```
 * note: lists use `.Count` instead of `.Length`!
 
+## Reverse for loop
+
+* forr
+* for deleting stuff from a list
+
 ## Better iteration with `foreach`
 
 ```c#
@@ -332,7 +346,34 @@ for(int i = 0; i < starters.Count; i++)
 ![alt](imgs/foreach-mutation.png)
 
 
-## Exercise 4. Looping through
+### Foreach Unity example
+
+```c#
+  foreach (GameObject enemy in GameObject.FindGameObjectsWithTag("Enemy"))
+  {
+      Debug.Log(enemy.name);
+  }
+```
+
+### Copying a list
+
+* Copying a list of value types
+    ```c#
+    List<YourType> newList = new List<YourType>(oldList);
+    ```
+* Copying a list of reference types
+    ```c#
+    List<YourType> oldList = new List<YourType>();
+    List<YourType> newList = new List<YourType>(oldList.Count);
+
+    oldList.ForEach((item)=>
+        {
+            newList.Add(new YourType(item));
+        });
+    ```
+
+<!-- _footer: "[See more about value vs reference types in Chapter 3](3-classes-methods.md#reference-type-vs-value-type)" -->
+## Exercise 5. Looping through
 <!-- _backgroundColor: Khaki -->
 Loop through the starters array, and print the starter and its number like this:
 `#001 Bulbasaur`
@@ -340,7 +381,7 @@ Loop through the starters array, and print the starter and its number like this:
 Now, edit the strings with a loop to include this number as well. 
 
 
-## Exercise 5. Creative data
+## Exercise 6. Creative data
 <!-- _backgroundColor: Khaki -->
 
 Create two-dimensional data structure with x,y coordinates.
@@ -349,4 +390,15 @@ Create a function `populateLevel()` that creates new enemy GameObjects in the sc
 
 Also, create a function `newCoordinate(x, y)` that can be used to add new coordinates into the data structure.
 
+<<<<<<< HEAD
 **Extra:** What if you want to populate the level with enemies and collectibles, both of which saved in the same data structure?
+=======
+## Exercise 7. List of lights
+<!-- _backgroundColor: Khaki -->
+
+Continue exercise 1 from [Scripting gameobjects](../unity-basics/4-scripting-gameobjects.md).
+
+Instead of three lights, have nine lights, each with a tag "Light" (preferably as a prefab).
+
+Control the lights from the light switch with a program that runs through a list of all the lights instead of switching them on and off individually.
+>>>>>>> ab5c754b96b3857b53e358cf005eaf2a3fd33aeb

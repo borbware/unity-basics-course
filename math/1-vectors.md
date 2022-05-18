@@ -93,15 +93,6 @@ Vector2 C = 2 * A;
   
   ![](imgs/2d-vector-scalar-multiplication-2.png)
 
-
-## Exercise 1.
-
-muokkaa gameobjektin nopeutta lisäämällä siihen vektori x xx
-## Exercise 2.
-
-Lasek kahen gameobjektin välinen välimatka ja tee x sen perusteella xx
-
-
 # Vectors in Unity
 
 ## Vectors in video games
@@ -114,14 +105,14 @@ Lasek kahen gameobjektin välinen välimatka ja tee x sen perusteella xx
 
 ## Vector classes
 
-* Unity has two Vector classes, Vector2 and Vector3
+* Unity has two Vector classes, ***Vector2*** and ***Vector3***
   * 2 and 3 are the number of dimensions: (x,y) and (x,y,z)
   * `Vector2 position = new Vector2(1.0f, 2.0f)`
     * can be modified by accessing the vector with the dot notation:
     * `position.x = 3.0f`
 
 * length of vector can be acquired with `vector.Magnitude`
-  * it's calculated with the Pythagoras' theorem:
+  * it's calculated internally with the Pythagoras' theorem:
   * `Mathf.Sqrt(position.x^2 + position.y^2 + position.z^2)`
 
 ## Velocity vectors
@@ -132,17 +123,18 @@ Lasek kahen gameobjektin välinen välimatka ja tee x sen perusteella xx
 ## Distance vectors
 
 * distance vector between two objects
-  * Vector2.Distance(vector_A, vector_B)
+  * `Vector2.Distance(vector_A, vector_B)`
   * subtraction
-  * vector_B - vector_A
+  * `vector_B - vector_A`
   * length of the vector: pythagoras
 
 
 ## Special vectors of Unity
 
 * See Static properties in [Script Reference: Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html)
-  * vector.up
-  * vector.forward
+  * Vector3.up
+  * Vector3.right
+  * Vector3.forward
   * etc...
 
 ## Common vector operations
@@ -158,21 +150,39 @@ Lasek kahen gameobjektin välinen välimatka ja tee x sen perusteella xx
 
 ### Rotating a vector
 
+* In Unity, rotation is represented by [Quaternions](5-math-classes.md#quaternion)
+* To rotate a vector by a given angle, you can do a ***Quaternion rotation operation***:
+  ```c#
+  Vector3 rotatedVector = Quaternion.Euler(0, 0, 90) * originalVector;
+  ```
+  * This isn't a regular multiplication, so do note that Quaternion.Euler has to be on the ***left side*** of the vector.
+* To rotate a Quaternion:
+  ```c#
+  myQuaternion *= Quaternion.Euler(0, 0, 90);
+  ```
+
+* ***Note:*** the Transform and Quaternion classes have many rotation methods available, see [Transform Class: Rotation](../unity-cookbook/transform.md#rotation)
 
 ## Note about distance
 
 * Note: when performance is important, using magnitude can be a bad idea: it includes the costly square root operation
   * if you need to only compare magnitudes, or you're squaring it right away, use `.sqrMagnitude` instead!
-## Exercise 1
+
+
+## Exercise 1. I'm being avoided
 <!-- _backgroundColor: Khaki -->
 
-Make two gameObjects, where one is player with top-down movement, and the other is a static enemy.
-When player is closer to the enemy than a given radius (say, 3 meters), make the enemy shoot at player.
+Calculate distance between two GameObjects (player and enemy).
+
+If the distance is smaller than a threshold value, 
+a) change the color of the static GameObject (and set the color back to default when you're no more on the range)
+b) make the enemy shoot at player
+c) move the static GameObject farther away from the GameObject along the shortest possible path
 
 
 ## Script reference
 
-* most of the examples apply to both Vector2 and Vector3 classes.
+* Most of the previous examples apply to both Vector2 and Vector3 classes.
 * Vector2
   * [Script Reference: Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html)
 * Vector3

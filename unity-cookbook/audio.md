@@ -39,17 +39,34 @@ paginate: true
 
 ## AudioListener
 
+* You can think of this component as the ears of the player character
 * Receives input from any given Audio Source in the scene and plays sounds through the computer speakers
 * [Script Reference: AudioListener class](https://docs.unity3d.com/ScriptReference/AudioListener.html)
 * [Manual: AudioListener component](https://docs.unity3d.com/Manual/class-AudioListener.html)
 * There can only be one per scene
 * Usually, under the *Camera* GameObject
 
+## Spatial Audio
 
-## Exercise
+* For sound effects that get louder when the AudioListener is closer to the source 
+* AudioSource settings
+  * Set spatial blend to 1 (3D)
+  * In 3D Sound Settings, set Volume Rolloff to Logarithmic Rolloff
+    * (You can customize the graph yourself!)
+  * Set Max distance to something fitting for your scene
+    * This is visualized as a sphere
+<!-- _footer: "[Scott Rowell Video: Unity Spatial Audio](https://www.youtube.com/watch?v=_2BhQN7-bGk)" -->
 
-toista ääni xx
+## SFX Exercise
+<!-- _backgroundColor: Khaki -->
 
-## Extra: Spatial Audio
+Time to add sound effects to your game! Either:
 
-* xx
+a) Download from [freesound](https://freesound.org/) (you'll need an account)
+b) Record with your PC mic by using Audacity
+c) Create new sounds by using bfxr
+
+Then, add sounds to your game. Try at least these two kinds of sound effects:
+
+1) a one-time sound effect that can be triggered with code
+2) looping sound that plays all the time

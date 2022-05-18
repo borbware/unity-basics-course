@@ -17,4 +17,9 @@ paginate: true
 * the exported resolution is set in *Project settings > Player > Resolution and Presentation*
   * untick *Default Is Native Resolution* to set resolution manually
 * If you have *Canvas* GameObjects (for [UI](UI.md)), set the *Reference Resolution* in the *Canvas Scaler* component to match the target resolution
-* 
+
+
+## Building with Profiler
+
+[Manual: Profiling your application](https://docs.unity3d.com/Manual/profiler-profiling-applications.html)
+[Manual: Profiler](https://docs.unity3d.com/Manual/Profiler.html)

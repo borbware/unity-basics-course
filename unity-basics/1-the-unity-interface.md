@@ -1,6 +1,7 @@
 ---
 marp: true
 paginate: true
+math: katex
 ---
 <!-- headingDivider: 3 -->
 <!-- class: default -->
@@ -90,10 +91,12 @@ paginate: true
 * [Manual: Game view](https://docs.unity3d.com/Manual/GameView.html)
 * Simulates what your final rendered game will look like through your Scene Cameras
 * Play & pause buttons
-* When game is running, you can still manipulate the values in the Inspector window
-  * a nice way to mess around and find the right values for physics interactions etc.
-  * changes made during the play mode do not persist!!!!
-  * protip: go to *Edit > Preferences > Colors* and change the play mode tint to red.
+* When game is running, you can still manipulate the values in the Inspector
+  * a nice way to mess around and find the right values for variables
+  * but... changes made during the play mode do not persist!
+  * ***Protip:*** go to *Edit > Preferences > Colors* and change the play mode tint to red.
+* To make play mode bigger,  click *Maximize On Play* button
+* To make play mode fullscreen... do tell if you find a way :D
 
 ## Project window
 
@@ -117,3 +120,14 @@ paginate: true
   * ***Clear*** (remove old messages)
   * ***Collapse*** (don't repeat duplicate messages)
   * *$\vdots$ > Log Entry > 1 Line* (show only one line per message)
+
+## Searching
+
+* [Manual: Searching in the Editor](https://docs.unity3d.com/Manual/Searching.html)
+* You can search for a component by its name in the Scene or Hierarchy view search bar.
+* To find references to a given component, right click the component top bar in Inspector and select ***Find References In Scene***.
+* To find references to a given asset, right click the asset in Project view and select ***Find References In Scene***.
+
+## Reading
+
+* [Sepeli ry: Unity basics (In Finnish)](https://sepeliry.github.io/unity1.html)

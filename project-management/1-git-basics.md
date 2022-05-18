@@ -74,11 +74,11 @@ paginate: true
 <!-- _backgroundColor: pink -->
 ![](https://desktop.github.com/images/github-desktop-screenshot-windows.png)
 
-## Extra: Config
-<!-- _backgroundColor: pink -->
+## Btw: Config
 * To configure your git username for every project:
   * Use `git config --global user.name "myUserName"`
   * and `git config --global user.email "my.email.address@domain.com"`
+* If you do not do this, Git will ask to do it anyway at some point
 
 # 2. Workflow
 
@@ -114,7 +114,7 @@ paginate: true
 ## `git add`
 
 * Pushing a file to GitHub from your local machine is a three-phase process
-* The first phase is ***staging*** with `git* add`:
+* The first phase is ***staging*** with `git add`:
   * The command `git add readme.md` stages the file `readme.md`
   * After doing it, `git status` tells this:
     ```
@@ -154,10 +154,10 @@ paginate: true
 
 ## Exercise 1. Creating a repo
 <!-- _backgroundColor: Khaki -->
-* If not already, install Git to your machine.
+
 * Create a new repository on GitHub and clone it with HTTPS to your machine.
 * Then, create a new file `GitTest.md` with some lines of text in it.
-* Add it, commit it, and push it to GitHub.
+* Commit and push changes to GitHub.
 * Go to GitHub and see that the file is there!
 
 ## `git pull`
@@ -208,6 +208,18 @@ paginate: true
     /folder
     *.html
   ```
+* ***Note:*** If you add a file to .gitignore that was committed earlier, you can remove it from git with `git rm --cached filename`
+
+
+## Exercise 2. Git collaboration
+<!-- _backgroundColor: Khaki -->
+
+* Work on this exercise with your group.
+* Choose someone's test repository from exercise 1 to use in this exercise.
+* While others clone the repo to their machine, the owner should add other group members as collaborators of the repo in the repository's settings on GitHub.
+* Then, everyone should make changes to the markdown file in the repository!
+
+What happens if you make changes to the same line simultaneously?
 
 # Unity-specific stuff
 
@@ -240,13 +252,30 @@ paginate: true
     `git commit -m "first commit"`
     `git push --set-upstream origin main`
 
----
+## Troubleshooting: if pushing doesn't work...
+
+```
+error: failed to push some refs to [your-url]
+```
+
+* Possible reason: GitHub has a `main` branch, while your local repository has `master`
+  * run `git branch -m main` to rename your local `master` to `main`
+
+## Longer `push` and `pull` commands
 
 * Why did we use longer `push` and `pull` commands?
   * Short answer: because we didn't clone the repo, but rather added the remote into an empty one.
-  * `git pull origin main`: After adding a remote, we don't yet know which ***branch*** to pull from. The `main` (can also be `master`) is the default branch
+  * `git pull origin main`: After adding a remote, we don't yet know which ***branch*** to pull from. The `main` (can also be `master`!) is the default branch
   * `git push --set-upstream origin main`: In the first `push`, we decide which branch to link our current branch into.
   * Afterwards, we can just use `git push` and `git pull`.
+
+## Unity and LFS
+
+* With Unity, it might be a good idea to use [Git Large File Storage](https://git-lfs.github.com/) (LFS)
+* [Tutorial: Using Git Large File Storage (LFS) with Unity](https://riptutorial.com/unity3d/example/7178/using-git-large-file-storage--lfs--with-unity)
+  * Install Git LFS
+  * Add the stuff from the link to `.gitattributes`
+    * Close your Unity project before applying the changes!! 
 
 ## Unity Version Control settings
 

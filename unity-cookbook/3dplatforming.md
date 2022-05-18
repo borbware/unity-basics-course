@@ -4,7 +4,9 @@
   * [Stack Overflow: Keep the player centered on screen](https://stackoverflow.com/questions/45493793/unity-keep-the-player-centered-on-the-screen)
 * Cinemachine camera
   * See: [Cinemachine](packages.md#Cinemachine)
-
+* Class
+  * [Manual: Character Controller class](https://docs.unity3d.com/Manual/class-CharacterController.html)
+  * [Script reference: Character Controller](https://docs.unity3d.com/ScriptReference/CharacterController.html)
 
 # Probuilder
 
@@ -38,7 +40,7 @@
 * ***P*** Orientation: local / global / normal
 
 ## Selection
-* ***left mouse drag*** to select
+* ***LMB drag*** to select
 * [Select Hidden: On / Off](https://docs.unity3d.com/Packages/com.unity.probuilder@4.0/manual/Selection_SelectHidden.html)
 * [Rect: Complete / Intersection](https://docs.unity3d.com/Packages/com.unity.probuilder@4.0/manual/Selection_Rect_Intersect.html)
 ## Actions
