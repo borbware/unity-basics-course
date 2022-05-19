@@ -23,4 +23,6 @@ paginate: true
 
 ## Input randomness vs output randomness
 
+* [GMTK: The two types of random in game design](https://www.youtube.com/watch?v=dwI5b-wRLic)
+
 ## Terrain generation with Perlin Noise

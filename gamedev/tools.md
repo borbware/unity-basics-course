@@ -34,6 +34,8 @@ paginate: true
   * a versatile tool for audio editing
 * [ChipTone](https://sfbgames.itch.io/chiptone)
   * a free tool for generating sound effects
+* Extra: [Ableton Tone Generator](https://twitter.com/gruber_music/status/1496108012959846406)
+  * ($1 Patreon tier + Ableton Live)
 ## Music
 
 * There isn't an easy free recommendation really (LMMS sucks)

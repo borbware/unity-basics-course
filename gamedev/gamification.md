@@ -15,6 +15,8 @@ Game-like elements have silently found their way to many web services.
 * Can make the user experience more engaging
 * Can enhance activities where a continuous engagement is beneficial for the user, for example learning a language
 
+* [Errant Signal: Gamification](https://www.youtube.com/watch?v=pWfMjQKXZXk)
+
 ## Gamification is bullshit
 
 * [Ian Bogost: Gamification is bullshit](http://bogost.com/writing/blog/gamification_is_bullshit/)
@@ -25,7 +27,6 @@ Game-like elements have silently found their way to many web services.
   * Provide simulated satisfaction instead of concrete rewards
 
 ## Gamification elements
-
 
 * EXP bars & leveling
   * Do stuff and you get rewarded with number going up

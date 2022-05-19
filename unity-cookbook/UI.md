@@ -152,6 +152,10 @@ EventSystem.current.SetSelectedGameObject(myButton);
 * RectTransform: Set pivot to left
 * 9-Slicing for art
 
+### UI Example: Dialogue system
+
+* [Semag Games video series: Dialogye Tutorial](https://www.youtube.com/playlist?list=PLCGaK2yqfY2IrJYnOnlgdmzWVUFXsRQXA)
+
 ## UI Gotchas!
 
 ### There's a weird white box surrounding my UI elements

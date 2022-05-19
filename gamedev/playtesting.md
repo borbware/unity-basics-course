@@ -24,6 +24,7 @@ paginate: true
 
 
 ## How does one playtest?
+<!-- _backgroundColor: Khaki -->
 
 1) ***Communicate the plan*** and set expectations:
      * "Thank you for being here"
@@ -34,6 +35,7 @@ paginate: true
      * Remember, you won't be sitting next to people who you've sold your game to
      * When the player does something "wrong", or doesn't get something, or is stuck, it is interesting to see where it leads
 ---
+<!-- _backgroundColor: Khaki -->
 3) During playtesting, ***take lots of notes***:
       * where they get stuck or confused
       * what they enjoy
@@ -55,6 +57,8 @@ paginate: true
 * Our reality is not the only reality.
 <!-- Culture: common modes of consumption, presentation, or interaction. -->
 * Testing is how we come to understand our audience’s needs.
+* Also, remember: negative player feedback is very rarely a critique of the designer
+  * Rather, it is born out of wanting to see the game become its best possible version
 ## Product first vs audience first
 
 * ***PRODUCT FIRST:*** We have a game we want to make, and must identify the audience that will enjoy that game.

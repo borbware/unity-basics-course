@@ -17,9 +17,11 @@
     * tekstin määrä
     * teknisen toteutuksen hankaluusaste
     * miten helppo se on toteuttaa unityllä
-
+  * [Brian Upton: 30 Things I Hate About Your Game Pitch](https://www.youtube.com/watch?v=4LTtr45y7P0)
 * Week 1: Pre-production
-  * design doc and a prototype
+  * Design doc and a prototype
+  * Set player experience goals
+  * Playtest with other groups, if possible
 * Week 2: Concept iteration
 
 * Every week:
