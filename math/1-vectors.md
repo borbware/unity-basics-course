@@ -10,13 +10,13 @@ math: katex
 # Vector theory
 ## What is a vector?
 
-* vector is a mathematical thingy with a **length** and a **direction**
-* often represented by an arrow (see next slide)
-* can have multiple dimensions (also called components)
-  * in our case usually 2 or 3: 
-  * x, y, and possibly z
-* video games are full of vectors!
-  * used for depicting position, velocity, acceleration, forces....
+* Vector is a mathematical thingy with a **length** and a **direction**
+* Often represented by an arrow (see next slide)
+* Can have multiple dimensions (also called components)
+  * In our case usually 2 or 3: 
+  * $x$, $y$, and possibly $z$
+* Video games are full of vectors!
+  * Used for depicting position, velocity, acceleration, forces....
 
 ### 2D vector example
 * This is a 2D vector $\vec{A} = (6, 3)$
@@ -31,7 +31,7 @@ math: katex
   * $|\vec{A}| = \sqrt{\vec{A}_x^2 + \vec{A}_y^2}$
   * $|(6,3)| = \sqrt{6^2 + 3^2} = \sqrt{36 + 9} = \sqrt{45} \approx 6.7$
 
-* In C#... 
+* In C#:
   * `Mathf.Sqrt(A.x^2 + A.y^2)`
   * Vector classes have a shorthand, too: `A.Magnitude`
 
@@ -39,12 +39,12 @@ math: katex
 
 * [Manual: Understanding Vector Arithmetic](https://docs.unity3d.com/2019.3/Documentation/Manual/UnderstandingVectorArithmetic.html)
 * Let's introduce the most important vector operations
-  * addition
-  * subtraction
-  * scalar multiplication
+  * Addition
+  * Subtraction
+  * Scalar multiplication
   * Extra: vector multiplication
-    * dot product
-    * cross product
+    * Dot product
+    * Cross product (WIP)
 * C# examples included
 ### Vector addition
 * sum of two vectors is calculated by summing up the individual components
@@ -105,48 +105,49 @@ Vector2 C = 2 * A;
 
 ## Vector classes
 
-* Unity has two Vector classes, ***Vector2*** and ***Vector3***
-  * 2 and 3 are the number of dimensions: (x,y) and (x,y,z)
+* Unity has two Vector classes, [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) and [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html)
+  * "2" and "3" here are the number of dimensions: (x,y) and (x,y,z)
   * `Vector2 position = new Vector2(1.0f, 2.0f)`
-    * can be modified by accessing the vector with the dot notation:
+    * Vectors can be modified with the dot notation:
     * `position.x = 3.0f`
 
-* length of vector can be acquired with `vector.Magnitude`
-  * it's calculated internally with the Pythagoras' theorem:
-  * `Mathf.Sqrt(position.x^2 + position.y^2 + position.z^2)`
+* Length of a vector can be acquired with `vector.Magnitude`
+  * [Script Reference: Vector3 magnitude](https://docs.unity3d.com/ScriptReference/Vector3-magnitude.html)
 
-## Velocity vectors
-  * velocity vector: velocity_x and velocity_y components
-    * `new_position = old_position + velocity`
-    * vector addition!
-    * usually depicted as starting from the moving object
-## Distance vectors
+## Velocity vector
 
-* distance vector between two objects
-  * `Vector2.Distance(vector_A, vector_B)`
-  * subtraction
+* `new_position = old_position + velocity;`
+* `transform.position += velocity;`
+* Velocity vector is usually drawn so it starts from the moving object
+  * Remember, though, that vectors do not "know" its starting positions
+## Distance vector
+
+* To get the distance vector between two objects, we use vector subtraction
   * `vector_B - vector_A`
-  * length of the vector: pythagoras
+  * `transform.position - otherGameObject.transform.position;`
+* To just get the length of the distance vector, a.k.a, the distance:
+  * `Vector2.Distance(vector_A, vector_B)`
 
 
 ## Special vectors of Unity
 
 * See Static properties in [Script Reference: Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html)
-  * Vector3.up
-  * Vector3.right
-  * Vector3.forward
-  * etc...
+  * `Vector3.right`: the global $x$ axis
+  * `Vector3.up`: the global $y$ axis
+  * `Vector3.forward`: the global $z$ axis
 
 ## Common vector operations
 
 ### Normalizing a vector
 
-* When we are not interested about the length of a vector, but the **direction** instead, it helps to *normalize* the vector
-  * that is, to set its length to be one
-* this is achieved by dividing the vector by its length
+* When we are not interested about the length of a vector, only its **direction**, it helps to *normalize* the vector
+* Normalizing means setting the length of a vector to be $1$
+* This is achieved by dividing the vector by its length
 * $\vec{A}_{normalized} = \vec{A} / |\vec{A}|$
-* in C#, the normalized version of every vector can be easily accessed:
-  `Vector2 UnitVector = A.normalized;`
+* in C#, the normalized version of any vector can be easily accessed:
+  ```c#
+  Vector2 UnitVector = A.normalized;
+  ```
 
 ### Rotating a vector
 
@@ -160,8 +161,29 @@ Vector2 C = 2 * A;
   ```c#
   myQuaternion *= Quaternion.Euler(0, 0, 90);
   ```
-
 * ***Note:*** the Transform and Quaternion classes have many rotation methods available, see [Transform Class: Rotation](../unity-cookbook/transform.md#rotation)
+
+## Dot product: Vector's alignment with another vector
+<!-- _backgroundColor: pink -->
+* If you want to know how much two vectors point to the same direction, we can use the ***dot product***
+  * [Script Reference: Vector3.Dot](https://docs.unity3d.com/ScriptReference/Vector3.Dot.html)
+* The dot product returns a number, not a vector!
+  * $\vec{A} \cdot \vec{B} = A_{x} \cdot B_{x} + A_{y} \cdot B_{y} + A_{z} \cdot B_{z}$
+* For normalized vectors, `Vector3.Dot` returns 
+  * $1$ if they point in exactly the same direction
+  * $-1$ if they point in completely opposite directions
+  * $0$ if the vectors are perpendicular
+
+### Dot product example
+<!-- _backgroundColor: pink -->
+
+* Check if two rigidbodies are moving to the same direction:
+  * ```c#
+    float alignment = Vector3.Dot(
+      _rigidBody.velocity.normalized,
+      otherGameObjectRigidBody.velocity.normalized)
+    ```
+
 
 ## Note about distance
 
@@ -174,22 +196,11 @@ Vector2 C = 2 * A;
 
 Calculate distance between two GameObjects (player and enemy).
 
-If the distance is smaller than a threshold value, 
-a) change the color of the static GameObject (and set the color back to default when you're no more on the range)
-b) make the enemy shoot at player
-c) move the static GameObject farther away from the GameObject along the shortest possible path
+If the distance is smaller than a threshold value,
 
-
-## Script reference
-
-* Most of the previous examples apply to both Vector2 and Vector3 classes.
-* Vector2
-  * [Script Reference: Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html)
-* Vector3
-  * [Script Reference: Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html)
-  * [Script Reference: Vector3 Dot product](https://docs.unity3d.com/ScriptReference/Vector3.Dot.html)
-  * [Script Reference: Vector3 magnitude](https://docs.unity3d.com/ScriptReference/Vector3-magnitude.html)
-* [Manual: Vector Arithmetic](https://docs.unity3d.com/2019.3/Documentation/Manual/UnderstandingVectorArithmetic.html)
+  a) change the color of the static GameObject (and set the color back to default when you're no more on the range)
+  b) make the enemy shoot at player
+  c) move the static GameObject farther away from the GameObject along the shortest possible path
 
 ## Reading & watching
 

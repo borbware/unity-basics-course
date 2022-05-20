@@ -103,14 +103,14 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   | Game Dev													   	  	|     | 
 |---|-------------------------------------------------------------------|----:|
-|   | [Game Design](gamedev/gamedesign.md)								| 🌓 |
-|   | [Playtesting](gamedev/playtesting.md)								| 🌓 |
-|   | [Game Development](gamedev/gamedevelopment.md)					| 🌒 | 
+|   | [Playtesting](gamedev/playtesting.md)								| 🌔 |
 |   | [Tools](gamedev/tools.md)											| 🌔 |
+|   | [Game Design](gamedev/gamedesign.md)								| 🌔 |
 |   | [Game Industry](gamedev/gameindustry.md)							| 🌓 |
 |   | [Accessibility](gamedev/accessibility.md)							| 🌓 |
-|   | [Business](gamedev/business.md)									| 🌒 |
 |   | [Gamification](gamedev/gamification.md)							| 🌓 |
+|   | [Business](gamedev/business.md)									| 🌒 |
+|   | [Game Development](gamedev/gamedevelopment.md)					| 🌒 | 
 
 
 
