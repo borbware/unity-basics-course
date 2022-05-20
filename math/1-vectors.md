@@ -1,8 +1,4 @@
----
-marp: true
-paginate: true
-math: katex
----
+
 <!-- headingDivider: 3 -->
 <!-- class: default -->
 # Game math 1: Vectors
