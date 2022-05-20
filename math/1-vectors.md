@@ -1,4 +1,8 @@
-
+---
+marp: true
+paginate: true
+math: mathjax
+---
 <!-- headingDivider: 3 -->
 <!-- class: default -->
 # Game math 1: Vectors
