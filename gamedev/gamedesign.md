@@ -23,7 +23,6 @@ paginate: true
 
 ## Verbs
 
-
 * ***Verbs*** are the primary player actions
   * "Jump"
   * "Attack"
@@ -66,10 +65,17 @@ paginate: true
   * designers can forget to explain things that are obvious to *them*
 * ***The only truth about your game is inside the mind of the player***
 * If player feedback contradicts with your preconception, it's on you
-
+* ***Extra:*** Create interesting outcomes for player mistakes
 ### Design to guide players
 
-* Create interesting outcomes for player mistakes
+* The job of a game designer is to teach the player to play the game well
+* [Zach Gage: Building Games That Can Be Understood at a Glance](https://www.youtube.com/watch?v=YISKcRDcDJg)
+* [Tim Rogers: Link To The Past's Perfect First 10 Minutes](https://www.youtube.com/watch?v=yUJ1yGmVdx0)
+* Invisible tutorial
+  * [GMTK: Half-Life 2's Invisible Tutorial](https://www.youtube.com/watch?v=MMggqenxuZc)
+
+### Design for different kinds of players
+
 * Design for different types of players
   * [Wikipedia: Bartle's taxonomy of player types](https://en.wikipedia.org/wiki/Bartle_taxonomy_of_player_types)
     * ♣ Killers
@@ -83,6 +89,12 @@ paginate: true
 * Autonomy: Ability and freedom to make meaningful choices
 * Sensation: Physical sensations or the new
 * Connection: Feeling connected to others/community
+
+### Choices
+
+* Illusory choices / meaningful choices
+* Choices create a ***possibility space***
+* More choices / More defined assets
 
 ## Design to make the game its best possible version
 
@@ -137,9 +149,9 @@ paginate: true
 * "Gotcha" puzzle design
   * Show the lock before the key
   * Obvious solution fails!
-  * [GMTK: What Makes a Good Puzzle](https://www.youtube.com/watch?v=zsjC6fa_YBg)
-  * [GMTK: How Jonathan Blow Designs a Puzzle](https://www.youtube.com/watch?v=2zK8ItePe3Y)
-  * [GMTK: Puzzle Solving... or Problem Solving?](https://www.youtube.com/watch?v=w1_zmx-wU0U)
+* [GMTK: What Makes a Good Puzzle](https://www.youtube.com/watch?v=zsjC6fa_YBg)
+* [GMTK: How Jonathan Blow Designs a Puzzle](https://www.youtube.com/watch?v=2zK8ItePe3Y)
+* [GMTK: Puzzle Solving... or Problem Solving?](https://www.youtube.com/watch?v=w1_zmx-wU0U)
 
 
 ## Story design
@@ -155,6 +167,7 @@ paginate: true
 ## World design
 
 * [Kate Edwards: A Geographer's Guide to Building Game Worlds](https://www.youtube.com/watch?v=EVGonAUUQ8c)
+<!--
 
 ## Game design
 
@@ -164,7 +177,9 @@ paginate: true
   * nourish good ideas
   * nip unnecessary and harmful weeds in the bud
   * grow a functional system enclosed in a limited space
-## Some basic principles
+-->
+
+## Game design: Some basic principles
 
 * Versatile verbs
   * [GMTK: The Secret of Mario's Jump (and other Versatile Verbs)](https://www.youtube.com/watch?v=7daTGyVZ60I)
@@ -176,9 +191,6 @@ paginate: true
   * [GMTK: How Games Use Feedback Loops](https://www.youtube.com/watch?v=H4kbJObhcHw)
 * Synergic systems
   * [GMTK: How Synergies Make Slay the Spire Fun](https://www.youtube.com/watch?v=terD4Bk3L_8)
-
-
----
 
 ## Game feel
 * Game feel in isolation
@@ -192,13 +204,6 @@ paginate: true
 * [Nicolae Berbece: Game Feel: Why Your Death Animation Sucks](https://www.youtube.com/watch?v=pmSAG51BybY)
 
 
-## Teaching the player
-
-* The job of a game designer is to teach the player to play the game well
-* [Zach Gage: Building Games That Can Be Understood at a Glance](https://www.youtube.com/watch?v=YISKcRDcDJg)
-* [Tim Rogers: Link To The Past's Perfect First 10 Minutes](https://www.youtube.com/watch?v=yUJ1yGmVdx0)
-* Invisible tutorial
-  * [GMTK: Half-Life 2's Invisible Tutorial](https://www.youtube.com/watch?v=MMggqenxuZc)
 
 ## Good design?
 

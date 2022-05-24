@@ -150,12 +150,49 @@ EventSystem.current.SetSelectedGameObject(myButton);
 ### UI Example: HP bar
 
 * RectTransform: Set pivot to left
-* 9-Slicing for art
+* Control the HP bar width from code:
+  ```c#
+  hpBarRT = GetComponent<RectTransform>();
+  ...
+  public void AddHP(float newHP)
+  {
+      hp += newHP;
+      hp = Mathf.Clamp(hp, 0, 100);
+      hpBarRT.sizeDelta = new Vector2(width * hp / 100, hpBarRT.rect.height);
+  }
+  ```
+* Use ***9-Slicing*** for HP bar art
 
 ### UI Example: Dialogue system
 
-* [Semag Games video series: Dialogye Tutorial](https://www.youtube.com/playlist?list=PLCGaK2yqfY2IrJYnOnlgdmzWVUFXsRQXA)
+* [Semag Games video series: Dialogue Tutorial](https://www.youtube.com/playlist?list=PLCGaK2yqfY2IrJYnOnlgdmzWVUFXsRQXA)
+* [BMo video: 5 Minute dialogue system](https://www.youtube.com/watch?v=8oTYabhj248)
+  ```c#
+  string[] lines = [
+    "Hello",
+    "World"
+  ],
+  void Start()
+  {
+    textComponent.text = "";
+    StartDialogue();
+  }
 
+  void StartDialogue()
+  {
+    index = 0;
+    StartCoroutine(TypeLine());
+  }
+
+  IEnumerator TypeLine()
+  {
+    foreach (char c in lines[index].ToCharArray())
+    {
+      textComponent.text += c;
+      yield return new WaitForSeconds(textSpeed)
+    }
+  }
+  ```
 ## UI Gotchas!
 
 ### There's a weird white box surrounding my UI elements
