@@ -18,27 +18,7 @@ paginate: true
 * [Manual: Particle System component](https://docs.unity3d.com/Manual/class-ParticleSystem.html)
 * [Script Reference: ParticleSystem](https://docs.unity3d.com/ScriptReference/ParticleSystem.html)
 
-### Basic parameters
 
-* Particle lifetime
-
-### Particle system code example
-
-* how to stop / start particles from emitting:
-	```c#
-	public ParticleSystem particles;
-
-	...
-	if (particles.isStopped)
-	{
-	    particles.Play();
-	}
-	...
-	if (particles.isPlaying)
-	{
-	    particles.Stop();
-	}
-	```
 
 ### Particle system component in Inspector
 ![](imgs/particle-system-inspector.png)
@@ -46,17 +26,68 @@ paginate: true
 ## Particle system modules
 
 * [Manual: Particle System Modules](https://docs.unity3d.com/Manual/ParticleSystemModules.html)
+* Main
+  * Looping
+  * Start Speed, Start Size, Start Lifetime
+  * Simulation Space: World / Local
+  * Play On Awake
+* Emission
+  * Rate over time
+* Shape
+  * Shape (Circle is good for 2D)
+  * Radius
+  * Arc
+  * Position, Rotation
+---
+* [Texture Sheet Animation](https://docs.unity3d.com/Manual/PartSysTexSheetAnimModule.html)
+  * If you want to have sprite animation, use this
+  * Grid: tell how many cels your sprite sheet has
+* Renderer
+  * Material
+    * You need to create a new material for your particles!
+
+### Particle material
+
+* For basic sprite particles:
+  * *Shader: Particles/Standard Unlit*
+  * *Rendering Mode: Fade*
+  * Drag your particle sprite / sprite sheet to *Albedo*
 
 
-### Example: Sprite animation
+### Particle system code example
 
-* [Manual: Texture Sheet Animation Module](https://docs.unity3d.com/Manual/PartSysTexSheetAnimModule.html)
+* How to stop / start emitting particles:
+	```c#
+	public ParticleSystem particles;
+
+	if (particles.isStopped && Input.GetButtonDown("Fire1"))
+	{
+	    particles.Play();
+	}
+	if (particles.isPlaying && Input.GetButtonDown("Fire1"))
+	{
+	    particles.Stop();
+	}
+	```
+
+### Change properties with code
+
+* You can't change module properties directly like this: `dustParticles.shape.rotation = somethingNew`
+* You have to assign a new variable for the module first, and change the variables there:
+	```c#
+	var shape = dustParticles.shape;
+	shape.rotation = new Vector3 (
+		0, 0, Mathf.Atan2(PlayerMove.y, PlayerMove.x) * Mathf.Rad2Deg
+	);
+	var main = dustParticles.main;
+	main.startSpeed = 2 * PlayerMove.magnitude;
+	```
 
 ## Destroy particles on collision
 
-* In particle system component: Enable ***Collision*** module
-  * Set Type to ***World*** and then ***Lifetime loss*** to 1
-  * Also, you can change the collision layers in ***collide with*** so the particle only collides with a collider of a specific layer.
+* In particle system component: Enable *Collision* module
+  * Set Type to *World* and then *Lifetime loss* to 1
+  * Also, you can change the collision layers in *Collide with* so the particle only collides with a collider of a specific layer.
 
 ## Reading
 
