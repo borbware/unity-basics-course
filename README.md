@@ -154,6 +154,7 @@ Code examples are in different repositories. Links to repositories below, includ
 * [2D animation](unity-cookbook/2d-animation.md)
 * [Pathfinding](unity-cookbook/pathfinding.md)
 * [Interpolation](math/3-interpolation.md) (smooth camera move with lerp)
+* [Dialogue system](unity-cookbook/UI.md#ui-example-dialogue-system)
 
 ### [MultiplayerArena](https://github.com/borbware/MultiplayerArena)
 
