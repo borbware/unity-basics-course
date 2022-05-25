@@ -160,7 +160,9 @@ paginate: true
 * Story vs gameplay: The ludonarrative dissonance
   * [Errant Signal: The Debate That Never Took Place](https://www.youtube.com/watch?v=xBN3R0m31bA)
 * [Laura E. Hall: Environmental Narrative: Telling Stories Without Saying Anything](https://www.youtube.com/watch?v=oXZTz3oR30A)
+* [GMTK: How Level Design Can Tell a Story](https://www.youtube.com/watch?v=RwlnCn2EB9o)
 * [GMTK: Telling Stories with Systems](https://www.youtube.com/watch?v=NyMndWpihTM)
+
 * [GMTK: Can We Make Talking as Much Fun as Shooting?](https://www.youtube.com/watch?v=l9TzqNQBmr0)
 
 

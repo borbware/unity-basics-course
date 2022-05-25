@@ -195,7 +195,7 @@ EventSystem.current.SetSelectedGameObject(myButton);
     foreach (char c in lines[index].ToCharArray())
     {
       textComponent.text += c;
-      yield return new WaitForSeconds(textSpeed)
+      yield return new WaitForSeconds(textSpeed);
     }
   }
   ```
@@ -204,9 +204,11 @@ EventSystem.current.SetSelectedGameObject(myButton);
   void Update()
   {
     if (Input.GetButtonDown("Fire1") && (textComponent.text == lines[index]))
+    {
       NextLine();
     }
     if (Input.GetButtonDown("Fire2") && (textComponent.text != lines[index]))
+    {
       StopCoroutine(coTypeLine);
       textComponent.text = lines[index];
     }
