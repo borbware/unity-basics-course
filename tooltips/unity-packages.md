@@ -38,6 +38,7 @@ paginate: true
 ### TextMeshPro
   * The better way to make text in Unity
   * [TextMeshPro documentation](http://digitalnativestudios.com/textmeshpro/docs/)
+  * [TextMeshProUGUI API](https://docs.unity3d.com/Packages/com.unity.textmeshpro@1.0/api/TMPro.TextMeshProUGUI.html)
   * In code:
     ```c#
     using TMPro;

@@ -26,24 +26,26 @@ paginate: true
 ## Particle system modules
 
 * [Manual: Particle System Modules](https://docs.unity3d.com/Manual/ParticleSystemModules.html)
-* Main
-  * Looping
-  * Start Speed, Start Size, Start Lifetime
-  * Simulation Space: World / Local
-  * Play On Awake
-* Emission
-  * Rate over time
-* Shape
-  * Shape (Circle is good for 2D)
-  * Radius
-  * Arc
-  * Position, Rotation
+* [Main](https://docs.unity3d.com/Manual/PartSysMainModule.html)
+  * *Looping*
+  * *Start Speed, Start Size, Start Lifetime*
+  * *Simulation Space: World / Local*
+  * *Play On Awake*
+* [Emission](https://docs.unity3d.com/Manual/PartSysEmissionModule.html)
+  * *Rate over time*
 ---
+* [Shape](https://docs.unity3d.com/Manual/PartSysShapeModule.html)
+  * Shape of the particle emitter
+  * *Shape* (Circle is good for 2D)
+  * *Radius*
+  * *Arc*
+  * *Position*, *Rotation*
+
 * [Texture Sheet Animation](https://docs.unity3d.com/Manual/PartSysTexSheetAnimModule.html)
-  * If you want to have sprite animation, use this
-  * Grid: tell how many cels your sprite sheet has
-* Renderer
-  * Material
+  * If you want your particles to have a sprite animation, use this
+  * *Grid*: tell how many cels your sprite sheet has
+* [Renderer](https://docs.unity3d.com/Manual/PartSysRendererModule.html)
+  * *Material*
     * You need to create a new material for your particles!
 
 ### Particle material
@@ -51,7 +53,7 @@ paginate: true
 * For basic sprite particles:
   * *Shader: Particles/Standard Unlit*
   * *Rendering Mode: Fade*
-  * Drag your particle sprite / sprite sheet to *Albedo*
+  * Drag your particle sprite (or sprite sheet for animated particles!) to *Albedo*
 
 
 ### Particle system code example
