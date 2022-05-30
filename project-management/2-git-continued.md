@@ -153,10 +153,12 @@ Continue the exercise from [Git Basics](1-git-basics.md) or create a new reposit
 
 ## Collaboration in Unity
 
-* The most important rule: ***don't work on the same thing simultaneously or it's chaos***
+* ***The zeroth rule:*** Make sure that everyone on team uses the same Unity and package versions.
+* ***The first rule:*** Don't ever work on the same thing simultaneously.
+* ***The second rule:*** When you do break rule #1, make necessary changes in communication so you won't break it again. 
 * Be sure to communicate about ***scene ownership***
-  * Scenes are not code files, so you can't merge conflicts if two people have worked on them
-  * Thus, ***Scene Owner*** will be the only person on the team who should be working on a certain scene
+  * Scenes are not code files, so you can't easily merge changes if two people have worked on them
+  * Thus, the ***Scene Owner*** will be the only person on the team who should be working on a certain scene
   * If a scene needs GameObject contributions from others, they can create prefabs that the Scene Owners then add to their scene 
 
 ## Exercise 2. Branching team effort
