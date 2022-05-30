@@ -36,10 +36,10 @@ paginate: true
   * for faster tilemapping
 
 ### TextMeshPro
-  * The better way to make text in Unity
+  * The better way to make formatted text in Unity
   * [TextMeshPro documentation](http://digitalnativestudios.com/textmeshpro/docs/)
   * [TextMeshProUGUI API](https://docs.unity3d.com/Packages/com.unity.textmeshpro@1.0/api/TMPro.TextMeshProUGUI.html)
-  * In code:
+  * Code example:
     ```c#
     using TMPro;
     ...
@@ -47,10 +47,10 @@ paginate: true
     textComponent.text = "asdf";
     ```
   * Gotchas:
-    * To remove the **T** icon from play mode, go to *Gizmos > TextMeshProUGUI* and click on the icon, ***NOT*** the gizmo checkbox
+    * To remove the blue **T** icon from play mode, go to *Gizmos > TextMeshProUGUI* and click on the icon, ***NOT*** the gizmo checkbox
       * [Unity Answers: How to get rid of TextMeshPro's Icon when I'm not selecting it](https://answers.unity.com/questions/1582647/how-to-get-rid-of-textmeshpros-icon-when-im-not-se.html)
 
 
 ### Unity Recorder
   * for marketing: recording video in the Play mode
-  * https://docs.unity3d.com/Packages/com.unity.recorder@2.0/manual/index.html
+  * [Packages: Unity Recorder Manual](https://docs.unity3d.com/Packages/com.unity.recorder@2.0/manual/index.html)
