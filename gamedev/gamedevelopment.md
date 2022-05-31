@@ -17,15 +17,6 @@
   * You don’t need to try EVERYTHING, but if you have collaborators/stakeholders excited about an idea, don’t dispute the idea– try it out and see if it works.
   * Burn through a lot of bad or mediocre ideas as fast as possible to get to the good ones. 
 
-## Have a good team
-
-* What is common in good teams?
-  * 5. impact: work matters
-  * 4. meaning: personally important
-  * 3. clear roles & clear goals
-  * 2. dependability: things get done on time
-  * 1. psychological safety
-
 ## Random
 
 * When making changes to variables, make them big

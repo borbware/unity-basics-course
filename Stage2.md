@@ -21,10 +21,10 @@ paginate: true
 ## Ryhmätehtävä 2: Pelijami
 <!-- _backgroundColor: lightgreen -->
 
-* uudet ryhmät kiinnostuksen mukaan
-* pitchaa peli-idea jamin teemaan liittyen
+* pitchaa yksin peli-idea jamin teemaan liittyen
   * mitä osaamista tarvitset että pelin saa tehtyä?
   * ryhmäytyminen: mitä ideaa haluaisit tehdä?
+* muodostetaan uudet ryhmät kiinnostuksen mukaan
 * pelin tekeminen ryhmänä jamiin
 * submittaus itch.ioon
 * lopuksi: muiden jamipelien (myös external!) testaus ja arviointi
@@ -39,3 +39,16 @@ paginate: true
 * mihin tilaa on käytetty aiemmin?
 * hahmot, jotka asustavat tilassa (jokaiselta ryhmän jäseneltä oma kontribuutio)
 * yleinen "fiilis": mitä tila kertoo ympäröivästä maailmasta? (myös: värit, ambienssi, musiikki)
+
+---
+
+### Storytelling!
+
+world: built around one theme
+
+level: 
+	- convey a sense of place 
+	- imply previous/historical use of the space
+	- emotion via space design (cramped, open, dead ends, low visibility...)
+	- intensity variations 
+	- public/private space

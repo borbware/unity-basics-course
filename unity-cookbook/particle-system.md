@@ -88,8 +88,11 @@ paginate: true
 ## Destroy particles on collision
 
 * In particle system component: Enable *Collision* module
-  * Set Type to *World* and then *Lifetime loss* to 1
-  * Also, you can change the collision layers in *Collide with* so the particle only collides with a collider of a specific layer.
+  * *Type*: *World*
+  * *Mode*: *2D* / *3D*
+  * *Lifetime loss*: *1* (Dies on collision)
+  * *Collide with*: You can change the collision layers so the particles only collide with specific layers. 
+    * (GameObject's Collision layer does not affect particles!!)
 
 ## Reading
 
