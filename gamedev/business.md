@@ -1,7 +1,5 @@
 # Making money with games
 
-
-
 * Audience
   * Know who you're making the game for
   * What features would they expect your game to have?

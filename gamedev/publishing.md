@@ -30,3 +30,8 @@ paginate: true
 * Go to your game page (youraccount.itch.io/your-new-game)
 * Click ***Edit game*** to go back to game settings
 * Scroll down and Set visibility to ***Public*** (then others can see your game!)
+
+## Getting paid on itch.io
+
+* Send your tax information to United States
+  * W8-BEN

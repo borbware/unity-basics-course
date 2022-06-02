@@ -1,105 +1,85 @@
-# Game industry and game education
+---
+marp: true
+paginate: true
+---
+<!-- headingDivider: 3 -->
+<!-- class: default -->
 
-
-
-
-## Composition of a gamedev team
-
-* Director
-* Producer
-* Game Designer
-* Game Writer
-* Level Designer
-* Programmer
-* 2D artist
-* 3D artist
-* Character artist
-* Environment artist
-* Animator
-* Rigger
-* Composer
-* QA
-* Tester
-* Marketer
-* Trailer editor
-* Web developer
-* Devops engineer
-* Social media manager
-* Community manager
-
-
+# Game industry
 ## Many ways to game industry
 
-* the only prerequisite:
-  * learn how to make games
-
-## How to learn?
-
-* study independently online
-* study math & science at a University
-* study computer science / IT at a University (of Applied sciences)
-* study video game making on a dedicated curriculum
-  * E.g. Aalto University, KAMK
-* study on a course like this
-
+* The only prerequisite to getting to industry:
+  * You want to make games
+* Different paths:
+  * Study independently online
+  * Study math & science at a University
+  * Study computer science / IT at a University (of Applied sciences)
+  * Study video game making on a dedicated curriculum
+    * E.g. Aalto University, KAMK
+  * Study on a course like this
 ## Game industry worldwide
 
 [Wikipedia: Video game industry revenue graph](https://en.wikipedia.org/wiki/Video_game_industry#Economics)
 
 * Biggest companies: Sony, Tencent, Microsoft, Nintendo
 * Mobile, PC, Consoles
-* virtual & physical sales
-* many emerging markets
+* Virtual & physical sales
+* Many emerging markets
 * "By 2018, the United States video game industry had matched that of the United States film industry on basis of revenue"
+## Trends
 * 2010s & 2020s trends
-  * free to play (f2p)
-  * mobile
-  * games as a service
-  * rising budgets
-  * subscription services (gamepass)
-  * more and more indies
-* unrealized trends
-  * cloud gaming: no more? (Stadia being deprioritized)
+  * Free to play (f2p)
+  * Mobile
+  * Games as a service
+  * Rising budgets
+  * Subscription services (gamepass)
+  * More and more indies
+* Unrealized trends
+  * Cloud gaming: no more? (Stadia being deprioritized)
   * VR breakthrough not coming?
     * Metaverse rebranding
     * [John Carmack keynote: "we have lapsed VR users, but there are no lapsed mobile phone users"](https://www.youtube.com/watch?v=BnSUk0je6oo)
-* consolidation happens
-  * there are less and less big actors as they're bought out by even bigger actors
-    * AA games basically nonexistent
-    * the trend is pushing towards AAAAs
+## Consolidation
+* Consolidation happens every day
+  * There are less and less big actors as they're bought out by even bigger actors
+    * "AA" games basically nonexistent, at least underrepresented
+    * The trend is pushing towards AAAAs
   * [Microsoft buys ABK](https://www.gamedeveloper.com/business/microsoft-buying-activision-blizzard-in-68-7b-deal)
   * [Sony buys Bungie](https://www.gamesindustry.biz/articles/2022-01-31-sony-buying-bungie-for-usd3-6-billion)
 
 ## Games industry in Finland
 
-* mobile-heavy
-
+* [Neogames: About the industry](https://neogames.fi/about-the-industry/)
+  * Company listing
 * PC & console:
   * Remedy
   * Housemarque (Sony)
   * RedLynx
   * Frozenbyte
   * Colossal Order
+  * ...
+
+---
+* In Finland, industry is very mobile-heavy
 * Mobile
   * Supercell (Tencent)
-    * easily the biggest one
+    * Easily the biggest one
   * Rovio
   * Small Giant Games (Take Two)
   * Futureplay Games (Plarium)
   * Fingersoft
+  * ...
+---
 * Active indie scene
   * IGDA
   * FGJ
-  * game jams
-* [Neogames: About the industry](https://neogames.fi/about-the-industry/)
-  * company listing 
+  * Game jams
 
 ## Games industry in Vaasa
 
-* almost 100% indie
+* Almost 100% indie
 * Platonic Partnership
-  * Lydia, Good Mourning, Leväluhta
-  * client projects
+  * Lydia, Good Mourning, Leväluhta, client projects
 * Parta Games
   * Choppa, Noodle Road, Choppa: Rescue Rivals
 * September Games (Henrik Hermans)
@@ -107,27 +87,18 @@
 * Blacklight Studios
   * 3rd person action
 * University of Vaasa
-* remote work is an option, too
+* Remote work is increasingly an option, too
   * Rovio
 
 ## Jobs vs education
 
-* The unfortunate truth
-  * less games jobs than there are games students
-  -> many find jobs from tangential fields
-
-* examples
-  * 3d animation for marketing & other media
-  * regular software development
-  * games education
+* The unfortunate truth: There are less games jobs than there are games students
+* Many games people find jobs from tangential fields, examples: 
+  * 3D animation for marketing & other media
+  * Regular software development
+  * Games education
     * AMKs
-  * edugames & gamification
+  * Edugames & gamification
     * LudoCraft
   * VR
-    * VRKiwi
-    * Varjo
-
-## Gamification
-
-See: [Gamification](gamification.md0)
-
+    * VRKiwi, Varjo
