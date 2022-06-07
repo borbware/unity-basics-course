@@ -12,3 +12,9 @@
 
 
 xx lue game team oulun diat
+
+
+## Compare to competition
+
+* SteamSpy
+* GameDataCrunch.com

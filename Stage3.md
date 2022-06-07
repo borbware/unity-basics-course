@@ -24,6 +24,14 @@ paginate: true
 * Sell your hook (unique selling point)
 * Know your scope
 
+## How to create a hooky game idea?
+
+* There are a few ways (See [this video](https://www.youtube.com/watch?v=F-8N0DuHwJo))
+  * Wait for a lightning to strike
+  * Combine two genres
+  * Identify a flaw in a genre and fix it
+  * Twist a genre trope
+
 ## Example pitch structure
 
 * Explain your game in one or two sentences (What's the hook?)

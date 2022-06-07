@@ -19,10 +19,10 @@ paginate: true
 
 ## Why Scrum for game development?
 
-* Scrum creates conditions to achieve greatness through its practices and principles
-* Scrum isn't magic: you need to continuously enforce its practices in action
+* Through its practices and principles, Scrum creates conditions to achieve great results 
 * Scrum gives agency to team members: meeting the goal is a team effort
 * Scrum creates transparency: problems get addressed early
+* Scrum isn't magic: you need to continuously enforce its practices in action
 
 
 ---
@@ -31,7 +31,7 @@ paginate: true
 * ***Self-organization***: Enables teams to have a degree of authority and responsibility to select their membership
 * ***True leadership***: Provides leadership focused on mentoring and facilitation to free the best performance possible from the team
 
-
+<!--
 ## Cross-discipline teams
 * Team members share the same goal and therefore the same priorities
 * To make sure ***no work goes to waste***, synchronization of the disciplines happens every sprint. 
@@ -51,12 +51,13 @@ paginate: true
 
 * Team selects their own members to complete tasks
 * Some sprints, like before release, might require a complete reorganization
+-->
 
-# Scrum terms
+# Scrum basics
 
 ## Scrum team
 
-* Stakeholders (not part of the team)
+* Stakeholders (not actually part of the team)
   * People outside the Scrum team who have an interest in the product
   * Sales, marketing, end customers, etc
 * Client
@@ -122,7 +123,7 @@ paginate: true
 * The whole Scrum team attends
   * inspects the whole Product Backlog
 * a Sprint Goal is created and dissectted into a new Sprint Backlog
-  * Sprint Goal is *immutable*
+  * the Sprint Goal is *immutable*
   * the exact implementations are not discussed, are rather left to the Dev Team to decide
 * New tasks are given to the Dev Team
 
@@ -172,7 +173,6 @@ paginate: true
   2. Make sure everybody is able to attend the dailies.
   3. Make sure everybody is heard and contributes at dailies.
   4. If someone needs help, you help them find assistance or assist them yourself.
-
 * Before the dev meeting:
   1. Make sure the task board on GitHub is up to date.
   2. Make sure someone is ready to present the newest working version of the program, with all the new changes pushed

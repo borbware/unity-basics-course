@@ -26,14 +26,25 @@ paginate: true
 
 ## Projects
 
-* A Kanban board that can be used to track sprint progress
-* Three columns of notes
+* A board that can be used to track sprint progress
+* GitHub has two Projects views
+  * Projects
+    * Under one repo
+  * Projects (Beta)
+    * Can have issues from multiple repos 
+---
+* Create a new project (not beta) for every sprint under Projects Tab > Projects (not beta!) > New Project
+  * Give name "Sprint 1"
+  * Use Project template "Automated kanban"
+  * Delete the default notes
+* Now, when an issue is closed, it jumps automatically to Done column
+---
+* Kanban board has by default three columns of issues & notes
   * To do
-  * Doing
+  * In Progress
   * Done
+* There can be issues, pull requests and notes in the columns
 * Notes can be converted into issues
-  * When an issue is closed, it jumps automatically to Done column
-* Create for every sprint!
 
 ## Pull requests
 
@@ -43,6 +54,8 @@ paginate: true
 * If "All comments need to be resolved" is checked, the merge can only be completed after you've addressed the issues and the maintainer has approved the changes!
 * After making these changes, you don't have to create a new pull request, new commits are automatically added to the one already created
 
+<!--
+
 ## Actions
 
 
@@ -51,6 +64,7 @@ paginate: true
 
 - a free Unity plugin
 - makes communicating with GitHub easier and integrated into Unity
+-->
 
 <!--
 ### Github
