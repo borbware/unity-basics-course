@@ -25,8 +25,8 @@ paginate: true
   * 2D cameras
     * deadzones
     * Super Mario World example
+    * [Unity video: Creating a Third Person Camera using Cinemachine](https://www.youtube.com/watch?v=537B1kJp9YQ)
     * [Brackeys video: 2D camera (Cinemachine)](https://www.youtube.com/watch?v=2jTY11Am0Ig)
-
 ### Pixel Perfect Camera
   * for pixel art games
   * [Packages: Pixel Perfect Camera](https://docs.unity3d.com/Packages/com.unity.2d.pixel-perfect@1.0/manual/index.html)

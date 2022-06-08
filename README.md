@@ -77,7 +77,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |   | [Pathfinding](unity-cookbook/pathfinding.md)						| 🌔 |
 |   | [Scenes](unity-cookbook/scenes.md)								| 🌔 |
 | 3 |	
-|   | [Particle system](unity-cookbook/particle-system.md)				| 🌑 |
+|   | [Particle system](unity-cookbook/particle-system.md)				| 🌔 |
 |   | [Saving and Loading](unity-cookbook/saving-loading.md)			| 🌑 |
 |   | [3D Platforming](unity-cookbook/3dplatforming.md)					| 🌒 |
 |   | [Building](unity-cookbook/building.md)							| 🌑 |
@@ -96,8 +96,8 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |---|-------------------------------------------------------------------|----:|
 | 1 | [Git Basics](project-management/1-git-basics.md)					| 🌔 |
 | 2 | [Git Continued](project-management/2-git-continued.md)			| 🌔 |
-| 3 | [GitHub tools](project-management/3-github-tools.md)				| 🌒 |
-| 4 | [Scrum](project-management/4-scrum.md) 							| 🌑 |
+| 3 | [GitHub tools](project-management/3-github-tools.md)				| 🌔 |
+| 4 | [Scrum](project-management/4-scrum.md) 							| 🌔 |
 |   | [Unity Collab](project-management/unity-collab.md) 				| 🌑 |
 
 
@@ -111,6 +111,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |   | [Gamification](gamedev/gamification.md)							| 🌓 |
 |   | [Business](gamedev/business.md)									| 🌒 |
 |   | [Game Development](gamedev/gamedevelopment.md)					| 🌒 | 
+|   | [Teamwork](gamedev/teamwork.md)									| 🌒 | 
 
 
 
