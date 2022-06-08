@@ -6,21 +6,19 @@ The course is divided into three four-module stages (module being approximately 
 
 The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the corresponding chapter is!
 
-# [Stages](Stages.md)
+# Stages
 
 |   | [Stage 1](Stage1.md)						  				 	  	|     | 
 |---|-------------------------------------------------------------------|----:|
-| 1 | [Module 1](Module1.md)												| 🌔 |
-| 2 | [Module 2](Module2.md)												| 🌔 |
-| 3 | [Module 3](Module3.md)												| 🌓 |
-| 4 | [Module 4](Module4.md)												| 🌑 |
+| 1 | [Module 1](Module1.md)											| 🌔 |
+| 2 | [Module 2](Module2.md)											| 🌔 |
+| 3 | [Module 3](Module3.md)											| 🌔 |
 
-|   | [Stage 2](Stage2.md)						  				 	  	|     | 
+|   | [Stage 2](Stage2.md)						  				 	  	| 🌔 | 
 |---|-------------------------------------------------------------------|----:|
-| 1 | [Module 5](Module5.md)												| 🌑 |
-| 2 | [Module 6](Module6.md)												| 🌑 |
-| 3 | [Module 7](Module7.md)												| 🌑 |
 
+|   | [Stage 3](Stage3.md)						  				 	  	| 🌔 | 
+|---|-------------------------------------------------------------------|----:|
 # Books
 
 ## About programming

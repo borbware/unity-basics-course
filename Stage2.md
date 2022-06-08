@@ -40,7 +40,6 @@ paginate: true
 * hahmot, jotka asustavat tilassa (jokaiselta ryhmän jäseneltä oma kontribuutio)
 * yleinen "fiilis": mitä tila kertoo ympäröivästä maailmasta? (myös: värit, ambienssi, musiikki)
 
----
 
 ### Storytelling!
 
