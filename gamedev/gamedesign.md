@@ -131,6 +131,8 @@ paginate: true
 ### Kishōtenketsu
 
 * Four-act structure
+* Part of the Eastern storytelling tradition
+  * [Example comic](https://touchmba.com/wp-content/uploads/2019/04/kishotenketsu-manga.jpg)
 * Works for levels, worlds, whole games
   * Ki: Introduce
   * Shō: Develop
