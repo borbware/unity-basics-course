@@ -43,12 +43,14 @@ paginate: true
 ## Canvas Component
 
 * [Packages: Unity UI: Canvas class](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/class-Canvas.html)
-* Screen space vs World space 
+* *Render mode*: Screen space vs World space 
   * Screen space
     * UI elements are rendered to fixed place on the screen, on top of the scene
   * World space
     * UI elements are hanging out with other GameObjects
     * "Diegetic interface"
+* *Order in Layer*: Change this to arrange which UI elements are drawn on top
+  * ***Note:*** You can add a new canvas component to an UI component inside a canvas and change its sorting order!
 
 ## CanvasScaler Component
 
