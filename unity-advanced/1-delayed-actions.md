@@ -92,14 +92,26 @@ void Update () {
 ## Coroutines
 
 * [Manual: Coroutines](https://docs.unity3d.com/Manual/Coroutines.html)
-* A function that is executed until the yield statement is reached, and then continued on the next frame
-  * on the next frame, we don't start from the beginning, but rather ***after*** the yield statement
-  * thus, we can do something, and then continue on the next frame or even after a specified time delay
+* A function that is executed until the `yield` statement is reached, and then continued on the next frame
+  * On the next frame, we don't start from the beginning, but rather ***after*** the `yield` statement
+  * Thus, we can do something, and then continue on the next frame or even after a specified time delay
   * Excellent for sequenced events (cutscenes!)
 * [Unity Learn: Coroutines](https://learn.unity.com/tutorial/coroutines?uv=2019.3&projectId=5c88f2c1edbc2a001f873ea5#5c894522edbc2a14103553c5)
 
+---
 
-
+* Coroutines are functions with return type `IEnumerator`
+    ```c#
+    IEnumerator TrivialCoroutine()
+    {
+        yield return null;
+    }
+    ```
+* In coroutines, you can't `return` - you have to use `yield return`
+  * `yield return null;`
+  * `yield return new WaitForSeconds(5.0f);`
+  * ...
+* ***Note:*** To end a coroutine, you can use `yield break;`
 
 ### Example: Keep executing something after a break
 
@@ -186,4 +198,26 @@ void Update()
     if (Input.GetKeyDown(KeyCode.Backspace))
         StopCoroutine(fade); // pauses coroutine if already started
 }
+```
+
+### Example: Coroutine of coroutines
+
+* You can call other coroutines inside coroutines like this:
+```c#
+    IEnumerator SetColor(float time)
+    {
+        lähetti.SendMessage("SetColorToRandom");
+        yield return new WaitForSeconds(time);
+    }
+
+    IEnumerator ChangeColorToRandom()
+    {
+        yield return SetColor(2f);
+        yield return SetColor(15f);
+        yield return SetColor(3f);
+    }
+
+    ...
+
+    StartCoroutine(ChangeColorToRandom());
 ```

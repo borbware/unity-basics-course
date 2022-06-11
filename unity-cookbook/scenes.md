@@ -7,22 +7,39 @@ paginate: true
 
 # Scenes
 
+## Adding new scenes
+
+* Scenes are the different levels or screens of your game
+* You can add new scenes to your game with *File > New scene*
+* Then save it to your Scenes folder with *File > Save scene*
+* You can open another scenes from the Project window
+* ***Note:*** If you open a previously-made Unity project the first time, Unity won't open any scenes, you have to do them manually from the Project window! 
+
+## Building a game with multiple scenes
+
+* When you have multiple scenes, you need to add them to your build settings so you're including them in the game
+  * *File > Build Settings > Scenes in Build*
+  * Either drag-and-drop your scenes here or click *Add Open Scenes* 
+  * The top-most scene will be the one that gets loaded when the game starts
+
 ## Scene manager
 
-* Scene Manager, uh, manages scenes
 * [Script Reference: SceneManager](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.html)
-* [Script Reference: SceneManager.GetSceneByPath](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.GetSceneByPath.html)
-
+* Scene Manager, uh, manages scenes
+* To use it, you need to import `SceneManagement`:
+  ```c#
+  using UnityEngine.SceneManagement;
+  ```
 
 ## Loading a scene
 
-* [Script Reference: SceneManager.LoadScene](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadScene.html)
-  * moving between scenes:
+* To move between scenes, use [SceneManager.LoadScene](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadScene.html)
     ```c#
     SceneManager.LoadScene(sceneBuildIndex);
     SceneManager.LoadScene(sceneName);
-    ``` 
-  * loading the same scene where you are resets the scene (but NOT static variables!)
+    ```
+* This unloads your current scene and loads the one you specified
+* Loading the scene you are currently in ***resets*** the scene (but not static variables!)
 
 ### Loading complex scenes
 
@@ -30,7 +47,7 @@ paginate: true
   ```c#
   SceneManager.LoadScene("YourScene", LoadSceneMode.Additive);
   ```
-  * useful for big open worlds
+  * Useful for big open worlds and interconnected areas
   * If you use it, you might need to unload previously loaded levels as well
   * [Script Reference: SceneManager.UnloadSceneAsync](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.UnloadSceneAsync.html)
 
@@ -78,6 +95,27 @@ paginate: true
     }
     ```
 * This is commonly known in software development as the ***singleton pattern***.
+
+## Do stuff when scene is loaded
+
+[Script Reference: SceneManager.sceneLoaded](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager-sceneLoaded.html)
+
+```c#
+// called first
+void OnEnable()
+{
+    Debug.Log("OnEnable called");
+    SceneManager.sceneLoaded += OnSceneLoaded;
+}
+
+// called second
+void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+{
+    Debug.Log("OnSceneLoaded: " + scene.name);
+    Debug.Log(mode);
+}
+
+```
 
 ## Extra: Listing multiple scenes 
 <!-- _backgroundColor: pink -->

@@ -263,7 +263,7 @@ Remap(float iMin, float iMax, float oMin, float oMax, float v)
     return Mathf.Lerp(oMin, oMax, t);
 }
 ```
-Try to call the method from a gameobject!
+Try to call the method from a GameObject!
 
 ## Constructors
 * Constructor is an optional function that is called when a class is instantiated

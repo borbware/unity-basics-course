@@ -386,10 +386,13 @@ Now, edit the strings with a loop to include this number as well.
 
 Create two-dimensional data structure with x,y coordinates.
 
-Create a function that creates new enemy gameobjects in the scene in these coordinates.
+Create a function `populateLevel()` that creates new enemy GameObjects in the scene based on these coordinates.
 
 Also, create a function `newCoordinate(x, y)` that can be used to add new coordinates into the data structure.
 
+<<<<<<< HEAD
+**Extra:** What if you want to populate the level with enemies and collectibles, both of which saved in the same data structure?
+=======
 ## Exercise 7. List of lights
 <!-- _backgroundColor: Khaki -->
 
@@ -398,3 +401,4 @@ Continue exercise 1 from [Scripting gameobjects](../unity-basics/4-scripting-gam
 Instead of three lights, have nine lights, each with a tag "Light" (preferably as a prefab).
 
 Control the lights from the light switch with a program that runs through a list of all the lights instead of switching them on and off individually.
+>>>>>>> ab5c754b96b3857b53e358cf005eaf2a3fd33aeb

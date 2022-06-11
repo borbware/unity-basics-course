@@ -6,21 +6,19 @@ The course is divided into three four-module stages (module being approximately 
 
 The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the corresponding chapter is!
 
-# [Stages](Stages.md)
+# Stages
 
 |   | [Stage 1](Stage1.md)						  				 	  	|     | 
 |---|-------------------------------------------------------------------|----:|
-| 1 | [Module 1](Module1.md)												| 🌔 |
-| 2 | [Module 2](Module2.md)												| 🌔 |
-| 3 | [Module 3](Module3.md)												| 🌓 |
-| 4 | [Module 4](Module4.md)												| 🌑 |
+| 1 | [Module 1](Module1.md)											| 🌔 |
+| 2 | [Module 2](Module2.md)											| 🌔 |
+| 3 | [Module 3](Module3.md)											| 🌔 |
 
-|   | [Stage 2](Stage2.md)						  				 	  	|     | 
+|   | [Stage 2](Stage2.md)						  				 	  	| 🌔 | 
 |---|-------------------------------------------------------------------|----:|
-| 1 | [Module 5](Module5.md)												| 🌑 |
-| 2 | [Module 6](Module6.md)												| 🌑 |
-| 3 | [Module 7](Module7.md)												| 🌑 |
 
+|   | [Stage 3](Stage3.md)						  				 	  	| 🌔 | 
+|---|-------------------------------------------------------------------|----:|
 # Books
 
 ## About programming
@@ -77,7 +75,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |   | [Pathfinding](unity-cookbook/pathfinding.md)						| 🌔 |
 |   | [Scenes](unity-cookbook/scenes.md)								| 🌔 |
 | 3 |	
-|   | [Particle system](unity-cookbook/particle-system.md)				| 🌑 |
+|   | [Particle system](unity-cookbook/particle-system.md)				| 🌔 |
 |   | [Saving and Loading](unity-cookbook/saving-loading.md)			| 🌑 |
 |   | [3D Platforming](unity-cookbook/3dplatforming.md)					| 🌒 |
 |   | [Building](unity-cookbook/building.md)							| 🌑 |
@@ -96,21 +94,22 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |---|-------------------------------------------------------------------|----:|
 | 1 | [Git Basics](project-management/1-git-basics.md)					| 🌔 |
 | 2 | [Git Continued](project-management/2-git-continued.md)			| 🌔 |
-| 3 | [GitHub tools](project-management/3-github-tools.md)				| 🌒 |
-| 4 | [Scrum](project-management/4-scrum.md) 							| 🌑 |
+| 3 | [GitHub tools](project-management/3-github-tools.md)				| 🌔 |
+| 4 | [Scrum](project-management/4-scrum.md) 							| 🌔 |
 |   | [Unity Collab](project-management/unity-collab.md) 				| 🌑 |
 
 
 |   | Game Dev													   	  	|     | 
 |---|-------------------------------------------------------------------|----:|
-|   | [Game Design](gamedev/gamedesign.md)								| 🌓 |
-|   | [Playtesting](gamedev/playtesting.md)								| 🌓 |
-|   | [Game Development](gamedev/gamedevelopment.md)					| 🌒 | 
-|   | [Tools](gamedev/tools.md)											| 🌓 |
+|   | [Playtesting](gamedev/playtesting.md)								| 🌔 |
+|   | [Tools](gamedev/tools.md)											| 🌔 |
+|   | [Game Design](gamedev/gamedesign.md)								| 🌔 |
 |   | [Game Industry](gamedev/gameindustry.md)							| 🌓 |
 |   | [Accessibility](gamedev/accessibility.md)							| 🌓 |
-|   | [Business](gamedev/business.md)									| 🌒 |
 |   | [Gamification](gamedev/gamification.md)							| 🌓 |
+|   | [Business](gamedev/business.md)									| 🌒 |
+|   | [Game Development](gamedev/gamedevelopment.md)					| 🌒 | 
+|   | [Teamwork](gamedev/teamwork.md)									| 🌒 | 
 
 
 
@@ -154,3 +153,12 @@ Code examples are in different repositories. Links to repositories below, includ
 * [2D animation](unity-cookbook/2d-animation.md)
 * [Pathfinding](unity-cookbook/pathfinding.md)
 * [Interpolation](math/3-interpolation.md) (smooth camera move with lerp)
+* [Dialogue system](unity-cookbook/UI.md#ui-example-dialogue-system)
+
+### [MultiplayerArena](https://github.com/borbware/MultiplayerArena)
+
+![](imgs/multiplayerarena-repo.png)
+
+* 4-player multiplayer
+* Pausing
+* Scene manager & Game manager singletons

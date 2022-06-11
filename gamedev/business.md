@@ -1,7 +1,5 @@
 # Making money with games
 
-
-
 * Audience
   * Know who you're making the game for
   * What features would they expect your game to have?
@@ -14,3 +12,9 @@
 
 
 xx lue game team oulun diat
+
+
+## Compare to competition
+
+* SteamSpy
+* GameDataCrunch.com

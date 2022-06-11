@@ -101,6 +101,8 @@ Create a top-down player character with a sprite renderer that can
 
 ### Mouse input example
 
+* [Script Reference: Input.GetMouseButton](https://docs.unity3d.com/ScriptReference/Input.GetMouseButton.html) (GetMouseButtonDown, GetMouseButtonUp)
+* [Script Reference: Input.mousePosition](https://docs.unity3d.com/ScriptReference/Input-mousePosition.html)
 ```c#
     private Rigidbody rb;
 
@@ -120,6 +122,7 @@ Create a top-down player character with a sprite renderer that can
 ## Extra: Touch input
 * [Script Reference: Input.GetTouch](https://docs.unity3d.com/ScriptReference/Input.GetTouch.html)
 * [Script Reference: Input.touches](https://docs.unity3d.com/ScriptReference/Input-touches.html)
+* [Script Reference: Camera.ScreenToWorldPoint](https://docs.unity3d.com/ScriptReference/Camera.ScreenToWorldPoint.html)
   ```c#
   if (Input.touchCount > 0)
     {
@@ -127,8 +130,12 @@ Create a top-down player character with a sprite renderer that can
       // Move thing if the screen has the finger moving.
       if (touch.phase == TouchPhase.Moved)
       {
-        Vector3 position = new Vector3(touch.position.x, 0f, touch.position.y);
-        transform.position = position;
+        Vector3 position = new Vector3(
+          touch.position.x,
+          touch.position.y,
+          Camera.Main.nearClipPlane
+        );
+        transform.position = Camera.Main.ScreenToWorldPoint(position);
       }
     }
   }

@@ -9,7 +9,12 @@ paginate: true
 
 ## Fast build
 
-* *File > Build and Run*
+* Two options to build:
+  * *File > Build and Run*
+  * *File > Build Settings*
+    * Add all scenes to your build settings (see [Scenes](scenes.md#building-a-game-with-multiple-scenes))
+    * Click ***Build***
+
 
 ## Target resolution
 

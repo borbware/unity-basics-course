@@ -1,7 +1,7 @@
 ---
 marp: true
 paginate: true
-math: katex
+math: mathjax
 ---
 <!-- headingDivider: 3 -->
 <!-- class: default -->

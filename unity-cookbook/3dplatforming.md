@@ -50,3 +50,5 @@
 
 * Drag & drop
   * https://www.youtube.com/watch?v=0yHBDZHLRbQ
+
+* You can download rigged & animated characters from [Mixamo](https://www.mixamo.com/)

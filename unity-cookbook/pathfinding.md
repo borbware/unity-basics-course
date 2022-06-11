@@ -171,4 +171,4 @@ If the player is outside the visibility cone for five seconds, make the enemy re
 ## Learning
 
 * [Brackeys video: 2D Pathfinding](https://www.youtube.com/watch?v=jvtFUfJ6CP8)
-
+* [GMTK: What Makes Good AI?](https://www.youtube.com/watch?v=9bbhJi0NBkk)

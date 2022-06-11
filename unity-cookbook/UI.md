@@ -43,12 +43,14 @@ paginate: true
 ## Canvas Component
 
 * [Packages: Unity UI: Canvas class](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/class-Canvas.html)
-* Screen space vs World space 
+* *Render mode*: Screen space vs World space 
   * Screen space
     * UI elements are rendered to fixed place on the screen, on top of the scene
   * World space
     * UI elements are hanging out with other GameObjects
     * "Diegetic interface"
+* *Order in Layer*: Change this to arrange which UI elements are drawn on top
+  * ***Note:*** You can add a new canvas component to an UI component inside a canvas and change its sorting order!
 
 ## CanvasScaler Component
 
@@ -150,8 +152,80 @@ EventSystem.current.SetSelectedGameObject(myButton);
 ### UI Example: HP bar
 
 * RectTransform: Set pivot to left
-* 9-Slicing for art
+* Control the HP bar width from code:
+  ```c#
+  hpBarRT = GetComponent<RectTransform>();
+  ...
+  public void AddHP(float newHP)
+  {
+      hp += newHP;
+      hp = Mathf.Clamp(hp, 0, 100);
+      hpBarRT.sizeDelta = new Vector2(width * hp / 100, hpBarRT.rect.height);
+  }
+  ```
+* Use ***9-Slicing*** for HP bar art
 
+### UI Example: Dialogue system
+
+* [Brackeys video: How to make a Dialogue System in Unity](https://www.youtube.com/watch?v=_nRzoTzeyxU)
+* [Semag Games video series: Dialogue Tutorial](https://www.youtube.com/playlist?list=PLCGaK2yqfY2IrJYnOnlgdmzWVUFXsRQXA)
+* [BMo video: 5 Minute dialogue system](https://www.youtube.com/watch?v=8oTYabhj248) (code examples below)
+  * ***Note:*** This example does not do word wrapping properly: the last word of the line can jump to the next line when it's being drawn on screen letter by letter!
+  ```c#
+  [SerializeField] TextMeshProUGUI textComponent;
+  [SerializeField] string[] lines = [],
+  [SerializeField] float textSpeed
+  int index;
+  IEnumerator coTypeLine;
+
+  void Start()
+  {
+    coTypeLine = TypeLine();
+    textComponent.text = "";
+    StartDialogue();
+  }
+  ```
+---
+  ```c#
+  void StartDialogue()
+  {
+    index = 0;
+    StartCoroutine(coTypeLine);
+  }
+
+  IEnumerator TypeLine()
+  {
+    foreach (char c in lines[index].ToCharArray())
+    {
+      textComponent.text += c;
+      yield return new WaitForSeconds(textSpeed);
+    }
+  }
+  ```
+---
+  ```c#
+  void Update()
+  {
+    if (Input.GetButtonDown("Fire1") && (textComponent.text == lines[index]))
+    {
+      NextLine();
+    }
+    if (Input.GetButtonDown("Fire2") && (textComponent.text != lines[index]))
+    {
+      StopCoroutine(coTypeLine);
+      textComponent.text = lines[index];
+    }
+  }
+  void NextLine()
+  {
+    if (index < lines.length - 1)
+    {
+      index++;
+      textComponent.text = "";
+      StartCoroutine(coTypeLine);
+    }
+  }
+  ```
 ## UI Gotchas!
 
 ### There's a weird white box surrounding my UI elements

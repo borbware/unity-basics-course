@@ -1,5 +1,7 @@
 # Dev machine setup
 
+* Install these for all student laptops
+
 ## Essential software
 
 * VS code
