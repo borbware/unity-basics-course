@@ -102,3 +102,10 @@ paginate: true
     * LudoCraft
   * VR
     * VRKiwi, Varjo
+
+## Where to learn Gamedev?
+
+* XAMK
+* KAMK
+* Aalto University
+* University of Vaasa
