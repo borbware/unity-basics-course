@@ -163,6 +163,8 @@ paginate: true
 * Pixel perfect camera
   * https://docs.unity3d.com/Packages/com.unity.2d.pixel-perfect@1.0/manual/index.html
 
+* ***Note:*** If you still see black gaps in your tilemaps after following these instructions, create a new material with the *Sprites/Default* shader and check *Pixel snap*. Then, add this material to every Tilemap renderer.
+
 ## Learning 
 
 * Top-down movement with animation
