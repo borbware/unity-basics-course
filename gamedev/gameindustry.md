@@ -105,7 +105,35 @@ paginate: true
 
 ## Where to learn Gamedev?
 
-* XAMK
-* KAMK
-* Aalto University
-* University of Vaasa
+* [Neogames: Education](https://neogames.fi/education/)
+* Vocational education
+  * Careeria (Helsinki)
+    * [Ohjelmistokehittäjä (ammatillinen perustutkinto): Tieto- ja viestintätekniikan perustutkinto, 180 osaamispistettä](https://neogames.fi/fi/institute/careeria-2/)
+  * KSAO (Kouvola)
+    * [Ohjelmistokehittäjä (ammatillinen perustutkinto): Tieto- ja viestintätekniikan perustutkinto](https://www.kouvola.fi/ksao/hakijalle/tutkinnot/kauppa-hallinto-ja-tietotekniikka/ohjelmistokehittaja/)
+---
+* Universities of applied sciences: Full curricula
+  * XAMK
+  * KAMK (Kajaani, Raahe)
+    * [Tradenomi, tietojenkäsittely, peliala, Kajaani, 210 ECTS](https://www.kamk.fi/fi/Hakijalle/AMK-koulutukset/Tradenomi-tietojenkasittely-peliala-Kajaani/6651448a-b79b-42b0-b2ac-87c9e6ec1d75)
+    * [Tradenomi, tietojenkäsittely, peliala, Raahe, 210 ECTS](https://www.kamk.fi/fi/Hakijalle/AMK-koulutukset/Tradenomi-tietojenkasittely-peliala-Raahe/2d1cf6c4-7a96-4ee0-bca5-bd8e41901696)
+  * JAMK (Jyväskylä)
+    * [Bachelor of Business Administration: Business Information Technology, 210 ECTS](https://neogames.fi/institute/jamk-university-of-applied-sciences/)
+---
+* Universities of applied sciences: Gamedev courses
+  * Centria AMK (Ylivieska)
+    * [Centria pelipaja, 60 ECTS](https://pelipaja.centria.fi/hae/)
+  * LAB (Lahti)
+    * [Insinööri (AMK), tieto- ja viestintätekniikka, Lahti, 240 ECTS](https://lab.fi/en/node/4426)
+      * Game studies 35 ECTS
+  * OAMK (Oulu)
+    * [Oulu Game Lab -studies, 30 ECTS](https://www.oamk.fi/fi/koulutus/avoin-ammattikorkeakoulu/opetustarjonta/?okid=548)
+
+---
+* Universities
+  * TUNI (Tampere)
+    * [Game Studies, 120 ECTS](https://www.tuni.fi/en/study-with-us/game-studies)
+  * Aalto University (Espoo)
+    * [Master of Arts in New Media: Game Design and Development, 120 ECTS](https://www.aalto.fi/en/study-options/masters-programme-in-art-and-media-game-design-and-development)
+    * [Master of Science in Technology: Game Design and Production, 120 ECTS](https://www.aalto.fi/en/study-options/masters-programme-in-computer-communication-and-information-sciences-game-design-and)
+  * University of Vaasa
