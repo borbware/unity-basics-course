@@ -72,7 +72,7 @@ paginate: true
 ---
 * Active indie scene
   * IGDA
-  * FGJ
+  * FGJ 
   * Game jams
 
 ## Games industry in Vaasa

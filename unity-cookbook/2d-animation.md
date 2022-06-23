@@ -35,14 +35,15 @@ paginate: true
 * Click *Create* to create a new animation (.anim) file, or a ***clip***
   * Good ideas to have separate animation files for *Idle*, *Jumping*, *Running*, etc...
   * Name the first clip ***Player_Idle***
-* Drag sprites to your Animation timeline
-* Set *Samples* to a lower value to make your new animation less frantic
+
 
 ---
 
 ![](imgs/animation-window.png)
-* Create new clips in the Player_Idle dropdown
-
+* Drag sprites to your Animation timeline
+  * ***Note:*** The final frame duration is less than the others. For an easy fix, add the first frame as a duplicate to the end
+* Set *Samples* to a lower value to make your new animation less frantic
+* You can create new clips in the Player_Idle dropdown
 ## Animator controller
 
 * When you created new clips, an ***Animator Controller Asset*** was created
