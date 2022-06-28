@@ -78,8 +78,8 @@ paginate: true
 ![](imgs/animator-transition-inspector.png)
 
 * *Has Exit time*:
-  * Uncheck to transition automatically after the animation has played once
-  * Set *Exit time* from the Settings submenu
+  * Means: "will exit automatically after this amount of time has passed"
+  * You can set *Exit time* from the Settings submenu
 
 ### Layers & parameters
 
