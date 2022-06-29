@@ -73,6 +73,7 @@ paginate: true
 * Two important organisations
   * [IGDA Finland](https://www.igda.fi/)
   * [FGJ (Finnish Game Jam)](https://www.finnishgamejam.com/)
+* Both have Discord servers and you can join them
 
 ### Unions
 
@@ -151,11 +152,23 @@ paginate: true
     * Courses in Game Design 
 
 
+## Learn how to make good games
+
+* Play games
+  * Play good games
+  * Play bad games
+  * Take notes
+* Learn from those who know
+  * Watch GDC lectures
+  * Watch GMTK
+  * Watch Tim Rogers
+
 ## In a nutshell
 
 * Find out what you want to make, and make it
 * Share your creations with others as soon as possible
-* Play games by others as much as possible
 * Participate in game jams, online and in-person
+* Play games by others
+* Talk to said others about the games they made
 * Don't overwork yourself
 * Have fun
