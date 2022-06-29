@@ -100,6 +100,7 @@ paginate: true
 * b) find with code
   * [Script Reference: GameObject.Find](https://docs.unity3d.com/ScriptReference/GameObject.Find.html)
   * [Script Reference: GameObject.FindGameObjectsWithTag](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html)
+  * ***Note:*** these functions can't find inactive GameObjects.
 
 ## Accessing Children & Parents
 
