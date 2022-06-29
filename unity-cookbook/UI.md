@@ -123,14 +123,20 @@ if (Input.ButtonDown("Fire1"))
   _button.onClick.Invoke();
 ```
 
-### Arrow keys menu
-* Event System GameObject > Event System Component > First Selected
-* [Video: Menu Navigation with Arrow Keys in Unity | Easy Unity Tutorial](https://www.youtube.com/watch?v=8mFWJwxV3ps)
-```c#
-using EventSystem
-...
-EventSystem.current.SetSelectedGameObject(myButton);
-```
+### Navigating menu with Arrow keys & game controller
+* By default, your buttons are only interactable with mouse
+* To add support controller & keyboard input, you need to do two things:
+  * In every button, set *Navigation* to *Automatic*
+    * You can visualize button navigation flow with *Visualize*
+    * If *Automatic* doesn't give desired results, try other options.
+  * Then, drag the button you want to be highlighted first to your Event System GameObject's *First Selected* property
+* Extra stuff:
+  * [Video: Menu Navigation with Arrow Keys in Unity | Easy Unity Tutorial](https://www.youtube.com/watch?v=8mFWJwxV3ps)
+  ```c#
+  using EventSystem
+  ...
+  EventSystem.current.SetSelectedGameObject(myButton);
+  ```
 
 
 ## More RectTransform stuff
