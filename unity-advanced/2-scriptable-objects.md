@@ -5,11 +5,11 @@ paginate: true
 <!-- headingDivider: 3 -->
 <!-- class: default -->
 ## Scriptable Object
-* a special class for storing data
-* usually used as an asset template
-  * can be made accessible from the Create Asset menu!
-* derives from the base Unity object but cannot be attached to a GameObject
-* life-saver if gameobject needs easily-swappable data
+* A special class for storing data
+* Usually used as an asset template
+  * Can be made accessible from the Create Asset menu!
+* Derives from the base Unity object but cannot be attached to a GameObject
+* Very handy if a GameObject needs easily-swappable data
 * [Scriptable Object in Unity Docs](https://docs.unity3d.com/Manual/class-ScriptableObject.html)
 * [Brackeys tutorial](https://www.youtube.com/watch?v=aPXvoWVabPY)
 
@@ -32,7 +32,7 @@ paginate: true
 2) Create a few new templates based on the Scriptable object from the Asset menu
 3) Refer to the Card class as a SerializeField in a GameObject
 4) Drag the card template of your choice to the field in Inspector
-5) The data from Card is now available in the gameobject
+5) The data from Card is now available in the GameObject
 
 ### Spawn manager: The manager class
 

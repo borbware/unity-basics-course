@@ -33,6 +33,32 @@ paginate: true
   * Either by opening the folder from File Explorer context menu (*Open with Code*)
   * Or in VS Code *File >  Open Folder...*
 
+## Omnisharp
+
+* After the previous procedure, VS code should have ***Omnisharp*** enabled
+  * Number of references are shown on top of every variable & class
+    ![](imgs/references.png)
+  * You can hover over a method name to see details
+    ![](imgs/hover-over-method.png)
+    * argument types, return types, method overloads...
+### Omnisharp shortcuts
+  * ***F2***: Rename variable and automatically update references
+    * Naming things correctly on the first go is difficult!
+  * ***CTRL+LMB*** 
+    * when clicking a method reference: *jump to definition*
+    * when clicking the method definition: *jump to references*
+
+### Omnisharp troubleshooting
+
+* Sometimes Omnisharp stops working, here's something you can try to fix it:
+    1) Check that .NET is installed by running `dotnet` in the VS code terminal
+    2) In Unity: *Edit > Preferences > External tools > Regenerate Project Files*
+    3) In VS Code: ***CTRL+SHIFT+P*** *> Omnisharp: Restart Omnisharp*
+    4) In VS Code: Add this line inside the curly braces to the configuration file `.vscode/settings.json`:
+        ```
+        "omnisharp.useModernNet": false
+        ``` 
+
 ## VS code shortcuts
 
 * ***CTRL+SHIFT+F*** find from all files
@@ -42,7 +68,7 @@ paginate: true
 * ***CTRL+.*** for auto-"using" / auto-creating missing functions
 * ***CTRL+K***, then ***CTRL+C*** comment selection
 * ***CTRL+K***, then ***CTRL+U*** uncomment selection
-### More shortcuts (not default)
+### Extra shortcuts that I like to use (not enabled by default)
 * ***CTRL+TAB*** / ***CTRL+SHIFT+TAB*** 
   * *View: Open Next/Previous Recently Used Editor*
   * By default, these shortcuts open the recently used tab, and it can be confusing
@@ -50,17 +76,6 @@ paginate: true
   * Set behaviour to *View: Open Next Editor* / *View: Open Previous Editor*
 
 * ***CTRL+SHIFT+D*** copy line down (not by default, change to this if you like)
-## C# tips
-
-* ***F2***: Rename variable and automatically update references
-  * Naming things correctly on the first go is difficult!
-* ***CTRL+LMB*** 
-  * when clicking a method reference: *jump to definition*
-  * when clicking the method definition: *jump to references*
-* Hover over a method name to see details
-  ![](imgs/hover-over-method.png)
-  * argument types, return types, method overloads...
-  * this feature only works if dotnet and the C# extension are installed
 
 
 ## Extra: Other extensions
