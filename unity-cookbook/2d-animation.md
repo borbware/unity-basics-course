@@ -35,14 +35,15 @@ paginate: true
 * Click *Create* to create a new animation (.anim) file, or a ***clip***
   * Good ideas to have separate animation files for *Idle*, *Jumping*, *Running*, etc...
   * Name the first clip ***Player_Idle***
-* Drag sprites to your Animation timeline
-* Set *Samples* to a lower value to make your new animation less frantic
+
 
 ---
 
 ![](imgs/animation-window.png)
-* Create new clips in the Player_Idle dropdown
-
+* Drag sprites to your Animation timeline
+  * ***Note:*** The final frame duration is less than the others. For an easy fix, add the first frame as a duplicate to the end
+* Set *Samples* to a lower value to make your new animation less frantic
+* You can create new clips in the Player_Idle dropdown
 ## Animator controller
 
 * When you created new clips, an ***Animator Controller Asset*** was created
@@ -77,8 +78,8 @@ paginate: true
 ![](imgs/animator-transition-inspector.png)
 
 * *Has Exit time*:
-  * Uncheck to transition automatically after the animation has played once
-  * Set *Exit time* from the Settings submenu
+  * Means: "will exit automatically after this amount of time has passed"
+  * You can set *Exit time* from the Settings submenu
 
 ### Layers & parameters
 
@@ -162,6 +163,8 @@ paginate: true
   * https://hackernoon.com/making-your-pixel-art-game-look-pixel-perfect-in-unity3d-3534963cad1d
 * Pixel perfect camera
   * https://docs.unity3d.com/Packages/com.unity.2d.pixel-perfect@1.0/manual/index.html
+
+* ***Note:*** If you still see black gaps in your tilemaps after following these instructions, create a new material with the *Sprites/Default* shader and check *Pixel snap*. Then, add this material to every Tilemap renderer.
 
 ## Learning 
 

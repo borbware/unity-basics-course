@@ -123,9 +123,8 @@ paginate: true
             modified:   readme.md
     ```
   * Basically, you tell Git that you want to do something with this file.
-* ***Note:*** If you just want to push all the changes you've made, you can use `git add .` to stage all the files in your current folder and its subfolders
-* ***Extra Note:*** Using ***wildcards*** (`*`) can be useful. For example `git add *.txt` adds all .txt files to git
-
+* ***Note:*** If you just want to push all the changes you've made, you can use `git add .` to stage all the files in your current folder and its subfolders (but be careful!)
+* ***Note 2:*** Use `git add filename -p` if you only want to stage **some** lines from a file you've worked on.
 ## `git commit`
 
 * After you have staged all the files you want, the second phase is to ***commit*** your changes
