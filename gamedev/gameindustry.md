@@ -74,7 +74,7 @@ paginate: true
   * [IGDA Finland](https://www.igda.fi/)
   * [FGJ (Finnish Game Jam)](https://www.finnishgamejam.com/)
 * Both have Discord servers and you can join them
-
+* We In Games
 ### Unions
 
 * Finnish level of unionization in game industry is pertty good
@@ -113,12 +113,13 @@ paginate: true
 
 ## Where to learn Gamedev?
 
+* Watch this lecture [in Finnish](https://www.youtube.com/watch?v=dyBucPxPJtE) / [in English](https://www.youtube.com/watch?v=uV0L5IWA92o)
 * There are surprisingly many learning opportunities in Finland
   * [Neogames: Education](https://neogames.fi/education/)
 * Also, you can learn stuff online these days pretty easily
+  * GamesNow lecture series by Aalto University
 * What you don't get so easily online, are ***networks*** of likeminded people
   * This is what you can find in schools and courses like this
-
 ### Vocational education
   * Careeria (Helsinki)
     * [Ohjelmistokehittäjä (ammatillinen perustutkinto): Tieto- ja viestintätekniikan perustutkinto, 180 osaamispistettä](https://neogames.fi/fi/institute/careeria-2/)

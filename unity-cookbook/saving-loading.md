@@ -15,3 +15,7 @@ paginate: true
 * This can store ints, floats or strings
   * ... in the Registry :D
 * `PlayerPrefs.SetInt(intValue)`
+
+## Clearing saved data
+
+* Edit > Clear All PlayerPrefs
