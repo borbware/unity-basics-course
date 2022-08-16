@@ -84,21 +84,21 @@ paginate: true
 
 ## Basic Git workflow
 
-* you have to tell everything you want to happen to git ***explicitly*** by using ***git commands***
-* a common git workflow example:
- 1) you make changes in some code file
- 2) you tell git what files you've changed ([`git add`](#git-status--git-add))
- 3) you tell git what changes you made in that file ([`git commit`](#git-commit--git-push))
- 4) you upload those changes to a remote repository ([`git push`](#git-commit--git-push))
+* You have to tell everything you want to happen to git ***explicitly*** by using ***git commands***
+* A common git workflow example:
+ 1) You make changes in some code file
+ 2) You tell git what files you've changed ([`git add`](#git-add))
+ 3) You tell git what changes you made in that file ([`git commit`](#git-commit))
+ 4) You upload those changes to a remote repository ([`git push`](#git-push))
 
 ## Repositories
 
-* repository is essentially a place to store code files in
-* usually, we are dealing with ***two*** repositories: a ***local*** and a ***remote*** one
-  * local repository is the one on your computer
-  * remote repository is stored in a cloud service like github
+* ***Repository*** is essentially a place to store code files in
+* Usually, we are dealing with ***two*** repositories: a ***local*** and a ***remote*** one
+  * A local repository is the one on your computer
+  * A remote repository is stored in a cloud service like GitHub
   * [Here](https://github.com/borbware/unity-basics-course) is the remote repository for the materials of this course
-  * changes are synced between these two repositories ***manually***
+  * Changes are synced between these two repositories ***manually***
 ## `git init`
 
 * Initialization needs to be made for every new git repository
@@ -131,7 +131,7 @@ paginate: true
   * In the commit, you will explain what changes you've made
   * This message will be visible in GitHub
   * `git commit -m "add new enemy"`
-* every new commit creates a new point in the project timeline.
+* Every new commit creates a new point in the project timeline.
   * you can always jump back between different points (See `git checkout`)
 * Commit message should clearly, concisely tell what kind of changes you have made
 
@@ -139,7 +139,7 @@ paginate: true
 
 * The third stage is ***pushing*** the changes to GitHub
 * The previously-made commit action is **local**
-  * no changes have gone to the remote repository yet!
+  * No changes have gone to the remote repository yet!
   * To upload changes to the remote repository, use `git push`
   * Then you're done!
 * ***Note:*** When pushing the first time, Git might nag you:
@@ -162,7 +162,7 @@ paginate: true
 ## `git pull`
 
 * `git pull` applies changes from the remote repository into the local repository 
-* Counterpart to `push`
+  * Counterpart to `push`
 * Very common when working in a team
   * **Note**: In this case it's a good idea to ***always pull before pushing***
 * If you only work alone on a single computer, seldom needed
@@ -172,9 +172,9 @@ paginate: true
 ## `git clone`
 
 * For initializing a local repository from an already existing remote repository:
-  * run `git clone [URL]`
-  * example: `git clone https://github.com/borbware/unity-basics-course.git`
-  * when cloning, `git init` not needed!
+  * Run `git clone [URL]`
+  * Example: `git clone https://github.com/borbware/unity-basics-course.git`
+  * When cloning, `git init` not needed!
 * Simplest way to start with Git:
 1) Initialize the repo in the Github/Gitlab/etc website
 2) Clone the repo
@@ -183,7 +183,7 @@ paginate: true
 
 * If you have inited the git repo already, though, then use:
   * `git remote add origin [URL]`
-  * here, the name `origin` refers to the remote repository
+  * Here, the name `origin` refers to the remote repository
 * To check which remote repository the current local repository is linked to, use 
   * `git remote -v`
 
@@ -195,7 +195,7 @@ paginate: true
   * you log in with your GitHub credentials that get stored in the Git Credential Manager
 * SSH: `git@github.com:borbware/unity-basics-course.git`
   * [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
-  * you need to generate a computer-specific SSH key and add it to your GitHub settings
+  * You need to generate a computer-specific SSH key and add it to your GitHub settings
 
 ## `.gitignore`
 
@@ -228,7 +228,7 @@ What happens if you make changes to the same line simultaneously?
 * In Unity projects, we have to use a specific `.gitignore` template to keep the repository nice and clean
   * You WILL notice if you forget to add it
   * If you create a new Unity project repository in Github/etc, you can create the repo with a Unity template that adds the needed `.gitignore` file automatically to the remote repo
-  * you can also add it by yourself before the first commit, though
+  * You can also add it by yourself before the first commit, though
 
 ## Creating a new Unity GitHub repo
 
@@ -258,7 +258,7 @@ error: failed to push some refs to [your-url]
 ```
 
 * Possible reason: GitHub has a `main` branch, while your local repository has `master`
-  * run `git branch -m main` to rename your local `master` to `main`
+  * Run `git branch -m main` to rename your local `master` to `main`
 
 ## Longer `push` and `pull` commands
 
