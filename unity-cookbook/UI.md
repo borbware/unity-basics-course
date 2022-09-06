@@ -244,6 +244,10 @@ if (Input.ButtonDown("Fire1"))
 * *Inspector > Rect Transform* and click on the square on the left 
   * Pressing down ***Shift+Alt*** exposes additional options
 
+### I can't press my buttons!
+
+* When clicking on buttons doesn't work, you might have invisible UI elements on top of the button that block clicking on the buttons underneath.
+
 ## UI exercise 1: Basics
 <!-- _backgroundColor: Khaki -->
 

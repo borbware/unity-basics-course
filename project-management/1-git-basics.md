@@ -18,8 +18,8 @@ paginate: true
 ## Git vs cloud storage
 
 * Git is different from cloud storage services like Dropbox, Google Drive or OneDrive
-  * instead of automatic syncing, you deliberately *push to* and *pull from* the cloud
-  * cloud services are easier for starters
+  * Instead of automatic syncing, you deliberately *push to* and *pull from* the cloud
+  * Cloud services are easier for starters
   * ...but in projects of more than one person, tracking changes would be a pain
 * Git has a steep learning curve
 	* To ease things, there are some visual tools like **Sourcetree** or **Sublime Merge**
@@ -75,7 +75,7 @@ paginate: true
 ![](https://desktop.github.com/images/github-desktop-screenshot-windows.png)
 
 ## Btw: Config
-* To configure your git username for every project:
+* To configure your Git username for every project:
   * Use `git config --global user.name "myUserName"`
   * and `git config --global user.email "my.email.address@domain.com"`
 * If you do not do this, Git will ask to do it anyway at some point
@@ -84,26 +84,26 @@ paginate: true
 
 ## Basic Git workflow
 
-* you have to tell everything you want to happen to git ***explicitly*** by using ***git commands***
-* a common git workflow example:
- 1) you make changes in some code file
- 2) you tell git what files you've changed ([`git add`](#git-status--git-add))
- 3) you tell git what changes you made in that file ([`git commit`](#git-commit--git-push))
- 4) you upload those changes to a remote repository ([`git push`](#git-commit--git-push))
+* You have to tell everything you want to happen to Git ***explicitly*** by using ***Git commands***
+* A common Git workflow example:
+ 1) You make changes in some code file
+ 2) You tell Git what files you've changed ([`git add`](#git-add))
+ 3) You tell Git what changes you made in that file ([`git commit`](#git-commit))
+ 4) You upload those changes to a remote repository ([`git push`](#git-push))
 
 ## Repositories
 
-* repository is essentially a place to store code files in
-* usually, we are dealing with ***two*** repositories: a ***local*** and a ***remote*** one
-  * local repository is the one on your computer
-  * remote repository is stored in a cloud service like github
+* ***Repository*** is essentially a place to store code files in
+* Usually, we are dealing with ***two*** repositories: a ***local*** and a ***remote*** one
+  * A local repository is the one on your computer
+  * A remote repository is stored in a cloud service like GitHub
   * [Here](https://github.com/borbware/unity-basics-course) is the remote repository for the materials of this course
-  * changes are synced between these two repositories ***manually***
+  * Changes are synced between these two repositories ***manually***
 ## `git init`
 
-* Initialization needs to be made for every new git repository
+* Initialization needs to be done for every new Git repository
 * If you're starting from scratch:
-  * Use `git init` to make your current folder a new git repository
+  * Use `git init` to make your current folder a new Git repository
 * If you've continuing an existing project, initialization happens when you ***clone*** the project into your computer
   * See: [`git clone`](#git-clone)
 ## `git status`
@@ -113,7 +113,7 @@ paginate: true
 
 ## `git add`
 
-* Pushing a file to GitHub from your local machine is a three-phase process
+* Uploading changes to GitHub from your local machine is a three-phase process
 * The first phase is ***staging*** with `git add`:
   * The command `git add readme.md` stages the file `readme.md`
   * After doing it, `git status` tells this:
@@ -131,7 +131,7 @@ paginate: true
   * In the commit, you will explain what changes you've made
   * This message will be visible in GitHub
   * `git commit -m "add new enemy"`
-* every new commit creates a new point in the project timeline.
+* Every new commit creates a new point in the project timeline.
   * you can always jump back between different points (See `git checkout`)
 * Commit message should clearly, concisely tell what kind of changes you have made
 
@@ -139,9 +139,10 @@ paginate: true
 
 * The third stage is ***pushing*** the changes to GitHub
 * The previously-made commit action is **local**
-  * no changes have gone to the remote repository yet!
+  * No changes have gone to the remote repository yet!
   * To upload changes to the remote repository, use `git push`
   * Then you're done!
+---
 * ***Note:*** When pushing the first time, Git might nag you:
   ```
   fatal: The current branch master has no upstream branch.
@@ -149,7 +150,7 @@ paginate: true
 
       git push --set-upstream origin main
   ```
-  * You can just follow its orders and you're good to go 
+  * You can just follow its orders (see the command on the third line!) and you're good to go 
 
 ## Exercise 1. Creating a repo
 <!-- _backgroundColor: Khaki -->
@@ -162,9 +163,9 @@ paginate: true
 ## `git pull`
 
 * `git pull` applies changes from the remote repository into the local repository 
-* Counterpart to `push`
+  * Counterpart to `push`
 * Very common when working in a team
-  * **Note**: In this case it's a good idea to ***always pull before pushing***
+  * **Note**: During teamwork it's a good idea to ***always pull before pushing***
 * If you only work alone on a single computer, seldom needed
 
 
@@ -172,18 +173,19 @@ paginate: true
 ## `git clone`
 
 * For initializing a local repository from an already existing remote repository:
-  * run `git clone [URL]`
-  * example: `git clone https://github.com/borbware/unity-basics-course.git`
-  * when cloning, `git init` not needed!
+  * Run `git clone [URL]`
+  * Example: `git clone https://github.com/borbware/unity-basics-course.git`
+  * When cloning, `git init` not needed!
 * Simplest way to start with Git:
 1) Initialize the repo in the Github/Gitlab/etc website
 2) Clone the repo
 
 ## `git remote`
 
-* If you have inited the git repo already, though, then use:
+* If you have initialized a Git repo already with `git init`, though, then use:
   * `git remote add origin [URL]`
-  * here, the name `origin` refers to the remote repository
+  * Here, the name `origin` refers to the remote repository
+  * It’s the default name for a remote. Other names can also be used in its stead.
 * To check which remote repository the current local repository is linked to, use 
   * `git remote -v`
 
@@ -195,26 +197,26 @@ paginate: true
   * you log in with your GitHub credentials that get stored in the Git Credential Manager
 * SSH: `git@github.com:borbware/unity-basics-course.git`
   * [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
-  * you need to generate a computer-specific SSH key and add it to your GitHub settings
+  * You need to generate a computer-specific SSH key and add it to your GitHub settings
 
 ## `.gitignore`
 
 * Sometimes your project has local files that should NOT be uploaded to GitHub 
-* `.gitignore` file in your git project folder says what files should **not** be included in the repository
+* `.gitignore` file in your Git project folder says what files should **not** be included in the repository
 * You can create it by yourself and define file names or folders which git will then ignore in the commits, e.g.,
   ```console
     someScript.js
     /folder
     *.html
   ```
-* ***Note:*** If you add a file to .gitignore that was committed earlier, you can remove it from git with `git rm --cached filename`
+* ***Note:*** If you add a file to `.gitignore` that was committed earlier, you can remove it from Git with `git rm --cached filename`
 
 
 ## Exercise 2. Git collaboration
 <!-- _backgroundColor: Khaki -->
 
 * Work on this exercise with your group.
-* Choose someone's test repository from exercise 1 to use in this exercise.
+* Choose someone's test repository from Exercise 1 to use in this exercise.
 * While others clone the repo to their machine, the owner should add other group members as collaborators of the repo in the repository's settings on GitHub.
 * Then, everyone should make changes to the markdown file in the repository!
 
@@ -228,7 +230,7 @@ What happens if you make changes to the same line simultaneously?
 * In Unity projects, we have to use a specific `.gitignore` template to keep the repository nice and clean
   * You WILL notice if you forget to add it
   * If you create a new Unity project repository in Github/etc, you can create the repo with a Unity template that adds the needed `.gitignore` file automatically to the remote repo
-  * you can also add it by yourself before the first commit, though
+  * You can also add it by yourself before the first commit, though
 
 ## Creating a new Unity GitHub repo
 
@@ -258,13 +260,13 @@ error: failed to push some refs to [your-url]
 ```
 
 * Possible reason: GitHub has a `main` branch, while your local repository has `master`
-  * run `git branch -m main` to rename your local `master` to `main`
+  * Run `git branch -m main` to rename your local `master` to `main`
 
-## Longer `push` and `pull` commands
+## Troubleshooting: Longer `push` and `pull` commands
 
-* Why did we use longer `push` and `pull` commands?
-  * Short answer: because we didn't clone the repo, but rather added the remote into an empty one.
-  * `git pull origin main`: After adding a remote, we don't yet know which ***branch*** to pull from. The `main` (can also be `master`!) is the default branch
+* After initialization, why do I have to use longer `push` and `pull` commands?
+  * Short answer: because we didn't clone the repo, but rather added the remote into an empty one with `git remote add origin`.
+  * `git pull origin main`: After adding a remote, we don't yet know which ***branch*** to pull from. `main` (or `master`!) is the default branch
   * `git push --set-upstream origin main`: In the first `push`, we decide which branch to link our current branch into.
   * Afterwards, we can just use `git push` and `git pull`.
 

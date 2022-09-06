@@ -93,13 +93,16 @@ paginate: true
 * Best free option: [DaVinci Resolve](https://www.blackmagicdesign.com/fi/products/davinciresolve)
 * Blender3D works for this as well
 
-## Other stuff...
+## Other creative stuff...
 
 * [Doodle Studio](https://fernantastic.itch.io/doodle-studio-95) ($45)
   * A FUN 2D drawing and animation tool for Unity. 
 * [Playscii](https://jp.itch.io/playscii)
   * an open source ASCII art and animation program
 
+## Other tools...
+* [Microsoft PowerToys](https://github.com/microsoft/PowerToys)
+  * Has a color picker! 
 ## Game engines
 
 * sometimes Unity isn't the best option!
