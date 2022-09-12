@@ -8,48 +8,49 @@ paginate: true
 # Project Management 2. Git continued
 
 ## Git workflow 2: branches
-* a git repository can have multiple **branches**
-  * By default, git repository has only one branch, named **master** or **main**
+* a Git repository can have multiple **branches**
+  * By default, a Git repository has only one branch, named **master** or **main**
   * Using multiple branches makes it possible to work on new features step by step in their own **feature branches**
     * Meanwhile, the master branch is kept clean and in a working state
     * Only when the feature is completed, the branch is merged into the master branch! 
 * Even though your local repository can have multiple branches, only one of them is *active* at a given time
-* `git status` tells you firsthand which branch you are on: "`On branch master`"
-## git branch & git checkout
+* `git status` tells you firsthand which branch you are on: `On branch master`
+## `git branch` & `git checkout`
 
-* You can create a new branch with `git branch branchName`
+* You can create a new branch with `git branch <branchName>`
   * The new branch is not empty: it contains a copy of the code of the branch you executed this command in
   * **Note:** this command does not make the branch active!
-* You can move to a branch with `git checkout branchName`. 
+* You can move to a branch with `git checkout <branchName>`. 
   * For example, to move back to master use `git checkout master`
 * Additionally, you can list local branches with `git branch`
   * ...and all branches (incl. remote ones) with `git branch -a`
-* Delete a local branch with `git branch -d branchName`
+* Delete a local branch with `git branch -d <branchName>`
   * Remote branch can be deleted in the GitHub/etc website, or like [this](https://koukia.ca/delete-a-local-and-a-remote-git-branch-61df0b10d323).
 
 ### Extra commands
 
-* There's also a handy command `git checkout -b branchName`
-  * It's a shorthand for `git branch branchName` + `git checkout branchName`
-* `git switch branchName` is for the moments when you notice you've been working on the wrong branch! It switches to the branch `branchName` and takes all your code with
-* You can use the push command to delete a remote branch`git push origin -d branchName`
-* If deleted remote branches still show up in `git branch -a`, you can use the command `git remote prune origin` to remove them from the list.
+* There's also a handy command `git checkout -b <branchName>`
+  * It's a shorthand for `git branch <branchName>` + `git checkout <branchName>`
+* `git switch <branchName>` is for the moments when you notice you've been working on the wrong branch!
+  * It switches to the branch `<branchName>` and takes all your code with
+* You can use the push command to delete a remote branch`git push origin -d <branchName>`
+* ***Note:*** If deleted remote branches still show up in `git branch -a`, you can use the command `git remote prune origin` to remove them from the list.
 
 ## Local vs. remote branches
 
 * `git branch branchName` only creates a local branch
-* When you try to push changes from a new local branch, git nags you that a matching remote branch doesn't yet exist
+* When you try to push changes from a new local branch, Git nags you that a matching remote branch doesn't yet exist
   * Git tells you how to create the remote branch:
     * `git push --set-upstream origin newBranch`
     * afterwards, `git push` pushes the changes to the matching remote branch
-## git merge
+## `git merge`
 
 * When the feature is done and all the broken things fixed, you want to merge your feature branch back to master
 * First, checkout the master branch with `git checkout master`
 * Then, do a `git pull` so you have the newest version of the master branch
   * Someone else might have done changes to it while you were working on your feature!
-* Then, merge the feature branch to master with `git merge featureBranchName`
-  * This is where **conflicts** can happen
+* Then, merge the feature branch to master with `git merge <featureBranchName>`
+  * This is where **conflicts** can happen  (more on them later!)
 
 ## Exercise 1. Pushing onwards
 <!-- _backgroundColor: Khaki -->
@@ -63,13 +64,14 @@ Continue the exercise from [Git Basics](1-git-basics.md) or create a new reposit
 # 3. Conflicts
 ## GitLens
 
-* to make git workflow easier, install the GitLens extension to VS code
+* to make the Git workflow easier, install the GitLens extension to VS code
   * helps in managing conflicts, comparing branches or commits
 * Install it from the Extensions panel (access with ***CTRL+SHIFT+X***)
 ## Conflicts
 
 * Sometimes two people have made changes in the same lines of code!
-* This leads to a conflict that looks like this:
+* This leads to a conflict.
+* Let's assume we're trying to merge changes from featureBranch to master:
   ```c#
   <<<<<<< HEAD:Player.cs
     if (Input.anyKey) {
@@ -84,7 +86,7 @@ Continue the exercise from [Git Basics](1-git-basics.md) or create a new reposit
 * "Incoming change" is between `>>>>` and `====`, new code from `featureBranch`
 * Use your text editor to choose which (or some combination of both) you want to preserve
 ## After resolving the conflict
-* After resolving conflicting files, use `git add filename` to add them to the commit
+* After resolving conflicting files, use `git add <filename>` to add them to the commit
 * Then use `git commit` (without a message) to apply changes. 
   * Close the automatically opened COMMITMSG file. This should finish the merge.
 * Then just `git push` to apply changes in the remote repository
@@ -94,14 +96,14 @@ Continue the exercise from [Git Basics](1-git-basics.md) or create a new reposit
 * If you make a mistake, it is very case-specific what you need to do to fix it
   * See [undo options here](https://docs.gitlab.com/ee/topics/git/numerous_undo_possibilities_in_git/)  
   * Also, [ohshitgit.com](https://ohshitgit.com/)
-## git log & git checkout commitHash
+## `git log` & `git checkout <hashcode>`
 
-* Use `git log` to see verbose history
+* Use `git log` to see the commit history
 * Or `git log --oneline` for a more concise version
   * Press ***Q*** to quit the log view.
   * The newest changes are seen on top
   * On the left side of the commit message you see the *hashcode* of the commit
-  * Use `git checkout [hashcode]` to "time travel" into the commit
+  * Use `git checkout <hashcode>` to "time travel" into the commit
 
 # 4. Workflow examples
 ## Common workflow
@@ -166,7 +168,7 @@ Continue the exercise from [Git Basics](1-git-basics.md) or create a new reposit
 * Work as a group for this assignment.
 * Continue Exercise 2 from [Git basics](1-git-basics.md).
 * Every group member creates an individual branch from the master, and makes some changes to the `GitTest.md` file.
-* Add new files as well.
+* Add new files as well, at least one per group member.
 * Do not tell other group members what you're going to change! :D
 * Then, Merge the changes back to the master branch. Fix ensuing conflicts, if any appear.
 

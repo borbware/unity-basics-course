@@ -144,7 +144,7 @@ paginate: true
 
   * Ebb and flow
   ![](imgs/kishotenketsu.png)
-
+  * [jazz mickle knows how it's done](https://twitter.com/jazzmickle/status/1568566990121611264)
 
 ## Puzzle design
 

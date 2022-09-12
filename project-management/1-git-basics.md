@@ -124,7 +124,7 @@ paginate: true
     ```
   * Basically, you tell Git that you want to do something with this file.
 * ***Note:*** If you just want to push all the changes you've made, you can use `git add .` to stage all the files in your current folder and its subfolders (but be careful!)
-* ***Note 2:*** Use `git add filename -p` if you only want to stage **some** lines from a file you've worked on.
+* ***Note 2:*** Use `git add <filename> -p` if you only want to stage **some** lines from a file you've worked on.
 ## `git commit`
 
 * After you have staged all the files you want, the second phase is to ***commit*** your changes
@@ -173,7 +173,7 @@ paginate: true
 ## `git clone`
 
 * For initializing a local repository from an already existing remote repository:
-  * Run `git clone [URL]`
+  * Run `git clone <URL>`
   * Example: `git clone https://github.com/borbware/unity-basics-course.git`
   * When cloning, `git init` not needed!
 * Simplest way to start with Git:
@@ -183,7 +183,7 @@ paginate: true
 ## `git remote`
 
 * If you have initialized a Git repo already with `git init`, though, then use:
-  * `git remote add origin [URL]`
+  * `git remote add origin <URL>`
   * Here, the name `origin` refers to the remote repository
   * It’s the default name for a remote. Other names can also be used in its stead.
 * To check which remote repository the current local repository is linked to, use 
