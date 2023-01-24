@@ -28,3 +28,4 @@ paginate: true
 
 [Manual: Profiling your application](https://docs.unity3d.com/Manual/profiler-profiling-applications.html)
 [Manual: Profiler](https://docs.unity3d.com/Manual/Profiler.html)
+[Unity blog: Tackling profiling](https://blog.unity.com/technology/tackling-profiling-for-mobile-games-with-unity-and-arm)
