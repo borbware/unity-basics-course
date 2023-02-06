@@ -14,7 +14,13 @@ paginate: true
   * *File > Build Settings*
     * Add all scenes to your build settings (see [Scenes](scenes.md#building-a-game-with-multiple-scenes))
     * Click ***Build***
-* This builds a ***native build*** by default (if you're on Windows, it's a Windows build)
+## Other platforms
+
+* The instructions above create a ***native build*** by default (if you're on Windows, it's a Windows build)
+* To build for other platforms, you need to install the dedicated modules for them in the Unity Hub
+
+![](imgs/addmodules.png)
+
 
 ## Target resolution
 
@@ -27,19 +33,22 @@ paginate: true
 
 * If you want your game to be played on a web browser (and you should!), you can create a ***web build***
 * To build for web, go to build settings and select WebGL as a platform. 
-* If you haven't yet, you need to install the WebGL build tools to build for web.
-* Change the build mode to WebGL (a button next to the "Build")
- button xx
-* (You might need to restart Unity to see the build tools as installed.)
-
----
-![](imgs/web1.png)
+* If you haven't yet, you need to install the WebGL module to build for web on the Unity Hub.
 
 ---
 
 * Then, check these three settings in *Project preferences > Player*:
 
 ![](imgs/web2.png)
+
+---
+![](imgs/web1.png)
+
+---
+
+* On the list to the left on *Build settings*, choose the WebGL platform and then click on *Switch Platform*
+![](imgs/switchplatform.png)
+* (You might need to restart Unity to see the build tools as installed.)
 
 ## Running web builds with a server
 
