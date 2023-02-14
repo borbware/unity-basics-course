@@ -105,12 +105,12 @@ paginate: true
 ## Accessing Children & Parents
 
 * child:
-  * Unity stores the child-parent hierarchy of gameObjects under the Transform component
+  * Unity stores the child-parent hierarchy of GameObjects under the Transform component
   * by index number
-    * [Script Reference: GetChild](https://docs.unity3d.com/ScriptReference/Transform.GetChild.html)
+    * [Script Reference: Transform.GetChild](https://docs.unity3d.com/ScriptReference/Transform.GetChild.html)
     * `parentGameObject.transform.GetChild(indexNumber).gameObject`
    *  by name
-      * [Script Reference: Find](https://docs.unity3d.com/ScriptReference/Transform.Find.html)
+      * [Script Reference: Transform.Find](https://docs.unity3d.com/ScriptReference/Transform.Find.html)
       * `parentGameObject.transform.Find("childName").gameObject`
 * parent:
   * GameObject only has one direct parent
@@ -146,6 +146,8 @@ paginate: true
 
 ## Accessing components
 
+
+* Access GameObject's components with [GameObject.GetComponent](https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html)
   ```c#
   OurComponentType ourComponent = ourGameObject.GetComponent<OurComponentType>();
   ```
@@ -153,10 +155,30 @@ paginate: true
   ```c#
   Rigidbody rb = playerObject.GetComponent<Rigidbody>();
   ```
-* dot notation not needed when getting a component of the GameObject the script class is part of:
-  ```
+* Dot notation not needed when getting a component of the GameObject the script class is part of:
+  ```c#
   Rigidbody rb = GetComponent<Rigidbody>();
   ```
+
+## Checking if component exists
+
+* It's a good idea to check if a component exists before actully using it
+  ```c#
+  Rigidbody rb = GetComponent<Rigidbody>();
+  if (rb != null)
+  {
+    // do stuff with rb
+  }
+  ```
+
+  * Another way is to use the [GameObject.TryGetComponent](https://docs.unity3d.com/ScriptReference/GameObject.TryGetComponent.html) method
+  ```c#
+  if (playerObject.TryGetComponent<RigidBody>(out RigidBody rb))
+  {
+    // do stuff with rb
+  }
+  ```
+  * Does the syntax look strange? It uses the [out parameter](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/out-parameter-modifier). 
 
 ## Enabling and disabling components
 * enable component:
@@ -165,7 +187,8 @@ paginate: true
   * `component.enabled = false;`
 * toggle:
   * `component.enabled = !component.enabled`
-* ***Note:*** Disabling a script component only disables calls to Awake, Start, Update, LateUpdate, FixedUpdate... Most event based callbacks still work!
+* ***Note:*** Disabling a script component only disables calls to Awake, Start, Update, LateUpdate, FixedUpdate...
+  * Most event-based callbacks don't get disabled!
 
 ## Tags & Layers
 * [Manual: Tags and layers](https://docs.unity3d.com/Manual/class-TagManager.html)
