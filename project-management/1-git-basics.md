@@ -7,13 +7,14 @@ paginate: true
 
 # Project Management 1. Git basics
 
-# 1. About git & setup
+# 1. About Git & setup
 ## What is Git?
 
 * Git is a version control tool originally created by Linus Torvalds in 2005
 * Keeps track of code changes
 * Can be used to backup code in the cloud
 * Enables cooperation with other team members
+* Ubiquitous in software development
 
 ## Git vs cloud storage
 
@@ -28,7 +29,7 @@ paginate: true
 ## GitHub
 
 * Git *could* be used locally, but is usually combined with a remote storage service like [GitHub](https://github.com/), [GitLab](https://gitlab.com/) or [BitBucket](https://bitbucket.com/)
-  * These services can also act as a programming portfolio
+  * These services can also double as a programming portfolio
   * Commonly used in open source projects
 * On this course we'll use GitHub
 
@@ -40,28 +41,66 @@ paginate: true
       * (Easier logging in to GitHub)
   * Linux: `sudo apt-get install git`
 
+### Setup settings for Windows
+
+![](imgs/git1.png)
+
+---
+
+![](imgs/git2.png)
+* Can be set manually with `git config --global init.defaultBranch main`
+---
+
+![](imgs/git3.png)
+
+* Can be set manually with `git config core.editor code --wait`
+---
+
+![](imgs/git4.png)
+
+
+---
+
+![](imgs/git5.png)
+
+---
+
+![](imgs/git6.png)
+
+---
+
+![](imgs/git7.png)
+
+* Can be set manually with `git config --global credential.helper wincred`
+
+---
+
+![](imgs/git8.png)
+
+
+
 ## Command line
 
 * Git is operated via the ***command line***, a.k.a, the ***terminal***
-* There are many kinds of command line syntaxes out there
+* There are many kinds of command line syntaxes out there. Some examples:
   * Windows: ***PowerShell*** (new), ***cmd*** (old)
   * Linux, (also included in the Windows Git install): ***bash***
-* We're using Windows's PowerShell, which can be accessed inside VS Code
-* In VS Code, open/close terminal by pressing ***CTRL+Ö***
+* We're using PowerShell, which can be accessed inside VS Code
+* In VS Code, open/close terminal by pressing ***CTRL+Ö*** (in the Fin/Swe layout)
 
 ### Basic commands and the working directory
 
-* To do actions, you don't press buttons, you write commands
-* Many commands act on the currently open folder, a.k.a. the ***working directory***
+* To do actions in Git, you don't press buttons, you write commands
+* Most commands act on the currently open folder, a.k.a. the ***working directory***
   * ***Path*** to the directory is shown next to the terminal cursor:
     `PS E:\borb\code\unity-basics-course>`
-* The command `ls` tells the contents of the working directory
-* The command `cd` is used to move to another directory
+* `ls` tells the contents of the working directory
+* `cd` is used to move to another directory
   * Use `cd programming` to move to the `programming` subfolder
     `PS E:\borb\code\unity-basics-course\programming>`
   * Use `cd ..` to move one step up in the hierarchy (to the parent directory)
     `PS E:\borb\code\unity-basics-course>`
-* ***Note***: `..` refers always to the parent directory, and `.` to the current directory
+* ***Note***: `..` is a shorthand for to the parent directory, `.` for the current directory
 
 ## Extra: Help, this is horrible!
 <!-- _backgroundColor: pink -->
@@ -102,10 +141,20 @@ paginate: true
 ## `git init`
 
 * Initialization needs to be done for every new Git repository
-* If you're starting from scratch:
+* If you're starting a new project:
   * Use `git init` to make your current folder a new Git repository
 * If you've continuing an existing project, initialization happens when you ***clone*** the project into your computer
   * See: [`git clone`](#git-clone)
+* ***Note:*** Never initialize a Git repository in a cloud storage folder!
+
+## `.git` folder
+* Initialization adds a hidden `.git` folder inside a directory
+* The .git folder ONLY appears in the root directory of the repository
+  * If you see the `.git` folder in any of the subdirectories of the repository, something has gone wrong!
+  * You have initialized a repository inside repository
+
+
+
 ## `git status`
 
 * Using the command `git status` shows your current situation.
@@ -122,9 +171,14 @@ paginate: true
       (use "git restore --staged <file>..." to unstage)
             modified:   readme.md
     ```
-  * Basically, you tell Git that you want to do something with this file.
-* ***Note:*** If you just want to push all the changes you've made, you can use `git add .` to stage all the files in your current folder and its subfolders (but be careful!)
+
+---
+* Basically, with `git add file` you tell Git that you want to do *something* with `file`.
+* ***Note:*** If you just want to push all the changes you've made, you can use `git add .` to stage all the files in your current folder and its subfolders
+  * But be careful! Only do this after checking what files have been changed with `git status`
 * ***Note 2:*** Use `git add <filename> -p` if you only want to stage **some** lines from a file you've worked on.
+* ***Note 3:*** The counterpart to `git add` is `git rm`, which removes previously added files from Git's perspective
+
 ## `git commit`
 
 * After you have staged all the files you want, the second phase is to ***commit*** your changes
@@ -132,7 +186,7 @@ paginate: true
   * This message will be visible in GitHub
   * `git commit -m "add new enemy"`
 * Every new commit creates a new point in the project timeline.
-  * you can always jump back between different points (See `git checkout`)
+  * You can always jump back between different points (See `git checkout`)
 * Commit message should clearly, concisely tell what kind of changes you have made
 
 ## `git push`
@@ -152,13 +206,6 @@ paginate: true
   ```
   * You can just follow its orders (see the command on the third line!) and you're good to go 
 
-## Exercise 1. Creating a repo
-<!-- _backgroundColor: Khaki -->
-
-* Create a new repository on GitHub and clone it with HTTPS to your machine.
-* Then, create a new file `GitTest.md` with some lines of text in it.
-* Commit and push changes to GitHub.
-* Go to GitHub and see that the file is there!
 
 ## `git pull`
 
@@ -179,6 +226,14 @@ paginate: true
 * Simplest way to start with Git:
 1) Initialize the repo in the Github/Gitlab/etc website
 2) Clone the repo
+
+## Exercise 1. Creating a repo
+<!-- _backgroundColor: Khaki -->
+
+* Create a new repository on GitHub and clone it with HTTPS to your machine.
+* Then, create a new file `GitTest.md` with some lines of text in it.
+* Commit and push changes to GitHub.
+* Go to GitHub and see that the file is there!
 
 ## `git remote`
 
@@ -209,7 +264,8 @@ paginate: true
     /folder
     *.html
   ```
-* ***Note:*** If you add a file to `.gitignore` that was committed earlier, you can remove it from Git with `git rm --cached filename`
+* ***Note:*** If you add a file to `.gitignore` that was committed earlier, Git still hasn't forgotten about it.
+  * You can make Git forget it with `git rm --cached filename`
 
 
 ## Exercise 2. Git collaboration
@@ -252,6 +308,11 @@ What happens if you make changes to the same line simultaneously?
     `git add .`
     `git commit -m "first commit"`
     `git push --set-upstream origin main`
+
+### Teamwork note
+
+* Only one team member has to follow the instructions above!
+* Others will just grab the code from GitHub with `git clone`. 
 
 ## Troubleshooting: if pushing doesn't work...
 
