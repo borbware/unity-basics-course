@@ -92,10 +92,12 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   | Project management											 	|     | 
 |---|-------------------------------------------------------------------|----:|
-| 1 | [Git Basics](project-management/1-git-basics.md)					| 🌔 |
-| 2 | [Git Continued](project-management/2-git-continued.md)			| 🌔 |
+| 0 | [Git setup](project-management/0-git-setup.md)					| 🌕 |
+| 1 | [Git basics](project-management/1-git-basics.md)					| 🌕 |
+| 2 | [Git continued](project-management/2-git-continued.md)			| 🌕 |
 | 3 | [GitHub tools](project-management/3-github-tools.md)				| 🌔 |
 | 4 | [Scrum](project-management/4-scrum.md) 							| 🌔 |
+|   | [Git cheat sheet](project-management/git-cheat-sheet.md) 				| 🌕 |
 |   | [Unity Collab](project-management/unity-collab.md) 				| 🌑 |
 
 
