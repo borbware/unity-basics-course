@@ -374,3 +374,4 @@ error: failed to push some refs to [your-url]
 
 * [How to Git with Unity](https://thoughtbot.com/blog/how-to-git-with-unity)
 * [Git and Unity: Getting Started](https://medium.com/@linojon/git-and-unity-getting-started-ad7c42be8324)
+* [Using version control in VS code](https://code.visualstudio.com/docs/sourcecontrol/overview)
