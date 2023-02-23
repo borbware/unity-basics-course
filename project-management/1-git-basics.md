@@ -1,6 +1,12 @@
 ---
 marp: true
 paginate: true
+style: |
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
 ---
 <!-- headingDivider: 3 -->
 <!-- class: default -->
@@ -43,42 +49,77 @@ paginate: true
 
 ## Git setup: Settings for Windows
 
----
+<div class="columns">
+<div>
 
 ![](imgs/git1.png)
 
----
+</div>
+<div>
 
 ![](imgs/git2.png)
-* Can be set manually with `git config --global init.defaultBranch main`
+Set manually after setup with:
+  ```
+  git config --global init.defaultBranch main
+  ```
+
+</div>
+</div>
+
 ---
+
+<div class="columns">
+<div>
 
 ![](imgs/git3.png)
 
-* Can be set manually with `git config core.editor code --wait`
----
+Set manually after setup with:
+```
+git config core.editor code --wait
+```
+</div>
+<div>
 
 ![](imgs/git4.png)
 
+</div>
+</div>
 
 ---
+
+<div class="columns">
+<div>
 
 ![](imgs/git5.png)
 
----
+</div>
+<div>
 
 ![](imgs/git6.png)
 
+</div>
+</div>
+
 ---
 
-* Can be set manually with `git config --global credential.helper wincred`
+<div class="columns">
+<div>
 
 ![](imgs/git7.png)
 
+Set manually after setup with:
 
----
+```
+git config --global credential.helper wincred
+```
+
+</div>
+<div>
 
 ![](imgs/git8.png)
+
+</div>
+</div>
 
 ## Command line
 
