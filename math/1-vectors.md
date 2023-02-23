@@ -23,7 +23,7 @@ math: mathjax
   * x-component $\vec{A}_x = 6$
   * y-component $\vec{A}_y = 3$
 * Vectors start from the origin, or $(0,0)$
-![](imgs/2d-vector.png)
+![bg right width: 90%](imgs/2d-vector.png)
 
 ### 2D vector length
 
@@ -48,39 +48,53 @@ math: mathjax
 * C# examples included
 ### Vector addition
 * sum of two vectors is calculated by summing up the individual components
-* $\vec{C} = \vec{A} + \vec{B} = (3, 3) + (6, -2) = (3 + 6, 3 - 2) = (9, 1)$
+* $\vec{C} = \vec{A} + \vec{B}$
+  $= (3, 3) + (6, -2)$
+  $= (3 + 6, 3 - 2) = (9, 1)$
 * can be illustrated by moving $\vec{B}$ to start from the endpoint of $\vec{A}$
-![](imgs/2d-vector-addition.png)
 
-```c#
-Vector2 A = new Vector2(3.0f, 3.0f);
-Vector2 B = new Vector2(6.0f,-2.0f);
-Vector2 C = A + B;
-```
+  ```c#
+  Vector2 A = new Vector2(3.0f, 3.0f);
+  Vector2 B = new Vector2(6.0f,-2.0f);
+  Vector2 C = A + B;
+  ```
+  
+![bg right width: 90%](imgs/2d-vector-addition.png)
 
 ### Vector subtraction
 
-* difference of two vectors, $A - B$:
-  * B is "flipped": If $\vec{B} = (6, -2)$, then $-\vec{B} = (-6, 2)$
-  * $$\vec{C} = \vec{A} - \vec{B} = (3, 3) - (6, -2) = (3 - 6, 3 - (-2)) = (3 - 6, 3 + 2) = (-3, 5)$$
+* difference of two vectors, $\vec{A} - \vec{B}$
+  * $-\vec{B}$ is is "flipped" $\vec{B}$: $\vec{B} = (6, -2) \Rightarrow -\vec{B} = (-6, 2)$
+  * $\vec{C} = \vec{A} - \vec{B}$
+    $= (3, 3) - (6, -2)$
+    $= (3 - 6, 3 - (-2))$
+    $= (3 - 6, 3 + 2)$
+    $= (-3, 5)$
 * $\vec{A} - \vec{B}$ starts from the endpoint of $\vec{B}$ and ends in the endpoint of $\vec{A}$
-![](imgs/2d-vector-subtraction.png)
+
 ```c#
 Vector2 A = new Vector2(3.0f, 3.0f);
 Vector2 B = new Vector2(6.0f,-2.0f);
 Vector2 C = A - B;
 ```
 
+![bg right:40% width: 90%](imgs/2d-vector-subtraction.png)
+
 ### Scalar multiplication
 
 * When a vector is multiplied by a scalar (a number), the vector is *scaled*
   * If a vector is multiplied by 2, its length doubles
-  * $2 \cdot \vec{A} = 2 \cdot (3,2) = (2 \cdot 3, 2 \cdot 2) = (6, 4)$
-![](imgs/2d-vector-scalar-multiplication.png)
+    $2 \cdot \vec{A}$
+    $= 2 \cdot (3,2)$
+    $= (2 \cdot 3, 2 \cdot 2)$
+    $= (6, 4)$
+
 ```c#
 Vector2 A = new Vector2(3.0f,3.0f);
 Vector2 C = 2 * A;
 ```
+
+![bg right:40% width: 90%](imgs/2d-vector-scalar-multiplication.png)
 
 ### Special cases for scalar multiplication
 
