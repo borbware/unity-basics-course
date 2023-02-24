@@ -4,7 +4,7 @@ paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: default -->
-# Github tools
+# GitHub tools
 ## Issues
 
 * Issues: tasks that need to be done
@@ -18,7 +18,7 @@ paginate: true
   * You can also link issue to a ***project*** 
 * When issue is done, you close it with ***Close issue***
 ---
-* ***Note:*** You can auto-close an issue with a commit message "fix #issuenumber"
+* ***Note:*** You can auto-close an issue with a commit message `"fix #<issuenumber>"` or `"close #<issuenumber>"`
 * ***Note:*** You can add todo lists into the description!
   * Todo list can include links to other issues (just write #issuenumber)
   * Don't create a mega-issue "Sprint 1" or something like that, however

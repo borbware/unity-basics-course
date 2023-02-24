@@ -1,13 +1,14 @@
 ---
 marp: true
 paginate: true
+math: mathjax
 ---
 <!-- headingDivider: 3 -->
 <!-- class: default -->
 # Scrum
 ## What is Scrum?
 
-* Scrum is a framework for delivering products (usually software)
+* [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)) is a framework for delivering products (usually software)
 * Designed for teams of ten or fewer members
 * Scrum Values
   * ***Minimal chance of failure***: product is worked on in small increments
@@ -19,9 +20,9 @@ paginate: true
 
 ## Why Scrum for game development?
 
-* Through its practices and principles, Scrum creates conditions to achieve great results 
-* Scrum gives agency to team members: meeting the goal is a team effort
-* Scrum creates transparency: problems get addressed early
+* Through its practices and principles, Scrum creates ***conditions*** to achieve good results 
+* Scrum gives ***agency*** to team members: meeting the goal is a team effort
+* Scrum creates ***transparency***: problems get addressed early
 * Scrum isn't magic: you need to continuously enforce its practices in action
 
 
@@ -29,9 +30,9 @@ paginate: true
 * ***Cross-discipline teams***: Enables teams to deliver features and mechanics that have clear value
 * ***Self-management***: Enables teams to select the amount of work they can commit to every sprint and complete that work through whatever means they find appropriate
 * ***Self-organization***: Enables teams to have a degree of authority and responsibility to select their membership
-* ***True leadership***: Provides leadership focused on mentoring and facilitation to free the best performance possible from the team
 
 <!--
+* ***True leadership***: Provides leadership focused on mentoring and facilitation to free the best performance possible from the team
 ## Cross-discipline teams
 * Team members share the same goal and therefore the same priorities
 * To make sure ***no work goes to waste***, synchronization of the disciplines happens every sprint. 
@@ -55,33 +56,47 @@ paginate: true
 
 # Scrum basics
 
-## Scrum team
+## Scrum people
+
+![](imgs/scrum-people.png)
+
+### Dev team
+
+* Small team that aims to deliver a product
+* Organizes itself and its work
+* Collaborates with Product owner
+* Creates product increments in a series of sprints
+
+### Scrum master
+
+* Helps to facilitate usage of Scrum to the team
+* Ensures the Scrum framework is followed
+* Aims to improve team's workflow
+  * Basically an acting producer!
+* Can be a part of the dev team (a "peer leader")
+  * ...but should not be the product owner
+* Can be a different person every Sprint
+
+### Product owner
+
+* Accountable for profit & loss
+* Listens to the client's wishes
+* Manages the Product Backlog
+* Representation of stakeholders and clients to the Dev Team
+* Chooses what to release - and when
+
+<!-- _footer: "In this course, the teacher will act as this." -->
+
+### The rest
 
 * Stakeholders (not actually part of the team)
   * People outside the Scrum team who have an interest in the product
   * Sales, marketing, end customers, etc
 * Client
   * Monitors product backlog
-  * Responsible for the upkeep of the product backlog
-* Product owner
-  * Accountable for profit & loss
-  * listens to client's wishes
-  * Manages the Product Backlog
-  * Representation of stakeholders and clients to the Dev Team
+  * Is responsible for the upkeep of the product backlog
 
-<!-- _footer: "In this course, the teacher will act as all of the above." -->
----
-* Dev team
-  * Small team that aims to deliver a product
-  * Organizes itself and its work
-  * Collaborates with Product owner
-* Scrum master
-  * Helps to facilitate usage of Scrum to the team
-  * Ensures the Scrum framework is followed
-  * Aims to improve team's workflow
-    * Basically an acting producer!
-  * Can be a part of the dev team
-  * Can be a different person every Sprint
+<!-- _footer: "In this course, the teacher will act as these." -->
 
 ## Backlogs
 
@@ -103,13 +118,18 @@ paginate: true
 * Selected from the Product backlog
 * A *forecast* of what is aimed to be done during the Sprint, not a promise!!!
 
+---
+![bg width: 80%](imgs/sprint-backlog.png)
+
+
 ### Definition of Done
 
 * When is a task considered done?
-	* This is decided by the Dev team in Sprint ***Retrospective*** ("Retro")
-	* Can change as project progresses
-    	* "It works" -> "It passes tests"
-  	* "Fully completed" should refer to ***completely releasable***
+* This is decided by the Dev team in Sprint ***Retrospective*** ("Retro")
+* Can change as project progresses
+  	* "It works" -> "It passes tests"
+
+<!-- * "Fully completed" should refer to ***completely releasable*** -->
 
 ## Sprint Events
 
@@ -122,9 +142,10 @@ paginate: true
 * Starts a new Sprint
 * The whole Scrum team attends
   * inspects the whole Product Backlog
-* a Sprint Goal is created and dissectted into a new Sprint Backlog
-  * the Sprint Goal is *immutable*
-  * the exact implementations are not discussed, are rather left to the Dev Team to decide
+* A Sprint Goal is created and dissected into a new Sprint Backlog
+  * The Sprint Goal is ***immutable***
+  * The exact implementations are not discussed
+    * those are rather left for the Dev Team to decide
 * New tasks are given to the Dev Team
 
 ### Daily Scrum ("Daily")
@@ -134,7 +155,8 @@ paginate: true
   * Inspect how the Sprint Backlog is clearing out
   * Create a plan for the next 24 hours
 * Max. 15 min long!
-* Optimizes collaboration and performance of the Dev Team by keeping everybody on the same page
+* Keeps everyone on the same page
+  * $\Rightarrow$ Optimizes collaboration and performance of the Dev Team
 ---
 * Example topics to address in a Daily:
 	* What have you achieved since the last daily?

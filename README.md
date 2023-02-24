@@ -96,7 +96,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 1 | [Git basics](project-management/1-git-basics.md)					| 🌕 |
 | 2 | [Git continued](project-management/2-git-continued.md)			| 🌕 |
 | 3 | [GitHub tools](project-management/3-github-tools.md)				| 🌔 |
-| 4 | [Scrum](project-management/4-scrum.md) 							| 🌔 |
+| 4 | [Scrum](project-management/4-scrum.md) 							| 🌕 |
 |   | [Git cheat sheet](project-management/git-cheat-sheet.md) 				| 🌕 |
 |   | [Unity Collab](project-management/unity-collab.md) 				| 🌑 |
 
