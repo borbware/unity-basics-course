@@ -123,3 +123,4 @@ paginate: true
 
 * [Learn: Introduction to particle systems](https://learn.unity.com/tutorial/introduction-to-particle-systems#)
 * [Brackeys video: Everything to know about the Particle system](https://www.youtube.com/watch?v=FEA1wTMJAR0)
+* [How to Animate Game Explosions || VGAS](https://www.youtube.com/watch?v=3JRAGfOnp0U)

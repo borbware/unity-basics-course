@@ -1,8 +1,8 @@
 # Buutti Game Dev Academy
 
-Welcome to the repository for the Buutti Game Dev academy course. The aim of the course is to teach basics of Unity, C# and game development.
+Welcome to the repository for the Buutti Game Dev Academy course. The aim of the course is to teach basics of Unity, C# and game development.
 
-The course is divided into three four-module stages (module being approximately a week long), and the topics are arranged into "books" whose chapters are introduced below.
+The course is divided into three stages, with the stages divided into modules. Modules are approximately a week long. Topics are arranged into "books" whose chapters are introduced below.
 
 The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the corresponding chapter is!
 
@@ -92,10 +92,12 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   | Project management											 	|     | 
 |---|-------------------------------------------------------------------|----:|
-| 1 | [Git Basics](project-management/1-git-basics.md)					| 🌔 |
-| 2 | [Git Continued](project-management/2-git-continued.md)			| 🌔 |
+| 0 | [Git setup](project-management/0-git-setup.md)					| 🌕 |
+| 1 | [Git basics](project-management/1-git-basics.md)					| 🌕 |
+| 2 | [Git continued](project-management/2-git-continued.md)			| 🌕 |
 | 3 | [GitHub tools](project-management/3-github-tools.md)				| 🌔 |
-| 4 | [Scrum](project-management/4-scrum.md) 							| 🌔 |
+| 4 | [Scrum](project-management/4-scrum.md) 							| 🌕 |
+|   | [Git cheat sheet](project-management/git-cheat-sheet.md) 				| 🌕 |
 |   | [Unity Collab](project-management/unity-collab.md) 				| 🌑 |
 
 
