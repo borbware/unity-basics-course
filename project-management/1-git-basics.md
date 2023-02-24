@@ -103,7 +103,7 @@ style: |
 * Generally, when Git gives you a warning, error, or some other message, it's a good idea to ***read it and follow the orders***.
 
 ## Exercise 1a. Initializing a repo
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 * Create a new repository on GitHub and clone it with HTTPS to your machine.
 * Then, create a new file `GitTest.md` with some lines of text in it.
@@ -144,7 +144,7 @@ style: |
 <!-- _footer: "A repository can have multiple remotes. Use `git remote` to list them all." -->
 
 ## Exercise 1b. Cloning a repo
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 * Create a new repository on GitHub and clone it with HTTPS to your machine.
 * Then, create a new file `GitTest.md` with some lines of text in it.
@@ -188,7 +188,7 @@ style: |
 ![bg left:33% width: 80%](imgs/vscode-source-control.png)
 
 ## Exercise 2. Git collaboration
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 * Work on this exercise with your group.
 * Choose someone's test repository from Exercise 1b to use in this exercise.

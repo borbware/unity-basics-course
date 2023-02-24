@@ -249,14 +249,14 @@ if (Input.ButtonDown("Fire1"))
 * When clicking on buttons doesn't work, you might have invisible UI elements on top of the button that block clicking on the buttons underneath.
 
 ## UI exercise 1: Basics
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Continue the Exercise 3 from Collision. Create a counter for the collected items that sits on the top left corner of the screen.
 
 See how UI scaling changes when you change the CanvasScaler component settings!
 
 ## UI exercise 2: Buttons
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Create a UI with three buttons.
 

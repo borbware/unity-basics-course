@@ -35,7 +35,7 @@ Mathf.Lerp(5.0f, 15.0f, 1.0f); // returns 15.0f
 * with [`Mathf.LerpUnclamped`](https://docs.unity3d.com/ScriptReference/Mathf.LerpUnclamped.html), the value is extrapolated when outside the limits!
 
 ## Exercise 1. Do a lerp!
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 After pressing a button once, lerp GameObject's color from red to blue.
 
 ***Bonus:*** After pressing twice, lerp the color back to red.

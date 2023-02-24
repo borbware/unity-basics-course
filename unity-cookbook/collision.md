@@ -53,7 +53,7 @@ math: mathjax
 
 ## Exercise 1. Collectibles
 
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Continue with the Player character from the [Input exercise](input-handling.md#exercise-1-player-input).
 
@@ -63,7 +63,7 @@ When the player character collides with a collectible, destroy it and add one to
 
 ## Exercise 2. Colliding with moving obstacles
 
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Continue previous exercise. Add moving objects to the scene that block the player's way. 
 

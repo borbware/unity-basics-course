@@ -74,7 +74,7 @@ paginate: true
 
 
 ## Exercise 1. Pushing onwards
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Continue the exercise from [Git Basics](1-git-basics.md) or create a new repository for these exercises.
 * Create a new branch (with a name `new-feature`, for instance) in your local repository.
@@ -143,7 +143,7 @@ Continue the exercise from [Git Basics](1-git-basics.md) or create a new reposit
 <!-- _footer: "If VS code is not configured properly as Git's text editor, and you encounter an error, run `git config core.editor code --wait`" -->
 
 ## Exercise 2. Fixing conflicts
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 * Create a new branch in your local repository, but do not checkout it just yet.
 * Then, on master branch, make some changes to GitTest.md.
@@ -181,7 +181,7 @@ Continue the exercise from [Git Basics](1-git-basics.md) or create a new reposit
   * If a scene needs GameObject contributions from others, they can create prefabs that the Scene Owners then add to their scene 
 
 ## Exercise 3. Branching team effort
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 * Work as a group for this assignment.
 * Continue Exercise 2 from [Git basics](1-git-basics.md).
 * Every group member creates an individual branch from the master, and makes some changes to the `GitTest.md` file.
@@ -190,7 +190,7 @@ Continue the exercise from [Git Basics](1-git-basics.md) or create a new reposit
 * Then, merge the changes back to the master branch. Fix ensuing conflicts, if any appear.
 
 ## Exercise 4. Unity collaboration
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Create a new Unity project for your group.
 

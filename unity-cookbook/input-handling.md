@@ -79,7 +79,7 @@ paginate: true
   * no deadzone, no smoothing
 
 ## Exercise 1. Player input
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 Create a top-down player character with a sprite renderer that can
 * change color with the ***Fire1*** button
 * move with the analog stick

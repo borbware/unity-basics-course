@@ -143,14 +143,14 @@ Current: 1
 * while loops when we want to do something many times, but don't know when to stop
 
 ## Exercise 1. Loops 1
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Create a loop whose number of iterations is set in an integer variable `numberOfEnemies`.
 
 Run a loop that many times and write the message `Creating enemy 1`, `Creating enemy 2`, etc. to console.
 
 ## Exercise 2. Loops 2
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Suppose you have a given number of collectibles in a level.
 
@@ -159,7 +159,7 @@ You want a given percentage of them, say, 10%, to be shiny collectibles.
 Create a loop that runs until this condition is met, and prints into console `Converted collectible 1 to shiny`.
 
 ## Exercise 3. Field of Cubes
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Create a loop that instantiates a 8 * 8 field of cubes on a plane.
 
@@ -269,7 +269,7 @@ void Start ()
   * `list.Find(predicate)` finds an item from the list that matches the given predicate. More about it later!
 
 ## Exercise 4. Enemy names
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Create a list of names for enemy characters.
 
@@ -374,7 +374,7 @@ for(int i = 0; i < starters.Count; i++)
 
 <!-- _footer: "[See more about value vs reference types in Chapter 3](3-classes-methods.md#reference-type-vs-value-type)" -->
 ## Exercise 5. Looping through
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 Loop through the starters array, and print the starter and its number like this:
 `#001 Bulbasaur`
 
@@ -382,7 +382,7 @@ Now, edit the strings with a loop to include this number as well.
 
 
 ## Exercise 6. Creative data
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Create two-dimensional data structure with x,y coordinates.
 
@@ -393,7 +393,7 @@ Also, create a function `newCoordinate(x, y)` that can be used to add new coordi
 ***Extra:*** What if you want to populate the level with enemies and collectibles, both of which saved in the same data structure?
 
 ## Exercise 7. List of lights
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Continue exercise 1 from [Scripting gameobjects](../unity-basics/4-scripting-gameobjects.md).
 

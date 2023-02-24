@@ -61,5 +61,5 @@ math: mathjax
 	```
 
 ## Exercise 1: Minmaxing
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 try out tms xx

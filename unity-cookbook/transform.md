@@ -78,7 +78,7 @@ paginate: true
   ```
 
 ## Exercise 1.
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Make a child GameObject rotate around its parent.
 

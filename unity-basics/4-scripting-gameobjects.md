@@ -258,7 +258,7 @@ private void OnTriggerEnter2D(Collider2D other)
 
 
 ## Exercise 1. Available on switch 
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Create a Scene with following GameObjects:
 

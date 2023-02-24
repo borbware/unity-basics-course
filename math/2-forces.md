@@ -58,7 +58,7 @@ Force vectors can be added together to acquire the total force:
 * See: [Physics](../unity-cookbook/physics.md)
 
 ## Exercise 1. Forces
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 Create a 3D scene where a player character can push around rigid bodies by applying a force to them.
 
 How would you calculate the direction of the force?

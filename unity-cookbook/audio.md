@@ -58,7 +58,7 @@ paginate: true
 <!-- _footer: "[Scott Rowell Video: Unity Spatial Audio](https://www.youtube.com/watch?v=_2BhQN7-bGk)" -->
 
 ## SFX Exercise
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Time to add sound effects to your game! Either:
 

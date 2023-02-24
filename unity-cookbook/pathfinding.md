@@ -151,18 +151,18 @@ void Update()
   ```
 
 ## Exercise 0. Point and click
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Make a point and click character controller:
 * When you click on a walkable spot, make the character walk to it. 
 
 ## Exercise 1. Enemy on patrol
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Create a non-player character that patrols between three points on a 2d top-down area.
 
 ## Exercise 2. Tactical Espionage Action
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Add a visibility cone for the enemy. If it sees the player, make it follow it.
 

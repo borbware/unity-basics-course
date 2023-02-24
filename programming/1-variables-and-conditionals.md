@@ -107,7 +107,7 @@ namespace MyAwesomeProgram
     * `5 % 5 = 0`
     * `6 % 5 = 1`
 ## Exercise 1: Trying out variables
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 * create a new Unity project for simple programming exercises.
 * create a new C# script component for an empty GameObject.
@@ -333,7 +333,7 @@ void Greet()
   ```
 
 ## Exercise 2: GameObject check
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Create a C# script that checks if the GameObject is 
 * a player or
@@ -410,7 +410,7 @@ b) EntityType is not declared at all?
 * because C# is object-oriented, all functions are *methods* inside *classes*
 * We'll dive deeper into these topics in [Chapter 3. Classes and Methods](3-classes-methods.md)
 ## Exercise 3: Traffic lights
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Create a timed console application for displaying the state of a traffic light.
 * ⭐ Print the new color to the console every frame (use `Update()`).
@@ -420,7 +420,7 @@ Create a timed console application for displaying the state of a traffic light.
 * Hint: Use `Time.time`!
 
 ## Exercise 2 extras
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 * ⭐⭐ Print the color to console only when the light changes.
 * ⭐⭐⭐ Create a 3d object. Change the color of its material as a function of time.

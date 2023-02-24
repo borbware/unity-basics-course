@@ -251,7 +251,7 @@ public class WrapAround : MonoBehaviour
 * Actually, you CAN'T instantiate a static class!
 
 ## Exercise 1. Class for helper functions
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 <!-- _footer: "[About Inverse Lerp](https://www.gamedev.net/articles/programming/general-and-gameplay-programming/inverse-lerp-a-super-useful-yet-often-overlooked-function-r5230/)" -->
 Create a new Script class for math helper functions and properties (do not add it to any GameObject).
 
@@ -305,7 +305,7 @@ Try to call the method from a GameObject!
     ```
 
 ## Exercise 2: Hello class
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 
 1. Create a console application with a class Animal, that contains 

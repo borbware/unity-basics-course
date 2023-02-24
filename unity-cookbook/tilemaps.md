@@ -91,7 +91,7 @@ paginate: true
 * Todo later
 
 ## Exercise 1. A tiled level
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Import a tilemap from an existing sprite sheet. Create a tiny level out of your tile assets!
 

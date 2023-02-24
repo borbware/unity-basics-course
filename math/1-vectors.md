@@ -192,11 +192,11 @@ math: mathjax
 <!-- _backgroundColor: #5d275d -->
 
 * Check if two rigidbodies are moving to the same direction:
-  * ```c#
-    float alignment = Vector3.Dot(
-      _rigidBody.velocity.normalized,
-      otherGameObjectRigidBody.velocity.normalized)
-    ```
+  ```c#
+  float alignment = Vector3.Dot(
+    _rigidBody.velocity.normalized,
+    otherGameObjectRigidBody.velocity.normalized)
+  ```
 
 
 ## Note about distance

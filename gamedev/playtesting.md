@@ -12,6 +12,7 @@ paginate: true
 * Designing through playtesting is a way to put ***player experience*** first
 * Have an idea for a game? Don’t spend a lot of time obsessing about the design until you have tried it with players!
 * Ideas alone don't reflect how engaging a game is to play
+
 ## Playtesting cornerstones
 
 * ***PREPARE A PROTOTYPE***: Keep it simple (greyboxing) to quickly test ideas (failing faster)
@@ -23,8 +24,9 @@ paginate: true
 * ***INTEGRATE***: Iterate your game mechanics and interface with this feedback in mind, while also listening to your own instincts. In other words,  listen but do not treat all feedback as infallible. 
 
 
-## How does one playtest?
-<!-- _backgroundColor: Khaki -->
+## Playtesting in practice
+
+<!-- _backgroundColor: #29366f -->
 
 1) ***Communicate the plan*** and set expectations:
      * "Thank you for being here"
@@ -35,7 +37,7 @@ paginate: true
      * Remember, you won't be sitting next to people who you've sold your game to
      * When the player does something "wrong", or doesn't get something, or is stuck, it is interesting to see where it leads
 ---
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 3) During playtesting, ***take lots of notes***:
       * where they get stuck or confused
       * what they enjoy
