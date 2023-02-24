@@ -19,6 +19,7 @@ paginate: true
 
 ## The two ways: Input system
 * The new [Input System]((https://docs.unity3d.com/Packages/com.unity.inputsystem@1.3/manual/index.html))
+  * Read more [on these slides](input-system.md)
   * This needs to be installed as a separate package
   * action-based
   * uses XInput
