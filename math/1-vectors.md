@@ -72,11 +72,11 @@ math: mathjax
     $= (-3, 5)$
 * $\vec{A} - \vec{B}$ starts from the endpoint of $\vec{B}$ and ends in the endpoint of $\vec{A}$
 
-```c#
-Vector2 A = new Vector2(3.0f, 3.0f);
-Vector2 B = new Vector2(6.0f,-2.0f);
-Vector2 C = A - B;
-```
+  ```c#
+  Vector2 A = new Vector2(3.0f, 3.0f);
+  Vector2 B = new Vector2(6.0f,-2.0f);
+  Vector2 C = A - B;
+  ```
 
 ![bg right:40% width: 90%](imgs/2d-vector-subtraction.png)
 
@@ -89,10 +89,10 @@ Vector2 C = A - B;
     $= (2 \cdot 3, 2 \cdot 2)$
     $= (6, 4)$
 
-```c#
-Vector2 A = new Vector2(3.0f,3.0f);
-Vector2 C = 2 * A;
-```
+  ```c#
+  Vector2 A = new Vector2(3.0f,3.0f);
+  Vector2 C = 2 * A;
+  ```
 
 ![bg right:40% width: 90%](imgs/2d-vector-scalar-multiplication.png)
 
@@ -165,7 +165,7 @@ Vector2 C = 2 * A;
 
 ### Rotating a vector
 
-* In Unity, rotation is represented by [Quaternions](5-math-classes.md#quaternion)
+* In Unity, rotation is represented by [Quaternions](5-math-classes.md#quaternion) (fin. kvaternio, kvaterniot)
 * To rotate a vector by a given angle, you can do a ***Quaternion rotation operation***:
   ```c#
   Vector3 rotatedVector = Quaternion.Euler(0, 0, 90) * originalVector;
