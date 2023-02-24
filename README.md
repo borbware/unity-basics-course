@@ -1,8 +1,8 @@
 # Buutti Game Dev Academy
 
-Welcome to the repository for the Buutti Game Dev academy course. The aim of the course is to teach basics of Unity, C# and game development.
+Welcome to the repository for the Buutti Game Dev Academy course. The aim of the course is to teach basics of Unity, C# and game development.
 
-The course is divided into three four-module stages (module being approximately a week long), and the topics are arranged into "books" whose chapters are introduced below.
+The course is divided into three stages, with the stages divided into modules. Modules are approximately a week long. Topics are arranged into "books" whose chapters are introduced below.
 
 The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the corresponding chapter is!
 

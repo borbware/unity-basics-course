@@ -50,14 +50,14 @@ paginate: true
 
 ### Omnisharp troubleshooting
 
-* Sometimes Omnisharp stops working, here's something you can try to fix it:
-    1) Check that .NET is installed by running `dotnet` in the VS code terminal
-    2) In Unity: *Edit > Preferences > External tools > Regenerate Project Files*
-    3) In VS Code: ***CTRL+SHIFT+P*** *> Omnisharp: Restart Omnisharp*
-    4) In VS Code: Add this line inside the curly braces to the configuration file `.vscode/settings.json`:
-        ```
-        "omnisharp.useModernNet": false
-        ``` 
+* Sometimes Omnisharp stops working. Here's something you can try to fix it:
+1) Check that .NET is installed by running `dotnet` in the VS code terminal
+2) In Unity: *Edit > Preferences > External tools > Regenerate Project Files*
+3) In VS Code: ***CTRL+SHIFT+P*** *> Omnisharp: Restart Omnisharp*
+4) In VS Code: Add this line inside the curly braces to the configuration file `.vscode/settings.json`:
+    ```
+    "omnisharp.useModernNet": false
+    ``` 
 
 ## VS code shortcuts
 
@@ -81,7 +81,8 @@ paginate: true
 ## Extra: Other extensions
 <!-- _backgroundColor: pink -->
 * *Marp for VS Code*
-  * if you want to read these slides inside VS code
-  * after installation, open this .md file from the course repository
-  * click on the *Open preview to the side* button
-    * a vertically split square with a magnifying glass on the top right corner
+  * If you want to read these slides inside VS Code
+  * After installation, open this .md file from the course repository
+  * Click the *Open preview to the side* button
+
+    ![](imgs/vscode-marp-preview.png)

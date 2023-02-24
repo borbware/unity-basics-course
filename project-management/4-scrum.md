@@ -150,7 +150,7 @@ math: mathjax
 
 ### Daily Scrum ("Daily")
 
-* Only Dev Team attends with these goals:
+* Only Dev Team attends, with these goals:
   * Inspect the progression towards the Sprint Goal
   * Inspect how the Sprint Backlog is clearing out
   * Create a plan for the next 24 hours
@@ -159,7 +159,7 @@ math: mathjax
   * $\Rightarrow$ Optimizes collaboration and performance of the Dev Team
 ---
 * Example topics to address in a Daily:
-	* What have you achieved since the last daily?
+	* What have you achieved since the last Daily?
 	* What problems have you faced?
 	* How does the team address problems?
 	* Is there need for (re)allocation of tasks?
@@ -174,7 +174,7 @@ math: mathjax
 * Dev Team tells what happened during the Sprint
   * How different problems were addressed?
   * What was their effect?
-* Everybody provides and listens for feedback
+* Everybody provides *and listens* for feedback
 
 ### Sprint retrospective ("Retro")
 
@@ -192,8 +192,8 @@ math: mathjax
 
 * Continuously:
   1. Make sure the task board on GitHub is up to date.
-  2. Make sure everybody is able to attend the dailies.
-  3. Make sure everybody is heard and contributes at dailies.
+  2. Make sure everyone is able to attend the dailies.
+  3. Make sure everyone is heard and contributes at dailies.
   4. If someone needs help, you help them find assistance or assist them yourself.
 * Before the dev meeting:
   1. Make sure the task board on GitHub is up to date.
