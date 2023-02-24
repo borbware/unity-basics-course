@@ -91,7 +91,8 @@ paginate: true
 * Managed by the Product Owner
 * Composed of ***tasks***
   * unit of deliverable work
-  * completable during a single sprint
+  * well-defined completeness
+  * completable during a single Sprint
   * Features, Bugfixes, Content...
 
 ---

@@ -64,7 +64,7 @@ paginate: true
   * Note: this only works for root GameObjects
 
 ## Creating a data manager
-
+<!-- GameManager -->
 * We can create a data manager for bookkeeping score etc.
 * We create a `static` variable that refers to it (here named `instance`)
   * -> we can use it easily from anywhere
