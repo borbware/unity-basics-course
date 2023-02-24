@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 # Classes and methods
 
 ## Classes & objects
@@ -377,7 +377,7 @@ tran.position = new Vector3(0, 2, 0);
 
 ## Extra: Properties with getters & setters
 
-<!-- backgroundColor: pink -->
+<!-- backgroundColor: #5d275d -->
 ```c#
 public class PlayerClass
 {

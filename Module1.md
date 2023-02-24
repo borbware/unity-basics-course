@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 
 # Module 1
 
@@ -61,19 +61,19 @@ paginate: true
   * you can choose which stage you aim to complete 
 
 ---
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 ![3d clock](imgs/catlikeclock.png)
 
 ## Module project 1: Clock
 
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 For the first Module project, you will create a 3d model of a clock with ticking hour, minute and second indicators.
 
 The project is separated into individual exercises. For more help, you can follow the [CatlikeCoding clock tutorial](https://catlikecoding.com/unity/tutorials/basics/game-objects-and-scripts/).
 
 
 ## MP Exercise 1. Creating a project
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 * Install and setup all the tools needed and create your first 3D project for the course with the name `Module1Clock`.
 * This project will be worked on step by step in the coming exercises.
 
@@ -81,7 +81,7 @@ The project is separated into individual exercises. For more help, you can follo
   * Unity basics 1: [The Unity Interface](unity-basics/1-the-unity-interface.md)
 
 ## MP Exercise 2. Building a simple clock
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 Create a 3D model of a clock from Unity's primitives with three hands and 12 hour indicators.
 
 Unlike in the picture in a past slide, set all the indicators to 12. They will be later rotated to correct positions with C# scripting.
@@ -101,7 +101,7 @@ Unlike in the picture in a past slide, set all the indicators to 12. They will b
 * Unity basics 3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md)
 
 ## MP Exercise 3: Materials
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 * Create three materials for the clock: ***White***, ***Red*** and ***Black***.
 * Create a picture in your project's Assets folder and use it as a texture for ***White***.
 
@@ -120,7 +120,7 @@ Unlike in the picture in a past slide, set all the indicators to 12. They will b
 * Unity basics 4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)
 
 ## MP Exercise 4: Using prefabs
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 Create a prefab out of the clock and then create a duplicate of it into the scene.
 
 ## Some programming & Unity basics 4
@@ -129,7 +129,7 @@ Create a prefab out of the clock and then create a duplicate of it into the scen
 * Unity basics 4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)
 
 ## WP exercise 5. Animating the clock
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 Make the clock hands move when time goes on.
 
 ⭐ Make the movement instantaneous: the second indicator moves once per second directly to the next position
@@ -148,7 +148,7 @@ Make the clock hands move when time goes on.
   * One-on-one meetings
 
 ## MP Exercise 6. Git Repository
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 
 * Create a remote repository for your Module project with the Unity gitignore file. The repository should be named `ModuleProject1Clock`, or something along the lines.
 * Initialize Git in your Module project repository.

@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 
 # Project Management 2. Git continued
 
@@ -209,7 +209,7 @@ From Scene 4, the game should loop back to Scene 1.
 * [Undo possibilities](https://docs.gitlab.com/ee/topics/git/numerous_undo_possibilities_in_git/) 
 
 ## Very extra: `git rebase`
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 * `git merge` creates a new commit for the merge process
 * Sometimes that's undesirable, so an alternative is to use `git rebase`
 * Unlike merge, rebase applies changes from the rebased branch ***one commit at a time***

@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 # Module 2
 
 ## What to expect
@@ -24,14 +24,14 @@ paginate: true
 # Day 1: 2D Movement
 
 ## Module project 2: Asteroids
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 *  Recreate the classic arcade game Asteroids in Unity.
      * [Youtube: Asteroids gameplay](https://www.youtube.com/watch?v=WYSupJ5r2zo)
 
 Goal:
 * ⭐ MVP: Create a playable single-screen game of Asteroids.
 ## Extra goals:
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 * ⭐⭐ Add one of the following features:
   * Hi scores & scoreboard
   * Level progression: new asteroids appear and make the game progressively more difficult
@@ -41,7 +41,7 @@ Goal:
 
 
 ## MP exercise 0.
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 Examine the gameplay video, then play the example Unity-built Asteroids.
 
 In your groups, write down:
@@ -50,17 +50,17 @@ In your groups, write down:
 * Which feature would you implement first?
 
 ## MP exercise 1.
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 
 Now back on your own, make a new project for the module project and create the player controlled ship.
 
 ## MP exercise 2.
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 
 Add asteroids to the scene.
 
 ## MP exercise 3.
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 
 Destroy player if it hits an asteroid.
 

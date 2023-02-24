@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 
 # Input handling
 
@@ -86,7 +86,7 @@ Create a top-down player character with a sprite renderer that can
 
 
 ## Extra: Mouse input
-<!-- backgroundColor: pink -->
+<!-- backgroundColor: #5d275d -->
 * [`Input.GetMouseButton(0)`](https://docs.unity3d.com/ScriptReference/Input.GetMouseButton.html)
   * Down & Up methods work similarly to previous examples as well
 * get mouse position:

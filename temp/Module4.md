@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 
 # Module 4: Advanced techniques
 
@@ -33,7 +33,7 @@ paginate: true
 	* [ScriptableObject](#scriptableobject)
 
 ## Module project
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 
 * Tower defense
 * Plants vs Zombies -like

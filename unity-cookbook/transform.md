@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 # Transform class
 
 ## Transform
@@ -83,7 +83,7 @@ paginate: true
 Make a child GameObject rotate around its parent.
 
 ### Extra: Look towards a point, 3D
-<!-- backgroundColor: pink -->
+<!-- backgroundColor: #5d275d -->
 
 * To ***instantly*** rotate a Transform so that it points to a given direction, you can use the previously mentioned Transform.LookAt
   * If you want to rotate a vector (not necessarily a transform!), use [Quaternion.LookRotation](https://docs.unity3d.com/ScriptReference/Quaternion.LookRotation.html) 

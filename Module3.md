@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 # Module 3
 
 ## Module 3 Schedule
@@ -15,7 +15,7 @@ paginate: true
 | UC: [2D animation](unity-cookbook/2d-animation.md)  | P2: [Lists and Loops](programming/2-lists-loops.md) | M0: [Useful math](math/0-mathf.md) | | Wrap-up?????? |
 
 ## Module project 3: Dungeon crawler
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 
 ⭐ MVP
   * Top-down movement
@@ -25,14 +25,14 @@ paginate: true
   * Enemies that hurt the player
   * Health item pickups
 ---
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 ⭐⭐
 Pick two:
 * Player defense
 * Keys that open doors
 * Enemy AI
 ---
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 ⭐⭐⭐
 * Pick one:
   * Co-op
@@ -41,7 +41,7 @@ Pick two:
 
 
 ## MP Exercise 1. Tiles!
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 
 Pick a tile map (or two) for your game!
 

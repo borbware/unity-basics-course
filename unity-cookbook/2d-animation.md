@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 
 # 2D animation
 
@@ -121,7 +121,7 @@ paginate: true
 
 
 ### Extras: Advanced animation states
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 
 * In real-world, usage, animator states can be way more comples
   * This can lead to so-called transition hell
@@ -129,12 +129,12 @@ paginate: true
 * [Manual: Blend trees](https://docs.unity3d.com/Manual/class-BlendTree.html)
 
 ## Extra: UI animations
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 
 * [Packages: Unity UI: Animation integration](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIAnimationIntegration.html)
 
 ## Extras
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 
 * 9-Slicing
   * [Manual: 9-Slicing your Sprite](https://docs.unity3d.com/Manual/9SliceSprites.html)
@@ -146,7 +146,7 @@ paginate: true
   * [Manual: Sprite Creator](https://docs.unity3d.com/Manual/SpriteCreator.html)
 
 ## Extras: Pixel art in Unity
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 
 * Sprite import:
   * Texture type: Sprite (2D and UI)
@@ -156,7 +156,7 @@ paginate: true
 * *Edit > Project Settings > Quality > Anti-aliasing: Disabled*
 
 ---
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 
 * Preparing for pixelart
   * https://twitter.com/Davitsu/status/956499799133573120

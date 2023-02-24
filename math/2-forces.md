@@ -4,7 +4,7 @@ paginate: true
 math: mathjax
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 
 # 2. Forces
 

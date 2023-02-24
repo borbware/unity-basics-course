@@ -9,7 +9,7 @@ style: |
   }
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 
 # Project Management 0. Git setup
 
@@ -145,14 +145,14 @@ git config --global credential.helper wincred
 * ***Note***: `..` is a shorthand for to the parent directory, `.` for the current directory
 
 ## Extra: Help, this is horrible!
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 * Do you feel more at home in graphical UIs?
 * If the command line is not your thing, you can also use [GitHub Desktop](https://desktop.github.com/)
 * It's a Windows application for working with GitHub repositories
 * It will show the Git history as a visual timeline
 * ***Note:*** Even when using GitHub desktop, it still helps if you understand the Git commands that still are executed under the hood, though!
 ---
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 ![bg width:80%](https://desktop.github.com/images/github-desktop-screenshot-windows.png)
 
 ## Btw: Config

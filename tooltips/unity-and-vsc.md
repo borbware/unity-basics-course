@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 # Unity and VS Code
 
 ## VS Code installation
@@ -101,7 +101,7 @@ paginate: true
 * ***CTRL+SHIFT+Ä*** *View: Toggle Maximized Panel* (makes terminal big)
 
 ## Extra: Other extensions
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 * *Marp for VS Code*
   * If you want to read these slides inside VS Code
   * After installation, open this .md file from the course repository

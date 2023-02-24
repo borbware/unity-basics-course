@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 
 # 2D basics
 
@@ -86,7 +86,7 @@ paginate: true
   * [Sprite Shape Renderer](https://docs.unity3d.com/Manual/class-SpriteShapeRenderer.html)
 
 ## Extra: Two ways for 2D shooting
-<!-- backgroundColor: pink -->
+<!-- backgroundColor: #5d275d -->
 
 * [Brackeys video: 2D shooting](https://www.youtube.com/watch?v=wkKsl1Mfp5M)
 * For slow bullets: Instantiate a bullet prefab

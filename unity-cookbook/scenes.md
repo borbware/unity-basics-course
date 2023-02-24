@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 
 # Scenes
 
@@ -118,7 +118,7 @@ void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 ```
 
 ## Extra: Listing multiple scenes 
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 
 * Usable for a Level select screen, etc
 * Get a list of files in a given path:
@@ -133,7 +133,7 @@ void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 * ***Hint:*** `Application.datapath` tells the root of Assets path
 
 ## Extra: Resources
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 
 * [Script Reference: Resources](https://docs.unity3d.com/ScriptReference/Resources.html)
 * [Script Reference: Resources.LoadAll](https://docs.unity3d.com/ScriptReference/Resources.LoadAll.html)

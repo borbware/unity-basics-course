@@ -3,12 +3,12 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 
 # Stage 2: Group projects
 
 ## Ryhmätehtävä 1: Multiplayer arena stage
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 * Alkuperäiset pienryhmät (4-5 hlö)
 * Opettajan tekemä multiplayer arena template
   * 4 pelaajaa
@@ -19,7 +19,7 @@ paginate: true
 * Lopuksi branchista pull request -> kaikki minipelit yhteen
 
 ## Ryhmätehtävä 2: Pelijami
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 
 * pitchaa yksin peli-idea jamin teemaan liittyen
   * mitä osaamista tarvitset että pelin saa tehtyä?
@@ -30,7 +30,7 @@ paginate: true
 * lopuksi: muiden jamipelien (myös external!) testaus ja arviointi
 
 ## Ryhmätehtävä 3: Tarinankerrontaa tiloilla
-<!-- _backgroundColor: lightgreen -->
+<!-- _backgroundColor: #257179 -->
 
 * uudet, opettajan päättämät isot ryhmät (6-7 hlö)
 * minkä muotoinen tila on?

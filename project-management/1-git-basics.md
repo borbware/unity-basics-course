@@ -9,7 +9,7 @@ style: |
   }
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 
 # Project Management 1. Git basics
 
@@ -152,7 +152,7 @@ style: |
 * Go to GitHub and see that the file is there!
 
 ## Extra: HTTPS vs SSH
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 
 * There are two ways to communicate with GitHub, ***HTTPS*** and ***SSH***
 * HTTPS: `https://github.com/borbware/unity-basics-course.git`

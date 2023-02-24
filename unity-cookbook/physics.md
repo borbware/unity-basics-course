@@ -4,7 +4,7 @@ paginate: true
 math: mathjax
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 
 # Physics
 
@@ -87,7 +87,7 @@ math: mathjax
   ```
 
 ## Extra: More functions
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 
 * [Rigidbody.AddRelativeForce](https://docs.unity3d.com/ScriptReference/Rigidbody.AddRelativeForce.html)
   * Adds a force to the rigidbody relative to its coordinate system.
@@ -116,7 +116,7 @@ math: mathjax
   * for top-down 2d games, you want gravity to be zero
 
 ## Extra: Raycasting
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 * See [2D basics](2d-basics.md#extra-two-ways-for-2d-shooting)
 
 ## Links

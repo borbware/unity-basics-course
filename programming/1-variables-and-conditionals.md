@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 # Variables and conditionals
 
 # Variables
@@ -98,7 +98,7 @@ namespace MyAwesomeProgram
   * `/` (division)
 
 ## Extra: Modulo operator
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
   * `%`
     * modulo operator (remainder)
     * great for looping a range
@@ -239,7 +239,7 @@ Debug.Log(a < b && a < c);  // prints true
   ```
 
 ## Extra conditional: Switch-case statement
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 
 ```c#
 public int intelligence = 5;
@@ -271,7 +271,7 @@ void Greet()
 }
 ```
 ## Extra conditional: Ternary operator
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 * "Inline if" is done with the ternary operator 
   * `(the if statement) ? (if true) : (if false);`
     ```c#

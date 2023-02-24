@@ -4,7 +4,7 @@ paginate: true
 math: mathjax
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 # Game math 1: Vectors
 
 # Vector theory
@@ -178,7 +178,7 @@ Vector2 C = 2 * A;
 * ***Note:*** the Transform and Quaternion classes have many rotation methods available, see [Transform Class: Rotation](../unity-cookbook/transform.md#rotation)
 
 ## Dot product: Vector's alignment with another vector
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 * If you want to know how much two vectors point to the same direction, we can use the ***dot product***
   * [Script Reference: Vector3.Dot](https://docs.unity3d.com/ScriptReference/Vector3.Dot.html)
 * The dot product returns a number, not a vector!
@@ -189,7 +189,7 @@ Vector2 C = 2 * A;
   * $0$ if the vectors are perpendicular
 
 ### Dot product example
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 
 * Check if two rigidbodies are moving to the same direction:
   * ```c#
@@ -206,7 +206,7 @@ Vector2 C = 2 * A;
 
 
 ## Exercise 1. I'm being avoided
-<!-- _backgroundColor: Khaki -->
+<!-- _backgroundColor: #29366f -->
 
 Calculate distance between two GameObjects (player and enemy).
 

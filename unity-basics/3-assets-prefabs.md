@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 # 3. Assets & Prefabs
 
 
@@ -64,13 +64,13 @@ paginate: true
 * overridden values in Inspector are indicated in **bold**
 
 ## Extra: Nested prefabs
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 
 * Prefab inside Prefab
 * [Manual: Nested Prefabs](https://docs.unity3d.com/Manual/NestedPrefabs.html)
 
 ## Extra: Instantiating Prefabs
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 
 * You can use code to create instances of prefabs when the game is running
 * [Manual: Instantiating Prefabs at run time

@@ -3,7 +3,7 @@ marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 ## Scriptable Object
 * A special class for storing data
 * Usually used as an asset template

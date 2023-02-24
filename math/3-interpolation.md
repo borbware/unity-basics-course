@@ -4,7 +4,7 @@ paginate: true
 math: mathjax
 ---
 <!-- headingDivider: 3 -->
-<!-- class: default -->
+<!-- class: invert -->
 # 3: Interpolation
 
 ## Lerp
@@ -124,7 +124,7 @@ if(Time.time < bounceTimer)
 
 
 ## Extra: Note about lerping on the fly
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 
 * You may have seen lerp performed "on the fly" like this:
   ```c#
@@ -139,7 +139,7 @@ if(Time.time < bounceTimer)
 
 
 ## Extra: Inverse lerp, Remap
-<!-- _backgroundColor: pink -->
+<!-- _backgroundColor: #5d275d -->
 * [Script Reference: Inverse lerp](https://docs.unity3d.com/ScriptReference/Mathf.InverseLerp.html)
   * lerp's inverse problem
     * when given a value $x$ between $a$ and $b$, what is $t$?  
