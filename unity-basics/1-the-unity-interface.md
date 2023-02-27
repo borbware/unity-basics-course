@@ -35,6 +35,7 @@ math: mathjax
 ## Scene view
 * [Manual: Scene view navigation](https://docs.unity3d.com/Manual/SceneViewNavigation.html)
 * Navigation shortcuts
+  * maximize view: ***Spacebar***
   * move: ***MMB***
   * orbit: ***ALT+LMB***
   * zoom: roll ***MMB*** / ***ALT+RMB***

@@ -70,3 +70,7 @@ Then, add sounds to your game. Try at least these two kinds of sound effects:
 
 1) a one-time sound effect that can be triggered with code
 2) looping sound that plays all the time
+
+## Playing sound when something gets destroyed
+
+* xx

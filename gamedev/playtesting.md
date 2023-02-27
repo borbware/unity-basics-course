@@ -58,7 +58,7 @@ paginate: true
 * Creation is 1% inspiration and 99% revision.
 * Our reality is not the only reality.
 <!-- Culture: common modes of consumption, presentation, or interaction. -->
-* Testing is how we come to understand our audience’s needs.
+* Testing is how we come to understand our audience's needs.
 * Also, remember: negative player feedback is very rarely a critique of the designer
   * Rather, it is born out of wanting to see the game become its best possible version
 ## Product first vs audience first
