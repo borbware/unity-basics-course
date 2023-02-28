@@ -83,8 +83,9 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   | Tooltips													   	  	|     | 
 |---|-------------------------------------------------------------------|----:|
-|   | [Unity and Visual Studio Code](tooltips/unity-and-vsc.md)		    | 🌔 |
-|   | [Windows File Explorer tips](tooltips/using-file-explorer.md)		| 🌔 |
+|   | [VS Code Setup](tooltips/vscode-setup.md)	                	    | 🌔 |
+|   | [Using VS Code with Unity](tooltips/using-vscode.md)		        | 🌓 |
+|   | [Using Windows File Explorer](tooltips/using-file-explorer.md)    | 🌔 |
 |   | [Unity Packages](tooltips/unity-packages.md)						| 🌒 |
 |   | [Unity notes](tooltips/unity-notes.md)		                    | 🌒 |
 

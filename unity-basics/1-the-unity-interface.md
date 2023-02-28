@@ -132,3 +132,5 @@ math: mathjax
 ## Reading
 
 * [Sepeli ry: Unity basics (In Finnish)](https://sepeliry.github.io/unity1.html)
+* [GMTK: The Unity Tutorial For Complete Beginners](https://www.youtube.com/watch?v=XtQMytORBmM)
+* [GMTK: How I learned Unity without following tutorials](https://www.youtube.com/watch?v=vFjXKOXdgGo)

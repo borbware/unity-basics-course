@@ -41,7 +41,7 @@ paginate: true
 * Download [Unity Hub](https://unity3d.com/get-unity/download)
   * Install the latest Unity LTS (long term support) version 2020.3.27f1
 * Install [Visual Studio Code](https://code.visualstudio.com/), aka VS code
-  * See Tooltips: [Unity and VS Code](tooltips/unity-and-vsc.md)
+  * See Tooltips: [Unity and VS Code](tooltips/vscode-setup.md)
 * Install [Discord](https://discord.com/)
   * If you don't need don't work well with the browser version!)
 
