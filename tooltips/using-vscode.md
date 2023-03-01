@@ -67,17 +67,25 @@ paginate: true
 
 ## VS code shortcuts
 
-* ***CTRL+§***: open another instance of the same file to the side
-* ***CTRL+W***: Close current tab
-* ***CTRL+F*** find from file
-* ***CTRL+SHIFT+F*** find from all files
-* ***CTRL+SHIFT+H*** find and replace from all files
-* ***ALT+⬆/⬇*** move code line up/down
-* ***CTRL+K***, then ***CTRL+C*** comment selection
-* ***CTRL+K***, then ***CTRL+U*** uncomment selection
-* ***CTRL+SHIFT+P*** command palette
-* ***CTRL+P*** search for files palette
-* ***CTRL+Ö*** for showing/hiding terminal
+| Keybinding | Command | When | 
+|------------|---------|------|
+| ***CTRL+F*** | Find | Editor | 
+| ***CTRL+SHIFT+F*** | Find in files | - | 
+| ***CTRL+SHIFT+H*** | Replace in files | - | 
+| ***ALT+⬆/⬇*** | Move code line up/down | Editor (not read-only) | 
+| ***CTRL+K***, then ***CTRL+C*** | Comment selection | Editor (not read-only) | 
+| ***CTRL+K***, then ***CTRL+U*** | Uncomment selection | Editor (not read-only) |
+
+---
+
+| Keybinding | Command | When | 
+|------------|---------|------|
+| ***CTRL+§*** | View: Open instance of the file to the side | - | 
+| ***CTRL+W*** | View: Close editor tab | - | 
+| ***CTRL+SHIFT+P*** | Open command palette | - | 
+| ***CTRL+P*** | Go to file | - | 
+| ***CTRL+Ö*** | View: toggle terminal | Terminal is active | 
+
 
 ### Omnisharp shortcuts
   * ***F2***: Rename variable and automatically update references
@@ -85,7 +93,7 @@ paginate: true
   * ***CTRL+LMB*** 
     * when clicking a method reference: *jump to definition*
     * when clicking the method definition: *jump to references*
-* ***CTRL+.***  auto-import / auto-create missing functions
+<!-- * ***CTRL+.***  auto-import / auto-create missing functions -->
 ### Editing keyboard shortcuts
 
 * In *Preferences > Keyboard Shortcuts*, you can add own shortcuts and change existing ones 
@@ -96,14 +104,21 @@ paginate: true
 * Some shortcuts need an additional `When` parameter to know when the shortcuts are used
   * Examples in the next slide
 
-### Extra shortcuts that I like to use (not enabled by default)
+### My extra shortcuts (not enabled by default)
 
-* ***CTRL+TAB*** / ***CTRL+SHIFT+TAB*** *View: Open Next Editor* / *View: Open Previous Editor*
-* ***ALT+F3*** *Select All Occurrences of Find Match* when `editorFocus`
-* ***CTRL+SHIFT+D*** *Copy line down* when `editorTextFocus && !editorReadOnly`
-* ***CTRL+SHIFT+⬇*** *Move line down* when `editorTextFocus && !editorReadOnly`
-* ***CTRL+SHIFT+⬆*** *Move line up* when `editorTextFocus && !editorReadOnly`
-* ***CTRL+Ä*** 
-  * *View: Focus Active Editor Group* when `terminalFocus`
-  * *Terminal: Focus Terminal* elsewhere
-* ***CTRL+SHIFT+Ä*** *View: Toggle Maximized Panel* (makes terminal big)
+| Keybinding | Command | When | 
+|------------|---------|------|
+| ***CTRL+SHIFT+D*** | *Copy line down* | `editorTextFocus && !editorReadOnly` | 
+|  ***CTRL+SHIFT+⬇*** | *Move line down* | `editorTextFocus && !editorReadOnly` | 
+| ***CTRL+SHIFT+⬆*** | *Move line up* | `editorTextFocus && !editorReadOnly` | 
+| ***ALT+F3*** | *Select All Occurrences of Find Match* | `editorFocus` |
+
+---
+
+| Keybinding | Command | When | 
+|------------|---------|------|
+| ***CTRL+TAB*** | *View: Open Next Editor* |  | 
+| ***CTRL+SHIFT+TAB*** | *View: Open Previous Editor* |  | 
+| ***CTRL+Ä***  | *View: Focus Active Editor Group* | `terminalFocus` | 
+| ***CTRL+Ä***  | *Terminal: Focus Terminal* |  | 
+| ***CTRL+SHIFT+Ä*** | *View: Toggle Maximized Panel* (makes terminal big) |  |
