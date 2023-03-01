@@ -6,10 +6,31 @@ paginate: true
 <!-- class: invert -->
 # VS Code setup
 
+## What is Visual Studio Code?
+
+* VS Code (or just VSC) is a popular open source text editor / IDE (integrated development environment) by Microsoft
+* Very ***extensible*** by extensions
+* Has many language-specific features like Omnisharp for C#
+## Visual Studio Code is not Visual Studio
+  * Visual Studio is an older, bulkier IDE, also by Microsoft
+    * it has more features!
+  * Visual Studio Code is quite new, relatively lightweight
+    * originally scarce in features
+    * more popular in web development
+* Both are used for Unity development
+* We'll be using VS Code on this course
+
 ## VS Code installation
 
 * During installation, check these two options:
   ![](imgs/vscode-installation.png)
+
+## Logging into VS Code
+
+* You can log in with your GitHub account to VS Code in the ***Accounts*** tab
+* Then, by turning on ***Settings sync***, your user-defined settings are carried over to whichever computer you're working on
+  ![](imgs/vscode-settingssync.png)
+
 
 ## Unity side setup
 
@@ -35,7 +56,8 @@ paginate: true
 
 ## Omnisharp
 
-* After the previous procedure, VS code should have ***Omnisharp*** enabled
+* ***Omnisharp*** is a set of tools that makes programming C# easier
+* After the previous procedure, VS code should have Omnisharp enabled
   * Number of references are shown on top of every variable & class
     ![](imgs/references.png)
   * You can hover over a method name to see details
@@ -53,13 +75,6 @@ paginate: true
     "omnisharp.useModernNet": false
     ```
 
-## Logging into VS Code
-
-* You can log in with your GitHub account to VS Code in the ***Accounts*** tab
-* Then, by turning on ***Settings sync***, your user-defined settings are carried over to whichever computer you're working on
-  ![](imgs/vscode-settingssync.png)
-
-
 ## Extra: Other extensions
 <!-- _backgroundColor: #5d275d -->
 * *Marp for VS Code*
@@ -68,3 +83,4 @@ paginate: true
   * Click the *Open preview to the side* button
 
     ![](imgs/vscode-marp-preview.png)
+* GitLens & Git Graph (See [Git basics](../project-management/1-git-basics.md))

@@ -1,6 +1,7 @@
 ---
 marp: true
 paginate: true
+math: mathjax
 style: |
   .columns {
     display: grid;
@@ -179,13 +180,18 @@ style: |
 
 * The ***source control*** tab is very useful for managing your Git workflow
 * Unstaged changes are shown under ***Changes***
-  * Press the $+$ button to stage a file 
+  * Press "$+$" to stage a file 
 * Staged files are shown under ***Staged changes***
-  * Press the $-$ button to unstage a file
-* Click the filename to see what changes you've made in a side-by-side comparison view
-* Press $\curvearrowleft$ to discard the changes made to the file (be careful!)
+  * Press "$-$" to unstage a file
+  * Press "$\curvearrowright$ 📄" to open the file
+* Click the filename to see what changes you've made in a side-by-side comparison view (see the next slide!)
+* Press "$\curvearrowleft$" to discard the changes made to the file (be careful!)
 
 ![bg left:33% width: 80%](imgs/vscode-source-control.png)
+
+---
+
+![bg height:90%](imgs/vscode-working-tree.png)
 
 ## Exercise 2. Git collaboration
 <!-- _backgroundColor: #29366f -->
