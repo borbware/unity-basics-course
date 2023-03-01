@@ -34,8 +34,7 @@ paginate: true
 
 ## The importance of whitespace
 
-* The empty space in code has a huge impact on readability
-* Learn to not abuse whitespace right from the start
+* The ***empty space*** & ***linebreaks*** have a huge impact on code readability
 * Alarming example:
 ```c#
         if (controller.MoveDirection != Vector3.zero)
@@ -45,7 +44,7 @@ paginate: true
         }
 
         if (!controller.isGrounded()) {
-                state = State.InAir;
+                state=State.InAir;
             }
 
 
@@ -55,7 +54,7 @@ paginate: true
     {Jump();}
 ```
 ---
-* Function-wise, this is the same code, but ***much*** easier to read:
+* Functionally, this is the same code, but ***much*** easier to read:
 
 ```c#
     if (controller.MoveDirection != Vector3.zero)
@@ -77,7 +76,11 @@ paginate: true
 ### In a nutshell...
 
 * Indent only when introducing a new logical block (if, for loop...)
-* Only use one linebreak if you need to separate two concepts
+* Choose which style you use (spacebar / tab, how many spaces wide...)
+  * ...and ***stick to it***
+* Separate 
+* Use ***one*** empty line if you need to separate two concepts, no more!
+* Use spacebar
 * Choose how you like to line `{` braces:
   * On the same line as the `if`, or on the next one 
 
@@ -94,11 +97,47 @@ paginate: true
 
 ---
 * How would you name a variable that stores what is the probability for player's attack to land?
-  * `pAttack`
-  * `attackLandProbability`
-  * `player1HitPercentage`
-  * `attackLandProbability`
-  * None of these is particularly good!
+  * `pAttack`, `attackLandProbability`, `player1HitPercentage`...
+    * None of these are exceptionally good
+  * Good variable names are always case-specific:
+    * Sometimes you can go too descriptive...
+      * `playerAttackToLandProbabilityAsPercentage`
+    * but it's much more usual to go ***not descriptive enough***
+      * `pAtk`
+    * The golden route is somewhere in the middle!
+
+## Write what you mean
+
+* This concerns not only variable naming, but also how to generally use statements
+* Do not leave anything implied - write what you mean ***explicitly***
+* Let's have an innocious yet dangerous example:
+  * Consider a player character that has two states, `Jump` and `Idle`.
+  * We could play the animations as thus:
+    ```c#
+    if (state == PlayerState.Jump)
+    {
+      JumpAnimation.Play();
+    } else {
+      IdleAnimation.Play();
+    }
+    ```
+  * However! What if the player gets a `Swim` state in the future?
+  * Now the `else` block has to be refactored!
+  * What if this implicit idea "else means idle" is present in multiple places?
+
+---
+
+* State your intent ***explicitly***!
+    ```c#
+    if (state == PlayerState.Jump)
+    {
+      JumpAnimation.Play();
+    }
+    else if (state == PlayerState.Idle)
+    {
+      IdleAnimation.Play();
+    }
+    ```
 
 ## Be cohesive!
 
