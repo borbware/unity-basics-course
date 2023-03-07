@@ -37,7 +37,7 @@ paginate: true
 * When you try to push changes from a new local branch, Git nags you that a matching remote branch doesn't yet exist
   * Git tells you how to create the remote branch:
     * `git push --set-upstream origin newBranch`
-    * afterwards, `git push` pushes the changes to the matching remote branch
+    * Afterwards, `git push` pushes the changes to the matching remote branch
 
 ### Extra branch commands
 
@@ -53,25 +53,40 @@ paginate: true
 ## `git merge`
 
 * So you've been working on a feature branch. What next?
-  * When the feature is done (and all the broken things fixed), you want to ***merge*** your feature branch back to `master`
+* When the feature is done (and all the broken things fixed), you want to apply your changes back to `master`
+* For this, we use `git merge <branch-to-merge>`
+  * It applies changes from `<branch-to-merge>` to the ***current active branch***
+* `master` branch is usually (and should be) protected, so we can't merge our new code to `master` directly
+* Instead, we do the *inverse*.
+
+## Merging with a pull request
+
+
+1) Make sure you have the newest version of the `master` branch:
+  * Stay on the feature branch, and merge the contents of `master` to `featureBranch` with `git merge master`
+2) Then, create a ***pull request*** on GitHub/etc
+  * This creates a formal process for merging your *remote* feature branch to remote `master`
+  * This adds a layer of protection to the `master` branch: no direct merging!
+
+### If automatic merge fails...
+
+1) Pull remote changes to your local `master` and merge changes to your local feature branch.
+     * If you're on your feature branch, you can do this quickly without changing branches with
+    ```git fetch origin master:master```
+2) Fix the ensuing ***conflicts*** (see [next section](#3-conflicts))
+3) Push your new local branch to GitHub/etc
+---
+![](imgs/github-pullreq.png)
+
+
+## Extra: Merging without a pull request
+<!-- _backgroundColor: #5d275d -->
+
 1) First, checkout the `master` branch with `git checkout master`
 2) Then, do a `git pull` so you have the newest version of the `master` branch
      * Someone else might have done changes to it while you were working on your feature!
 3) Then, merge `featureBranch` to `master` with `git merge <featureBranchName>`
-     * This is where ***conflicts*** can happen  (more on them later!)
-
-## Pull request
-
-* In real-world usage, we never merge code directly to `master` with `git merge <featureBranchName>`
-* Instead, we first do the inverse:
-  * We stay on the feature branch, and merge the contents of `master` to `featureBranch` with `git merge master`!
-* Then, we create a ***pull request*** on GitHub/etc.
-  * This adds a layer of protection to master branch: no one gets to merge any code directly into it!
-  * Instead, the merging happens in the GitHub/etc web UI
----
-
-![](imgs/github-pullreq.png)
-
+     * Fix conflicts 
 
 ## Exercise 1. Pushing onwards
 <!-- _backgroundColor: #29366f -->
@@ -80,8 +95,8 @@ Continue the exercise from [Git Basics](1-git-basics.md) or create a new reposit
 * Create a new branch (with a name `new-feature`, for instance) in your local repository.
 * Checkout the branch, make some changes to `GitTest.md` there, and push the changes to GitHub.
 * Then, merge the changes from your `new-feature` branch to `master` branch by using
-  a) `git merge` from command line
-  b) pull request in GitHub
+  a) pull request in GitHub
+  b) `git merge` from command line
 
 # 3. Conflicts
 

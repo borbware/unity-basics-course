@@ -25,11 +25,9 @@ paginate: true
 * *You always code for someone else*
   * 1 - The compiler
   * 2 - Your teammates
-  * 3 - ***You in the future***
+  * 3 - *You in the future*
     * I can't stress this enough:
     * *You in the future is a different person that you in the now.*
-
-# Best practices
 
 
 ## The importance of whitespace
@@ -73,24 +71,58 @@ paginate: true
         Jump();
     }
 ```
+
+### Line width
+
+* If your lines are getting too wide (over ~120 characters), split the code to multiple lines
+* Example: refactor
+  ```c#
+  if (controller.MoveDirection != Vector3.zero && !controller.isGrounded() && jumpBuffer > 0)
+  {
+    ...
+  }
+  ```
+  to
+  ```c#
+  if (controller.MoveDirection != Vector3.zero
+    && !controller.isGrounded()
+    && jumpBuffer > 0)
+  {
+    ...
+  }
+  ```
+  * As the lines get shorter, the code gets more readable as well.
+<!-- _footer: "Some programmers prefer line widths of 100 or even 80 characters." -->
+
 ### In a nutshell...
 
-* Indent only when introducing a new logical block (if, for loop...)
+* Indent only when introducing a new logical block (if, for loop, etc...)
 * Choose which style you use (spacebar / tab, how many spaces wide...)
   * ...and ***stick to it***
-* Separate 
-* Use ***one*** empty line if you need to separate two concepts, no more!
-* Use spacebar
+* Use ***one*** empty line if you need to separate two blocks of code if needed
+* Make lines breathe: `a = b + c;`, not `a=b+c;`
 * Choose how you like to line `{` braces:
-  * On the same line as the `if`, or on the next one 
+  ```c#
+  if (true) {
+    ...
+  }
+  ```
+  or
+  ```c#
+  if (true)
+  {
+    ...
+  }
+  ```
+
 
 ## Naming variables
 
 * [Wikipedia: Naming convention](https://en.wikipedia.org/wiki/Naming_convention_(programming))
-* One of the hardest things in programming
-* Explain what the thing is!
+* Naming variables and functions is one of the hardest tasks in programming.
+* First rule: Explain what the variable stores!
   * a) `a = b * c;`
-    * I have no idea what this line is really doing
+    * I have no idea what this line is *really* doing
   * b) `weeklyPay = hoursWorked * hourlyPayRate;`
     * That's more like it!
 
@@ -102,7 +134,7 @@ paginate: true
   * Good variable names are always case-specific:
     * Sometimes you can go too descriptive...
       * `playerAttackToLandProbabilityAsPercentage`
-    * but it's much more usual to go ***not descriptive enough***
+    * However! It's much more usual to go ***not descriptive enough***
       * `pAtk`
     * The golden route is somewhere in the middle!
 
@@ -157,8 +189,8 @@ paginate: true
 
 * When do you have bad *structure* in your code?
 * Cases of *code smell*: 
-  * When changing one thing, you need to change something completely unrelated 
-  * Having to jump between code files constantly when writing/reading code
+  * When changing one thing in code, you have to change something completely unrelated to make it work.
+  * When writing/reading code, you have to jump between code files constantly.
 
 ## Principles for better structure
 
@@ -172,7 +204,6 @@ paginate: true
 * [KISS: Keep it simple, stupid](https://en.wikipedia.org/wiki/KISS_principle)
   * Complexity bad
 * Remember, however: If abused, all of above can lead to bad code as well!
-  * Unless maybe KISS. KISS is always good
 
 # Conclusions
 
@@ -184,8 +215,9 @@ paginate: true
 ## What makes code good?
 
 * Good code is...
-  * cohesive
-  * easy to read
+  * coherent
+  * pretty
+  * readable
   * self-explanatory
   * well-contained
 

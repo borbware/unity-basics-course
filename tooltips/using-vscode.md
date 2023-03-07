@@ -80,6 +80,7 @@ paginate: true
 
 | Keybinding | Command | When | 
 |------------|---------|------|
+| ***CTRL+B*** | View: toggle side bar | - | 
 | ***CTRL+§*** | View: Open instance of the file to the side | - | 
 | ***CTRL+W*** | View: Close editor tab | - | 
 | ***CTRL+SHIFT+P*** | Open command palette | - | 
