@@ -51,6 +51,7 @@ paginate: true
     if (jumpBuffer > 0)
     {Jump();}
 ```
+
 ---
 * Functionally, this is the same code, but ***much*** easier to read:
 
@@ -220,6 +221,11 @@ paginate: true
   * readable
   * self-explanatory
   * well-contained
+
+### Extra: Linters
+<!-- _backgroundColor: #5d275d -->
+* "You can use [linters](https://en.wikipedia.org/wiki/Lint_(software)) to format code automatically
+* [Here's](https://johnnyreilly.com/eslint-your-csharp-in-vs-code-with-roslyn-analyzers) a guide to C# formatting with ESLint, a popular linter
 
 ## Reading
 
