@@ -130,10 +130,31 @@ math: mathjax
 
 ## Velocity vector
 
-* `new_position = old_position + velocity;`
-* `transform.position += velocity;`
-* Velocity vector is usually drawn so it starts from the moving object
-  * Remember, though, that vectors do not "know" its starting positions
+* Velocity is an important concept in game development!
+* It's the ***rate of change*** of position
+  * `new_position = old_position + velocity;`
+* 3-dimensional velocity vector can be added like this to GameObject's position in an `Update()` method:
+  * `transform.position += velocity;`
+  * We can use player input, collision, etc. to adjust the velocity as needed
+---
+***Note:*** Velocity vector is usually drawn so it starts from the moving object
+  * (Remember, though, that vectors do not "know" its starting positions.)
+
+    ![](imgs/velocity-vector.png)
+
+## Acceleration vector
+
+* Another important concept is ***acceleration***
+* It's the rate of change of a GameObject's velocity!
+  * `new_velocity = old_velocity + acceleration`;
+* We can use acceleration to change Rigidbody's velocity
+  * `rb.velocity += acceleration`;
+* We can't use that for GameObjects without rigidbodies, but we can store velocity in a separate variable
+  ```c#
+  velocity += acceleration;
+  transform.position += velocity;
+  ```
+* This might seem like a cheap trick, but actually allows us to create ***smoother motion*** if we use player input, collision, etc to control acceleration instead of velocity
 ## Distance vector
 
 * To get the distance vector between two objects, we use vector subtraction
@@ -141,7 +162,6 @@ math: mathjax
   * `transform.position - otherGameObject.transform.position;`
 * To just get the length of the distance vector, a.k.a, the distance:
   * `Vector2.Distance(vector_A, vector_B)`
-
 
 ## Special vectors of Unity
 
