@@ -9,13 +9,16 @@ paginate: true
 
 ## Data persistence between sessions
 
-## Saving & Loading
+## PlayerPrefs
 
 * [Script Reference: PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html)
-* This can store ints, floats or strings
-  * ... in the Registry :D
-* `PlayerPrefs.SetInt(intValue)`
+* You can store ints, floats or strings in PlayerPrefs
+  * ...which are stored in the ***Registry*** :D
+  * Not preferred for save files!!!
+  * More suitable for saving game preferences
+* Set value with `PlayerPrefs.SetInt(intValue)`
+* Clear saved data with *Edit > Clear All PlayerPrefs*
 
-## Clearing saved data
+## Serializing data to/from JSON
 
-* Edit > Clear All PlayerPrefs
+* [Unity Save Load JSON file tutorial in 10 minutes](https://myunity.dev/en/unity-save-load-json-file-tutorial-in-10-minutes/)
