@@ -1,4 +1,4 @@
-# Buutti Game Dev Academy
+****# Buutti Game Dev Academy
 
 Welcome to the repository for the Buutti Game Dev Academy course. The aim of the course is to teach basics of Unity, C# and game development.
 
@@ -76,6 +76,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |   | [Scenes](unity-cookbook/scenes.md)								| 🌔 |
 | 3 |	
 |   | [Particle system](unity-cookbook/particle-system.md)				| 🌔 |
+|   | [3D animation](unity-cookbook/3d-animation.md)					| 🌔 |
 |   | [Saving and Loading](unity-cookbook/saving-loading.md)			| 🌑 |
 |   | [3D Platforming](unity-cookbook/3dplatforming.md)					| 🌒 |
 |   | [Building](unity-cookbook/building.md)							| 🌑 |
