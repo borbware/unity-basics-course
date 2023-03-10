@@ -46,10 +46,14 @@ paginate: true
   * [`Input.GetButtonDown("Jump")`](https://docs.unity3d.com/ScriptReference/Input.GetButtonDown.html)
   * [`Input.GetButton("Jump")`](https://docs.unity3d.com/ScriptReference/Input.GetButton.html)
   * [`Input.GetButtonUp("Jump")`](https://docs.unity3d.com/ScriptReference/Input.GetButtonUp.html)
+* But what IS the "Jump" button?
+  * The keyboard and controller button mappings for "Jump" and other buttons are defined in the *Input table*
 
 ### Input table
-* Input table
-  * *Edit > Project Settings > Input*
+
+* *Edit > Project Settings > Input*
+* You can change the names, and the buttons that correspond to the names
+  * "Fire1" could be changed to "Crouch", for instance! 
 * *Positive button* refers to a button being pressed
 * *Negative button* is only needed for directional input
 * You can assign an Alt Button for an alternate input method
@@ -58,6 +62,7 @@ paginate: true
   * It will duplicate the last entry in the list. Oh wow
 * Use [this link](https://ritchielozada.com/2016/01/16/part-11-using-an-xbox-one-controller-with-unity-on-windows-10/) to see which button numbers correspond to which controller buttons
   * For example, `joystick button 0` is the Xbox button A
+  * See button naming convention in [Docs: Input manager](https://docs.unity3d.com/Manual/class-InputManager.html)
 
 ## Analog input
 
