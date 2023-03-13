@@ -32,6 +32,15 @@ paginate: true
 * How can we cultivate this kind of teamwork?
   * [Clinton Keith: Agile Game Development with Scrum Teams](https://www.gamedeveloper.com/production/agile-game-development-with-scrum-teams)
 
+## Exercise 1. Improv theatre
+<!-- _backgroundColor: #257179 -->
+
+Play a short game where each person comes up with a word that begins with the letter A. Keep going clockwise until someone can't think of a word beginning with A. Then you move on to the letter B and keep going.
+
+The point is not to come up with fancy words or get as many words as possible, but rather come up with the next word as fast as possible!
+
+<!-- _footer: "This will feel awkward at first, because it takes time for the brain to warm up, but over a few minutes, it will sink in that nobody's going to criticize you for offering a silly word, and nobody's going to criticize you for not coming up with a word (because the rules say that you just move on). Then your brain is better prepped for offering ideas and listening to others' ideas. -Aki KAnerva" -->
+
 ## Composition of a gamedev team
 
 * [Game Development Cheatsheets](https://allurious.itch.io/cheatsheets2018)
@@ -46,8 +55,8 @@ paginate: true
   * Game Writer
 ---
 
-* This only scratchs the surface, however
-* In game development, there's a whole lot of hats to wear...
+* This only scratches the surface, however. 
+  * In game development, there's a whole lot of hats to wear...
 * Director
 * Producer
 * Game Designer

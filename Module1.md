@@ -12,18 +12,21 @@ paginate: true
 * C# basics
 * Unity basics (in 3d)
 * Some programming
+* Git basics
 * A Module project
 * One-on-one meetings with me
 
 ## Module 1 Schedule
 
 
-| Day 1 | Day 2 | Day 3 | Day 4 | Day 5 | Day 6 | 
+<!-- | Day 1 | Day 2 | Day 3 | Day 4 | Day 5 | Day 6 | 
 |-------|-------|-------|-------|-------|-------|
 | 4.4. MA	| 5.4. TI	| 6.4. KE	| 7.4. TO	| 8.4. PE	| 11.4. MA	| 
 | UB0: [What is Unity?](unity-basics/0-what-is-unity.md) | UB2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md) | P1: [Variables and Conditionals](programming/1-variables-and-conditionals.md) | UB4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md) | PM1: [Git Basics](project-management/1-git-basics.md) | Module project & Wrap-up
 | UB1: [The Unity Interface](unity-basics/1-the-unity-interface.md) | UB3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md) | [The tools for success](https://www.businessoulu.com/en/events/game-team.html) (remote lecture) | P0: [Introduction to Game Programming](programming/0-game-programming.md)
 
+--- -->
+![width:1200px](imgs/stage1-module1.png)
 
 # Day 1: Introduction
 
@@ -39,15 +42,11 @@ paginate: true
 
 * (They're all preinstalled on your laptops already)
 * Download [Unity Hub](https://unity3d.com/get-unity/download)
-  * Install the latest Unity LTS (long term support) version 2020.3.27f1
+  * Install the latest Unity LTS (long term support) version 2021.3.20f1
 * Install [Visual Studio Code](https://code.visualstudio.com/), aka VS code
   * See Tooltips: [Unity and VS Code](tooltips/vscode-setup.md)
 * Install [Discord](https://discord.com/)
-  * If you don't need don't work well with the browser version!)
-
-## Unity basics 0
-
-  * Unity basics 0: [What is Unity?](unity-basics/0-what-is-unity.md)
+  * (The video calls don't work well with the browser version!)
 
 ## Module projects
 
@@ -77,9 +76,6 @@ The project is separated into individual exercises. For more help, you can follo
 * Install and setup all the tools needed and create your first 3D project for the course with the name `Module1Clock`.
 * This project will be worked on step by step in the coming exercises.
 
-## Unity basics 1
-  * Unity basics 1: [The Unity Interface](unity-basics/1-the-unity-interface.md)
-
 ## MP Exercise 2. Building a simple clock
 <!-- _backgroundColor: #257179 -->
 Create a 3D model of a clock from Unity's primitives with three hands and 12 hour indicators.
@@ -87,18 +83,6 @@ Create a 3D model of a clock from Unity's primitives with three hands and 12 hou
 Unlike in the picture in a past slide, set all the indicators to 12. They will be later rotated to correct positions with C# scripting.
 
 # Day 2
-
-## Schedule
-
-* Unity basics 2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md)
-* Unity basics 3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md)
-## Unity basics 2
-
-  * Unity basics 2: [Unity's Building Blocks](unity-basics/2-unity-building-blocks.md)
-
-## Unity basics 3
-
-* Unity basics 3: [Assets & Prefabs](unity-basics/3-assets-prefabs.md)
 
 ## MP Exercise 3: Materials
 <!-- _backgroundColor: #257179 -->
@@ -108,27 +92,14 @@ Unlike in the picture in a past slide, set all the indicators to 12. They will b
 ![](imgs/clock-face-materials.png)
 # Day 3: Scripting 1
 
-## Schedule
 
-* [Programming 1: Variables and conditionals](programming/1-variables-and-conditionals.md)
- 
-# Day 4: Scripting in practice
-
-## Schedule
-
-* Programming 0: [Introduction to Game Programming](programming/0-game-programming.md)
-* Unity basics 4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)
+# Day 4: Scripting 2
 
 ## MP Exercise 4: Using prefabs
 <!-- _backgroundColor: #257179 -->
 Create a prefab out of the clock and then create a duplicate of it into the scene.
 
-## Some programming & Unity basics 4
-
-* Programming 0: [Introduction to Game Programming](programming/0-game-programming.md)
-* Unity basics 4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md)
-
-## WP exercise 5. Animating the clock
+## MP exercise 5. Animating the clock
 <!-- _backgroundColor: #257179 -->
 Make the clock hands move when time goes on.
 
@@ -136,16 +107,15 @@ Make the clock hands move when time goes on.
 
 ⭐⭐ Make the movement smooth: the second indicator moves continuously at a rate of one full rotation per minute
 
-⭐⭐⭐ Make the movement realistic: study how the hands of a real clock moves! The second indicator moves incrementally between fixed positions, but the movement is not instantaneous. Try to replicate this. 
+⭐⭐⭐ Make the movement realistic: study how the hands of a real clock moves! The second indicator moves incrementally between fixed positions, but the movement is ***not instantaneous***. Try to replicate this. 
 
 # Day 5: Git
 
-## Day 5 Schedule
-* Morning
+<!-- * Morning
   * [Project management 1: Git Basics](project-management/1-git-basics.md)
 * Afternoon
   * Working on the Module project
-  * One-on-one meetings
+  * One-on-one meetings -->
 
 ## MP Exercise 6. Git Repository
 <!-- _backgroundColor: #257179 -->
@@ -157,11 +127,9 @@ Make the clock hands move when time goes on.
 
 # Day 6: Wrap-up
 
-## Day 6 Schedule
-
-* Morning
+<!-- * Morning
   * Working on the Module project
   * One-on-one meetings
 * Afternoon
   * Working on the Module project
-  * 14:30 Module project presentations
+  * 14:30 Module project presentations -->
