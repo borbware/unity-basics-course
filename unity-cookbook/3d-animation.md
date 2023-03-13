@@ -7,15 +7,21 @@ paginate: true
 
 # 3D animation
 
-## 3D workflow
+## 3D character animation
 
 * A 3D character is created in a dedicated 3d program like Blender
-* ***Skeletal animations*** are created for the character in the program as well, and then exported to a format Unity understands
+  * ***Skeletal animations*** are created for the character in the program as well, and then exported to a format Unity understands
+* In Unity, a 3D character usually consists of three GameObjects:
+  * **Character** GameObject that contains the *Animator* component
+    * **Mesh** GameObject that is used to draw the character
+    * **Skeleton** GameObject that contains the *rig*
+
+![bg right:30%](imgs/3dimport-skeleton.png)
 
 ## Importing animations from Blender to Unity
 
 * Easiest way to import animations from Blender to Unity is to use ***Game Rig Tools***
-* [Game Rig Tools (blender addon)](https://toshicg.gumroad.com/l/game_rig_tools)
+* [Game Rig Tools (Blender addon)](https://toshicg.gumroad.com/l/game_rig_tools)
 * Video tutorial: [Blender to Unity - Generic Character Setup: #1 Rigging & FBX Export](https://www.youtube.com/watch?v=z3cdbYTl3Ms)
 * Video tutorial: [Blender to Unity - Generic Character Setup: #2 Unity Setup](https://www.youtube.com/watch?v=c84j-A7bZ8s)
 
@@ -81,19 +87,20 @@ paginate: true
 
 	![height:250px](imgs/3dimport-animator.png)
 
-### Extra: Avatar mask
+### Extra: Interactive animations with Avatar mask
 <!-- _backgroundColor: #5d275d -->
 
-* If you want to play special animations (like yawning or talking) during walking or idle animations, add a new special *layer* in the animator controller
+* If you want to play interactive animations (like yawning or talking) during other (walking, idle...) animations, add a new layer in the animator controller
   * Create a state for the special animation, and add a transition condition from *New state*  
 * Create a new Avatar mask that has only the bones applied that are needed for the special animation
   * Apply the mask for the special layer 
 
 	![height:180px](imgs/3dimport-avatarmask-animator.png)
 
-![bg right:30% height:80%](imgs/3dimport-avatarmask.png)
+![bg right:23% height:80%](imgs/3dimport-avatarmask.png)
+* See also [Brackeys video: Make your Characters Interactive!](https://www.youtube.com/watch?v=Htl7ysv10Qs)
 
 ## Reading
 
 * Free ready-to-use characters by Adobe: [Mixamo](https://www.mixamo.com/)
-* [Inverse Kinematics](https://docs.unity3d.com/Manual/InverseKinematics.html)
+* [Docs: Inverse Kinematics](https://docs.unity3d.com/Manual/InverseKinematics.html)
