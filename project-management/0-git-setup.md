@@ -42,8 +42,8 @@ style: |
 
 * Install Git
   * Windows/Mac: [git-scm.com](https://git-scm.com)
-      * During installation: ✅ Enable Git Credential Manager
-      * (Easier logging in to GitHub)
+    * Installation instructions are included in the following slides.
+    * If a setting is not mentioned in the instructions, you can leave it as the default option.
   * Linux: `sudo apt-get install git`
 
 ## Git setup: Settings for Windows
@@ -56,12 +56,13 @@ style: |
 </div>
 <div>
 
-![](imgs/git2.png)
+![](imgs/git3.png)
 
 Set manually after setup with:
-  ```
-  git config --global init.defaultBranch main
-  ```
+```
+git config core.editor code --wait
+```
+
 
 </div>
 </div>
@@ -71,12 +72,13 @@ Set manually after setup with:
 <div class="columns">
 <div>
 
-![](imgs/git3.png)
+![](imgs/git2.png)
 
 Set manually after setup with:
-```
-git config core.editor code --wait
-```
+  ```
+  git config --global init.defaultBranch main
+  ```
+
 </div>
 <div>
 
