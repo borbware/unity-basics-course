@@ -68,7 +68,7 @@ paginate: true
 <!-- _backgroundColor: #257179 -->
 For the first Module project, you will create a 3d model of a clock with ticking hour, minute and second indicators.
 
-The project is separated into individual exercises. For more help, you can follow the [CatlikeCoding clock tutorial](https://catlikecoding.com/unity/tutorials/basics/game-objects-and-scripts/).
+The project is separated into individual exercises.
 
 
 ## MP Exercise 1. Creating a project
@@ -108,6 +108,8 @@ Make the clock hands move when time goes on.
 ⭐⭐ Make the movement smooth: the second indicator moves continuously at a rate of one full rotation per minute
 
 ⭐⭐⭐ Make the movement realistic: study how the hands of a real clock moves! The second indicator moves incrementally between fixed positions, but the movement is ***not instantaneous***. Try to replicate this. 
+
+<!-- _footer: For more help, you can follow the [CatlikeCoding clock tutorial](https://catlikecoding.com/unity/tutorials/basics/game-objects-and-scripts/). -->
 
 # Day 5: Git
 

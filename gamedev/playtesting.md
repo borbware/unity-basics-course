@@ -23,7 +23,6 @@ paginate: true
 
 * ***INTEGRATE***: Iterate your game mechanics and interface with this feedback in mind, while also listening to your own instincts. In other words,  listen but do not treat all feedback as infallible. 
 
-
 ## Playtesting in practice
 
 <!-- _backgroundColor: #29366f -->
@@ -31,18 +30,24 @@ paginate: true
 1) ***Communicate the plan*** and set expectations:
      * "Thank you for being here"
      * "The game is still a work-in-progress so expect that it sucks"
+       * "Do not blame yourself for mistakes."
+       * "Remember, you are not being tested, it's YOU who are testing the game!"
      * Ask tester(s) to talk out loud their thoughts while playing
+       * "Narrate what is happening on screen!"
      * Remind that you will be quiet and take notes
+---
+<!-- _backgroundColor: #29366f -->
 2) ***Being quiet*** is the most important rule, and the most easiest to break when things go wrong
      * Remember, you won't be sitting next to people who you've sold your game to
      * When the player does something "wrong", or doesn't get something, or is stuck, it is interesting to see where it leads
----
+   * You can remind the player, however, to not blame themselves if they seem to do that.
+
 <!-- _backgroundColor: #29366f -->
-3) During playtesting, ***take lots of notes***:
+1) During playtesting, ***take lots of notes***:
       * where they get stuck or confused
       * what they enjoy
       * what was unexpected
-4) Post-Playtest Debriefing: When game is done (or tried for ~15 minutes), discuss ***highlights and problems***.
+2) Post-Playtest Debriefing: When game is done (or tried for ~15 minutes), discuss ***highlights and problems***.
    * List 1-3 big change suggestions to explore.
    * Thank your testers!
 
