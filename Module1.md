@@ -42,7 +42,7 @@ paginate: true
 
 * (They're all preinstalled on your laptops already)
 * Download [Unity Hub](https://unity3d.com/get-unity/download)
-  * Install the latest Unity LTS (long term support) version 2021.3.20f1
+  * Install the latest Unity LTS (long term support) version 2021.3.21f1
 * Install [Visual Studio Code](https://code.visualstudio.com/), aka VS code
   * See Tooltips: [Unity and VS Code](tooltips/vscode-setup.md)
 * Install [Discord](https://discord.com/)
@@ -50,9 +50,10 @@ paginate: true
 
 ## Module projects
 
-* During Stage 1, a new Module project is introduced every Module
-* The deadlines for the projects are on Fridays, and we will continuously work on it during the Moduledays
-* On Fridays, the projects are showcased
+* During Stage 1, a new module project is introduced every module
+* We will continuously work on it during the module
+* Deadline for the project is the last day of the module
+  * The projects are showcased on that day
 * Every project has three separate stages
   * ⭐ The ***MVP*** (minimum viable product)
   * ⭐⭐ Some extra feature included

@@ -1,4 +1,4 @@
-****# Buutti Game Dev Academy
+# Buutti Game Dev Academy
 
 Welcome to the repository for the Buutti Game Dev Academy course. The aim of the course is to teach basics of Unity, C# and game development.
 
