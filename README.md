@@ -26,7 +26,9 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |   | Programming										  				 	|     | 
 |---|-----------------------------------------------------------------------|----:|
 | 0 | [Introduction to Game Programming](programming/0-game-programming.md)   | 🌕 |
-| 1 | [Variables and Conditionals](programming/1-variables-and-conditionals.md)| 🌕 |
+| 1 | [Variables](programming/1-variables.md)| 🌕 |
+| 2 | [Conditionals](programming/2-conditionals.md)| 🌕 |
+| 3 | [Functions](programming/3-functions.md)| 🌕 |
 | 2 | [Lists and Loops](programming/2-lists-loops.md)						| 🌕 |
 | 3 | [Classes and Methods](programming/3-classes-methods.md)			 	| 🌔 |
 | 4 | [Special Types](programming/4-special-types.md)					 	| 🌓 |
@@ -125,7 +127,8 @@ Code examples are in different repositories. Links to repositories below, includ
 
 ![](imgs/programming-exercises-repo.png)
 
-* [Variables and Conditionals](programming/1-variables-and-conditionals.md) 
+* [Variables](programming/1-variables.md) 
+* [Conditionals](programming/2-conditionals.md) 
 * [Lists and Loops](programming/2-lists-loops.md)
 * [Classes and Methods](programming/3-classes-methods.md)
 * [Interpolation](math/3-interpolation.md)
