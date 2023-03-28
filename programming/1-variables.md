@@ -88,7 +88,7 @@ namespace MyAwesomeProgram
   ```c#
   const string text = "I never change!";
   ```
-* Other modifiers include [access modifiers](3-classes-methods.md#access-modifiers).
+* Other modifiers include [access modifiers](6-classes-methods.md#access-modifiers).
 
 ## Unity Console
 

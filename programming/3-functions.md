@@ -64,7 +64,7 @@ paginate: true
 ## Note about functions
 
 * because C# is object-oriented, all functions are *methods* inside *classes*
-* We'll dive deeper into these topics in [Chapter 3. Classes and Methods](3-classes-methods.md)
+* We'll dive deeper into these topics in [Chapter 3. Classes and Methods](6-classes-methods.md)
 ## Exercise 1: Traffic lights
 <!-- _backgroundColor: #29366f -->
 

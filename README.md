@@ -29,9 +29,11 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 1 | [Variables](programming/1-variables.md)| 🌕 |
 | 2 | [Conditionals](programming/2-conditionals.md)| 🌕 |
 | 3 | [Functions](programming/3-functions.md)| 🌕 |
-| 2 | [Lists and Loops](programming/2-lists-loops.md)						| 🌕 |
-| 3 | [Classes and Methods](programming/3-classes-methods.md)			 	| 🌔 |
-| 4 | [Special Types](programming/4-special-types.md)					 	| 🌓 |
+| 4 | [Loops](programming/4-loops.md)						| 🌕 |
+| 5 | [Arrays and Lists](programming/5-arrays-lists.md)						| 🌕 |
+| 6 | [Classes and Methods](programming/6-classes-methods.md)			 	| 🌔 |
+| 7 | [Special Types](programming/7-special-types.md)					 	| 🌓 |
+| 8 | [Game Programming Patterns](programming/8-game-programming-patterns.md)					 	| 🌒 |
 
 |   | Math										  				 	  	|     | 
 |---|-------------------------------------------------------------------|----:|
@@ -129,8 +131,9 @@ Code examples are in different repositories. Links to repositories below, includ
 
 * [Variables](programming/1-variables.md) 
 * [Conditionals](programming/2-conditionals.md) 
-* [Lists and Loops](programming/2-lists-loops.md)
-* [Classes and Methods](programming/3-classes-methods.md)
+* [Loops](programming/4-loops.md)
+* [Arrays and Lists](programming/5-arrays-lists.md)
+* [Classes and Methods](programming/6-classes-methods.md)
 * [Interpolation](math/3-interpolation.md)
 
 ### [ProgrammingExercises2D](https://github.com/borbware/ProgrammingExercises2D)
