@@ -20,7 +20,7 @@ paginate: true
   * A game can be just one scene, or a combination of multiple ones
 * Example scenes:
   * Main Menu
-  * A scene for every level
+  * Level
   * Game Over
 * Create New Scene: ***Assets > Create > Scene***
 * New scenes use Unity's default Scene template, but you can create your own

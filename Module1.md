@@ -77,11 +77,18 @@ The project is separated into individual exercises.
 * Install and setup all the tools needed and create your first 3D project for the course with the name `Module1Clock`.
 * This project will be worked on step by step in the coming exercises.
 
-## MP Exercise 2. Building a simple clock
+## MP Exercise 2. Building a static clock
 <!-- _backgroundColor: #257179 -->
-Create a 3D model of a clock from Unity's primitives with three hands and 12 hour indicators.
 
-Unlike in the picture in a past slide, set all the indicators to 12. They will be later rotated to correct positions with C# scripting.
+![bg left:40%](imgs/clock-hierarchy.png)
+
+* Create a 3D model of a clock from Unity's primitives with three hands and 12 hour indicators.
+* Create a hierarchy of GameObjects as seen on the left.
+  * `Clock`, `Pivot` and `HourIndicators` are Empty GameObjects. 
+* Unlike in the picture in a past slide, ***set all the indicators to 12***. They will be rotated later with C# scripting.
+* The indicators are all white for now - we set the materials later.
+
+<!-- _footer: The hour indicator GameObjects are prefabs (blue), but you can disregard it for now. -->
 
 # Day 2
 

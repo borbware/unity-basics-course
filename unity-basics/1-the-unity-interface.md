@@ -23,10 +23,10 @@ math: mathjax
 ## Hierarchy window
 
 * [Manual: Hierarchy](https://docs.unity3d.com/Manual/Hierarchy.html)
-* shows the list of GameObjects in a scene
-* double click to show object in Scene view
-* game objects can be nested
-  * parent-child hierarchy
+* Shows the list of GameObjects in a scene
+* Double click to show object in Scene view
+* GameObjects can be nested
+  * Parent-child hierarchy
 * Add new GameObjects: ***RMB*** + choose from list
 
 <!-- _footer: "LMB, MMB, RMB: Left/Middle/Right mouse button" -->
@@ -35,33 +35,33 @@ math: mathjax
 ## Scene view
 * [Manual: Scene view navigation](https://docs.unity3d.com/Manual/SceneViewNavigation.html)
 * Navigation shortcuts
-  * maximize view: ***Spacebar***
-  * move: ***MMB***
-  * orbit: ***ALT+LMB***
-  * zoom: roll ***MMB*** / ***ALT+RMB***
-  * rotate camera: ***RMB***
-  * flythrough: hold ***RMB***, fly with ***WASD + Q/E***
+  * Maximize view: ***Shift +Spacebar***
+  * Move: ***MMB***
+  * Orbit: ***ALT+LMB***
+  * Zoom: roll ***MMB*** / ***ALT+RMB***
+  * Rotate camera: ***RMB***
+  * Flythrough: hold ***RMB***, fly with ***WASD + Q/E***
 * The Scene Gizmo
   * "the axis thingy on the top right"
-  * axis cones: change view to that axis
-  * center cube: perspective / orthographic
+  * Axis cones: change view to that axis
+  * Center cube: perspective / isometric
 * [Manual: Scene view camera](https://docs.unity3d.com/Manual/SceneViewCamera.html)
 ## Shortcuts for scene & hierarchy
+* ***CTRL+Z*** + ***CTRL+Y*** undo & redo
 * ***CTRL+C*** + ***CTRL+V*** copy & paste
 * ***CTRL+D*** duplicate
 * ***F***: center camera on selected object
-  * helps e.g., if camera zooms in too large increments
-  * press twice to follow the object
+  * Helps e.g., if camera zooms in too large increments
+  * Press twice to follow the object
 * Tip: Select camera and press ***CTRL+SHIFT+F*** to align camera view with the Scene window viewpoint
-### Toolbar
 
-* [Manual: Toolbar](https://docs.unity3d.com/Manual/Toolbar.html)
+### QWERTY Tools
 * Used for manipulating existing stuff
 * Activating the tool changes the ***LMB*** behaviour
 * Navigation shortcuts still available in other tools!
 * In move/rotate/scale, you can use the red, green and blue shapes to manipulate x,y,z axes, respectively
-### Toolbar tools
-* The tools
+---
+* The tools:
   * ***Q***: Hand Tool (navigate)
   * ***W***: Move Tool
     * the squares in the center: move along a plane
@@ -71,8 +71,10 @@ math: mathjax
   * ***T***: Rect Tool
     * Alternative Scale Tool
   * ***Y***: Move+Rotate+Scale
+
 * Pivot / Center
 * Local / Global
+  
 ## Inspector window
 
 * [Manual: Inspector](https://docs.unity3d.com/Manual/UsingTheInspector.html)
@@ -93,11 +95,11 @@ math: mathjax
 * Simulates what your final rendered game will look like through your Scene Cameras
 * Play & pause buttons
 * When game is running, you can still manipulate the values in the Inspector
-  * a nice way to mess around and find the right values for variables
-  * but... changes made during the play mode do not persist!
-  * ***Protip:*** go to *Edit > Preferences > Colors* and change the play mode tint to red.
-* To make play mode bigger,  click *Maximize On Play* button
-* To make play mode fullscreen... do tell if you find a way :D
+  * A nice way to mess around and find the right values for variables
+  * But... changes made during the play mode do not persist!
+  * ***Protip:*** Go to *Edit > Preferences > Colors* and change the play mode tint to red.
+* To make play mode bigger,  change *Play focused* to *Play maximized*
+* Fullscreen play is supported on Unity 2022 versions.
 
 ## Project window
 
@@ -121,6 +123,12 @@ math: mathjax
   * ***Clear*** (remove old messages)
   * ***Collapse*** (don't repeat duplicate messages)
   * *$\vdots$ > Log Entry > 1 Line* (show only one line per message)
+
+## Toolbar
+
+* [Manual: Toolbar](https://docs.unity3d.com/Manual/Toolbar.html)
+* Pause/Play
+* Global seach
 
 ## Searching
 
