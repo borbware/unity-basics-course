@@ -37,7 +37,7 @@ namespace MyAwesomeProgram
 
 ## Variable declaration
 
-1) access modifiers (not necessary, explained later) 
+1) modifiers (not necessary) 
 2) type declaration
 3) variable name
 4) initial value (not necessary) after `=`
@@ -80,6 +80,16 @@ namespace MyAwesomeProgram
     ```c#
     string text = "text is here";
     ```
+
+## Modifiers
+
+* A common modifier to add in front of a variable is `const`, short for constant
+* If we know that a value of a variable is never going to change during the execution of the script, we can set it to `const`:
+  ```c#
+  const string text = "I never change!";
+  ```
+* Other modifiers include [access modifiers](3-classes-methods.md#access-modifiers).
+
 ## Unity Console
 
 * Console Window
