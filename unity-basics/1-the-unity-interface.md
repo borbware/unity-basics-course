@@ -71,9 +71,26 @@ math: mathjax
   * ***T***: Rect Tool
     * Alternative Scale Tool
   * ***Y***: Move+Rotate+Scale
+* Different tools have different ***tool handles*** (move has arrows, rotate has arcs, etc)
 
-* Pivot / Center
-* Local / Global
+## Tool handle orientation
+
+* Let's consider these two important settings:
+  
+  ![](imgs/scene-toolhandle.png)
+1. Tool handle position (Pivot / Center)
+  * For multiple selected GameObjects, **center** sets the tool handle to the "average" center of the GameObjects. For a parent GameObject with children, it shows the average of parent + its children
+  * **pivot** sets the tool handle to the last selected GameObject when multiple are selected, and shows the *actual location* of a parent GameObject 
+  * ***Note:*** If you want to rotate a child GameObject according to its parent's position, set to ***pivot***
+---
+2. Tool handle rotation (Local / Global)
+  * Scene has a ***global*** coordinate system, and all GameObjects have their ***local*** coordinate systems
+  * global setting shows the tool handle rotated always along the global coordinate system
+  * local setting shows the tool handle rotated along the local coordinates.
+  * ***Note:*** To move GameObjects according to their local x,y,z axes, set to local (global by default)
+
+
+
   
 ## Inspector window
 
