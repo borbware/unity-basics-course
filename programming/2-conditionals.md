@@ -8,21 +8,21 @@ paginate: true
 # Conditionals
 
 ## Comparison operators
-* comparison operators are used to compare two variables
-  * return either `true` or `false`
-* two variables of any type can be compared with equality operators
-  * equal to: `a == b`
-  * not equal to: `a != b`
-* two **numbers** can be further compared with less/greater operators: 
-  * less than: `a < b`
-  * less than or equal: `a <= b`
-  * greater than: `a > b`
-  * greater than or equal: `a >= b`
+* Comparison operators are used to compare two variables
+  * They return either `true` or `false`
+* Two variables of any type can be compared with equality operators
+  * Equal to: `a == b`
+  * Not equal to: `a != b`
+* Two **numbers** can be further compared with less/greater operators: 
+  * Less than: `a < b`
+  * Less than or equal: `a <= b`
+  * Greater than: `a > b`
+  * Greater than or equal: `a >= b`
 
 ## `if`, `else if`, and `else`
 
-- checks the truthfulness of a given statement
-- the statements are checked in order, and the first `true` condition is executed 
+- Checks truthfulness of a given statement
+- The statements are checked in order, and the first `true` condition is executed 
 ```c#
 float temperatureInOulu = 2.3f;
 float temperatureInIvalo = -10.9f;
@@ -45,7 +45,7 @@ else
 
 ### Single statement if
 
-* if you only have one statement inside the `if` statement, curly braces can be left out
+* If you only have one statement inside the `if` statement, curly braces can be left out
   ```c#
   if (temperatureInOulu > temperatureInIvalo)
   {
@@ -100,19 +100,19 @@ bool itsColdOutside = true;
 
 ## Logical operators
 
-* the three important logical operators
+* The three important logical operators
   * not: `!a`
   * and: `a && b`
   * or: `a || b`
-* can be used for more complicated logic
-* 
-```c#
-int a = 1;
-int b = 3;
-int c = 5;
+* They can be used for more complicated logic
+  
+  ```c#
+  int a = 1;
+  int b = 3;
+  int c = 5;
 
-Debug.Log(a < b && a < c);  // prints true
-```
+  Debug.Log(a < b && a < c);  // prints true
+  ```
 
 ### Logical operator example
 
@@ -122,7 +122,7 @@ Debug.Log(a < b && a < c);  // prints true
     if (PressedJumpButton)
       PlayerJump();
   ```
-* Use the `and` operator:
+* Use the `&&` ("and") operator:
   ```c#
   if (PlayerHealth > 0 && PressedJumpButton)
     PlayerJump();
@@ -189,8 +189,8 @@ void Greet()
 ## Special characters
 
 * Special *character constants* are preceded by a backslash `\`
-  * can be used for formatting strings
-  * the most used one, `\n` represents a **newline**, a.k.a. a line break
+  * Can be used for formatting strings
+  * The most used one, `\n` represents a **newline**, a.k.a. a line break
   ```c#
   string firstName = "Matti";
   string lastName = "Teppo";
@@ -207,7 +207,7 @@ void Greet()
 
 * Concatenating multiple variables into one string with `+` quickly becomes tedious
 * It's much easier to use **string interpolation**
-  * start string with `$`, enclose variables in `{` curly braces `}`
+  * Start a string with `$`, enclose variables in `{` curly braces `}`
     ```c#
     string animal = "Dog";
     string sound = "Woof";

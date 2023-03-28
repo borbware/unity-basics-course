@@ -10,12 +10,12 @@ paginate: true
 ## About C#
 
 * C# is a general-purpose object-oriented language
-* created by Microsoft in 2000 as a competitor for Java
+* Created by Microsoft in 2000 as a competitor for Java
 * Syntax
-  * pretty much everything will be inside a class
+  * Pretty much everything will be inside a class
   * Curly brackets `{` and `}` mark the **bodies** of statements
-    * namespaces, classes, functions...
-* semicolon at the end of most statements
+    * Namespaces, classes, functions...
+* Semicolon at the end of most statements
   * VS code tells if it's missing!
 
 ### C# syntax example
@@ -38,11 +38,11 @@ namespace MyAwesomeProgram
 
 ## Variable declaration
 
-1) modifiers (not necessary) 
-2) type declaration
-3) variable name
-4) initial value (not necessary) after `=`
-5) line ending with `;`
+1) Modifiers (not necessary) 
+2) Type declaration
+3) Variable name
+4) Initial value (not necessary) after `=`
+5) Line ending with `;`
 
     ```c#
     int number = 1;
@@ -59,8 +59,8 @@ namespace MyAwesomeProgram
     multi-line
     comment */
     ```
-* comments are not executed
-* use to 
+* Comments are not executed
+* Use to 
   1) explain your intent
   2) comment out actual code for testing and debugging
 
@@ -97,8 +97,8 @@ namespace MyAwesomeProgram
   * Error messages
   * Debug messages
 * `Debug.Log(textVariable)`
-  * print stuff into the console 
-  * as the name suggests, it's used for *debugging*
+  * Use it to print stuff into the console 
+  * As the name suggests, it's used for *debugging*
   * You can print other variable types as well, not only strings!
 * `Debug.LogWarning()`
 * `Debug.LogError()`
@@ -125,9 +125,9 @@ namespace MyAwesomeProgram
 ## Exercise 1: Trying out variables
 <!-- _backgroundColor: #29366f -->
 
-* create a new Unity project for simple programming exercises.
-* create a new C# script component for an empty GameObject.
-* declare two variables `a` and `b` with the type `double`.
+* Create a new Unity project for simple programming exercises.
+* Create a new C# script component inside an empty GameObject.
+* Declare two variables `a` and `b` with the type `double`.
 * In the `Start()` function, print to console four operations: the sum, difference, fraction and product.
 
 * What happens if either of them is equal to zero?

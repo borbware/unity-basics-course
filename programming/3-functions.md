@@ -23,17 +23,17 @@ paginate: true
   ```
 ## Introduction to functions
 
-* to avoid repetition, blocks of code can be enclosed into named *functions*
-* functions can have multiple arguments and a return type
+* To avoid repetition, blocks of code can be enclosed into named *functions*
+* Functions can have multiple arguments and a return type
   ```c#
   void PrintName(string argument1)
   {
       Debug.Log("My name is " + argument1);
   }
   ```
-  * takes in one `string` argument
-  * returns nothing (thus, its return type is `void`)
-  * the function can be called like this:
+  * This function takes in one `string` argument
+  * It returns nothing (thus, its return type is `void`)
+  * The function can be called like this:
     ```c#
     PrintName("Matti");
     string name2 = "Teppo";
@@ -41,8 +41,8 @@ paginate: true
     ```
 
 ### Function example
-* here's an example with two arguments and a non-void return value
-* the `return` keyword tells what we return from the function 
+* Here's an example with two arguments and a non-void return value
+* The `return` keyword tells what we return from the function 
   ```c#
   float Pythagoras(float a, float b) // a^2 + b^2 = c^2
   {
@@ -50,11 +50,11 @@ paginate: true
       return c;
   }
   ```
-* the function is called like this:
+* The function is called like this:
   ```c#
   float length = Pythagoras(3f, 4f); // now value of length is 5
   ```
-* the function definition can be further simplified...
+* The function definition can be further simplified...
   ```c#
   float Pythagoras(float a, float b) // a^2 + b^2 = c^2
   {
@@ -63,7 +63,7 @@ paginate: true
   ```
 ## Note about functions
 
-* because C# is object-oriented, all functions are *methods* inside *classes*
+* Because C# is object-oriented, all functions are *methods* inside *classes*
 * We'll dive deeper into these topics in [Chapter 3. Classes and Methods](6-classes-methods.md)
 ## Exercise 1: Traffic lights
 <!-- _backgroundColor: #29366f -->
