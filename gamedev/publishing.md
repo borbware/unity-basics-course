@@ -6,6 +6,8 @@ paginate: true
 <!-- class: invert -->
 
 # Publishing your game
+---
+![bg width:80%](imgs/gamedev.png)
 
 ## Building an executable
 

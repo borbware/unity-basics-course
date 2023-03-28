@@ -6,6 +6,7 @@ paginate: true
 <!-- class: invert -->
 
 # Game industry
+
 ## Many ways to game industry
 
 * The only prerequisite to getting to industry:

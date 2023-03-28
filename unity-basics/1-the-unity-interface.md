@@ -26,7 +26,7 @@ math: mathjax
 * Shows the list of GameObjects in a scene
 * Double click to show object in Scene view
 * GameObjects can be nested
-  * Parent-child hierarchy
+  * Parent-child hierarchy!
 * Add new GameObjects: ***RMB*** + choose from list
 
 <!-- _footer: "LMB, MMB, RMB: Left/Middle/Right mouse button" -->
@@ -62,16 +62,17 @@ math: mathjax
 * In move/rotate/scale, you can use the red, green and blue shapes to manipulate x,y,z axes, respectively
 ---
 * The tools:
-  * ***Q***: Hand Tool (navigate)
+  * ***Q***: View Tool (navigate)
   * ***W***: Move Tool
     * the squares in the center: move along a plane
   * ***E***: Rotate Tool
   * ***R***: Scale Tool
-  * those were the most important ones, but there's also:
+  * Those were the most important ones, but there're also...
   * ***T***: Rect Tool
     * Alternative Scale Tool
-  * ***Y***: Move+Rotate+Scale
-* Different tools have different ***tool handles*** (move has arrows, rotate has arcs, etc)
+  * ***Y***: Move+Rotate+Scale multitool
+* Different tools have different ***tool handles*** 
+  * Move tool has arrows, rotate tool has arcs, etc.
 
 ## Tool handle orientation
 
@@ -85,8 +86,8 @@ math: mathjax
 ---
 2. Tool handle rotation (Local / Global)
   * Scene has a ***global*** coordinate system, and all GameObjects have their ***local*** coordinate systems
-  * global setting shows the tool handle rotated always along the global coordinate system
-  * local setting shows the tool handle rotated along the local coordinates.
+  * Global setting shows the tool handle rotated always along the global coordinate system
+  * Local setting shows the tool handle rotated along the local coordinates.
   * ***Note:*** To move GameObjects according to their local x,y,z axes, set to local (global by default)
 
 

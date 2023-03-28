@@ -34,6 +34,7 @@ namespace MyAwesomeProgram
     }
 }
 ```
+* In Unity, we don't (necessarily) have to deal with namespaces.  
 
 ## Variable declaration
 
@@ -101,6 +102,11 @@ namespace MyAwesomeProgram
   * You can print other variable types as well, not only strings!
 * `Debug.LogWarning()`
 * `Debug.LogError()`
+
+---
+
+![bg width:50%](imgs/debug-log.png)
+
 ## Basic arithmetic operations
   * `+` (addition)
   * `-` (subtraction)

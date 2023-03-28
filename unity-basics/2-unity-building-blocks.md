@@ -1,6 +1,7 @@
 ---
 marp: true
 paginate: true
+math: mathjax
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
@@ -40,13 +41,17 @@ paginate: true
 
 ## GameObject Hierarchy
 
-![](imgs/gameobject-hierarchy.png)
+![bg right:40% height:35%](imgs/gameobject-hierarchy.png)
 
-* GameObjects can have multiple ***child*** gameobjects
-  * Children inherit their parent's translation, rotation, scale and activeness
-  * [Manual: Hierarchy: Parenting](https://docs.unity3d.com/Manual/Hierarchy.html#Parenting)
-  * [Manual: Transform: Parenting](https://docs.unity3d.com/Manual/class-Transform.html#Parenting)
-
+* GameObjects can have multiple ***child*** GameObjects $\Rightarrow$ they become ***parents***
+* Children inherit their parent's...
+  * position
+  * rotation
+  * scale
+  * activeness
+* [Manual: Hierarchy: Parenting](https://docs.unity3d.com/Manual/Hierarchy.html#Parenting)
+* [Manual: Transform: Parenting](https://docs.unity3d.com/Manual/class-Transform.html#Parenting)
+* ***Note:*** Rotating child GameObjects can have wonky results if parent has any other scale than $(1,1,1)$.
 
 ## Components
 * [Manual: Components](https://docs.unity3d.com/Manual/Components.html)
