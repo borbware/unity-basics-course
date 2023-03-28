@@ -107,6 +107,8 @@ The project is separated into individual exercises.
 <!-- _backgroundColor: #257179 -->
 Create a prefab out of the clock and then create a duplicate of it into the scene.
 
+***Extra:*** Make the indicator a prefab, and make the others duplicates of it. 
+
 ## MP exercise 5. Animating the clock
 <!-- _backgroundColor: #257179 -->
 Make the clock hands move when time goes on.
