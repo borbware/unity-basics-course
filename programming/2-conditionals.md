@@ -41,6 +41,12 @@ else
 }
 ```
 
+## Exercise 1: Sauna temperature
+<!-- _backgroundColor: #29366f -->
+
+Print one of the messages from this sauna thermometer according to value of variable `temperatureInSauna`:
+
+![width:600px](imgs/sauna.png)
 
 
 ### Single statement if
@@ -134,36 +140,55 @@ bool itsColdOutside = true;
 ```c#
 public int intelligence = 5;
 
-
 void Greet()
 {
 	switch (intelligence)
 	{
 	case 5:
-		print ("Why hello there good sir! Let me teach you about Trigonometry!");
+		Debug.Log("Why hello there good sir! Let me teach you about Trigonometry!");
 		break;
 	case 4:
-		print ("Hello and good day!");
+		Debug.Log("Hello and good day!");
 		break;
 	case 3:
-		print ("Whadya want?");
+		Debug.Log("Whadya want?");
 		break;
 	case 2:
-		print ("Grog SMASH!");
+		Debug.Log("Grog SMASH!");
 		break;
 	case 1:
-		print ("Ulg, glib, Pblblblblb");
+		Debug.Log("Ulg, glib, Pblblblblb");
 		break;
 	default:
-		print ("Incorrect intelligence level.");
+		Debug.Log("Incorrect intelligence level.");
 		break;
 	}
 }
 ```
+
+## Extra conditional: Switch expression
+<!-- _backgroundColor: #5d275d -->
+
+* There's an even shorter way to create a switch statement nowadays - ***switch expression***:
+
+  ```c#
+  string saunaMessage = temperatureInSauna switch
+  {
+      <= 20 => "Vilulla hyräättää",
+      > 20 and <= 40 => "Väljhoosut poes",
+      > 40 and <= 60 => "Eepä tule yskä",
+      > 60 and <= 80 => "Saanassako myö ollaan?",
+      > 80 and <= 100 => "*Insert vihta kuva here*",
+      > 100 => "Ovi aaki ja justiisai"
+  };
+  Debug.Log(saunaMessage);
+  ```
+
 ## Extra conditional: Ternary operator
 <!-- _backgroundColor: #5d275d -->
 * "Inline if" is done with the ternary operator 
   * `(the if statement) ? (if true) : (if false);`
+    
     ```c#
     message = health > 0 ? "Player is Alive" : "Player is Dead";
     ```
@@ -222,7 +247,7 @@ void Greet()
   Debug.Log($"variable 1: {variable1}, variable 2: {variable2}");
   ```
 
-## Exercise 1: GameObject check
+## Exercise 2: GameObject check
 <!-- _backgroundColor: #29366f -->
 
 Create a C# script that checks if the GameObject is 
@@ -232,7 +257,7 @@ Create a C# script that checks if the GameObject is
 Give the GameObject a string variable `EntityType` that tells which of the two it is. 
 
 Depending on its value, 
-a) Set the HP value of the gameObject to 50 or 10.
+a) Set the HP value of the GameObject to 50 or 10.
 b) print to console either `"I am Player! My HP is 50!"` or `"I am Enemy! My HP is 10!"`
 
 What happens if

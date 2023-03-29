@@ -118,10 +118,9 @@ namespace MyAwesomeProgram
   * `%`
     * modulo operator (remainder)
     * great for looping a range
-    * `3 % 5 = 3`
-    * `4 % 5 = 4`
-    * `5 % 5 = 0`
-    * `6 % 5 = 1`
+
+![bg right:30% height:80%](imgs/modulo.png)
+
 ## Exercise 1: Trying out variables
 <!-- _backgroundColor: #29366f -->
 

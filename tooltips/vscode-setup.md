@@ -47,6 +47,7 @@ paginate: true
       * Remember to reboot your computer after installing
     * [.NET Framework 4.7.1 Developer Pack](https://code.visualstudio.com/docs/other/unity#_enabling-code-completion-for-recent-versions-of-unity)
       * ***Be sure to download the Developer pack, not Runtime!!***
+        * Note: In Windows, it's not shown as "developer pack" but as "targeting pack"
   * And these VS Code extensions:
     * C#
     * Unity code snippets
@@ -63,6 +64,8 @@ paginate: true
   * You can hover over a method name to see details
     ![](imgs/hover-over-method.png)
     * argument types, return types, method overloads...
+*  error: `Could not locate ms build instance to register with Omnisharp`
+  * $\Rightarrow$ download Build tools for Visual Studio 2022 [here](https://visualstudio.microsoft.com/downloads/)
 
 ### Omnisharp troubleshooting
 
