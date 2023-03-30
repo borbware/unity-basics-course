@@ -5,7 +5,7 @@ paginate: true
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# 3. Scripting GameObjects
+# 4. Scripting GameObjects
 
 ## The GameObject class
 
@@ -21,98 +21,111 @@ paginate: true
 
 * C# is object-oriented: the script is a new ***Class***
   * it ***inherits*** an Unity class [`MonoBehaviour`](https://docs.unity3d.com/Manual/class-MonoBehaviour.html)
-* inside the class, we can implement Unity's default ***methods***
+* Inside the class, we can implement Unity's default ***methods***
   * e.g., `Awake()`
-* we can also add our own methods
+* We can also add our own methods
   * e.g., `DoStuffThatWeWant()`
-* we can also add new ***fields***: variables inside the class
+* We can also add new ***fields***: variables inside the class
 
 <!-- _footer: "[More about classes later in Programming 3: Classes and Methods](../programming/6-classes-methods.md)"-->
 
 ## Start and update
 
-* the new script includes two ***methods*** by default: `Start` and `Update`
+* A new script includes two ***methods*** by default: `Start` and `Update`
 * [`Start()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html) is called automatically only once
-  * it's used for setting things up when we start using the GameObject
+  * It's used for setting things up when we start using the GameObject
 * [`Update()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html) is called every frame
   * See FPS in *Play mode > Stats* to check how often it's called!
 
 ## Two ways to initialize
   * There are two functions for initializing a script class
   * [`Awake()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.Awake.html)
-    * called first
-    * called even if the script component is not enabled!
+    * Called first
+    * Called even if the script component is not enabled!
   * [`Start()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html)
-    * called second, right before the first Update
-    * only called if the script component IS enabled
+    * Called second, right before the first Update
+    * Only called if the script component IS enabled
 
 ## `Update()`
   * There are three functions for updating a script class
   * [`Update()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html)
-    * the frequency of update calls varies depending on framerate
-    * most things can be updated here
-    * because of framerate-dependence it is *indeterministic*
+    * Frequency of update calls varies depending on framerate
+    * Most things can be updated here
+    * Because of framerate-dependence it is *indeterministic*
         * (same input doesn't always produce same output)
 ## `FixedUpdate()` and `LateUpdate()`
   * [`FixedUpdate()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.FixedUpdate.html)
-    * by default, called every 0.2 seconds (50 FPS)
-    * used mainly for physics calculations
-      * under load, will slow down!
-      * not dependent on framerate: *deterministic*
+    * By default, called every 0.2 seconds (50 FPS)
+    * Used mainly for physics calculations
+      * Will slow down under heavy load!
+      * Not dependent on framerate: *deterministic*
         * (same input always produces same output)
-    * ***Note:*** can't be used for checking ButtonDown input
+    * ***Note:*** Can't be used for checking ButtonDown input
   * [`LateUpdate()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.LateUpdate.html)
-    * called every frame after `Update()`.
-    * good for something that has to happen after all game objects have Updated
+    * Called every frame after `Update()`.
+    * Good for something that has to happen after all game objects have Updated
+
 ## Time and Deltatime
 * [Important classes: Time](https://docs.unity3d.com/Manual/TimeFrameManagement.html)
 * `Time.time`
-  * the time passed since starting the game, in seconds
+  * The time passed since starting the game, in seconds
 * `Time.deltaTime`
-  * deltatime is the time spent between update calls, in seconds
-    * relates to FPS, or ***frames per second***
+  * ***Deltatime*** is the time spent between update calls, in seconds
+    * Relates to FPS, or ***frames per second***
     * `deltatime = 1 / FPS`
-  * can be used for accounting for framerate in movement
+  * Can be used for accounting for framerate in movement
     ```c#
     Vector3 velocity = new Vector3(speed * Time.deltaTime, 0.0f, 0.0f);
     transform.position += velocity;
     ```
-  * beware lag spikes, though: what would `velocity` be if deltatime was equal to one second? Three seconds?
+  * Beware lag spikes, though: what would `velocity` be if deltatime was equal to one second? Three seconds?
 
 ## Accessing fields in Inspector
 
+* Every time we change our code, we have to wait for Unity to compile scripts.
+* It's especially annoying when fine-tuning variable values
+* Luckily, we can edit script variables right in the inspector  
 * [Manual: Variables and the Inspector](https://docs.unity3d.com/Manual/VariablesAndTheInspector.html)
 * `public` variables show up in Inspector
-* as do the ones with a `[SerializeField]` attribute
+* ...as do the ones with a `[SerializeField]` attribute
   * [Script Reference: SerializeField](https://docs.unity3d.com/ScriptReference/SerializeField.html)
-* Extra: `[Header("Explainer for UI")]`
-  * great for team communication
+* Use `public` only when you need to edit the value from other scripts 
+  * `[SerializeField]` is safer (can't be edited from other scripts)
+
+## Extra: Other attributes
+<!-- _backgroundColor: #5d275d -->
+
+* `[SerializeField]` is not the only handy attribute in Unity.
+* `[Header("Explainer for UI")]`
+  * Great for team communication
   * [Script Reference: Header Attribute](https://docs.unity3d.com/ScriptReference/HeaderAttribute.html)
 * `[Range(x,x)]`
-  * adds a slider to inspector
+  * Adds a slider to inspector
   * [Script Reference: Range Attribute](https://docs.unity3d.com/ScriptReference/RangeAttribute.html)
 * [More about attributes in C# Docs]((https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/attributes/))
 
 ## Referring to GameObjects
-* a) fast solution
-  * create public GameObject field (shows up in Inspector)
-  * drag & drop the wanted GameObject to the field in Inspector
-* b) find with code
-  * [Script Reference: GameObject.Find](https://docs.unity3d.com/ScriptReference/GameObject.Find.html)
-  * [Script Reference: GameObject.FindGameObjectsWithTag](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html)
-  * ***Note:*** these functions can't find inactive GameObjects.
+* The GameObject the script is attached to is usable as `gameObject`
+* For other GameObjects, there are two options:
+  * a) Fast solution
+    * Serialize a GameObject field (shows up in the Inspector)
+    * Drag & drop the wanted GameObject to the field in Inspector
+  * b) Find with code
+    * [Script Reference: GameObject.Find](https://docs.unity3d.com/ScriptReference/GameObject.Find.html)
+    * [Script Reference: GameObject.FindGameObjectsWithTag](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html)
+    * ***Note:*** these functions can't find inactive GameObjects.
 
 ## Accessing Children & Parents
 
-* child:
+* Accessing a child:
   * Unity stores the child-parent hierarchy of GameObjects under the Transform component
-  * by index number
+  * Access by index number
     * [Script Reference: Transform.GetChild](https://docs.unity3d.com/ScriptReference/Transform.GetChild.html)
     * `parentGameObject.transform.GetChild(indexNumber).gameObject`
-   *  by name
+   * Access by name
       * [Script Reference: Transform.Find](https://docs.unity3d.com/ScriptReference/Transform.Find.html)
       * `parentGameObject.transform.Find("childName").gameObject`
-* parent:
+* Accessing a parent:
   * GameObject only has one direct parent
   * `childGameObject.transform.parent`
 
