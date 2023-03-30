@@ -86,12 +86,11 @@ paginate: true
 
 Create a script for displaying the state of a traffic light in the Unity console. We do it by creating a function called `SetColor` that takes in the color as a string argument.
 
-
 * ⭐ Display the current color in the console every frame (use `Update()`).
 
 * For seconds 0-3 the color should be red, the seconds 4-5 should be yellow, and from that onwards green.
 * So, after the first frame the console would read `The color is RED!`.
-* Hint: Use `Time.time`!
+* ***Hint:*** Use `Time.time` to check the current time!
 
 ## Exercise 1 extras
 <!-- _backgroundColor: #29366f -->
@@ -99,5 +98,8 @@ Create a script for displaying the state of a traffic light in the Unity console
 * ⭐⭐ Print the color to console only when the light changes.
 * ⭐⭐⭐ Create a 3d object. Change the color of its material as a function of time.
 
-  * **Spoiler:** `gameObject.GetComponent<Renderer>().material.color = Color.green;`
+  * **Spoiler:** 
+    ```c#
+    gameObject.GetComponent<Renderer>().material.color = Color.green;
+    ```
 
