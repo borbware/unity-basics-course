@@ -130,7 +130,7 @@ Code examples are in different repositories. Links to repositories below, includ
 
 ### [ProgrammingExercises](https://github.com/borbware/ProgrammingExercises)
 
-! | [🎞](imgs/programming-exercises-repo.png)
+![repo](imgs/programming-exercises-repo.png)
 
 * [Variables](programming/1-variables-slides.html) 
 * [Conditionals](programming/2-conditionals-slides.html) 
@@ -141,7 +141,7 @@ Code examples are in different repositories. Links to repositories below, includ
 
 ### [ProgrammingExercises2D](https://github.com/borbware/ProgrammingExercises2D)
 
-! | [🎞](imgs/programming-exercises-2d-repo.png)
+![repo](imgs/programming-exercises-2d-repo.png)
 
 * [Input handling](unity-cookbook/input-handling-slides.html)
 * [Collision](unity-cookbook/collision-slides.html)
@@ -151,7 +151,7 @@ Code examples are in different repositories. Links to repositories below, includ
 
 ### [DungeonCrawler](https://github.com/borbware/DungeonCrawler)
 
-! | [🎞](imgs/dungeoncrawler-repo.png)
+![repo](imgs/dungeoncrawler-repo.png)
 
 * [2D basics](unity-cookbook/2d-basics-slides.html)
 * [Tilemaps](unity-cookbook/tilemaps-slides.html)
@@ -159,7 +159,7 @@ Code examples are in different repositories. Links to repositories below, includ
 
 ### [2DTopDownShooter](https://github.com/borbware/2DTopDownShooter)
 
-! | [🎞](imgs/2dtopdownshooter-repo.png)
+![repo](imgs/2dtopdownshooter-repo.png)
 
 * [2D basics](unity-cookbook/2d-basics-slides.html)
 * [Tilemaps](unity-cookbook/tilemaps-slides.html)
@@ -170,7 +170,7 @@ Code examples are in different repositories. Links to repositories below, includ
 
 ### [MultiplayerArena](https://github.com/borbware/MultiplayerArena)
 
-! | [🎞](imgs/multiplayerarena-repo.png)
+![repo](imgs/multiplayerarena-repo.png)
 
 * 4-player multiplayer
 * Pausing
