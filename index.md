@@ -40,13 +40,13 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   |  		   | Slides 			  				 | Page		 				|     | 
 |---|----------|-------------------------------------|--------------------------|----:|
-| 0 | Useful Math Functions[🎞](math/0-mathf-slides.html) | [📖](math/0-mathf)	 				| 🌔 |
-| 1 | Vectors[🎞](math/1-vectors-slides.html) | [📖](math/1-vectors)										| 🌔 |
-| 2 | Forces[🎞](math/2-forces-slides.html) | [📖](math/2-forces)										| 🌔 |
-| 3 | Interpolation[🎞](math/3-interpolation-slides.html) | [📖](math/3-interpolation)							| 🌔 |
-| 4 | Sinewaves[🎞](math/4-sinewaves-slides.html)	 | [📖](math/4-sinewaves)								| 🌒 |
-|   | Unity Math classes[🎞](math/5-math-classes-slides.html) | [📖](math/5-math-classes)						| 🌒 |
-|   | Randomness[🎞](math/6-math-classes-slides.html)	| [📖](math/6-math-classes)							| 🌑 |
+| 0 | Useful Math Functions | [🎞](math/0-mathf-slides.html) | [📖](math/0-mathf)	 				| 🌔 |
+| 1 | Vectors | [🎞](math/1-vectors-slides.html) | [📖](math/1-vectors)										| 🌔 |
+| 2 | Forces | [🎞](math/2-forces-slides.html) | [📖](math/2-forces)										| 🌔 |
+| 3 | Interpolation | [🎞](math/3-interpolation-slides.html) | [📖](math/3-interpolation)							| 🌔 |
+| 4 | Sinewaves | [🎞](math/4-sinewaves-slides.html)	 | [📖](math/4-sinewaves)								| 🌒 |
+|   | Unity Math classes | [🎞](math/5-math-classes-slides.html) | [📖](math/5-math-classes)						| 🌒 |
+|   | Randomness | [🎞](math/6-math-classes-slides.html)	| [📖](math/6-math-classes)							| 🌑 |
 
 ## About Unity
 
