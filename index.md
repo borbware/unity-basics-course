@@ -22,17 +22,19 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 ## About programming
 
-|   | Programming										  				 	|     | 
-|---|-----------------------------------------------------------------------|----:|
-| 0 | [Introduction to Game Programming](programming/0-game-programming-slides.html)   | 🌕 |
-| 1 | [Variables](programming/1-variables-slides.html)| 🌕 |
-| 2 | [Conditionals](programming/2-conditionals-slides.html)| 🌕 |
-| 3 | [Functions](programming/3-functions-slides.html)| 🌕 |
-| 4 | [Loops](programming/4-loops-slides.html)						| 🌕 |
-| 5 | [Arrays and Lists](programming/5-arrays-lists-slides.html)						| 🌕 |
-| 6 | [Classes and Methods](programming/6-classes-methods-slides.html)			 	| 🌔 |
-| 7 | [Special Types](programming/7-special-types-slides.html)					 	| 🌓 |
-| 8 | [Game Programming Patterns](programming/8-game-programming-patterns-slides.html)					 	| 🌒 |
+### Programming
+
+|   |  		   | Slides 			  				 | Page		 				|     | 
+|---|----------|-------------------------------------|--------------------------|----:|
+| 0 | Introduction to Game Programming | [🎞](programming/0-game-programming-slides.html)  | [📖]()	  | 🌕 |
+| 1 | Variables | [🎞](programming/1-variables-slides.html)			| [📖](programming/1-variables)	 | 🌕 |
+| 2 | Conditionals | [🎞](programming/2-conditionals-slides.html)	| [📖](programming/2-conditionals)	 | 🌕 |
+| 3 | Functions | [🎞](programming/3-functions-slides.html)| [📖](programming/3-functions)	 | 🌕 |
+| 4 | Loops | [🎞](programming/4-loops-slides.html)						| [📖](programming/4-loops)	 | 🌕 |
+| 5 | Arrays and Lists | [🎞](programming/5-arrays-lists-slides.html)	| [📖](programming/5-arrays)	 					| 🌕 |
+| 6 | Classes and Methods | [🎞](programming/6-classes-methods-slides.html)	| [📖](programming/6-classes-methods)	 		 	| 🌔 |
+| 7 | Special Types | [🎞](programming/7-special-types-slides.html)			| [📖](programming/7-special-types)	 		 	| 🌓 |
+| 8 | Game Programming Patterns | [🎞](programming/8-game-programming-patterns-slides.html)	| [📖](programming/8-game-programming-patterns)	 				 	| 🌒 |
 
 |   | Math										  				 	  	|     | 
 |---|-------------------------------------------------------------------|----:|
@@ -126,7 +128,7 @@ Code examples are in different repositories. Links to repositories below, includ
 
 ### [ProgrammingExercises](https://github.com/borbware/ProgrammingExercises)
 
-![](imgs/programming-exercises-repo.png)
+! | [🎞](imgs/programming-exercises-repo.png)
 
 * [Variables](programming/1-variables-slides.html) 
 * [Conditionals](programming/2-conditionals-slides.html) 
@@ -137,7 +139,7 @@ Code examples are in different repositories. Links to repositories below, includ
 
 ### [ProgrammingExercises2D](https://github.com/borbware/ProgrammingExercises2D)
 
-![](imgs/programming-exercises-2d-repo.png)
+! | [🎞](imgs/programming-exercises-2d-repo.png)
 
 * [Input handling](unity-cookbook/input-handling-slides.html)
 * [Collision](unity-cookbook/collision-slides.html)
@@ -147,7 +149,7 @@ Code examples are in different repositories. Links to repositories below, includ
 
 ### [DungeonCrawler](https://github.com/borbware/DungeonCrawler)
 
-![](imgs/dungeoncrawler-repo.png)
+! | [🎞](imgs/dungeoncrawler-repo.png)
 
 * [2D basics](unity-cookbook/2d-basics-slides.html)
 * [Tilemaps](unity-cookbook/tilemaps-slides.html)
@@ -155,7 +157,7 @@ Code examples are in different repositories. Links to repositories below, includ
 
 ### [2DTopDownShooter](https://github.com/borbware/2DTopDownShooter)
 
-![](imgs/2dtopdownshooter-repo.png)
+! | [🎞](imgs/2dtopdownshooter-repo.png)
 
 * [2D basics](unity-cookbook/2d-basics-slides.html)
 * [Tilemaps](unity-cookbook/tilemaps-slides.html)
@@ -166,7 +168,7 @@ Code examples are in different repositories. Links to repositories below, includ
 
 ### [MultiplayerArena](https://github.com/borbware/MultiplayerArena)
 
-![](imgs/multiplayerarena-repo.png)
+! | [🎞](imgs/multiplayerarena-repo.png)
 
 * 4-player multiplayer
 * Pausing
