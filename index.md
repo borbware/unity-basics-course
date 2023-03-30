@@ -1,5 +1,6 @@
 ---
 layout: home
+title-heading: false
 ---
 
 Welcome to the webpage for the Buutti Game Dev Academy course. The aim of the course is to teach basics of Unity, C# and game development.
@@ -8,13 +9,15 @@ The course is divided into three stages, with the stages divided into modules. M
 
 The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the corresponding chapter is!
 
+
+
 # Stages
 
-|   | Stage 1						  							 	  	|     | 
-|---|-------------------------------------------------------------------|----:|
-| 1 | [Module 1](modules/Module1-slides.html)											| 🌔 |
-| 2 | [Module 2](modules/Module2-slides.html)											| 🌔 |
-| 3 | [Module 3](modules/Module3-slides.html)											| 🌔 |
+|   |  		   | Slides 			  				 | Page		 				|     | 
+|---|----------|-------------------------------------|--------------------------|----:|
+| 1 | Module 1 | [🎞](modules/Module1-slides.html)   | [📖](modules/Module1)	| 🌔 |
+| 1 | Module 2 | [🎞](modules/Module2-slides.html)   | [📖](modules/Module2)	| 🌔 |
+| 1 | Module 3 | [🎞](modules/Module3-slides.html)   | [📖](modules/Module3)	| 🌔 |
 
 # Books
 
