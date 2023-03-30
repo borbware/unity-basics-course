@@ -43,7 +43,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 3 | [Interpolation](math/3-interpolation.md)							| 🌔 |
 | 4 | [Sinewaves](math/4-sinewaves.md)									| 🌒 |
 |   | [Unity Math classes](math/5-math-classes.md)						| 🌒 |
-|   | [Randomness](math/6-math-classes.md)								| 🌑 |
+|   | [Randomness](math/6-randomness.md)								| 🌑 |
 
 ## About Unity
 
@@ -104,7 +104,6 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 3 | [GitHub tools](project-management/3-github-tools.md)				| 🌔 |
 | 4 | [Scrum](project-management/4-scrum.md) 							| 🌕 |
 |   | [Git cheat sheet](project-management/git-cheat-sheet.md) 				| 🌕 |
-|   | [Unity Collab](project-management/unity-collab.md) 				| 🌑 |
 
 
 |   | Game Dev													   	  	|     | 
