@@ -26,7 +26,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 |   |  		   | Slides 			  				 | Page		 				|     | 
 |---|----------|-------------------------------------|--------------------------|----:|
-| 0 | Introduction to Game Programming | [🎞](programming/0-game-programming-slides.html)  | [📖]()	  | 🌕 |
+| 0 | Introduction to Game Programming | [🎞](programming/0-game-programming-slides.html)  | [📖](programming/0-game-programming)	  | 🌕 |
 | 1 | Variables | [🎞](programming/1-variables-slides.html)			| [📖](programming/1-variables)	 | 🌕 |
 | 2 | Conditionals | [🎞](programming/2-conditionals-slides.html)	| [📖](programming/2-conditionals)	 | 🌕 |
 | 3 | Functions | [🎞](programming/3-functions-slides.html)| [📖](programming/3-functions)	 | 🌕 |
@@ -36,15 +36,17 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 7 | Special Types | [🎞](programming/7-special-types-slides.html)			| [📖](programming/7-special-types)	 		 	| 🌓 |
 | 8 | Game Programming Patterns | [🎞](programming/8-game-programming-patterns-slides.html)	| [📖](programming/8-game-programming-patterns)	 				 	| 🌒 |
 
-|   | Math										  				 	  	|     | 
-|---|-------------------------------------------------------------------|----:|
-| 0 | [Useful Math Functions](math/0-mathf-slides.html)							| 🌔 |
-| 1 | [Vectors](math/1-vectors-slides.html)										| 🌔 |
-| 2 | [Forces](math/2-forces-slides.html)										| 🌔 |
-| 3 | [Interpolation](math/3-interpolation-slides.html)							| 🌔 |
-| 4 | [Sinewaves](math/4-sinewaves-slides.html)									| 🌒 |
-|   | [Unity Math classes](math/5-math-classes-slides.html)						| 🌒 |
-|   | [Randomness](math/6-math-classes-slides.html)								| 🌑 |
+### Math
+
+|   |  		   | Slides 			  				 | Page		 				|     | 
+|---|----------|-------------------------------------|--------------------------|----:|
+| 0 | Useful Math Functions[🎞](math/0-mathf-slides.html) | [📖](math/0-mathf)	 				| 🌔 |
+| 1 | Vectors[🎞](math/1-vectors-slides.html) | [📖](math/1-vectors)										| 🌔 |
+| 2 | Forces[🎞](math/2-forces-slides.html) | [📖](math/2-forces)										| 🌔 |
+| 3 | Interpolation[🎞](math/3-interpolation-slides.html) | [📖](math/3-interpolation)							| 🌔 |
+| 4 | Sinewaves[🎞](math/4-sinewaves-slides.html)	 | [📖](math/4-sinewaves)								| 🌒 |
+|   | Unity Math classes[🎞](math/5-math-classes-slides.html) | [📖](math/5-math-classes)						| 🌒 |
+|   | Randomness[🎞](math/6-math-classes-slides.html)	| [📖](math/6-math-classes)							| 🌑 |
 
 ## About Unity
 
