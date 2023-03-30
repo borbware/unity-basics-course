@@ -8,16 +8,16 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 # Stages
 
-|   | [Stage 1](Stage1.md)						  				 	  	|     | 
+|   | [Stage 1](modules/Stage1.md)						  				 	  	|     | 
 |---|-------------------------------------------------------------------|----:|
-| 1 | [Module 1](Module1.md)											| 🌔 |
-| 2 | [Module 2](Module2.md)											| 🌔 |
-| 3 | [Module 3](Module3.md)											| 🌔 |
+| 1 | [Module 1](modules/Module1.md)											| 🌔 |
+| 2 | [Module 2](modules/Module2.md)											| 🌔 |
+| 3 | [Module 3](modules/Module3.md)											| 🌔 |
 
-|   | [Stage 2](Stage2.md)						  				 	  	| 🌔 | 
+|   | [Stage 2](modules/Stage2.md)						  				 	  	| 🌔 | 
 |---|-------------------------------------------------------------------|----:|
 
-|   | [Stage 3](Stage3.md)						  				 	  	| 🌔 | 
+|   | [Stage 3](modules/Stage3.md)						  				 	  	| 🌔 | 
 |---|-------------------------------------------------------------------|----:|
 # Books
 
