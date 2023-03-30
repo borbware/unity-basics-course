@@ -52,4 +52,4 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 exclude:
-  - node_modules/
+  - temp/
