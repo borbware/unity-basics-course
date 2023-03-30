@@ -144,6 +144,11 @@ paginate: true
   * `false` means this object has been deactivated by itself ***or*** by its parents
 
 
+## Exercise 1. Three, two, one...
+<!-- _backgroundColor: #29366f -->
+
+Create a script on an empty GameObject that destroys another, visible GameObject when three seconds have passed.
+
 ## Accessing components
 
 
@@ -257,7 +262,7 @@ private void OnTriggerEnter2D(Collider2D other)
   * Then, separate into its own script
 
 
-## Exercise 1. Available on switch 
+## Exercise 2. Available on switch 
 <!-- _backgroundColor: #29366f -->
 
 Create a Scene with following GameObjects:
