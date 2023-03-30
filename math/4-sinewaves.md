@@ -5,11 +5,11 @@ math: mathjax
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
-# 4: Sinewaves
+
+# 4. Sinewaves
 [Brackeys video: Sinewaves](https://www.youtube.com/watch?v=pEXdTLsEAjk)
 
-
-## Sin and cos
+## Sine and cosine
 
 * [Script reference: Mathf.Sin](https://docs.unity3d.com/ScriptReference/Mathf.Sin.html)
 * $\sin(x)$ and $\cos(x)$ are oscillating functions that return a value between $1$ and $-1$

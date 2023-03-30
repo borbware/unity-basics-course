@@ -1,6 +1,5 @@
 ---
 marp: true
-layout: default
 paginate: true
 math: mathjax
 ---
