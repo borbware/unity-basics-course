@@ -1,6 +1,5 @@
 ---
 layout: home
-title-heading: false
 ---
 
 Welcome to the webpage for the Buutti Game Dev Academy course. The aim of the course is to teach basics of Unity, C# and game development.
