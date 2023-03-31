@@ -23,6 +23,7 @@ paginate: true
 
 - Checks truthfulness of a given statement
 - The statements are checked in order, and the first `true` condition is executed 
+
 ```c#
 float temperatureInOulu = 2.3f;
 float temperatureInIvalo = -10.9f;
@@ -52,6 +53,7 @@ Print one of the messages from this sauna thermometer according to value of vari
 ### Single statement if
 
 * If you only have one statement inside the `if` statement, curly braces can be left out
+  
   ```c#
   if (temperatureInOulu > temperatureInIvalo)
   {
@@ -59,11 +61,13 @@ Print one of the messages from this sauna thermometer according to value of vari
   }
   ```
   is the same as
+
   ```c#
   if (temperatureInOulu > temperatureInIvalo)
       Debug.Log("Oulu is warmer than Ivalo");
   ```
 * You can even write the statement and the block to the same line!
+  
   ```c#
   if (baa > 20) Debug.Log("Baa");
   else Debug.Log("Not baa!");
@@ -82,6 +86,7 @@ bool itsColdOutside = true;
       Debug.Log("It's warm outside.");
   ```
   is the same as
+
   ```c#
     if (itsColdOutside == false)
       Debug.Log("It's warm outside.");
@@ -90,6 +95,7 @@ bool itsColdOutside = true;
 ## Assignment operators
 
 * We have used the assignment operator `=` for assigning values for variables
+  
   ```c#
   int x;
   x = 25;
@@ -123,12 +129,14 @@ bool itsColdOutside = true;
 ### Logical operator example
 
 * So, instead of nesting `if` statements like this:
+  
   ```c#
   if (PlayerHealth > 0)
     if (PressedJumpButton)
       PlayerJump();
   ```
 * Use the `&&` ("and") operator:
+  
   ```c#
   if (PlayerHealth > 0 && PressedJumpButton)
     PlayerJump();
