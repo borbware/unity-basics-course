@@ -265,11 +265,10 @@ Create a C# script that checks if the GameObject is
 
 Give the GameObject a string variable `EntityType` that tells which of the two it is. 
 
-Depending on its value, 
-a) Set the HP value of the GameObject to 50 or 10.
-b) print to console either `"I am Player! My HP is 50!"` or `"I am Enemy! My HP is 10!"`
+* Depending on its value, 
+  a) Set the HP value of the GameObject to 50 or 10.
+  b) print to console either `"I am Player! My HP is 50!"` or `"I am Enemy! My HP is 10!"`
 
-What happens if
-
-a) EntityType is something else
-b) EntityType is not declared at all?
+* What happens if
+  a) EntityType is something else
+  b) EntityType is not declared at all?
