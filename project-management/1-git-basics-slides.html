@@ -280,12 +280,40 @@ To push the current branch and set the remote as upstream, use
 <li data-marpit-fragment="3">Generally, when Git gives you a warning, error, or some other message, it's a good idea to <em><strong>read it and follow the orders</strong></em>.</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-marpit-fragments="4" data-paginate="true" data-class="invert" data-background-color="#29366f" data-style=".columns {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-marpit-fragments="6" data-paginate="true" data-class="invert" data-footer="A repository can have multiple remotes. Use `git remote` to list them all." data-style=".columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
-" data-heading-divider="3" class="invert" data-marpit-pagination="12" data-marpit-pagination-total="31" style="--paginate:true;--class:invert;--background-color:#29366f;--style:.columns {
+" data-heading-divider="3" class="invert" data-marpit-pagination="12" data-marpit-pagination-total="31" style="--paginate:true;--class:invert;--footer:A repository can have multiple remotes. Use `git remote` to list them all.;--style:.columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+;--heading-divider:3;">
+<h2><code>git remote</code></h2>
+<ul>
+<li data-marpit-fragment="1">If you have initialized a Git repo already with <code>git init</code>, don't use <code>git clone</code>!
+<ul>
+<li data-marpit-fragment="2">Instead, run <code>git remote add origin &lt;URL&gt;</code></li>
+<li data-marpit-fragment="3">Here, the name <code>origin</code> refers to the remote repository</li>
+<li data-marpit-fragment="4"><code>origin</code> is just the default name for a remote: other names can be used instead!</li>
+</ul>
+</li>
+<li data-marpit-fragment="5">To check which remote repository the current local repository is linked to, use
+<ul>
+<li data-marpit-fragment="6"><code>git remote -v</code></li>
+</ul>
+</li>
+</ul>
+<footer>A repository can have multiple remotes. Use <code>git remote</code> to list them all.</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-marpit-fragments="6" data-paginate="true" data-class="invert" data-background-color="#29366f" data-style=".columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+" data-heading-divider="3" class="invert" data-marpit-pagination="13" data-marpit-pagination-total="31" style="--paginate:true;--class:invert;--background-color:#29366f;--style:.columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
@@ -294,18 +322,20 @@ To push the current branch and set the remote as upstream, use
 <h2>Exercise 1a. Initializing a repo</h2>
 
 <ul>
-<li data-marpit-fragment="1">Create a new repository on GitHub and clone it with HTTPS to your machine.</li>
-<li data-marpit-fragment="2">Then, create a new file <code>GitTest.md</code> with some lines of text in it.</li>
-<li data-marpit-fragment="3">Commit and push changes to GitHub.</li>
-<li data-marpit-fragment="4">Go to GitHub and see that the file is there!</li>
+<li data-marpit-fragment="1">Initialize a new repository locally.</li>
+<li data-marpit-fragment="2">Create a new file <code>GitTest.md</code> with some lines of text in it.</li>
+<li data-marpit-fragment="3">Commit changes.</li>
+<li data-marpit-fragment="4">Create a new empty repository on GitHub.</li>
+<li data-marpit-fragment="5">Use <code>git remote add origin &lt;url&gt;</code> to connect your local repo to the GitHub repo.</li>
+<li data-marpit-fragment="6">Push changes to GitHub. Go to GitHub and see that <code>GitTest.md</code> is there!</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-marpit-fragments="5" data-paginate="true" data-class="invert" data-footer="`git pull` is actually two commands in one. It's the same thing as doing `git fetch &lt;branch&gt;` + `git merge &lt;branch&gt;`" data-style=".columns {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-marpit-fragments="5" data-paginate="true" data-class="invert" data-footer="`git pull` is actually two commands in one. It's the same thing as doing `git fetch &lt;branch&gt;` + `git merge &lt;branch&gt;`" data-style=".columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
-" data-heading-divider="3" class="invert" data-marpit-pagination="13" data-marpit-pagination-total="31" style="--paginate:true;--class:invert;--style:.columns {
+" data-heading-divider="3" class="invert" data-marpit-pagination="14" data-marpit-pagination-total="31" style="--paginate:true;--class:invert;--style:.columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
@@ -327,12 +357,12 @@ To push the current branch and set the remote as upstream, use
 </ul>
 <footer><code>git pull</code> is actually two commands in one. It's the same thing as doing <code>git fetch &lt;branch&gt;</code> + <code>git merge &lt;branch&gt;</code></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-marpit-fragments="9" data-paginate="true" data-class="invert" data-style=".columns {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-marpit-fragments="9" data-paginate="true" data-class="invert" data-style=".columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
-" data-heading-divider="3" class="invert" data-marpit-pagination="14" data-marpit-pagination-total="31" style="--paginate:true;--class:invert;--style:.columns {
+" data-heading-divider="3" class="invert" data-marpit-pagination="15" data-marpit-pagination-total="31" style="--paginate:true;--class:invert;--style:.columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
@@ -359,34 +389,6 @@ To push the current branch and set the remote as upstream, use
 </ul>
 </li>
 </ul>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-marpit-fragments="6" data-paginate="true" data-class="invert" data-footer="A repository can have multiple remotes. Use `git remote` to list them all." data-style=".columns {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-}
-" data-heading-divider="3" class="invert" data-marpit-pagination="15" data-marpit-pagination-total="31" style="--paginate:true;--class:invert;--footer:A repository can have multiple remotes. Use `git remote` to list them all.;--style:.columns {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-}
-;--heading-divider:3;">
-<h2><code>git remote</code></h2>
-<ul>
-<li data-marpit-fragment="1">If you have initialized a Git repo already with <code>git init</code>, don't use <code>git clone</code>!
-<ul>
-<li data-marpit-fragment="2">Instead, run <code>git remote add origin &lt;URL&gt;</code></li>
-<li data-marpit-fragment="3">Here, the name <code>origin</code> refers to the remote repository</li>
-<li data-marpit-fragment="4"><code>origin</code> is just the default name for a remote: other names can be used instead!</li>
-</ul>
-</li>
-<li data-marpit-fragment="5">To check which remote repository the current local repository is linked to, use
-<ul>
-<li data-marpit-fragment="6"><code>git remote -v</code></li>
-</ul>
-</li>
-</ul>
-<footer>A repository can have multiple remotes. Use <code>git remote</code> to list them all.</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-marpit-fragments="4" data-paginate="true" data-class="invert" data-background-color="#29366f" data-style=".columns {
   display: grid;

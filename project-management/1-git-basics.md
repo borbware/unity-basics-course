@@ -102,14 +102,27 @@ style: |
   ```
 * You can just follow its orders (see the command on the third line!) and you're good to go 
 * Generally, when Git gives you a warning, error, or some other message, it's a good idea to ***read it and follow the orders***.
+  
+## `git remote`
+
+* If you have initialized a Git repo already with `git init`, don't use `git clone`!
+  * Instead, run `git remote add origin <URL>`
+  * Here, the name `origin` refers to the remote repository
+  * `origin` is just the default name for a remote: other names can be used instead!
+* To check which remote repository the current local repository is linked to, use 
+  * `git remote -v`
+
+<!-- _footer: "A repository can have multiple remotes. Use `git remote` to list them all." -->
 
 ## Exercise 1a. Initializing a repo
 <!-- _backgroundColor: #29366f -->
 
-* Create a new repository on GitHub and clone it with HTTPS to your machine.
-* Then, create a new file `GitTest.md` with some lines of text in it.
-* Commit and push changes to GitHub.
-* Go to GitHub and see that the file is there!
+* Initialize a new repository locally.
+* Create a new file `GitTest.md` with some lines of text in it.
+* Commit changes.
+* Create a new empty repository on GitHub.
+* Use `git remote add origin <url>` to connect your local repo to the GitHub repo.
+* Push changes to GitHub. Go to GitHub and see that `GitTest.md` is there!
 
 ## `git pull`
 
@@ -133,16 +146,6 @@ style: |
   * 1 - Initialize the repo in the Github/Gitlab/etc website
   * 2 - Clone the repo.
 
-## `git remote`
-
-* If you have initialized a Git repo already with `git init`, don't use `git clone`!
-  * Instead, run `git remote add origin <URL>`
-  * Here, the name `origin` refers to the remote repository
-  * `origin` is just the default name for a remote: other names can be used instead!
-* To check which remote repository the current local repository is linked to, use 
-  * `git remote -v`
-
-<!-- _footer: "A repository can have multiple remotes. Use `git remote` to list them all." -->
 
 ## Exercise 1b. Cloning a repo
 <!-- _backgroundColor: #29366f -->
