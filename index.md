@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 ---
 
 Welcome to the webpage for the Buutti Game Dev Academy course. The aim of the course is to teach basics of Unity, C# and game development.
@@ -45,8 +45,6 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 2 | Forces | [🎞](math/2-forces-slides.html) | [📖](math/2-forces)										| 🌔 |
 | 3 | Interpolation | [🎞](math/3-interpolation-slides.html) | [📖](math/3-interpolation)							| 🌔 |
 | 4 | Sinewaves | [🎞](math/4-sinewaves-slides.html)	 | [📖](math/4-sinewaves)								| 🌒 |
-|   | Unity Math classes | [🎞](math/5-math-classes-slides.html) | [📖](math/5-math-classes)						| 🌒 |
-|   | Randomness | [🎞](math/6-math-classes-slides.html)	| [📖](math/6-math-classes)							| 🌑 |
 
 ## About Unity
 

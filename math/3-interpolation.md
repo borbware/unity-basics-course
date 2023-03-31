@@ -5,7 +5,8 @@ math: mathjax
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
-# 3: Interpolation
+
+# 3. Interpolation
 
 ## Lerp
 

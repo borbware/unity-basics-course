@@ -5,9 +5,9 @@ math: mathjax
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
-# Game math 1: Vectors
 
-# Vector theory
+# 1. Vectors
+
 ## What is a vector?
 
 * Vector is a mathematical thingy with a **length** and a **direction**

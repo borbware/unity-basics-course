@@ -8,3 +8,4 @@ _site
 vendor
 
 !*-slides.html
+!/_layouts/*
