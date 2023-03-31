@@ -60,7 +60,7 @@ style: |
 
 Set manually after setup with:
 ```
-git config core.editor code --wait
+git config --global core.editor "code --wait"
 ```
 
 
