@@ -224,6 +224,7 @@ void Greet()
 * Special *character constants* are preceded by a backslash `\`
   * Can be used for formatting strings
   * The most used one, `\n` represents a **newline**, a.k.a. a line break
+  
   ```c#
   string firstName = "Matti";
   string lastName = "Teppo";
