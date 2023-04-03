@@ -5,7 +5,7 @@ paginate: true
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# Building
+# Building an executable
 
 ## Fast native build
 
@@ -56,11 +56,13 @@ paginate: true
 ## Running web builds with a server
 
 * To run a web build, you need a web server
-* Or, you can host the web build in itch.io or similar
-* Or, you can just click "build and run" to run the web build once.
+  * ...or you can host the web build in itch.io or similar
+  * To try out the web build, you can click *Build and run*
 * xx
 
 ## Uploading Web builds to itch.io
+
+* xx
 
 ## Building with Profiler
 

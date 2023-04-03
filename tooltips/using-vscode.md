@@ -60,6 +60,15 @@ paginate: true
 ---
 ![](imgs/vscode-editor.png)
 
+## Annoying bullshit
+
+* Some default settings make things harder than they should be
+* Disable Three-way Merge editor
+  * *Preferences > Git: Merge Editor*
+* Disable autocomplete on certain characters
+  * *Preferences > Editor: Accept Suggestion On Commit Character*
+
+
 ## Using VS code like a pro
 
 * The key to using VS code effectively is ***mastering the shortcuts***.

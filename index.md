@@ -31,7 +31,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 2 | Conditionals | [🎞](programming/2-conditionals-slides.html)	| [📖](programming/2-conditionals)	 | 🌕 |
 | 3 | Functions | [🎞](programming/3-functions-slides.html)| [📖](programming/3-functions)	 | 🌕 |
 | 4 | Loops | [🎞](programming/4-loops-slides.html)						| [📖](programming/4-loops)	 | 🌕 |
-| 5 | Arrays and Lists | [🎞](programming/5-arrays-lists-slides.html)	| [📖](programming/5-arrays)	 					| 🌕 |
+| 5 | Arrays and Lists | [🎞](programming/5-arrays-lists-slides.html)	| [📖](programming/5-arrays-lists)	 					| 🌕 |
 | 6 | Classes and Methods | [🎞](programming/6-classes-methods-slides.html)	| [📖](programming/6-classes-methods)	 		 	| 🌔 |
 | 7 | Special Types | [🎞](programming/7-special-types-slides.html)			| [📖](programming/7-special-types)	 		 	| 🌓 |
 | 8 | Game Programming Patterns | [🎞](programming/8-game-programming-patterns-slides.html)	| [📖](programming/8-game-programming-patterns)	 				 	| 🌒 |

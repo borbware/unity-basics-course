@@ -139,16 +139,29 @@ if(Time.time < bounceTimer)
   * But remember: This isn't the way Lerp was meant to be used, so your mileage may wary. You're on your own now.
 
 
-## Extra: Inverse lerp, Remap
-<!-- _backgroundColor: #5d275d -->
+## Inverse lerp
 * [Script Reference: Inverse lerp](https://docs.unity3d.com/ScriptReference/Mathf.InverseLerp.html)
-  * lerp's inverse problem
-    * when given a value $x$ between $a$ and $b$, what is $t$?  
-  * `Mathf.InverseLerp(a,b,x)`
-* Remapping
-  * what if you want to map a range $t_0 \dots t_1$ to range $a \dots b$?
-  * [Freya Holmér: Inverse Lerp and Remap](https://www.gamedev.net/articles/programming/general-and-gameplay-programming/inverse-lerp-a-super-useful-yet-often-overlooked-function-r5230/)
+  * `Mathf.InverseLerp(a, b, x)`
+  * Returns the answer to the inverse problem of Lerp:
+    * "When we know a value $x$ that is between $a$ and $b$, what is $t$?"
+    * In other words, how far is $x$ between $a$ and $b$, as a fraction
 
+## Remapping with lerp & inverse lerp
+
+* [Freya Holmér: Inverse Lerp and Remap](https://www.gamedev.net/articles/programming/general-and-gameplay-programming/inverse-lerp-a-super-useful-yet-often-overlooked-function-r5230/)
+
+* What if we want to map a range $t_0 \dots t_1$ to range $a \dots b$?
+* Or in other words, map a variable `input` in range `inputMin`$\dots$`inputMax` 
+  * And get a result that is in a range `outputMin`$\dots$`outputMax`.
+* The function that achieves this is a sort of a "generalization" of lerp & inverse lerp:
+    ```c#
+    float Remap (float inputMin, float inputMax, float outputMin, float outputMax, float input)
+    {
+        float t = Mathf.InverseLerp(inputMin, inputMax, input );
+        return Mathf.Lerp( outputMin, outputMax, t );
+    }
+    ```
+  * If `input` has the value of `inputMin`, the function returns the value `outputMin`.
 ## Reading
 
 * [Learn: Linear interpolation](https://learn.unity.com/tutorial/linear-interpolation?uv=2019.3&courseId=5c61706dedbc2a324a9b022d&projectId=5c8920b4edbc2a113b6bc26a#5c8a48bdedbc2a001f47cef6)
