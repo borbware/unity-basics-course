@@ -9,14 +9,17 @@ paginate: true
 
 ## Fast native build
 
-* Two options to build your game:
-  * *File > Build and Run*
-  * *File > Build Settings*
-    * Add all scenes to your build settings (see [Scenes](scenes.md#building-a-game-with-multiple-scenes))
-    * Click ***Build***
+* To create a ***native build*** (if you're on Windows, it's a Windows build):
+* Go to *File > Build Settings*
+  * See that Platform is *Windows, Mac, Linux* and Architecture is *Intel 64-bit* 
+  * Add all scenes to your build settings (see [Scenes](scenes.md#building-a-game-with-multiple-scenes))
+    * If you only have one scene, you can just click on *Add Open Scenes*
+    * If you have more, you can drag-and-drop them to the *Scenes In Build* listing
+  * Click ***Build***
+    * Create a `/Builds/` folder and select it
 ## Other platforms
 
-* The instructions above create a ***native build*** by default (if you're on Windows, it's a Windows build)
+
 * To build for other platforms, you need to install the dedicated modules for them in the Unity Hub
 
 ![](imgs/addmodules.png)
