@@ -7,6 +7,22 @@ paginate: true
 
 # Project Management 3. Git cheat sheet
 
+## Uploading a new Unity project to GitHub
+
+Initialize Git in the Unity project folder, pull the `.gitignore` file, make your first commit and push:
+
+`git init`
+
+`git remote add origin [remote-url]`
+
+`git pull origin main`
+
+`git add .`
+
+`git commit -m "first commit"`
+
+`git push --set-upstream origin main`
+
 ## Common workflow
 
 `git status`
