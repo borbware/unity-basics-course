@@ -12,6 +12,7 @@ paginate: true
 
 * [Manual: Asset Workflow](https://docs.unity3d.com/Manual/AssetWorkflow.html)
 * [Manual: Importing Assets](https://docs.unity3d.com/Manual/ImportingAssets.html)
+
 ## Materials, Shaders and Textures
 
 * [Materials](https://docs.unity3d.com/Manual/materials-introduction.html) define how a surface should be rendered: textures, color, lighting...
@@ -36,7 +37,9 @@ paginate: true
   * "Same thing, but what if many?"
     * not necessary completely identical, however!
     * share common traits but have different details
+
 ### Creating prefabs
+
 * [Manual: Creating Prefabs](https://docs.unity3d.com/Manual/CreatingPrefabs.html)
 * How to turn a GameObject into a Prefab:
 
@@ -55,6 +58,7 @@ paginate: true
     * selects the Prefab asset in the Project window
 
 ### Overrides
+
 ![](https://docs.unity3d.com/uploads/Main/PrefabsOverridesDropdown1.png)
   * [Manual: Instance overrides](https://docs.unity3d.com/Manual/PrefabInstanceOverrides.html)
   * ***Overrides*** dropdown menu

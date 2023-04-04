@@ -39,7 +39,6 @@ math: mathjax
   * Light
   * Empty
 
-
 ## GameObject Hierarchy
 
 ![bg right:40% height:35%](imgs/gameobject-hierarchy.png)
@@ -55,6 +54,7 @@ math: mathjax
 * ***Note:*** Rotating child GameObjects can have wonky results if parent has any other scale than $(1,1,1)$.
 
 ## Components
+
 * [Manual: Components](https://docs.unity3d.com/Manual/Components.html)
 * GameObjects act as containers for ***Components*** that implement various functionalities
 * GameObject's components and their settings are listed in the Inspector window
@@ -81,10 +81,10 @@ math: mathjax
   * there are different shapes and sizes
     * CapsuleCollider(2D), BoxCollider(2D), PolygonCollider2D...
   * `isTrigger`
-    * ✅ -> Collider is ignored by the physics engine, but can trigger events 
-
+    * ✅ -> Collider is ignored by the physics engine, but can trigger events
 
 ### Drawing the GameObject
+
 * ***MeshFilter***
   * The ***mesh***, or the 3d geometry of a GameObject
 * ***Renderer***

@@ -6,6 +6,7 @@ math: mathjax
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
+
 # 1. The Unity Interface
 
 ## Editor views
@@ -21,6 +22,7 @@ math: mathjax
 
 * Views can be rearranged by dragging & dropping
 * Try out different layouts from the top right "Layouts" dropdown menu
+
 ## Hierarchy window
 
 * [Manual: Hierarchy](https://docs.unity3d.com/Manual/Hierarchy.html)
@@ -33,7 +35,9 @@ math: mathjax
 <!-- _footer: "LMB, MMB, RMB: Left/Middle/Right mouse button" -->
 ---
 ![the scene view](imgs/sceneview.png)
+
 ## Scene view
+
 * [Manual: Scene view navigation](https://docs.unity3d.com/Manual/SceneViewNavigation.html)
 * Navigation shortcuts
   * Maximize view: ***Shift +Spacebar***
@@ -57,11 +61,14 @@ math: mathjax
 * Tip: Select camera and press ***CTRL+SHIFT+F*** to align camera view with the Scene window viewpoint
 
 ### QWERTY Tools
+
 * Used for manipulating existing stuff
 * Activating the tool changes the ***LMB*** behaviour
 * Navigation shortcuts still available in other tools!
 * In move/rotate/scale, you can use the red, green and blue shapes to manipulate x,y,z axes, respectively
+
 ---
+
 * The tools:
   * ***Q***: View Tool (navigate)
   * ***W***: Move Tool
@@ -84,15 +91,14 @@ math: mathjax
   * For multiple selected GameObjects, **center** sets the tool handle to the "average" center of the GameObjects. For a parent GameObject with children, it shows the average of parent + its children
   * **pivot** sets the tool handle to the last selected GameObject when multiple are selected, and shows the *actual location* of a parent GameObject 
   * ***Note:*** If you want to rotate a child GameObject according to its parent's position, set to ***pivot***
+
 ---
+
 2. Tool handle rotation (Local / Global)
   * Scene has a ***global*** coordinate system, and all GameObjects have their ***local*** coordinate systems
   * Global setting shows the tool handle rotated always along the global coordinate system
   * Local setting shows the tool handle rotated along the local coordinates.
   * ***Note:*** To move GameObjects according to their local x,y,z axes, set to local (global by default)
-
-
-
   
 ## Inspector window
 

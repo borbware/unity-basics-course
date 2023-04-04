@@ -39,34 +39,39 @@ paginate: true
   * See FPS in *Play mode > Stats* to check how often it's called!
 
 ## Two ways to initialize
-  * There are two functions for initializing a script class
-  * [`Awake()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.Awake.html)
-    * Called first
-    * Called even if the script component is not enabled!
-  * [`Start()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html)
-    * Called second, right before the first Update
-    * Only called if the script component IS enabled
 
-## `Update()`
-  * There are three functions for updating a script class
-  * [`Update()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html)
-    * Frequency of update calls varies depending on framerate
-    * Most things can be updated here
-    * Because of framerate-dependence it is *indeterministic*
-        * (same input doesn't always produce same output)
+* There are two functions for initializing a script class
+* [`Awake()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.Awake.html)
+  * Called first
+  * Called even if the script component is not enabled!
+* [`Start()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html)
+  * Called second, right before the first Update
+  * Only called if the script component IS enabled
+
+## `Update()` function
+
+* There are three functions for updating a script class
+* [`Update()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html)
+  * Frequency of update calls varies depending on framerate
+  * Most things can be updated here
+  * Because of framerate-dependence it is *indeterministic*
+      * (same input doesn't always produce same output)
+
 ## `FixedUpdate()` and `LateUpdate()`
-  * [`FixedUpdate()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.FixedUpdate.html)
-    * By default, called every 0.2 seconds (50 FPS)
-    * Used mainly for physics calculations
-      * Will slow down under heavy load!
-      * Not dependent on framerate: *deterministic*
-        * (same input always produces same output)
-    * ***Note:*** Can't be used for checking ButtonDown input
-  * [`LateUpdate()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.LateUpdate.html)
-    * Called every frame after `Update()`.
-    * Good for something that has to happen after all game objects have Updated
+
+* [`FixedUpdate()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.FixedUpdate.html)
+  * By default, called every 0.2 seconds (50 FPS)
+  * Used mainly for physics calculations
+    * Will slow down under heavy load!
+    * Not dependent on framerate: *deterministic*
+      * (same input always produces same output)
+  * ***Note:*** Can't be used for checking ButtonDown input
+* [`LateUpdate()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.LateUpdate.html)
+  * Called every frame after `Update()`.
+  * Good for something that has to happen after all game objects have Updated
 
 ## Time and Deltatime
+
 * [Important classes: Time](https://docs.unity3d.com/Manual/TimeFrameManagement.html)
 * `Time.time`
   * The time passed since starting the game, in seconds
@@ -106,6 +111,7 @@ paginate: true
 * [More about attributes in C# Docs]((https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/attributes/))
 
 ## Referring to GameObjects
+
 * The GameObject the script is attached to is usable as `gameObject`
 * For other GameObjects, there are two options:
   * a) Fast solution
@@ -167,7 +173,6 @@ paginate: true
 
 ## Accessing components
 
-
 * Access GameObject's components with [GameObject.GetComponent](https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html)
   ```c#
   OurComponentType ourComponent = ourGameObject.GetComponent<OurComponentType>();
@@ -202,6 +207,7 @@ paginate: true
   * Does the syntax look strange? It uses the [out parameter](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/out-parameter-modifier). 
 
 ## Enabling and disabling components
+
 * enable component:
   * `component.enabled = true;`
 * disable component:
@@ -212,12 +218,14 @@ paginate: true
   * Most event-based callbacks don't get disabled!
 
 ## Tags & Layers
+
 * [Manual: Tags and layers](https://docs.unity3d.com/Manual/class-TagManager.html)
 * *Edit > Project Settings > Tags and Layers*
 * Here, you can set up
   * ***Tags***
   * ***Layers***
   * ***Sorting layers*** 
+
 ## Tags
 
 * [Manual: Tags](https://docs.unity3d.com/Manual/Tags.html)
@@ -240,6 +248,7 @@ private void OnTriggerEnter2D(Collider2D other)
 ```
 
 ## Layers
+
 * [Manual: Layers](https://docs.unity3d.com/Manual/Layers.html)
 * Layers allow you to separate GameObjects in you scene through UI or scripting
 * Some layers: Default, Ignore Raycast, Custom...
@@ -259,6 +268,7 @@ private void OnTriggerEnter2D(Collider2D other)
   * Open *Edit > Project preferences > Physics(2D) > Layer Collision Matrix*
   * Disable collision between *Enemies* and *Player*:
   ![](imgs/layer-collision.png)
+
 ### Sorting layers
 
 * For sorting 2D sprites
@@ -276,7 +286,6 @@ private void OnTriggerEnter2D(Collider2D other)
     * can take more time
 * My way: First put everything in one script until some functionality grows enough
   * Then, separate into its own script
-
 
 ## Exercise 2. Available on switch 
 <!-- _backgroundColor: #29366f -->

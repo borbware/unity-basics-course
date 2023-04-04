@@ -2,22 +2,25 @@
 title: Unity Basics 0. What is Unity
 marp: true
 paginate: true
+math: mathjax
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
 # 0. What is Unity
+
 ## About Unity
 
 * A commercial closed-source game engine
 * Free to use for projects under $100 000 revenue
 * Pretty much the industry standard
-	* -> Plenty of resources available online!
+	* $\Rightarrow$ Plenty of resources available online!
 * Much used especially in game jams & mobile
 * A huge "kitchen sink" software: you won't ever need all the features
 * Made originally for 3D games ("Unity3D")
 * Can be used for 2D & 3D
 * uses the C# programming language for scripting
+
 ## Games made with Unity
 
 * *My Summer Car*, Johannes Rojolan tekemä suomalaiselle maaseudulle sijoittuva autonrakennussimulaattori 
@@ -34,6 +37,7 @@ paginate: true
   * Usually people are stuck with the version they started the project with
     * -> Common to have multiple versions on the same machine
     * Unity Hub helps here
+
 ## Note about deprecation
 
   * Sometimes, old features & programming styles are slowly deprecated as new ones are introduced
@@ -52,6 +56,7 @@ paginate: true
   * Treat some aspects of Unity as black boxes
   * You give them input, and they give you the (hopefully!) desired output
 * Unity is closed source: you ***can't*** learn everything about it
+
 ## The Asset Store
 
 * You can download assets to your project from the Asset Store
