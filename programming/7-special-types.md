@@ -1,11 +1,12 @@
 ---
 marp: true
 paginate: true
+title: Programming 7. Types
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# Types
+# 7. Types
 
 ## Type system
 

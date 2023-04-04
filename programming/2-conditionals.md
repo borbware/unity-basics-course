@@ -1,11 +1,12 @@
 ---
 marp: true
 paginate: true
+title: Programming 2. Conditionals
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# Conditionals
+# 2. Conditionals
 
 ## Comparison operators
 * Comparison operators are used to compare two variables

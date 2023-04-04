@@ -1,11 +1,12 @@
 ---
 marp: true
 paginate: true
+title: Programming 1. Variables
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# Variables
+# 1. Variables
 
 ## About C#
 

@@ -2,6 +2,7 @@
 marp: true
 paginate: true
 math: mathjax
+title: Math 2. Forces
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->

@@ -1,6 +1,7 @@
 ---
 marp: true
 paginate: true
+title: Programming 0. Introduction to game programming
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->

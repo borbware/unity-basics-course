@@ -1,6 +1,7 @@
 ---
 marp: true
 paginate: true
+title: Game Design
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->

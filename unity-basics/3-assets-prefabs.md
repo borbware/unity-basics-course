@@ -1,12 +1,12 @@
 ---
+title: Unity Basics 3. Assets & Prefabs
 marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
+
 # 3. Assets & Prefabs
-
-
 
 ## Asset workflow
 

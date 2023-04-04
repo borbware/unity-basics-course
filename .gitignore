@@ -9,3 +9,6 @@ vendor
 
 !*-slides.html
 !/_layouts/*
+!/_includes/*
+
+/node_modules/

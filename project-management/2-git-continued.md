@@ -1,4 +1,5 @@
 ---
+title: Project Management 2. Git continued
 marp: true
 paginate: true
 ---

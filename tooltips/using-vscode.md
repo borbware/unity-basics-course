@@ -1,4 +1,5 @@
 ---
+title: Using VS Code
 marp: true
 paginate: true
 ---

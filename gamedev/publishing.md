@@ -1,11 +1,12 @@
 ---
 marp: true
 paginate: true
+title: Publishing on Itch.io
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# Publishing your game
+# Publishing on Itch.io
 ---
 ![bg width:80%](imgs/gamedev.png)
 

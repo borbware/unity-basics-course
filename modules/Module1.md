@@ -1,6 +1,7 @@
 ---
 marp: true
 paginate: true
+title: Module 1
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->

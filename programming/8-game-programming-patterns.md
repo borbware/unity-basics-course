@@ -1,11 +1,12 @@
 ---
 marp: true
 paginate: true
+title: Programming 8. Game programming patterns
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# Game programming patterns
+# 8. Game programming patterns
 
 ## Observer pattern
 

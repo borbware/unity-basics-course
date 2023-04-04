@@ -2,6 +2,7 @@
 marp: true
 paginate: true
 math: mathjax
+title: Math 3. Interpolation
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->

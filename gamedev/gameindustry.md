@@ -1,6 +1,7 @@
 ---
 marp: true
 paginate: true
+title: Game Industry
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
