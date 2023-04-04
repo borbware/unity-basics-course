@@ -45,7 +45,9 @@ math: mathjax
     * It helps to understand Unity if you study the history of Unity
     * It's useful to know which ways are old and "shouldn't be used" and which are still encouraged today
     * Then again, tomorrow everything might have changed
+
 ---
+
 ![bg width:80%](imgs/unity.png)
 
 ## Unity as an application

@@ -38,6 +38,7 @@ paginate: true
   - Animation type: *Generic* or *Humanoid*
   - Avatar Definition: *Create from this model*
   - Click *Apply*
+
 ---
 
 ![bg right:40% height:80%](imgs/3dimport-animationtab.png)

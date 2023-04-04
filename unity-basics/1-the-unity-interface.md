@@ -33,7 +33,9 @@ math: mathjax
 * Add new GameObjects: ***RMB*** + choose from list
 
 <!-- _footer: "LMB, MMB, RMB: Left/Middle/Right mouse button" -->
+
 ---
+
 ![the scene view](imgs/sceneview.png)
 
 ## Scene view

@@ -110,6 +110,7 @@ public class PlayerHealth : MonoBehaviour
     ```
 
 ---
+
 * adding parameters
     ```c#
     public static event Action<string> OnGameOver;
@@ -137,7 +138,9 @@ public class PlayerHealth : MonoBehaviour
     * contains the list of event function calls
     * add function calls by drag-and-dropping
   * thus, extremely useful for making logical connections between scripts in the Inspector
+
 ---
+
 ```c#
 using UnityEngine;
 using UnityEngine.Events;
@@ -188,7 +191,9 @@ public class PlayerHealth : MonoBehaviour
     }
 }
 ```
+
 ---
+
 ```c#
 public class HealthBar : MonoBehaviour
 {
@@ -233,7 +238,9 @@ public class GameEvent : ScriptableObject
     }
 }
 ```
+
 ---
+
 ```c#
 using UnityEngine;
 using UnityEngine.Events;

@@ -49,13 +49,13 @@ style: |
 
 ## Git setup: Settings for Windows
 
-<div class="columns">
-<div>
+<div class="columns" markdown="1">
+<div markdown="1">
 
 ![](imgs/git1.png)
 
 </div>
-<div>
+<div markdown="1">
 
 ![](imgs/git3.png)
 
@@ -70,8 +70,8 @@ git config --global core.editor "code --wait"
 
 ---
 
-<div class="columns">
-<div>
+<div class="columns" markdown="1">
+<div markdown="1">
 
 ![](imgs/git2.png)
 
@@ -81,7 +81,7 @@ Set manually after setup with:
   ```
 
 </div>
-<div>
+<div markdown="1">
 
 ![](imgs/git4.png)
 
@@ -90,13 +90,13 @@ Set manually after setup with:
 
 ---
 
-<div class="columns">
-<div>
+<div class="columns" markdown="1">
+<div markdown="1">
 
 ![](imgs/git5.png)
 
 </div>
-<div>
+<div markdown="1">
 
 ![](imgs/git6.png)
 
@@ -105,8 +105,8 @@ Set manually after setup with:
 
 ---
 
-<div class="columns">
-<div>
+<div class="columns" markdown="1">
+<div markdown="1">
 
 ![](imgs/git7.png)
 
@@ -117,7 +117,7 @@ git config --global credential.helper wincred
 ```
 
 </div>
-<div>
+<div markdown="1">
 
 ![](imgs/git8.png)
 
@@ -154,7 +154,9 @@ git config --global credential.helper wincred
 * It's a Windows application for working with GitHub repositories
 * It will show the Git history as a visual timeline
 * ***Note:*** Even when using GitHub desktop, it still helps if you understand the Git commands that still are executed under the hood, though!
+
 ---
+
 <!-- _backgroundColor: #5d275d -->
 ![bg width:80%](https://desktop.github.com/images/github-desktop-screenshot-windows.png)
 

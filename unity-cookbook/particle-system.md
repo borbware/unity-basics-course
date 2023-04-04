@@ -33,7 +33,9 @@ paginate: true
   * *Play On Awake*
 * [Emission](https://docs.unity3d.com/Manual/PartSysEmissionModule.html)
   * *Rate over time*
+
 ---
+
 * [Shape](https://docs.unity3d.com/Manual/PartSysShapeModule.html)
   * Shape of the particle emitter
   * *Shape* (Circle is good for 2D)
@@ -44,7 +46,9 @@ paginate: true
   * You can add a gradient so the particles change color over time
   * With the handles on top of the gradient, you can also change alpha value (opacity)
 * There's also modules for changing other properties over lifetime
+
 ---
+
 * [Texture Sheet Animation](https://docs.unity3d.com/Manual/PartSysTexSheetAnimModule.html)
   * If you want your particles to have a sprite animation, use this
   * *Grid*: tell how many cels your sprite sheet has
@@ -110,6 +114,7 @@ paginate: true
   * add callback function [OnParticleCollision()](https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnParticleCollision.html) (works also in 2D, there is no `OnParticleCollision2D`)
 
 ---
+
 * [Triggers](https://docs.unity3d.com/Manual/PartSysTriggersModule.html)
   * allows you to access and modify particles based on their interaction with specific colliders
   * Add colliders to the List under the Triggers module

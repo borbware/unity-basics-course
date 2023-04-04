@@ -49,6 +49,7 @@ paginate: true
     ```
 
 ---
+
 * Rotation fields
   * `transform.rotation`, global rotation as a Quaternion
   * `transform.localRotation`, local rotation as a Quaternion
@@ -105,7 +106,6 @@ Make a child GameObject rotate around its parent.
   float angle = Mathf.Atan2(target.transform.position.y, target.transform.position.x) * Mathf.Rad2Deg;
   transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
   ```
-
 
 ---
 

@@ -191,7 +191,9 @@ if (Input.ButtonDown("Fire1"))
     StartDialogue();
   }
   ```
+
 ---
+
   ```c#
   void StartDialogue()
   {
@@ -208,7 +210,9 @@ if (Input.ButtonDown("Fire1"))
     }
   }
   ```
+
 ---
+
   ```c#
   void Update()
   {

@@ -36,7 +36,6 @@ paginate: true
   * Good ideas to have separate animation files for *Idle*, *Jumping*, *Running*, etc...
   * Name the first clip ***Player_Idle***
 
-
 ---
 
 ![](imgs/animation-window.png)
