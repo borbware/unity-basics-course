@@ -63,7 +63,9 @@ Game-like elements have silently found their way to many web services.
   * gain levels by contributing images & descriptions
 * Linkedin
   * start-up: add info about yourself to advance a progress bar of your "Profile strength"
+
 ---
+
 * Github
   * the green contribution chart
   * get achievements based on events you've attended
