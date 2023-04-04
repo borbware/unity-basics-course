@@ -12,11 +12,11 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 # Stages
 
-|   |  		   | Slides 			  				 | Page		 				|     | 
-|---|----------|-------------------------------------|--------------------------|----:|
-| 1 | Module 1 | [🎞](modules/Module1-slides.html)   | [📖](modules/Module1)	| 🌔 |
-| 1 | Module 2 | [🎞](modules/Module2-slides.html)   | [📖](modules/Module2)	| 🌔 |
-| 1 | Module 3 | [🎞](modules/Module3-slides.html)   | [📖](modules/Module3)	| 🌔 |
+|   |          | Slides                            | Page                  |    |
+|---|----------|-----------------------------------|-----------------------|---:|
+| 1 | Module 1 | [🎞](modules/Module1-slides.html) | [📖](modules/Module1) | 🌔 |
+| 1 | Module 2 | [🎞](modules/Module2-slides.html) | [📖](modules/Module2) | 🌔 |
+| 1 | Module 3 | [🎞](modules/Module3-slides.html) | [📖](modules/Module3) | 🌔 |
 
 # Books
 
@@ -48,6 +48,8 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 ## About Unity
 
+### Unity Basics
+
 |   |                         | Slides                                                 | Page                                       |    |
 |---|-------------------------|--------------------------------------------------------|--------------------------------------------|---:|
 | 0 | What is Unity?          | [🎞](unity-basics/0-what-is-unity-slides.html)         | [📖](unity-basics/0-what-is-unity)         | 🌔 |
@@ -56,44 +58,47 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 3 | Assets & Prefabs        | [🎞](unity-basics/3-assets-prefabs-slides.html)        | [📖](unity-basics/3-assets-prefabs)        | 🌔 |
 | 4 | Scripting Gameobjects   | [🎞](unity-basics/4-scripting-gameobjects-slides.html) | [📖](unity-basics/4-scripting-gameobjects) | 🌔 |
 
-|   | Unity Advanced                                                        |    |
-|---|-----------------------------------------------------------------------|---:|
-| 1 | [Delayed actions](unity-advanced/1-delayed-actions-slides.html)       | 🌔 |
-| 2 | [Scriptable objects](unity-advanced/2-scriptable-objects-slides.html) | 🌒 |
-| 3 | [Events](unity-advanced/3-events-slides.html)                         | 🌒 |
-| 4 | [Miscellaneous](unity-advanced/4-misc-slides.html)                    | 🌒 |
-| 5 | [Object Pooling](unity-advanced/5-object-pooling-slides.html)         | 🌑 |
+### Unity Advanced
 
-|   | Unity Cookbook                                                  |    |
-|---|-----------------------------------------------------------------|---:|
-| 1 |                                                                 |    |
-|   | [2D basics](unity-cookbook/2d-basics-slides.html)               | 🌔 |
-|   | [Input handling](unity-cookbook/input-handling-slides.html)     | 🌔 |
-|   | [Transform](unity-cookbook/transform-slides.html)               | 🌔 |
-|   | [Collision](unity-cookbook/collision-slides.html)               | 🌔 |
-|   | [Physics](unity-cookbook/physics-slides.html)                   | 🌔 |
-|   | [UI](unity-cookbook/UI-slides.html)                             | 🌔 |
-|   | [Audio](unity-cookbook/audio-slides.html)                       | 🌔 |
-| 2 |                                                                 |    |
-|   | [Tilemaps](unity-cookbook/tilemaps-slides.html)                 | 🌔 |
-|   | [2D animation](unity-cookbook/2d-animation-slides.html)         | 🌔 |
-|   | [Pathfinding](unity-cookbook/pathfinding-slides.html)           | 🌔 |
-|   | [Scenes](unity-cookbook/scenes-slides.html)                     | 🌔 |
-| 3 |                                                                 |    |
-|   | [Particle system](unity-cookbook/particle-system-slides.html)   | 🌔 |
-|   | [3D animation](unity-cookbook/3d-animation-slides.html)         | 🌔 |
-|   | [Saving and Loading](unity-cookbook/saving-loading-slides.html) | 🌑 |
-|   | [3D Platforming](unity-cookbook/3dplatforming-slides.html)      | 🌒 |
-|   | [Building](unity-cookbook/building-slides.html)                 | 🌑 |
+|   |                    | Slides                                                | Page                                      |    |
+|---|--------------------|-------------------------------------------------------|-------------------------------------------|---:|
+| 1 | Delayed actions    | [🎞](unity-advanced/1-delayed-actions-slides.html)    | [📖](unity-advanced/1-delayed-actions)    | 🌔 |
+| 2 | Scriptable objects | [🎞](unity-advanced/2-scriptable-objects-slides.html) | [📖](unity-advanced/2-scriptable-objects) | 🌒 |
+| 3 | Events             | [🎞](unity-advanced/3-events-slides.html)             | [📖](unity-advanced/3-events)             | 🌒 |
+| 4 | Miscellaneous      | [🎞](unity-advanced/4-misc-slides.html)               | [📖](unity-advanced/4-misc)               | 🌒 |
+| 5 | Object Pooling     | [🎞](unity-advanced/5-object-pooling-slides.html)     | [📖](unity-advanced/5-object-pooling)     | 🌑 |
 
+### Unity Cookbook
 
-|  | Tooltips                                                                |    |
-|--|-------------------------------------------------------------------------|---:|
-|  | [VS Code Setup](tooltips/vscode-setup-slides.html)                      | 🌔 |
-|  | [Using VS Code with Unity](tooltips/using-vscode-slides.html)           | 🌓 |
-|  | [Using Windows File Explorer](tooltips/using-file-explorer-slides.html) | 🌔 |
-|  | [Unity Packages](tooltips/unity-packages-slides.html)                   | 🌒 |
-|  | [Unity notes](tooltips/unity-notes-slides.html)                         | 🌒 |
+|   |                    | Slides                                           | Page                                 |    |
+|---|--------------------|--------------------------------------------------|--------------------------------------|---:|
+| 1 |                    |                                                  |                                      |    |
+|   | 2D basics          | [🎞](unity-cookbook/2d-basics-slides.html)       | [📖](unity-cookbook/2d-basics)       | 🌔 |
+|   | Input handling     | [🎞](unity-cookbook/input-handling-slides.html)  | [📖](unity-cookbook/input-handling)  | 🌔 |
+|   | Transform          | [🎞](unity-cookbook/transform-slides.html)       | [📖](unity-cookbook/transform)       | 🌔 |
+|   | Collision          | [🎞](unity-cookbook/collision-slides.html)       | [📖](unity-cookbook/collision)       | 🌔 |
+|   | Physics            | [🎞](unity-cookbook/physics-slides.html)         | [📖](unity-cookbook/physics)         | 🌔 |
+|   | UI                 | [🎞](unity-cookbook/UI-slides.html)              | [📖](unity-cookbook/UI)              | 🌔 |
+|   | Audio              | [🎞](unity-cookbook/audio-slides.html)           | [📖](unity-cookbook/audio)           | 🌔 |
+| 2 |                    |                                                  |                                      |    |
+|   | Tilemaps           | [🎞](unity-cookbook/tilemaps-slides.html)        | [📖](unity-cookbook/tilemaps)        | 🌔 |
+|   | 2D animation       | [🎞](unity-cookbook/2d-animation-slides.html)    | [📖](unity-cookbook/2d-animation)    | 🌔 |
+|   | Pathfinding        | [🎞](unity-cookbook/pathfinding-slides.html)     | [📖](unity-cookbook/pathfinding)     | 🌔 |
+|   | Scenes             | [🎞](unity-cookbook/scenes-slides.html)          | [📖](unity-cookbook/scenes)          | 🌔 |
+| 3 |                    |                                                  |                                      |    |
+|   | Particle system    | [🎞](unity-cookbook/particle-system-slides.html) | [📖](unity-cookbook/particle-system) | 🌔 |
+|   | 3D animation       | [🎞](unity-cookbook/3d-animation-slides.html)    | [📖](unity-cookbook/3d-animation)    | 🌔 |
+|   | Saving and Loading | [🎞](unity-cookbook/saving-loading-slides.html)  | [📖](unity-cookbook/saving-loading)  | 🌒 |
+|   | Building           | [🎞](unity-cookbook/building-slides.html)        | [📖](unity-cookbook/building)        | 🌓 |
+
+## Tooltips
+
+|  |                             | Slides                                         | Page                               |    |
+|--|-----------------------------|------------------------------------------------|------------------------------------|---:|
+|  | VS Code Setup               | [🎞](tooltips/vscode-setup-slides.html)        | [📖](tooltips/vscode-setup)        | 🌔 |
+|  | Using VS Code with Unity    | [🎞](tooltips/using-vscode-slides.html)        | [📖](tooltips/using-vscode)        | 🌓 |
+|  | Using Windows File Explorer | [🎞](tooltips/using-file-explorer-slides.html) | [📖](tooltips/using-file-explorer) | 🌔 |
+|  | Unity Packages              | [🎞](tooltips/unity-packages-slides.html)      | [📖](tooltips/unity-packages)      | 🌒 |
 
 ## About game development
 
@@ -106,18 +111,17 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 4 | Scrum           | [🎞](project-management/4-scrum-slides.html)         | [📖](project-management/4-scrum)         | 🌕 |
 |   | Git cheat sheet | [🎞](project-management/git-cheat-sheet-slides.html) | [📖](project-management/git-cheat-sheet) | 🌕 |
 
+## Game Development
 
-|  | Game Dev                                                |    |
-|--|---------------------------------------------------------|---:|
-|  | [Playtesting](gamedev/playtesting-slides.html)          | 🌔 |
-|  | [Tools](gamedev/tools-slides.html)                      | 🌔 |
-|  | [Game Design](gamedev/gamedesign-slides.html)           | 🌔 |
-|  | [Game Industry](gamedev/gameindustry-slides.html)       | 🌓 |
-|  | [Accessibility](gamedev/accessibility-slides.html)      | 🌓 |
-|  | [Gamification](gamedev/gamification-slides.html)        | 🌓 |
-|  | [Business](gamedev/business-slides.html)                | 🌒 |
-|  | [Game Development](gamedev/gamedevelopment-slides.html) | 🌒 |
-|  | [Teamwork](gamedev/teamwork-slides.html)                | 🌒 |
+|  |               | Slides                                  | Page                        |    |
+|--|---------------|-----------------------------------------|-----------------------------|---:|
+|  | Playtesting   | [🎞](gamedev/playtesting-slides.html)   | [📖](gamedev/playtesting)   | 🌔 |
+|  | Tools         | [🎞](gamedev/tools-slides.html)         | [📖](gamedev/tools)         | 🌔 |
+|  | Game Design   | [🎞](gamedev/gamedesign-slides.html)    | [📖](gamedev/gamedesign)    | 🌔 |
+|  | Game Industry | [🎞](gamedev/gameindustry-slides.html)  | [📖](gamedev/gameindustry)  | 🌓 |
+|  | Accessibility | [🎞](gamedev/accessibility-slides.html) | [📖](gamedev/accessibility) | 🌓 |
+|  | Gamification  | [🎞](gamedev/gamification-slides.html)  | [📖](gamedev/gamification)  | 🌓 |
+|  | Teamwork      | [🎞](gamedev/teamwork-slides.html)      | [📖](gamedev/teamwork)      | 🌒 |
 
 
 
