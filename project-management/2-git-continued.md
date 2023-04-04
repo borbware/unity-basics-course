@@ -233,3 +233,9 @@ From Scene 4, the game should loop back to Scene 1.
 2) Then continue the rebase process with `git rebase --continue`
 3) If you want to disregard a conflicting commit, use `git rebase --skip`
 4) If you get cold feet, you can cancel the rebase with `git rebase --abort`
+
+## Very very extra: submodules
+
+* To add external code to your project from someone else's repository, Git has a neat system called *submodules*
+* To add a submodule to your project, use `git submodule add <submodule-url> <folder>`
+* To remove a submodule, use `git rm <path-to-submodule>`
