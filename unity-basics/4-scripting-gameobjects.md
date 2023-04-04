@@ -160,7 +160,9 @@ paginate: true
 ## Exercise 1. Three, two, one...
 <!-- _backgroundColor: #29366f -->
 
-Create a script on an empty GameObject that destroys another, visible GameObject when three seconds have passed.
+* Create a script on an empty GameObject
+* Make it instantiate a bullet Prefab every three seconds. 
+* Create another GameObject, and make the script destroy it when three seconds have passed.
 
 ## Accessing components
 
