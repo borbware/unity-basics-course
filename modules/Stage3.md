@@ -1,6 +1,7 @@
 ---
 marp: true
 paginate: true
+title: Stage 3
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->

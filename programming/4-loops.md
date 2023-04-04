@@ -1,13 +1,14 @@
 ---
 marp: true
 paginate: true
+title: Programming 4. Loops
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# Loops
+# 4. Loops
 
-## Loops
+## Loops?
 * used for:
   * repeating blocks of code 
   * looping through collections of data (more later...)

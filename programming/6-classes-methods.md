@@ -1,10 +1,11 @@
 ---
 marp: true
 paginate: true
+title: Programming 6. Classes and methods
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
-# Classes and methods
+# 6. Classes and methods
 
 ## Classes & objects
 

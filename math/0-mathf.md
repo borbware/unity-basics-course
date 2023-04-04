@@ -2,6 +2,7 @@
 marp: true
 paginate: true
 math: mathjax
+title: Math 0. Helpful Math Functions
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->

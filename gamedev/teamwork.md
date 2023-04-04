@@ -1,6 +1,7 @@
 ---
 marp: true
 paginate: true
+title: Teamwork
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->

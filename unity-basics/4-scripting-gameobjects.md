@@ -1,4 +1,5 @@
 ---
+title: Unity Basics 4. Scripting GameObjects
 marp: true
 paginate: true
 ---

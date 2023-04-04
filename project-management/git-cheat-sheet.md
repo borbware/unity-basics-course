@@ -1,11 +1,12 @@
 ---
+title: Git cheat sheet
 marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# Project Management 3. Git cheat sheet
+# Git cheat sheet
 
 ## Uploading a new Unity project to GitHub
 

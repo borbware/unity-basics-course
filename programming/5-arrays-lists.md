@@ -2,11 +2,12 @@
 marp: true
 paginate: true
 math: mathjax
+title: Programming 5. Arrays & Lists
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# Arrays
+# 5. Arrays & Lists
 
 ## Arrays
 

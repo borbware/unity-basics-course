@@ -2,6 +2,7 @@
 marp: true
 paginate: true
 math: mathjax
+title: Math 1. Vectors
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->

@@ -1,4 +1,5 @@
 ---
+title: Unity Packages
 marp: true
 paginate: true
 ---
@@ -6,6 +7,7 @@ paginate: true
 <!-- class: invert -->
 
 # Unity Packages
+
 ## Package manager
 
 * Window > Package Manager

@@ -1,11 +1,12 @@
 ---
 marp: true
 paginate: true
+title: Programming 3. Functions
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# Functions
+# 3. Functions
 
 ## Scope
 

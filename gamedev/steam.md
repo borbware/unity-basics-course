@@ -1,11 +1,12 @@
 ---
 marp: true
 paginate: true
+title: Publishing on Steam
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# Publishing your game on Steam
+# Publishing on Steam
 
 * To get your game on Steam, you need to
     * a) Pay $100 to Valve 

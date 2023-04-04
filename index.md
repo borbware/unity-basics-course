@@ -113,15 +113,17 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 ## Game Development
 
-|  |               | Slides                                  | Page                        |    |
-|--|---------------|-----------------------------------------|-----------------------------|---:|
-|  | Playtesting   | [🎞](gamedev/playtesting-slides.html)   | [📖](gamedev/playtesting)   | 🌔 |
-|  | Tools         | [🎞](gamedev/tools-slides.html)         | [📖](gamedev/tools)         | 🌔 |
-|  | Game Design   | [🎞](gamedev/gamedesign-slides.html)    | [📖](gamedev/gamedesign)    | 🌔 |
-|  | Game Industry | [🎞](gamedev/gameindustry-slides.html)  | [📖](gamedev/gameindustry)  | 🌓 |
-|  | Accessibility | [🎞](gamedev/accessibility-slides.html) | [📖](gamedev/accessibility) | 🌓 |
-|  | Gamification  | [🎞](gamedev/gamification-slides.html)  | [📖](gamedev/gamification)  | 🌓 |
-|  | Teamwork      | [🎞](gamedev/teamwork-slides.html)      | [📖](gamedev/teamwork)      | 🌒 |
+|  |                       | Slides                                  | Page                        |    |
+|--|-----------------------|-----------------------------------------|-----------------------------|---:|
+|  | Playtesting           | [🎞](gamedev/playtesting-slides.html)   | [📖](gamedev/playtesting)   | 🌔 |
+|  | Tools                 | [🎞](gamedev/tools-slides.html)         | [📖](gamedev/tools)         | 🌔 |
+|  | Game Design           | [🎞](gamedev/gamedesign-slides.html)    | [📖](gamedev/gamedesign)    | 🌔 |
+|  | Game Industry         | [🎞](gamedev/gameindustry-slides.html)  | [📖](gamedev/gameindustry)  | 🌓 |
+|  | Accessibility         | [🎞](gamedev/accessibility-slides.html) | [📖](gamedev/accessibility) | 🌓 |
+|  | Gamification          | [🎞](gamedev/gamification-slides.html)  | [📖](gamedev/gamification)  | 🌓 |
+|  | Teamwork              | [🎞](gamedev/teamwork-slides.html)      | [📖](gamedev/teamwork)      | 🌒 |
+|  | Publishing on Itch.io | [🎞](gamedev/publishing-slides.html)    | [📖](gamedev/publishing)    | 🌒 |
+|  | Publishing on Steam   | [🎞](gamedev/steam-slides.html)         | [📖](gamedev/steam)         | 🌑 |
 
 
 

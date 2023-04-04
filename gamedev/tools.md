@@ -1,6 +1,7 @@
 ---
 marp: true
 paginate: true
+title: Tools for gamedev
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->

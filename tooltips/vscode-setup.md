@@ -1,9 +1,11 @@
 ---
+title: VS Code setup
 marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
+
 # VS Code setup
 
 ## What is Visual Studio Code?

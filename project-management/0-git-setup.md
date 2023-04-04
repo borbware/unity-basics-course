@@ -1,4 +1,5 @@
 ---
+title: Project Management 0. Git setup
 marp: true
 paginate: true
 style: |

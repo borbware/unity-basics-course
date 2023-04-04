@@ -2,6 +2,7 @@
 marp: true
 paginate: true
 math: mathjax
+title: Math 4. Sinewaves
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->

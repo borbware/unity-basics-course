@@ -1,6 +1,7 @@
 ---
 marp: true
 paginate: true
+title: Best practices for programming
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->

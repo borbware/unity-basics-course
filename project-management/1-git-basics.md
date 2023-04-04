@@ -1,4 +1,5 @@
 ---
+title: Project Management 1. Git basics
 marp: true
 paginate: true
 math: mathjax
