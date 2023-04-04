@@ -5,7 +5,7 @@ for /d %%A in (.\*) do (
 	if /i "%%~nxA" == ".jekyll-cache" set "except=1"
 	if not defined except (
 		for %%j in (%%A\*.md) do (
-			marp %%j -o %%~pj%%~nj-slides.html
+			marp %%j -o %%~pj%%~nj-slides.html --html true
 		)
 	)
 )
