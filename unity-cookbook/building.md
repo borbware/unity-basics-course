@@ -62,10 +62,6 @@ paginate: true
   * To try out the web build, you can click *Build and run*
 * xx
 
-## Uploading Web builds to itch.io
-
-* xx
-
 ## Building with Profiler
 
 [Manual: Profiling your application](https://docs.unity3d.com/Manual/profiler-profiling-applications.html)

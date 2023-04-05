@@ -15,6 +15,11 @@ title: Publishing on Itch.io
 1) Create a build in Unity into the ***Builds*** folder and check that it runs (See [Building](../unity-cookbook/building)).
 2) Zip the contents of the Builds folder into a zip archive. (Right click > Send to > Compressed (zipped) folder)
 
+
+## Uploading Web builds to itch.io
+
+* xx
+
 ## Uploading to itch.io
 
 * Create an account to itch.io and log in

@@ -21,6 +21,8 @@ paginate: true
     * more popular in web development
 * Both are used for Unity development
 * We'll be using VS Code on this course
+  * ***Note:*** VS Code Unity Debug Extension [has been recently deprecated](https://github.com/Unity-Technologies/vscode-unity-debug/issues/206)
+  * We don't need the extension on this course, but it's good to know
 
 ## VS Code installation
 
