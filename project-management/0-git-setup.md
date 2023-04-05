@@ -1,5 +1,5 @@
 ---
-title: Project Management 0. Git setup
+title: Project management 0. Git setup
 marp: true
 paginate: true
 style: |
@@ -12,7 +12,7 @@ style: |
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# Project Management 0. Git setup
+# Project management 0. Git setup
 
 ## What is Git?
 

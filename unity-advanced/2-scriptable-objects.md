@@ -1,10 +1,15 @@
 ---
+title: Unity advanced 2. Scriptable objects
 marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
-## Scriptable Object
+
+# Scriptable objects
+
+## Scriptable object class
+
 * A special class for storing data
 * Usually used as an asset template
   * Can be made accessible from the Create Asset menu!

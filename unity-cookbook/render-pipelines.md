@@ -1,4 +1,5 @@
 ---
+title: Unity Cookbook. Render pipelines
 marp: true
 paginate: true
 ---

@@ -1,11 +1,12 @@
 ---
+title: Unity Cookbook. Audio playback
 marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# Playing audio
+# Audio playback
 
 ## How to play a sound
 

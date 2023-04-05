@@ -1,12 +1,12 @@
 ---
-title: Project Management 2. Git continued
+title: Project management 2. Git continued
 marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# Project Management 2. Git continued
+# Project management 2. Git continued
 
 ## Branches
 * A Git repository can have multiple ***branches***

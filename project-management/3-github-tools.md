@@ -1,12 +1,12 @@
 ---
-title: Project Management 3. GitHub tools
+title: Project management 3. GitHub tools
 marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# Project Management 3. GitHub tools
+# Project management 3. GitHub tools
 ## Issues
 
 * Issues: tasks that need to be done

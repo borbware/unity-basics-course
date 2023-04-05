@@ -1,13 +1,14 @@
 ---
+title: Unity Cookbook. Tilemaps
 marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# Tile-based backgrounds
+# Tilemaps and tile-based backgrounds
 
-## Tilemaps
+## What is a tilemap?
 
 * Tilemaps are images that are split into constant-size tiles
   * They're used often for creating loads of background art in 2D games
@@ -88,7 +89,7 @@ paginate: true
 
 ## 2D extras: GameObject tile
 
-* Todo later
+* Todo later xx
 
 ## Exercise 1. A tiled level
 <!-- _backgroundColor: #29366f -->

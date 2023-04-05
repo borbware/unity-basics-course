@@ -1,4 +1,5 @@
 ---
+title: Unity Cookbook. Pathfinding
 marp: true
 paginate: true
 ---

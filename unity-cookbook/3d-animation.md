@@ -1,4 +1,5 @@
 ---
+title: Unity Cookbook. 3D animation
 marp: true
 paginate: true
 ---

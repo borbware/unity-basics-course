@@ -1,11 +1,12 @@
 ---
+title: Unity Cookbook. 2D Basics
 marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# 2D basics
+# 2D Basics
 
 ## Using Unity for 2D games
 

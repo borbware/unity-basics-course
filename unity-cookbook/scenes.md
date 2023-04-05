@@ -1,11 +1,12 @@
 ---
+title: Unity Cookbook. Scene management
 marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# Scenes
+# Scene management
 
 ## Adding new scenes
 

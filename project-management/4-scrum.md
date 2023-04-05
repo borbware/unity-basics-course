@@ -1,12 +1,12 @@
 ---
-title: Project Management 4. Scrum
+title: Project management 4. Scrum
 marp: true
 paginate: true
 math: mathjax
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
-# Project Management 4. Scrum
+# Project management 4. Scrum
 ## What is Scrum?
 
 * [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)) is a framework for delivering products (usually software)

@@ -1,12 +1,14 @@
 ---
+title: Unity advanced 3. Delegates and events
 marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
-## Delegates and Events (3b)
 
-### Delegates
+# Delegates and events
+
+## Delegates
 * Delegate: a container for a function that can be passed around or used like a variable
   * [C# Docs: Introduction to delegates and events in C#](https://docs.microsoft.com/en-us/dotnet/csharp/delegates-overview)
 * variables only contain data, but delegates can contain functions
@@ -66,6 +68,7 @@ public class DelegateExample : MonoBehaviour
 * now **both** PrimaryAttack and SecondaryAttack trigger when attack is called.
 
 ## Events
+
 * observer pattern
   * [Game programming patterns.com: Observer pattern](http://gameprogrammingpatterns.com/observer.html)
 * Events are specialized multicast delegates
@@ -73,6 +76,7 @@ public class DelegateExample : MonoBehaviour
 * [Learn: Events](https://learn.unity.com/tutorial/events-uh?uv=2019.3&projectId=5c88f2c1edbc2a001f873ea5#5c894782edbc2a1410355442)
 
 ### Events example
+
 ```c#
 public class Player : MonoBehaviour
 {
@@ -96,7 +100,8 @@ public class PlayerHealth : MonoBehaviour
 }
 ```
 
-## Actions 
+## Actions
+
 * it can sometimes be inconvenient to declare a new delegate type every time you want to use one
 * especially if all you want to do is create a basic event
 * Actions allow you to use a generic delegate type without needing to define it in your script first
@@ -131,6 +136,7 @@ public class PlayerHealth : MonoBehaviour
     ```
 
 ## UnityEvents
+
 * to confuse matters further, Unity has its own UnityEvent system as well.
 * good stuff
   * you won't need to nullcheck UnityEvents.

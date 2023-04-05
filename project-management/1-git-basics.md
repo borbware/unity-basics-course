@@ -1,5 +1,5 @@
 ---
-title: Project Management 1. Git basics
+title: Project management 1. Git basics
 marp: true
 paginate: true
 math: mathjax
@@ -13,7 +13,7 @@ style: |
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# Project Management 1. Git basics
+# Project management 1. Git basics
 
 ## Basic Git workflow
 

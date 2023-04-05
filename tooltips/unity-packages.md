@@ -1,12 +1,12 @@
 ---
-title: Unity Packages
+title: Unity packages
 marp: true
 paginate: true
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
 
-# Unity Packages
+# Unity packages
 
 ## Package manager
 
