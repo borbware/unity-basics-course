@@ -71,31 +71,29 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 1 | Delayed actions    | [🎞](unity-advanced/1-delayed-actions-slides.html)    | [📖](unity-advanced/1-delayed-actions)    | 🌔 |
 | 2 | Scriptable objects | [🎞](unity-advanced/2-scriptable-objects-slides.html) | [📖](unity-advanced/2-scriptable-objects) | 🌒 |
 | 3 | Events             | [🎞](unity-advanced/3-events-slides.html)             | [📖](unity-advanced/3-events)             | 🌒 |
-| 4 | Miscellaneous      | [🎞](unity-advanced/4-misc-slides.html)               | [📖](unity-advanced/4-misc)               | 🌒 |
-| 5 | Object Pooling     | [🎞](unity-advanced/5-object-pooling-slides.html)     | [📖](unity-advanced/5-object-pooling)     | 🌑 |
 
 ### Unity Cookbook
 
-|   |                    | Slides                                           | Page                                 |    |
-|---|--------------------|--------------------------------------------------|--------------------------------------|---:|
-| 1 |                    |                                                  |                                      |    |
-|   | 2D basics          | [🎞](unity-cookbook/2d-basics-slides.html)       | [📖](unity-cookbook/2d-basics)       | 🌔 |
-|   | Input handling     | [🎞](unity-cookbook/input-handling-slides.html)  | [📖](unity-cookbook/input-handling)  | 🌔 |
-|   | Transform          | [🎞](unity-cookbook/transform-slides.html)       | [📖](unity-cookbook/transform)       | 🌔 |
-|   | Collision          | [🎞](unity-cookbook/collision-slides.html)       | [📖](unity-cookbook/collision)       | 🌔 |
-|   | Physics            | [🎞](unity-cookbook/physics-slides.html)         | [📖](unity-cookbook/physics)         | 🌔 |
-|   | UI                 | [🎞](unity-cookbook/UI-slides.html)              | [📖](unity-cookbook/UI)              | 🌔 |
-|   | Audio              | [🎞](unity-cookbook/audio-slides.html)           | [📖](unity-cookbook/audio)           | 🌔 |
-| 2 |                    |                                                  |                                      |    |
-|   | Tilemaps           | [🎞](unity-cookbook/tilemaps-slides.html)        | [📖](unity-cookbook/tilemaps)        | 🌔 |
-|   | 2D animation       | [🎞](unity-cookbook/2d-animation-slides.html)    | [📖](unity-cookbook/2d-animation)    | 🌔 |
-|   | Pathfinding        | [🎞](unity-cookbook/pathfinding-slides.html)     | [📖](unity-cookbook/pathfinding)     | 🌔 |
-|   | Scenes             | [🎞](unity-cookbook/scenes-slides.html)          | [📖](unity-cookbook/scenes)          | 🌔 |
-| 3 |                    |                                                  |                                      |    |
-|   | Particle system    | [🎞](unity-cookbook/particle-system-slides.html) | [📖](unity-cookbook/particle-system) | 🌔 |
-|   | 3D animation       | [🎞](unity-cookbook/3d-animation-slides.html)    | [📖](unity-cookbook/3d-animation)    | 🌔 |
-|   | Saving and Loading | [🎞](unity-cookbook/saving-loading-slides.html)  | [📖](unity-cookbook/saving-loading)  | 🌒 |
-|   | Building           | [🎞](unity-cookbook/building-slides.html)        | [📖](unity-cookbook/building)        | 🌓 |
+|     |                        | Slides                                           | Page                                 |    |
+|-----|------------------------|--------------------------------------------------|--------------------------------------|---:|
+| I   |                        |                                                  |                                      |    |
+|     | 2D basics              | [🎞](unity-cookbook/2d-basics-slides.html)       | [📖](unity-cookbook/2d-basics)       | 🌔 |
+|     | Input handling         | [🎞](unity-cookbook/input-handling-slides.html)  | [📖](unity-cookbook/input-handling)  | 🌔 |
+|     | Transform              | [🎞](unity-cookbook/transform-slides.html)       | [📖](unity-cookbook/transform)       | 🌔 |
+|     | Collision              | [🎞](unity-cookbook/collision-slides.html)       | [📖](unity-cookbook/collision)       | 🌔 |
+|     | Physics                | [🎞](unity-cookbook/physics-slides.html)         | [📖](unity-cookbook/physics)         | 🌔 |
+|     | UI                     | [🎞](unity-cookbook/UI-slides.html)              | [📖](unity-cookbook/UI)              | 🌔 |
+|     | Audio                  | [🎞](unity-cookbook/audio-slides.html)           | [📖](unity-cookbook/audio)           | 🌔 |
+| II  |                        |                                                  |                                      |    |
+|     | Tilemaps               | [🎞](unity-cookbook/tilemaps-slides.html)        | [📖](unity-cookbook/tilemaps)        | 🌔 |
+|     | 2D animation           | [🎞](unity-cookbook/2d-animation-slides.html)    | [📖](unity-cookbook/2d-animation)    | 🌔 |
+|     | Pathfinding            | [🎞](unity-cookbook/pathfinding-slides.html)     | [📖](unity-cookbook/pathfinding)     | 🌔 |
+|     | Scenes                 | [🎞](unity-cookbook/scenes-slides.html)          | [📖](unity-cookbook/scenes)          | 🌔 |
+| III |                        |                                                  |                                      |    |
+|     | Particle system        | [🎞](unity-cookbook/particle-system-slides.html) | [📖](unity-cookbook/particle-system) | 🌔 |
+|     | 3D animation           | [🎞](unity-cookbook/3d-animation-slides.html)    | [📖](unity-cookbook/3d-animation)    | 🌔 |
+|     | Saving and loading     | [🎞](unity-cookbook/saving-loading-slides.html)  | [📖](unity-cookbook/saving-loading)  | 🌒 |
+|     | Building an executable | [🎞](unity-cookbook/building-slides.html)        | [📖](unity-cookbook/building)        | 🌓 |
 
 ## Tooltips
 

@@ -124,7 +124,6 @@ if(Time.time < bounceTimer)
 }
 ```
 
-
 ## Extra: Note about lerping on the fly
 <!-- _backgroundColor: #5d275d -->
 
@@ -139,8 +138,8 @@ if(Time.time < bounceTimer)
 * That being said, this is a very fast way to create a camera that follows the player a bit behind. If that's what you're after, you can use it
   * But remember: This isn't the way Lerp was meant to be used, so your mileage may wary. You're on your own now.
 
-
 ## Inverse lerp
+
 * [Script Reference: Inverse lerp](https://docs.unity3d.com/ScriptReference/Mathf.InverseLerp.html)
   * `Mathf.InverseLerp(a, b, x)`
   * Returns the answer to the inverse problem of Lerp:
@@ -163,6 +162,7 @@ if(Time.time < bounceTimer)
     }
     ```
   * If `input` has the value of `inputMin`, the function returns the value `outputMin`.
+
 ## Reading
 
 * [Learn: Linear interpolation](https://learn.unity.com/tutorial/linear-interpolation?uv=2019.3&courseId=5c61706dedbc2a324a9b022d&projectId=5c8920b4edbc2a113b6bc26a#5c8a48bdedbc2a001f47cef6)
