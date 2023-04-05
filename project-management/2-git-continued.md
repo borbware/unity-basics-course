@@ -92,7 +92,7 @@ paginate: true
 ## Exercise 1. Pushing onwards
 <!-- _backgroundColor: #29366f -->
 
-Continue the exercise from [Git Basics](1-git-basics.md) or create a new repository for these exercises.
+Continue the exercise from [Git Basics](1-git-basics) or create a new repository for these exercises.
 * Create a new branch (with a name `new-feature`, for instance) in your local repository.
 * Checkout the branch, make some changes to `GitTest.md` there, and push the changes to GitHub.
 * Then, merge the changes from your `new-feature` branch to `master` branch by using
@@ -199,7 +199,7 @@ Continue the exercise from [Git Basics](1-git-basics.md) or create a new reposit
 ## Exercise 3. Branching team effort
 <!-- _backgroundColor: #29366f -->
 * Work as a group for this assignment.
-* Continue Exercise 2 from [Git basics](1-git-basics.md).
+* Continue Exercise 2 from [Git basics](1-git-basics).
 * Every group member creates an individual branch from the master, and makes some changes to the `GitTest.md` file.
 * Add new files as well, at least one per group member.
 * Do not tell other group members what you're going to change! :D

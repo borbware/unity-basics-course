@@ -59,7 +59,7 @@ style: |
 
 ## `git add`
 
-* Uploading changes to GitHub from your local machine takes three steps (see [Basic Git workflow](1-git-basics.md#basic-git-workflow) from earlier) 
+* Uploading changes to GitHub from your local machine takes three steps (see [Basic Git workflow](1-git-basics#basic-git-workflow) from earlier) 
 * The first phase is ***staging*** with `git add`:
   * The command `git add readme.md` stages the file `readme.md`
   * After doing it, `git status` tells this:

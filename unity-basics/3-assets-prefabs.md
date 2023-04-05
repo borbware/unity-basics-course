@@ -23,7 +23,7 @@ paginate: true
 
 * [Old Manual: Creating and Using Materials](https://docs.unity3d.com/560/Documentation/Manual/Materials.html)
   * Materials are by default applied to the whole GameObject
-  * With [ProBuilder](../unity-cookbook/3dplatforming.md#probuilder), you can apply a material into individual parts of an object
+  * With [ProBuilder](../unity-cookbook/3dplatforming#probuilder), you can apply a material into individual parts of an object
 * There are two ways to apply a Texture to a property.
   * Drag it from the Project View on top of the Texture square
   * Click the Select button, and choose the texture from the drop-down list that appears

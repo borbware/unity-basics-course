@@ -34,7 +34,7 @@ paginate: true
 * Use the buttons (or their respective keyboard shortcuts) in the activity bar to display (and hide!) different views in the side bar
 1) Explorer (***CTRL+SHIFT+E***): Display project folder and ints contents
 2) Search (***CTRL+SHIFT+F***): Search your project
-3) Source control (***CTRL+SHIFT+G***): Use [Git](../project-management/1-git-basics.md) actions. See more here
+3) Source control (***CTRL+SHIFT+G***): Use [Git](../project-management/1-git-basics) actions. See more here
 4) Run and Debug: Debugging. Not in use in this course
 5) Extensions (***CTRL+SHIFT+X***): Install & manage extensions
 * Some extensions add icons that appear under these five. 

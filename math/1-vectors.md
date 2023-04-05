@@ -186,7 +186,7 @@ title: Math 1. Vectors
 
 ### Rotating a vector
 
-* In Unity, rotation is represented by [Quaternions](5-math-classes.md#quaternion) (fin. kvaternio, kvaterniot)
+* In Unity, rotation is represented by [Quaternions](5-math-classes#quaternion) (fin. kvaternio, kvaterniot)
 * To rotate a vector by a given angle, you can do a ***Quaternion rotation operation***:
   ```c#
   Vector3 rotatedVector = Quaternion.Euler(0, 0, 90) * originalVector;
@@ -196,7 +196,7 @@ title: Math 1. Vectors
   ```c#
   myQuaternion *= Quaternion.Euler(0, 0, 90);
   ```
-* ***Note:*** the Transform and Quaternion classes have many rotation methods available, see [Transform Class: Rotation](../unity-cookbook/transform.md#rotation)
+* ***Note:*** the Transform and Quaternion classes have many rotation methods available, see [Transform Class: Rotation](../unity-cookbook/transform#rotation)
 
 ## Dot product: Vector's alignment with another vector
 <!-- _backgroundColor: #5d275d -->

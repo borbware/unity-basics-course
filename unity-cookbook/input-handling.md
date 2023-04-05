@@ -22,11 +22,12 @@ math: mathjax
 ## The two ways: Input system
 
 * The new [Input System]((https://docs.unity3d.com/Packages/com.unity.inputsystem@1.3/manual/index.html))
-  * Read more [on these slides](input-system.md)
+  * Read more [on these slides](input-system)
   * Needs to be installed as a separate package
+  * Needs more work to get it running than Input Manager
   * Uses XInput
   * "action-based"
-  * Won't be covered yet!
+  * We'll stick to the legacy input manager for now...
 
 ---
 
@@ -62,7 +63,7 @@ math: mathjax
 
 ### Input table
 
-* *Edit > Project Settings > Input*
+* *Edit > Project Settings > Input Manager*
 * You can change the names, and the buttons that correspond to the names
   * "Fire1" could be changed to "Crouch", for instance! 
 * *Positive button* refers to a button being pressed

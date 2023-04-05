@@ -88,4 +88,4 @@ paginate: true
   * Click the *Open preview to the side* button
 
     ![](imgs/vscode-marp-preview.png)
-* GitLens & Git Graph (See [Git basics](../project-management/1-git-basics.md))
+* GitLens & Git Graph (See [Git basics](../project-management/1-git-basics))

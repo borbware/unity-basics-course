@@ -47,11 +47,11 @@ paginate: true
 ## Collision & Physics components
 
 * Colliders
-  * See: [Collision](collision.md)
+  * See: [Collision](collision)
   * Remember to use the 2D versions of colliders:
     * PolygonCollider **2D**, CircleCollider **2D**, ...
 * RigidBody 2D
-  * See: [Physics](physics.md)
+  * See: [Physics](physics)
 * Effectors
   * [Manual: Effectors 2D](https://docs.unity3d.com/Manual/Effectors2D.html)
 

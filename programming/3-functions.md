@@ -65,7 +65,7 @@ title: Programming 3. Functions
 ## Note about functions
 
 * Because C# is object-oriented, all functions are *methods* inside *classes*
-* We'll dive deeper into these topics in [Chapter 6. Classes and Methods](6-classes-methods.md)
+* We'll dive deeper into these topics in [Chapter 6. Classes and Methods](6-classes-methods)
 
 ## Setter methods
 
@@ -79,7 +79,7 @@ title: Programming 3. Functions
   }
   ``` 
 * If we change variable value with a setter method like this, we can easily track the changes by adding a `Debug.Log` call inside the method.
-<!-- _footer: Not to be confused with actual [property setters](6-classes-methods.md#extra-properties-with-getters--setters). -->
+<!-- _footer: Not to be confused with actual [property setters](6-classes-methods#extra-properties-with-getters--setters). -->
 
 ## Exercise 1: Traffic lights
 <!-- _backgroundColor: #29366f -->

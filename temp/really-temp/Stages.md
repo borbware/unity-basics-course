@@ -1,10 +1,10 @@
-# [Stage 1](Stage1.md)
+# [Stage 1](Stage1)
 
 Painopiste: Teoriaopetus, perusteet haltuun.
 
 Unityn perusteet, C#:n perusteet, ohjelmointiharjoitukset, viikottaiset harjoitusprojektit
 
-# [Stage 2](Stage2.md)
+# [Stage 2](Stage2)
 
 Painopiste: Käytäntöön nojaava teoriaopetus ja projektityöskentely.
 

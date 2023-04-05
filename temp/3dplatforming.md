@@ -3,7 +3,7 @@
 * Basic Camera
   * [Stack Overflow: Keep the player centered on screen](https://stackoverflow.com/questions/45493793/unity-keep-the-player-centered-on-the-screen)
 * Cinemachine camera
-  * See: [Cinemachine](packages.md#Cinemachine)
+  * See: [Cinemachine](packages#Cinemachine)
 * Class
   * [Manual: Character Controller class](https://docs.unity3d.com/Manual/class-CharacterController.html)
   * [Script reference: Character Controller](https://docs.unity3d.com/ScriptReference/CharacterController.html)

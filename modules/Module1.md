@@ -35,8 +35,8 @@ title: Module 1
 
 * Introduction
 * Setup
-* Unity basics 0: [What is Unity?](unity-basics/0-what-is-unity.md)
-* Unity basics 1: [The Unity Interface](unity-basics/1-the-unity-interface.md)
+* Unity basics 0: [What is Unity?](unity-basics/0-what-is-unity)
+* Unity basics 1: [The Unity Interface](unity-basics/1-the-unity-interface)
 * Working on exercises & Module project
 
 ## Applications
@@ -45,7 +45,7 @@ title: Module 1
 * Download [Unity Hub](https://unity3d.com/get-unity/download)
   * Install the latest Unity LTS (long term support) version 2021.3.21f1
 * Install [Visual Studio Code](https://code.visualstudio.com/), aka VS code
-  * See Tooltips: [Unity and VS Code](tooltips/vscode-setup.md)
+  * See Tooltips: [Unity and VS Code](tooltips/vscode-setup)
 * Install [Discord](https://discord.com/)
   * (The video calls don't work well with the browser version!)
 
@@ -125,7 +125,7 @@ Make the clock hands move when time goes on.
 # Day 5: Git
 
 <!-- * Morning
-  * [Project management 1: Git Basics](project-management/1-git-basics.md)
+  * [Project management 1: Git Basics](project-management/1-git-basics)
 * Afternoon
   * Working on the Module project
   * One-on-one meetings -->

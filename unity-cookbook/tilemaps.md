@@ -18,7 +18,7 @@ paginate: true
 ### Creating a tilemap 
 
 * [Manual: Tilemap workflow](https://docs.unity3d.com/Manual/Tilemap-workflow.html)
-* To create a new tilemap, import a tilemap sprite (See: [2D basics: Sprite renderer component](2d-basics.md#sprite-renderer-component))
+* To create a new tilemap, import a tilemap sprite (See: [2D basics: Sprite renderer component](2d-basics#sprite-renderer-component))
   * Set *Sprite mode* to *Multiple*
   * Then, open Sprite Editor in the Sprite asset Inspector
   * Slice Grid by cell size

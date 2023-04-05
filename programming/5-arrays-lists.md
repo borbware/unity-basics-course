@@ -234,7 +234,7 @@ for(int i = 0; i < starters.Count; i++)
         });
     ```
 
-<!-- _footer: "[See more about value vs reference types in Chapter 3](6-classes-methods.md#reference-type-vs-value-type)" -->
+<!-- _footer: "[See more about value vs reference types in Chapter 3](6-classes-methods#reference-type-vs-value-type)" -->
 ## Exercise 2. Looping through
 <!-- _backgroundColor: #29366f -->
 Loop through the starters array, and print the starter and its number like this:
@@ -257,7 +257,7 @@ Also, create a function `newCoordinate(x, y)` that can be used to add new coordi
 ## Exercise 4. List of lights
 <!-- _backgroundColor: #29366f -->
 
-Continue exercise 1 from [Scripting gameobjects](../unity-basics/4-scripting-gameobjects.md).
+Continue exercise 1 from [Scripting gameobjects](../unity-basics/4-scripting-gameobjects).
 
 Instead of three lights, have nine lights, each with a tag "Light" (preferably as a prefab).
 

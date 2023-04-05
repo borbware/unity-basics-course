@@ -28,7 +28,7 @@ paginate: true
   * e.g., `DoStuffThatWeWant()`
 * We can also add new ***fields***: variables inside the class
 
-<!-- _footer: "[More about classes later in Programming 3: Classes and Methods](../programming/6-classes-methods.md)"-->
+<!-- _footer: "[More about classes later in Programming 3: Classes and Methods](../programming/6-classes-methods)"-->
 
 ## Start and update
 

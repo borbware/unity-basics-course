@@ -80,7 +80,7 @@ paginate: true
 
 ### Animator Controller
 
-* Here's how to control the animations with an Animator Controller (see [2d animation](2d-animation.md#animator-controller) for more info)
+* Here's how to control the animations with an Animator Controller (see [2d animation](2d-animation#animator-controller) for more info)
 * Create a new Animator Controller for the character
   * Drag and drop the controller to the character's *Animator* component
 * Add parameters to control the animations with (`speed`, `isCrouching`, etc...)

@@ -101,4 +101,4 @@ math: mathjax
   * [Manual: Scripting](https://docs.unity3d.com/Manual/ScriptingSection.html)
   * The most versatile component
   * For inserting custom C# code into the GameObject
-  * We'll dive deeper into this in [4. Scripting GameObjects](4-scripting-gameobjects.md)
+  * We'll dive deeper into this in [4. Scripting GameObjects](4-scripting-gameobjects)

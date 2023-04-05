@@ -43,7 +43,7 @@ title: Game Design
 
 ## Playcentric Design Process
 
-* As we remember from [Playtesting](playtesting.md#playtesting-as-part-of-design), it helps to put ***player experience*** first
+* As we remember from [Playtesting](playtesting#playtesting-as-part-of-design), it helps to put ***player experience*** first
 * Set goals for player experience:
   * "How should the player feel during this sequence?"
   * ***Note:*** For player exp goals, we don't specify *how* features are implemented

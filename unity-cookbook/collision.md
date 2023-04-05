@@ -55,7 +55,7 @@ math: mathjax
 
 <!-- _backgroundColor: #29366f -->
 
-Continue with the Player character from the [Input exercise](input-handling.md#exercise-1-player-input).
+Continue with the Player character from the [Input exercise](input-handling#exercise-1-player-input).
 
 Add multiple collectible GameObjects to the scene.
 

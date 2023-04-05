@@ -12,7 +12,7 @@ title: Publishing on Itch.io
 
 ## Building an executable
 
-1) Create a build in Unity into the ***Builds*** folder and check that it runs (See [Building](../unity-cookbook/building.md)).
+1) Create a build in Unity into the ***Builds*** folder and check that it runs (See [Building](../unity-cookbook/building)).
 2) Zip the contents of the Builds folder into a zip archive. (Right click > Send to > Compressed (zipped) folder)
 
 ## Uploading to itch.io

@@ -12,7 +12,7 @@ paginate: true
 * To create a ***native build*** (if you're on Windows, it's a Windows build):
 * Go to *File > Build Settings*
   * See that Platform is *Windows, Mac, Linux* and Architecture is *Intel 64-bit* 
-  * Add all scenes to your build settings (see [Scenes](scenes.md#building-a-game-with-multiple-scenes))
+  * Add all scenes to your build settings (see [Scenes](scenes#building-a-game-with-multiple-scenes))
     * If you only have one scene, you can just click on *Add Open Scenes*
     * If you have more, you can drag-and-drop them to the *Scenes In Build* listing
   * Click ***Build***
@@ -30,7 +30,7 @@ paginate: true
 * Shown resolution is set in the Game view. Click *Free Aspect* and change the aspect ratio to your liking
 * The exported resolution is set in *Project settings > Player > Resolution and Presentation*
   * Untick *Default Is Native Resolution* to set resolution manually
-* If you have *Canvas* GameObjects (for [UI](UI.md)), set the *Reference Resolution* in the *Canvas Scaler* component to match the target resolution
+* If you have *Canvas* GameObjects (for [UI](UI)), set the *Reference Resolution* in the *Canvas Scaler* component to match the target resolution
 
 ## Web build
 

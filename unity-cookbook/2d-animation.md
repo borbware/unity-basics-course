@@ -24,7 +24,7 @@ paginate: true
 
 ## Sprite-based animation
 
-* For sprite basics, see: [2d Basics: Sprite renderer component](2d-basics.md#sprite-renderer-component)
+* For sprite basics, see: [2d Basics: Sprite renderer component](2d-basics#sprite-renderer-component)
 * Sprite animation can be created with multiple individual png files, or one sprite sheet with multiple animation ***cels***
 * [Brackeys video: 2D animation](https://www.youtube.com/watch?v=hkaysu1Z-N8)
 ### Creating a new animation

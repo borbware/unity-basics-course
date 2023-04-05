@@ -117,7 +117,7 @@ math: mathjax
 
 ## Extra: Raycasting
 <!-- _backgroundColor: #5d275d -->
-* See [2D basics](2d-basics.md#extra-two-ways-for-2d-shooting)
+* See [2D basics](2d-basics#extra-two-ways-for-2d-shooting)
 
 ## Links
 

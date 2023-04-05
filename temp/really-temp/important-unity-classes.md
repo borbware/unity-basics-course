@@ -3,17 +3,17 @@
 
 ## GameObject
 
-See: [GameObject](unity-basics/4-scripting-gameobjects.md#gameobject)
+See: [GameObject](unity-basics/4-scripting-gameobjects#gameobject)
 
 ## Transform
 
-See: [Transform](unity-basics/4-scripting-gameobjects.md#transform)
+See: [Transform](unity-basics/4-scripting-gameobjects#transform)
 
 ## Mathf, Random, Debug
 
-See: [Math: Mathf, Random, Debug](math/5-math-classes.md#mathf-random-debug)
+See: [Math: Mathf, Random, Debug](math/5-math-classes#mathf-random-debug)
 
 ## Vector3 & Vector2
 
-See: [Math: Vector3 & Vector2](math/5-math-classes.md#vector3--vector2)
+See: [Math: Vector3 & Vector2](math/5-math-classes#vector3--vector2)
 

@@ -56,7 +56,7 @@ Force vectors can be added together to acquire the total force:
 * in Unity, forces are applied by the Physics engine
   * if you want more control, you can also create your own code for e.g., simulating planets in a star system
 
-* See: [Physics](../unity-cookbook/physics.md)
+* See: [Physics](../unity-cookbook/physics)
 
 ## Exercise 1. Forces
 <!-- _backgroundColor: #29366f -->

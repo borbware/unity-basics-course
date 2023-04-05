@@ -13,10 +13,10 @@ paginate: true
 * Constraints
 * **Programming 3: Classes and methods**
 * Programming 4: Special types
-* **[Math 3: Interpolation](math/3-interpolation.md)**
-* [Building](unity-cookbook/building.md)
+* **[Math 3: Interpolation](math/3-interpolation)**
+* [Building](unity-cookbook/building)
 * Game design
-* [Game programming patterns](programming/5-game-programming-patterns.md)
+* [Game programming patterns](programming/5-game-programming-patterns)
 
 ---
 

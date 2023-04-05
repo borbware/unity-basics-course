@@ -29,4 +29,4 @@
 
 ## Extra stuff
 
-* [Explorer settings](tooltips/using-file-explorer.md)
+* [Explorer settings](tooltips/using-file-explorer)

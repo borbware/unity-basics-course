@@ -205,7 +205,7 @@ void Greet()
 ## Strings
 
 * String is a variable containing block of text
-  * (Actually, a special type of variable containing an [*array*](2-lists-loops.md) of characters)
+  * (Actually, a special type of variable containing an [*array*](2-lists-loops) of characters)
 
   ```c#
   string name = "Matti Teppo";
