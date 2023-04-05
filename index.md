@@ -8,6 +8,11 @@ The course is divided into three stages, with the stages divided into modules. M
 
 The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the corresponding chapter is!
 
+## Links to Game Dev Academy 2023 example repositories
+
+* [Game Dev Academy 2023 examples](https://github.com/borbware/GameDevAcademy2023)
+* [Module 1 example solution (Clock)](https://github.com/borbware/CatlikeClock)
+* [Course materials (this site)](https://github.com/borbware/unity-basics-course)
 
 
 # Stages
