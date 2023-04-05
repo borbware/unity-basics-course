@@ -1,6 +1,7 @@
 ---
 marp: true
 paginate: true
+math: mathjax
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
@@ -8,6 +9,7 @@ paginate: true
 # Input handling
 
 ## The two ways: Input Manager
+
 * [Manual: Input](https://docs.unity3d.com/Manual/Input.html)
 * There are two ways to get input in Unity
 * The legacy [Input Manager](https://docs.unity3d.com/Manual/class-InputManager.html)
@@ -18,12 +20,21 @@ paginate: true
   * easier to setup -> this is the one we'll be using
 
 ## The two ways: Input system
+
 * The new [Input System]((https://docs.unity3d.com/Packages/com.unity.inputsystem@1.3/manual/index.html))
   * Read more [on these slides](input-system.md)
-  * This needs to be installed as a separate package
-  * action-based
-  * uses XInput
-  * won't be covered on this course
+  * Needs to be installed as a separate package
+  * Uses XInput
+  * "action-based"
+  * Won't be covered yet!
+
+---
+
+![](imgs/input-visualized.png)
+
+* Here's a button press event visualized across multiple frames.
+* The colored boxes show which are the frames when the corresponding function returns `true`.
+
 ## Keyboard input
 
 * uses [Keycodes](https://docs.unity3d.com/ScriptReference/KeyCode.html)
@@ -89,8 +100,8 @@ Create a top-down player character with a sprite renderer that can
 * change color with the ***Fire1*** button
 * move with the analog stick
 
-
 ## Extra: Mouse input
+
 <!-- backgroundColor: #5d275d -->
 * [`Input.GetMouseButton(0)`](https://docs.unity3d.com/ScriptReference/Input.GetMouseButton.html)
   * Down & Up methods work similarly to previous examples as well
@@ -103,7 +114,6 @@ Create a top-down player character with a sprite renderer that can
       // do stuff
   }
   ```
-
 
 ### Mouse input example
 
@@ -125,7 +135,9 @@ Create a top-down player character with a sprite renderer that can
         }
     }
 ```
+
 ## Extra: Touch input
+
 * [Script Reference: Input.GetTouch](https://docs.unity3d.com/ScriptReference/Input.GetTouch.html)
 * [Script Reference: Input.touches](https://docs.unity3d.com/ScriptReference/Input-touches.html)
 * [Script Reference: Camera.ScreenToWorldPoint](https://docs.unity3d.com/ScriptReference/Camera.ScreenToWorldPoint.html)
@@ -150,7 +162,7 @@ Create a top-down player character with a sprite renderer that can
 ## Extra: Multiplayer input
 
 * With the input table, you can assign the joystick index for every input with *Joy Num*
-  * -> For multiplayer games, you need to create new entries for other players
+  * $\Rightarrow$ For multiplayer games, you need to create new entries for other players
   * ***ALSO:*** you need to set the positive button to "joystick **2** button 0" etc
 * The new Input System handles this a bit more elegantly, see this tutorial:
   * [Madwomb: Unity Local Multi-player](http://madwomb.com/tutorials/GameDesign_UnityLocalMultiplayer.html)
