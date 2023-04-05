@@ -70,7 +70,8 @@ paginate: true
    * Set ***Texture type*** to *Sprite (2D and UI)*
    * ***Pixels per unit*** value tells how big the sprite should be on screen
    * If you're using pixelart, you need to take some more things into consideration
-     * See: [Pixelart in Unity](2d-animation.md#pixelart-in-unity)
+     * See: [Pixelart in Unity](2d-animation#pixelart-in-unity)
+   * Click ***Apply***
 4) Drag it from the Project window into the Sprite field in the Sprite Renderer component
 
 ## Other renderer components

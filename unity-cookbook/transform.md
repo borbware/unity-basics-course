@@ -16,9 +16,8 @@ paginate: true
   * fields are either ***global*** or ***local***: e.g., `position` vs `localPosition`
   * local coordinates are with respect to the GameObject's ***parent***
 
-
-
 ### Translation
+
 * Translation (movement) methods
   * [`transform.Translate(Vector3 displacement)`](https://docs.unity3d.com/ScriptReference/Transform.Translate.html)
     ```c#
@@ -32,6 +31,7 @@ paginate: true
 * Translation fields (Vector3)
   * `transform.position`
   * `transform.localPosition`
+
 ### Rotation
 
 * [Manual: Rotation and orientation in Unity](https://docs.unity3d.com/Manual/QuaternionAndEulerRotationsInUnity.html)
@@ -40,6 +40,7 @@ paginate: true
   * [`transform.LookAt(Transform target)`](https://docs.unity3d.com/ScriptReference/Transform.LookAt.html)
   * [`transform.Rotate`](https://docs.unity3d.com/ScriptReference/Transform.Rotate.html)
     * multiple variants available
+
     ```c#
     if(Input.GetKey(KeyCode.LeftArrow))
       transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
@@ -93,6 +94,7 @@ Make a child GameObject rotate around its parent.
   * If you need to manipulate position vectors: [Vector3.RotateTowards](https://docs.unity3d.com/ScriptReference/Vector3.RotateTowards.html)
   * If you need to manipulate rotation quaternions: [Quaternion.RotateTowards](https://docs.unity3d.com/ScriptReference/Quaternion.RotateTowards.html)
 <!-- _footer: "https://forum.unity.com/threads/look-rotation-2d-equivalent.611044/" -->
+
 ### Extra: Look towards a point, 2D
 
 * The methods described in the previous slide do not (directly) work in 2D

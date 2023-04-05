@@ -21,7 +21,7 @@
 title: Unity basics course
 email: borbware@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Lecture slides for a game development basics course with Unity.
+  Lecture slides for a game development basics course with Unity. Originally created for Buutti Game Dev Academy in 2022-2023.
 baseurl: "/unity-basics-course" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: borbware
