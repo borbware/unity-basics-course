@@ -10,7 +10,8 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 
 ## Links to Game Dev Academy 2023 example repositories
 
-* [Game Dev Academy 2023 examples](https://github.com/borbware/GameDevAcademy2023)
+* [Game Dev Academy 2023 3D examples](https://github.com/borbware/GameDevAcademy2023)
+* [Game Dev Academy 2023 2D examples](https://github.com/borbware/GameDevAcademy2023-2D)
 * [Module 1 example solution (Clock)](https://github.com/borbware/CatlikeClock)
 * [Course materials (this site)](https://github.com/borbware/unity-basics-course)
 
