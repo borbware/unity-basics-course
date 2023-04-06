@@ -11,7 +11,7 @@ paginate: true
 ## 1. Installation & Setup
 
 1) Install the Input System package to your project
-     * Set the option *Project Settings > Other settings > Configuration > Active Input Handling: Both*
+     * Set the option *Project Settings > Player > Other settings > Configuration > Active Input Handling: Both*
     * This enables both the new Input System and the old Input Manager.
 2) Create a new Input action asset (a `.inputactions` file) in *Create > Input Actions*.
 
@@ -80,3 +80,4 @@ This is how an input action asset looks like in Unity.
 ## Reading
 
 * [Video: How to use NEW Input System Package](https://www.youtube.com/watch?v=Yjee_e4fICc)
+* [Madwomb: Unity Local Multi-player](http://madwomb.com/tutorials/GameDesign_UnityLocalMultiplayer.html)

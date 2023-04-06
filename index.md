@@ -92,6 +92,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | III |                        |                                                  |                                      |    |
 |     | Particle system        | [🎞](unity-cookbook/particle-system-slides.html) | [📖](unity-cookbook/particle-system) | 🌔 |
 |     | 3D animation           | [🎞](unity-cookbook/3d-animation-slides.html)    | [📖](unity-cookbook/3d-animation)    | 🌔 |
+|     | Input system           | [🎞](unity-cookbook/input-system-slides.html)    | [📖](unity-cookbook/input-system)    | 🌔 |
 |     | Saving and loading     | [🎞](unity-cookbook/saving-loading-slides.html)  | [📖](unity-cookbook/saving-loading)  | 🌒 |
 |     | Building an executable | [🎞](unity-cookbook/building-slides.html)        | [📖](unity-cookbook/building)        | 🌓 |
 

@@ -13,14 +13,14 @@ paginate: true
 * [Manual: Transform](https://docs.unity3d.com/Manual/class-Transform.html)
 * [Important classes: Transform](https://docs.unity3d.com/Manual/ScriptingTransform.html)
 * The GameObject's ***position***, ***rotation*** and ***scale*** can be manipulated via its ***Transform*** component
-  * either by using the included methods, or by directly manipulating fields
-  * fields are either ***global*** or ***local***: e.g., `position` vs `localPosition`
-  * local coordinates are with respect to the GameObject's ***parent***
+  * either by using the included methods, or by directly manipulating properties
+  * Properties are either ***global*** or ***local***: e.g., `position` vs `localPosition`
+  * Local coordinates are with respect to the GameObject's ***parent***
 
 ### Translation
 
-* Translation (movement) methods
-  * [`transform.Translate(Vector3 displacement)`](https://docs.unity3d.com/ScriptReference/Transform.Translate.html)
+* Translation (movement) methods:
+  * [`transform.Translate()`](https://docs.unity3d.com/ScriptReference/Transform.Translate.html)
     ```c#
     float moveSpeed = 3.0f;
     if(Input.GetKey(KeyCode.UpArrow))
@@ -29,17 +29,18 @@ paginate: true
     if(Input.GetKey(KeyCode.DownArrow))
       transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);
     ```
-* Translation fields (Vector3)
+  * ***Note:*** Translating happens by default according to GameObject's local coordinate system
+* Translation properties:
   * `transform.position`
   * `transform.localPosition`
 
 ### Rotation
 
 * [Manual: Rotation and orientation in Unity](https://docs.unity3d.com/Manual/QuaternionAndEulerRotationsInUnity.html)
-* Rotation methods
-  * [`transform.RotateAround(Vector3 pivot)`](https://docs.unity3d.com/ScriptReference/Transform.RotateAround.html)
-  * [`transform.LookAt(Transform target)`](https://docs.unity3d.com/ScriptReference/Transform.LookAt.html)
-  * [`transform.Rotate`](https://docs.unity3d.com/ScriptReference/Transform.Rotate.html)
+* Rotation methods:
+  * [`transform.RotateAround()`](https://docs.unity3d.com/ScriptReference/Transform.RotateAround.html)
+  * [`transform.LookAt()`](https://docs.unity3d.com/ScriptReference/Transform.LookAt.html)
+  * [`transform.Rotate()`](https://docs.unity3d.com/ScriptReference/Transform.Rotate.html)
     * multiple variants available
 
     ```c#
@@ -52,7 +53,7 @@ paginate: true
 
 ---
 
-* Rotation fields
+* Rotation properties:
   * `transform.rotation`, global rotation as a Quaternion
   * `transform.localRotation`, local rotation as a Quaternion
   * `transform.eulerAngles`, global rotation as Euler angles (Vector3)
@@ -60,17 +61,19 @@ paginate: true
 
 ### Scale
 
-* `transform.localScale`
-  * [Script Reference: localScale](https://docs.unity3d.com/ScriptReference/Transform-localScale.html)
-* `transform.lossyScale`
-  * Read-only!
-  * [Script Reference: lossyScale](https://docs.unity3d.com/ScriptReference/Transform-lossyScale.html)
+* There are no methods for changing scale.
+* Scale properties:
+  * `transform.localScale`
+    * [Script Reference: localScale](https://docs.unity3d.com/ScriptReference/Transform-localScale.html)
+  * `transform.lossyScale`
+    * Read-only!
+    * [Script Reference: lossyScale](https://docs.unity3d.com/ScriptReference/Transform-lossyScale.html)
 
 ## Local axes
 
 * `transform.up`, `transform.right` and `transform.forward` refer to the ***local axes*** of the GameObject: green, red and blue, respectively
   * Global versions are `Vector3.up`, `Vector3.right` and `Vector3.forward` 
-* you can use them to e.g., rotate the GameObject around these axes:
+* You can use them to e.g., rotate the GameObject around these axes:
     ```c#
     if (Input.GetKey(KeyCode.LeftAlt))
         transform.RotateAround(
