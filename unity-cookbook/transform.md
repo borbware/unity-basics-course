@@ -89,7 +89,7 @@ paginate: true
 Make a child GameObject rotate around its parent.
 
 ### Extra: Look towards a point, 3D
-<!-- backgroundColor: #5d275d -->
+<!-- _backgroundColor: #5d275d -->
 
 * To ***instantly*** rotate a Transform so that it points to a given direction, you can use the previously mentioned Transform.LookAt
   * If you want to rotate a vector (not necessarily a transform!), use [Quaternion.LookRotation](https://docs.unity3d.com/ScriptReference/Quaternion.LookRotation.html) 
@@ -100,6 +100,7 @@ Make a child GameObject rotate around its parent.
 <!-- _footer: "https://forum.unity.com/threads/look-rotation-2d-equivalent.611044/" -->
 
 ### Extra: Look towards a point, 2D
+<!-- _backgroundColor: #5d275d -->
 
 * The methods described in the previous slide do not (directly) work in 2D
 * Even `transform.LookAt(Transform target)` does not work, because it aligns the `transform.forward` axis towards the target, which is the local `z` axis - the one that points UP in 2D games!
