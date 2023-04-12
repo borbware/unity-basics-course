@@ -9,6 +9,7 @@ paginate: true
 # Delegates and events
 
 ## Delegates
+
 * Delegate: a container for a function that can be passed around or used like a variable
   * [C# Docs: Introduction to delegates and events in C#](https://docs.microsoft.com/en-us/dotnet/csharp/delegates-overview)
 * variables only contain data, but delegates can contain functions
@@ -20,7 +21,9 @@ paginate: true
     ```
 
 ### Delegate example: change between two active attacks
+
 <!-- _footer: 'https://gamedevbeginner.com/events-and-delegates-in-unity/>' -->
+
 ```c#
 public class DelegateExample : MonoBehaviour
 {
@@ -51,6 +54,7 @@ public class DelegateExample : MonoBehaviour
     }
 }
 ```
+
 ## Multicasting
 
 * multicasting with +=
@@ -168,6 +172,7 @@ public class PlayerHealth : MonoBehaviour
 ```
 
 ### UnityEvents with parameters
+
 ```c#
 using UnityEngine.Events;
 using System;
@@ -175,7 +180,9 @@ using System;
 [Serializable]
 public class FloatEvent : UnityEvent <float> { }
 ```
+
 ### UnityEvents Example
+
 ```c#
 using UnityEngine;
 using UnityEngine.Events;

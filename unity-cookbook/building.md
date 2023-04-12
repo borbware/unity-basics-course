@@ -18,13 +18,12 @@ paginate: true
     * If you have more, you can drag-and-drop them to the *Scenes In Build* listing
   * Click ***Build***
     * Create a `/Builds/` folder and select it
-## Other platforms
 
+## Other platforms
 
 * To build for other platforms, you need to install the dedicated modules for them in the Unity Hub
 
 ![](imgs/addmodules.png)
-
 
 ## Target resolution
 
@@ -75,7 +74,8 @@ paginate: true
 * [Building for Android](https://docs.unity3d.com/Manual/android-BuildProcess.html)
 * [Android environment setup](https://docs.unity3d.com/Manual/android-sdksetup.html)
 
-### To run the build on your Android phone:
+### Running the build on your Android phone
+
 * Enable Developer options to your phone
   * Go to *Settings > About Phone* > Tap *Build number* many times
 * Enable USB Debugging

@@ -70,6 +70,7 @@ void Update () {
           Instantiate(target, new Vector3(0, 2, 0), Quaternion.identity);
       }
   ```
+
 ## InvokeRepeating
 
 * [Script Reference: InvokeRepeating](https://docs.unity3d.com/ScriptReference/MonoBehaviour.InvokeRepeating.html)

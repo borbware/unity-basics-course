@@ -19,6 +19,7 @@ title: Tools for gamedev
 * free options: ***Krita***, [Gimp](https://www.gimp.org/), [Paint.net](https://www.getpaint.net/)
 
 ## 2D graphics: Pixel art
+
 * [Aseprite](https://www.aseprite.org/)
   * Versatile pixel editor with animation and tilemapping tools
   * $20 (or free if you build it from source)
@@ -37,6 +38,7 @@ title: Tools for gamedev
   * a free tool for generating sound effects
 * Extra: [Ableton Tone Generator](https://twitter.com/gruber_music/status/1496108012959846406)
   * ($1 Patreon tier + Ableton Live)
+
 ## Music
 
 * There isn't an easy free recommendation really (LMMS sucks)
@@ -51,6 +53,7 @@ title: Tools for gamedev
   * Unfortunately they're all pretty heavy to get into
   * i've used [FL Studio](https://www.image-line.com/) previously, nowadays [Ableton](https://www.ableton.com/en/)
   * for tracker people: [ReNoise](https://www.renoise.com/)
+
 ## Levels, 2D
 
 * Unity's own tilemap editor
@@ -60,6 +63,7 @@ title: Tools for gamedev
     * [SuperTiled2Unity](https://seanba.itch.io/supertiled2unity)
 
 ## Levels, 3D
+
 * [ProBuilder](https://unity.com/features/probuilder)
   * a package for Unity for grayboxing 3d levels
   * [More about ProBuilder in 3d platforming slides](../unity-cookbook/3dplatforming#probuilder)
@@ -102,8 +106,10 @@ title: Tools for gamedev
   * an open source ASCII art and animation program
 
 ## Other tools...
+
 * [Microsoft PowerToys](https://github.com/microsoft/PowerToys)
   * Has a color picker! 
+
 ## Game engines
 
 * sometimes Unity isn't the best option!
@@ -111,6 +117,7 @@ title: Tools for gamedev
   * these aren't undisputable facts, I made up all these types lol
 
 ### Type 1: All-purpose Engine
+
   * Unity, Unreal, Godot, GameMaker Studio
   * 3D or 2D
   * drag-and-drop GUI
@@ -118,7 +125,9 @@ title: Tools for gamedev
     * you won't be programming the main loop, but attaching your scripts on top of existing structures
   * suited for games big and small
   * jack of all trades, master of none
+
 ### Type 2: Framework
+
   * Love2D, Monogame, Pygame
   * Especially suited for 2D
   * no engine application window: almost everything happens in a text editor
@@ -128,7 +137,9 @@ title: Tools for gamedev
     * want to have a tighter control on what's happening under the hood
     * want to build their own structures
     * think all-purpose engines tend to get in their way 
+
 ### Type 3: Specialized Engine
+
   * Renpy, RPGMaker, Adventure Game Studio, Twine...
   * A tool for making a specific kind of game
   * can involve code or its own scripting/description language

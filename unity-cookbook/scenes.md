@@ -53,6 +53,7 @@ paginate: true
   * [Script Reference: SceneManager.UnloadSceneAsync](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.UnloadSceneAsync.html)
 
 ## Data persistence between scenes
+
 * [Learn: Data persistence between scenes](https://learn.unity.com/tutorial/implement-data-persistence-between-scenes?pathwayId=5f7e17e1edbc2a5ec21a20af#)
 * By default, no values persist when moving from a scene to another
 * You can change this by adding a [DontDestroyOnLoad](https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html) method call
@@ -65,6 +66,7 @@ paginate: true
   * Note: this only works for root GameObjects
 
 ## Creating a data manager
+
 <!-- GameManager -->
 * We can create a data manager for bookkeeping score etc.
 * We create a `static` variable that refers to it (here named `instance`)
@@ -84,6 +86,7 @@ paginate: true
     ```c#
     ScoreManager.instance.AddScore(1);
     ```
+
 ### Prevent other instances of data manager from appearing
 
 * To make sure you only have one ScoreManager at all times, add these lines to the top of your ScoreManager's `Awake` method.

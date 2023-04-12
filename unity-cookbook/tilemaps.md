@@ -62,6 +62,7 @@ paginate: true
   * It's in the Unity Package Manager as a Preview package
   * Cogwheel > Advanced Project Settings > Enable Preview Packages
   * Packages dropdown: Unity Registry
+
 ## 2D extras: Autotiling
 
 * ***Autotiling*** is a technique for creating 2d levels faster with ***Rule tiles***

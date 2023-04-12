@@ -17,7 +17,6 @@ title: Programming 8. Game programming patterns
 gameObject.SendMessage("HitByLightning", SendMessageOptions.DontRequireReceiver);
 ```
 
-
 ## Singleton pattern
 
 [Game programming patterns: Singleton](https://gameprogrammingpatterns.com/singleton.html)
@@ -40,11 +39,9 @@ void Awake ()
 }
 ```
 
-
 ```c#
 ScoreManager.instance.AddScore(1);
 ```
-
 
 <!-- _footer: "Thanks to Zhamul for this code" -->
 ## State pattern

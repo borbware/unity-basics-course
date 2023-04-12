@@ -66,22 +66,23 @@ namespace MyAwesomeProgram
   2) comment out actual code for testing and debugging
 
 ## The most important variable types
-  * `bool`: truth value (true / false)
-    ```c#
-    bool booleanValue = true;
-    ```
-  * `int`: whole number
-    ```c#
-    int wholeNumberValue = 3;
-    ```
-  * `double` & `float`: decimal number (double = double precision)
-    ```c#
-    float numberValue = 3.0f;
-    ```
-  * `string`: text field
-    ```c#
-    string text = "text is here";
-    ```
+
+* `bool`: truth value (true / false)
+ ```c#
+ bool booleanValue = true;
+ ```
+* `int`: whole number
+ ```c#
+ int wholeNumberValue = 3;
+ ```
+* `double` & `float`: decimal number (double = double precision)
+ ```c#
+ float numberValue = 3.0f;
+ ```
+* `string`: text field
+ ```c#
+ string text = "text is here";
+ ```
 
 ## Modifiers
 

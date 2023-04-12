@@ -9,6 +9,7 @@ title: Programming 4. Loops
 # 4. Loops
 
 ## Loops?
+
 * used for:
   * repeating blocks of code 
   * looping through collections of data (more later...)
@@ -20,17 +21,20 @@ title: Programming 4. Loops
   * Foreach
 
 ## `while` loop
-* while loop keeps executing its code block as long as the condition in its statement is true:
-```c#
-int count = 0;
-while(count < 4)
-{
-    Debug.Log(count);
-    count++;
-}
 
-// Outputs '0', '1', '2' and '3'
-```
+* while loop keeps executing its code block as long as the condition in its statement is true:
+  * 
+    ```c#
+    int count = 0;
+    while(count < 4)
+    {
+        Debug.Log(count);
+        count++;
+    }
+
+    // Outputs '0', '1', '2' and '3'
+    ```
+
 ## `do while` loop
 
 * similar to while loop, but it executes the code block once **even if the statement isn't true**
@@ -46,7 +50,9 @@ do
 
 // Outputs '0', '1', '2' and '3'
 ```
+
 ## `for` loop
+
 * for loops are used when the number of iterations is **predefined**
 * for loop is initialized in three steps:
 ```c#
@@ -118,7 +124,6 @@ Current: 1
   // Prints every odd number from 1 to 10
   ```
 
-
 ## Nested loops
 
 * Loop inside a loop is often used for generating or going through two-dimensional data
@@ -135,7 +140,6 @@ Current: 1
   }
   ```
   ![2d data](imgs/2d-data.png)
-
 
 ## While vs. for: when to use?
 

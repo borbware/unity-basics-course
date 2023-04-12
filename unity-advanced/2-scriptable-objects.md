@@ -52,7 +52,9 @@ paginate: true
         public Vector3[] spawnPoints;
     }
     ```
+
 ### Spawn manager: Usage
+
 ```c#
 using UnityEngine;
 

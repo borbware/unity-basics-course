@@ -149,6 +149,7 @@ git config --global credential.helper wincred
 
 ## Extra: Help, this is horrible!
 <!-- _backgroundColor: #5d275d -->
+
 * Do you feel more at home in graphical UIs?
 * If the command line is not your thing, you can also use [GitHub Desktop](https://desktop.github.com/)
 * It's a Windows application for working with GitHub repositories
@@ -161,6 +162,7 @@ git config --global credential.helper wincred
 ![bg width:80%](https://desktop.github.com/images/github-desktop-screenshot-windows.png)
 
 ## Btw: Config
+
 * To configure your Git username for every project:
   * Use `git config --global user.name "myUserName"`
   * and `git config --global user.email "my.email.address@domain.com"`

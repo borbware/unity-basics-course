@@ -22,6 +22,7 @@ title: Programming 3. Functions
   }
   b = 3;              // This throws an error
   ```
+
 ## Introduction to functions
 
 * To avoid repetition, blocks of code can be enclosed into named *functions*
@@ -42,6 +43,7 @@ title: Programming 3. Functions
     ```
 
 ### Function example
+
 * Here's an example with two arguments and a non-void return value
 * The `return` keyword tells what we return from the function 
   ```c#
@@ -62,6 +64,7 @@ title: Programming 3. Functions
       return Mathf.Sqrt(Mathf.Pow(a,2) + Mathf.Pow(b,2));
   }
   ```
+
 ## Note about functions
 
 * Because C# is object-oriented, all functions are *methods* inside *classes*

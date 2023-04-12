@@ -9,6 +9,7 @@ paginate: true
 # Project management 2. Git continued
 
 ## Branches
+
 * A Git repository can have multiple ***branches***
 * By default, a Git repository has only one branch
   * named either `master` or `main`
@@ -62,7 +63,6 @@ paginate: true
 
 ## Merging with a pull request
 
-
 1) Make sure you have the newest version of the `master` branch:
   * Stay on the feature branch, and merge the contents of `master` to `featureBranch` with `git merge master`
 2) Then, create a ***pull request*** on GitHub/etc
@@ -78,7 +78,6 @@ paginate: true
 3) Push your new local branch to GitHub/etc
 ---
 ![](imgs/github-pullreq.png)
-
 
 ## Extra: Merging without a pull request
 <!-- _backgroundColor: #5d275d -->
@@ -168,8 +167,8 @@ Continue the exercise from [Git Basics](1-git-basics) or create a new repository
 * Then, merge the changes from your new feature branch to `master` branch by using `git merge` 
 * Fix the ensuing conflicts, add & commit & push.
 
-
 ## Git workflow 3: Undoing
+
 * Git doesn't have a general "undo" command
 * If you make a mistake, it is very case-specific what you need to do to fix it
   * See [undo options here](https://docs.gitlab.com/ee/topics/git/numerous_undo_possibilities_in_git/)  
@@ -198,6 +197,7 @@ Continue the exercise from [Git Basics](1-git-basics) or create a new repository
 
 ## Exercise 3. Branching team effort
 <!-- _backgroundColor: #29366f -->
+
 * Work as a group for this assignment.
 * Continue Exercise 2 from [Git basics](1-git-basics).
 * Every group member creates an individual branch from the master, and makes some changes to the `GitTest.md` file.
@@ -226,6 +226,7 @@ From Scene 4, the game should loop back to Scene 1.
 
 ## Very extra: `git rebase`
 <!-- _backgroundColor: #5d275d -->
+
 * `git merge` creates a new commit for the merge process
 * Sometimes that's undesirable, so an alternative is to use `git rebase`
 * Unlike merge, rebase applies changes from the rebased branch ***one commit at a time***

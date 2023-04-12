@@ -10,6 +10,7 @@ math: mathjax
 # Physics
 
 ## Unity physics engines
+
 * [Manual: Physics](https://docs.unity3d.com/Manual/PhysicsSection.html)
 * A physics engine is used to calculate accelerations, collisions, gravity and other forces 
   * In 3D, Unity uses NVIDIA's **PhysX** for its physics
@@ -21,7 +22,6 @@ math: mathjax
 
 * [Manual: 3D Physics for object-oriented projects](https://docs.unity3d.com/Manual/PhysicsOverview.html)
 * [Manual: Physics reference 2D](https://docs.unity3d.com/Manual/Physics2DReference.html)
-
 
 ## Rigidbody
 
@@ -56,7 +56,6 @@ math: mathjax
     * in 3D, manipulate `transform.position`
 * ***Static*** (only 2D)
   * an immovable object, can only collide with non-static rigidbodies
-
 
 ### Interpolation
 
@@ -111,12 +110,14 @@ math: mathjax
 <!-- _footer: "See [Hyperphysics](http://hyperphysics.phy-astr.gsu.edu/hbase/rotq.html) for more info about angular quantities" -->
 
 ## Gravity
+
 * ***Note:*** by default, gravitational acceleration is $9.81m/s^2$
 * You can change it from Unity settings
   * *Edit > Project Settings > Physics (2D) > Gravity*
   * for top-down 2d games, you want gravity to be zero
 
 ## Extra: Raycasting
+
 <!-- _backgroundColor: #5d275d -->
 * See [2D basics](2d-basics#extra-two-ways-for-2d-shooting)
 

@@ -8,7 +8,6 @@ paginate: true
 
 # 2D animation
 
-
 ## Two ways to 2D character animation
 
 * Sprite sheet animation
@@ -22,12 +21,12 @@ paginate: true
   * At worst, stiff and unlifelike motion
   * [Learn: Skeletal Animation](https://unity.com/features/2danimation)
 
-
 ## Sprite-based animation
 
 * For sprite basics, see: [2d Basics: Sprite renderer component](2d-basics#sprite-renderer-component)
 * Sprite animation can be created with multiple individual png files, or one sprite sheet with multiple animation ***cels***
 * [Brackeys video: 2D animation](https://www.youtube.com/watch?v=hkaysu1Z-N8)
+
 ### Creating a new animation
 
 * [Manual: Creating a new Animation Clip](https://docs.unity3d.com/Manual/animeditor-CreatingANewAnimationClip.html)
@@ -44,6 +43,7 @@ paginate: true
   * ***Note:*** The final frame duration is less than the others. For an easy fix, add the first frame as a duplicate to the end
 * Set *Samples* to a lower value to make your new animation less frantic
 * You can create new clips in the Player_Idle dropdown
+
 ## Animator controller
 
 * When you created new clips, an ***Animator Controller Asset*** was created
@@ -119,7 +119,6 @@ paginate: true
 * To add functionality to animation states, you can add state machine behaviours
 * Or ***COULD***, if Unity animator inspector wouldn't be an awful buggy mess
 
-
 ### Extras: Advanced animation states
 <!-- _backgroundColor: #5d275d -->
 
@@ -156,6 +155,7 @@ paginate: true
 * *Edit > Project Settings > Quality > Anti-aliasing: Disabled*
 
 ---
+
 <!-- _backgroundColor: #5d275d -->
 
 * Preparing for pixelart

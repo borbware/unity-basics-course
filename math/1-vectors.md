@@ -220,7 +220,7 @@ title: Math 1. Vectors
   ```
 * ***Note:*** the Transform and Quaternion classes have many rotation methods available, see [Transform Class: Rotation](../unity-cookbook/transform#rotation)
 
-## Dot product: Vector's alignment with another vector
+## Extra: Dot product - Vector's alignment with another vector
 <!-- _backgroundColor: #5d275d -->
 
 * If you want to know how much two vectors point to the same direction, we can use the ***dot product***

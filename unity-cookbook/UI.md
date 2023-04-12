@@ -19,6 +19,7 @@ paginate: true
 <!-- _footer: "[Learn: UI components](https://learn.unity.com/tutorial/ui-components#5c7f8528edbc2a002053b4d0)" -->
 
 ## Canvas
+
 * UI elements are drawn on a separate canvas and on a separate layer
   * Canvas represents the rectangular area in which the UI is drawn
   * More about it later!
@@ -125,6 +126,7 @@ if (Input.ButtonDown("Fire1"))
 ```
 
 ### Navigating menu with Arrow keys & game controller
+
 * By default, your buttons are only interactable with mouse
 * To add support controller & keyboard input, you need to do two things:
   * In every button, set *Navigation* to *Automatic*
@@ -138,7 +140,6 @@ if (Input.ButtonDown("Fire1"))
   ...
   EventSystem.current.SetSelectedGameObject(myButton);
   ```
-
 
 ## More RectTransform stuff
 

@@ -50,7 +50,6 @@ Print one of the messages from this sauna thermometer according to value of vari
 
 ![width:600px](imgs/sauna.png)
 
-
 ### Single statement if
 
 * If you only have one statement inside the `if` statement, curly braces can be left out
@@ -104,12 +103,13 @@ bool itsColdOutside = true;
 * _Notice the difference between `=` and the conditional `==`!_
   * `=` is used for **assigning** values for variables, `==` is used for **comparing** values
 
-## Assignment Shorthands
-  * these three examples do the same thing:
-    * `i = i + 1;` 
-    * `i += 1;`
-    * `i++;`
-  * works similarly for subtraction, multiplication, division, modulo
+### Assignment Shorthands
+
+* these three examples do the same thing:
+  * `i = i + 1;` 
+  * `i += 1;`
+  * `i++;`
+* works similarly for subtraction, multiplication, division, modulo
 
 ## Logical operators
 
@@ -195,6 +195,7 @@ void Greet()
 
 ## Extra conditional: Ternary operator
 <!-- _backgroundColor: #5d275d -->
+
 * "Inline if" is done with the ternary operator 
   * `(the if statement) ? (if true) : (if false);`
     
@@ -251,7 +252,6 @@ void Greet()
     ```
 
 * Very useful e.g., for printing multiple variables in one log statement:
-
 
   ```c#
   Debug.Log($"variable 1: {variable1}, variable 2: {variable2}");

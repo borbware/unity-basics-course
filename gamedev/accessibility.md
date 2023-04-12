@@ -28,6 +28,7 @@ title: Accessibility
 * Controls
   * Remappable controls
   * Alternatives to rapid tapping (it's not that fun anyway...)
+
 ## Reading & watching
 
 * [Game accessibility guidelines](https://gameaccessibilityguidelines.com/)

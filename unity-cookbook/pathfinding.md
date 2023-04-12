@@ -18,6 +18,7 @@ paginate: true
   	* make enemies follow the player
   	* make enemies attack other enemies?!?
 * One of the earliest games to utilize pathfinding was [Tanktics (1976)](https://en.wikipedia.org/wiki/Tanktics:_Computer_Game_of_Armored_Combat_on_the_Eastern_Front) 
+
 ### Note
 
 * Pathfinding is not necessary to create interesting enemy behaviour, though
@@ -35,6 +36,7 @@ paginate: true
   * NavMesh Agent: entities that walk on NavMeshes
   * NavMesh Link: shortcuts
   * NavMesh Obstacle: movable objects blocking navigation
+
 ## 2D pathfinding
 
 * Unity doesn't have 2D NavMeshes by default, yay
@@ -129,9 +131,11 @@ void Update()
 ![](imgs/pathfinding-code1.png)
 
 ### Start, UpdatePath, OnPathComplete
+
 ![](imgs/pathfinding-code2.png)
 
 ### FixedUpdate
+
 ![](imgs/pathfinding-code3.png)
 
 ## More scripting

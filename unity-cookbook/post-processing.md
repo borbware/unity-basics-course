@@ -11,7 +11,6 @@ paginate: true
 * [Manual: Post processing overview](https://docs.unity3d.com/Manual/PostProcessingOverview.html)
 * [Brackeys video: Every Post processing effect in Unity](https://www.youtube.com/watch?v=9tjYz6Ab0oc)
 
-
 ## Visual effects
 
 * [Manual: Visual effects](https://docs.unity3d.com/Manual/visual-effects.html)
