@@ -64,7 +64,6 @@ Set manually after setup with:
 git config --global core.editor "code --wait"
 ```
 
-
 </div>
 </div>
 

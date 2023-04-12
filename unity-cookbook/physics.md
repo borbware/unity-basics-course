@@ -3,6 +3,12 @@ title: Unity Cookbook. Physics
 marp: true
 paginate: true
 math: mathjax
+style: |
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
@@ -32,16 +38,27 @@ math: mathjax
 * 2D
   * [Manual: Rigidbody 2D class](https://docs.unity3d.com/Manual/class-Rigidbody2D.html)
   * [Script Reference: Rigidbody 2D](https://docs.unity3d.com/ScriptReference/Rigidbody2D.html)
-* literally: a body (object) that does not deform, i.e., is rigid
-* takes over the movement of the GameObject it is attached to
-* do not move it from a script by changing the Transform properties such as position and rotation
+* Literally: a body (object) that does not deform, i.e., is rigid
+* Takes over the movement of the GameObject it is attached to
+* ***Note:*** Do not move it from a script by changing the Transform properties such as position and rotation
   * Instead, you should apply ***forces***
 
-### Rigidbody Components
+### The Rigidbody components
 
-![](https://docs.unity3d.com/uploads/Main/Inspector-Rigidbody.png)
-![](https://docs.unity3d.com/uploads/Main/Rigidbody2D.png)
+<div class="columns" markdown="1">
+<div markdown="1">
 
+![](imgs/rigidbody2D.png)
+
+</div>
+<div markdown="1">
+
+![](imgs/rigidbody.png)
+
+</div>
+</div>
+
+* Every rigidbody has a ***mass***, which affects how much forces influence them 
 * ***Note:*** If you have problems having two non-moving Rigidbody2Ds collide, set *Sleeping Mode* to *Never Sleep*
 
 ## Types of rigidbodies
@@ -85,6 +102,17 @@ math: mathjax
   float turn = Input.GetAxis("Horizontal");
   rb.AddTorque(transform.up * torque * turn);
   ```
+
+## Force modes
+
+
+* When applying a force, you can give the function a second argument: the mode with which the force is applied
+* [ScriptReference: ForceMode](https://docs.unity3d.com/ScriptReference/ForceMode.html) has a good example project showcasing all four modes
+  * `ForceMode.Force` is the default: the resulting acceleration is dampened by the mass of the rigidbody
+  * `ForceMode.Acceleration` gives acceleration directly, disregarding the mass of the body.
+  * `ForceMode.Impulse` gives the body a **velocity** (dampened by its mass), not an acceleration, resulting in snappier movement
+  * `ForceMode.VelocityChange` is like impulse, but disregards the mass of the body.
+* ***Note:*** Rigidbody2D only supports `ForceMode.Force` and `ForceMode.Acceleration`!
 
 ## Extra: More functions
 <!-- _backgroundColor: #5d275d -->
