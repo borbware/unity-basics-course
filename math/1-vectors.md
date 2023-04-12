@@ -20,11 +20,18 @@ title: Math 1. Vectors
   * Used for depicting position, velocity, acceleration, forces....
 
 ### 2D vector example
+
+![bg right width: 90%](imgs/2d-vector.png)
+
 * This is a 2D vector $\vec{A} = (6, 3)$
   * x-component $\vec{A}_x = 6$
   * y-component $\vec{A}_y = 3$
 * Vectors start from the origin, or $(0,0)$
-![bg right width: 90%](imgs/2d-vector.png)
+* In C#:
+  
+  ```c#
+  Vector2 vectorA = new Vector2(6,3);
+  ```
 
 ### 2D vector length
 
@@ -33,8 +40,11 @@ title: Math 1. Vectors
   * $|(6,3)| = \sqrt{6^2 + 3^2} = \sqrt{36 + 9} = \sqrt{45} \approx 6.7$
 
 * In C#:
-  * `Mathf.Sqrt(A.x^2 + A.y^2)`
-  * Vector classes have a shorthand, too: `A.Magnitude`
+  
+  ```c#
+  float length = Mathf.Sqrt(Mathf.Pow(vectorA.x, 2) + Mathf.Pow(vectorA.y, 2));
+  ```
+  * Vector classes have a shorthand, too: `A.magnitude`
 
 ## Vector arithmetic
 
@@ -47,7 +57,9 @@ title: Math 1. Vectors
     * Dot product
     * Cross product (WIP)
 * C# examples included
+
 ### Vector addition
+
 * sum of two vectors is calculated by summing up the individual components
 * $\vec{C} = \vec{A} + \vec{B}$
   $= (3, 3) + (6, -2)$
@@ -122,11 +134,20 @@ title: Math 1. Vectors
 
 * Unity has two Vector classes, [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) and [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html)
   * "2" and "3" here are the number of dimensions: (x,y) and (x,y,z)
-  * `Vector2 position = new Vector2(1.0f, 2.0f)`
-    * Vectors can be modified with the dot notation:
-    * `position.x = 3.0f`
+  * 
+    ```c#
+    Vector2 position = new Vector2(1.0f, 2.0f)
+    ```
+* Vector components can be accessed with the dot notation:
+  * `position.x`, `position.y`, `position.z`
+* Vectors can't be directly modified: 
+  * No: `position.x = 3.0f`
+  * 
+    ```c#
+    position = new Vector2(3.0f, position.y);
+    ```
 
-* Length of a vector can be acquired with `vector.Magnitude`
+* Length of a vector can be acquired with `vector.magnitude`
   * [Script Reference: Vector3 magnitude](https://docs.unity3d.com/ScriptReference/Vector3-magnitude.html)
 
 ## Velocity vector
@@ -156,6 +177,7 @@ title: Math 1. Vectors
   transform.position += velocity;
   ```
 * This might seem like a cheap trick, but actually allows us to create ***smoother motion*** if we use player input, collision, etc to control acceleration instead of velocity
+
 ## Distance vector
 
 * To get the distance vector between two objects, we use vector subtraction
@@ -200,6 +222,7 @@ title: Math 1. Vectors
 
 ## Dot product: Vector's alignment with another vector
 <!-- _backgroundColor: #5d275d -->
+
 * If you want to know how much two vectors point to the same direction, we can use the ***dot product***
   * [Script Reference: Vector3.Dot](https://docs.unity3d.com/ScriptReference/Vector3.Dot.html)
 * The dot product returns a number, not a vector!
@@ -219,23 +242,22 @@ title: Math 1. Vectors
     otherGameObjectRigidBody.velocity.normalized)
   ```
 
-
 ## Note about distance
 
 * Note: when performance is important, using magnitude can be a bad idea: it includes the costly square root operation
   * if you need to only compare magnitudes, or you're squaring it right away, use `.sqrMagnitude` instead!
 
-
 ## Exercise 1. I'm being avoided
 <!-- _backgroundColor: #29366f -->
 
-Calculate distance between two GameObjects (player and enemy).
+Create a scene with two GameObjects, a player and a static enemy.
+Calculate **the distance** between the player and the enemy.
 
-If the distance is smaller than a threshold value,
+If the distance is smaller than some given threshold value,
 
-  a) change the color of the static GameObject (and set the color back to default when you're no more on the range)
-  b) make the enemy shoot at player
-  c) move the static GameObject farther away from the GameObject along the shortest possible path
+  - ⭐ Change the color of the enemy (and set the color back to default when you're no more on the range)
+  - ⭐⭐ Make the enemy shoot at player!
+  - ⭐⭐⭐ Move the enemy farther away from the player along the shortest possible path.
 
 ## Reading & watching
 

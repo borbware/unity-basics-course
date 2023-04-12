@@ -10,12 +10,11 @@ title: Math 0. Helpful Math Functions
 # 0. Helpful Math functions
 
 ## The `Mathf` class
+
 * [Important classes: Mathf class](https://docs.unity3d.com/Manual/class-Mathf.html)
 * [Script reference: Mathf class](https://docs.unity3d.com/ScriptReference/Mathf.html)
 * Unity has a built-in `Mathf` class that includes important methods and constants
 * Before diving deeper, let's introduce just a few of them
-
-
 
 ## `Abs`
 
@@ -60,7 +59,3 @@ title: Math 0. Helpful Math Functions
     ```c#
 	HP = Mathf.Clamp(HP, 0.0f, maxHP) // HP is never smaller than zero or greater than maxHP
 	```
-
-## Exercise 1: Minmaxing
-<!-- _backgroundColor: #29366f -->
-try out tms xx

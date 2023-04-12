@@ -51,6 +51,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 2 | Forces                | [🎞](math/2-forces-slides.html)        | [📖](math/2-forces)        | 🌔 |
 | 3 | Interpolation         | [🎞](math/3-interpolation-slides.html) | [📖](math/3-interpolation) | 🌔 |
 | 4 | Sinewaves             | [🎞](math/4-sinewaves-slides.html)     | [📖](math/4-sinewaves)     | 🌒 |
+| 5 | Math classes          | [🎞](math/5-math-classes-slides.html)  | [📖](math/5-math-classes)  | 🌒 |
 
 ## About Unity
 
@@ -82,15 +83,16 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |     | Transform              | [🎞](unity-cookbook/transform-slides.html)       | [📖](unity-cookbook/transform)       | 🌔 |
 |     | Collision              | [🎞](unity-cookbook/collision-slides.html)       | [📖](unity-cookbook/collision)       | 🌔 |
 |     | Physics                | [🎞](unity-cookbook/physics-slides.html)         | [📖](unity-cookbook/physics)         | 🌔 |
+| II  |                        |                                                  |                                      |    |
+|     | Particle system        | [🎞](unity-cookbook/particle-system-slides.html) | [📖](unity-cookbook/particle-system) | 🌔 |
 |     | UI                     | [🎞](unity-cookbook/UI-slides.html)              | [📖](unity-cookbook/UI)              | 🌔 |
 |     | Audio                  | [🎞](unity-cookbook/audio-slides.html)           | [📖](unity-cookbook/audio)           | 🌔 |
-| II  |                        |                                                  |                                      |    |
+|     | Scenes                 | [🎞](unity-cookbook/scenes-slides.html)          | [📖](unity-cookbook/scenes)          | 🌔 |
+| III |                        |                                                  |                                      |    |
 |     | Tilemaps               | [🎞](unity-cookbook/tilemaps-slides.html)        | [📖](unity-cookbook/tilemaps)        | 🌔 |
 |     | 2D animation           | [🎞](unity-cookbook/2d-animation-slides.html)    | [📖](unity-cookbook/2d-animation)    | 🌔 |
 |     | Pathfinding            | [🎞](unity-cookbook/pathfinding-slides.html)     | [📖](unity-cookbook/pathfinding)     | 🌔 |
-|     | Scenes                 | [🎞](unity-cookbook/scenes-slides.html)          | [📖](unity-cookbook/scenes)          | 🌔 |
-| III |                        |                                                  |                                      |    |
-|     | Particle system        | [🎞](unity-cookbook/particle-system-slides.html) | [📖](unity-cookbook/particle-system) | 🌔 |
+| IV  |                        |                                                  |                                      |    |
 |     | 3D animation           | [🎞](unity-cookbook/3d-animation-slides.html)    | [📖](unity-cookbook/3d-animation)    | 🌔 |
 |     | Input system           | [🎞](unity-cookbook/input-system-slides.html)    | [📖](unity-cookbook/input-system)    | 🌔 |
 |     | Saving and loading     | [🎞](unity-cookbook/saving-loading-slides.html)  | [📖](unity-cookbook/saving-loading)  | 🌒 |
