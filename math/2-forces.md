@@ -9,11 +9,11 @@ title: Math 2. Forces
 
 # 2. Forces
 
-## What is a Force
+## What is a force?
 
 * In physics, a force is an influence ("push or pull") that can change the motion of an object
-* force causes an object to ***accelerate***
-  * this in turn changes the object's ***velocity***
+* Force causes an object to ***accelerate***
+  * This in turn changes the object's ***velocity***
   * ...which changes the object's ***position***
 
 * [Brackeys video: Forces](https://www.youtube.com/watch?v=HEJ_UtSbinY)
@@ -28,6 +28,12 @@ title: Math 2. Forces
   * the force is a ***vector***
   * so it not only has a ***magnitude***, but also a ***direction***
 
+### Note about forces in games
+
+* In games, we're generally more interested in the gained ***acceleration*** than the actual force
+  * $\vec{a} = \vec{F} / m$
+  * The bigger the mass, the smaller the acceleration!
+
 ### Multiple forces
 
 Force vectors can be added together to acquire the total force:
@@ -37,35 +43,38 @@ Force vectors can be added together to acquire the total force:
 ## Torque
 
 ![](imgs/torque.png)
-* torque is the rotational equivalent of linear force
-* torque "makes things turn"
-* in simplified terms, torque is force times length of the lever arm
+* Torque is the rotational equivalent of linear force
+* Torque "makes things turn"
+* In simplified terms, torque is force times length of the lever arm
 * $T_{A} = F_{A} \cdot r_{AO}$
-* unit of torque is *Newtonmeter* ($Nm = kg \cdot m/s^2 \cdot m$)
+* Unit of torque is *Newtonmeter* ($Nm = kg \cdot m/s^2 \cdot m$)
 
-### Torque vector
+### Torque... vector?
 
-* more precisely, torque is the cross product between the lever arm vector and the force vector
-* $\vec{\tau} = \vec{r} \times \vec{F}$
+  ![](https://upload.wikimedia.org/wikipedia/commons/0/09/Torque_animation.gif)
 
-![](https://upload.wikimedia.org/wikipedia/commons/0/09/Torque_animation.gif)
+* More precisely, torque is a vector, produced by a ***cross product*** between the lever arm vector and a force vector
+  * $\vec{\tau} = \vec{r} \times \vec{F}$
+* ***Note:*** Cross product between two vectors produces a new vector ***perpendicular*** to both the two
+
+
 
 
 ## Forces in Unity
 
-* in Unity, forces are applied by the Physics engine
-  * if you want more control, you can also create your own code for e.g., simulating planets in a star system
-
-* See: [Physics](../unity-cookbook/physics)
+* In Unity, forces are applied by the physics engine
+  * See: [Physics](../unity-cookbook/physics)
+  * We need a Rigidbody component to apply forces to a GameObject.
+* If you want more control, you can also create your own code e.g., for simulating planets in a star system
 
 ## Exercise 1. Forces
 <!-- _backgroundColor: #29366f -->
+
 Create a 3D scene where a player character can push around rigid bodies by applying a force to them.
 
 How would you calculate the direction of the force?
 
 ***Hint:*** you need to use the concepts of ***distance*** and ***normalization***.
-
 
 ## Reading & Watching
 
