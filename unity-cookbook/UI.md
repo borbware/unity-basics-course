@@ -59,16 +59,19 @@ paginate: true
 * [Packages: Unity UI: CanvasScaler](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-CanvasScaler.html)
 
 * Important setting: *UI Scale mode*
-  * *Constant pixel size* & *Constant physical size*:
-    * Elements get bigger on lower resolutions 
+  * *Constant pixel size*
+    * UI elements take the same amount of pixels regardless of screen size
+  * *Constant physical size*:
+    * UI elements take the same amount of pixels/DPI regardless of screen size
   * *Scale with screen size*:
-    * Elements are defined as always taking a given ratio of the screen size
-    * you can choose if you rather match the screen width or screen height with *Screen Match Mode*
+    * UI elements take a given portion of the screen size
+    * This is the one we usually want
+    * You can choose if you rather match the screen width or screen height with *Screen Match Mode*
 
 ## Graphic Raycaster Component
 
 * The Graphic Raycaster is used to raycast against a Canvas.
-* The Raycaster looks at all Graphics on the canvas and determines if any of them have been hit.
+* The Raycaster looks at all Graphics on the canvas and determines if mouse is top on any of them
 * [Graphic Raycaster](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-GraphicRaycaster.html)
 * Can be used to determine if the cursor is over a Graphics element in the Scene:
   * [GraphicRaycaster.Raycast](https://docs.unity3d.com/2017.3/Documentation/ScriptReference/UI.GraphicRaycaster.Raycast.html)
@@ -79,20 +82,35 @@ paginate: true
 * [Packages: Unity UI: Visual Components](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIVisualComponents.html)
   * [Text](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-Text.html) 
   * [Image](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-Image.html) (& [Raw Image](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-RawImage.html))
+    * ***NOTE:*** For drawing images on UI, you need to use the Image component, ***NOT the Sprite Renderer!***
   * [Mask](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-Mask.html) (& [RectMask2D](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-RectMask2D.html))
-* ***NOTE:*** For drawing images on UI, you need to use the Image component, ***NOT the Sprite Renderer!***
+* Add e.g., image to scene with *GameObject > UI > Image*
+  * All UI element GameObjects have to be under the Canvas GameObject!
+
+## TextMeshPro
+
+* [Packages: TextMeshPro user guide](https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/manual/index.html)
+* There are two ways to draw text to UIs in Unity
+  * The legacy ***Text*** GameObject that is easier to use
+  * The newer, more feature-packed ***Text - TextMeshPro***
+* TextMeshPro is a separate package that comes with new Unity Projects by default
+* To start using it, install TextMeshPro Essentials
+  * A prompt will appear when you add a TextMeshPro GameObject
+  * If you missed it, install it manually with *Window > TextMeshPro > Import TextMeshPro Essential Resources*
+
 
 ### Updating UI
 
 * You can update the text fields of a Text component with code:
 ```c#
-[SerializeField] Text textComponent;
+[SerializeField] TextMeshProUGUI textComponent;
 ...
   public void setScore(int newScore)
   {
       textComponent.text = $"Score: {newScore}";
   }
 ```
+* ***Note:*** To use the `TextMeshProUGUI` component, you need to add `using TMPro;` on top of the script file.
 
 ## Interaction components
 
@@ -246,7 +264,7 @@ if (Input.ButtonDown("Fire1"))
 
 ### My sprite is moving wildly when I resize the screen
 
-* you have to change the ***Anchor presets***
+* You have to change the ***Anchor presets***
 * *Inspector > Rect Transform* and click on the square on the left 
   * Pressing down ***Shift+Alt*** exposes additional options
 
@@ -269,3 +287,8 @@ Create a UI with three buttons.
 Change the color of a GameObject in your scene when the button has been pressed!
 
 Try out setting RectTransform anchor points and see how the UI changes when you change the game resolution in the Game view.
+
+## Reading
+
+* [Unity UI manual: Designing UI for multiple resolutions](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/HOWTO-UIMultiResolution.html)
+* [Unity UI manual: Creating UI elements from scripting](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/HOWTO-UICreateFromScripting.html)
