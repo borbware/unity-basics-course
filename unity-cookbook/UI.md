@@ -338,6 +338,34 @@ Try out setting RectTransform anchor points and see how the UI changes when you 
 
 * [Unity UI manual: Designing UI for multiple resolutions](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/HOWTO-UIMultiResolution.html)
 * [Unity UI manual: Creating UI elements from scripting](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/HOWTO-UICreateFromScripting.html)
+
+## Extra: IMGUI - Immediate Mode Graphical User Interface
+<!-- _backgroundColor: #5d275d -->
+
+* Code-driven system to create UI elements quickly
+* [Manual: GUI scripting guide](https://docs.unity3d.com/Manual/GUIScriptingGuide.html)
+* [ScriptReference: GUI](https://docs.unity3d.com/ScriptReference/GUI.html)
+* Example: Button
+  ```c#
+  if (GUI.Button(new Rect(100, 30, 150, 30), "Do a thing!"))
+  {
+      // When button is pressed, do a thing here
+  }
+  ```
+* Example: Input Field
+  ```c#
+  value = GUI.TextField(new Rect(300, 30, 200, 20), value, 25);
+  ```
+
+---
+
+![width:700px](imgs/imgui.png)
+* This is the kind of elements you can create with IMGUI.
+
+## Extra: UI toolkit
+<!-- _backgroundColor: #5d275d -->
+
 * [UI Toolkit](https://docs.unity3d.com/Manual/UIElements.html)
   * Collection of features, resources, and tools for UI
     * Create UIs with style sheets
+

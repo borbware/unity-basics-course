@@ -2,6 +2,12 @@
 title: Unity Cookbook. Audio playback
 marp: true
 paginate: true
+style: |
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
@@ -19,14 +25,21 @@ paginate: true
 ## AudioSource
 
 * You can have multiple of these
-* [Script Reference: AudioSource class](https://docs.unity3d.com/ScriptReference/AudioSource.html)
 * [Manual: AudioSource component](https://docs.unity3d.com/Manual/class-AudioSource.html)
 * Insert to every GameObject that should be able to make a sound
   * E.g., if a Coin GameObject should have a *\*bling\** sound effect when collected
-  * The *bling.wav* sound effect is drag-and-dropped into the component 
-* most important functions to control the component: `.Play()`, `.Pause()`, `.Stop()`
+  * Drag and drop a *bling.wav* sound effect file into the component
+  * Supported audio file formats are listed here: [Manual: Audio Files](https://docs.unity3d.com/Manual/AudioFiles.html)
+
+### Controlling audio with code
+
+* [Script Reference: AudioSource class](https://docs.unity3d.com/ScriptReference/AudioSource.html)
+* The most important functions to control the component are:
+  * `.Play()`
+  * `.Pause()`
+  * `.Stop()`
   ```c#
-  public AudioSource audio;
+  [SerializeField] AudioSource audio;
   if (PlayerGrabbedCoin)
       audio.Play();
   if (DoSomethingElse)
@@ -72,6 +85,62 @@ Then, add sounds to your game. Try at least these two kinds of sound effects:
 1) a one-time sound effect that can be triggered with code
 2) looping sound that plays all the time
 
-## Playing sound when something gets destroyed
+## Note: Playing sound when something gets destroyed
 
-* xx
+* If you add an audio source to a GameObject that gets destroyed when the sound should be played, the sound stops abruptly
+* Instead, add the audio source to some GameObject that you know won't be destroyed
+* E.g, for playing a sound when collecting a coin, add a CoinPlayer GameObject with an Audiosource component, and call its `.Play()` method when collecting the coin.
+
+## Fading between volume levels
+
+There are many ways to fade in/out audio. Here, we present an example that needs very minimal code.
+
+* Create a new audio mixer asset: *Create > Audio Mixer*.
+* Name it "FadeMixer" or something like that.
+  ![](imgs/audiomixerasset.png)
+    * Click *Open*
+
+---
+
+![width:500px](imgs/audiomixer.png)
+
+* In the Mixer view:
+  * Name the existing Snapshot to *VolumeOn*
+  * Create a new snapshot *VolumeOff*
+    * Set its volume in the *Master* mixer group's slider to -80dB.
+  * Right click *VolumeOff* and select *Set as start Snapshot*. 
+
+---
+
+* In project view, expand the mixer asset to see the *Master* mixer group and the two snapshots *VolumeOn* and *VolumeOff*.
+* Drag the *Master* group to the audio source component that you want to fade.
+* Then, in the script where you want to control the fade, create a new variable:
+  ```c#
+  using UnityEngine.Audio;
+  ...
+  [SerializeField] AudioMixerSnapshot VolumeOn;
+  ```
+  * Drag the *VolumeOn* snapshot to the inspector to the corresponding variable.
+  * Then, we can fade from the default *VolumeOff* snapshot to the *VolumeOn* snapshot by calling the method
+    ```c#
+    VolumeOn.TransitionTo(3); // fade takes 3 seconds
+    ```
+
+---
+
+<div class="columns" markdown="1">
+<div markdown="1">
+
+![](imgs/audiomixerasset-expanded.png)
+
+Here's what the audio mixer asset looks like when expanded.
+
+</div>
+<div markdown="1">
+
+![](imgs/audiomixer-inspectorvalues.png)
+
+Here, the *Master* audio mixer group is dragged to Audio Source, and the *VolumeOn* snapshot to SceneManager.
+
+</div>
+</div>

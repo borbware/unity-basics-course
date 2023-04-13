@@ -2,6 +2,7 @@
 title: Math. Unity Math classes
 marp: true
 paginate: true
+math: mathjax
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
@@ -43,9 +44,11 @@ paginate: true
 ### `Random.Range`
 
 * [Script Reference: Random.Range](https://docs.unity3d.com/ScriptReference/Random.Range.html)
-* **Note:** For ints, the maximum value is ***exclusive***, for float it's ***inclusive***!
-  * `Random.Range(0,10)` returns random integer values 0,1,...,9f
-  * `Random.Range(0f,10f)` returns random float values 0f,...,10f
+* **Note:** For integers, the maximum value is ***exclusive*** (it's not included!)
+  * For floats it's ***inclusive*** (it IS included!)
+* For example:
+  * `Random.Range(0,10)` returns random integer values $0,\dots,9$ (not $10$!)
+  * `Random.Range(0f,10f)` returns random float values $0,\dots,10$
 
 ## `Quaternion` class
 

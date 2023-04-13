@@ -83,8 +83,8 @@ paginate: true
     ```
 
 ## Extra: Other extensions
-
 <!-- _backgroundColor: #5d275d -->
+
 * *Marp for VS Code*
   * If you want to read these slides inside VS Code
   * After installation, open this .md file from the course repository
