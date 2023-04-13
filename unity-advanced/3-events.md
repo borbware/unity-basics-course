@@ -57,7 +57,7 @@ public class DelegateExample : MonoBehaviour
 
 ## Multicasting
 
-* multicasting with +=
+* Multicasting with `+=`
   * [Learn: Multicasting](https://learn.unity.com/tutorial/delegates?uv=2019.3&projectId=5c88f2c1edbc2a001f873ea5#5c894658edbc2a0d28f48aee) 
     ```c#
     delegate void MyDelegate(); 
@@ -69,14 +69,14 @@ public class DelegateExample : MonoBehaviour
         attack += SecondaryAttack; 
     }
     ```
-* now **both** PrimaryAttack and SecondaryAttack trigger when attack is called.
+* Now **both** PrimaryAttack and SecondaryAttack trigger when attack is called.
 
 ## Events
 
-* observer pattern
+* Observer pattern
   * [Game programming patterns.com: Observer pattern](http://gameprogrammingpatterns.com/observer.html)
 * Events are specialized multicast delegates
-* can only be triggered from within their own class, not from elsewhere
+* Can only be triggered from within their own class, not from elsewhere
 * [Learn: Events](https://learn.unity.com/tutorial/events-uh?uv=2019.3&projectId=5c88f2c1edbc2a001f873ea5#5c894782edbc2a1410355442)
 
 ### Events example
@@ -106,8 +106,8 @@ public class PlayerHealth : MonoBehaviour
 
 ## Actions
 
-* it can sometimes be inconvenient to declare a new delegate type every time you want to use one
-* especially if all you want to do is create a basic event
+* It can sometimes be inconvenient to declare a new delegate type every time you want to use one
+* Especially if all you want to do is create a basic event
 * Actions allow you to use a generic delegate type without needing to define it in your script first
     ```c#
     // this...
@@ -120,12 +120,12 @@ public class PlayerHealth : MonoBehaviour
 
 ---
 
-* adding parameters
+* Adding parameters
     ```c#
     public static event Action<string> OnGameOver;
     public static event Action<float, bool> OnPlayerHurt;
     ```
-* calling with parameters
+* Calling with parameters
     ```c#
     public static event Action<string> OnGameOver;
 
@@ -141,13 +141,13 @@ public class PlayerHealth : MonoBehaviour
 
 ## UnityEvents
 
-* to confuse matters further, Unity has its own UnityEvent system as well.
-* good stuff
-  * you won't need to nullcheck UnityEvents.
+* To confuse matters further, Unity has its own UnityEvent system as well.
+* Good stuff
+  * You won't need to nullcheck UnityEvents.
   * Unity Events have special controls in Inspector
-    * contains the list of event function calls
-    * add function calls by drag-and-dropping
-  * thus, extremely useful for making logical connections between scripts in the Inspector
+    * Contains the list of event function calls
+    * Add function calls by drag-and-dropping
+  * Thus, extremely useful for making logical connections between scripts in the Inspector
 
 ---
 
@@ -216,10 +216,10 @@ public class HealthBar : MonoBehaviour
     }
 }
 ```
-* bad stuff
+* Bad stuff
   * Hooking up scripts in the Inspector requires you to make a manual connection which may not work well for different objects in the scene, especially if they’re created as the game runs.
-  * when connecting events between unrelated objects, you may find it more useful to use event delegates instead.
-  * to overcome this, there's the Scriptable Object Unity Event :)))))))
+  * When connecting events between unrelated objects, you may find it more useful to use event delegates instead.
+  * To overcome this, there's the Scriptable Object Unity Event :)))))))
 
 ### Scriptable object Unity Event
 

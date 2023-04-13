@@ -91,7 +91,10 @@ paginate: true
 
 ## Change properties with code
 
-* You can't change module properties directly like this: `dustParticles.shape.rotation = somethingNew`
+* You can't change module properties directly like this:
+  ```c#
+  dustParticles.shape.rotation = somethingNew
+  ```
 * You have to assign a new variable for the module first, and change the variables there:
 	```c#
 	var shape = dustParticles.shape;
@@ -129,4 +132,4 @@ paginate: true
 
 * [Learn: Introduction to particle systems](https://learn.unity.com/tutorial/introduction-to-particle-systems#)
 * [Brackeys video: Everything to know about the Particle system](https://www.youtube.com/watch?v=FEA1wTMJAR0)
-* [How to Animate Game Explosions || VGAS](https://www.youtube.com/watch?v=3JRAGfOnp0U)
+* [Video Game Animation Study: How to Animate Game Explosions](https://www.youtube.com/watch?v=3JRAGfOnp0U)

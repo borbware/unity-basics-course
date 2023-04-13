@@ -11,15 +11,14 @@ paginate: true
 ## Calling a method from another GameObject
 
 * The straightforward approach
-
-```c#
-// First, get the GameObject
-GameObject lähetti = GameObject.Find("Lähetti");
-// Then, get the script component "SetColor"
-lähettiSetColor = lähetti.GetComponent<SetColor>();
-// Then, call the public method SetColorToRed
-lähettiSetColor.SetColorToRed();
-```
+    ```c#
+    // First, get the GameObject
+    GameObject lähetti = GameObject.Find("Lähetti");
+    // Then, get the script component "SetColor"
+    lähettiSetColor = lähetti.GetComponent<SetColor>();
+    // Then, call the public method SetColorToRed
+    lähettiSetColor.SetColorToRed();
+    ```
 
 ## Sending messages
 
@@ -58,11 +57,11 @@ void Update () {
 
 * [Script Reference: Invoke](https://docs.unity3d.com/ScriptReference/MonoBehaviour.Invoke.html)
 * Use ***Invoke*** if you want to execute a method after a given time delay
-  * ***Note:*** those methods can't have any arguments
+  * ***Note:*** You can't pass any arguments to invoked methods.
   ```c#
       void Start()
       {
-          Invoke ("SpawnObject", 2);
+          Invoke("SpawnObject", 2);
       }
       
       void SpawnObject()
