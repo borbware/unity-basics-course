@@ -98,10 +98,21 @@ paginate: true
   * A prompt will appear when you add a TextMeshPro GameObject
   * If you missed it, install it manually with *Window > TextMeshPro > Import TextMeshPro Essential Resources*
 
+### TextMeshPro: Using a custom font
 
-### Updating UI
+* You need to create a new font asset before you can use your own font with TextMeshPro
 
-* You can update the text fields of a Text component with code:
+1) Add your font file (.ttf, for example) to your Assets folder
+2) Open *Window > TextMeshPro > Font Asset Creator*
+3) Drag the font file to *Source Font File*
+4) Click *Generate Font Atlas*
+5) Click *Save* to save the generated Font assets
+
+* Now you can set the new font asset to a TextMeshPro component! 
+
+## Updating UI with code
+
+* You can update the text field of a TextMeshPro component with code:
 ```c#
 [SerializeField] TextMeshProUGUI textComponent;
 ...
@@ -111,6 +122,41 @@ paginate: true
   }
 ```
 * ***Note:*** To use the `TextMeshProUGUI` component, you need to add `using TMPro;` on top of the script file.
+
+### UI manager
+
+* We usually want to create a UI manager that handles updating the UI
+  * For instance with a name `UIManager` 
+* We can make it a ***singleton*** with a name `instance` to access it easily from wherever we want to use it in the game
+  * That way, we can call `UIManager.instance.UpdateScore()` from wherever we need
+  * An example code below
+  * See also [Scene management: Creating a data manager](scenes#creating-a-data-manager)
+
+---
+
+```c#
+using TMPro;
+
+public class UIManager : MonoBehaviour
+{
+    public static UIManager instance;
+
+    [SerializeField] TextMeshProUGUI scoreText;
+    public int score = 0;
+
+    void Start()
+    {
+        if (instance != null) Destroy(gameObject);
+        else instance = this;
+    }
+
+    public void UpdateScore(int scoreChange)
+    {
+        score += scoreChange;
+        scoreText.text = score.ToString();
+    }
+}
+```
 
 ## Interaction components
 
@@ -292,3 +338,6 @@ Try out setting RectTransform anchor points and see how the UI changes when you 
 
 * [Unity UI manual: Designing UI for multiple resolutions](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/HOWTO-UIMultiResolution.html)
 * [Unity UI manual: Creating UI elements from scripting](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/HOWTO-UICreateFromScripting.html)
+* [UI Toolkit](https://docs.unity3d.com/Manual/UIElements.html)
+  * Collection of features, resources, and tools for UI
+    * Create UIs with style sheets

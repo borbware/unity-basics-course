@@ -88,4 +88,23 @@ math: mathjax
 * Docs will be heavily featured during the course!
 * Note: There are different docs for different versions of Unity
   * See the top left corner and the page URL if it matches
-  * Some pages are missing from newer docs so I'll refer to older ones in those cases 
+  * Some pages are missing from newer docs so I'll refer to older ones in those cases
+
+## Unity Setup
+
+* We use Unity with the Unity Hub in the course
+  * That way, we can install multiple versions of Unity if needed
+* Download [Unity Hub](https://unity3d.com/get-unity/download)
+  * Install the latest Unity LTS (long term support) version 2021.3.21f1
+
+### Settings
+
+* *Preferences > Editor > External Script Editor: Visual Studio Code*
+  * Click *Regenerate project files*
+  * You might have to do this again on new projects.
+* *Preferences > Colors > Playmode tint* 
+  * Set to red
+* *Project Settings > Editor> Play Mode Options*
+  * ✅*Enter Play Mode Options*
+    * ⬛*Reload Domain*
+  * This makes entering playmode ***INSTANT***.
