@@ -23,6 +23,8 @@ math: mathjax
   * *File > Build Settings > Scenes in Build*
   * Either drag-and-drop your scenes here or click *Add Open Scenes* 
   * The top-most scene will be the one that gets loaded when the game starts
+* See [Building](building.md) for more about Build settings.
+
 
 ## Scene manager
 

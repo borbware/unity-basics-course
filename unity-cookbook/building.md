@@ -25,6 +25,17 @@ paginate: true
 
 ![](imgs/addmodules.png)
 
+## Build settings
+
+![](imgs/player-build-settings.png)
+
+* You can make the built game look a bit more polished in *Project Settings > Player*:
+  * Product Name (name of the executable)
+  * Default Icon (icon of the executable)
+  * Company Name (goes to metadata)
+
+
+
 ## Target resolution
 
 * Shown resolution is set in the Game view. Click *Free Aspect* and change the aspect ratio to your liking
