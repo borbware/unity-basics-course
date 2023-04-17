@@ -23,14 +23,16 @@ title: Module 3.
 ⭐ MVP
   * Top-down movement
   * Tile-based level (bigger than one screen!)
-  * Animated player character
-    * Attack (punch or shoot)
+  * Player character
+    * Animations
+    * Attack action (punch or shoot)
+    * Health
   * Enemies that hurt the player
   * Health item pickups
 ---
 <!-- _backgroundColor: #257179 -->
 ⭐⭐
-Pick two:
+Pick one:
 * Player defense
 * Keys that open doors
 * Enemy AI
@@ -38,9 +40,9 @@ Pick two:
 <!-- _backgroundColor: #257179 -->
 ⭐⭐⭐
 * Pick one:
-  * Co-op
   * Boss fight
   * A power-up that is required to clear the dungeon
+  * Co-op
 
 
 ## MP Exercise 1. Tiles!
@@ -57,3 +59,5 @@ Pick a tile map (or two) for your game!
 * https://o-lobster.itch.io/simple-dungeon-crawler-16x16-pixel-pack
 * https://szadiart.itch.io/rogue-fantasy-catacombs
 * https://ansimuz.itch.io/patreons-top-down-collection
+
+More available on [opengameart.org](https://opengameart.org/)
