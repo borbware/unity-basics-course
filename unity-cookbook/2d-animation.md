@@ -33,16 +33,36 @@ paginate: true
 * Select the GameObject you want to animate
 * Open ***Animation Window***: *Window > Animation > Animation*
 * Click *Create* to create a new animation (.anim) file, or a ***clip***
-  * Good ideas to have separate animation files for *Idle*, *Jumping*, *Running*, etc...
-  * Name the first clip ***Player_Idle***
+  * An animation controller (.controller) gets created simultaneously as well
+  * Also, your GameObject gets an Animator component
+  * Name the first clip *PlayerIdle*
+  * Good ideas to have separate animation files for *Idle*, *Jump*, *Run*, etc...
 
 ---
 
 ![](imgs/animation-window.png)
+* ***Note:*** The functionality of the animation timeline above relies that you ***keep your GameObject selected***
+  * Otherwise, you can't click the buttons
 * Drag sprites to your Animation timeline
-  * ***Note:*** The final frame duration is less than the others. For an easy fix, add the first frame as a duplicate to the end
+  * ***Note:*** The final frame duration is less than the others. For an easy fix, add a new key to the end with *Right click > Add key*
 * Set *Samples* to a lower value to make your new animation less frantic
-* You can create new clips in the Player_Idle dropdown
+* You can create new clips in the *PlayerIdle* dropdown
+
+### Controlling animation with code
+
+* The fastest way to get your animations running is to control the Animator component with code
+* [Script Reference: Animator.Play](https://docs.unity3d.com/ScriptReference/Animator.Play.html)
+  ```c#
+  Animator anim = GetComponent<Animator>();
+  anim.Play("PlayerAttack");
+  ```
+* Check which animation is playing
+  ```c#
+  if (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerAttack"))
+  {
+        Debug.Log("Playing attack anim!");
+  }
+  ```
 
 ## Animator controller
 
@@ -51,18 +71,18 @@ paginate: true
 * This can be modified in the ***Animator Controller Window***
   * [Manual: Animator Controller](https://docs.unity3d.com/Manual/class-AnimatorController.html)
   * ***Note:*** This was previously known as Mecanim State Machine
-* To actually use the transition rules, your player GameObject needs the Animator component (it's added automatically)
+* To actually use the transition rules, your player GameObject needs the Animator component (it was added automatically)
   * [Manual: Animator Component](https://docs.unity3d.com/Manual/class-Animator.html)
 
-## ...State machine? 
+### Animator window
 
-* Unity Animation State Machine can seem daunting if you're not familiar with the concept of a State Machine
+* Unity Animator window, aka the Animation State Machine can seem daunting if you're not familiar with the concept of a State Machine
 * Luckily, the Manual has good resources about the animation state machine 
 * [Manual: State Machine Basics](https://docs.unity3d.com/Manual/StateMachineBasics.html)
-* Also, note that at its current state, the animator window can be very janky. If you e.g. cannot move the states around, set the inspector into Debug mode
+* Also, note that at its current state, the animator window can be very janky. E.g., If you cannot move the states around, set the inspector into Debug mode
   * *Inspector window > Three dots in the top right corner > Debug*
 
-## Animator controller: Usage
+### Animator controller: Usage
 
 ![](imgs/animator-states.png
 )
@@ -83,6 +103,7 @@ paginate: true
 
 ### Layers & parameters
 
+* To trigger state transitions, we control the controller's parameters in code 
 * [Manual: Animation Parameters](https://docs.unity3d.com/Manual/AnimationParameters.html)
 * ***Layers*** and ***parameters*** can be used to control our animation with code
 * Create a new float parameter named *Speed*
@@ -93,20 +114,6 @@ paginate: true
   anim.SetFloat("Speed",_rigidbody.velocity.Magnitude);
   ```
 * `anim.SetTrigger("StartWalking")` works similarly
-
-### Controlling animation with code
-
-* Check which animation is playing
-  ```c#
-  if (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerAttack"))
-  {
-        Debug.Log("Playing attack anim!");
-  }
-  ```
-* [Script Reference: Animator.Play](https://docs.unity3d.com/ScriptReference/Animator.Play.html)
-  ```c#
-  anim.Play("PlayerAttack");
-  ```
 
 ### Animation Events
 
