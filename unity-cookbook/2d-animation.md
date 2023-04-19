@@ -74,15 +74,15 @@ paginate: true
 * To actually use the transition rules, your player GameObject needs the Animator component (it was added automatically)
   * [Manual: Animator Component](https://docs.unity3d.com/Manual/class-Animator.html)
 
-### Animator window
+## Animator window
 
 * Unity Animator window, aka the Animation State Machine can seem daunting if you're not familiar with the concept of a State Machine
-* Luckily, the Manual has good resources about the animation state machine 
-* [Manual: State Machine Basics](https://docs.unity3d.com/Manual/StateMachineBasics.html)
-* Also, note that at its current state, the animator window can be very janky. E.g., If you cannot move the states around, set the inspector into Debug mode
+* Luckily, the Manual has good resources about state machines
+  * [Manual: State Machine Basics](https://docs.unity3d.com/Manual/StateMachineBasics.html)
+* ***Note:*** the animator window can be janky. E.g., If you cannot move the states around, set the inspector into Debug mode
   * *Inspector window > Three dots in the top right corner > Debug*
 
-### Animator controller: Usage
+### Using the Animator window
 
 ![](imgs/animator-states.png
 )
@@ -95,17 +95,22 @@ paginate: true
 
 * [Manual: Animation Transitions](https://docs.unity3d.com/530/Documentation/Manual/class-Transition.html)
 
-![](imgs/animator-transition-inspector.png)
+![bg right:35% height:95%](imgs/animator-transition-inspector.png)
 
 * *Has Exit time*:
-  * Means: "will exit automatically after this amount of time has passed"
-  * You can set *Exit time* from the Settings submenu
+  * The most absolutely confusingly named variable of all years
+  * Means: "Transition will happen automatically after Exit time has passed"
+  * Usually we want to uncheck this.
+* *Settings*
+  * *Exit time*: The number of ***loops*** to go through before the automatic transition
+    * Oh wow, it's not even time, really
+  * *Transition Duration*: In sprite animations, we usually want to set this to 0.
 
-### Layers & parameters
+### Parameters
 
 * To trigger state transitions, we control the controller's parameters in code 
 * [Manual: Animation Parameters](https://docs.unity3d.com/Manual/AnimationParameters.html)
-* ***Layers*** and ***parameters*** can be used to control our animation with code
+* Change the *Layers* view to *Parameters* 
 * Create a new float parameter named *Speed*
 * Go to a transition, and create a new ***condition*** for the parameter 
   ```c#
@@ -114,6 +119,42 @@ paginate: true
   anim.SetFloat("Speed",_rigidbody.velocity.Magnitude);
   ```
 * `anim.SetTrigger("StartWalking")` works similarly
+
+## Blend tree
+
+* In real-world, usage, animator states can be way more comples
+  * This can lead to so-called transition hell
+* We can battle this by creating blend trees or other layers that contain multiple animations
+* [Manual: Blend trees](https://docs.unity3d.com/Manual/class-BlendTree.html)
+  * A common usage for blend trees is to add directional animation:
+* For example, a *PlayerWalk* blend tree that contains *PlayerWalkDown*, *PlayerWalkUp*, etc states
+  * Create a blend tree by right-clicking the animator background and choose
+    * *Create state > From new blend tree*
+  * Name the blend tree to *PlayerWalk*
+  * Double click the blend tree to open it
+
+### Editing a blend tree
+
+![](imgs/animation-blend-tree.png)
+
+---
+
+* Change blend type to *2D Simple directional*.
+* Set two float parameters to control the blend tree (here: *XSpeed* and *YSpeed*) 
+  * Create the parameters if you need to.
+* Press + to add four empty *Motion fields* (a.k.a., slots for the animation clips) to the blend tree
+* Drag the animation clips from the Project view to motion fields
+* Set the Pos X and Pos Y parameters or drag the motion fields to their corresponding positions (*PlayerWalkDown* should be down, etc.)
+* Now, when you change the values of the parameters *XSpeed* and *YSpeed*, the blend tree will go to the motion field that matches the values the best
+
+### Controlling animation clip speed
+
+![bg right:30% height:50%](imgs/animation-state-inspector.png)
+* You can control the speed an animation clip is played easily by setting a parameter to control it
+* Click on a state in the animator to show it in the inspector
+  * Check *Parameter* under *Speed*
+  * Choose the float parameter you want to use as a multiplier for the animation clip speed
+  * Done!
 
 ### Animation Events
 
@@ -124,15 +165,8 @@ paginate: true
 
 * [Manual: State Machine Behaviours](https://docs.unity3d.com/Manual/StateMachineBehaviours.html)
 * To add functionality to animation states, you can add state machine behaviours
-* Or ***COULD***, if Unity animator inspector wouldn't be an awful buggy mess
 
-### Extras: Advanced animation states
-<!-- _backgroundColor: #5d275d -->
 
-* In real-world, usage, animator states can be way more comples
-  * This can lead to so-called transition hell
-* [Manual: Animation State Machines](https://docs.unity3d.com/Manual/AnimationStateMachines.html)
-* [Manual: Blend trees](https://docs.unity3d.com/Manual/class-BlendTree.html)
 
 ## Extra: UI animations
 <!-- _backgroundColor: #5d275d -->

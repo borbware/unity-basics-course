@@ -120,7 +120,25 @@ paginate: true
 
 ## 2D extras: GameObject tile
 
-* Todo later xx
+* GameObjects can be "drawn" (created) as tiles in the tilemap with the GameObject brush
+* It's a different brush than the default brush we've been using and has to be set up first
+* Remember to go back to default brush when you want to draw background tiles again!
+* You'll need a Prefab of the GameObject you want to spawn in the tilemap
+
+### GameObject tile setup
+
+
+![bg right:26% height:90%](imgs/tile-palette-gameobject-brush.png)
+
+* 1 - Drag a sprite to the tile palette that you want to use as the created GameObject
+* 2 - In Tile palette, change *Default brush* to *GameObject brush*
+* 3 - Click the sprite you dragged to the tile palette
+* 4 - Click *Edit*
+  * ***BE CAREFUL!*** Exit edit mode right after you've made the changes you need.
+* 5 - Drag the GameObject Prefab to Element 0
+* 6 - Click *Edit* to exit *Edit* mode.
+* 7 - Use the GameObject brush to add new GameObjects - they'll show up in Hierarchy right away.
+
 
 ## Exercise 1. A tiled level
 <!-- _backgroundColor: #29366f -->
@@ -137,7 +155,7 @@ Import a tilemap from an existing sprite sheet. Create a tiny level out of your 
 	* Also, add the same offset to player's RigidBody
 * Then, click on the *Snap to grid* button (left side of *Play* button)
 
-## Fix ugly seams in tilemap
+## Fixing ugly seams in tilemap
 
 * Many things can cause this.
 * In Game Mode, create a new resolution and set it to a *Fixed resolution* that is a multiple of your tile size
