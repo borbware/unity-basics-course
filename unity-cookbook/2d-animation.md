@@ -106,7 +106,7 @@ paginate: true
     * Oh wow, it's not even time, really
   * *Transition Duration*: In sprite animations, we usually want to set this to 0.
 
-### Parameters
+### Animation parameters
 
 * To trigger state transitions, we control the controller's parameters in code 
 * [Manual: Animation Parameters](https://docs.unity3d.com/Manual/AnimationParameters.html)
@@ -119,6 +119,17 @@ paginate: true
   anim.SetFloat("Speed",_rigidbody.velocity.Magnitude);
   ```
 * `anim.SetTrigger("StartWalking")` works similarly
+
+## Animation clip properties
+
+![](imgs/animation-clip-properties.png)
+
+* We can control component properties straight from the animation clips themselves
+* Use case: If we want to use the same walk animation sprites for *PlayerWalkLeft* that we have for *PlayerWalkRight*
+* In the *PlayerWalkLeft* animation clip, click *Add Property
+  * Choose Sprite Renderer Component 
+  * Choose the FlipX property
+  * Tick the box, and move the created key to the start of the clip
 
 ## Blend tree
 
