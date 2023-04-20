@@ -141,16 +141,21 @@ paginate: true
     * *Create state > From new blend tree*
   * Name the blend tree to *PlayerWalk*, and double click the blend tree to open it
 * ***Note:*** You can also convert an existing state into a blend tree with *Right click > Create blend tree from state*
-### Editing a blend tree
 
-![](imgs/animation-blend-tree.png)
+### Creating a 2D blend tree
 
----
-
-* Change blend type to *2D Simple directional*.
+![](imgs/animation-blend-tree-start.png)
+* Change *Blend type* to *2D Simple directional*.
 * Set two float parameters to control the blend tree (here: *XSpeed* and *YSpeed*) 
   * Create the parameters if you need to.
 * Press + to add four empty *Motion fields* (a.k.a., slots for the animation clips) to the blend tree
+  
+---
+
+![](imgs/animation-blend-tree.png)
+
+### Adding animation clips to a blend tree
+
 * Drag the animation clips from the Project view to motion fields
 * Set the Pos X and Pos Y parameters or drag the motion fields to their corresponding positions (*PlayerWalkDown* should be down, etc.)
   * Values of 0.1 seem to work well so the states are triggered even when the analog stick is moved slightly. See image in the previous slide!
