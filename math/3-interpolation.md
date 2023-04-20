@@ -50,6 +50,7 @@ After pressing a button once, lerp GameObject's color from red to blue.
 * Other way around: some types have their own built-in lerps
   * [Vector2.Lerp](https://docs.unity3d.com/ScriptReference/Vector2.Lerp.html)
   * [Vector3.Lerp](https://docs.unity3d.com/ScriptReference/Vector3.Lerp.html)
+  * [Color.Lerp](https://docs.unity3d.com/ScriptReference/Color.Lerp.html)
   * [Quaternion.Slerp](https://docs.unity3d.com/ScriptReference/Quaternion.Slerp.html)
 
 ### Slerp example

@@ -126,24 +126,21 @@ paginate: true
 
 * We can control component properties straight from the animation clips themselves
 * Use case: If we want to use the same walk animation sprites for *PlayerWalkLeft* that we have for *PlayerWalkRight*
-* In the *PlayerWalkLeft* animation clip, click *Add Property
+* In the *PlayerWalkLeft* animation clip, click *Add Property*
   * Choose Sprite Renderer Component 
-  * Choose the FlipX property
+  * Choose the *FlipX* property
   * Tick the box, and move the created key to the start of the clip
 
-## Blend tree
+## Blend trees
 
-* In real-world, usage, animator states can be way more comples
-  * This can lead to so-called transition hell
-* We can battle this by creating blend trees or other layers that contain multiple animations
-* [Manual: Blend trees](https://docs.unity3d.com/Manual/class-BlendTree.html)
-  * A common usage for blend trees is to add directional animation:
-* For example, a *PlayerWalk* blend tree that contains *PlayerWalkDown*, *PlayerWalkUp*, etc states
+* Having animation states for all moving directions can lead to "transition hell"
+* We can keep the base layer simpler by creating ***blend trees***: [Manual: Blend trees](https://docs.unity3d.com/Manual/class-BlendTree.html)
+* A common usage for blend trees is to add directional animation:
+  * E.g., a *PlayerWalk* blend tree that contains *PlayerWalkDown*, *PlayerWalkUp*, etc states
   * Create a blend tree by right-clicking the animator background and choose
     * *Create state > From new blend tree*
-  * Name the blend tree to *PlayerWalk*
-  * Double click the blend tree to open it
-
+  * Name the blend tree to *PlayerWalk*, and double click the blend tree to open it
+* ***Note:*** You can also convert an existing state into a blend tree with *Right click > Create blend tree from state*
 ### Editing a blend tree
 
 ![](imgs/animation-blend-tree.png)
@@ -156,7 +153,29 @@ paginate: true
 * Press + to add four empty *Motion fields* (a.k.a., slots for the animation clips) to the blend tree
 * Drag the animation clips from the Project view to motion fields
 * Set the Pos X and Pos Y parameters or drag the motion fields to their corresponding positions (*PlayerWalkDown* should be down, etc.)
+  * Values of 0.1 seem to work well so the states are triggered even when the analog stick is moved slightly. See image in the previous slide!
 * Now, when you change the values of the parameters *XSpeed* and *YSpeed*, the blend tree will go to the motion field that matches the values the best
+
+### Animation controller example
+
+```c#
+displacement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+displacement = Vector2.ClampMagnitude(displacement, 1);
+rb.velocity = displacement * Time.deltaTime * walkSpeed;
+
+animator.SetFloat("WalkSpeed", rb.velocity.magnitude);
+
+if (displacement.magnitude > 0.1f)
+{
+    animator.SetFloat("XSpeed", displacement.x);
+    animator.SetFloat("YSpeed", displacement.y);
+}
+```
+* Here, we set three properties:
+* *WalkSpeed* is used to transition between *PlayerIdle* and *PlayerWalk* blend trees
+* *XSpeed* and *YSpeed* are used to choose direction in the blend trees
+  * Note that we don't reset them when movement stops!
+
 
 ### Controlling animation clip speed
 
@@ -167,12 +186,14 @@ paginate: true
   * Choose the float parameter you want to use as a multiplier for the animation clip speed
   * Done!
 
-### Animation Events
+## Extra: Animation Events
+<!-- _backgroundColor: #5d275d -->
 
 * [Manual: Using Animation Events](https://docs.unity3d.com/Manual/script-AnimationWindowEvent.html)
 * You can add animation events to call a function in a specific point of an animation
 
-### State machine behaviour scripts
+## Extra: State machine behaviour scripts
+<!-- _backgroundColor: #5d275d -->
 
 * [Manual: State Machine Behaviours](https://docs.unity3d.com/Manual/StateMachineBehaviours.html)
 * To add functionality to animation states, you can add state machine behaviours
