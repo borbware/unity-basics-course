@@ -68,6 +68,18 @@ paginate: true
 * Then, paint away to create your tile-based level! The brush tool should be active by default.
 * ***Note:*** We can also drag regular single sprites into the tile palette!
 
+### Tile palette pro tips
+
+* Use the *Pick or marquee select* tool (Eyedropper) to quickly copy-paste areas in the tilemap.
+* There are also hidden flip & rotate tools!
+  * Go to *Preferences > 2D > Tile Palette*
+  * Select a tool in the list and press the + Button.
+    * *FlipXTool, FlipYTool, RotateClockwiseTool, RotateCounterClockwiseTool*
+  * The tools are a bit counterintuitive, but they're easier to use with hotkeys
+    * On Finnish keyboard:
+      * Rotate: ***`***, ***Å***
+      * Flip: ***SHIFT +`***, ***SHIFT + Å***,)
+
 
 ## Collision
 
@@ -130,14 +142,16 @@ paginate: true
 
 ![bg right:26% height:90%](imgs/tile-palette-gameobject-brush.png)
 
-* 1 - Drag a sprite to the tile palette that you want to use as the created GameObject
-* 2 - In Tile palette, change *Default brush* to *GameObject brush*
-* 3 - Click the sprite you dragged to the tile palette
-* 4 - Click *Edit*
-  * ***BE CAREFUL!*** Exit edit mode right after you've made the changes you need.
-* 5 - Drag the GameObject Prefab to Element 0
-* 6 - Click *Edit* to exit *Edit* mode.
-* 7 - Use the GameObject brush to add new GameObjects - they'll show up in Hierarchy right away.
+1. Drag a sprite to the tile palette that you want to use as the created GameObject
+2. Tile palette: Change *Default brush* to *GameObject brush*
+3. Choose the brush tool
+4. Click *Edit* to enter the edit mode
+     * ***BE CAREFUL!*** Remember to exit edit mode later.
+5. Drag the GameObject Prefab to *Element 0*
+6. Click on the tile you added the sprite to
+7. Click *Edit* to exit *Edit* mode.
+   * Now, when you click on the chosen tile, it should display the GameObject.
+8. Use the GameObject brush to add new GameObjects - they'll show up in Hierarchy right away.
 
 
 ## Exercise 1. A tiled level
