@@ -142,16 +142,14 @@ paginate: true
 
 ![bg right:26% height:90%](imgs/tile-palette-gameobject-brush.png)
 
-1. Drag a sprite to the tile palette that you want to use as the created GameObject
-2. Tile palette: Change *Default brush* to *GameObject brush*
-3. Choose the brush tool
+1. In Tile palette, choose the brush tool
+2. Change *Default brush* to *GameObject brush*
+3. Drag the GameObject Prefab to *Element 0*
 4. Click *Edit* to enter the edit mode
-     * ***BE CAREFUL!*** Remember to exit edit mode later.
-5. Drag the GameObject Prefab to *Element 0*
-6. Click on the tile you added the sprite to
-7. Click *Edit* to exit *Edit* mode.
-   * Now, when you click on the chosen tile, it should display the GameObject.
-8. Use the GameObject brush to add new GameObjects - they'll show up in Hierarchy right away.
+5. Click on the tile you added the sprite to
+6. Click *Edit* to exit *Edit* mode.
+   * Now, when you click on the chosen tile, it should display the GameObject in *Element 0*.
+7. Use the GameObject brush to add new GameObjects - they'll show up in Hierarchy right away.
 
 
 ## Exercise 1. A tiled level

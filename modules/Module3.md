@@ -28,7 +28,7 @@ title: Module 3.
     * Attack action (punch or shoot)
     * Health
   * Enemies that hurt the player
-  * Health item pickups
+* ***Optional:*** Health item pickups 
 ---
 <!-- _backgroundColor: #257179 -->
 ⭐⭐
@@ -43,6 +43,7 @@ Pick one:
   * Boss fight
   * A power-up that is required to clear the dungeon
   * Co-op
+  * Multiple floors
 
 
 ## MP Exercise 1. Tiles!
