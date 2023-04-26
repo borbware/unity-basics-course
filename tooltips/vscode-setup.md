@@ -2,6 +2,7 @@
 title: VS Code setup
 marp: true
 paginate: true
+math: mathjax
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
