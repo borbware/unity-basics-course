@@ -444,3 +444,43 @@ public int Level
 
 public int Health{ get; set;} // This is an example of an auto-implemented property
 ```
+
+---
+
+## Example: Implementing the Vector3 class in C#
+
+```c#
+using System;
+
+class Vector3
+{
+	public float x; public float y; public float z;
+	
+	public Vector3(float x0, float y0, float z0)
+	{
+		x = x0; y = y0; z = z0;
+	}
+	public void Print()
+	{
+		Console.WriteLine($"x: {x}, y: {y}, z: {z}");
+	}
+	public static Vector3 forward
+	{
+		get
+		{
+			return new Vector3(0, 0, 1);
+		}
+	}
+}
+
+public class Program
+{
+	public static void Main()
+	{
+		Vector3 vec = new Vector3(0, 4, 2);
+		vec.Print();
+		Vector3 forw = Vector3.forward;
+		forw.Print();
+	}
+}
+```
