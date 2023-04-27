@@ -71,6 +71,7 @@ paginate: true
 ### Tile palette pro tips
 
 * Use the *Pick or marquee select* tool (Eyedropper) to quickly copy-paste areas in the tilemap.
+* Hold ***CTRL*** when Eraser is selected to make the eraser bigger.  
 * There are also hidden flip & rotate tools!
   * Go to *Preferences > 2D > Tile Palette*
   * Select a tool in the list and press the + Button.
