@@ -67,7 +67,7 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-marpit-fragments="3" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="4" data-marpit-pagination-total="15" style="--paginate:true;--class:invert;--heading-divider:3;">
 <h2>Multicasting</h2>
 <ul>
-<li data-marpit-fragment="1">multicasting with +=
+<li data-marpit-fragment="1">Multicasting with <code>+=</code>
 <ul>
 <li data-marpit-fragment="2"><a href="https://learn.unity.com/tutorial/delegates?uv=2019.3&amp;projectId=5c88f2c1edbc2a001f873ea5#5c894658edbc2a0d28f48aee">Learn: Multicasting</a><pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-c#"><span class="hljs-function"><span class="hljs-built_in">delegate</span> <span class="hljs-keyword">void</span> <span class="hljs-title">MyDelegate</span>()</span>; 
 MyDelegate attack;
@@ -81,19 +81,19 @@ MyDelegate attack;
 </li>
 </ul>
 </li>
-<li data-marpit-fragment="3">now <strong>both</strong> PrimaryAttack and SecondaryAttack trigger when attack is called.</li>
+<li data-marpit-fragment="3">Now <strong>both</strong> PrimaryAttack and SecondaryAttack trigger when attack is called.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-marpit-fragments="5" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="5" data-marpit-pagination-total="15" style="--paginate:true;--class:invert;--heading-divider:3;">
 <h2>Events</h2>
 <ul>
-<li data-marpit-fragment="1">observer pattern
+<li data-marpit-fragment="1">Observer pattern
 <ul>
 <li data-marpit-fragment="2"><a href="http://gameprogrammingpatterns.com/observer.html">Game programming patterns.com: Observer pattern</a></li>
 </ul>
 </li>
 <li data-marpit-fragment="3">Events are specialized multicast delegates</li>
-<li data-marpit-fragment="4">can only be triggered from within their own class, not from elsewhere</li>
+<li data-marpit-fragment="4">Can only be triggered from within their own class, not from elsewhere</li>
 <li data-marpit-fragment="5"><a href="https://learn.unity.com/tutorial/events-uh?uv=2019.3&amp;projectId=5c88f2c1edbc2a001f873ea5#5c894782edbc2a1410355442">Learn: Events</a></li>
 </ul>
 </section>
@@ -122,8 +122,8 @@ MyDelegate attack;
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-marpit-fragments="3" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="7" data-marpit-pagination-total="15" style="--paginate:true;--class:invert;--heading-divider:3;">
 <h2>Actions</h2>
 <ul>
-<li data-marpit-fragment="1">it can sometimes be inconvenient to declare a new delegate type every time you want to use one</li>
-<li data-marpit-fragment="2">especially if all you want to do is create a basic event</li>
+<li data-marpit-fragment="1">It can sometimes be inconvenient to declare a new delegate type every time you want to use one</li>
+<li data-marpit-fragment="2">Especially if all you want to do is create a basic event</li>
 <li data-marpit-fragment="3">Actions allow you to use a generic delegate type without needing to define it in your script first<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-c#"><span class="hljs-comment">// this...</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">event</span> Action OnGameOver;
 
@@ -136,11 +136,11 @@ MyDelegate attack;
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-marpit-fragments="2" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="8" data-marpit-pagination-total="15" style="--paginate:true;--class:invert;--heading-divider:3;">
 <ul>
-<li data-marpit-fragment="1">adding parameters<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-c#"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">event</span> Action&lt;<span class="hljs-built_in">string</span>&gt; OnGameOver;
+<li data-marpit-fragment="1">Adding parameters<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-c#"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">event</span> Action&lt;<span class="hljs-built_in">string</span>&gt; OnGameOver;
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">event</span> Action&lt;<span class="hljs-built_in">float</span>, <span class="hljs-built_in">bool</span>&gt; OnPlayerHurt;
 </code></pre>
 </li>
-<li data-marpit-fragment="2">calling with parameters<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-c#"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">event</span> Action&lt;<span class="hljs-built_in">string</span>&gt; OnGameOver;
+<li data-marpit-fragment="2">Calling with parameters<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-c#"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">event</span> Action&lt;<span class="hljs-built_in">string</span>&gt; OnGameOver;
 
 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">TakeDamage</span>(<span class="hljs-params"><span class="hljs-built_in">float</span> damage</span>)</span>
 {
@@ -157,17 +157,17 @@ MyDelegate attack;
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-marpit-fragments="7" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="9" data-marpit-pagination-total="15" style="--paginate:true;--class:invert;--heading-divider:3;">
 <h2>UnityEvents</h2>
 <ul>
-<li data-marpit-fragment="1">to confuse matters further, Unity has its own UnityEvent system as well.</li>
-<li data-marpit-fragment="2">good stuff
+<li data-marpit-fragment="1">To confuse matters further, Unity has its own UnityEvent system as well.</li>
+<li data-marpit-fragment="2">Good stuff
 <ul>
-<li data-marpit-fragment="3">you won't need to nullcheck UnityEvents.</li>
+<li data-marpit-fragment="3">You won't need to nullcheck UnityEvents.</li>
 <li data-marpit-fragment="4">Unity Events have special controls in Inspector
 <ul>
-<li data-marpit-fragment="5">contains the list of event function calls</li>
-<li data-marpit-fragment="6">add function calls by drag-and-dropping</li>
+<li data-marpit-fragment="5">Contains the list of event function calls</li>
+<li data-marpit-fragment="6">Add function calls by drag-and-dropping</li>
 </ul>
 </li>
-<li data-marpit-fragment="7">thus, extremely useful for making logical connections between scripts in the Inspector</li>
+<li data-marpit-fragment="7">Thus, extremely useful for making logical connections between scripts in the Inspector</li>
 </ul>
 </li>
 </ul>
@@ -234,11 +234,11 @@ MyDelegate attack;
 }
 </code></pre>
 <ul>
-<li data-marpit-fragment="1">bad stuff
+<li data-marpit-fragment="1">Bad stuff
 <ul>
 <li data-marpit-fragment="2">Hooking up scripts in the Inspector requires you to make a manual connection which may not work well for different objects in the scene, especially if they’re created as the game runs.</li>
-<li data-marpit-fragment="3">when connecting events between unrelated objects, you may find it more useful to use event delegates instead.</li>
-<li data-marpit-fragment="4">to overcome this, there's the Scriptable Object Unity Event :)))))))</li>
+<li data-marpit-fragment="3">When connecting events between unrelated objects, you may find it more useful to use event delegates instead.</li>
+<li data-marpit-fragment="4">To overcome this, there's the Scriptable Object Unity Event :)))))))</li>
 </ul>
 </li>
 </ul>
