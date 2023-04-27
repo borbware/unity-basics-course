@@ -44,9 +44,13 @@ paginate: true
 * [`Awake()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.Awake.html)
   * Called first
   * Called even if the script component is not enabled!
+  * Other GameObjects in the scene don't necessarily yet exist when this is called
+  * Also, you can't access serialized values from inspector here! 
 * [`Start()`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html)
   * Called second, right before the first Update
   * Only called if the script component IS enabled
+  * Other GameObjects in the scene already exist
+  * Serialized variables exist as well
 
 ## `Update()` function
 
