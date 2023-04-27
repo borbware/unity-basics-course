@@ -30,6 +30,7 @@ github_username:  borbware
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-titles-from-headings
 defaults:
   -
     scope:
