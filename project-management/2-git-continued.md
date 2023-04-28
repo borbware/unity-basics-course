@@ -28,17 +28,17 @@ paginate: true
 
 * You can create a new branch with `git branch <branchName>`
   * The new branch is not empty: it contains a copy of the code of the branch you executed this command in
-* **Note:** `git branch` does not make the branch active!
+* ***Note:*** `git branch <branchName>` does not make the branch active!
 * To make the branch active, a.k.a "move" to the branch:
   * `git checkout <branchName>`. 
   * For example, to move back to master use `git checkout master`
 
 ### Local vs. remote branches
 
-* `git branch branchName` only creates a local branch
+* `git branch <branchName>` only creates a local branch
 * When you try to push changes from a new local branch, Git nags you that a matching remote branch doesn't yet exist
   * Git tells you how to create the remote branch:
-    * `git push --set-upstream origin newBranch`
+    * `git push --set-upstream origin <newBranch>`
     * Afterwards, `git push` pushes the changes to the matching remote branch
 
 ### Extra branch commands
@@ -56,8 +56,8 @@ paginate: true
 
 * So you've been working on a feature branch. What next?
 * When the feature is done (and all the broken things fixed), you want to apply your changes back to `master`
-* For this, we use `git merge <branch-to-merge>`
-  * It applies changes from `<branch-to-merge>` to the ***current active branch***
+* For this, we use `git merge <branchToMerge>`
+  * It applies changes from `<branchToMerge>` to the ***current active branch***
 * `master` branch is usually (and should be) protected, so we can't merge our new code to `master` directly
 * Instead, we do the *inverse*.
 
@@ -69,13 +69,18 @@ paginate: true
   * This creates a formal process for merging your *remote* feature branch to remote `master`
   * This adds a layer of protection to the `master` branch: no direct merging!
 
+### Pull requests > New pull request 
+
+
+
 ### If automatic merge fails...
 
-1) Pull remote changes to your local `master` and merge changes to your local feature branch.
-     * If you're on your feature branch, you can do this quickly without changing branches with
+1) Pull remote changes to your local `master`.
+     * ***Pro tip:*** If you're on your feature branch, you can do this quickly without changing branches with
     ```git fetch origin master:master```
-2) Fix the ensuing ***conflicts*** (see [next section](#3-conflicts))
-3) Push your new local branch to GitHub/etc
+2) Merge changes from `master` to your local feature branch.
+3) Fix the ensuing ***conflicts*** (see [next section](#3-conflicts))
+4) Push your new local branch to GitHub/etc
 ---
 ![](imgs/github-pullreq.png)
 
@@ -85,7 +90,7 @@ paginate: true
 1) First, checkout the `master` branch with `git checkout master`
 2) Then, do a `git pull` so you have the newest version of the `master` branch
      * Someone else might have done changes to it while you were working on your feature!
-3) Then, merge `featureBranch` to `master` with `git merge <featureBranchName>`
+3) Then, merge `<featureBranch>` to `master` with `git merge <featureBranch>`
      * Fix conflicts 
 
 ## Exercise 1. Pushing onwards
@@ -221,7 +226,7 @@ From Scene 4, the game should loop back to Scene 1.
 ## Reading 
 
 * [Pro Git book](https://git-scm.com/book/en/v2)
-* [Oh shit Git]([ohshitgit.com](https://ohshitgit.com/))
+* [Oh shit Git](https://ohshitgit.com/)
 * [Undo possibilities](https://docs.gitlab.com/ee/topics/git/numerous_undo_possibilities_in_git/) 
 
 ## Very extra: `git rebase`
