@@ -13,8 +13,8 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 * [Game Dev Academy 2023 3D examples](https://github.com/borbware/GameDevAcademy2023)
 * [Game Dev Academy 2023 2D examples](https://github.com/borbware/GameDevAcademy2023-2D)
 * [Module 1 example solution (Clock)](https://github.com/borbware/CatlikeClock)
+* [Multiplayer Arena (Stage 2: Challenge 1)](https://github.com/borbware/MultiplayerArena)
 * [Course materials (this site)](https://github.com/borbware/unity-basics-course)
-
 
 # Stages
 
@@ -25,33 +25,6 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 1 | Module 3 | [🎞](modules/Module3-slides.html) | [📖](modules/Module3) | 🌔 |
 
 # Books
-
-## About programming
-
-### Programming
-
-|   |                                  | Slides                                                    | Page                                          |    |
-|---|----------------------------------|-----------------------------------------------------------|-----------------------------------------------|---:|
-| 0 | Introduction to Game Programming | [🎞](programming/0-game-programming-slides.html)          | [📖](programming/0-game-programming)          | 🌕 |
-| 1 | Variables                        | [🎞](programming/1-variables-slides.html)                 | [📖](programming/1-variables)                 | 🌕 |
-| 2 | Conditionals                     | [🎞](programming/2-conditionals-slides.html)              | [📖](programming/2-conditionals)              | 🌕 |
-| 3 | Functions                        | [🎞](programming/3-functions-slides.html)                 | [📖](programming/3-functions)                 | 🌕 |
-| 4 | Loops                            | [🎞](programming/4-loops-slides.html)                     | [📖](programming/4-loops)                     | 🌕 |
-| 5 | Arrays and Lists                 | [🎞](programming/5-arrays-lists-slides.html)              | [📖](programming/5-arrays-lists)              | 🌕 |
-| 6 | Classes and Methods              | [🎞](programming/6-classes-methods-slides.html)           | [📖](programming/6-classes-methods)           | 🌔 |
-| 7 | Special Types                    | [🎞](programming/7-special-types-slides.html)             | [📖](programming/7-special-types)             | 🌓 |
-| 8 | Game Programming Patterns        | [🎞](programming/8-game-programming-patterns-slides.html) | [📖](programming/8-game-programming-patterns) | 🌒 |
-
-### Math
-
-|   |                       | Slides                                 | Page                       |    |
-|---|-----------------------|----------------------------------------|----------------------------|---:|
-| 0 | Useful Math Functions | [🎞](math/0-mathf-slides.html)         | [📖](math/0-mathf)         | 🌔 |
-| 1 | Vectors               | [🎞](math/1-vectors-slides.html)       | [📖](math/1-vectors)       | 🌔 |
-| 2 | Forces                | [🎞](math/2-forces-slides.html)        | [📖](math/2-forces)        | 🌔 |
-| 3 | Interpolation         | [🎞](math/3-interpolation-slides.html) | [📖](math/3-interpolation) | 🌔 |
-| 4 | Sinewaves             | [🎞](math/4-sinewaves-slides.html)     | [📖](math/4-sinewaves)     | 🌒 |
-| 5 | Math classes          | [🎞](math/5-math-classes-slides.html)  | [📖](math/5-math-classes)  | 🌒 |
 
 ## About Unity
 
@@ -98,6 +71,34 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |     | Saving and loading     | [🎞](unity-cookbook/saving-loading-slides.html)  | [📖](unity-cookbook/saving-loading)  | 🌒 |
 |     | Building an executable | [🎞](unity-cookbook/building-slides.html)        | [📖](unity-cookbook/building)        | 🌓 |
 
+## About programming
+
+### Programming
+
+|   |                                  | Slides                                                    | Page                                          |    |
+|---|----------------------------------|-----------------------------------------------------------|-----------------------------------------------|---:|
+| 0 | Introduction to Game Programming | [🎞](programming/0-game-programming-slides.html)          | [📖](programming/0-game-programming)          | 🌕 |
+| 1 | Variables                        | [🎞](programming/1-variables-slides.html)                 | [📖](programming/1-variables)                 | 🌕 |
+| 2 | Conditionals                     | [🎞](programming/2-conditionals-slides.html)              | [📖](programming/2-conditionals)              | 🌕 |
+| 3 | Functions                        | [🎞](programming/3-functions-slides.html)                 | [📖](programming/3-functions)                 | 🌕 |
+| 4 | Loops                            | [🎞](programming/4-loops-slides.html)                     | [📖](programming/4-loops)                     | 🌕 |
+| 5 | Arrays and Lists                 | [🎞](programming/5-arrays-lists-slides.html)              | [📖](programming/5-arrays-lists)              | 🌕 |
+| 6 | Classes and Methods              | [🎞](programming/6-classes-methods-slides.html)           | [📖](programming/6-classes-methods)           | 🌔 |
+| 7 | Special Types                    | [🎞](programming/7-special-types-slides.html)             | [📖](programming/7-special-types)             | 🌓 |
+| 8 | Game Programming Patterns        | [🎞](programming/8-game-programming-patterns-slides.html) | [📖](programming/8-game-programming-patterns) | 🌒 |
+|   | Best practices                   | [🎞](programming/best-practices-slides.html)              | [📖](programming/best-practices)              | 🌔 |
+
+### Math
+
+|   |                       | Slides                                 | Page                       |    |
+|---|-----------------------|----------------------------------------|----------------------------|---:|
+| 0 | Useful Math Functions | [🎞](math/0-mathf-slides.html)         | [📖](math/0-mathf)         | 🌔 |
+| 1 | Vectors               | [🎞](math/1-vectors-slides.html)       | [📖](math/1-vectors)       | 🌔 |
+| 2 | Forces                | [🎞](math/2-forces-slides.html)        | [📖](math/2-forces)        | 🌔 |
+| 3 | Interpolation         | [🎞](math/3-interpolation-slides.html) | [📖](math/3-interpolation) | 🌔 |
+| 4 | Sinewaves             | [🎞](math/4-sinewaves-slides.html)     | [📖](math/4-sinewaves)     | 🌒 |
+| 5 | Math classes          | [🎞](math/5-math-classes-slides.html)  | [📖](math/5-math-classes)  | 🌒 |
+
 ## Tooltips
 
 |  |                             | Slides                                         | Page                               |    |
@@ -107,7 +108,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |  | Using Windows File Explorer | [🎞](tooltips/using-file-explorer-slides.html) | [📖](tooltips/using-file-explorer) | 🌔 |
 |  | Unity Packages              | [🎞](tooltips/unity-packages-slides.html)      | [📖](tooltips/unity-packages)      | 🌒 |
 
-## About game development
+## Project management
 
 |   |                 | Slides                                               | Page                                     |    |
 |---|-----------------|------------------------------------------------------|------------------------------------------|---:|
