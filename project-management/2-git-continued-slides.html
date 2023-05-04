@@ -44,7 +44,7 @@
 <li data-marpit-fragment="2">The new branch is not empty: it contains a copy of the code of the branch you executed this command in</li>
 </ul>
 </li>
-<li data-marpit-fragment="3"><strong>Note:</strong> <code>git branch</code> does not make the branch active!</li>
+<li data-marpit-fragment="3"><em><strong>Note:</strong></em> <code>git branch &lt;branchName&gt;</code> does not make the branch active!</li>
 <li data-marpit-fragment="4">To make the branch active, a.k.a &quot;move&quot; to the branch:
 <ul>
 <li data-marpit-fragment="5"><code>git checkout &lt;branchName&gt;</code>.</li>
@@ -56,12 +56,12 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-marpit-fragments="5" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="5" data-marpit-pagination-total="27" style="--paginate:true;--class:invert;--heading-divider:3;">
 <h3>Local vs. remote branches</h3>
 <ul>
-<li data-marpit-fragment="1"><code>git branch branchName</code> only creates a local branch</li>
+<li data-marpit-fragment="1"><code>git branch &lt;branchName&gt;</code> only creates a local branch</li>
 <li data-marpit-fragment="2">When you try to push changes from a new local branch, Git nags you that a matching remote branch doesn't yet exist
 <ul>
 <li data-marpit-fragment="3">Git tells you how to create the remote branch:
 <ul>
-<li data-marpit-fragment="4"><code>git push --set-upstream origin newBranch</code></li>
+<li data-marpit-fragment="4"><code>git push --set-upstream origin &lt;newBranch&gt;</code></li>
 <li data-marpit-fragment="5">Afterwards, <code>git push</code> pushes the changes to the matching remote branch</li>
 </ul>
 </li>
@@ -96,9 +96,9 @@
 <ul>
 <li data-marpit-fragment="1">So you've been working on a feature branch. What next?</li>
 <li data-marpit-fragment="2">When the feature is done (and all the broken things fixed), you want to apply your changes back to <code>master</code></li>
-<li data-marpit-fragment="3">For this, we use <code>git merge &lt;branch-to-merge&gt;</code>
+<li data-marpit-fragment="3">For this, we use <code>git merge &lt;branchToMerge&gt;</code>
 <ul>
-<li data-marpit-fragment="4">It applies changes from <code>&lt;branch-to-merge&gt;</code> to the <em><strong>current active branch</strong></em></li>
+<li data-marpit-fragment="4">It applies changes from <code>&lt;branchToMerge&gt;</code> to the <em><strong>current active branch</strong></em></li>
 </ul>
 </li>
 <li data-marpit-fragment="5"><code>master</code> branch is usually (and should be) protected, so we can't merge our new code to <code>master</code> directly</li>
@@ -121,21 +121,29 @@
 <li data-marpit-fragment="5">This adds a layer of protection to the <code>master</code> branch: no direct merging!</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-marpit-fragments="4" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="9" data-marpit-pagination-total="27" style="--paginate:true;--class:invert;--heading-divider:3;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-marpit-fragments="2" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="9" data-marpit-pagination-total="27" style="--paginate:true;--class:invert;--heading-divider:3;">
+<p><img src="imgs/github-pullreq.png" alt="" /></p>
+<ul>
+<li data-marpit-fragment="1">UI of a new pull request (<em>Pull requests &gt; New pull request</em>) can be  confusing.
+<ul>
+<li data-marpit-fragment="2"><em>base</em> is the branch you're merging, <em>compare</em> is the branch you're merging into!</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-marpit-fragments="5" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="10" data-marpit-pagination-total="27" style="--paginate:true;--class:invert;--heading-divider:3;">
 <h3>If automatic merge fails...</h3>
 <ol>
-<li data-marpit-fragment="1">Pull remote changes to your local <code>master</code> and merge changes to your local feature branch.
+<li data-marpit-fragment="1">Pull remote changes to your local <code>master</code>.
 <ul>
-<li data-marpit-fragment="2">If you're on your feature branch, you can do this quickly without changing branches with<br />
+<li data-marpit-fragment="2"><em><strong>Pro tip:</strong></em> If you're on your feature branch, you can do this quickly without changing branches with<br />
 <code>git fetch origin master:master</code></li>
 </ul>
 </li>
-<li data-marpit-fragment="3">Fix the ensuing <em><strong>conflicts</strong></em> (see <a href="#3-conflicts">next section</a>)</li>
-<li data-marpit-fragment="4">Push your new local branch to GitHub/etc</li>
+<li data-marpit-fragment="3">Merge changes from <code>master</code> to your local feature branch.</li>
+<li data-marpit-fragment="4">Fix the ensuing <em><strong>conflicts</strong></em> (see <a href="#3-conflicts">next section</a>)</li>
+<li data-marpit-fragment="5">Push your new local branch to GitHub/etc</li>
 </ol>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="10" data-marpit-pagination-total="27" style="--paginate:true;--class:invert;--heading-divider:3;">
-<p><img src="imgs/github-pullreq.png" alt="" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-marpit-fragments="5" data-paginate="true" data-class="invert" data-background-color="#5d275d" data-heading-divider="3" class="invert" data-marpit-pagination="11" data-marpit-pagination-total="27" style="--paginate:true;--class:invert;--background-color:#5d275d;--heading-divider:3;background-color:#5d275d;background-image:none;">
 <h2>Extra: Merging without a pull request</h2>
@@ -147,7 +155,7 @@
 <li data-marpit-fragment="3">Someone else might have done changes to it while you were working on your feature!</li>
 </ul>
 </li>
-<li data-marpit-fragment="4">Then, merge <code>featureBranch</code> to <code>master</code> with <code>git merge &lt;featureBranchName&gt;</code>
+<li data-marpit-fragment="4">Then, merge <code>&lt;featureBranch&gt;</code> to <code>master</code> with <code>git merge &lt;featureBranch&gt;</code>
 <ul>
 <li data-marpit-fragment="5">Fix conflicts</li>
 </ul>
@@ -332,7 +340,7 @@ b) <code>git merge</code> from command line</li>
 <h2>Reading</h2>
 <ul>
 <li data-marpit-fragment="1"><a href="https://git-scm.com/book/en/v2">Pro Git book</a></li>
-<li data-marpit-fragment="2"><a href="%5Bohshitgit.com%5D(https://ohshitgit.com/)">Oh shit Git</a></li>
+<li data-marpit-fragment="2"><a href="https://ohshitgit.com/">Oh shit Git</a></li>
 <li data-marpit-fragment="3"><a href="https://docs.gitlab.com/ee/topics/git/numerous_undo_possibilities_in_git/">Undo possibilities</a></li>
 </ul>
 </section>

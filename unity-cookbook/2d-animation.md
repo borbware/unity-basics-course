@@ -237,10 +237,13 @@ if (displacement.magnitude > 0.1f)
 <!-- _backgroundColor: #5d275d -->
 
 * Preparing for pixelart
-  * https://twitter.com/Davitsu/status/956499799133573120
-  * https://hackernoon.com/making-your-pixel-art-game-look-pixel-perfect-in-unity3d-3534963cad1d
+  * [Unity pixel art tips](https://twitter.com/Davitsu/status/956499799133573120)
+  * [Making your Pixel Art Game look Pixel Perfect in Unity3D](https://hackernoon.com/making-your-pixel-art-game-look-pixel-perfect-in-unity3d-3534963cad1d)
 * Pixel perfect camera
-  * https://docs.unity3d.com/Packages/com.unity.2d.pixel-perfect@1.0/manual/index.html
+  * [Packages: Pixel perfect camera](https://docs.unity3d.com/Packages/com.unity.2d.pixel-perfect@1.0/manual/index.html)
+  * Many issues can be fixed by using a pixel perfect camera instead of a basic camera
+  * For instance, you can crop the play area to represent a low resolution display
+  * This can also be used for uniformly scaling the pixels by an integer amount 
 
 * ***Note:*** If you still see black gaps in your tilemaps after following these instructions, create a new material with the *Sprites/Default* shader and check *Pixel snap*. Then, add this material to every Tilemap renderer.
 

@@ -69,9 +69,12 @@ paginate: true
   * This creates a formal process for merging your *remote* feature branch to remote `master`
   * This adds a layer of protection to the `master` branch: no direct merging!
 
-### Pull requests > New pull request 
+---
 
+![](imgs/github-pullreq.png)
 
+* UI of a new pull request (*Pull requests > New pull request*) can be  confusing.
+  * *base* is the branch you're merging, *compare* is the branch you're merging into! 
 
 ### If automatic merge fails...
 
@@ -81,8 +84,6 @@ paginate: true
 2) Merge changes from `master` to your local feature branch.
 3) Fix the ensuing ***conflicts*** (see [next section](#3-conflicts))
 4) Push your new local branch to GitHub/etc
----
-![](imgs/github-pullreq.png)
 
 ## Extra: Merging without a pull request
 <!-- _backgroundColor: #5d275d -->
