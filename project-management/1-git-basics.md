@@ -239,6 +239,8 @@ What happens if you make changes to the same line simultaneously?
 
 * Only one team member has to follow the instructions above!
 * Others will just grab the code from GitHub with `git clone`. 
+* By default, everyone's user settings are synced to the repo
+  * To prevent this, add the `/UserSettings/` folder to `.gitignore`
 
 ## Troubleshooting: master vs. main
 
