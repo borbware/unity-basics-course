@@ -191,6 +191,17 @@ Continue the exercise from [Git Basics](1-git-basics) or create a new repository
 
 * ***Note:*** If you have GitLens, check the Commits view in the Source control tab to see the commit history.
 
+## Revert one file to a previous state
+
+* Sometimes you want to revert just one file to its previous state
+* For that, you need to figure out the commit hash of the state you want to return to
+* Find that out in one of the following methods:
+  * `git log --oneline`
+  * VS Code: *Source control > File history*
+  * GitHub: check commits
+* Then, run
+  * `git checkout <commit-hash> -- <filename>`
+
 ## Collaboration in Unity
 
 * ***The zeroth rule:*** Make sure that everyone on team uses the same Unity and package versions.

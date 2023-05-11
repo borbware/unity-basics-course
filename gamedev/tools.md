@@ -66,7 +66,7 @@ title: Tools for gamedev
 
 * [ProBuilder](https://unity.com/features/probuilder)
   * a package for Unity for grayboxing 3d levels
-  * [More about ProBuilder in 3d platforming slides](../unity-cookbook/3dplatforming#probuilder)
+  * [More about ProBuilder in 3d platforming slides](../unity-cookbook/3d-basics#probuilder)
 * [Blender 3D](https://www.blender.org/)
   * Stupidly good for a free 3D editor
 * [MagicaVoxel](https://ephtracy.github.io/)

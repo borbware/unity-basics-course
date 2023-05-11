@@ -1,4 +1,14 @@
-# Camera
+---
+title: Unity Cookbook. 3D Basics
+marp: true
+paginate: true
+---
+<!-- headingDivider: 3 -->
+<!-- class: invert -->
+
+# 3D Basics
+
+## Camera
 
 * Basic Camera
   * [Stack Overflow: Keep the player centered on screen](https://stackoverflow.com/questions/45493793/unity-keep-the-player-centered-on-the-screen)
@@ -8,9 +18,13 @@
   * [Manual: Character Controller class](https://docs.unity3d.com/Manual/class-CharacterController.html)
   * [Script reference: Character Controller](https://docs.unity3d.com/ScriptReference/CharacterController.html)
 
-# Probuilder
+## First person camera
 
-## Setup
+* WIP
+
+## Probuilder
+
+### Setup
 
 * Installation
   * *Window > Package Manager*
@@ -23,14 +37,12 @@
 * *Window > Rendering > Lighting*
   * Turn off Realtime Global Illumination & Mixed
 
-
-
-## Basics
+### Basics
 
 * Modes
   * https://docs.unity3d.com/Packages/com.unity.probuilder@4.0/manual/modes.html
 
-## Tools
+### Tools
 
 * ***Hold Shift*** to select multiple faces.
 
@@ -39,16 +51,17 @@
 * ***Shift+drag*** / ***CTRL+E***: Extrude faces
 * ***P*** Orientation: local / global / normal
 
-## Selection
+### Selection
+
 * ***LMB drag*** to select
 * [Select Hidden: On / Off](https://docs.unity3d.com/Packages/com.unity.probuilder@4.0/manual/Selection_SelectHidden.html)
 * [Rect: Complete / Intersection](https://docs.unity3d.com/Packages/com.unity.probuilder@4.0/manual/Selection_Rect_Intersect.html)
-## Actions
+
+### Actions
+
 * Face actions https://unity-technologies.github.io/procore-legacy-docs/probuilder/probuilder2-gh-pages/toolbar/face/
 
-# Extra tools
+<!-- # Extra tools
 
 * Drag & drop
-  * https://www.youtube.com/watch?v=0yHBDZHLRbQ
-
-* You can download rigged & animated characters from [Mixamo](https://www.mixamo.com/)
+  * https://www.youtube.com/watch?v=0yHBDZHLRbQ -->

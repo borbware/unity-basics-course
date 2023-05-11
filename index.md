@@ -66,6 +66,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |     | 2D animation           | [🎞](unity-cookbook/2d-animation-slides.html)    | [📖](unity-cookbook/2d-animation)    | 🌔 |
 |     | Pathfinding            | [🎞](unity-cookbook/pathfinding-slides.html)     | [📖](unity-cookbook/pathfinding)     | 🌔 |
 | IV  |                        |                                                  |                                      |    |
+|     | 3D basics              | [🎞](unity-cookbook/3d-basics-slides.html)       | [📖](unity-cookbook/3d-basics)       | 🌒 |
 |     | 3D animation           | [🎞](unity-cookbook/3d-animation-slides.html)    | [📖](unity-cookbook/3d-animation)    | 🌔 |
 |     | Input system           | [🎞](unity-cookbook/input-system-slides.html)    | [📖](unity-cookbook/input-system)    | 🌔 |
 |     | Saving and loading     | [🎞](unity-cookbook/saving-loading-slides.html)  | [📖](unity-cookbook/saving-loading)  | 🌒 |
