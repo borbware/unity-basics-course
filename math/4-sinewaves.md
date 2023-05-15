@@ -19,9 +19,17 @@ title: Math 4. Sinewaves
   	$\sin(x + \pi/2) = \cos(x)$
 ![](imgs/sin-cos.png)
 
+## Degrees vs. radians
+
+xx
+
 ## Sin & Cos triangle definition
 
+xx
+
 ## Circular motion
+
+xx
 
 ## Extra: Polar coordinates
 
@@ -31,8 +39,6 @@ title: Math 4. Sinewaves
 	$y = r \sin{\varphi}$
 
 ![](imgs/polar-coordinates.png)
-
-
 
 ### Code example
 

@@ -19,8 +19,6 @@ paginate: true
 * [Manual: Particle System component](https://docs.unity3d.com/Manual/class-ParticleSystem.html)
 * [Script Reference: ParticleSystem](https://docs.unity3d.com/ScriptReference/ParticleSystem.html)
 
-
-
 ### Particle system component in Inspector
 ![](imgs/particle-system-inspector.png)
 
@@ -58,13 +56,15 @@ paginate: true
     * You need to create a new material for your particles (see next slide!)
   * *Sorting fudge*: Bigger numbers mean particles are more probably in front of ofter GameObjects. Yeah.
   * *Order in layer*: Tells the draw order of particles in accordance to 2D layers, like tilemaps.
+
 ## Particle material
 
-* For basic sprite particles:
-  * *Shader: Particles/Standard Unlit*
-  * *Rendering Mode: Fade* or *Cutout*
-  * Drag your particle sprite (or sprite sheet for animated particles!) to *Albedo*
-
+* Create a new material file with *Create > Material*
+* Set some settings for it.
+  * For basic sprite particles:
+    * *Shader: Particles/Standard Unlit*
+    * *Rendering Mode: Fade* or *Cutout*
+    * Drag your particle sprite (or sprite sheet for animated particles!) to *Albedo*
 
 ## Control particle system with code
 
@@ -72,11 +72,11 @@ paginate: true
 	```c#
 	public ParticleSystem particles;
 
-	if (particles.isStopped && Input.GetButtonDown("Fire1"))
+	if (!particles.isEmitting && Input.GetButtonDown("Fire1"))
 	{
 	    particles.Play();
 	}
-	if (particles.isPlaying && Input.GetButtonDown("Fire1"))
+	if (particles.isEmitting && Input.GetButtonDown("Fire1"))
 	{
 	    particles.Stop();
 	}
@@ -88,9 +88,13 @@ paginate: true
 	    particles.Emit(20);
 	}
 	```
+
 ## Change properties with code
 
-* You can't change module properties directly like this: `dustParticles.shape.rotation = somethingNew`
+* You can't change module properties directly like this:
+  ```c#
+  dustParticles.shape.rotation = somethingNew
+  ```
 * You have to assign a new variable for the module first, and change the variables there:
 	```c#
 	var shape = dustParticles.shape;
@@ -124,9 +128,8 @@ paginate: true
     * ***Kill***: destroys particle
     * ***Callback***: calls the [OnParticleTrigger()](https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnParticleTrigger.html) callback on attached scripts (again, there is no `OnParticleTrigger2D`)
 
-
 ## Reading
 
 * [Learn: Introduction to particle systems](https://learn.unity.com/tutorial/introduction-to-particle-systems#)
 * [Brackeys video: Everything to know about the Particle system](https://www.youtube.com/watch?v=FEA1wTMJAR0)
-* [How to Animate Game Explosions || VGAS](https://www.youtube.com/watch?v=3JRAGfOnp0U)
+* [Video Game Animation Study: How to Animate Game Explosions](https://www.youtube.com/watch?v=3JRAGfOnp0U)

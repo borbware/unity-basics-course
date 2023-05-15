@@ -54,6 +54,7 @@ The point is not to come up with fancy words or get as many words as possible, b
   * Sound Designer
   * Game Programmer
   * Game Writer
+
 ---
 
 * This only scratches the surface, however. 
@@ -68,7 +69,9 @@ The point is not to come up with fancy words or get as many words as possible, b
 * 3D artist
 * Character artist
 * Environment artist
+
 ---
+
 * Animator
 * Rigger
 * Composer

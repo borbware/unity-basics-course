@@ -9,6 +9,7 @@ paginate: true
 # Project management 2. Git continued
 
 ## Branches
+
 * A Git repository can have multiple ***branches***
 * By default, a Git repository has only one branch
   * named either `master` or `main`
@@ -27,17 +28,17 @@ paginate: true
 
 * You can create a new branch with `git branch <branchName>`
   * The new branch is not empty: it contains a copy of the code of the branch you executed this command in
-* **Note:** `git branch` does not make the branch active!
+* ***Note:*** `git branch <branchName>` does not make the branch active!
 * To make the branch active, a.k.a "move" to the branch:
   * `git checkout <branchName>`. 
   * For example, to move back to master use `git checkout master`
 
 ### Local vs. remote branches
 
-* `git branch branchName` only creates a local branch
+* `git branch <branchName>` only creates a local branch
 * When you try to push changes from a new local branch, Git nags you that a matching remote branch doesn't yet exist
   * Git tells you how to create the remote branch:
-    * `git push --set-upstream origin newBranch`
+    * `git push --set-upstream origin <newBranch>`
     * Afterwards, `git push` pushes the changes to the matching remote branch
 
 ### Extra branch commands
@@ -55,13 +56,12 @@ paginate: true
 
 * So you've been working on a feature branch. What next?
 * When the feature is done (and all the broken things fixed), you want to apply your changes back to `master`
-* For this, we use `git merge <branch-to-merge>`
-  * It applies changes from `<branch-to-merge>` to the ***current active branch***
+* For this, we use `git merge <branchToMerge>`
+  * It applies changes from `<branchToMerge>` to the ***current active branch***
 * `master` branch is usually (and should be) protected, so we can't merge our new code to `master` directly
 * Instead, we do the *inverse*.
 
 ## Merging with a pull request
-
 
 1) Make sure you have the newest version of the `master` branch:
   * Stay on the feature branch, and merge the contents of `master` to `featureBranch` with `git merge master`
@@ -69,16 +69,21 @@ paginate: true
   * This creates a formal process for merging your *remote* feature branch to remote `master`
   * This adds a layer of protection to the `master` branch: no direct merging!
 
-### If automatic merge fails...
-
-1) Pull remote changes to your local `master` and merge changes to your local feature branch.
-     * If you're on your feature branch, you can do this quickly without changing branches with
-    ```git fetch origin master:master```
-2) Fix the ensuing ***conflicts*** (see [next section](#3-conflicts))
-3) Push your new local branch to GitHub/etc
 ---
+
 ![](imgs/github-pullreq.png)
 
+* UI of a new pull request (*Pull requests > New pull request*) can be  confusing.
+  * *base* is the branch you're merging, *compare* is the branch you're merging into! 
+
+### If automatic merge fails...
+
+1) Pull remote changes to your local `master`.
+     * ***Pro tip:*** If you're on your feature branch, you can do this quickly without changing branches with
+    ```git fetch origin master:master```
+2) Merge changes from `master` to your local feature branch.
+3) Fix the ensuing ***conflicts*** (see [next section](#3-conflicts))
+4) Push your new local branch to GitHub/etc
 
 ## Extra: Merging without a pull request
 <!-- _backgroundColor: #5d275d -->
@@ -86,7 +91,7 @@ paginate: true
 1) First, checkout the `master` branch with `git checkout master`
 2) Then, do a `git pull` so you have the newest version of the `master` branch
      * Someone else might have done changes to it while you were working on your feature!
-3) Then, merge `featureBranch` to `master` with `git merge <featureBranchName>`
+3) Then, merge `<featureBranch>` to `master` with `git merge <featureBranch>`
      * Fix conflicts 
 
 ## Exercise 1. Pushing onwards
@@ -168,8 +173,8 @@ Continue the exercise from [Git Basics](1-git-basics) or create a new repository
 * Then, merge the changes from your new feature branch to `master` branch by using `git merge` 
 * Fix the ensuing conflicts, add & commit & push.
 
-
 ## Git workflow 3: Undoing
+
 * Git doesn't have a general "undo" command
 * If you make a mistake, it is very case-specific what you need to do to fix it
   * See [undo options here](https://docs.gitlab.com/ee/topics/git/numerous_undo_possibilities_in_git/)  
@@ -186,6 +191,17 @@ Continue the exercise from [Git Basics](1-git-basics) or create a new repository
 
 * ***Note:*** If you have GitLens, check the Commits view in the Source control tab to see the commit history.
 
+## Revert one file to a previous state
+
+* Sometimes you want to revert just one file to its previous state
+* For that, you need to figure out the commit hash of the state you want to return to
+* Find that out in one of the following methods:
+  * `git log --oneline`
+  * VS Code: *Source control > File history*
+  * GitHub: check commits
+* Then, run
+  * `git checkout <commit-hash> -- <filename>`
+
 ## Collaboration in Unity
 
 * ***The zeroth rule:*** Make sure that everyone on team uses the same Unity and package versions.
@@ -198,6 +214,7 @@ Continue the exercise from [Git Basics](1-git-basics) or create a new repository
 
 ## Exercise 3. Branching team effort
 <!-- _backgroundColor: #29366f -->
+
 * Work as a group for this assignment.
 * Continue Exercise 2 from [Git basics](1-git-basics).
 * Every group member creates an individual branch from the master, and makes some changes to the `GitTest.md` file.
@@ -221,11 +238,12 @@ From Scene 4, the game should loop back to Scene 1.
 ## Reading 
 
 * [Pro Git book](https://git-scm.com/book/en/v2)
-* [Oh shit Git]([ohshitgit.com](https://ohshitgit.com/))
+* [Oh shit Git](https://ohshitgit.com/)
 * [Undo possibilities](https://docs.gitlab.com/ee/topics/git/numerous_undo_possibilities_in_git/) 
 
 ## Very extra: `git rebase`
 <!-- _backgroundColor: #5d275d -->
+
 * `git merge` creates a new commit for the merge process
 * Sometimes that's undesirable, so an alternative is to use `git rebase`
 * Unlike merge, rebase applies changes from the rebased branch ***one commit at a time***

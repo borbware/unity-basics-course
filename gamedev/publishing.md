@@ -7,6 +7,7 @@ title: Publishing on Itch.io
 <!-- class: invert -->
 
 # Publishing on Itch.io
+
 ---
 ![bg width:80%](imgs/gamedev.png)
 
@@ -14,7 +15,6 @@ title: Publishing on Itch.io
 
 1) Create a build in Unity into the ***Builds*** folder and check that it runs (See [Building](../unity-cookbook/building)).
 2) Zip the contents of the Builds folder into a zip archive. (Right click > Send to > Compressed (zipped) folder)
-
 
 ## Uploading Web builds to itch.io
 

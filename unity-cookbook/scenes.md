@@ -2,6 +2,7 @@
 title: Unity Cookbook. Scene management
 marp: true
 paginate: true
+math: mathjax
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
@@ -22,6 +23,8 @@ paginate: true
   * *File > Build Settings > Scenes in Build*
   * Either drag-and-drop your scenes here or click *Add Open Scenes* 
   * The top-most scene will be the one that gets loaded when the game starts
+* See [Building](building.md) for more about Build settings.
+
 
 ## Scene manager
 
@@ -41,6 +44,13 @@ paginate: true
     ```
 * This unloads your current scene and loads the one you specified
 * Loading the scene you are currently in ***resets*** the scene (but not static variables!)
+* To get information about your current scene, use `SceneManager.GetActiveScene()`:
+  ```c#
+  if (SceneManager.GetActiveScene().name == "GameOver")
+  {
+      // do stuff
+  } 
+  ```
 
 ### Loading complex scenes
 
@@ -53,22 +63,25 @@ paginate: true
   * [Script Reference: SceneManager.UnloadSceneAsync](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.UnloadSceneAsync.html)
 
 ## Data persistence between scenes
+
 * [Learn: Data persistence between scenes](https://learn.unity.com/tutorial/implement-data-persistence-between-scenes?pathwayId=5f7e17e1edbc2a5ec21a20af#)
 * By default, no values persist when moving from a scene to another
-* You can change this by adding a [DontDestroyOnLoad](https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html) method call
+* You can change this by calling [DontDestroyOnLoad](https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html) and giving the gameObject you want to persist as an argument
   ```c#
   private void Awake()
   {
-      DontDestroyOnLoad(this.gameObject);
+      DontDestroyOnLoad(gameObject);
   }
   ```
-  * Note: this only works for root GameObjects
+  * Note: this only works for root GameObjects - not for children!
 
 ## Creating a data manager
+
 <!-- GameManager -->
 * We can create a data manager for bookkeeping score etc.
+  * LevelManager, GameManager, UIManager, etc...
 * We create a `static` variable that refers to it (here named `instance`)
-  * -> we can use it easily from anywhere
+  * $\Rightarrow$ we can use it easily from anywhere
     ```c#
     public class ScoreManager : MonoBehaviour
     {
@@ -84,6 +97,7 @@ paginate: true
     ```c#
     ScoreManager.instance.AddScore(1);
     ```
+
 ### Prevent other instances of data manager from appearing
 
 * To make sure you only have one ScoreManager at all times, add these lines to the top of your ScoreManager's `Awake` method.
@@ -97,7 +111,13 @@ paginate: true
     ```
 * This is commonly known in software development as the ***singleton pattern***.
 
-## Do stuff when scene is loaded
+## Closing the game
+
+* Call `Application.Quit();` when you want to close the game
+  * (Don't worry, this does not close the Unity editor)
+
+## Extra: Do stuff when scene is loaded
+<!-- _backgroundColor: #5d275d -->
 
 [Script Reference: SceneManager.sceneLoaded](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager-sceneLoaded.html)
 

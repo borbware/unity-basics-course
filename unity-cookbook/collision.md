@@ -17,7 +17,8 @@ math: mathjax
   * Usually simpler in geometry than the GameObject itself
 * CapsuleCollider(2D), BoxCollider(2D), PolygonCollider2D...
 * Extra: To show colliders in play mode:
-  * *Settings > Physics(2D) > Always Show Colliders*
+  * *Project Settings > Physics(2D) > Gizmos > Always Show Colliders*
+  * In Play mode, enable Gizmos button
 
 ## Collision events
 
@@ -33,6 +34,7 @@ math: mathjax
 <!-- _footer: "For more event methods, see [Script Reference: Monobehaviour Messages](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html#Messages)" -->
 
 ## Triggers
+
 * Normally, Unity initiates actions using the `OnCollisionEnter` function
 * If collider `IsTrigger`, then it does not stop other colliders, but only detects if something collides with it - no `OnCollisionEnter`!
   * Collision functions are replaced with [`OnTriggerEnter`](https://docs.unity3d.com/ScriptReference/Collider.OnTriggerEnter.html), [`OnTriggerExit`](https://docs.unity3d.com/ScriptReference/Collider.OnTriggerExit.html), [`OnTriggerStay`]((https://docs.unity3d.com/ScriptReference/Collider.OnTriggerExit.html))
@@ -46,14 +48,14 @@ math: mathjax
   * Collider can actually be found inside the Collision2D class: access it with `.collider`
 * Most importantly: for both classes, you can access the corresponding gameObject with `.gameObject`
 
-## Checking collision in Update
+## Extra: Checking collision in Update
+<!-- _backgroundColor: #5d275d -->
 
 * The callback functions are handy, but sometimes you want to check collision inside an update function
 * For that, you need the overlap collider
   * [Script Reference: Overlap Collider](https://docs.unity3d.com/ScriptReference/Collider2D.OverlapCollider.html)
 
 ## Exercise 1. Collectibles
-
 <!-- _backgroundColor: #29366f -->
 
 Continue with the Player character from the [Input exercise](input-handling#exercise-1-player-input).
@@ -63,7 +65,6 @@ Add multiple collectible GameObjects to the scene.
 When the player character collides with a collectible, destroy it and add one to Player's internal counter of collected items.
 
 ## Exercise 2. Colliding with moving obstacles
-
 <!-- _backgroundColor: #29366f -->
 
 Continue previous exercise. Add moving objects to the scene that block the player's way. 

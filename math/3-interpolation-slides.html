@@ -54,7 +54,7 @@ Mathf.Lerp(<span class="hljs-number">5.0f</span>, <span class="hljs-number">15.0
 <p><em><strong>Bonus:</strong></em> After pressing twice, lerp the color back to red.<br />
 <em><strong>Bonus bonus:</strong></em> What if you press the button <em>during</em> lerping?</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-marpit-fragments="6" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="6" data-marpit-pagination-total="16" style="--paginate:true;--class:invert;--heading-divider:3;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-marpit-fragments="8" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="6" data-marpit-pagination-total="16" style="--paginate:true;--class:invert;--heading-divider:3;">
 <h2>Lerping different data types</h2>
 <ul>
 <li data-marpit-fragment="1">Some data types are more complicated than just one float value</li>
@@ -63,9 +63,11 @@ Mathf.Lerp(<span class="hljs-number">5.0f</span>, <span class="hljs-number">15.0
 <ul>
 <li data-marpit-fragment="4"><a href="https://docs.unity3d.com/ScriptReference/Vector2.Lerp.html">Vector2.Lerp</a></li>
 <li data-marpit-fragment="5"><a href="https://docs.unity3d.com/ScriptReference/Vector3.Lerp.html">Vector3.Lerp</a></li>
-<li data-marpit-fragment="6"><a href="https://docs.unity3d.com/ScriptReference/Quaternion.Slerp.html">Quaternion.Slerp</a></li>
+<li data-marpit-fragment="6"><a href="https://docs.unity3d.com/ScriptReference/Color.Lerp.html">Color.Lerp</a></li>
+<li data-marpit-fragment="7"><a href="https://docs.unity3d.com/ScriptReference/Quaternion.Slerp.html">Quaternion.Slerp</a></li>
 </ul>
 </li>
+<li data-marpit-fragment="8">Unclamped versions exist, too.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="7" data-marpit-pagination-total="16" style="--paginate:true;--class:invert;--heading-divider:3;">
@@ -109,31 +111,37 @@ transform.Translate(<span class="hljs-number">0</span>,<span class="hljs-number"
 <li data-marpit-fragment="3">Luckily, we can also create custom curves</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-marpit-fragments="4" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="10" data-marpit-pagination-total="16" style="--paginate:true;--class:invert;--heading-divider:3;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-marpit-fragments="3" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="10" data-marpit-pagination-total="16" style="--paginate:true;--class:invert;--heading-divider:3;">
 <h3>Custom interpolation with an animation curve</h3>
 <ul>
-<li data-marpit-fragment="1">for custom interpolation curves, use the <code>AnimationCurve</code> variable</li>
-<li data-marpit-fragment="2"><code>[SerializeField] AnimationCurve curve;</code></li>
-<li data-marpit-fragment="3">The curve can be manipulated in the inspector:<br />
-<img src="imgs/animation-curve.png" alt="" />
+<li data-marpit-fragment="1">
+<p>for custom interpolation curves, use the <code>AnimationCurve</code> variable</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-c#">[<span class="hljs-meta">SerializeField</span>] AnimationCurve curve;
+</code></pre>
+</li>
+<li data-marpit-fragment="2">
+<p>The curve can be manipulated in the inspector:<br />
+<img src="imgs/animation-curve.png" alt="" /></p>
 <ul>
-<li data-marpit-fragment="4">Click on the default curve images on the bottom to create a curve</li>
+<li data-marpit-fragment="3">Click on the curve images on the bottom to choose and edit them</li>
 </ul>
 </li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-marpit-fragments="4" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="11" data-marpit-pagination-total="16" style="--paginate:true;--class:invert;--heading-divider:3;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-marpit-fragments="5" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="11" data-marpit-pagination-total="16" style="--paginate:true;--class:invert;--heading-divider:3;">
 <h3>Controlling values with the curve</h3>
 <ul>
-<li data-marpit-fragment="1">If the curve starts from 0 and ends in 1, you can use it as a replacement for <code>Mathf.Lerp</code></li>
+<li data-marpit-fragment="1">If the curve starts from 0 and ends in 1, you can use it as a replacement for <code>Mathf.Lerp</code>
+<ul>
 <li data-marpit-fragment="2">If the curve starts from and ends in 0, you can create an animation that loops back to the initial value!</li>
-<li data-marpit-fragment="3"><code>curve.Evaluate(t)</code> returns a value from the graph (by default, between 0 and 1)<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-c#"><span class="hljs-function"><span class="hljs-built_in">float</span> <span class="hljs-title">InterpolateCurve</span>(<span class="hljs-params"><span class="hljs-built_in">float</span> a, <span class="hljs-built_in">float</span> b, <span class="hljs-built_in">float</span> t</span>)</span>
-{
-    <span class="hljs-keyword">return</span> a + (b - a) * curve.Evaluate(t);       
-}
-</code></pre>
+</ul>
 </li>
-<li data-marpit-fragment="4">Now, <code>Mathf.Lerp(a, b, t)</code> can be replaced with <code>InterpolateCurve(a, b, t)</code></li>
+<li data-marpit-fragment="3"><code>curve.Evaluate(t)</code> returns a value from the graph (by default, between 0 and 1)
+<ul>
+<li data-marpit-fragment="4">So we can lerp between a and b if we just supply this to a lerp function!</li>
+</ul>
+</li>
+<li data-marpit-fragment="5"><code>Mathf.Lerp(a, b, t)</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.054ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.242ex" role="img" focusable="false" viewBox="0 -525 1000 549"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="21D2" d="M580 514Q580 525 596 525Q601 525 604 525T609 525T613 524T615 523T617 520T619 517T622 512Q659 438 720 381T831 300T927 263Q944 258 944 250T935 239T898 228T840 204Q696 134 622 -12Q618 -21 615 -22T600 -24Q580 -24 580 -17Q580 -13 585 0Q620 69 671 123L681 133H70Q56 140 56 153Q56 168 72 173H725L735 181Q774 211 852 250Q851 251 834 259T789 283T735 319L725 327H72Q56 332 56 347Q56 360 70 367H681L671 377Q638 412 609 458T580 514Z"></path></g></g></g></svg></mjx-container> <code>Mathf.Lerp(a, b, curve.Evaluate(t))</code></li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="12" data-marpit-pagination-total="16" style="--paginate:true;--class:invert;--heading-divider:3;">
@@ -174,8 +182,9 @@ transform.Translate(<span class="hljs-number">0</span>,<span class="hljs-number"
 </li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-marpit-fragments="5" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="14" data-marpit-pagination-total="16" style="--paginate:true;--class:invert;--heading-divider:3;">
-<h2>Inverse lerp</h2>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-marpit-fragments="5" data-paginate="true" data-class="invert" data-background-color="#5d275d" data-heading-divider="3" class="invert" data-marpit-pagination="14" data-marpit-pagination-total="16" style="--paginate:true;--class:invert;--background-color:#5d275d;--heading-divider:3;background-color:#5d275d;background-image:none;">
+<h2>Extra: Inverse lerp</h2>
+
 <ul>
 <li data-marpit-fragment="1"><a href="https://docs.unity3d.com/ScriptReference/Mathf.InverseLerp.html">Script Reference: Inverse lerp</a>
 <ul>
@@ -190,8 +199,9 @@ transform.Translate(<span class="hljs-number">0</span>,<span class="hljs-number"
 </li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-marpit-fragments="6" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="15" data-marpit-pagination-total="16" style="--paginate:true;--class:invert;--heading-divider:3;">
-<h2>Remapping with lerp &amp; inverse lerp</h2>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-marpit-fragments="6" data-paginate="true" data-class="invert" data-background-color="#5d275d" data-heading-divider="3" class="invert" data-marpit-pagination="15" data-marpit-pagination-total="16" style="--paginate:true;--class:invert;--background-color:#5d275d;--heading-divider:3;background-color:#5d275d;background-image:none;">
+<h2>Extra: Remapping with lerp &amp; inverse lerp</h2>
+
 <ul>
 <li data-marpit-fragment="1">
 <p><a href="https://www.gamedev.net/articles/programming/general-and-gameplay-programming/inverse-lerp-a-super-useful-yet-often-overlooked-function-r5230/">Freya Holmér: Inverse Lerp and Remap</a></p>

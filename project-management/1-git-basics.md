@@ -3,12 +3,7 @@ title: Project management 1. Git basics
 marp: true
 paginate: true
 math: mathjax
-style: |
-  .columns {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
-  }
+theme: borbtheme
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
@@ -32,6 +27,7 @@ style: |
   * A remote repository is stored in a cloud service like GitHub
   * [Here](https://github.com/borbware/unity-basics-course) is the remote repository for the materials of this course
   * Changes are synced between these two repositories ***manually***
+
 ## `git init`
 
 * Initialization needs to be done for every new Git repository
@@ -43,6 +39,7 @@ style: |
 * ***Note:*** Never initialize a Git repository in a cloud storage folder!
 
 ## `.git` folder
+
 * Initialization adds a hidden `.git` folder inside a directory
   * This is where Git stores all its repository data.
   * ***Do not touch it!***
@@ -70,6 +67,7 @@ style: |
     ```
 
 ---
+
 * Basically, with `git add file` you tell Git that you want to do *something* with `file`.
 * ***Note:*** If you just want to push all the changes you've made, you can use `git add .` to stage all the files in your current folder and its subfolders
   * Be careful! Only do this after checking what changes have been made with `git status`
@@ -241,6 +239,8 @@ What happens if you make changes to the same line simultaneously?
 
 * Only one team member has to follow the instructions above!
 * Others will just grab the code from GitHub with `git clone`. 
+* By default, everyone's user settings are synced to the repo
+  * To prevent this, add the `/UserSettings/` folder to `.gitignore`
 
 ## Troubleshooting: master vs. main
 

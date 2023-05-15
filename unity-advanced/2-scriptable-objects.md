@@ -21,19 +21,18 @@ paginate: true
 ### Creating a scriptable object
 
 1) Create new class that inherits from ScriptableObject
+    * ```c#
+        using UnityEngine;
 
-    ```c#
-    using UnityEngine;
-
-    [CreateAssetMenu(fileName = "New Mana Card", menuName = "Cards/ManaCard")]
-    public class Card : ScriptableObject
-    {
-        public new string name;
-        public string description;
-        public int amountOfMana;
-        public ManaEnum manaType;
-    }
-    ```
+        [CreateAssetMenu(fileName = "New Mana Card", menuName = "Cards/ManaCard")]
+        public class Card : ScriptableObject
+        {
+            public new string name;
+            public string description;
+            public int amountOfMana;
+            public ManaEnum manaType;
+        }
+        ```
 2) Create a few new templates based on the Scriptable object from the Asset menu
 3) Refer to the Card class as a SerializeField in a GameObject
 4) Drag the card template of your choice to the field in Inspector
@@ -41,18 +40,20 @@ paginate: true
 
 ### Spawn manager: The manager class
 
-    ```c#
-    using UnityEngine;
+```c#
+using UnityEngine;
 
-    [CreateAssetMenu(fileName = "Spawn Manager", menuName = "ScriptableObjects/SpawnManagerScriptableObject", order = 1)]
-    public class SpawnManagerScriptableObject : ScriptableObject
-    {
-        public string prefabName;
-        public int numberOfPrefabsToCreate;
-        public Vector3[] spawnPoints;
-    }
-    ```
+[CreateAssetMenu(fileName = "Spawn Manager", menuName = "ScriptableObjects/SpawnManagerScriptableObject", order = 1)]
+public class SpawnManagerScriptableObject : ScriptableObject
+{
+    public string prefabName;
+    public int numberOfPrefabsToCreate;
+    public Vector3[] spawnPoints;
+}
+```
+
 ### Spawn manager: Usage
+
 ```c#
 using UnityEngine;
 

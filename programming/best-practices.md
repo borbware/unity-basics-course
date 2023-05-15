@@ -30,7 +30,6 @@ title: Best practices for programming
     * I can't stress this enough:
     * *You in the future is a different person that you in the now.*
 
-
 ## The importance of whitespace
 
 * The ***empty space*** & ***linebreaks*** have a huge impact on code readability
@@ -54,6 +53,7 @@ title: Best practices for programming
 ```
 
 ---
+
 * Functionally, this is the same code, but ***much*** easier to read:
 
 ```c#
@@ -117,7 +117,6 @@ title: Best practices for programming
   }
   ```
 
-
 ## Naming variables
 
 * [Wikipedia: Naming convention](https://en.wikipedia.org/wiki/Naming_convention_(programming))
@@ -128,8 +127,8 @@ title: Best practices for programming
   * b) `weeklyPay = hoursWorked * hourlyPayRate;`
     * That's more like it!
 
-
 ---
+
 * How would you name a variable that stores what is the probability for player's attack to land?
   * `pAttack`, `attackLandProbability`, `player1HitPercentage`...
     * None of these are exceptionally good
@@ -225,6 +224,7 @@ title: Best practices for programming
 
 ### Extra: Linters
 <!-- _backgroundColor: #5d275d -->
+
 * "You can use [linters](https://en.wikipedia.org/wiki/Lint_(software)) to format code automatically
 * [Here's](https://johnnyreilly.com/eslint-your-csharp-in-vs-code-with-roslyn-analyzers) a guide to C# formatting with ESLint, a popular linter
 

@@ -17,6 +17,7 @@ title: Programming 5. Arrays & Lists
 	int[] userIds;
   ```
 * Declaring an array does not *yet* allocate space from memory
+
 ## Creating empty arrays
 
 * Initialize an empty array with a length of 3 using the following syntax:
@@ -33,6 +34,7 @@ title: Programming 5. Arrays & Lists
     ```c#
     Debug.Log(userIds.Length);
     ```
+
 ## Creating and populating arrays simultaneously
 
 * You can also create an array containing values with one statement:
@@ -47,6 +49,7 @@ title: Programming 5. Arrays & Lists
   ```c#
   double[] balances = { 1.3, 200.3, 9332.14 };
   ```
+
 ### Arrays: Unity example
 
 * Creating and accessing an array of gameobjects
@@ -63,7 +66,9 @@ void Start ()
 	}
 }
 ```
+
 ## Multidimensional arrays
+
 * C# supports multidimensional arrays:
   ```c#
   char[,] letters = new char[3, 4]
@@ -97,11 +102,13 @@ void Start ()
   ```c#
   userIds[0] = 22;
   ```
+
 ## The List class
 
 * a key benefit of using Lists lie in the built-in functionalities of the List class
 * after declaring a list, type `nameOfYourList.` and VS Code shows what's available:
   ![Array](imgs/list-methods.png)
+
 ## List functionalities
 
 * some are fields (no brackets), some are methods (functions with brackets `()`)
@@ -129,6 +136,7 @@ Print to console `There are [X] enemy names.`
 3. Print out all the names from the list that start with the letter "S".
 
 ## Iterating through an array with `for`
+
 ```c#
   string[] starters = new string[] 
   {
@@ -183,7 +191,6 @@ for(int i = 0; i < starters.Count; i++)
 
 ![alt](imgs/foreach-mutation.png)
 
-
 ### Foreach Unity example
 
 ```c#
@@ -203,7 +210,6 @@ for(int i = 0; i < starters.Count; i++)
 	* [Remove](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.remove?redirectedfrom=MSDN&view=net-7.0#System_Collections_Generic_List_1_Remove__0_) removes the first occurrence of the given element from the list
 
 ### Reverse `for` loop
-
 
 * You can't delete an element when looping through a list normally
   * The length of the list changes after deletion $\Rightarrow$ you'll eventually try to refer to an nonexistent element! 
@@ -235,13 +241,14 @@ for(int i = 0; i < starters.Count; i++)
     ```
 
 <!-- _footer: "[See more about value vs reference types in Chapter 3](6-classes-methods#reference-type-vs-value-type)" -->
+
 ## Exercise 2. Looping through
 <!-- _backgroundColor: #29366f -->
+
 Loop through the starters array, and print the starter and its number like this:
 `#001 Bulbasaur`
 
 Now, edit the strings with a loop to include this number as well. 
-
 
 ## Exercise 3. Creative data
 <!-- _backgroundColor: #29366f -->

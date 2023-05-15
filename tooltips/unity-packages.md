@@ -19,6 +19,7 @@ paginate: true
 ## Some important packages
 
 ### Cinemachine
+
   * for sophisticated camera control
   * [Packages: Cinemachine](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/index.html)
   * [Packages: Cinemachine Virtual Camera properties](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/CinemachineVirtualCamera.html)
@@ -29,15 +30,22 @@ paginate: true
     * Super Mario World example
     * [Unity video: Creating a Third Person Camera using Cinemachine](https://www.youtube.com/watch?v=537B1kJp9YQ)
     * [Brackeys video: 2D camera (Cinemachine)](https://www.youtube.com/watch?v=2jTY11Am0Ig)
+
 ### Pixel Perfect Camera
+
   * for pixel art games
   * [Packages: Pixel Perfect Camera](https://docs.unity3d.com/Packages/com.unity.2d.pixel-perfect@1.0/manual/index.html)
+
 ### ProBuilder
+
   * for greyboxing 3d levels
+
 ### 2D extras
+
   * for faster tilemapping
 
 ### TextMeshPro
+
   * The better way to make formatted text in Unity
   * [TextMeshPro documentation](http://digitalnativestudios.com/textmeshpro/docs/)
   * [TextMeshProUGUI API](https://docs.unity3d.com/Packages/com.unity.textmeshpro@1.0/api/TMPro.TextMeshProUGUI.html)
@@ -52,7 +60,7 @@ paginate: true
     * To remove the blue **T** icon from play mode, go to *Gizmos > TextMeshProUGUI* and click on the icon, ***NOT*** the gizmo checkbox
       * [Unity Answers: How to get rid of TextMeshPro's Icon when I'm not selecting it](https://answers.unity.com/questions/1582647/how-to-get-rid-of-textmeshpros-icon-when-im-not-se.html)
 
-
 ### Unity Recorder
+
   * for marketing: recording video in the Play mode
   * [Packages: Unity Recorder Manual](https://docs.unity3d.com/Packages/com.unity.recorder@2.0/manual/index.html)

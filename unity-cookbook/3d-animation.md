@@ -26,7 +26,6 @@ paginate: true
 * Video tutorial: [Blender to Unity - Generic Character Setup: #1 Rigging & FBX Export](https://www.youtube.com/watch?v=z3cdbYTl3Ms)
 * Video tutorial: [Blender to Unity - Generic Character Setup: #2 Unity Setup](https://www.youtube.com/watch?v=c84j-A7bZ8s)
 
-
 ## Unity side setup
 
 ## Importing the model
@@ -50,7 +49,6 @@ paginate: true
  * *Materials* tab
    * Click *Extract Materials...* to import Blender materials
    * The imported material should show up under *Remapped materials*
-
 
 ### Importing textures
 

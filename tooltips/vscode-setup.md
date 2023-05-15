@@ -2,6 +2,7 @@
 title: VS Code setup
 marp: true
 paginate: true
+math: mathjax
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
@@ -35,7 +36,6 @@ paginate: true
 * Then, by turning on ***Settings sync***, your user-defined settings are carried over to whichever computer you're working on
   ![](imgs/vscode-settingssync.png)
 
-
 ## Unity side setup
 
 * Include the *Visual Studio Code Editor* Package in your projects
@@ -45,6 +45,7 @@ paginate: true
   * You might have to click the *Regenerate project files* button to get all features working 
 
 ## VS Code side setup
+
 * Install the prerequisities for code completion & other niceness
   * You need to install these applications:
     * [.NET Core SDK](https://code.visualstudio.com/docs/other/unity#_prerequisites)
@@ -85,6 +86,7 @@ paginate: true
 
 ## Extra: Other extensions
 <!-- _backgroundColor: #5d275d -->
+
 * *Marp for VS Code*
   * If you want to read these slides inside VS Code
   * After installation, open this .md file from the course repository

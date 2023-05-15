@@ -91,7 +91,6 @@ title: Playtesting
 * What if you kept the way your characters move, but changed the victory and lose conditions
 * Or what if you added new GameObjects that could be used to help balance randomness, or mess with other players?
 
-
 ## Reading
 
 * These slides were stolen from [Jason Wiser: Tufts University Game Design course](http://madwomb.com/tutorials/GameDesign_Tufts.html)

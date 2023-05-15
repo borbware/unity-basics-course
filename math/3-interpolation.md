@@ -50,7 +50,9 @@ After pressing a button once, lerp GameObject's color from red to blue.
 * Other way around: some types have their own built-in lerps
   * [Vector2.Lerp](https://docs.unity3d.com/ScriptReference/Vector2.Lerp.html)
   * [Vector3.Lerp](https://docs.unity3d.com/ScriptReference/Vector3.Lerp.html)
+  * [Color.Lerp](https://docs.unity3d.com/ScriptReference/Color.Lerp.html)
   * [Quaternion.Slerp](https://docs.unity3d.com/ScriptReference/Quaternion.Slerp.html)
+* Unclamped versions exist, too.
 
 ### Slerp example
 
@@ -88,23 +90,21 @@ transform.Translate(0,0, 3 * Time.deltaTime);
 ### Custom interpolation with an animation curve
 
 * for custom interpolation curves, use the `AnimationCurve` variable
-* `[SerializeField] AnimationCurve curve;`
+  
+  ```c#
+  [SerializeField] AnimationCurve curve;
+  ```
 * The curve can be manipulated in the inspector:
   ![](imgs/animation-curve.png)
-  * Click on the default curve images on the bottom to create a curve 
+  * Click on the curve images on the bottom to choose and edit them
 
 ### Controlling values with the curve
 
 * If the curve starts from 0 and ends in 1, you can use it as a replacement for `Mathf.Lerp`
-* If the curve starts from and ends in 0, you can create an animation that loops back to the initial value!
+  * If the curve starts from and ends in 0, you can create an animation that loops back to the initial value!
 * `curve.Evaluate(t)` returns a value from the graph (by default, between 0 and 1)
-  ```c#
-  float InterpolateCurve(float a, float b, float t)
-  {
-      return a + (b - a) * curve.Evaluate(t);       
-  }
-  ``` 
-* Now, `Mathf.Lerp(a, b, t)` can be replaced with `InterpolateCurve(a, b, t)`
+  * So we can lerp between a and b if we just supply this to a lerp function!
+* `Mathf.Lerp(a, b, t)` $\Rightarrow$ `Mathf.Lerp(a, b, curve.Evaluate(t))`
 
 ### Animation curve example
 
@@ -138,7 +138,8 @@ if(Time.time < bounceTimer)
 * That being said, this is a very fast way to create a camera that follows the player a bit behind. If that's what you're after, you can use it
   * But remember: This isn't the way Lerp was meant to be used, so your mileage may wary. You're on your own now.
 
-## Inverse lerp
+## Extra: Inverse lerp
+<!-- _backgroundColor: #5d275d -->
 
 * [Script Reference: Inverse lerp](https://docs.unity3d.com/ScriptReference/Mathf.InverseLerp.html)
   * `Mathf.InverseLerp(a, b, x)`
@@ -146,7 +147,8 @@ if(Time.time < bounceTimer)
     * "When we know a value $x$ that is between $a$ and $b$, what is $t$?"
     * In other words, how far is $x$ between $a$ and $b$, as a fraction
 
-## Remapping with lerp & inverse lerp
+## Extra: Remapping with lerp & inverse lerp
+<!-- _backgroundColor: #5d275d -->
 
 * [Freya Holmér: Inverse Lerp and Remap](https://www.gamedev.net/articles/programming/general-and-gameplay-programming/inverse-lerp-a-super-useful-yet-often-overlooked-function-r5230/)
 

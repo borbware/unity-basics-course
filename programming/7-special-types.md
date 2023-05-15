@@ -13,11 +13,9 @@ title: Programming 7. Types
 * [C# Fundamentals: Type system overview](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/)
 * [C# Reference: Type-testing operators and cast expression](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/type-testing-and-cast)
 
-
 ## Typeof
 
 ## Type casting
-
 
 [C# Docs: Casting and type conversions](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
 
@@ -57,5 +55,11 @@ public class EnumScript : MonoBehaviour
     }
 }
 ```
+
 ## Create your own type
+
+xx
+
 ## Structs
+
+xx

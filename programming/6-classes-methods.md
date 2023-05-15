@@ -53,6 +53,7 @@ public class WrapAround : MonoBehaviour
     ```
 * The curly braces `{}` define a new scope
   * Everything inside them is inside the class
+
 ### Fields
 
 * **Fields** are variables inside the class
@@ -83,6 +84,7 @@ public class WrapAround : MonoBehaviour
 * This function returns nothing, so its type is `void`
 
 ### About functionality
+
 * You can declare fields and methods, but cannot have any functionality outside class methods
     ```c#
     class Enemy
@@ -99,7 +101,9 @@ public class WrapAround : MonoBehaviour
         }
     }
     ```
+
 ## Instantiating a class
+
 * Instances of a class can be created with the `new` keyword
 * Instances have the same fields and methods, but their *values* can be different
     ```c#
@@ -119,7 +123,9 @@ public class WrapAround : MonoBehaviour
     }
     ```
 * ***NOTE:*** When creating new GameObjects, use `Instantiate()`
+
 ## Object variables
+
 * The variables inside of an object can be accessed with the dot `.` operator
     ```c#
     static void CreateThreeEnemies()
@@ -131,7 +137,9 @@ public class WrapAround : MonoBehaviour
         enemy2.HP = 4; // wait, this does not work!?
     }
     ```
+
 ### Own variables of the class
+
 * "dot scoping" is not needed when we're *inside* the class
     ```c#
     class Enemy
@@ -154,7 +162,9 @@ public class WrapAround : MonoBehaviour
       }
   }
   ```
+
 ### Object variables: fix the previous example
+
 * We could not change the Enemy HP from outside the class, because class members are `private` by default
 * This can be changed with the `public` access modifier
     ```c#
@@ -168,6 +178,7 @@ public class WrapAround : MonoBehaviour
     ```c#
     enemy2.HP = 4;
     ```
+
 ## Access modifiers
 
 * [C# Docs: Access modifiers](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)
@@ -181,7 +192,6 @@ public class WrapAround : MonoBehaviour
     * Like `private`, but accessible also by the *inheritors* of the class
   * `virtual`
     * Accessible and *overridable* by inheritors
-
 
 ## Conventions
 
@@ -217,6 +227,7 @@ public class WrapAround : MonoBehaviour
     enemy.maxHP = 2;
     enemy1.Heal();
     ```
+
 ### Static methods
 
 * `static` methods can be called without instantiating the class
@@ -253,6 +264,7 @@ public class WrapAround : MonoBehaviour
 
 ## Exercise 1. Class for helper functions
 <!-- _backgroundColor: #29366f -->
+
 <!-- _footer: "[About Inverse Lerp](https://www.gamedev.net/articles/programming/general-and-gameplay-programming/inverse-lerp-a-super-useful-yet-often-overlooked-function-r5230/)" -->
 Create a new Script class for math helper functions and properties (do not add it to any GameObject).
 
@@ -281,6 +293,7 @@ Try to call the method from a GameObject!
         }
     }
     ```
+
 ### Constructors with parameters
 
 * You can pass in parameters to the constructor at initialization
@@ -308,13 +321,11 @@ Try to call the method from a GameObject!
 ## Exercise 2: Hello class
 <!-- _backgroundColor: #29366f -->
 
-
 1. Create a console application with a class Animal, that contains 
    * two strings: name and sound, and
    * a method `Greet()` that prints `[name] says [sound]!`
 2. Create a few animals with different names and sounds 
 3. Call their greet methods from the main program
-
 
 ## Inheritance
 * Classes can be made to inherit functionality of some other class
@@ -347,6 +358,7 @@ Try to call the method from a GameObject!
     * [C# Docs: Built-in reference types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types)
     * Classes: `Transform`, `GameObject`, ...
     * Objects
+
 ### Reference vs value example 1
 
 ```c#
@@ -365,6 +377,7 @@ Debug.Log($"firstRefType.HP: {firstRefType.GetHP()}, secondRefType.HP: {secondRe
 * When modifying `secondRefType`, `firstRefType` gets modified as well!
 
 ### Reference vs value example 2
+
 ```c#
 //Value type variable
 Vector3 pos = transform.position;
@@ -374,7 +387,6 @@ pos = new Vector3(0, 2, 0); // TRANSFORM'S POSITION IS UNAFFECTED!!
 Transform tran = transform;
 tran.position = new Vector3(0, 2, 0);
 ```
-
 
 ## Extra: Properties with getters & setters
 
@@ -415,6 +427,7 @@ public class PlayerClass
     ```
 
 ### Property example
+
 ```c#
 // Level is a property that converts experience points into the level of a player automatically
 public int Level
@@ -430,4 +443,44 @@ public int Level
 }
 
 public int Health{ get; set;} // This is an example of an auto-implemented property
+```
+
+---
+
+## Example: Implementing the Vector3 class in C#
+
+```c#
+using System;
+
+class Vector3
+{
+	public float x; public float y; public float z;
+	
+	public Vector3(float x0, float y0, float z0)
+	{
+		x = x0; y = y0; z = z0;
+	}
+	public void Print()
+	{
+		Console.WriteLine($"x: {x}, y: {y}, z: {z}");
+	}
+	public static Vector3 forward
+	{
+		get
+		{
+			return new Vector3(0, 0, 1);
+		}
+	}
+}
+
+public class Program
+{
+	public static void Main()
+	{
+		Vector3 vec = new Vector3(0, 4, 2);
+		vec.Print();
+		Vector3 forw = Vector3.forward;
+		forw.Print();
+	}
+}
 ```

@@ -62,7 +62,7 @@ b) <em>Project &gt; Right click &gt; Create &gt; C# script</em>, then drag and d
 </li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-marpit-fragments="7" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="6" data-marpit-pagination-total="28" style="--paginate:true;--class:invert;--heading-divider:3;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-marpit-fragments="11" data-paginate="true" data-class="invert" data-heading-divider="3" class="invert" data-marpit-pagination="6" data-marpit-pagination-total="28" style="--paginate:true;--class:invert;--heading-divider:3;">
 <h2>Two ways to initialize</h2>
 <ul>
 <li data-marpit-fragment="1">There are two functions for initializing a script class</li>
@@ -70,12 +70,16 @@ b) <em>Project &gt; Right click &gt; Create &gt; C# script</em>, then drag and d
 <ul>
 <li data-marpit-fragment="3">Called first</li>
 <li data-marpit-fragment="4">Called even if the script component is not enabled!</li>
+<li data-marpit-fragment="5">Other GameObjects in the scene don't necessarily yet exist when this is called</li>
+<li data-marpit-fragment="6">Also, you can't access serialized values from inspector here!</li>
 </ul>
 </li>
-<li data-marpit-fragment="5"><a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html"><code>Start()</code></a>
+<li data-marpit-fragment="7"><a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html"><code>Start()</code></a>
 <ul>
-<li data-marpit-fragment="6">Called second, right before the first Update</li>
-<li data-marpit-fragment="7">Only called if the script component IS enabled</li>
+<li data-marpit-fragment="8">Called second, right before the first Update</li>
+<li data-marpit-fragment="9">Only called if the script component IS enabled</li>
+<li data-marpit-fragment="10">Other GameObjects in the scene already exist</li>
+<li data-marpit-fragment="11">Serialized variables exist as well</li>
 </ul>
 </li>
 </ul>

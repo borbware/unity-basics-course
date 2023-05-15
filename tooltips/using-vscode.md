@@ -59,6 +59,7 @@ paginate: true
 * Tabs with changes are shown in an effect colour
 
 ---
+
 ![](imgs/vscode-editor.png)
 
 ## Annoying bullshit
@@ -69,7 +70,6 @@ paginate: true
 * Disable autocomplete on certain characters
   * *Preferences > Editor: Accept Suggestion On Commit Character*
 
-
 ## Using VS code like a pro
 
 * The key to using VS code effectively is ***mastering the shortcuts***.
@@ -77,34 +77,35 @@ paginate: true
 
 ## VS code shortcuts
 
-| Keybinding | Command | When | 
-|------------|---------|------|
-| ***CTRL+F*** | Find | Editor | 
-| ***CTRL+SHIFT+F*** | Find in files | - | 
-| ***CTRL+SHIFT+H*** | Replace in files | - | 
-| ***ALT+⬆/⬇*** | Move code line up/down | Editor (not read-only) | 
-| ***CTRL+K***, then ***CTRL+C*** | Comment selection | Editor (not read-only) | 
-| ***CTRL+K***, then ***CTRL+U*** | Uncomment selection | Editor (not read-only) |
+| Keybinding                      | Command                | When                   |
+|---------------------------------|------------------------|------------------------|
+| ***CTRL+F***                    | Find                   | Editor                 |
+| ***CTRL+SHIFT+F***              | Find in files          | -                      |
+| ***CTRL+SHIFT+H***              | Replace in files       | -                      |
+| ***ALT+⬆/⬇***                   | Move code line up/down | Editor (not read-only) |
+| ***CTRL+K***, then ***CTRL+C*** | Comment selection      | Editor (not read-only) |
+| ***CTRL+K***, then ***CTRL+U*** | Uncomment selection    | Editor (not read-only) |
 
 ---
 
-| Keybinding | Command | When | 
-|------------|---------|------|
-| ***CTRL+B*** | View: toggle side bar | - | 
-| ***CTRL+§*** | View: Open instance of the file to the side | - | 
-| ***CTRL+W*** | View: Close editor tab | - | 
-| ***CTRL+SHIFT+P*** | Open command palette | - | 
-| ***CTRL+P*** | Go to file | - | 
-| ***CTRL+Ö*** | View: toggle terminal | Terminal is active | 
-
+| Keybinding         | Command                                     | When               |
+|--------------------|---------------------------------------------|--------------------|
+| ***CTRL+B***       | View: toggle side bar                       | -                  |
+| ***CTRL+§***       | View: Open instance of the file to the side | -                  |
+| ***CTRL+W***       | View: Close editor tab                      | -                  |
+| ***CTRL+SHIFT+P*** | Open command palette                        | -                  |
+| ***CTRL+P***       | Go to file                                  | -                  |
+| ***CTRL+Ö***       | View: toggle terminal                       | Terminal is active |
 
 ### Omnisharp shortcuts
+
   * ***F2***: Rename variable and automatically update references
     * Naming things correctly on the first go is difficult!
   * ***CTRL+LMB*** 
     * when clicking a method reference: *jump to definition*
     * when clicking the method definition: *jump to references*
 <!-- * ***CTRL+.***  auto-import / auto-create missing functions -->
+
 ### Editing keyboard shortcuts
 
 * In *Preferences > Keyboard Shortcuts*, you can add own shortcuts and change existing ones 
@@ -117,22 +118,22 @@ paginate: true
 
 ### My extra shortcuts (not enabled by default)
 
-| Keybinding | Command | When | 
-|------------|---------|------|
-| ***CTRL+SHIFT+D*** | *Copy line down* | `editorTextFocus && !editorReadOnly` | 
-|  ***CTRL+SHIFT+⬇*** | *Move line down* | `editorTextFocus && !editorReadOnly` | 
-| ***CTRL+SHIFT+⬆*** | *Move line up* | `editorTextFocus && !editorReadOnly` | 
-| ***ALT+F3*** | *Select All Occurrences of Find Match* | `editorFocus` |
+| Keybinding         | Command                                | When                                 |
+|--------------------|----------------------------------------|--------------------------------------|
+| ***CTRL+SHIFT+D*** | *Copy line down*                       | `editorTextFocus && !editorReadOnly` |
+| ***CTRL+SHIFT+⬇*** | *Move line down*                       | `editorTextFocus && !editorReadOnly` |
+| ***CTRL+SHIFT+⬆*** | *Move line up*                         | `editorTextFocus && !editorReadOnly` |
+| ***ALT+F3***       | *Select All Occurrences of Find Match* | `editorFocus`                        |
 
 ---
 
-| Keybinding | Command | When | 
-|------------|---------|------|
-| ***CTRL+TAB*** | *View: Open Next Editor* |  | 
-| ***CTRL+SHIFT+TAB*** | *View: Open Previous Editor* |  | 
-| ***CTRL+Ä***  | *View: Focus Active Editor Group* | `terminalFocus` | 
-| ***CTRL+Ä***  | *Terminal: Focus Terminal* |  | 
-| ***CTRL+SHIFT+Ä*** | *View: Toggle Maximized Panel* (makes terminal big) |  |
+| Keybinding           | Command                                             | When            |
+|----------------------|-----------------------------------------------------|-----------------|
+| ***CTRL+TAB***       | *View: Open Next Editor*                            |                 |
+| ***CTRL+SHIFT+TAB*** | *View: Open Previous Editor*                        |                 |
+| ***CTRL+Ä***         | *View: Focus Active Editor Group*                   | `terminalFocus` |
+| ***CTRL+Ä***         | *Terminal: Focus Terminal*                          |                 |
+| ***CTRL+SHIFT+Ä***   | *View: Toggle Maximized Panel* (makes terminal big) |                 |
 
 ## Extra tip
 

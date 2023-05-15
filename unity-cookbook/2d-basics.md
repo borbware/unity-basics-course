@@ -27,7 +27,6 @@ paginate: true
   * some 2D GameObject templates, like sprites and tilemaps available
 * You can change between 3D and 2D view modes by pressing the *2D* button in the Scene view
 
-
 ## Useful 2D GameObjects
 
 * Sprites

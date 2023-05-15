@@ -18,6 +18,7 @@ title: Game Industry
   * Study computer science / IT at a University (of Applied sciences)
   * Study video game making on a dedicated curriculum
   * Study on a course like this
+
 ## Game industry worldwide
 
 [Wikipedia: Video game industry revenue graph](https://en.wikipedia.org/wiki/Video_game_industry#Economics)
@@ -27,7 +28,9 @@ title: Game Industry
 * Virtual & physical sales
 * Many emerging markets
 * "By 2018, the United States video game industry had matched that of the United States film industry on basis of revenue"
+
 ## Trends
+
 * 2010s & 2020s trends
   * Free to play (f2p)
   * Mobile
@@ -35,12 +38,16 @@ title: Game Industry
   * Rising budgets
   * Subscription services (gamepass)
   * More and more indies
+
 ### Unrealized trends
+
   * Cloud gaming: no more? (Stadia being deprioritized)
   * VR breakthrough not coming?
     * Metaverse rebranding
     * [John Carmack keynote: "we have lapsed VR users, but there are no lapsed mobile phone users"](https://www.youtube.com/watch?v=BnSUk0je6oo)
+
 ## Consolidation
+
 * Consolidation happens every day
   * There are less and less big actors as they're bought out by even bigger actors
     * "AA" games basically nonexistent, at least underrepresented
@@ -54,7 +61,9 @@ title: Game Industry
 * Industry today in Finland is very mobile-heavy
 * [Neogames: About the industry](https://neogames.fi/about-the-industry/)
   * Company listing
-### PC & console:
+
+### PC & console
+
   * Remedy
   * Housemarque (Sony)
   * RedLynx
@@ -63,12 +72,14 @@ title: Game Industry
   * ...
 
 ### Mobile
+
   * Supercell (Tencent)
     * Easily the biggest one
   * Rovio
   * Small Giant Games (Take Two)
   * Futureplay Games (Plarium)
   * Fingersoft
+
 ### Active indie scene
 
 * Many indie companies
@@ -77,6 +88,7 @@ title: Game Industry
   * [FGJ (Finnish Game Jam)](https://www.finnishgamejam.com/)
 * Both have Discord servers and you can join them
 * We In Games
+
 ### Unions
 
 * Finnish level of unionization in game industry is pertty good
@@ -86,6 +98,7 @@ title: Game Industry
 * [TEK](www.tek.fi)
   * General union for tech workers
 * others
+
 ## Games industry in Vaasa
 
 * Almost 100% indie
@@ -122,13 +135,16 @@ title: Game Industry
   * GamesNow lecture series by Aalto University
 * What you don't get so easily online, are ***networks*** of likeminded people
   * This is what you can find in schools and courses like this
+
 ### Vocational education
+
   * Careeria (Helsinki)
     * [Ohjelmistokehittäjä (ammatillinen perustutkinto): Tieto- ja viestintätekniikan perustutkinto, 180 osaamispistettä](https://neogames.fi/fi/institute/careeria-2/)
   * KSAO (Kouvola)
     * [Ohjelmistokehittäjä (ammatillinen perustutkinto): Tieto- ja viestintätekniikan perustutkinto](https://www.kouvola.fi/ksao/hakijalle/tutkinnot/kauppa-hallinto-ja-tietotekniikka/ohjelmistokehittaja/)
 
 ### Universities of applied sciences: Full curricula
+
   * XAMK
   * KAMK (Kajaani, Raahe)
     * [Tradenomi, tietojenkäsittely, peliala, Kajaani, 210 ECTS](https://www.kamk.fi/fi/Hakijalle/AMK-koulutukset/Tradenomi-tietojenkasittely-peliala-Kajaani/6651448a-b79b-42b0-b2ac-87c9e6ec1d75)
@@ -137,6 +153,7 @@ title: Game Industry
     * [Bachelor of Business Administration: Business Information Technology, 210 ECTS](https://neogames.fi/institute/jamk-university-of-applied-sciences/)
 
 ### Universities of applied sciences: Gamedev courses
+
   * Centria AMK (Ylivieska)
     * [Centria pelipaja, 60 ECTS](https://pelipaja.centria.fi/hae/)
   * LAB (Lahti)
@@ -146,6 +163,7 @@ title: Game Industry
     * [Oulu Game Lab -studies, 30 ECTS](https://www.oamk.fi/fi/koulutus/avoin-ammattikorkeakoulu/opetustarjonta/?okid=548)
 
 ### Universities
+
   * TUNI (Tampere)
     * [Game Studies, 120 ECTS](https://www.tuni.fi/en/study-with-us/game-studies)
   * Aalto University (Espoo)
@@ -153,7 +171,6 @@ title: Game Industry
     * [Master of Science in Technology: Game Design and Production, 120 ECTS](https://www.aalto.fi/en/study-options/masters-programme-in-computer-communication-and-information-sciences-game-design-and)
   * University of Vaasa
     * Courses in Game Design 
-
 
 ## Learn how to make good games
 

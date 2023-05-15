@@ -3,6 +3,7 @@ title: Unity Cookbook. Physics
 marp: true
 paginate: true
 math: mathjax
+theme: borbtheme
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
@@ -10,6 +11,7 @@ math: mathjax
 # Physics
 
 ## Unity physics engines
+
 * [Manual: Physics](https://docs.unity3d.com/Manual/PhysicsSection.html)
 * A physics engine is used to calculate accelerations, collisions, gravity and other forces 
   * In 3D, Unity uses NVIDIA's **PhysX** for its physics
@@ -22,7 +24,6 @@ math: mathjax
 * [Manual: 3D Physics for object-oriented projects](https://docs.unity3d.com/Manual/PhysicsOverview.html)
 * [Manual: Physics reference 2D](https://docs.unity3d.com/Manual/Physics2DReference.html)
 
-
 ## Rigidbody
 
 * 3D
@@ -32,16 +33,27 @@ math: mathjax
 * 2D
   * [Manual: Rigidbody 2D class](https://docs.unity3d.com/Manual/class-Rigidbody2D.html)
   * [Script Reference: Rigidbody 2D](https://docs.unity3d.com/ScriptReference/Rigidbody2D.html)
-* literally: a body (object) that does not deform, i.e., is rigid
-* takes over the movement of the GameObject it is attached to
-* do not move it from a script by changing the Transform properties such as position and rotation
+* Literally: a body (object) that does not deform, i.e., is rigid
+* Takes over the movement of the GameObject it is attached to
+* ***Note:*** Do not move it from a script by changing the Transform properties such as position and rotation
   * Instead, you should apply ***forces***
 
-### Rigidbody Components
+### The Rigidbody components
 
-![](https://docs.unity3d.com/uploads/Main/Inspector-Rigidbody.png)
-![](https://docs.unity3d.com/uploads/Main/Rigidbody2D.png)
+<div class="columns" markdown="1">
+<div markdown="1">
 
+![](imgs/rigidbody2D.png)
+
+</div>
+<div markdown="1">
+
+![](imgs/rigidbody.png)
+
+</div>
+</div>
+
+* Every rigidbody has a ***mass***, which affects how much forces influence them 
 * ***Note:*** If you have problems having two non-moving Rigidbody2Ds collide, set *Sleeping Mode* to *Never Sleep*
 
 ## Types of rigidbodies
@@ -56,7 +68,6 @@ math: mathjax
     * in 3D, manipulate `transform.position`
 * ***Static*** (only 2D)
   * an immovable object, can only collide with non-static rigidbodies
-
 
 ### Interpolation
 
@@ -87,6 +98,17 @@ math: mathjax
   rb.AddTorque(transform.up * torque * turn);
   ```
 
+## Force modes
+
+
+* When applying a force, you can give the function a second argument: the mode with which the force is applied
+* [ScriptReference: ForceMode](https://docs.unity3d.com/ScriptReference/ForceMode.html) has a good example project showcasing all four modes
+  * `ForceMode.Force` is the default: the resulting acceleration is dampened by the mass of the rigidbody
+  * `ForceMode.Acceleration` gives acceleration directly, disregarding the mass of the body.
+  * `ForceMode.Impulse` gives the body a **velocity** (dampened by its mass), not an acceleration, resulting in snappier movement
+  * `ForceMode.VelocityChange` is like impulse, but disregards the mass of the body.
+* ***Note:*** Rigidbody2D only supports `ForceMode.Force` and `ForceMode.Acceleration`!
+
 ## Extra: More functions
 <!-- _backgroundColor: #5d275d -->
 
@@ -111,12 +133,14 @@ math: mathjax
 <!-- _footer: "See [Hyperphysics](http://hyperphysics.phy-astr.gsu.edu/hbase/rotq.html) for more info about angular quantities" -->
 
 ## Gravity
+
 * ***Note:*** by default, gravitational acceleration is $9.81m/s^2$
 * You can change it from Unity settings
   * *Edit > Project Settings > Physics (2D) > Gravity*
   * for top-down 2d games, you want gravity to be zero
 
 ## Extra: Raycasting
+
 <!-- _backgroundColor: #5d275d -->
 * See [2D basics](2d-basics#extra-two-ways-for-2d-shooting)
 

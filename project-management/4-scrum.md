@@ -6,7 +6,9 @@ math: mathjax
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
+
 # Project management 4. Scrum
+
 ## What is Scrum?
 
 * [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)) is a framework for delivering products (usually software)
@@ -18,7 +20,6 @@ math: mathjax
   * Sprints are most commonly two weeks long (for us, shorter)
   * Progress is tracked and re-planned in ***Dailies***, 15-minute time-boxed meetings 
 
-
 ## Why Scrum for game development?
 
 * Through its practices and principles, Scrum creates ***conditions*** to achieve good results 
@@ -28,6 +29,7 @@ math: mathjax
 * Scrum facilitates communication, but doesn't solve any problems for you!
 
 ---
+
 * ***Cross-discipline teams***: Enables teams to deliver features and mechanics that have clear value
 * ***Self-management***: Enables teams to select the amount of work they can commit to every sprint and complete that work through whatever means they find appropriate
 * ***Self-organization***: Enables teams to have a degree of authority and responsibility to select their membership
@@ -121,8 +123,8 @@ math: mathjax
 * A *forecast* of what is aimed to be done during the Sprint, not a promise!!!
 
 ---
-![bg width: 80%](imgs/sprint-backlog.png)
 
+![bg width: 80%](imgs/sprint-backlog.png)
 
 ### Definition of Done
 
@@ -159,7 +161,9 @@ math: mathjax
 * Max. 15 min long!
 * Keeps everyone on the same page
   * $\Rightarrow$ Optimizes collaboration and performance of the Dev Team
+
 ---
+
 * Example topics to address in a Daily:
 	* What have you achieved since the last Daily?
 	* What problems have you faced?

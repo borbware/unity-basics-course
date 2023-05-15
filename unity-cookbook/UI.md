@@ -19,6 +19,7 @@ paginate: true
 <!-- _footer: "[Learn: UI components](https://learn.unity.com/tutorial/ui-components#5c7f8528edbc2a002053b4d0)" -->
 
 ## Canvas
+
 * UI elements are drawn on a separate canvas and on a separate layer
   * Canvas represents the rectangular area in which the UI is drawn
   * More about it later!
@@ -58,16 +59,19 @@ paginate: true
 * [Packages: Unity UI: CanvasScaler](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-CanvasScaler.html)
 
 * Important setting: *UI Scale mode*
-  * *Constant pixel size* & *Constant physical size*:
-    * Elements get bigger on lower resolutions 
+  * *Constant pixel size*
+    * UI elements take the same amount of pixels regardless of screen size
+  * *Constant physical size*:
+    * UI elements take the same amount of pixels/DPI regardless of screen size
   * *Scale with screen size*:
-    * Elements are defined as always taking a given ratio of the screen size
-    * you can choose if you rather match the screen width or screen height with *Screen Match Mode*
+    * UI elements take a given portion of the screen size
+    * This is the one we usually want
+    * You can choose if you rather match the screen width or screen height with *Screen Match Mode*
 
 ## Graphic Raycaster Component
 
 * The Graphic Raycaster is used to raycast against a Canvas.
-* The Raycaster looks at all Graphics on the canvas and determines if any of them have been hit.
+* The Raycaster looks at all Graphics on the canvas and determines if mouse is top on any of them
 * [Graphic Raycaster](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-GraphicRaycaster.html)
 * Can be used to determine if the cursor is over a Graphics element in the Scene:
   * [GraphicRaycaster.Raycast](https://docs.unity3d.com/2017.3/Documentation/ScriptReference/UI.GraphicRaycaster.Raycast.html)
@@ -78,19 +82,80 @@ paginate: true
 * [Packages: Unity UI: Visual Components](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIVisualComponents.html)
   * [Text](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-Text.html) 
   * [Image](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-Image.html) (& [Raw Image](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-RawImage.html))
+    * ***NOTE:*** For drawing images on UI, you need to use the Image component, ***NOT the Sprite Renderer!***
   * [Mask](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-Mask.html) (& [RectMask2D](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-RectMask2D.html))
-* ***NOTE:*** For drawing images on UI, you need to use the Image component, ***NOT the Sprite Renderer!***
+* Add e.g., image to scene with *GameObject > UI > Image*
+  * All UI element GameObjects have to be under the Canvas GameObject!
 
-### Updating UI
+## TextMeshPro
 
-* You can update the text fields of a Text component with code:
+* [Packages: TextMeshPro user guide](https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/manual/index.html)
+* There are two ways to draw text to UIs in Unity
+  * The legacy ***Text*** GameObject that is easier to use
+  * The newer, more feature-packed ***Text - TextMeshPro***
+* TextMeshPro is a separate package that comes with new Unity Projects by default
+* To start using it, install TextMeshPro Essentials
+  * A prompt will appear when you add a TextMeshPro GameObject
+  * If you missed it, install it manually with *Window > TextMeshPro > Import TextMeshPro Essential Resources*
+
+### TextMeshPro: Using a custom font
+
+* You need to create a new font asset before you can use your own font with TextMeshPro
+
+1) Add your font file (.ttf, for example) to your Assets folder
+2) Open *Window > TextMeshPro > Font Asset Creator*
+3) Drag the font file to *Source Font File*
+4) Click *Generate Font Atlas*
+5) Click *Save* to save the generated Font assets
+
+* Now you can set the new font asset to a TextMeshPro component! 
+
+## Updating UI with code
+
+* You can update the text field of a TextMeshPro component with code:
 ```c#
-[SerializeField] Text textComponent;
+[SerializeField] TextMeshProUGUI textComponent;
 ...
   public void setScore(int newScore)
   {
       textComponent.text = $"Score: {newScore}";
   }
+```
+* ***Note:*** To use the `TextMeshProUGUI` component, you need to add `using TMPro;` on top of the script file.
+
+### UI manager
+
+* We usually want to create a UI manager that handles updating the UI
+  * For instance with a name `UIManager` 
+* We can make it a ***singleton*** with a name `instance` to access it easily from wherever we want to use it in the game
+  * That way, we can call `UIManager.instance.UpdateScore()` from wherever we need
+  * An example code below
+  * See also [Scene management: Creating a data manager](scenes#creating-a-data-manager)
+
+---
+
+```c#
+using TMPro;
+
+public class UIManager : MonoBehaviour
+{
+    public static UIManager instance;
+
+    [SerializeField] TextMeshProUGUI scoreText;
+    public int score = 0;
+
+    void Start()
+    {
+        if (instance != null) Destroy(gameObject);
+        else instance = this;
+    }
+
+    public void UpdateScore(int scoreChange)
+    {
+        score += scoreChange;
+        scoreText.text = score.ToString();
+    }
+}
 ```
 
 ## Interaction components
@@ -125,6 +190,7 @@ if (Input.ButtonDown("Fire1"))
 ```
 
 ### Navigating menu with Arrow keys & game controller
+
 * By default, your buttons are only interactable with mouse
 * To add support controller & keyboard input, you need to do two things:
   * In every button, set *Navigation* to *Automatic*
@@ -138,7 +204,6 @@ if (Input.ButtonDown("Fire1"))
   ...
   EventSystem.current.SetSelectedGameObject(myButton);
   ```
-
 
 ## More RectTransform stuff
 
@@ -245,7 +310,7 @@ if (Input.ButtonDown("Fire1"))
 
 ### My sprite is moving wildly when I resize the screen
 
-* you have to change the ***Anchor presets***
+* You have to change the ***Anchor presets***
 * *Inspector > Rect Transform* and click on the square on the left 
   * Pressing down ***Shift+Alt*** exposes additional options
 
@@ -268,3 +333,39 @@ Create a UI with three buttons.
 Change the color of a GameObject in your scene when the button has been pressed!
 
 Try out setting RectTransform anchor points and see how the UI changes when you change the game resolution in the Game view.
+
+## Reading
+
+* [Unity UI manual: Designing UI for multiple resolutions](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/HOWTO-UIMultiResolution.html)
+* [Unity UI manual: Creating UI elements from scripting](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/HOWTO-UICreateFromScripting.html)
+
+## Extra: IMGUI - Immediate Mode Graphical User Interface
+<!-- _backgroundColor: #5d275d -->
+
+* Code-driven system to create UI elements quickly
+* [Manual: GUI scripting guide](https://docs.unity3d.com/Manual/GUIScriptingGuide.html)
+* [ScriptReference: GUI](https://docs.unity3d.com/ScriptReference/GUI.html)
+* Example: Button
+  ```c#
+  if (GUI.Button(new Rect(100, 30, 150, 30), "Do a thing!"))
+  {
+      // When button is pressed, do a thing here
+  }
+  ```
+* Example: Input Field
+  ```c#
+  value = GUI.TextField(new Rect(300, 30, 200, 20), value, 25);
+  ```
+
+---
+
+![width:700px](imgs/imgui.png)
+* This is the kind of elements you can create with IMGUI.
+
+## Extra: UI toolkit
+<!-- _backgroundColor: #5d275d -->
+
+* [UI Toolkit](https://docs.unity3d.com/Manual/UIElements.html)
+  * Collection of features, resources, and tools for UI
+    * Create UIs with style sheets
+

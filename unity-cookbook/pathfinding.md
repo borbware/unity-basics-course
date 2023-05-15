@@ -18,6 +18,7 @@ paginate: true
   	* make enemies follow the player
   	* make enemies attack other enemies?!?
 * One of the earliest games to utilize pathfinding was [Tanktics (1976)](https://en.wikipedia.org/wiki/Tanktics:_Computer_Game_of_Armored_Combat_on_the_Eastern_Front) 
+
 ### Note
 
 * Pathfinding is not necessary to create interesting enemy behaviour, though
@@ -35,6 +36,7 @@ paginate: true
   * NavMesh Agent: entities that walk on NavMeshes
   * NavMesh Link: shortcuts
   * NavMesh Obstacle: movable objects blocking navigation
+
 ## 2D pathfinding
 
 * Unity doesn't have 2D NavMeshes by default, yay
@@ -46,11 +48,14 @@ paginate: true
 
 ## A* pathfinding algorithm
 
+![bg right:30% height:80%](imgs/pathfinding-node-network.png)
+
 * [A*](https://en.wikipedia.org/wiki/A*_search_algorithm) (pronounced A-star) is a pathfinding algorithm commonly used in video games
 * For an interactive example of A* and other pathfinding algorithms, see [Pathfinding.js](https://qiao.github.io/PathFinding.js/visual/)
-* It calculates a path from point A to point B in a ***graph***
-* You can think of the graph as a network of possible routes
-  * in video games, it's usually a grid
+* Pathfinding happens on a ***graph***: a network of possible routes
+  * The network consists of nodes (a.k.a. ***waypoints***) (marked with circles in the image) that are connected by lines
+* The path from point A (red circle) to point B (green circle) can only be created via connected nodes
+  * A gap in the map could be created by removing a connection between nodes
 
 ## Adding A* pathfinding to your 2D project
 
@@ -64,15 +69,17 @@ paginate: true
 
 ### Setting up the Pathfinder component
 
-5) *Inspector > Add new Graph > Grid graph*
+5) *Inspector > Add new Graph > Grid graph* ([A* Docs: Grid graph](https://arongranberg.com/astar/docs/gridgraph.html))
 6) Check the *2D* box. Now the graph should be visible in the Scene view.
 7) Also check the *Use 2D physics* box.  
-8) Set the *Obstacle Layer Mask* to *Everything* or a specific layer of your collision tiles.
-9) Make the graph bigger with the Scale tool to envelop the whole level.
-10) Click *Scan* in the bottom to see how the Pathfinder sees your level.
-11) Click on the *Eye icon* in your *Grid Graph* to hide the scan so it's easier to work on your level again.
+8) Set the *Obstacle Layer Mask* to *Everything* or a specific ***layer*** of your collision tiles.
+   * ***Note:*** Not the sorting layer; a layer of the tilemap GameObject!
+9)  Make the graph bigger with the Scale tool to envelop the whole level.
+10) Click *Scan* in the bottom to update the grid. (Do this after every change!)
+11) Click on the *Eye icon* in your *Grid Graph* to hide the scan.
 
 * ***Note:*** You can largen the *Diameter* if your paths go too close to walls.
+* ***Note 2:*** Uncheck *Cut Corners* so the enemies won't 
 
 ### Setting up the enemy
 
@@ -100,41 +107,8 @@ paginate: true
 * To show the path in real time, enable *Gizmos > Seeker* in Game Mode.
   ![](imgs/pathfinding-path.png)
 
-## Scripting 1. Flip the sprite based on velocity
 
-```c#
-using Pathfinding;
-
-[SerializeField] AIPath _aiPath;
-void Update()
-{
-  if (_aiPath.desiredVelocity.x > 0.0f)
-    _spriteRenderer.flipX = false;
-  else if (_aiPath.desiredVelocity.x < 0.0f)
-    _spriteRenderer.flipX = true;
-}
-
-```
-
-## Scripting 2. Controlling a RigidBody
-
-* The following Enemy behaviour script is an alternative to the *AI Path* and *AI Destination Setter* scripts, so remove them if you follow these.
-  * You do need the *Seeker* script, however!
-* Add a Collider component so your Enemy can't walk through obstacles.
-* Add a Rigidbody so you can control your Enemy with forces and collisions.
-
-
-### Initializations
-
-![](imgs/pathfinding-code1.png)
-
-### Start, UpdatePath, OnPathComplete
-![](imgs/pathfinding-code2.png)
-
-### FixedUpdate
-![](imgs/pathfinding-code3.png)
-
-## More scripting
+## Path Scripting
 
 * In AI destination Setter component, the *Target* is a public variable, so you can change it from any script with
   ```c#
@@ -142,7 +116,7 @@ void Update()
   ```
 * Sometimes you need to scan the path again to update it dynamically:
   ```c#
-  path.active.Scan ();
+  path.active.Scan();
   ```
 * To add custom functionality to when AI Path has reached its target, you can add code to AIPath.cs in method `onTargetReached`:
   ```c#
@@ -150,6 +124,225 @@ void Update()
     SendMessage("TargetIsReached");
   }
   ```
+
+## Scripting 1. Flip the sprite based on velocity
+
+```c#
+using Pathfinding;
+
+[SerializeField] AIPath aiPath;
+
+void Update()
+{
+  if (aiPath.desiredVelocity.x > 0.0f)
+    _spriteRenderer.flipX = false;
+  else if (aiPath.desiredVelocity.x < 0.0f)
+    _spriteRenderer.flipX = true;
+}
+
+```
+
+## Scripting 2. Changing target when on screen
+
+* When enemy is on screen, make it follow the player.
+* Otherwise, make it return to its spawn point.
+* Add an empty GameObject "EnemySpawnpoints" in the scene that will be used as a container for spawn points.
+
+### I. Setup
+
+```c#
+using Pathfinding;
+
+public class FollowOnScreen : MonoBehaviour
+{
+    AIDestinationSetter aiset;
+    GameObject Player;
+    GameObject Spawnpoint;
+    GameObject Spawnpointcontainer;
+
+    void Start()
+    {
+        aiset = GetComponent<AIDestinationSetter>();
+        Player = GameObject.FindGameObjectWithTag("Player");
+        // Find Enemyspawnpoints GameObject & create a new empty Spawnpoint as its child
+        Spawnpointcontainer = GameObject.Find("EnemySpawnpoints");
+        Spawnpoint = Instantiate(
+            new GameObject(),
+            transform.position,
+            transform.rotation,
+            Spawnpointcontainer.transform
+        );
+    }
+```
+### II. Behaviour
+```c#
+    bool OnScreen()
+    {
+        float cameraHalfHeight = Camera.main.orthographicSize;
+        float cameraHalfWidth = cameraHalfHeight * Camera.main.aspect;
+        Vector3 difference = Camera.main.transform.position - transform.position;
+        return (
+            Mathf.Abs(difference.x) < cameraHalfWidth 
+            && Mathf.Abs(difference.y) < cameraHalfHeight
+        );
+    }
+    void Update()
+    {
+
+        if (OnScreen())
+            aiset.target = Player.transform;
+        else
+            aiset.target = Spawnpoint.transform;
+    }
+}
+```
+
+## Scripting 3. Moving between targets
+
+* Enemy has an empty child GameObject *Patrolpoints* that contains empty GameObjects *Point1*, *Point2*, etc.
+  * These are the targets the enemy moves between 
+* We don't create any new GameObjects now, but instead we move the whole *Patrolpoints* GameObject under the *EnemyPatrolpoints* GameObject.
+* We add the patrol point transforms to a list.
+* Then, when enemy reaches a point, it gets assigned the next target on the list.
+### I. Setup
+
+```c#
+using Pathfinding;
+
+public class PatrolEnemy : MonoBehaviour
+{
+    AIDestinationSetter aiset;
+    AIPath aipath;
+    [SerializeField] List<Transform> patrolPoints = new List<Transform>();
+    [SerializeField] int currentTarget;
+
+    void Start()
+    {
+        aiset = GetComponent<AIDestinationSetter>();
+        aipath = GetComponent<AIPath>();
+
+        // move patrolpoints under enemypatrolpoints so they won't move as enemy moves
+        Transform points = transform.Find("Patrolpoints");
+        GameObject newParent = GameObject.Find("EnemyPatrolpoints");
+        points.SetParent(newParent.transform);
+        
+        for (int i = 0; i < points.childCount; i++)
+        {
+            patrolPoints.Add(points.GetChild(i));
+        }
+        SetCurrentTarget(0);
+    }
+```
+
+### II. Behaviour
+
+```c#
+    void SetCurrentTarget(int i)
+    {
+        // modulo makes sure we choose a target from the list
+        aiset.target = patrolPoints[i % patrolPoints.Count];
+        currentTarget = i % patrolPoints.Count;
+    }
+
+    void Update()
+    {
+        Vector3 distance = aiset.target.transform.position - transform.position;
+
+        // endReachedDistance can be changed in AI Path component's inspector 
+        if (distance.magnitude < aipath.endReachedDistance)
+            SetCurrentTarget(currentTarget + 1);
+    }
+}
+```
+
+## Scripting 4. Custom behaviour
+
+* The following Enemy behaviour script is an alternative to the *AI Path* and *AI Destination Setter* scripts, so remove them if you follow these.
+  * You do need the *Seeker* script, however!
+* Add a Collider component so your Enemy can't walk through obstacles.
+* Add a Rigidbody so you can control your Enemy with forces and collisions.
+
+
+### I. Initializations
+
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Pathfinding;
+
+public class EnemyAI: MonoBehaviour
+{
+    [SerializeField] Transform target;
+    [SerializeField] float speed = 200f;
+    [SerializeField] float nextWaypointDistance = 3f;
+
+    Path path;
+    Seeker seeker;
+    Rigidbody2D rb;
+
+    int currentWaypoint = 0;
+    bool reachedEndOfPath = false;
+
+    ...
+I
+```
+
+### II. Start, UpdatePath, OnPathComplete
+
+```c#
+void Start()
+{
+    seeker = GetComponent<Seeker>();
+    rb = GetComponent<Rigidbody2D>();
+
+    InvokeRepeating("UpdatePath", Of, .5f);
+}
+void UpdatePath()
+{
+    if (seeker.IsDone())
+        seeker.StartPath(rb.position, target.position, OnPathComplete);
+}
+void OnPathComplete (Path p)
+{
+    if (!p.error)
+    {
+      path = p;
+      currentWaypoint = 0;
+    }
+}
+```
+
+### III. FixedUpdate
+
+```c#
+void FixedUpdate()
+{
+    if (path == null)
+        return;
+    
+    if (currentWaypoint >= path.vectorPath.Count)
+    {
+        reachedEndOfPath = true;
+        return;
+    }
+    else
+    {
+        reachedEndOfPath = false;
+    }
+    Vector2 direction = ((Vector2) path.vectorPath[currentWaypoint] - rb.position).normalized;
+    Vector2 force = direction * speed * Time.deltaTime;
+
+    rb.AddForce(force);
+
+    float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
+
+    if (distance < nextWaypointDistance)
+    {
+        currentWaypoint++;
+    }
+}
+```
 
 ## Exercise 0. Point and click
 <!-- _backgroundColor: #29366f -->
