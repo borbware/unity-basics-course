@@ -25,7 +25,7 @@ math: mathjax
 * Scrum gives ***agency*** to team members: meeting the goal is a team effort
 * Scrum creates ***transparency***: problems get addressed early
 * Scrum isn't magic: you need to continuously enforce its practices in action
-
+* Scrum facilitates communication, but doesn't solve any problems for you!
 
 ---
 * ***Cross-discipline teams***: Enables teams to deliver features and mechanics that have clear value
@@ -203,3 +203,32 @@ math: mathjax
   3. Write down the state of tasks listed in the Sprint backlog
   4. Discuss what problems were encountered during the last Sprint, and how were they addressed.
 
+## Why Scrum isn't *perfect* for gamedev
+
+* Gamedev is messy!
+  * Following a rigid structure can limit the team's output
+  * Burndown charts detached from reality
+* Agile was developed mostly for teams where engineers are interchangeable
+  * Game dev is just too fragmented for that
+* Long pre-production phase of creative exploration 
+  * ...that usually bleeds into production...
+  * $\Rightarrow$ a mess that ***resists planning***
+* In gamedev, you don't have a customer you can talk with
+  * Even if you have a customer, they don't know what they want
+  * ...because the game hasn't been made yet!
+  * Do ask your users regularly if the game is fun, though
+
+<!-- _footer: Thanks to Aki Kanerva for these points! -->
+
+## Aki Kanerva: The ideas of Scrum that work for gamedev
+
+* Facilitate everyone staying up to date
+* Visualize progress
+* Break features down into tasks, and tasks into subtasks
+* Keep a backlog
+* Remember that plans are not set in stone and also need iteration
+* Check often if people are stuck
+* Estimate work
+* Stop often to evaluate the amount of meta work, including work estimates
+* Encourage people learning beyond their own discipline
+* ***Extra:*** Encourage ownership of features, not discipline (Not part of Scrum!)

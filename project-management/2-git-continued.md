@@ -240,3 +240,5 @@ From Scene 4, the game should loop back to Scene 1.
 * To add external code to your project from someone else's repository, Git has a neat system called *submodules*
 * To add a submodule to your project, use `git submodule add <submodule-url> <folder>`
 * To remove a submodule, use `git rm <path-to-submodule>`
+* If you clone a project with submodules, you need to run `git submodule update --init --recursive` once.
+* ***Note:*** If you don't want submodules to appear in the Source control tab of VS Code, go to settings and disable the *Git: Detect Submodules* setting.

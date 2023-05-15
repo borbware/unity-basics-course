@@ -133,3 +133,7 @@ paginate: true
 | ***CTRL+Ä***  | *View: Focus Active Editor Group* | `terminalFocus` | 
 | ***CTRL+Ä***  | *Terminal: Focus Terminal* |  | 
 | ***CTRL+SHIFT+Ä*** | *View: Toggle Maximized Panel* (makes terminal big) |  |
+
+## Extra tip
+
+In the Search panel, press ⬆ & ⬇ to browse the search history.

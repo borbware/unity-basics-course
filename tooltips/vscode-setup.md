@@ -76,8 +76,9 @@ paginate: true
 * Sometimes Omnisharp stops working. Here's something you can try to fix it:
 1) Check that .NET is installed by running `dotnet` in the VS code terminal
 2) In Unity: *Edit > Preferences > External tools > Regenerate Project Files*
-3) In VS Code: ***CTRL+SHIFT+P*** *> Omnisharp: Restart Omnisharp*
-4) In VS Code: Add this line inside the curly braces to the configuration file `.vscode/settings.json`:
+3) In Unity: `Open VS Code with Assets > Open C# Project` 
+4) In VS Code: ***CTRL+SHIFT+P*** *> Omnisharp: Restart Omnisharp*
+5) In VS Code: Add this line inside the curly braces to the configuration file `.vscode/settings.json`:
     ```
     "omnisharp.useModernNet": false
     ```
