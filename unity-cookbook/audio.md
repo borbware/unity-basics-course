@@ -66,6 +66,13 @@ theme: borbtheme
     * This is visualized as a sphere
 <!-- _footer: "[Scott Rowell Video: Unity Spatial Audio](https://www.youtube.com/watch?v=_2BhQN7-bGk)" -->
 
+## Music Exercise
+<!-- _backgroundColor: #29366f -->
+
+Download royalty-free music by Kevin MacLeod from [here](https://incompetech.com/music/).
+
+Play it on a loop in a scene.
+
 ## SFX Exercise
 <!-- _backgroundColor: #29366f -->
 
@@ -75,9 +82,10 @@ a) Download from [freesound](https://freesound.org/) (you'll need an account)
 b) Record with your PC mic by using Audacity
 c) Create new sounds by using bfxr
 
-Then, add sounds to your game. Try at least these two kinds of sound effects:
+Then, add sounds to your game that can be triggered to play 
+a) when a GameObject gets created
+b) Calling `audioSource.Play()` with code
 
-1) a one-time sound effect that can be triggered with code
 2) looping sound that plays all the time
 
 ## Note: Playing sound when something gets destroyed
