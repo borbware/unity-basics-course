@@ -29,9 +29,12 @@ title: Stage 3
 
 * There are a few ways (See [this video](https://www.youtube.com/watch?v=F-8N0DuHwJo))
   * Wait for a lightning to strike
-  * Combine two genres
+  * Combine two genres ([Game genre generator](https://letsmakeagame.net/game-genre-generator/
+))
   * Identify a flaw in a genre and fix it
-  * Twist a genre trope
+  * Twist a genre trope 
+  * Create a game out of a recognizable ***feeling*** or ***experience***
+    * *Untitled Goose Game:* "you're an asshole goose"
 
 ## Example pitch structure
 
@@ -43,7 +46,9 @@ title: Stage 3
 * Explain gameplay
   * What do you DO in the game?
 * Explain technical challenges
+
 ---
+
 * Explain your development status
   * Where you're at
   * What you need
@@ -80,14 +85,22 @@ title: Stage 3
 22. You're annoyed that I'm asking questions.
 23. You trash other games. Or other companies. Or other developers.
 -->
-## 2.5-day pitching
 
-### Day 1
+## 3-day pitching
+
+### Day 1 (Today)
 * Start with teams of 2-3 people
 * Come up with a project idea
 * Start creating a pitch deck with Google Slides
+
 ### Day 2
-* Finish your pitch
+* Continue working on pitch
+
+### Day 3
+* Scrum
+* Finishing touches for the pitch!
+
+### Next week
 * Teams present ideas to everyone 
 * Anonymous vote: 
   * Would you like to work on this game?
@@ -115,7 +128,7 @@ title: Stage 3
 * ***Innovation***: What is new and exciting in the gameplay to stimulate interest?
 * ***Immersion***: Is the story compelling (setting, action framing, art and music)?
 * ***Flow***: Does the player feel constantly productive & able to act? Do actions matter?
-* ***Fiero***: Multiple big moments of victory for players?
+* ***Satisfaction***: Multiple big moments of victory for players?
 
 ## Sprints
 ### Every sprint:
