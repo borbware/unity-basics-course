@@ -10,17 +10,17 @@ paginate: true
 
 ## Scriptable object class
 
-* A special class for storing data
+* A special class for storing data that GameObjects can use
 * Usually used as an asset template
-  * Can be made accessible from the Create Asset menu!
-* Derives from the base Unity object but cannot be attached to a GameObject
+* Can be made accessible from the Create Asset menu!
 * Very handy if a GameObject needs easily-swappable data
+  * [Brackeys tutorial](https://www.youtube.com/watch?v=aPXvoWVabPY) has an example of creating different Hearthstone cards
 * [Scriptable Object in Unity Docs](https://docs.unity3d.com/Manual/class-ScriptableObject.html)
-* [Brackeys tutorial](https://www.youtube.com/watch?v=aPXvoWVabPY)
 
 ### Creating a scriptable object
 
-1) Create new class that inherits from ScriptableObject
+1) Create new class that inherits from `ScriptableObject` instead of `MonoBehaviour`
+    * This will be the data structure of the variables you want to store
     * ```c#
         using UnityEngine;
 
@@ -33,12 +33,24 @@ paginate: true
             public ManaEnum manaType;
         }
         ```
-2) Create a few new templates based on the Scriptable object from the Asset menu
-3) Refer to the Card class as a SerializeField in a GameObject
-4) Drag the card template of your choice to the field in Inspector
-5) The data from Card is now available in the GameObject
+    * ***Note:*** The `name` field exists already, so we use the `new` keyword to override it. 
+2) Create a new data container based on the Scriptable object from the Asset menu
+   * In this case, choose *Cards > ManaCard*
+   * Set values for the created asset
+3) Create a few more data containers with different data!
 
-### Spawn manager: The manager class
+### Using the scriptable object
+
+1) Create a new script inside the GameObject for using the data from the Scriptable object.
+2) In the script, create a new variable with the type of the Scriptable Object:
+    ```c#
+    [SerializeField] Card card
+    ```
+3) Drag the card template of your choice to the serialized field in Inspector
+4) The data from Card is now available! Access its values with `card.amountOfMana`, `card.name`, etc.
+
+### Extra: Spawn manager: The manager class
+<!-- _backgroundColor: #5d275d -->
 
 ```c#
 using UnityEngine;
@@ -53,6 +65,7 @@ public class SpawnManagerScriptableObject : ScriptableObject
 ```
 
 ### Spawn manager: Usage
+<!-- _backgroundColor: #5d275d -->
 
 ```c#
 using UnityEngine;
