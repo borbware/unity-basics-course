@@ -143,6 +143,9 @@ title: Game Industry
     * [Ohjelmistokehittäjä (ammatillinen perustutkinto): Tieto- ja viestintätekniikan perustutkinto, 180 osaamispistettä](https://neogames.fi/fi/institute/careeria-2/)
   * KSAO (Kouvola)
     * [Ohjelmistokehittäjä (ammatillinen perustutkinto): Tieto- ja viestintätekniikan perustutkinto](https://www.kouvola.fi/ksao/hakijalle/tutkinnot/kauppa-hallinto-ja-tietotekniikka/ohjelmistokehittaja/)
+  * Sataedu Nakkila
+    * [Media-alan ja kuvallisen ilmaisun perustutkinto: Audiovisuaalinen osaamisala, elokuva- ja tv-alan painotus](https://sataedu.fi/tutkinto/media-alan-ja-kuvallisen-ilmaisun-perustutkinto/)
+  * Others
 
 ### Universities of applied sciences: Full curricula
 
