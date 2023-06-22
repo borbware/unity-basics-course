@@ -45,6 +45,7 @@ title: Game Industry
   * VR breakthrough not coming?
     * Metaverse rebranding
     * [John Carmack keynote: "we have lapsed VR users, but there are no lapsed mobile phone users"](https://www.youtube.com/watch?v=BnSUk0je6oo)
+    * Apple's new VR headset could bring more users, though???
 
 ## Consolidation
 
@@ -78,16 +79,17 @@ title: Game Industry
   * Rovio
   * Small Giant Games (Take Two)
   * Futureplay Games (Plarium)
+  * Next Games (Netflix)
   * Fingersoft
 
 ### Active indie scene
 
 * Many indie companies
-* Two important organisations
-  * [IGDA Finland](https://www.igda.fi/)
-  * [FGJ (Finnish Game Jam)](https://www.finnishgamejam.com/)
-* Both have Discord servers and you can join them
-* We In Games
+* Three important organisations
+  * [IGDA Finland](https://www.igda.fi/) (International Game Developers' Association)
+  * [FGJ](https://www.finnishgamejam.com/) (Finnish Game Jam)
+  * [We In Games](https://weingames.fi/)
+* Both IGDA and FGJ have Discord servers and you can join them
 
 ### Unions
 
@@ -103,12 +105,11 @@ title: Game Industry
 
 * Almost 100% indie
 * Platonic Partnership
+  * High Voltage Society, Bone Dust
   * Lydia, Good Mourning, Leväluhta, client projects
 * Lingon Games
 * September Games (Henrik Hermans)
   * Stilt Fella
-* Blacklight Studios
-  * 3rd person action project
 * University of Vaasa
 * Remote work is increasingly an option, too
   * Rovio
@@ -151,6 +152,8 @@ title: Game Industry
     * [Tradenomi, tietojenkäsittely, peliala, Raahe, 210 ECTS](https://www.kamk.fi/fi/Hakijalle/AMK-koulutukset/Tradenomi-tietojenkasittely-peliala-Raahe/2d1cf6c4-7a96-4ee0-bca5-bd8e41901696)
   * JAMK (Jyväskylä)
     * [Bachelor of Business Administration: Business Information Technology, 210 ECTS](https://neogames.fi/institute/jamk-university-of-applied-sciences/)
+  * Business College Helsinki
+    * [Tieto- ja viestintätekniikan perustutkinto](https://www.bc.fi/koulutukset/datanomi/tvt-peruskoulupohjainen/)
 
 ### Universities of applied sciences: Gamedev courses
 
