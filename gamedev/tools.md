@@ -16,17 +16,20 @@ title: Tools for gamedev
     * Adobe sucks
 * [Clip Studio Paint](https://www.clipstudio.net/en/)
   * ~50€
-* free options: ***Krita***, [Gimp](https://www.gimp.org/), [Paint.net](https://www.getpaint.net/)
+  * Very often in sale, ~20€
+* free options: [Krita](https://krita.org/en/), [Gimp](https://www.gimp.org/), [Paint.net](https://www.getpaint.net/)
 
 ## 2D graphics: Pixel art
 
 * [Aseprite](https://www.aseprite.org/)
   * Versatile pixel editor with animation and tilemapping tools
-  * $20 (or free if you build it from source)
+  * $20 (or free if you build it from source, see [instructions](https://www.reddit.com/r/PixelArt/comments/i387m1/guide_how_to_build_aseprite_from_source_aseprite/))
   * the go-to tool for pixel artists atm, constantly updated
-* free option: [GraphicsGale](https://graphicsgale.com/us/)
-* Hi-res options can also be used for pixelart
-<!-- _footer: "[Building Aseprite from source](https://www.reddit.com/r/PixelArt/comments/i387m1/guide_how_to_build_aseprite_from_source_aseprite/)"-->
+* Free option: [LibreSprite](https://libresprite.github.io/)
+  * A fork of Aseprite from ~2016
+  * Quite old but has enough features to get started
+* Another free option (old): [GraphicsGale](https://graphicsgale.com/us/)
+* Hi-res art software can also be used for pixelart
 
 ## Sound effects
 
@@ -41,7 +44,7 @@ title: Tools for gamedev
 
 ## Music
 
-* There isn't an easy free recommendation really (LMMS sucks)
+* There isn't an easy free recommendation really (LMMS exists but hnngh)
 * [Bosca Ceoil](https://terrycavanagh.itch.io/bosca-ceoil): the simple free option
   * very limited
 * [SunVox](https://nightradio.itch.io/sunvox)
