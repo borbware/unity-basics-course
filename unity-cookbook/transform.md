@@ -143,6 +143,7 @@ Make a child GameObject rotate around its parent.
   ```c#
   transform.rotation = Quaternion.FromToRotation(transform.up, directionVector);
   ```
+
 ## Extra: How to look slowly towards a point (3D)
 <!-- _backgroundColor: #5d275d -->
 

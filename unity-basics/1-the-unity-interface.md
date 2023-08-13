@@ -41,7 +41,6 @@ math: mathjax
 ## Scene view
 
 * [Manual: Scene view navigation](https://docs.unity3d.com/Manual/SceneViewNavigation.html)
-* Navigation shortcuts
   * Maximize view: ***Shift +Spacebar***
   * Move: ***MMB***
   * Orbit: ***ALT+LMB***
@@ -51,16 +50,18 @@ math: mathjax
 * The Scene Gizmo
   * "the axis thingy on the top right"
   * Axis cones: change view to that axis
-  * Center cube: perspective / isometric
+  * Center cube: change between perspective & isometric view
 * [Manual: Scene view camera](https://docs.unity3d.com/Manual/SceneViewCamera.html)
+
 ## Shortcuts for scene & hierarchy
+
 * ***CTRL+Z*** + ***CTRL+Y*** undo & redo
 * ***CTRL+C*** + ***CTRL+V*** copy & paste
 * ***CTRL+D*** duplicate
 * ***F***: center camera on selected object
   * Helps e.g., if camera zooms in too large increments
   * Press twice to follow the object
-* Tip: Select camera and press ***CTRL+SHIFT+F*** to align camera view with the Scene window viewpoint
+* ***Tip:*** Select camera and press ***CTRL+SHIFT+F*** to align camera view with the Scene window viewpoint
 
 ### QWERTY Tools
 

@@ -14,7 +14,9 @@ math: mathjax
 * VS Code (or just VSC) is a popular open source text editor / IDE (integrated development environment) by Microsoft
 * Very ***extensible*** by extensions
 * Has many language-specific features like Omnisharp for C#
+
 ## Visual Studio Code is not Visual Studio
+
   * Visual Studio is an older, bulkier IDE, also by Microsoft
     * it has more features!
   * Visual Studio Code is quite new, relatively lightweight
@@ -38,8 +40,9 @@ math: mathjax
 
 ## Unity side setup
 
-* Include the *Visual Studio Code Editor* Package in your projects
+* Include the *Visual Studio Editor* Package in your projects
   * If you removed it, you can add it in *Window > Package Manager*
+  * ***Historical note:*** Yes, it says Visual Studio Editor, without the "Code". Previously, the *Visual Studio Code Editor* package was used; as of 2023, it is considered a legacy package.
 * Set VS Code as your Unity default editor
   * *Edit > Preferences > External Tools > External Script Editor*
   * You might have to click the *Regenerate project files* button to get all features working 
@@ -53,9 +56,14 @@ math: mathjax
     * [.NET Framework 4.7.1 Developer Pack](https://code.visualstudio.com/docs/other/unity#_enabling-code-completion-for-recent-versions-of-unity)
       * ***Be sure to download the Developer pack, not Runtime!!***
         * Note: In Windows, it's not shown as "developer pack" but as "targeting pack"
-  * And these VS Code extensions:
-    * C#
-    * Unity code snippets
+
+---
+
+* Also, install these VS Code extensions:
+    * [Unity](https://marketplace.visualstudio.com/items?itemName=VisualStudioToolsForUnity.vstuc)
+      * This is a new extension marked *preview* as of 2023!
+    * [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
+    * Unity code snippets (Todo: is this needed anymore?)
 * Open the project folder in VS Code
   * Either by opening the folder from File Explorer context menu (*Open with Code*)
   * Or in VS Code *File >  Open Folder...*
@@ -70,7 +78,7 @@ math: mathjax
     ![](imgs/hover-over-method.png)
     * argument types, return types, method overloads...
 *  error: `Could not locate ms build instance to register with Omnisharp`
-  * $\Rightarrow$ download Build tools for Visual Studio 2022 [here](https://visualstudio.microsoft.com/downloads/)
+    * $\Rightarrow$ download Build tools for Visual Studio 2022 [here](https://visualstudio.microsoft.com/downloads/)
 
 ### Omnisharp troubleshooting
 

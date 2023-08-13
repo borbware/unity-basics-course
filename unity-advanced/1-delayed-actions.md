@@ -13,11 +13,11 @@ paginate: true
 * The straightforward approach
     ```c#
     // First, get the GameObject
-    GameObject lähetti = GameObject.Find("Lähetti");
+    GameObject lightbulb = GameObject.Find("Lightbulb");
     // Then, get the script component "SetColor"
-    lähettiSetColor = lähetti.GetComponent<SetColor>();
+    lightbulbSetColor = lightbulb.GetComponent<SetColor>();
     // Then, call the public method SetColorToRed
-    lähettiSetColor.SetColorToRed();
+    lightbulbSetColor.SetColorToRed();
     ```
 
 ## Sending messages
