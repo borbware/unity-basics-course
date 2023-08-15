@@ -124,19 +124,38 @@ if(Time.time < bounceTimer)
 }
 ```
 
-## Extra: Note about lerping on the fly
+## Extra: Deltatime lerping on the fly
 <!-- _backgroundColor: #5d275d -->
 
 * You may have seen lerp performed "on the fly" like this:
   ```c#
   transform.position = Vector3.Lerp(transform.position, target.position, Time.deltaTime);
   ```
-* That is, the start point changes every frame!
-  * This creates a deceleration ("braking") in the end which results in a smoother finish
-  * This means the interpolation isn't linear anymore
-  * Also, now the lerp process does not take the time it's supposed to: it finishes much faster!
-* That being said, this is a very fast way to create a camera that follows the player a bit behind. If that's what you're after, you can use it
-  * But remember: This isn't the way Lerp was meant to be used, so your mileage may wary. You're on your own now.
+* The start point changes every frame! And instead of a time parameter, there's `deltaTime`...? What!?
+* This isn't what lerp was meant to be used for, but this can be a useful trick
+  * This creates a deceleration ("braking") in the end which results in a smoother finish than lerp normally does (and it finishes faster than expected)
+    * $\Rightarrow$ The interpolation isn't ***linear*** anymore!
+  * This is often used to make dynamic objects reach an end position gradually
+    * Example: Camera that follows a bit behind the player character
+* There's one important caveat, though...
+
+## Deltatime lerping is frame rate dependent!
+
+* This is bad! We get different results with different machines!
+* There's a somewhat-known solution to this
+  * Instead of
+    ```c#
+    source = Mathf.Lerp(source, target, smoothing * Time.deltaTime);
+    ```
+  * Do this:
+    ```c#
+    source = Mathf.Lerp(source, target, 1 - Mathf.Pow(smoothing, Time.deltaTime))
+    ```
+
+* Read more here: [Frame rate independent damping using lerp](https://www.rorydriscoll.com/2016/03/07/frame-rate-independent-damping-using-lerp/)
+  * In the link, there's a techincal explanation why deltatime lerping works how it works, and why the solution abovefixes the framerate dependence.
+
+<!-- _backgroundColor: #5d275d -->
 
 ## Extra: Inverse lerp
 <!-- _backgroundColor: #5d275d -->
