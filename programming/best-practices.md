@@ -2,6 +2,7 @@
 marp: true
 paginate: true
 title: Best practices for programming
+math: mathjax
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
@@ -13,20 +14,20 @@ title: Best practices for programming
 * You don't want to just learn programming
 * You want to learn how to program ***well***
 * What is good code, then?
-  * We'll find out during these slides
-* Let's go through some alarming examples and learn some best practices based on those
+  * Let's go through some alarming examples
+  *  $\Rightarrow$ learn what ISN'T good code
 
-## Why make good code?
+## why make code good when bad code do job
 
-* "I just hack this quickly and move on"
+* "I'll just hack this together quickly and move on"
   * A dangerous sentiment that ***will*** cost sweat, tears and person-hours
   * Every time I've thought this, I've either
     * a) had to eventually code it better
-    * b) lost significant amount of time for deciphering what I've coded
+    * b) lost significant amount of time for deciphering later what the hell have I written
 * *You always code for someone else*
   * 1 - The compiler
   * 2 - Your teammates
-  * 3 - *You in the future*
+  * 3 - You in the future
     * I can't stress this enough:
     * *You in the future is a different person that you in the now.*
 
@@ -74,28 +75,6 @@ title: Best practices for programming
     }
 ```
 
-### Line width
-
-* If your lines are getting too wide (over ~120 characters), split the code to multiple lines
-* Example: refactor
-  ```c#
-  if (controller.MoveDirection != Vector3.zero && !controller.isGrounded() && jumpBuffer > 0)
-  {
-    ...
-  }
-  ```
-  to
-  ```c#
-  if (controller.MoveDirection != Vector3.zero
-    && !controller.isGrounded()
-    && jumpBuffer > 0)
-  {
-    ...
-  }
-  ```
-  * As the lines get shorter, the code gets more readable as well.
-<!-- _footer: "Some programmers prefer line widths of 100 or even 80 characters." -->
-
 ### In a nutshell...
 
 * Indent only when introducing a new logical block (if, for loop, etc...)
@@ -117,10 +96,48 @@ title: Best practices for programming
   }
   ```
 
+### Line width
+
+* If your lines are getting too wide (over ~120 characters), split the code to multiple lines
+* As the lines get shorter, the code gets more readable
+* If you just do one thing per line, it's much easier to follow along
+* Example: refactor
+  ```c#
+  if (controller.MoveDirection != Vector3.zero && !controller.isGrounded() && jumpBuffer > 0)
+  ```
+  to
+  ```c#
+  if (controller.MoveDirection != Vector3.zero
+    && !controller.isGrounded()
+    && jumpBuffer > 0)
+  ```
+<!-- _footer: "Some programmers prefer line widths of 100 or even 80 characters." -->
+
+### But we can go further
+
+* Do not try to minimize code size
+* Rather try to maximize *debuggability*
+* This can usually happen by introducing "redundant" variables. Consider
+  ```c#
+  if (controller.MoveDirection != Vector3.zero
+    && !controller.isGrounded()
+    && jumpBuffer > 0)
+  ```
+* vs.
+  ```c#
+  const bool notMoving = controller.MoveDirection != Vector3.zero;
+  const bool onAir = !controller.isGrounded();
+  const bool canJump = jumpBuffer > 0;
+
+  if (notMoving && onAir && canJump)
+  ```
+
 ## Naming variables
 
 * [Wikipedia: Naming convention](https://en.wikipedia.org/wiki/Naming_convention_(programming))
-* Naming variables and functions is one of the hardest tasks in programming.
+* *"There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors."*
+* For real, naming is one of the hardest tasks in programming.
+* It's all about communicating enough, but not too much
 * First rule: Explain what the variable stores!
   * a) `a = b * c;`
     * I have no idea what this line is *really* doing
@@ -139,6 +156,22 @@ title: Best practices for programming
       * `pAtk`
     * The golden route is somewhere in the middle!
 
+
+## Get rid of magic numbers!
+
+* Consider this:
+  ```c#
+  rotationsPerDay = rotationsPerSecond * 60 * 60 * 24;
+  ```
+* Vs. this:
+  ```c#
+  secondsPerDay = 60 * 60 * 24;
+  rotationsPerDay = rotationsPerSecond * secondsPerDay;
+  ```
+* This might seem like stating the obvious, but we usually want to do this!
+  * What may seem obvious to you, might not be to the reader of the code
+  * ...which will be you one day
+
 ## Write what you mean
 
 * This concerns not only variable naming, but also how to generally use statements
@@ -156,11 +189,11 @@ title: Best practices for programming
     ```
   * However! What if the player gets a `Swim` state in the future?
   * Now the `else` block has to be refactored!
-  * What if this implicit idea "else means idle" is present in multiple places?
+  * What if this implicit idea of "else equals idle" is present in multiple places?
 
 ---
 
-* State your intent ***explicitly***!
+* State your intent!
     ```c#
     if (state == PlayerState.Jump)
     {
@@ -171,6 +204,15 @@ title: Best practices for programming
       IdleAnimation.Play();
     }
     ```
+
+## Dangers of overgeneralization
+
+* Sometimes you might think it's smart to account for possible future use cases
+* This leads to unnecessary complexity: you have code that is there just IN CASE
+* The problem is, you usually can't know beforehand what use cases are actually needed
+  * Actually, it's downright impossible to predict what structure is optimal for your use case
+  * After you have created the structure, you know what kind of structure you should have written
+* Write code that solves the problem you have, not some problem you might possibly have in the future!
 
 ## Be cohesive!
 
@@ -192,8 +234,12 @@ title: Best practices for programming
 * Cases of *code smell*: 
   * When changing one thing in code, you have to change something completely unrelated to make it work.
   * When writing/reading code, you have to jump between code files constantly.
+  * You need to reread lines of code again and again to understand what's going on
+  * Everything breaks if the code isn't used in a very specific manner
+* [Wikipedia: Anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern)
+* [Wikipedia: Code smell](https://en.wikipedia.org/wiki/Code_smell)
 
-## Principles for better structure
+## Some principles for better structure
 
 * [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns):
   * One part of code (function, class...) handles only one thing
@@ -204,23 +250,25 @@ title: Best practices for programming
   * Better idea to wrap it into a function (maybe)
 * [KISS: Keep it simple, stupid](https://en.wikipedia.org/wiki/KISS_principle)
   * Complexity bad
-* Remember, however: If abused, all of above can lead to bad code as well!
+
+### But beware!
+
+* Even following the principles shown can lead to bad code
+* An experienced programmer can decide for themselves, when they should use them
+* For example, creating two almost identical functions than creating a single function that covers two almost identical cases might sometimes result in much easier-to-read code
+  * It's yours to decide when that "sometimes" holds true 
 
 # Conclusions
-
-## What makes code *bad*?
-
-* [Wikipedia: Anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern)
-* [Wikipedia: Code smell](https://en.wikipedia.org/wiki/Code_smell)
 
 ## What makes code good?
 
 * Good code is...
-  * coherent
-  * pretty
   * readable
+  * pretty
+  * self-consistent
   * self-explanatory
   * well-contained
+  * reusable (to some extent)
 
 ### Extra: Linters
 <!-- _backgroundColor: #5d275d -->
