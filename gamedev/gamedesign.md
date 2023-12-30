@@ -55,9 +55,9 @@ title: Game Design
   * Either by creating a playable demo or, if possible, with pen and paper
   * Iterate based on player response
 
-## Design for players
+## Design for the players
 
-### Design for the players, not you
+### Design for the players, not **you**
 
 * In the development process, designers becomes blind to their own games
 * Due to familiarity...
@@ -76,12 +76,22 @@ title: Game Design
 
 ### Design for different kinds of players
 
-* Design for different types of players
-  * [Wikipedia: Bartle's taxonomy of player types](https://en.wikipedia.org/wiki/Bartle_taxonomy_of_player_types)
-    * ♣ Killers
-    * ♦ Achievers
-    * ♥ Socializers
-    * ♠ Explorers
+* [Wikipedia: Bartle's taxonomy of player types](https://en.wikipedia.org/wiki/Bartle_taxonomy_of_player_types)
+  * ♣ Killers
+  * ♦ Achievers
+  * ♥ Socializers
+  * ♠ Explorers
+* Like Myers-Briggs, these kind of generalizations aren't that useful for explaining an individual person
+  * but they can be useful for understanding an **audience**
+
+<!-- _footer: (Paraphrasing Aki Kanerva once again) -->
+
+
+## There are other categorizations as well
+
+* Honers vs Innovators (see [this video](https://www.youtube.com/watch?v=C3q5nSqGXr4)):
+  * Honers: people who like to perfect a skill
+  * Innovators: people who like to learn a broad range of skills
 
 ### Reasons for players to engage with games
 
