@@ -30,7 +30,6 @@ title: Playtesting
 
 ## Playtesting in practice
 
-
 ### Before playtesting
 <!-- _backgroundColor: #29366f -->
 
@@ -54,7 +53,7 @@ title: Playtesting
      * "The game is still a work-in-progress so expect that it sucks"
        * "Do not blame yourself for mistakes."
        * "Remember, you are not being tested, it's YOU who are testing the game!"
-     * Ask tester(s) to talk out loud their thoughts while playing
+     * Ask tester(s) to think out loud while playing
        * "Narrate what is happening on screen!"
      * Remind that you will be quiet and take notes
 
@@ -64,22 +63,32 @@ title: Playtesting
 * ***Be quiet***! It's the most important rule.
   * ...and the easiest to break when things go wrong
      * Remember, you won't be sitting next to people who you've sold your game to
-     * When the player does something "wrong", or doesn't get something, or is stuck, it is interesting to see where it leads
-   * You can remind the player, however, to not blame themselves if they seem to do that.
+     * When the player does something "wrong", or doesn't get something, or is stuck, it can be interesting to see where it leads
+       * You can remind them, however, not to blame themselves for their "mistakes".
+     * Even when the player asks how to do X, do not answer!
+       * Only help out if they're stuck for a longer period.
+       * Now you know there's something wrong with the game!
 
 ---
 <!-- _backgroundColor: #29366f -->
 
+* If possible, have two people conduct the playtesting
+  * One who runs the test
+  * And one who takes notes
 * ***Take lots of notes*** during playtesting:
   * where they get stuck or confused
   * what they enjoy
   * what was unexpected
   * any ***new perspectives*** on gameplay, user interface, etc
   * Maybe even record gameplay for later analysis
-* ***Post-Playtest Debriefing***
-  * When game is done (or tried for ~15 minutes), discuss highlights and problems
-   * List 1-3 big change suggestions to explore.
-   * Thank your testers!
+
+### After playtesting
+
+<!-- _backgroundColor: #29366f -->
+* It's time for ***Post-Playtest Debriefing***
+* When game is done (or tried for ~15 minutes), discuss highlights and problems
+ * List 1-3 big change suggestions to explore.
+ * Thank your testers!
 
 ## Note about playtest feedback
 
@@ -87,6 +96,16 @@ title: Playtesting
 * A note, however:
   * To my experience, playtesters are good at pointing out what's bad about the game
   * ...but their ***solution suggestions*** miss the mark more often than not
+  * [This article](https://www.polygon.com/gaming/2012/3/14/2861998/gearbox-borderlands-testing) highlights this phenomenon
+
+### Some good points from the article, actually
+
+* Rule 1: Testers try to speak in fact, but they speak in emotion.
+* Rule 2: Testers do not like features they don't understand
+* Rule 3: Testers have expectations that may not match the developer's.
+
+## So anyway, now you have feedback.
+
 * Iterate your game mechanics and interface with the feedback in mind... while also listening to your own instincts!
   * You can't implement every suggestion!
   * Instinct for what the game needs and what it doesn't is one of the most important skills for the game designer to develop
