@@ -77,32 +77,18 @@ math: mathjax
 
 ### Design for different kinds of players
 
-<<<<<<< HEAD
-* Design for different types of players
-  * [Wikipedia: Bartle's taxonomy of player types](https://en.wikipedia.org/wiki/Bartle_taxonomy_of_player_types)
-    * ♣ Killers
-    * ♦ Achievers
-    * ♥ Socializers
-    * ♠ Explorers
-  * "Like Myers-Briggs, it's bad for explaining individuals, but good for understanding entire audiences" (Aki Kanerva)
-=======
 * [Wikipedia: Bartle's taxonomy of player types](https://en.wikipedia.org/wiki/Bartle_taxonomy_of_player_types)
   * ♣ Killers
   * ♦ Achievers
   * ♥ Socializers
   * ♠ Explorers
-* Like Myers-Briggs, these kind of generalizations aren't that useful for explaining an individual person
-  * but they can be useful for understanding an **audience**
-
-<!-- _footer: (Paraphrasing Aki Kanerva once again) -->
-
+* "Like Myers-Briggs, it's bad for explaining individuals, but good for understanding entire audiences" (Aki Kanerva)
 
 ## There are other categorizations as well
 
 * Honers vs Innovators (see [this video](https://www.youtube.com/watch?v=C3q5nSqGXr4)):
   * Honers: people who like to perfect a skill
   * Innovators: people who like to learn a broad range of skills
->>>>>>> 9eda387ca8106a3cab5a939ccfa8c74ab9720fdb
 
 ### Reasons for players to engage with games
 
