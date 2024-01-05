@@ -2,6 +2,7 @@
 marp: true
 paginate: true
 title: Game Design
+math: mathjax
 ---
 <!-- headingDivider: 3 -->
 <!-- class: invert -->
@@ -82,6 +83,7 @@ title: Game Design
     * ♦ Achievers
     * ♥ Socializers
     * ♠ Explorers
+  * "Like Myers-Briggs, it's bad for explaining individuals, but good for understanding entire audiences" (Aki Kanerva)
 
 ### Reasons for players to engage with games
 
@@ -92,9 +94,14 @@ title: Game Design
 
 ### Choices
 
-* Illusory choices / meaningful choices
 * Choices create a ***possibility space***
-* More choices / More defined assets
+* More choices $\Rightarrow$ More assets to create
+
+* Illusory choices / meaningful choices
+  * Sometimes the [illusion of choice](https://www.gamedeveloper.com/design/illusion-of-choice-is-better-than-choice-choices-and-illusions-as-narrative-mechanics) is all you need
+    * Telltale's Walking Dead is often used as an example
+  * ...but the illusion breaks when choosing the other option and ending up with the same result
+
 
 ## Design to make the game its best possible version
 
