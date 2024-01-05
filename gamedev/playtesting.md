@@ -10,10 +10,11 @@ title: Playtesting
 
 ## Playtesting as part of design
 
-* Designing through playtesting is a way to put ***player experience*** first
-* Have an idea for a game? Don't spend a lot of time obsessing about the design until you have tried it with players!
+* Have an idea for a game?
+  * Don't spend time obsessing about its design until someone has tried to play it!
 * Ideas alone don't reflect how engaging a game is to play
-* Thus, it's always a good idea to prepare a prototype for playtesting
+  * Thus, it's always a good idea to prepare a prototype for playtesting ASAP
+* By integrating playtesting to your design process, you emphasize the ***player experience***
  
 ## Playtesting uses people as a resource
 
@@ -25,14 +26,29 @@ title: Playtesting
   * This way, you get better feedback from the bigger release
 * Also, it's notable to understand that after a playtest session, you have used up one person
   * When they play the game again, their view of the game is now clouded by the earlier playtest
-  * To get objective playtest results, you need a constant flux of new testers!
-
-
+  * To get more objective playtest results, you need a constant flux of new testers!
 
 ## Playtesting in practice
 
+
+### Before playtesting
 <!-- _backgroundColor: #29366f -->
 
+* ***Have a plan.***
+  * What do you want to get out of playtesting?
+* It's a good idea to have some questions in mind you want answers to. Examples:
+  * Does X work?
+  * Do the players figure Y out?
+  * Does the game teach its mechanics to the players?
+* Especially early in development, it's important to focus on the ***first seconds of the game***.
+  * Does the game grasp the players' attention?
+  * Do the players do what you expected them to do?
+* Also...
+  * ***Make sure your build works.***
+
+### During playtesting
+
+<!-- _backgroundColor: #29366f -->
 * ***Communicate the plan*** and set expectations:
      * "Thank you for being here"
      * "The game is still a work-in-progress so expect that it sucks"
@@ -41,8 +57,10 @@ title: Playtesting
      * Ask tester(s) to talk out loud their thoughts while playing
        * "Narrate what is happening on screen!"
      * Remind that you will be quiet and take notes
+
 ---
 <!-- _backgroundColor: #29366f -->
+
 * ***Be quiet***! It's the most important rule.
   * ...and the easiest to break when things go wrong
      * Remember, you won't be sitting next to people who you've sold your game to
@@ -51,6 +69,7 @@ title: Playtesting
 
 ---
 <!-- _backgroundColor: #29366f -->
+
 * ***Take lots of notes*** during playtesting:
   * where they get stuck or confused
   * what they enjoy
@@ -68,18 +87,20 @@ title: Playtesting
 * A note, however:
   * To my experience, playtesters are good at pointing out what's bad about the game
   * ...but their ***solution suggestions*** miss the mark more often than not
-* Iterate your game mechanics and interface with the feedback in mind, while also listening to your own instincts. In other words, listen but do not treat all feedback as infallible. 
+* Iterate your game mechanics and interface with the feedback in mind... while also listening to your own instincts!
+  * You can't implement every suggestion!
+  * Instinct for what the game needs and what it doesn't is one of the most important skills for the game designer to develop
 
 ## Why playtest?
 
-* Creation is 1% inspiration and 99% revision.
-* Our reality is not the only reality.
+* Creation is 1% inspiration and 99% revision. (Jason Wiser)
+* Our reality is not the only reality. (Also Jason Wiser)
 <!-- Culture: common modes of consumption, presentation, or interaction. -->
-* Testing is how we come to understand our audience's needs.
+* Testing is how we come to understand our audience's needs. (Yup it's Jason Wiser)
 * Also, remember: negative player feedback is very rarely a critique of the designer
   * Rather, it is born out of wanting to see the game become its best possible version
 
-# Extras
+# Additional fleeting ideas
 
 ## Two schools of game dev
 <!-- _backgroundColor: #5d275d -->
@@ -108,4 +129,4 @@ title: Playtesting
 
 ## Reading
 
-* These slides were stolen from [Jason Wiser: Tufts University Game Design course](http://madwomb.com/tutorials/GameDesign_Tufts.html)
+* Most of what you just read is from [Jason Wiser: Tufts University Game Design course](http://madwomb.com/tutorials/GameDesign_Tufts.html)

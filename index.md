@@ -107,7 +107,6 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 |--|-----------------------------|------------------------------------------------|------------------------------------|---:|
 |  | VS Code Setup               | [🎞](tooltips/vscode-setup-slides.html)        | [📖](tooltips/vscode-setup)        | 🌔 |
 |  | Using VS Code with Unity    | [🎞](tooltips/using-vscode-slides.html)        | [📖](tooltips/using-vscode)        | 🌓 |
-|  | Using Windows File Explorer | [🎞](tooltips/using-file-explorer-slides.html) | [📖](tooltips/using-file-explorer) | 🌔 |
 |  | Unity Packages              | [🎞](tooltips/unity-packages-slides.html)      | [📖](tooltips/unity-packages)      | 🌒 |
 
 ## Project management
