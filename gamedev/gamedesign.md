@@ -138,6 +138,7 @@ math: mathjax
 * [Maddy Thorson: Level Design Workshop: Designing Celeste](https://www.youtube.com/watch?v=4RlpMhBKNr0)
 * [GMTK: How Mega Man 11's Levels Do More With Less](https://www.youtube.com/watch?v=nYxHMZX6lN8)
 * [GMTK: Making Hitman 2's Best Level](https://www.youtube.com/watch?v=56iiP2xQn74)
+* [Patrick Holleman: Reverse Design: Super Mario World](https://thegamedesignforum.com/features/RD_SMW_1.html) and the accompanying [video](https://www.youtube.com/watch?v=x3y7CIfCI7E)
 
 ### Kishōtenketsu
 
