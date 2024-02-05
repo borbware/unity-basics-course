@@ -12,6 +12,7 @@ title: Stage 3
 * If you want to get a publisher, you need to ***pitch*** your game idea to someone
   * For that, you need to create a ***pitch deck***
   * Essentially, explain your game idea in detail
+* [A bunch of pitch decks + what happened afterwards](https://heyglitch.notion.site/Pitch-Decks-f56e38c13fe6417f8379859e74367e1a)
 * [Raw Fury Pitch Deck example](https://www.slideshare.net/JohanToresson/raw-fury-pitch-deck-template)
 * [More Pitch deck examples](https://www.notion.so/Pitch-Decks-f56e38c13fe6417f8379859e74367e1a)
 * [How to pitch your game](https://www.tinybuild.com/how-to-pitch-your-game)

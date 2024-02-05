@@ -83,3 +83,7 @@ The point is not to come up with fancy words or get as many words as possible, b
 * Devops engineer
 * Social media manager
 * Community manager
+
+## Reading
+
+* [Hey Glitch: Founder's Kit](https://heyglitch.notion.site/Public-Founder-s-Kit-959c43975b76400cb4d31452ea1ee08a)
