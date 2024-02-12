@@ -180,6 +180,15 @@ math: mathjax
 ## World design
 
 * [Kate Edwards: A Geographer's Guide to Building Game Worlds](https://www.youtube.com/watch?v=EVGonAUUQ8c)
+
+## Character design
+
+* Recognisable silhouettes!
+
+## Visual design
+
+* [League of Legends VFX style guide](https://nexus.leagueoflegends.com/wp-content/uploads/2017/10/VFX_Styleguide_final_public_hidpjqwx7lqyx0pjj3ss.pdf)
+
 <!--
 
 ## Game design
