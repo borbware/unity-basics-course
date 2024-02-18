@@ -109,7 +109,7 @@ Create a top-down player character with a sprite renderer that can
   * Down & Up methods work similarly to previous examples as well
 * get mouse position:
   * [`Vector2 mousePos = Input.mousePosition;`](https://docs.unity3d.com/ScriptReference/Input-mousePosition.html)
-* you can also create a dedicated method for checking if the mouse cursor is on a GameObject:
+* you can also create a dedicated method for checking if the mouse cursor is on a GameObject (requires a collider!):
   ```c#
   OnMouseDown()
   {
