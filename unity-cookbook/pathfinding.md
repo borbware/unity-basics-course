@@ -366,3 +366,4 @@ If the player is outside the visibility cone for five seconds, make the enemy re
 
 * [Brackeys video: 2D Pathfinding](https://www.youtube.com/watch?v=jvtFUfJ6CP8)
 * [GMTK: What Makes Good AI?](https://www.youtube.com/watch?v=9bbhJi0NBkk)
+* [Jeff Orkin: Three States and a Plan: The A.I. of F.E.A.R.](https://www.gamedevs.org/uploads/three-states-plan-ai-of-fear.pdf)
