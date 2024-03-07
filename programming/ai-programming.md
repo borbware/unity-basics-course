@@ -165,3 +165,5 @@ math: mathjax
 * [Tekoäly on hyvä renki mutta huono isäntä - näin algoritmit muuttavat yhteiskuntaa ja arkeamme](https://www.helsinki.fi/fi/uutiset/tekoaly/tekoaly-hyva-renki-mutta-huono-isanta-nain-algoritmit-muuttavat-yhteiskuntaa-ja-arkeamme)
 * [Patrick Boyle: Is AI Actually Useful?](https://www.youtube.com/watch?v=FTs35x-xUg4)
 * [Tom Scott: I tried using AI. It scared me.](https://www.youtube.com/watch?v=jPhJbKBuNnA)
+* [Business Insider: ChatGPT has been losing its mind and no one seems to know why](https://www.businessinsider.com/chatgpt-giving-users-unhinged-answers-no-one-knows-why-openai-2024-2?r=US&IR=T)
+* [Erik Hoel: Here lies the internet, murdered by generative AI](https://www.theintrinsicperspective.com/p/here-lies-the-internet-murdered-by?utm_campaign=post&utm_medium=web)

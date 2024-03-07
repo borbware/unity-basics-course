@@ -83,8 +83,7 @@ paginate: true
 | ***CTRL+SHIFT+F***              | Find in files          | -                      |
 | ***CTRL+SHIFT+H***              | Replace in files       | -                      |
 | ***ALT+⬆/⬇***                   | Move code line up/down | Editor (not read-only) |
-| ***CTRL+K***, then ***CTRL+C*** | Comment selection      | Editor (not read-only) |
-| ***CTRL+K***, then ***CTRL+U*** | Uncomment selection    | Editor (not read-only) |
+| ***CTRL+'*** | Toggle line comment      | Editor (not read-only) |
 
 ---
 
@@ -97,7 +96,9 @@ paginate: true
 | ***CTRL+P***       | Go to file                                  | -                  |
 | ***CTRL+Ö***       | View: toggle terminal                       | Terminal is active |
 
-### Omnisharp shortcuts
+<!-- _footer: I suggest disabling the CTRL+SHIFT+W shortcut that by default closes VS Code. Easy to trigger by accident! -->
+
+### Omnisharp shortcuts for C#
 
   * ***F2***: Rename variable and automatically update references
     * Naming things correctly on the first go is difficult!
@@ -112,7 +113,7 @@ paginate: true
 * For example, ***CTRL+TAB*** / ***CTRL+SHIFT+TAB***:
   * Default behaviour is *View: Open Next/Previous Recently Used Editor*
   * This opens the tabs in the order of recent use, and it can be confusing
-  * I tend to set the behaviour to *View: Open Next Editor* / *View: Open Previous Editor* instead
+  * I prefer *View: Open Next Editor* / *View: Open Previous Editor* (same as how it works in Chrome!)
 * Some shortcuts need an additional `When` parameter to know when the shortcuts are used
   * Examples in the next slide
 
