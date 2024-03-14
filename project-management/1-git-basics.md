@@ -205,13 +205,14 @@ theme: borbtheme
 
 What happens if you make changes to the same line simultaneously?
 
+<!-- _footer: In GitLab, the setting is under Manage > Members -->
 # Unity-specific stuff
 
 ## Unity `.gitignore`
 
 * In Unity projects, we have to use a specific `.gitignore` template to keep the repository nice and clean
   * You WILL notice if you forget to add it
-  * If you create a new Unity project repository in Github/etc, you can create the repo with a Unity template that adds the needed `.gitignore` file automatically to the remote repo
+  * If you create a new Unity project repository in GitHub/etc, you can create the repo with a Unity template that adds the needed `.gitignore` file automatically to the remote repo
   * You can also add it by yourself before the first commit, though
 
 ## Creating a new Unity GitHub repo
