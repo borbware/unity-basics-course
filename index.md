@@ -89,6 +89,7 @@ The moon cycle 🌑🌒🌓🌔🌕 tells how done the material for the correspo
 | 7 | Special Types                    | [🎞](programming/7-special-types-slides.html)             | [📖](programming/7-special-types)             | 🌓 |
 | 8 | Game Programming Patterns        | [🎞](programming/8-game-programming-patterns-slides.html) | [📖](programming/8-game-programming-patterns) | 🌒 |
 |   | Best practices                   | [🎞](programming/best-practices-slides.html)              | [📖](programming/best-practices)              | 🌔 |
+|   | Using Generative AI for programming | [🎞](programming/ai-programming-slides.html)              | [📖](programming/ai-programming)              | 🌔 |
 
 ### Math
 
