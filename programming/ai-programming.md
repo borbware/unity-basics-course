@@ -178,6 +178,7 @@ math: mathjax
 <!-- _footer: If you don't remember anything else from this lecture, remember this. -->
 ## Reading & Watching
 
+* [Practical AI - Mitä jokaisen tulisi tietää tekoälystä](https://cs.edukamu.fi/practical-ai-fi)
 * [Tekoäly on hyvä renki mutta huono isäntä - näin algoritmit muuttavat yhteiskuntaa ja arkeamme](https://www.helsinki.fi/fi/uutiset/tekoaly/tekoaly-hyva-renki-mutta-huono-isanta-nain-algoritmit-muuttavat-yhteiskuntaa-ja-arkeamme)
 * [Patrick Boyle: Is AI Actually Useful?](https://www.youtube.com/watch?v=FTs35x-xUg4)
 * [Tom Scott: I tried using AI. It scared me.](https://www.youtube.com/watch?v=jPhJbKBuNnA)
