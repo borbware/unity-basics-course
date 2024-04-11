@@ -96,7 +96,7 @@ math: mathjax
   }
   ```
 
-### Line width
+## Line width
 
 * If your lines are getting too wide (over ~120 characters), split the code to multiple lines
 * As the lines get shorter, the code gets more readable
@@ -131,6 +131,38 @@ math: mathjax
 
   if (notMoving && onAir && canJump)
   ```
+
+## Commenting just enough
+
+* It can be difficult to decide what's the correct amount of commenting
+* Comments should explain what the code does
+* ...if and only if the code does not already explain that!
+    ```c#
+    // set player state to grounded when player touches the ground
+    if (collider.tag == "Ground")
+    {
+      const state = State.Grounded;
+    }
+    ```
+* The comment above provides almost zero new information
+
+### Commenting with function calls
+
+* In some cases, a better way to explain the code is to wrap it into a small helper function
+   ```c#
+   // give a random rotation between 0 and 180
+   const rotation = Quaternion.Euler(0, Random.Range(0, 180), 0);
+   ```
+* Instead, what about this:
+   ```c#
+    public static Quaternion RandomRotationRange(float angle1, float angle2)
+    {
+        return Quaternion.Euler(0, Random.Range(angle1, angle2), 0);
+    }
+    ```
+  a) it gives the same information you wanted to give
+  b) it's now more reusable
+  c) it hides the implementation, so when we read the code, we can focus on the WHAT instead of the HOW
 
 ## Naming variables
 
@@ -239,6 +271,20 @@ math: mathjax
 * [Wikipedia: Anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern)
 * [Wikipedia: Code smell](https://en.wikipedia.org/wiki/Code_smell)
 
+### How does bad structure happen?
+
+* No one wants to deliberately write bad code
+  * The "I'll just hack this quickly" mentality can sometimes be to blame
+  * also, the lack of concern for readability
+* ...but more often, bad structure happens over a longer period of time
+  * First, you code a feature X
+  * You extend the code with a feature Y
+  * then accommodate for a use case Z
+  * Then you notice X isn't really needed any more
+  * Too late, structure bad!
+* Sometimes the only way to fix this is to refactor the whole structure from scratch
+  * Very often the only way to know how you ***should*** have done it is to do it wrong first!
+
 ## Some principles for better structure
 
 * [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns):
@@ -246,8 +292,8 @@ math: mathjax
 * [Locality of behaviour](https://htmx.org/essays/locality-of-behaviour/)
   * You can understand a concept by looking at a small portion of source code
 * [DRY: Don't repeat yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
-  * If you write a duplicate of old, ten lines of code with minimal changes, you might have a problem
-  * Better idea to wrap it into a function (maybe)
+  * If you write a duplicate of previously-written ~10 lines of code with minimal changes, you might have a problem
+  * Better idea to wrap it into a function
 * [KISS: Keep it simple, stupid](https://en.wikipedia.org/wiki/KISS_principle)
   * Complexity bad
 

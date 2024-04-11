@@ -9,9 +9,8 @@ title: Gamification
 
 ## What is gamification?
 
-Game-like elements have silently found their way to many web services.
-
-* Gamifying aims for increased and continuous user interaction
+* Gamification: Applying *game-like elements* to a non-game (usually web) service.
+* Aims for increased and continuous user interaction
 * Achieved by adding a "game layer" on top of a service
 * Can make the user experience more engaging
 * Can enhance activities where a continuous engagement is beneficial for the user, for example learning a language
@@ -77,6 +76,17 @@ Game-like elements have silently found their way to many web services.
   * Juiced like button
   * Number of likes & retweets is shown, and you get notified for likes & retweets
   * If you have more followers, you see less ads
+
+### Twitch
+
+* Twitch.tv, being a video game oriented streaming service, [uses gamification A LOT](https://loyaltyrewardco.com/twitch-is-the-ultimate-example-of-gamification/).
+* I'd go as far as to claim it has weaponized gamification
+* Bits & channel points
+* Subscription tiers
+* [Hype train](https://help.twitch.tv/s/article/hype-train-guide)
+  * An exp bar in chat window that goes up when someone supports the streamer in some way
+  * There's a countdown!
+  * Participants earn emote rewards
 
 ## Reading
 
