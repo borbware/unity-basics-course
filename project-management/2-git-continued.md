@@ -64,8 +64,11 @@ paginate: true
 ## Merging with a pull request
 
 1) Make sure you have the newest version of the `master` branch:
-  * Stay on the feature branch, and merge the contents of `master` to `featureBranch` with `git merge master`
-2) Then, create a ***pull request*** on GitHub/etc
+  * Checkout `master` branch
+  * Pull changes from GitHub/etc
+  * Checkout the feature branch
+  * Merge the contents of `master` to `featureBranch` with `git merge master`
+2) Then, create a ***pull request*** on GitHub/etc (In GitLab, it's called ***merge request***!)
   * This creates a formal process for merging your *remote* feature branch to remote `master`
   * This adds a layer of protection to the `master` branch: no direct merging!
 
@@ -73,7 +76,7 @@ paginate: true
 
 ![](imgs/github-pullreq.png)
 
-* UI of a new pull request (*Pull requests > New pull request*) can be  confusing.
+* UI of a new pull request (*Pull requests > New pull request*) can be confusing...
   * *base* is the branch you're merging, *compare* is the branch you're merging into! 
 
 ### If automatic merge fails...
@@ -104,8 +107,6 @@ Continue the exercise from [Git Basics](1-git-basics) or create a new repository
   a) pull request in GitHub
   b) `git merge` from command line
 
-# 3. Conflicts
-
 ## GitLens
 
 * To make the Git workflow easier, install the GitLens extension to VS code
@@ -120,13 +121,15 @@ Continue the exercise from [Git Basics](1-git-basics) or create a new repository
   * Remotes
   * etc...
 
+# 3. Conflicts
+
 ## Conflicts
 
 * Sometimes two people have made changes in the same lines of code!
   * This leads to a conflict.
 * Let's assume we're trying to merge changes from featureBranch to master.
 * If a conflict happens, the merge does not conclude automatically. Instead, we need to ***fix all the conflicts*** by hand and then ***conclude the merge*** with some commands.
-* Conflicting lines of code are framed by some `<<<< garbage ==== symbols >>>>` we don’t yet understand
+* Conflicting lines of code are framed by some `<<<<<<< garbage ======= symbols >>>>>>>` we don't yet understand
 * Before we can conclude the merge, we need to get rid of the garbage.
 
 ### Said garbage
@@ -139,10 +142,10 @@ Continue the exercise from [Git Basics](1-git-basics) or create a new repository
   =======
     if (Input.anyKey)
         return true;
-  >>>>>>> iss53:Player.cs
+  >>>>>>> featureBranch:Player.cs
   ```
-* ***Current change*** is between `<<<<` and `====`: old code in `master`
-* ***Incoming change*** is between `>>>>` and `====`: new code from `featureBranch`
+* ***Current change*** is between `<<<<<<<` and `=======`: old code in `master`
+* ***Incoming change*** is between `>>>>>>>` and `=======`: new code from `featureBranch`
 * Use your text editor to choose which (or some combination of both) you want to preserve
 
 ### VS Code tools
@@ -167,11 +170,13 @@ Continue the exercise from [Git Basics](1-git-basics) or create a new repository
 <!-- _backgroundColor: #29366f -->
 
 * Create a new branch in your local repository, but do not checkout it just yet.
-* Then, on master branch, make some changes to GitTest.md.
-* Now, checkout the new feature branch.
-* Then, make some other changes to GitTest.md to the same line as before. 
-* Then, merge the changes from your new feature branch to `master` branch by using `git merge` 
-* Fix the ensuing conflicts, add & commit & push.
+* First, we simulate your teammate's changes by making changes to the `master` branch directly:
+  * On the `master` branch, make some changes to `GitTest.md`, and **add & commit**.
+* Then, checkout the new feature branch.
+  * Then, make some other changes to GitTest.md to the same line as before, **add & commit**.
+  * Then, merge the changes from the `master` branch to your feature branch by using `git merge` 
+  * Fix the ensuing conflicts, add & commit & push.
+* Now you can create a pull request to merge your changes to the master branch.
 
 ## Git workflow 3: Undoing
 
@@ -253,7 +258,10 @@ From Scene 4, the game should loop back to Scene 1.
 3) If you want to disregard a conflicting commit, use `git rebase --skip`
 4) If you get cold feet, you can cancel the rebase with `git rebase --abort`
 
+* ***Note:*** A good link for [understanding rebase](https://borbware.github.io/unity-basics-course/project-management/2-git-continued-slides.html)
+
 ## Very very extra: submodules
+<!-- _backgroundColor: #5d275d -->
 
 * To add external code to your project from someone else's repository, Git has a neat system called *submodules*
 * To add a submodule to your project, use `git submodule add <submodule-url> <folder>`
