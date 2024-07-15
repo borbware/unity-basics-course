@@ -39,15 +39,16 @@ namespace MyAwesomeProgram
 
 ## Variable declaration
 
+```c#
+int number = 1;
+```
+
 1) Modifiers (not necessary) 
 2) Type declaration
 3) Variable name
 4) Initial value (not necessary) after `=`
 5) Line ending with `;`
 
-    ```c#
-    int number = 1;
-    ```
 
 ## Commenting
   * one line

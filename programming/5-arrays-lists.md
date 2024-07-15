@@ -52,20 +52,20 @@ title: Programming 5. Arrays & Lists
 
 ### Arrays: Unity example
 
-* Creating and accessing an array of gameobjects
-```c#
-public GameObject[] players;
+* Creating and accessing an array of GameObjects
+  ```c#
+  public GameObject[] players;
 
-void Start ()
-{
-	players = GameObject.FindGameObjectsWithTag("Player");
-	
-	for(int i = 0; i < players.Length; i++)
-	{
-		Debug.Log("Player Number "+i+" is named "+players[i].name);
-	}
-}
-```
+  void Start ()
+  {
+    players = GameObject.FindGameObjectsWithTag("Player");
+    
+    for(int i = 0; i < players.Length; i++)
+    {
+      Debug.Log("Player Number "+i+" is named "+players[i].name);
+    }
+  }
+  ```
 
 ## Multidimensional arrays
 

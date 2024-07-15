@@ -58,20 +58,20 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-marpit-fragments="1" data-paginate="true" data-class="invert" data-heading-divider="3" lang="en-US" class="invert" data-marpit-pagination="5" style="--paginate:true;--class:invert;--heading-divider:3;" data-marpit-pagination-total="22">
 <h3 id="arrays-unity-example">Arrays: Unity example</h3>
 <ul>
-<li data-marpit-fragment="1">Creating and accessing an array of gameobjects</li>
-</ul>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-c#"><span class="hljs-keyword">public</span> GameObject[] players;
+<li data-marpit-fragment="1">Creating and accessing an array of GameObjects<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-c#"><span class="hljs-keyword">public</span> GameObject[] players;
 
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Start</span> ()</span>
 {
-	players = GameObject.FindGameObjectsWithTag(<span class="hljs-string">&quot;Player&quot;</span>);
-	
-	<span class="hljs-keyword">for</span>(<span class="hljs-built_in">int</span> i = <span class="hljs-number">0</span>; i &lt; players.Length; i++)
-	{
-		Debug.Log(<span class="hljs-string">&quot;Player Number &quot;</span>+i+<span class="hljs-string">&quot; is named &quot;</span>+players[i].name);
-	}
+  players = GameObject.FindGameObjectsWithTag(<span class="hljs-string">&quot;Player&quot;</span>);
+  
+  <span class="hljs-keyword">for</span>(<span class="hljs-built_in">int</span> i = <span class="hljs-number">0</span>; i &lt; players.Length; i++)
+  {
+    Debug.Log(<span class="hljs-string">&quot;Player Number &quot;</span>+i+<span class="hljs-string">&quot; is named &quot;</span>+players[i].name);
+  }
 }
 </code></pre>
+</li>
+</ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-marpit-fragments="2" data-paginate="true" data-class="invert" data-heading-divider="3" lang="en-US" class="invert" data-marpit-pagination="6" style="--paginate:true;--class:invert;--heading-divider:3;" data-marpit-pagination-total="22">
 <h2 id="multidimensional-arrays">Multidimensional arrays</h2>

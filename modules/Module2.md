@@ -17,10 +17,10 @@ title: Module 2
 
 ## Module 2 Schedule
 
-<!-- | Day 1 | Day 2 | Day 3 | Day 4 | Day 5 | Day 6 | Day 7 | 
-|-------|-------|-------|-------|-------|-------|-------|
-| 12.4. TI	| 13.4. KE	| 14.4. TO	| 19.4. TI	| 20.4. KE	| 21.4. TO | 22.4. PE | 
-| UB4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md) | UC: [2D](unity-cookbook/2d-basics.md), [Input](unity-cookbook/input-handling.md), [Transform](unity-cookbook/transform.md),  [Collision](unity-cookbook/collision.md), [Materials for success](https://www.businessoulu.com/en/events/game-team.html) (remote) | P2: [Lists and Loops](programming/2-lists-loops.md) | P0: [Introduction to Game Programming](programming/0-game-programming.md), M1: [Vectors](math/1-vectors.md), M2: [Forces](math/2-forces.md) | M0: [Useful math](math/0-mathf.md), UC: [Audio](unity-cookbook/audio.md) | [UI](unity-cookbook/UI.md) | Playtesting, Wrap-up |
+<!-- | Day 1 | Day 2 | Day 3 | Day 4 | Day 5 | Day 6 | Day 7 
+-------|-------|-------|-------|-------|-------|-------
+ 12.4. TI	| 13.4. KE	| 14.4. TO	| 19.4. TI	| 20.4. KE	| 21.4. TO | 22.4. PE 
+ UB4: [Scripting Gameobjects](unity-basics/4-scripting-gameobjects.md) | UC: [2D](unity-cookbook/2d-basics.md), [Input](unity-cookbook/input-handling.md), [Transform](unity-cookbook/transform.md),  [Collision](unity-cookbook/collision.md), [Materials for success](https://www.businessoulu.com/en/events/game-team.html) (remote) | P2: [Lists and Loops](programming/2-lists-loops.md) | P0: [Introduction to Game Programming](programming/0-game-programming.md), M1: [Vectors](math/1-vectors.md), M2: [Forces](math/2-forces.md) | M0: [Useful math](math/0-mathf.md), UC: [Audio](unity-cookbook/audio.md) | [UI](unity-cookbook/UI.md) | Playtesting, Wrap-up 
 
 --- -->
 ![width:1200px](imgs/stage1-module2.png)
@@ -34,6 +34,7 @@ title: Module 2
 
 Goal:
 * ⭐ MVP: Create a playable single-screen game of Asteroids.
+
 ## Extra goals:
 <!-- _backgroundColor: #257179 -->
 * ⭐⭐ Add one of the following features:
@@ -42,7 +43,6 @@ Goal:
   * Twin-stick shooter: Use right stick to control the bullet direction
   * Co-op: Add second player
 * ⭐⭐⭐ Spice up the game: Add a game mechanic of your own design
-
 
 ## MP exercise 0.
 <!-- _backgroundColor: #257179 -->
