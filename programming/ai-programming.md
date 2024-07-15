@@ -142,8 +142,8 @@ math: mathjax
 * If the programming language is strict about its syntax, ChatGPT results are generally better
      * Rust is good, C++ bad
      * Also: Does not work with C++ well because there is so much badly written or obsolete C++ on the Internet!
-<!-- 
-## Ronkainen
+
+<!-- ## Ronkainen
 
 * korkean tason speksit. "mun pitäis tehä tällanen softa"
   * antaa pohjan
