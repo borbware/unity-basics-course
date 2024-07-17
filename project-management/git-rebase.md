@@ -41,6 +41,7 @@ git branch view vscode
   * reword
   * fixup
   * edit
+* käy läpi muutokset branchi-viewistä käsin, laita uudet committiviestit ylös johonki esim notepad ja merkkaa mitä komentoa käytät mihinki 
 * `git merge —ff-only`
 
 * obs: if you've merged something from master to this branch somewhere in the middle, rebase fails
