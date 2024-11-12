@@ -171,3 +171,11 @@ To ***slowly*** rotate towards a target, there are two methods available:
 <!-- _backgroundColor: #5d275d -->
 
 * uhhhh xx todo
+
+
+## Changing many values at once
+
+* You can select multiple GameObjects at once to edit their transforms values at once
+* You can even set their position, rotation or scale to be a ***range*** of values by setting the field to `L(lower, upper)`
+  * Other neat ways exist as well. `R(lower, upper)` sets the values to a *random* range, and you can multiply all values at once with `+=value`
+* See other numeric field expressions in the [Unity docs](https://docs.unity3d.com/Manual/EditingValueProperties.html)
