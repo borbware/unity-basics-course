@@ -29,14 +29,18 @@ title: Module 3.
     * Health
   * Enemies that hurt the player
 * ***Optional:*** Health item pickups 
+
 ---
+
 <!-- _backgroundColor: #257179 -->
 ⭐⭐
 Pick one:
 * Player defense
 * Keys that open doors
 * Enemy AI
+
 ---
+
 <!-- _backgroundColor: #257179 -->
 ⭐⭐⭐
 * Pick one:
@@ -45,21 +49,20 @@ Pick one:
   * Co-op
   * Multiple floors
 
-
 ## MP Exercise 1. Tiles!
 <!-- _backgroundColor: #257179 -->
 
 Pick a tile map (or two) for your game!
 
-* https://kenney.nl/assets
-* https://0x72.itch.io/dungeontileset-ii
-* https://pixel-poem.itch.io/dungeon-assetpuck
-* https://cupnooble.itch.io/sprout-lands-asset-pack
-* https://cainos.itch.io/pixel-art-top-down-basic
-* https://raou.itch.io/topdown-rpg-pixel-art-tileset
-* https://pixel-boy.itch.io/ninja-adventure-asset-pack
-* https://o-lobster.itch.io/simple-dungeon-crawler-16x16-pixel-pack
-* https://szadiart.itch.io/rogue-fantasy-catacombs
-* https://ansimuz.itch.io/patreons-top-down-collection
+* [https://kenney.nl/assets]()
+* [https://0x72.itch.io/dungeontileset-ii]()
+* [https://pixel-poem.itch.io/dungeon-assetpuck]()
+* [https://cupnooble.itch.io/sprout-lands-asset-pack]()
+* [https://cainos.itch.io/pixel-art-top-down-basic]()
+* [https://raou.itch.io/topdown-rpg-pixel-art-tileset]()
+* [https://pixel-boy.itch.io/ninja-adventure-asset-pack]()
+* [https://o-lobster.itch.io/simple-dungeon-crawler-16x16-pixel-pack]()
+* [https://szadiart.itch.io/rogue-fantasy-catacombs]()
+* [https://ansimuz.itch.io/patreons-top-down-collection]()
 
 More available on [opengameart.org](https://opengameart.org/)
