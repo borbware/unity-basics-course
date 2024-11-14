@@ -30,6 +30,7 @@ math: mathjax
 * [`OnCollisionExit`](https://docs.unity3d.com/ScriptReference/Collider.OnCollisionExit.html) / [`OnCollisionExit2D`](https://docs.unity3d.com/ScriptReference/Collider2D.OnCollisionExit2D.html)
   * when collision with another collider ends
 * See the links for code examples!
+* ***Note:*** To make the collision happen, at least one of the colliding GameObjects has to have a RigidBody component attached to it!
 
 <!-- _footer: "For more event methods, see [Script Reference: Monobehaviour Messages](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html#Messages)" -->
 
