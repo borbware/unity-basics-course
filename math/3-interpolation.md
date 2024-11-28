@@ -11,20 +11,20 @@ title: Math 3. Interpolation
 
 ## Lerp
 
-  ![](imgs/lerp.png)
+  ![width:500px](imgs/lerp.png)
   * "Lerp", or  linear interpolation, is a commonly used function in gamedev
     * returns the value $x$, which goes from $a$ to $b$, when $t$ goes from $0$ to $1$
     * when $t = 0$, $x = a$
     * when $t = 0.5$, $x = (b - a) / 2$ ("halfway")
     * when $t = 1$, $x = b$
-  * [`Mathf.Lerp(a, b, t)`](https://docs.unity3d.com/ScriptReference/Mathf.Lerp.html)
+  * In Unity, the most basic lerp function is[`Mathf.Lerp(a, b, t)`](https://docs.unity3d.com/ScriptReference/Mathf.Lerp.html)
 
 ### Lerp example
 
 ```c#
-Mathf.Lerp(5.0f, 15.0f, 0f);   // returns 5.0f
-Mathf.Lerp(5.0f, 15.0f, 0.5f); // returns 10.0f
-Mathf.Lerp(5.0f, 15.0f, 1.0f); // returns 15.0f
+float x1 = Mathf.Lerp(5.0f, 15.0f, 0f);   // returns 5.0f
+float x2 = Mathf.Lerp(5.0f, 15.0f, 0.5f); // returns 10.0f
+float x3 = Mathf.Lerp(5.0f, 15.0f, 1.0f); // returns 15.0f
 ```
 
 ### Note about Clamping
@@ -35,13 +35,6 @@ Mathf.Lerp(5.0f, 15.0f, 1.0f); // returns 15.0f
 * Unity's `Mathf.Lerp` is clamps the returned value automatically
   * $x$ is $a$ at minimum and $b$ at maximum
 * with [`Mathf.LerpUnclamped`](https://docs.unity3d.com/ScriptReference/Mathf.LerpUnclamped.html), the value is extrapolated when outside the limits!
-
-## Exercise 1. Do a lerp!
-<!-- _backgroundColor: #29366f -->
-After pressing a button once, lerp GameObject's color from red to blue.
-
-***Bonus:*** After pressing twice, lerp the color back to red.
-***Bonus bonus:*** What if you press the button _during_ lerping?
 
 ## Lerping different data types
 
@@ -54,21 +47,40 @@ After pressing a button once, lerp GameObject's color from red to blue.
   * [Quaternion.Slerp](https://docs.unity3d.com/ScriptReference/Quaternion.Slerp.html)
 * Unclamped versions exist, too.
 
-### Slerp example
+### Lerp practical example
 
-```c#
-Vector3 relativePos = target.position + new Vector3(0,.5f,0) - transform.position;
+* Lerping usually happens in some sort of an update function, where we can use lerp to slowly change a value from `a` to `b`, while time moves forward.
+  ```c#
+  [SerializeField] Transform endTransform;
+  [SerializeField] float lerpDuration;
+  Vector3 startPosition;
+  float startTime;
+  bool lerping = false;
 
-transform.localRotation = 
-  Quaternion.Slerp(
-    transform.localRotation,
-    Quaternion.Lookrotation(relativePos),
-    Time.deltaTime
-  );
+  void StartLerp() {
+      startTime = Time.time;
+      lerping = true;
+  }
 
-transform.Translate(0,0, 3 * Time.deltaTime);
-```
+  void UpdateLerp() {
+      if (!lerping) return
+      float time = (Time.time - startTime) / lerpDuration;
+      transform.position = Vector3.Lerp(startPosition, endTransform.position, time);
+      if (time > 1) lerping = false;
+  }
+  void Update() {
+      if (Input.GetKey("space")) StartLerp();
+      UpdateLerp();
+  }
+  ```
 
+
+## Exercise 1. Do a lerp!
+<!-- _backgroundColor: #29366f -->
+After pressing a button once, lerp GameObject's color from red to blue.
+
+***Bonus:*** After pressing twice, lerp the color back to red.
+***Bonus bonus:*** What if you press the button _during_ lerping?
 
 ## Other interpolation functions
 
@@ -111,16 +123,16 @@ transform.Translate(0,0, 3 * Time.deltaTime);
 ```c#
 public AnimationCurve bounce;
 ...
-// If timer is on, do animation
-if(Time.time < bounceTimer)
+
+if(startTime > 0) // If we have set a startTime, do the interpolation
 {
-    // Calculate valid time for curve (in between 0 and 1)
-    float scaleTime = (bounceTimer - Time.time) / bounceLenght;
+    // Calculate valid time for curve (between 0 and 1)
+    float time = (Time.time - startTime) / bounceLenght;
 
     // Get the value from curve at the time of the animation
     // and multiply it with the desired scaled axis
     // then add it to default scale (1, 1, 1)
-    transform.localScale = Vector2.one + axis * bounce.Evaluate(scaleTime);
+    transform.localScale = Vector2.one + axis * bounce.Evaluate(time);
 }
 ```
 
@@ -139,7 +151,8 @@ if(Time.time < bounceTimer)
     * Example: Camera that follows a bit behind the player character
 * There's one important caveat, though...
 
-## Deltatime lerping is frame rate dependent!
+### Deltatime lerping is frame rate dependent!
+<!-- _backgroundColor: #5d275d -->
 
 * This is bad! We get different results with different machines!
 * There's a somewhat-known solution to this
@@ -153,9 +166,24 @@ if(Time.time < bounceTimer)
     ```
 
 * Read more here: [Frame rate independent damping using lerp](https://www.rorydriscoll.com/2016/03/07/frame-rate-independent-damping-using-lerp/)
-  * In the link, there's a techincal explanation why deltatime lerping works how it works, and why the solution abovefixes the framerate dependence.
+  * In the link, there's a techincal explanation why deltatime lerping works how it works, and why the solution above fixes the framerate dependence.
 
-<!-- _backgroundColor: #5d275d -->
+
+### Slerp on-the-fly example
+
+```c#
+Vector3 relativePos = target.position + new Vector3(0,.5f,0) - transform.position;
+
+transform.localRotation = 
+  Quaternion.Slerp(
+    transform.localRotation,
+    Quaternion.Lookrotation(relativePos),
+    Time.deltaTime
+  );
+
+transform.Translate(0,0, 3 * Time.deltaTime);
+```
+
 
 ## Extra: Inverse lerp
 <!-- _backgroundColor: #5d275d -->
