@@ -71,6 +71,14 @@ paginate: true
 
 ![](imgs/github-pullreq.png)
 
+
+## Searching for specific issues and pull requests
+
+* You can search for issues or pull requests with specific dates, etc.
+* The syntax is versatile, check these links for more info:
+  * [Searching issues and pull requests](https://docs.github.com/en/search-github/searching-on-github/searching-issues-and-pull-requests#search-by-when-an-issue-or-pull-request-was-created-or-last-updated)
+  * [GitHub: Understanding the Search syntax](https://docs.github.com/en/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax)
+
 <!--
 
 ## Actions
