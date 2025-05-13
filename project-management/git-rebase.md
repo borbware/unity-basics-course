@@ -13,12 +13,11 @@ paginate: true
 muista:
 `git push --force-with-lease`
 
-git branch view vscode
+VS Code: git branch view
 
 ## kunnon tapa commitoida
 
-* title
-* body
+* title & body
 
 * vs code settings:
   * commit viesti blockki fontti
@@ -42,6 +41,7 @@ git branch view vscode
   * reword
   * fixup
   * edit
+* Explained when interactive rebase starts
 
 ---
 
@@ -52,9 +52,11 @@ git branch view vscode
 
 ## Extra: splitting a commit
 
-* if you want some changes from a commit to one commit, and some to another?
-* do a rebase before doing a rebase
-* jos rebasetat vaikka commitit A ja B ja haluat alunperin A:ssa olleet muutokset B:hen
-* Niin edit molemmille, sitte A:n kohdalla muokkaat siitä tiedostosta ne muutokset pois ja B:n kohdalla laitat ne takasi.  unstagettaa sen tiedoston ja stagettaa sen sitte takasi seuraavaan
-  * sit vissiin git commit --amend i guess, en oo testannu vielä
-* elikkäs. splittaa unstagetetun tiedoston commitit osiin ja sit vetää uuden rebasen ja squashaa (fixup) sen toiseen.
+* Want to split one commit to many, or move changes from one commit to another?
+* Use interactive rebase like [this](https://stackoverflow.com/questions/6217156/break-a-previous-commit-into-multiple-commits)
+  * Start an interactive rebase with `git rebase -i <your_commit>^`
+  * Mark the commit you want to split with the action `edit`.
+  * When editing said commit, execute `git reset HEAD^`. The effect is that the files of said commit are unstaged now.
+  * Add the changes to a new commit with `git add`, then commit with `git commit`. Repeat until working tree is clean.
+  * Continue with `git rebase --continue`
+* After this rebase, if you want to combine commits, you can do it with another rebase
