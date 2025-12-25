@@ -108,7 +108,3 @@ math: mathjax
   * When entering Play Mode: Reload Scene only
   * This skips domain reloading, which makes entering playmode ***INSTANT***.
     * [It has some caveats](https://docs.unity3d.com/6000.3/Documentation/Manual/domain-reloading.html), though, so you should know about them!
-<!-- * *Project Settings > Editor > Play Mode Options*
-  * ✅*Enter Play Mode Options*
-    * ⬛*Reload Domain*
-  * This makes entering playmode ***INSTANT***. -->
