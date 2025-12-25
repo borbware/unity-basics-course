@@ -95,7 +95,7 @@ math: mathjax
 * We use Unity with the Unity Hub in the course
   * That way, we can install multiple versions of Unity if needed
 * Download [Unity Hub](https://unity3d.com/get-unity/download)
-  * Install the latest Unity LTS (long term support) version 2021.3.21f1
+  * Install the latest Unity LTS (long term support) version
 
 ### Settings
 
@@ -104,7 +104,11 @@ math: mathjax
   * You might have to do this again on new projects.
 * *Preferences > Colors > Playmode tint* 
   * Set to red
-* *Project Settings > Editor> Play Mode Options*
+* *Project Settings > Editor > Enter Play Mode Settings*
+  * When entering Play Mode: Reload Scene only
+  * This skips domain reloading, which makes entering playmode ***INSTANT***.
+    * [It has some caveats](https://docs.unity3d.com/6000.3/Documentation/Manual/domain-reloading.html), though, so you should know about them!
+<!-- * *Project Settings > Editor > Play Mode Options*
   * ✅*Enter Play Mode Options*
     * ⬛*Reload Domain*
-  * This makes entering playmode ***INSTANT***.
+  * This makes entering playmode ***INSTANT***. -->
